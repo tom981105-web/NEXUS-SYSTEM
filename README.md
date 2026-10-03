@@ -5,7 +5,7 @@ ART ARCHIVE와 PAPER LIBRARY를 상위에서 연결하는 통합 관제 시스�
 ## Current registry
 
 ### A1 · ART ARCHIVE SYSTEM — LIVE
-- Operations: https://tom981105-web.github.io/art-archive/system.html
+- Operations: ./systems/art-archive/
 - Public archive: https://tom981105-web.github.io/art-archive/
 - NEXUS에서 `system-status.json`을 읽어 상태 요약을 표시합니다.
 
@@ -19,3 +19,7 @@ ART ARCHIVE와 PAPER LIBRARY를 상위에서 연결하는 통합 관제 시스�
 - `js/app.js` — 시계, 새로고침, ART ARCHIVE 상태 브리지
 
 각 하위 시스템은 독립 저장소로 유지하고 NEXUS는 상위 관제/진입 레이어 역할을 합니다.
+
+
+## Migration note
+ART ARCHIVE operations UI/runtime is now hosted inside `systems/art-archive/`. The old `art-archive/system.html` is no longer the NEXUS control target.
