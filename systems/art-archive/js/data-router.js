@@ -2,7 +2,6 @@
   'use strict';
 
   const nativeFetch=window.fetch.bind(window);
-  const LEGACY_BASE='https://raw.githubusercontent.com/tom981105-web/art-archive/main/';
   const MIGRATING=new Set([
     'system-status.json',
     'system-events.json',
@@ -61,19 +60,7 @@
 
     const cacheBust='router='+Date.now();
     const localUrl=file+'?'+cacheBust;
-    const legacyUrl=LEGACY_BASE+file+'?'+cacheBust;
-
-    const [local,legacy]=await Promise.all([
-      readJson(localUrl),
-      readJson(legacyUrl)
-    ]);
-
-    let selected=null;
-    if(local&&legacy){
-      selected=local.stamp>=legacy.stamp?local:legacy;
-    }else{
-      selected=local||legacy;
-    }
+    const selected=await readJson(localUrl);
 
     if(!selected){
       return new Response(JSON.stringify({}),{
@@ -82,7 +69,7 @@
       });
     }
 
-    const source=selected.url===localUrl?'nexus':'legacy';
+    const source='nexus';
     announce(file,source,selected.stamp);
     return new Response(JSON.stringify(selected.data),{
       status:200,
