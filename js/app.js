@@ -1,4 +1,4 @@
-const ART_STATUS_URL = 'https://tom981105-web.github.io/art-archive/system-status.json';
+const ART_STATUS_URL = 'systems/art-archive/system-status.json';
 
 const el = id => document.getElementById(id);
 
