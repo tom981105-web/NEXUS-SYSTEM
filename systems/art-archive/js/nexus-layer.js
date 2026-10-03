@@ -44,6 +44,76 @@
     return {cls:'bad',label:'STALE'};
   }
 
+  function setLiveCard(id,stateLabel,cls){
+    const card=$(id);
+    if(card) card.className='live-service-card '+cls;
+    return {label:stateLabel,cls};
+  }
+
+  function renderLiveSystemRoom(){
+    const automation=state.automation&&state.automation.data;
+    const runtime=state.runtime&&state.runtime.data;
+
+    let worst=0;
+    const rank={good:0,warn:1,bad:2};
+    const mark=cls=>{worst=Math.max(worst,rank[cls]??2)};
+
+    // Drive
+    const series=automation&&Array.isArray(automation.series)?automation.series.filter(x=>x.name!=='자동화 상태'):[];
+    const connected=series.filter(x=>x.driveStatus==='ok').length;
+    const latestArtwork=series.map(x=>({name:x.lastFile,time:x.lastSavedAt?new Date(x.lastSavedAt):null})).filter(x=>x.time&&!isNaN(x.time)).sort((a,b)=>b.time-a.time)[0];
+    const driveCls=series.length&&connected===series.length?'good':connected>0?'warn':'bad';
+    setLiveCard('#liveDriveCard',driveCls==='good'?'CONNECTED':driveCls==='warn'?'PARTIAL':'ATTENTION',driveCls);mark(driveCls);
+    if($('#liveDriveState')){$('#liveDriveState').textContent=driveCls==='good'?'CONNECTED':driveCls==='warn'?'PARTIAL':'ATTENTION';$('#liveDriveState').className=driveCls}
+    if($('#liveDriveSeries'))$('#liveDriveSeries').textContent=series.length?connected+' / '+series.length:'—';
+    if($('#liveDriveLast'))$('#liveDriveLast').textContent=latestArtwork?fmtTime(latestArtwork.time):'—';
+    if($('#liveDriveCopy'))$('#liveDriveCopy').textContent=series.length?connected+'개 시리즈의 Drive 폴더 연결 상태를 확인했습니다.':'Drive 시리즈 상태 데이터가 없습니다.';
+
+    // Apps Script
+    const run=runtime&&runtime.appsScript&&runtime.appsScript.lastRun;
+    const scriptFail=runtime&&runtime.appsScript?Number(runtime.appsScript.consecutiveFailures||0):null;
+    const scriptOk=run&&String(run.result).toLowerCase()==='success'&&(!scriptFail);
+    const scriptBusy=runtime&&runtime.appsScript&&runtime.appsScript.busyOrSkipped;
+    const scriptCls=scriptOk?'good':scriptBusy?'warn':'bad';
+    setLiveCard('#liveScriptCard','',scriptCls);mark(scriptCls);
+    if($('#liveScriptState')){$('#liveScriptState').textContent=scriptOk?'OPERATIONAL':scriptBusy?'BUSY':'ATTENTION';$('#liveScriptState').className=scriptCls}
+    if($('#liveScriptFunction'))$('#liveScriptFunction').textContent=run&&run.functionName||'—';
+    if($('#liveScriptLast'))$('#liveScriptLast').textContent=run&&run.finishedAt?fmtTime(new Date(run.finishedAt)):'—';
+    if($('#liveScriptCopy'))$('#liveScriptCopy').textContent=scriptOk?'최근 Apps Script 실행이 정상 완료되었습니다.':scriptBusy?'실행이 대기 또는 건너뛰기 상태입니다.':'최근 실행 오류 또는 연속 실패를 확인해야 합니다.';
+
+    // Notion
+    const notion=runtime&&runtime.notionSync;
+    const notionFail=notion?Number(notion.consecutiveFailures||0):null;
+    const notionOk=notion&&String(notion.lastResult).toLowerCase()==='success'&&(!notionFail);
+    const notionCls=notionOk?'good':notion?'warn':'bad';
+    setLiveCard('#liveNotionCard','',notionCls);mark(notionCls);
+    if($('#liveNotionState')){$('#liveNotionState').textContent=notionOk?'SYNCED':notion?'CHECK':'UNAVAILABLE';$('#liveNotionState').className=notionCls}
+    if($('#liveNotionSeries'))$('#liveNotionSeries').textContent=notion&&notion.lastSeries||'—';
+    if($('#liveNotionLast'))$('#liveNotionLast').textContent=notion&&notion.finishedAt?fmtTime(new Date(notion.finishedAt)):'—';
+    if($('#liveNotionCopy'))$('#liveNotionCopy').textContent=notionOk?'최근 Notion 아카이브 동기화가 정상 완료되었습니다.':notion?'Notion 동기화 상태를 확인해야 합니다.':'Notion 상태 데이터가 없습니다.';
+
+    // GitHub
+    const deploy=runtime&&runtime.githubDeploy;
+    const latest=deploy&&deploy.latestRun;
+    const deployOk=latest&&latest.status==='completed'&&latest.conclusion==='success';
+    const deployBusy=latest&&latest.status!=='completed';
+    const githubCls=deployOk?'good':deployBusy?'warn':latest?'bad':'warn';
+    setLiveCard('#liveGithubCard','',githubCls);mark(githubCls);
+    if($('#liveGithubState')){$('#liveGithubState').textContent=deployOk?'DEPLOYED':deployBusy?'DEPLOYING':latest?'ATTENTION':'NO DATA';$('#liveGithubState').className=githubCls}
+    if($('#liveGithubDeploy'))$('#liveGithubDeploy').textContent=latest&&latest.conclusion?String(latest.conclusion).toUpperCase():latest&&latest.status?String(latest.status).toUpperCase():'—';
+    if($('#liveGithubLast'))$('#liveGithubLast').textContent=latest&&latest.updated_at?fmtTime(new Date(latest.updated_at)):'—';
+    if($('#liveGithubCopy'))$('#liveGithubCopy').textContent=deployOk?'최근 GitHub Pages 배포가 정상 완료되었습니다.':deployBusy?'현재 배포가 진행 중입니다.':latest?'최근 배포 결과를 확인해야 합니다.':'배포 상태 데이터가 없습니다.';
+
+    const orb=$('#liveRoomOrb'),overall=$('#liveRoomState');
+    if(orb&&overall){
+      const cls=worst===0?'good':worst===1?'warn':'bad';
+      orb.className=cls;
+      overall.textContent=worst===0?'OPERATIONAL':worst===1?'DEGRADED':'ATTENTION';
+      overall.className=cls;
+    }
+    if($('#liveRoomTimestamp'))$('#liveRoomTimestamp').textContent='LAST CHECK '+fmtTime(new Date());
+  }
+
   function renderOverviewIntel(){
     const usage=state.usage&&state.usage.data;
     const automation=state.automation&&state.automation.data;
@@ -130,6 +200,7 @@
 
     if($('#sourceCount'))$('#sourceCount').textContent=connected+' / '+SOURCES.length;
     renderOverviewIntel();
+    renderLiveSystemRoom();
     if($('#sourceChecked'))$('#sourceChecked').textContent=fmtTime(new Date());
     if($('#dataAge'))$('#dataAge').textContent=newest?fmtAge(Date.now()-newest.getTime()):'UNKNOWN';
 
