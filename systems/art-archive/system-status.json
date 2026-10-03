@@ -1,16 +1,16 @@
 {
   "version": "1.8",
-  "updatedAt": "2026-10-03T21:14:38.092Z",
+  "updatedAt": "2026-10-03T21:30:18.858Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "ok",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-03T21:14:00.132Z",
-      "finishedAt": "2026-10-03T21:14:37.395Z",
+      "startedAt": "2026-10-03T21:30:00.001Z",
+      "finishedAt": "2026-10-03T21:30:18.386Z",
       "result": "success",
-      "durationMs": 37263,
+      "durationMs": 18385,
       "error": null
     },
     "consecutiveFailures": 0,
@@ -20,45 +20,101 @@
   },
   "notionSync": {
     "lastResult": "success",
-    "lastSeries": "묵수",
-    "lastArtwork": "오랑우탄",
-    "startedAt": "2026-10-03T21:13:28.707Z",
-    "finishedAt": "2026-10-03T21:13:35.888Z",
-    "durationMs": 7181,
+    "lastSeries": "잉크",
+    "lastArtwork": "해파리",
+    "startedAt": "2026-10-03T21:23:33.454Z",
+    "finishedAt": "2026-10-03T21:23:37.052Z",
+    "durationMs": 3598,
     "error": null,
     "consecutiveFailures": 0
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-03T21:14:38.731Z",
+    "updatedAt": "2026-10-03T21:30:19.275Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
-      "id": 37154377927,
+      "id": 37154953680,
       "name": "pages build and deployment",
       "display_title": "pages build and deployment",
       "event": "dynamic",
-      "status": "in_progress",
-      "conclusion": null,
-      "head_sha": "3a980d8236dfbd372420222c9339e3232af66634",
-      "created_at": "2026-10-03T21:13:59Z",
-      "run_started_at": "2026-10-03T21:13:59Z",
-      "updated_at": "2026-10-03T21:14:38Z",
-      "html_url": "https://github.com/tom981105-web/art-archive/actions/runs/37154377927",
+      "status": "completed",
+      "conclusion": "success",
+      "head_sha": "1023ad5fe7037166ffa0cddc7543bcc16ec4e43f",
+      "created_at": "2026-10-03T21:23:48Z",
+      "run_started_at": "2026-10-03T21:23:48Z",
+      "updated_at": "2026-10-03T21:24:28Z",
+      "html_url": "https://github.com/tom981105-web/art-archive/actions/runs/37154953680",
       "message": "Update ART ARCHIVE automation status"
     },
     "recentRuns": [
+      {
+        "id": 37154953680,
+        "name": "pages build and deployment",
+        "display_title": "pages build and deployment",
+        "event": "dynamic",
+        "status": "completed",
+        "conclusion": "success",
+        "head_sha": "1023ad5fe7037166ffa0cddc7543bcc16ec4e43f",
+        "created_at": "2026-10-03T21:23:48Z",
+        "run_started_at": "2026-10-03T21:23:48Z",
+        "updated_at": "2026-10-03T21:24:28Z",
+        "html_url": "https://github.com/tom981105-web/art-archive/actions/runs/37154953680",
+        "message": "Update ART ARCHIVE automation status"
+      },
+      {
+        "id": 37154945323,
+        "name": "pages build and deployment",
+        "display_title": "pages build and deployment",
+        "event": "dynamic",
+        "status": "completed",
+        "conclusion": "cancelled",
+        "head_sha": "5c7aeec3717352bc4c0aaf10e503d70dc770a471",
+        "created_at": "2026-10-03T21:23:39Z",
+        "run_started_at": "2026-10-03T21:23:39Z",
+        "updated_at": "2026-10-03T21:23:52Z",
+        "html_url": "https://github.com/tom981105-web/art-archive/actions/runs/37154945323",
+        "message": "Update ART ARCHIVE artworks"
+      },
+      {
+        "id": 37154940365,
+        "name": "pages build and deployment",
+        "display_title": "pages build and deployment",
+        "event": "dynamic",
+        "status": "completed",
+        "conclusion": "cancelled",
+        "head_sha": "f69b473ff98ee63279c73f8a2193b680410b6096",
+        "created_at": "2026-10-03T21:23:34Z",
+        "run_started_at": "2026-10-03T21:23:34Z",
+        "updated_at": "2026-10-03T21:23:42Z",
+        "html_url": "https://github.com/tom981105-web/art-archive/actions/runs/37154940365",
+        "message": "Update ART ARCHIVE automation status"
+      },
+      {
+        "id": 37154933370,
+        "name": "pages build and deployment",
+        "display_title": "pages build and deployment",
+        "event": "dynamic",
+        "status": "completed",
+        "conclusion": "cancelled",
+        "head_sha": "f6912f96a6f603f9fa8975f3ba524de7088063aa",
+        "created_at": "2026-10-03T21:23:26Z",
+        "run_started_at": "2026-10-03T21:23:26Z",
+        "updated_at": "2026-10-03T21:23:38Z",
+        "html_url": "https://github.com/tom981105-web/art-archive/actions/runs/37154933370",
+        "message": "Update ART ARCHIVE artworks"
+      },
       {
         "id": 37154377927,
         "name": "pages build and deployment",
         "display_title": "pages build and deployment",
         "event": "dynamic",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "head_sha": "3a980d8236dfbd372420222c9339e3232af66634",
         "created_at": "2026-10-03T21:13:59Z",
         "run_started_at": "2026-10-03T21:13:59Z",
-        "updated_at": "2026-10-03T21:14:38Z",
+        "updated_at": "2026-10-03T21:14:49Z",
         "html_url": "https://github.com/tom981105-web/art-archive/actions/runs/37154377927",
         "message": "Update ART ARCHIVE automation status"
       },
@@ -131,65 +187,33 @@
         "updated_at": "2026-10-03T21:05:20Z",
         "html_url": "https://github.com/tom981105-web/art-archive/actions/runs/37153845822",
         "message": "Update ART ARCHIVE artworks"
-      },
-      {
-        "id": 37128375404,
-        "name": "pages build and deployment",
-        "display_title": "pages build and deployment",
-        "event": "dynamic",
-        "status": "completed",
-        "conclusion": "success",
-        "head_sha": "1df40f0ae84ba4b5fde12b8c319350fc0702e1a8",
-        "created_at": "2026-10-03T14:04:43Z",
-        "run_started_at": "2026-10-03T14:04:43Z",
-        "updated_at": "2026-10-03T14:05:21Z",
-        "html_url": "https://github.com/tom981105-web/art-archive/actions/runs/37128375404",
-        "message": "Move ART SYSTEM telemetry ownership to NEXUS: remove system-usage.json"
-      },
-      {
-        "id": 37128372963,
-        "name": "pages build and deployment",
-        "display_title": "pages build and deployment",
-        "event": "dynamic",
-        "status": "completed",
-        "conclusion": "cancelled",
-        "head_sha": "ac32f842565bc9acc810d7fa17c7a2465e03b89f",
-        "created_at": "2026-10-03T14:04:40Z",
-        "run_started_at": "2026-10-03T14:04:40Z",
-        "updated_at": "2026-10-03T14:04:45Z",
-        "html_url": "https://github.com/tom981105-web/art-archive/actions/runs/37128372963",
-        "message": "Move ART SYSTEM telemetry ownership to NEXUS: remove system-history.json"
-      },
-      {
-        "id": 37128370473,
-        "name": "pages build and deployment",
-        "display_title": "pages build and deployment",
-        "event": "dynamic",
-        "status": "completed",
-        "conclusion": "cancelled",
-        "head_sha": "1ae3601ea30e7ed43e262e9876b47bc51b9b71a2",
-        "created_at": "2026-10-03T14:04:38Z",
-        "run_started_at": "2026-10-03T14:04:38Z",
-        "updated_at": "2026-10-03T14:04:42Z",
-        "html_url": "https://github.com/tom981105-web/art-archive/actions/runs/37128370473",
-        "message": "Move ART SYSTEM telemetry ownership to NEXUS: remove system-events.json"
-      },
-      {
-        "id": 37128367794,
-        "name": "pages build and deployment",
-        "display_title": "pages build and deployment",
-        "event": "dynamic",
-        "status": "completed",
-        "conclusion": "cancelled",
-        "head_sha": "fb8b905d07a8991dbf05a017f5fc0f0b4e9c83ce",
-        "created_at": "2026-10-03T14:04:35Z",
-        "run_started_at": "2026-10-03T14:04:35Z",
-        "updated_at": "2026-10-03T14:04:40Z",
-        "html_url": "https://github.com/tom981105-web/art-archive/actions/runs/37128367794",
-        "message": "Move ART SYSTEM telemetry ownership to NEXUS: remove system-status.json"
       }
     ],
     "recentCommits": [
+      {
+        "sha": "1023ad5fe7037166ffa0cddc7543bcc16ec4e43f",
+        "message": "Update ART ARCHIVE automation status",
+        "date": "2026-10-03T21:23:46Z",
+        "html_url": "https://github.com/tom981105-web/art-archive/commit/1023ad5fe7037166ffa0cddc7543bcc16ec4e43f"
+      },
+      {
+        "sha": "5c7aeec3717352bc4c0aaf10e503d70dc770a471",
+        "message": "Update ART ARCHIVE artworks",
+        "date": "2026-10-03T21:23:38Z",
+        "html_url": "https://github.com/tom981105-web/art-archive/commit/5c7aeec3717352bc4c0aaf10e503d70dc770a471"
+      },
+      {
+        "sha": "f69b473ff98ee63279c73f8a2193b680410b6096",
+        "message": "Update ART ARCHIVE automation status",
+        "date": "2026-10-03T21:23:32Z",
+        "html_url": "https://github.com/tom981105-web/art-archive/commit/f69b473ff98ee63279c73f8a2193b680410b6096"
+      },
+      {
+        "sha": "f6912f96a6f603f9fa8975f3ba524de7088063aa",
+        "message": "Update ART ARCHIVE artworks",
+        "date": "2026-10-03T21:23:24Z",
+        "html_url": "https://github.com/tom981105-web/art-archive/commit/f6912f96a6f603f9fa8975f3ba524de7088063aa"
+      },
       {
         "sha": "3a980d8236dfbd372420222c9339e3232af66634",
         "message": "Update ART ARCHIVE automation status",
@@ -225,30 +249,6 @@
         "message": "Update ART ARCHIVE artworks",
         "date": "2026-10-03T21:04:59Z",
         "html_url": "https://github.com/tom981105-web/art-archive/commit/817acd0bb738e9f11f834c5e1821778159c77af4"
-      },
-      {
-        "sha": "1df40f0ae84ba4b5fde12b8c319350fc0702e1a8",
-        "message": "Move ART SYSTEM telemetry ownership to NEXUS: remove system-usage.json",
-        "date": "2026-10-03T14:04:41Z",
-        "html_url": "https://github.com/tom981105-web/art-archive/commit/1df40f0ae84ba4b5fde12b8c319350fc0702e1a8"
-      },
-      {
-        "sha": "ac32f842565bc9acc810d7fa17c7a2465e03b89f",
-        "message": "Move ART SYSTEM telemetry ownership to NEXUS: remove system-history.json",
-        "date": "2026-10-03T14:04:38Z",
-        "html_url": "https://github.com/tom981105-web/art-archive/commit/ac32f842565bc9acc810d7fa17c7a2465e03b89f"
-      },
-      {
-        "sha": "1ae3601ea30e7ed43e262e9876b47bc51b9b71a2",
-        "message": "Move ART SYSTEM telemetry ownership to NEXUS: remove system-events.json",
-        "date": "2026-10-03T14:04:36Z",
-        "html_url": "https://github.com/tom981105-web/art-archive/commit/1ae3601ea30e7ed43e262e9876b47bc51b9b71a2"
-      },
-      {
-        "sha": "fb8b905d07a8991dbf05a017f5fc0f0b4e9c83ce",
-        "message": "Move ART SYSTEM telemetry ownership to NEXUS: remove system-status.json",
-        "date": "2026-10-03T14:04:33Z",
-        "html_url": "https://github.com/tom981105-web/art-archive/commit/fb8b905d07a8991dbf05a017f5fc0f0b4e9c83ce"
       }
     ]
   }
