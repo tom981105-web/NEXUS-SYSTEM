@@ -1,5 +1,6 @@
 const PAPER_INDEX='https://raw.githubusercontent.com/tom981105-web/paper/main/data/index.json';
 const API='https://api.github.com/repos/tom981105-web/paper';
+const DAY=24*60*60*1000;
 const $=id=>document.getElementById(id);
 const fmt=n=>Number(n||0).toLocaleString('ko-KR');
 const timeFmt=v=>v?new Intl.DateTimeFormat('ko-KR',{month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hour12:false,timeZone:'Asia/Seoul'}).format(new Date(v)):'—';
@@ -13,6 +14,59 @@ async function getJson(url){
   return r.json();
 }
 function setSignal(id,textId,ok,text){ $(id).className='dot '+(ok?'ok':'fail'); $(textId).textContent=text; }
+
+
+function parseBatch(commit){
+  const msg=(commit.commit&&commit.commit.message||'').split('\n')[0];
+  const m=msg.match(/^Add\s+(\d+)\s+academic paper analyses/i);
+  if(!m)return null;
+  return {count:Number(m[1]),date:new Date(commit.commit.author.date),sha:String(commit.sha).slice(0,7),msg};
+}
+function median(values){
+  if(!values.length)return null;
+  const a=values.slice().sort((x,y)=>x-y),mid=Math.floor(a.length/2);
+  return a.length%2?a[mid]:(a[mid-1]+a[mid])/2;
+}
+function humanGap(ms){
+  if(ms==null||!Number.isFinite(ms))return '—';
+  const min=Math.round(ms/60000);
+  if(min<60)return min+'m';
+  const hr=min/60;
+  return (hr>=10?Math.round(hr):hr.toFixed(1))+'h';
+}
+function renderAutomation(commits,runs){
+  const now=Date.now();
+  const batches=(commits||[]).map(parseBatch).filter(Boolean).sort((a,b)=>b.date-a.date);
+  const recent=batches.filter(b=>now-b.date.getTime()<=DAY);
+  const output=recent.reduce((s,b)=>s+b.count,0);
+  const gaps=[];
+  for(let i=0;i<recent.length-1;i++)gaps.push(recent[i].date-recent[i+1].date);
+  const med=median(gaps);
+  const abnormal=gaps.filter(g=>g>2.25*60*60*1000).length;
+  const failed=(runs.workflow_runs||[]).filter(r=>r.status==='completed'&&r.conclusion&&r.conclusion!=='success').length;
+  const last=batches[0]||null;
+  const age=last?now-last.date.getTime():Infinity;
+
+  $('lastBatch').textContent=last?last.count+' PAPERS':'—';
+  $('lastBatchAgo').textContent=last?timeFmt(last.date)+' · '+humanGap(age)+' ago':'no signal';
+  $('output24h').textContent=fmt(output);
+  $('batches24h').textContent=fmt(recent.length);
+  $('avgBatch').textContent=recent.length?(output/recent.length).toFixed(1):'—';
+  $('cadence').textContent=humanGap(med);
+  $('gapCount').textContent=abnormal;
+  $('failedDeploys').textContent=failed;
+  $('lastSignal').textContent=last?humanGap(age):'—';
+
+  $('batchTimeline').innerHTML=recent.slice(0,14).map(b=>`<div class="batch-row"><span>${timeFmt(b.date)}</span><b>${b.msg}</b><i>+${b.count}</i><small>${b.sha}</small></div>`).join('')||'<div class="batch-row"><b>최근 24시간 생성 커밋 없음</b></div>';
+
+  const healthy=last&&age<2.25*60*60*1000&&failed===0;
+  const watch=last&&age<4*60*60*1000;
+  $('automationBadge').textContent=healthy?'ACTIVE':watch?'WATCH':'ATTENTION';
+  $('automationBadge').className='state '+(healthy?'good':watch?'warn':'bad');
+  $('incidentLevel').textContent=healthy?'CLEAR':watch?'WATCH':'ATTENTION';
+  $('incidentCopy').textContent=healthy?'최근 생성 주기와 배포 흐름이 정상 범위입니다.':watch?'최근 생성 신호가 평소보다 지연되고 있습니다.':'최근 생성 신호가 오래되었거나 배포 실패가 감지되었습니다.';
+  $('incidentLight').className='incident-light '+(healthy?'good':watch?'warn':'bad');
+}
 
 function analyze(papers){
   const cats={},dois=new Map(); let verified=0,sections=0,duplicateDois=0,minYear=9999,maxYear=0;
@@ -58,7 +112,7 @@ async function load(){
   }
 
   try{
-    const [runs,commits]=await Promise.all([getJson(API+'/actions/runs?per_page=5'),getJson(API+'/commits?per_page=6')]);
+    const [runs,commits]=await Promise.all([getJson(API+'/actions/runs?per_page=20'),getJson(API+'/commits?per_page=50')]);
     const run=runs.workflow_runs&&runs.workflow_runs[0];
     deployOK=!!run&&run.status==='completed'&&run.conclusion==='success';
     $('deployBadge').textContent=deployOK?'DEPLOYED':'ATTENTION'; $('deployBadge').className='state '+(deployOK?'good':'warn');
@@ -66,6 +120,7 @@ async function load(){
     $('deployStatus').textContent=run?(run.conclusion||run.status).toUpperCase():'—'; $('deployRun').textContent=run?'#'+run.run_number:'—'; $('deploySha').textContent=run?String(run.head_sha).slice(0,7):'—';
     $('commitList').innerHTML=(commits||[]).slice(0,5).map(c=>`<div class="commit"><span>${c.commit.message.split('\n')[0]}</span><small>${String(c.sha).slice(0,7)} · ${timeFmt(c.commit.author.date)}</small></div>`).join('');
     setSignal('sigDeploy','sigDeployText',deployOK,deployOK?'GitHub Pages 최신 배포 성공':'최근 배포 확인 필요');
+    renderAutomation(commits,runs);
   }catch(e){
     $('deployBadge').textContent='UNAVAILABLE'; $('deployBadge').className='state warn'; setSignal('sigDeploy','sigDeployText',false,'GitHub API 조회 실패');
   }
