@@ -491,6 +491,24 @@
       <div class="two-col"><div><p class="eyebrow">SERIES RELIABILITY</p><div id="reliability"></div></div><div><p class="eyebrow">RECENT EXECUTIONS</p><div id="runTable" class="run-table"></div></div></div>
     </section>
 
+    <section class="incident-command panel" id="incident-command">
+      <div class="incident-command-head">
+        <div>
+          <p class="eyebrow">INCIDENT COMMAND</p>
+          <h2>Operational Incident Radar</h2>
+          <p>최근 장애·경고·Busy·복구 이벤트를 심각도와 시간순으로 정리합니다.</p>
+        </div>
+        <div class="incident-level"><span id="incidentLevelOrb"></span><div><small>CURRENT LEVEL</small><b id="incidentLevel">SCANNING</b></div></div>
+      </div>
+      <div class="incident-kpi-grid">
+        <div><span>CRITICAL</span><strong id="incidentCritical">—</strong><small>recent critical/error</small></div>
+        <div><span>WARNING</span><strong id="incidentWarning">—</strong><small>delay/busy/warning</small></div>
+        <div><span>RECOVERY</span><strong id="incidentRecovery">—</strong><small>recovery signals</small></div>
+        <div><span>LAST SIGNAL</span><strong id="incidentLast">—</strong><small id="incidentLastCopy">latest event</small></div>
+      </div>
+      <div class="incident-radar-list" id="incidentRadarList"><p class="muted">최근 운영 이벤트를 분석 중입니다.</p></div>
+    </section>
+
     <section class="panel" id="events">
       <div class="section-head"><div><p class="eyebrow">OPERATIONAL HISTORY</p><h2>Incident & Event Center</h2></div><span id="eventSync" class="section-state">EVENT SYNC —</span></div>
       <div class="analytics-kpis event-kpis"><div><span>24H ERRORS</span><strong id="eventErrors24h">—</strong></div><div><span>24H WARNINGS</span><strong id="eventWarnings24h">—</strong></div><div><span>LAST INCIDENT</span><strong id="eventLastIncident">—</strong></div><div><span>LAST RECOVERY</span><strong id="eventLastRecovery">—</strong></div></div>
