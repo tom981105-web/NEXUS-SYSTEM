@@ -9,6 +9,7 @@
     {key:'history',label:'HISTORY',file:'system-history.json'}
   ];
   const state={};
+  let latestSourceSnapshot=null;
 
   const $=s=>document.querySelector(s);
   const fmtAge=ms=>{
@@ -43,6 +44,72 @@
     return {cls:'bad',label:'STALE'};
   }
 
+  function renderOverviewIntel(){
+    const usage=state.usage&&state.usage.data;
+    const automation=state.automation&&state.automation.data;
+    const events=state.events&&state.events.data;
+
+    const freshest=SOURCES.map(s=>state[s.key]).filter(e=>e&&e.timestamp&&!e.error).sort((a,b)=>b.timestamp-a.timestamp)[0];
+    const ageMs=freshest?Date.now()-freshest.timestamp.getTime():null;
+    const ageMin=Number.isFinite(ageMs)?Math.floor(ageMs/60000):null;
+    const freshPct=ageMin===null?0:Math.max(0,Math.min(100,100-(ageMin/30*100)));
+    if($('#overviewFreshnessAge'))$('#overviewFreshnessAge').textContent=ageMin===null?'—':fmtAge(ageMs);
+    if($('#overviewFreshnessBar'))$('#overviewFreshnessBar').style.width=freshPct+'%';
+    if($('#overviewFreshnessState')){
+      const cls=ageMin===null?'bad':ageMin<=10?'good':ageMin<=30?'warn':'bad';
+      $('#overviewFreshnessState').textContent=ageMin===null?'UNKNOWN':ageMin<=10?'FRESH':ageMin<=30?'DELAYED':'STALE';
+      $('#overviewFreshnessState').className=cls;
+    }
+    if($('#overviewFreshnessCopy'))$('#overviewFreshnessCopy').textContent=ageMin===null?'최신 타임스탬프를 확인할 수 없습니다.':ageMin<=10?'운영 데이터가 정상 최신 상태입니다.':ageMin<=30?'미러 동기화가 평소보다 늦습니다.':'운영 데이터가 오래되어 원본 상태 확인이 필요합니다.';
+
+    const summary=usage&&usage.summary;
+    const successRate=summary&&Number.isFinite(Number(summary.successRate))?Number(summary.successRate):null;
+    if($('#overviewQualityRate'))$('#overviewQualityRate').textContent=successRate===null?'—':successRate.toFixed(1)+'%';
+    if($('#overviewQualityBar'))$('#overviewQualityBar').style.width=(successRate===null?0:Math.max(0,Math.min(100,successRate)))+'%';
+    if($('#overviewQualityState')){
+      const cls=successRate===null?'neutral':successRate>=98?'good':successRate>=90?'warn':'bad';
+      $('#overviewQualityState').textContent=successRate===null?'NO DATA':successRate>=98?'EXCELLENT':successRate>=90?'WATCH':'ATTENTION';
+      $('#overviewQualityState').className=cls;
+    }
+    if($('#overviewQualityCopy')){
+      const runs=summary&&summary.runs!=null?summary.runs:'—';
+      const failed=summary&&summary.failed!=null?summary.failed:'—';
+      $('#overviewQualityCopy').textContent='최근 '+runs+'회 실행 · 실패 '+failed+'회';
+    }
+
+    const list=(events&&Array.isArray(events.events)?events.events:[]).slice(0,5);
+    const bad=list.filter(e=>/error|fail|critical/i.test(String(e.level||e.type||e.status||''))).length;
+    const warn=list.filter(e=>/warn|busy|delay|skip/i.test(String(e.level||e.type||e.status||''))).length;
+    if($('#overviewSignalCount'))$('#overviewSignalCount').textContent=bad+warn;
+    if($('#overviewSignalState')){
+      const cls=bad?'bad':warn?'warn':'good';
+      $('#overviewSignalState').textContent=bad?'ATTENTION':warn?'WATCH':'CLEAR';
+      $('#overviewSignalState').className=cls;
+    }
+    if($('#overviewSignalCopy'))$('#overviewSignalCopy').textContent=bad?'최근 중요 이상 이벤트가 있습니다.':warn?'최근 주의 이벤트가 감지되었습니다.':'최근 이벤트에서 중요 이상징후가 없습니다.';
+    const dots=$('#overviewSignalDots');
+    if(dots){
+      const states=list.map(e=>/error|fail|critical/i.test(String(e.level||e.type||e.status||''))?'bad':/warn|busy|delay|skip/i.test(String(e.level||e.type||e.status||''))?'warn':'good');
+      dots.innerHTML=[0,1,2,3,4].map(i=>'<i class="'+(states[i]||'')+'"></i>').join('');
+    }
+
+    const series=(automation&&Array.isArray(automation.series)?automation.series:[]).filter(x=>x.name!=='자동화 상태');
+    const monitoredNames=['크레스트','묵수','신수','수채화','펄퍼스','잉크','성수','융화'];
+    const rows=monitoredNames.map(n=>series.find(x=>x.name===n)).filter(Boolean);
+    const grid=$('#overviewSeriesGrid');
+    if(grid){
+      grid.innerHTML=rows.map(x=>{
+        const age=x.lastSavedAt?Date.now()-new Date(x.lastSavedAt).getTime():null;
+        const dot=age===null?'':age<=24*60*60*1000?'good':'warn';
+        return '<div class="overview-series-item"><div class="top"><b>'+x.name+'</b><i class="'+dot+'"></i></div><strong>'+(x.todayCount||0)+' <small>TODAY</small></strong><small>'+(x.lastFile||'최근 파일 없음')+'</small><small>TOTAL '+(x.totalCount||0)+' · '+fmtDate(x.lastSavedAt)+'</small></div>';
+      }).join('')||'<div class="overview-series-loading">시리즈 상태 데이터가 없습니다.</div>';
+    }
+    if($('#overviewSeriesSummary')){
+      const today=rows.reduce((a,x)=>a+(x.todayCount||0),0);
+      $('#overviewSeriesSummary').textContent=rows.length+' SERIES · '+today+' TODAY';
+    }
+  }
+
   function render(){
     const grid=$('#sourceGrid');
     if(!grid)return;
@@ -62,6 +129,7 @@
     }).join('');
 
     if($('#sourceCount'))$('#sourceCount').textContent=connected+' / '+SOURCES.length;
+    renderOverviewIntel();
     if($('#sourceChecked'))$('#sourceChecked').textContent=fmtTime(new Date());
     if($('#dataAge'))$('#dataAge').textContent=newest?fmtAge(Date.now()-newest.getTime()):'UNKNOWN';
 
@@ -78,7 +146,7 @@
       const r=await fetch(src.file+'?nexus='+Date.now(),{cache:'no-store'});
       if(!r.ok)throw new Error('HTTP '+r.status);
       const data=await r.json();
-      state[src.key]={timestamp:extractTimestamp(data),error:null};
+      state[src.key]={timestamp:extractTimestamp(data),error:null,data};
     }catch(error){
       state[src.key]={timestamp:null,error:String(error)};
     }
