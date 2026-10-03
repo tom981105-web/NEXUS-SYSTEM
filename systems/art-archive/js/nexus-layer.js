@@ -2,11 +2,11 @@
   'use strict';
 
   const SOURCES=[
-    {key:'automation',label:'AUTOMATION',file:'automation-status.json'},
-    {key:'runtime',label:'RUNTIME',file:'system-status.json'},
-    {key:'usage',label:'USAGE',file:'system-usage.json'},
-    {key:'events',label:'EVENTS',file:'system-events.json'},
-    {key:'history',label:'HISTORY',file:'system-history.json'}
+    {key:'automation',label:'AUTOMATION',file:'automation-status.json',url:'https://raw.githubusercontent.com/tom981105-web/art-archive/main/automation-status.json'},
+    {key:'runtime',label:'RUNTIME',file:'system-status.json',url:'https://raw.githubusercontent.com/tom981105-web/art-archive/main/system-status.json'},
+    {key:'usage',label:'USAGE',file:'system-usage.json',url:'https://raw.githubusercontent.com/tom981105-web/art-archive/main/system-usage.json'},
+    {key:'events',label:'EVENTS',file:'system-events.json',url:'https://raw.githubusercontent.com/tom981105-web/art-archive/main/system-events.json'},
+    {key:'history',label:'HISTORY',file:'system-history.json',url:'https://raw.githubusercontent.com/tom981105-web/art-archive/main/system-history.json'}
   ];
   const state={};
   let latestSourceSnapshot=null;
@@ -114,6 +114,39 @@
     if($('#liveRoomTimestamp'))$('#liveRoomTimestamp').textContent='LAST CHECK '+fmtTime(new Date());
   }
 
+  function renderIncidentRadar(){
+    const events=state.events&&state.events.data&&Array.isArray(state.events.data.events)?state.events.data.events:[];
+    const recent=events.slice(0,12);
+    const classify=e=>{
+      const s=String([e.level,e.type,e.status,e.result,e.message].filter(Boolean).join(' ')).toLowerCase();
+      if(/critical|error|failed|failure/.test(s))return 'bad';
+      if(/warning|warn|busy|delay|skip|degraded/.test(s))return 'warn';
+      if(/recover|success|resolved|normal|ok/.test(s))return 'good';
+      return 'neutral';
+    };
+    const critical=recent.filter(e=>classify(e)==='bad').length;
+    const warning=recent.filter(e=>classify(e)==='warn').length;
+    const recovery=recent.filter(e=>classify(e)==='good'&&/recover|resolved|success|normal|ok/i.test(String([e.type,e.status,e.result,e.message].filter(Boolean).join(' ')))).length;
+    if($('#incidentCritical'))$('#incidentCritical').textContent=critical;
+    if($('#incidentWarning'))$('#incidentWarning').textContent=warning;
+    if($('#incidentRecovery'))$('#incidentRecovery').textContent=recovery;
+    const latest=recent[0];
+    const latestTime=latest&&(latest.time||latest.timestamp||latest.createdAt||latest.at);
+    if($('#incidentLast'))$('#incidentLast').textContent=latestTime?fmtTime(new Date(latestTime)):'—';
+    if($('#incidentLastCopy'))$('#incidentLastCopy').textContent=latest?(latest.service||latest.source||latest.type||'latest event'):'no events';
+    const level=critical?'ATTENTION':warning?'WATCH':'CLEAR',cls=critical?'bad':warning?'warn':'good';
+    if($('#incidentLevel')){$('#incidentLevel').textContent=level;$('#incidentLevel').className=cls}
+    if($('#incidentLevelOrb'))$('#incidentLevelOrb').className=cls;
+    const box=$('#incidentRadarList');
+    if(box)box.innerHTML=recent.length?recent.map(e=>{
+      const c=classify(e),sev=c==='bad'?'CRITICAL':c==='warn'?'WARNING':c==='good'?'RECOVERY':'INFO';
+      const t=e.time||e.timestamp||e.createdAt||e.at;
+      const svc=e.service||e.source||e.category||e.type||'SYSTEM';
+      const msg=e.message||e.detail||e.reason||e.status||e.result||'Event recorded';
+      return '<div class="incident-radar-item '+c+'"><span class="sev">'+sev+'</span><time>'+ (t?fmtTime(new Date(t)):'—') +'</time><b>'+String(svc)+'</b><small>'+String(msg)+'</small></div>';
+    }).join(''):'<p class="muted">최근 운영 이벤트가 없습니다.</p>';
+  }
+
   function renderOverviewIntel(){
     const usage=state.usage&&state.usage.data;
     const automation=state.automation&&state.automation.data;
@@ -201,6 +234,7 @@
     if($('#sourceCount'))$('#sourceCount').textContent=connected+' / '+SOURCES.length;
     renderOverviewIntel();
     renderLiveSystemRoom();
+    renderIncidentRadar();
     if($('#sourceChecked'))$('#sourceChecked').textContent=fmtTime(new Date());
     if($('#dataAge'))$('#dataAge').textContent=newest?fmtAge(Date.now()-newest.getTime()):'UNKNOWN';
 
@@ -214,7 +248,7 @@
 
   async function checkSource(src){
     try{
-      const r=await fetch(src.file+'?nexus='+Date.now(),{cache:'no-store'});
+      const r=await fetch(src.url+'?nexus='+Date.now(),{cache:'no-store'});
       if(!r.ok)throw new Error('HTTP '+r.status);
       const data=await r.json();
       state[src.key]={timestamp:extractTimestamp(data),error:null,data};
