@@ -44,6 +44,25 @@
     return {cls:'bad',label:'STALE'};
   }
 
+  function updateDataModeFromRouter(){
+    const map=window.__ART_DATA_SOURCES__||{};
+    const rows=Object.values(map);
+    if(!rows.length)return;
+    const nexus=rows.filter(x=>x.source==='nexus').length;
+    const legacy=rows.filter(x=>x.source==='legacy').length;
+    const mode=nexus&&legacy?'HYBRID':nexus?'NEXUS LIVE':'ART LIVE';
+    if($('#dataMode'))$('#dataMode').textContent=mode;
+    const bridge=$('#bridgeLabel');
+    if(bridge){
+      bridge.textContent=nexus&&legacy
+        ?'CURRENT PIPELINE · HYBRID AUTO-ROUTING'
+        :nexus
+          ?'CURRENT PIPELINE · NEXUS TELEMETRY'
+          :'CURRENT PIPELINE · ART OPERATIONS SOURCE → NEXUS LIVE VIEW';
+    }
+  }
+  window.addEventListener('art-data-source-change',updateDataModeFromRouter);
+
   function setLiveCard(id,stateLabel,cls){
     const card=$(id);
     if(card) card.className='live-service-card '+cls;
