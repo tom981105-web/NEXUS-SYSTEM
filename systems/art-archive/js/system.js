@@ -641,7 +641,7 @@ async function loadStatus(){try{const r=await fetch('automation-status.json?ts='
 async function loadHistory(){
   const urls=[
     'system-history.json?ts='+Date.now(),
-    'https://raw.githubusercontent.com/tom981105-web/art-archive/main/system-history.json?ts='+Date.now()
+    'system-history.json?ts='+Date.now()
   ];
   let lastError=null;
   for(const url of urls){
