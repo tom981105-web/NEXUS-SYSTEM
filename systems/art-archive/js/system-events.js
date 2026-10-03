@@ -1,3 +1,4 @@
+const ART_DATA_BASE_EVENTS='https://raw.githubusercontent.com/tom981105-web/art-archive/main/';
 const eventClass=level=>level==='error'||level==='failure'?'bad':level==='warning'||level==='cancelled'?'warn':level==='success'?'good':'neutral';
 const eventFmt=v=>v?new Date(v).toLocaleString('ko-KR',{month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hour12:false}):'—';
 let systemEventsCache=[];
@@ -43,8 +44,8 @@ async function loadSystemEvents(){
   if(!log||!sync)return;
   try{
     const [er,sr]=await Promise.all([
-      fetch('system-events.json?ts='+Date.now(),{cache:'no-store'}),
-      fetch('system-status.json?ts='+Date.now(),{cache:'no-store'})
+      fetch(ART_DATA_BASE_EVENTS+'system-events.json?ts='+Date.now(),{cache:'no-store'}),
+      fetch(ART_DATA_BASE_EVENTS+'system-status.json?ts='+Date.now(),{cache:'no-store'})
     ]);
     const local=er.ok?await er.json():{events:[]};
     const status=sr.ok?await sr.json():{};
