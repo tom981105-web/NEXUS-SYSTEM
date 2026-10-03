@@ -1,7 +1,16 @@
 {
   "version": "1.4",
-  "updatedAt": "2026-10-03T21:49:10.301Z",
+  "updatedAt": "2026-10-03T22:00:06.518Z",
   "events": [
+    {
+      "id": "2f11f279-25cd-44b0-89a2-0b636f49be98",
+      "at": "2026-10-03T22:00:02.867Z",
+      "service": "Apps Script",
+      "level": "error",
+      "status": "failed",
+      "title": "Apps Script 실행 실패",
+      "message": "Exception: Service error: Drive\n    at getArtworkRootFolder_ (Code:10:25)\n    at getSeriesFolders_ (Code:21:16)\n    at checkArtworkCompletion (Code:106:27)\n    at __GS_INTERNAL_top_function_call__.gs:1:8"
+    },
     {
       "id": "3a3be8bf-11f7-4666-8034-226e0d33cb96",
       "at": "2026-10-03T21:49:05.814Z",
