@@ -30,7 +30,7 @@
       <div class="nav-group">
         <span class="nav-label">CONNECTED SYSTEMS</span>
         <a href="systems/art-archive/"><i>A1</i><span>Art Archive</span></a>
-        <a class="disabled" href="#paper-library" aria-disabled="true"><i>P1</i><span>Paper Library</span></a>
+        <a href="systems/paper-library/"><i>P1</i><span>Paper Library</span></a>
       </div>
     </nav>
 
@@ -62,8 +62,8 @@
         <div class="health-foot"><span>NEXUS</span><span>ART</span><span>PAPER</span><span>LINK</span></div>
       </article>
       <article class="hero-metric panel"><span>REGISTERED SYSTEMS</span><strong>02</strong><small>TOTAL MODULES</small></article>
-      <article class="hero-metric panel"><span>ONLINE</span><strong id="onlineCount">01</strong><small>ACTIVE SYSTEMS</small></article>
-      <article class="hero-metric panel"><span>STANDBY</span><strong id="standbyCount">01</strong><small>PLANNED SYSTEMS</small></article>
+      <article class="hero-metric panel"><span>ONLINE</span><strong id="onlineCount">02</strong><small>ACTIVE SYSTEMS</small></article>
+      <article class="hero-metric panel"><span>STANDBY</span><strong id="standbyCount">00</strong><small>PLANNED SYSTEMS</small></article>
     </section>
 
     <section id="systems" class="systems-section">
@@ -119,7 +119,7 @@
               <h3>PAPER LIBRARY</h3>
               <p>Research paper library operations system</p>
             </div>
-            <span class="status neutral">STANDBY</span>
+            <span class="status neutral" id="paperBadge">CONNECTING</span>
           </div>
 
           <div class="system-visual standby-visual">
@@ -128,19 +128,20 @@
           </div>
 
           <div class="system-metrics">
-            <div><span>HEALTH</span><strong>—</strong></div>
-            <div><span>PAPERS</span><strong>—</strong></div>
-            <div><span>FIELDS</span><strong>—</strong></div>
-            <div><span>STATE</span><strong>BUILD</strong></div>
+            <div><span>HEALTH</span><strong id="paperHealth">—</strong></div>
+            <div><span>PAPERS</span><strong id="paperCount">—</strong></div>
+            <div><span>FIELDS</span><strong id="paperFields">—</strong></div>
+            <div><span>STATE</span><strong id="paperState">LIVE</strong></div>
           </div>
 
           <div class="system-route">
             <div>
-              <span>NEXT MODULE</span>
-              <code>Paper Library System</code>
+              <span>ENDPOINT</span>
+              <code>/NEXUS-SYSTEM/systems/paper-library/</code>
             </div>
             <div class="route-actions">
-              <span class="disabled-btn">SYSTEM NOT CONNECTED</span>
+              <a class="secondary-btn" href="https://tom981105-web.github.io/paper/">VIEW LIBRARY</a>
+              <a class="primary-btn" href="systems/paper-library/">ENTER SYSTEM →</a>
             </div>
           </div>
         </article>
@@ -155,7 +156,7 @@
       <div class="status-table">
         <div class="status-row header"><span>NODE</span><span>SYSTEM</span><span>CONNECTION</span><span>HEALTH</span><span>ACTION</span></div>
         <div class="status-row"><span>A1</span><b>ART ARCHIVE</b><span class="good">● CONNECTED</span><span id="tableArtHealth">CHECKING</span><a href="systems/art-archive/">OPEN →</a></div>
-        <div class="status-row"><span>P1</span><b>PAPER LIBRARY</b><span class="neutral">○ STANDBY</span><span>NOT BUILT</span><span class="muted">PENDING</span></div>
+        <div class="status-row"><span>P1</span><b>PAPER LIBRARY</b><span class="good">● CONNECTED</span><span id="tablePaperHealth">CHECKING</span><a href="systems/paper-library/">OPEN →</a></div>
       </div>
     </section>
 
