@@ -1,21 +1,21 @@
 {
   "version": "1.8",
-  "updatedAt": "2026-10-03T21:49:06.850Z",
+  "updatedAt": "2026-10-03T22:00:03.538Z",
   "timezone": "Asia/Seoul",
-  "overallStatus": "ok",
+  "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-03T21:49:00.267Z",
-      "finishedAt": "2026-10-03T21:49:05.365Z",
-      "result": "skipped",
-      "durationMs": 5098,
-      "error": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
+      "startedAt": "2026-10-03T22:00:00.288Z",
+      "finishedAt": "2026-10-03T22:00:02.599Z",
+      "result": "failed",
+      "durationMs": 2311,
+      "error": "Exception: Service error: Drive\n    at getArtworkRootFolder_ (Code:10:25)\n    at getSeriesFolders_ (Code:21:16)\n    at checkArtworkCompletion (Code:106:27)\n    at __GS_INTERNAL_top_function_call__.gs:1:8"
     },
-    "consecutiveFailures": 0,
-    "busyOrSkipped": true,
-    "busyReason": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀",
+    "consecutiveFailures": 1,
+    "busyOrSkipped": false,
+    "busyReason": null,
     "triggerInventoryAvailable": false
   },
   "notionSync": {
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-03T21:49:07.787Z",
+    "updatedAt": "2026-10-03T22:00:04.220Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
