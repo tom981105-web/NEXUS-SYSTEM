@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#090b0b">
+  <title>PAPER LIBRARY SYSTEM · NEXUS</title>
+  <link rel="stylesheet" href="css/system.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="side">
+    <a class="brand" href="../../index.html"><span>◒</span><b>NEXUS SYSTEM</b><small>NODE P1 · PAPER</small></a>
+    <nav>
+      <a class="active" href="#overview">01 Overview</a>
+      <a href="#library">02 Library</a>
+      <a href="#fields">03 Fields</a>
+      <a href="#deploy">04 Deploy</a>
+      <a href="#signals">05 Signals</a>
+    </nav>
+    <div class="side-foot"><span>PUBLIC SOURCE</span><b>tom981105-web/paper</b><small id="clock">--:--:--</small></div>
+  </aside>
+
+  <main>
+    <header id="overview">
+      <div>
+        <p class="eyebrow">NEXUS / PAPER LIBRARY / OPERATIONS</p>
+        <h1>Paper Library System</h1>
+        <p class="sub">논문 수집·분석·검증·배포 상태를 한 화면에서 관제합니다.</p>
+      </div>
+      <div class="actions">
+        <span class="state good" id="overall">CONNECTING</span>
+        <button id="refresh">↻ REFRESH</button>
+      </div>
+    </header>
+
+    <section class="node-strip">
+      <div><span>SYSTEM NODE</span><b>P1</b></div>
+      <div><span>HOST</span><b>NEXUS</b></div>
+      <div><span>DATA MODE</span><b>LIVE SOURCE</b></div>
+      <div><span>LIBRARY</span><b id="stripCount">—</b></div>
+      <div><span>LAST SYNC</span><b id="lastSync">—</b></div>
+    </section>
+
+    <section class="hero-grid">
+      <article class="panel health">
+        <div class="head"><span>SYSTEM HEALTH</span><span class="state good" id="healthBadge">CHECKING</span></div>
+        <div class="score"><strong id="healthScore">—</strong><i>%</i></div>
+        <p id="healthCopy">원본 데이터와 배포 상태를 확인하고 있습니다.</p>
+        <div class="track"><i id="healthLine"></i></div>
+      </article>
+      <article class="panel metric"><span>TOTAL PAPERS</span><strong id="paperCount">—</strong><small>VERIFIED ANALYSES</small></article>
+      <article class="panel metric"><span>FIELDS</span><strong id="fieldCount">—</strong><small>RESEARCH DOMAINS</small></article>
+      <article class="panel metric"><span>SECTIONS</span><strong id="sectionCount">—</strong><small>ANALYSIS BLOCKS</small></article>
+    </section>
+
+    <section class="grid two" id="library">
+      <article class="panel">
+        <div class="section-head"><div><p class="eyebrow">LIBRARY INTELLIGENCE</p><h2>Repository Snapshot</h2></div><span id="verifiedBadge" class="state good">—</span></div>
+        <div class="kpis">
+          <div><span>VERIFIED</span><b id="verifiedCount">—</b></div>
+          <div><span>YEAR RANGE</span><b id="yearRange">—</b></div>
+          <div><span>AVG SECTIONS</span><b id="avgSections">—</b></div>
+          <div><span>DATA SIZE</span><b id="indexSize">—</b></div>
+        </div>
+        <div class="latest" id="latestPapers"></div>
+      </article>
+
+      <article class="panel" id="fields">
+        <div class="section-head"><div><p class="eyebrow">DOMAIN DISTRIBUTION</p><h2>Research Fields</h2></div><span class="mini" id="fieldSummary">—</span></div>
+        <div id="fieldBars" class="bars"></div>
+      </article>
+    </section>
+
+    <section class="grid two">
+      <article class="panel" id="deploy">
+        <div class="section-head"><div><p class="eyebrow">DELIVERY PIPELINE</p><h2>GitHub Pages Deployment</h2></div><span class="state neutral" id="deployBadge">CHECKING</span></div>
+        <div class="deploy-card">
+          <div class="deploy-main"><span>LAST DEPLOY</span><b id="deployTitle">—</b><small id="deployTime">—</small></div>
+          <div class="deploy-stats">
+            <div><span>STATUS</span><b id="deployStatus">—</b></div>
+            <div><span>RUN</span><b id="deployRun">—</b></div>
+            <div><span>COMMIT</span><b id="deploySha">—</b></div>
+          </div>
+        </div>
+        <div class="commit-list" id="commitList"></div>
+      </article>
+
+      <article class="panel" id="signals">
+        <div class="section-head"><div><p class="eyebrow">DATA QUALITY</p><h2>Operational Signals</h2></div><span class="state good" id="signalBadge">SCANNING</span></div>
+        <div class="signal-list">
+          <div><span class="dot" id="sigIndex"></span><div><b>INDEX SOURCE</b><small id="sigIndexText">확인 중</small></div></div>
+          <div><span class="dot" id="sigVerify"></span><div><b>VERIFICATION</b><small id="sigVerifyText">확인 중</small></div></div>
+          <div><span class="dot" id="sigDoi"></span><div><b>DOI UNIQUENESS</b><small id="sigDoiText">확인 중</small></div></div>
+          <div><span class="dot" id="sigDeploy"></span><div><b>DEPLOYMENT</b><small id="sigDeployText">확인 중</small></div></div>
+        </div>
+        <div class="routes">
+          <a href="https://tom981105-web.github.io/paper/" target="_blank" rel="noreferrer">OPEN PUBLIC LIBRARY ↗</a>
+          <a href="https://github.com/tom981105-web/paper" target="_blank" rel="noreferrer">OPEN REPOSITORY ↗</a>
+        </div>
+      </article>
+    </section>
+
+    <footer>NEXUS SYSTEM · PAPER LIBRARY OPERATIONS · NODE P1</footer>
+  </main>
+</div>
+<script src="js/system.js"></script>
+</body>
+</html>
