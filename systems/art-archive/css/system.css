@@ -562,3 +562,62 @@ footer{display:flex;justify-content:space-between;gap:20px;padding:28px 2px 0;co
 
 .quality-trend{height:220px;min-height:220px}
 .quality-bar{display:block}
+
+
+/* NEXUS ART ARCHIVE v1.0 integration layer */
+.nexus-path{
+  height:34px;display:flex;align-items:flex-end;gap:8px;padding:0 2px 8px;
+  border-bottom:1px solid rgba(255,255,255,.045);
+  color:#4f5a56;font:8px var(--mono);letter-spacing:.12em
+}
+.nexus-path a{color:#71807a;text-decoration:none}.nexus-path a:hover{color:var(--ok)}
+.nexus-path b{color:#9ba8a3;font-weight:500}.nexus-path em{font-style:normal;color:#59645f}
+.nexus-system-strip{
+  margin-top:16px;min-height:70px;display:grid;
+  grid-template-columns:1.4fr repeat(5,minmax(90px,.72fr)) 1fr;
+  border:1px solid rgba(255,255,255,.075);border-radius:12px;overflow:hidden;
+  background:#0d1111
+}
+.nexus-system-strip>div{padding:12px 14px;border-right:1px solid #222929;display:flex;flex-direction:column;justify-content:center;min-width:0}
+.nexus-system-strip>div:last-child{border-right:0}
+.system-identity{flex-direction:row!important;align-items:center;gap:11px!important}
+.node-badge{
+  width:34px;height:34px;border:1px solid #365043;border-radius:9px;
+  display:grid;place-items:center;color:var(--ok);font:10px var(--mono);
+  background:#111a15;flex:0 0 auto
+}
+.nexus-system-strip small{color:#55615c;font:7px var(--mono);letter-spacing:.12em}
+.nexus-system-strip b{margin-top:5px;color:#cbd5d1;font:10px var(--mono);font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.system-strip-state{flex-direction:row!important;align-items:center!important;gap:8px}
+.system-strip-state span{width:8px;height:8px;border-radius:50%;background:#69726f}
+.system-strip-state span.good{background:var(--ok);box-shadow:0 0 12px rgba(158,230,178,.3)}
+.system-strip-state span.warn{background:var(--warn);box-shadow:0 0 12px rgba(239,200,120,.22)}
+.system-strip-state span.bad{background:var(--bad);box-shadow:0 0 12px rgba(239,143,143,.22)}
+.system-strip-state b{margin:0}
+.source-monitor{padding:18px 20px!important;margin-top:12px!important}
+.source-monitor-head{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;padding-bottom:14px;border-bottom:1px solid #222929}
+.source-monitor-head h2{margin:0;font-size:18px;letter-spacing:-.03em}
+.source-monitor-head p:not(.eyebrow){margin:6px 0 0;color:#65706c;font-size:10px}
+.source-monitor-meta{text-align:right}.source-monitor-meta span{display:block;color:#55605c;font:7px var(--mono);letter-spacing:.1em}.source-monitor-meta b{display:block;margin-top:5px;color:#929e99;font:9px var(--mono);font-weight:400}
+.source-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin-top:14px}
+.source-card{padding:13px;border:1px solid #242c2b;border-radius:10px;background:#0e1212;position:relative;overflow:hidden}
+.source-card:after{content:"";position:absolute;top:0;left:0;width:2px;height:100%;background:#39423f}
+.source-card.good:after{background:var(--ok)}.source-card.warn:after{background:var(--warn)}.source-card.bad:after{background:var(--bad)}
+.source-card span{display:block;color:#59645f;font:7px var(--mono);letter-spacing:.1em}
+.source-card b{display:block;margin-top:9px;font:11px var(--mono);font-weight:500;color:#aeb8b4}
+.source-card.good b{color:var(--ok)}.source-card.warn b{color:var(--warn)}.source-card.bad b{color:var(--bad)}
+.source-card small{display:block;margin-top:5px;color:#4e5854;font:7px var(--mono);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.source-card .source-age{margin-top:9px;color:#7b8782;font:8px var(--mono)}
+.source-foot{display:flex;justify-content:space-between;gap:12px;margin-top:13px;padding-top:11px;border-top:1px solid #1f2625;color:#4d5753;font:7px var(--mono);letter-spacing:.08em}
+@media(max-width:1250px){
+  .nexus-system-strip{grid-template-columns:repeat(4,1fr)}
+  .nexus-system-strip>div{border-bottom:1px solid #222929}
+  .source-grid{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:760px){
+  .nexus-path{display:none}
+  .nexus-system-strip{grid-template-columns:repeat(2,1fr);margin-top:12px}
+  .source-grid{grid-template-columns:1fr}
+  .source-monitor-head,.source-foot{flex-direction:column;align-items:flex-start}
+  .source-monitor-meta{text-align:left}
+}
