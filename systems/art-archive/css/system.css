@@ -647,3 +647,37 @@ footer{display:flex;justify-content:space-between;gap:20px;padding:28px 2px 0;co
 .overview-series-loading{grid-column:1/-1;padding:20px;border:1px dashed #29302f;border-radius:10px;color:#59635f;font:9px var(--mono)}
 @media(max-width:1200px){.overview-intel-grid{grid-template-columns:repeat(2,1fr)}.overview-series-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:760px){.overview-intel-grid,.overview-series-grid{grid-template-columns:1fr}.overview-control-actions{grid-template-columns:1fr}.overview-series-head{flex-direction:column}}
+
+/* ART ARCHIVE Live System Room v1.2 */
+.live-system-room{padding:19px 20px!important;margin-top:12px!important}
+.live-room-head{display:flex;justify-content:space-between;align-items:flex-start;gap:24px;padding-bottom:15px;border-bottom:1px solid #232929}
+.live-room-head h2{margin:0;font-size:19px;letter-spacing:-.035em}
+.live-room-head p:not(.eyebrow){margin:6px 0 0;color:#66716d;font-size:10px}
+.live-room-overall{display:flex;align-items:center;gap:9px;border:1px solid #28312f;border-radius:10px;padding:9px 11px;background:#0e1212}
+.live-room-overall>span{width:9px;height:9px;border-radius:50%;background:#626b68}
+.live-room-overall>span.good{background:var(--ok);box-shadow:0 0 12px rgba(158,230,178,.3)}
+.live-room-overall>span.warn{background:var(--warn);box-shadow:0 0 12px rgba(239,200,120,.25)}
+.live-room-overall>span.bad{background:var(--bad);box-shadow:0 0 12px rgba(239,143,143,.25)}
+.live-room-overall small{display:block;color:#56615d;font:7px var(--mono);letter-spacing:.1em}
+.live-room-overall b{display:block;margin-top:3px;font:9px var(--mono);font-weight:500;color:#bac4c0}
+.live-service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin-top:15px}
+.live-service-card{border:1px solid #242c2b;border-radius:11px;background:linear-gradient(180deg,#111616,#0e1212);padding:14px;min-width:0;position:relative;overflow:hidden}
+.live-service-card:after{content:"";position:absolute;left:0;top:0;width:2px;height:100%;background:#39423f}
+.live-service-card.good:after{background:var(--ok)}.live-service-card.warn:after{background:var(--warn)}.live-service-card.bad:after{background:var(--bad)}
+.live-service-top{display:grid;grid-template-columns:34px 1fr auto;gap:9px;align-items:center}
+.live-service-icon{width:34px;height:34px;border:1px solid #303a37;border-radius:9px;display:grid;place-items:center;background:#141a18;color:#94a09b;font:10px var(--mono)}
+.live-service-top small{display:block;color:#53605b;font:7px var(--mono);letter-spacing:.1em}
+.live-service-top h3{margin:3px 0 0;font-size:12px}
+.live-service-top>b{font:8px var(--mono);font-weight:500;color:#7f8a86}
+.live-service-card.good .live-service-top>b{color:var(--ok)}.live-service-card.warn .live-service-top>b{color:var(--warn)}.live-service-card.bad .live-service-top>b{color:var(--bad)}
+.live-service-kpis{display:grid;grid-template-columns:1fr 1fr;gap:1px;margin-top:13px;border:1px solid #232a29;background:#232a29;border-radius:8px;overflow:hidden}
+.live-service-kpis>div{background:#0f1313;padding:10px;min-width:0}
+.live-service-kpis span{display:block;color:#525d59;font:6px var(--mono);letter-spacing:.08em}
+.live-service-kpis strong{display:block;margin-top:6px;color:#b8c2be;font:10px var(--mono);font-weight:400;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.live-service-card>p{margin:11px 0 0;color:#66716d;font:8px var(--mono);line-height:1.55;min-height:26px}
+.live-room-foot{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-top:14px;padding-top:12px;border-top:1px solid #202726}
+.live-room-foot>span{color:#53605b;font:7px var(--mono);letter-spacing:.09em}
+.live-room-links{display:flex;gap:7px}.live-room-links a{padding:7px 9px;border:1px solid #29312f;border-radius:7px;text-decoration:none;color:#84908b;font:7px var(--mono)}
+.live-room-links a:hover{color:#dce5e1;border-color:#45514d}
+@media(max-width:1200px){.live-service-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:760px){.live-room-head,.live-room-foot{flex-direction:column;align-items:flex-start}.live-service-grid{grid-template-columns:1fr}.live-room-links{flex-wrap:wrap}}
