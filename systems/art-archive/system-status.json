@@ -1,16 +1,16 @@
 {
   "version": "1.8",
-  "updatedAt": "2026-10-03T21:47:05.640Z",
+  "updatedAt": "2026-10-03T21:49:06.850Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "ok",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-03T21:46:59.972Z",
-      "finishedAt": "2026-10-03T21:47:05.060Z",
+      "startedAt": "2026-10-03T21:49:00.267Z",
+      "finishedAt": "2026-10-03T21:49:05.365Z",
       "result": "skipped",
-      "durationMs": 5088,
+      "durationMs": 5098,
       "error": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
     },
     "consecutiveFailures": 0,
@@ -30,9 +30,9 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-03T21:47:06.106Z",
-    "fetchResult": "failed",
-    "error": "GitHub API 조회 실패 (/actions/runs?branch=main&per_page=10, HTTP 503): {\"message\": \"No server is currently available to service your request. Sorry about that. Please try resubmitting your request and contact us if the problem persists.\"}\r\n",
+    "updatedAt": "2026-10-03T21:49:07.787Z",
+    "fetchResult": "success",
+    "error": null,
     "latestRun": {
       "id": 37154953680,
       "name": "pages build and deployment",
