@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#090b0b">
+  <title>NEXUS SYSTEM</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar">
+    <a class="brand" href="#overview" aria-label="NEXUS SYSTEM">
+      <span class="brand-mark">◒</span>
+      <span class="brand-copy"><b>NEXUS SYSTEM</b><small>INTEGRATED CONTROL</small></span>
+    </a>
+
+    <div class="env-card">
+      <span class="live-orb"></span>
+      <div><b>PRODUCTION</b><small>CONTROL ENVIRONMENT</small></div>
+    </div>
+
+    <nav class="nav-groups">
+      <div class="nav-group">
+        <span class="nav-label">COMMAND</span>
+        <a class="active" href="#overview"><i>01</i><span>Overview</span></a>
+        <a href="#systems"><i>02</i><span>Systems</span></a>
+        <a href="#status"><i>03</i><span>Status</span></a>
+      </div>
+      <div class="nav-group">
+        <span class="nav-label">CONNECTED SYSTEMS</span>
+        <a href="https://tom981105-web.github.io/art-archive/system.html"><i>A1</i><span>Art Archive</span></a>
+        <a class="disabled" href="#paper-library" aria-disabled="true"><i>P1</i><span>Paper Library</span></a>
+      </div>
+    </nav>
+
+    <div class="side-foot">
+      <div><span>LOCAL TIME</span><b id="clock">--:--:--</b></div>
+      <span class="build">NEXUS / CONTROL NODE 01</span>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="command-bar" id="overview">
+      <div>
+        <p class="eyebrow">NEXUS / INTEGRATED OPERATIONS</p>
+        <h1>Systems Command Center</h1>
+        <p class="page-sub">독립된 시스템을 하나의 상위 관제 화면에서 연결하고 상태를 확인합니다.</p>
+      </div>
+      <div class="command-actions">
+        <div class="sync-chip"><span></span><b id="lastSync">SYNC —</b></div>
+        <button id="refresh" class="refresh-btn">↻ REFRESH</button>
+      </div>
+    </header>
+
+    <section class="overview-grid">
+      <article class="health-card panel">
+        <div class="card-head"><span>NEXUS HEALTH</span><span class="status good" id="nexusBadge">OPERATIONAL</span></div>
+        <div class="health-score"><strong id="healthScore">100</strong><span>%</span></div>
+        <p id="healthCopy">상위 관제 노드가 정상 동작 중입니다.</p>
+        <div class="health-track"><i id="healthLine"></i></div>
+        <div class="health-foot"><span>NEXUS</span><span>ART</span><span>PAPER</span><span>LINK</span></div>
+      </article>
+      <article class="hero-metric panel"><span>REGISTERED SYSTEMS</span><strong>02</strong><small>TOTAL MODULES</small></article>
+      <article class="hero-metric panel"><span>ONLINE</span><strong id="onlineCount">01</strong><small>ACTIVE SYSTEMS</small></article>
+      <article class="hero-metric panel"><span>STANDBY</span><strong id="standbyCount">01</strong><small>PLANNED SYSTEMS</small></article>
+    </section>
+
+    <section id="systems" class="systems-section">
+      <div class="section-title-row">
+        <div>
+          <p class="eyebrow">CONNECTED MODULES</p>
+          <h2>System Registry</h2>
+          <p>각 시스템은 독립적으로 운영되며 NEXUS에서 상태와 진입점을 통합 관리합니다.</p>
+        </div>
+        <span class="registry-state">02 REGISTERED</span>
+      </div>
+
+      <div class="system-grid">
+        <article class="system-card panel art-card" id="art-archive">
+          <div class="system-card-top">
+            <div>
+              <span class="system-index">SYSTEM A1</span>
+              <h3>ART ARCHIVE</h3>
+              <p>Illustration archive operations system</p>
+            </div>
+            <span class="status good" id="artBadge">CONNECTING</span>
+          </div>
+
+          <div class="system-visual">
+            <div class="visual-orbit orbit-one"></div>
+            <div class="visual-orbit orbit-two"></div>
+            <div class="visual-core"><span>◒</span><b>ART</b></div>
+          </div>
+
+          <div class="system-metrics">
+            <div><span>HEALTH</span><strong id="artHealth">—</strong></div>
+            <div><span>ARCHIVE</span><strong id="artWorks">—</strong></div>
+            <div><span>SERIES</span><strong id="artSeries">—</strong></div>
+            <div><span>STATE</span><strong id="artState">LIVE</strong></div>
+          </div>
+
+          <div class="system-route">
+            <div>
+              <span>ENDPOINT</span>
+              <code>/art-archive/system.html</code>
+            </div>
+            <div class="route-actions">
+              <a class="secondary-btn" href="https://tom981105-web.github.io/art-archive/">VIEW ARCHIVE</a>
+              <a class="primary-btn" href="https://tom981105-web.github.io/art-archive/system.html">ENTER SYSTEM →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="system-card panel paper-card" id="paper-library">
+          <div class="system-card-top">
+            <div>
+              <span class="system-index">SYSTEM P1</span>
+              <h3>PAPER LIBRARY</h3>
+              <p>Research paper library operations system</p>
+            </div>
+            <span class="status neutral">STANDBY</span>
+          </div>
+
+          <div class="system-visual standby-visual">
+            <div class="visual-grid"></div>
+            <div class="visual-core"><span>◇</span><b>PAPER</b></div>
+          </div>
+
+          <div class="system-metrics">
+            <div><span>HEALTH</span><strong>—</strong></div>
+            <div><span>PAPERS</span><strong>—</strong></div>
+            <div><span>FIELDS</span><strong>—</strong></div>
+            <div><span>STATE</span><strong>BUILD</strong></div>
+          </div>
+
+          <div class="system-route">
+            <div>
+              <span>NEXT MODULE</span>
+              <code>Paper Library System</code>
+            </div>
+            <div class="route-actions">
+              <span class="disabled-btn">SYSTEM NOT CONNECTED</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel status-panel" id="status">
+      <div class="section-head">
+        <div><p class="eyebrow">NETWORK STATUS</p><h2>Connected Systems</h2></div>
+        <span class="section-state good">NEXUS ONLINE</span>
+      </div>
+      <div class="status-table">
+        <div class="status-row header"><span>NODE</span><span>SYSTEM</span><span>CONNECTION</span><span>HEALTH</span><span>ACTION</span></div>
+        <div class="status-row"><span>A1</span><b>ART ARCHIVE</b><span class="good">● CONNECTED</span><span id="tableArtHealth">CHECKING</span><a href="https://tom981105-web.github.io/art-archive/system.html">OPEN →</a></div>
+        <div class="status-row"><span>P1</span><b>PAPER LIBRARY</b><span class="neutral">○ STANDBY</span><span>NOT BUILT</span><span class="muted">PENDING</span></div>
+      </div>
+    </section>
+
+    <footer>NEXUS SYSTEM · INTEGRATED OPERATIONS CONTROL</footer>
+  </main>
+</div>
+<script src="js/app.js"></script>
+</body>
+</html>
