@@ -1,0 +1,379 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#090b0b">
+  <title>NEXUS : ART ARCHIVE SYSTEM</title>
+  <link rel="stylesheet" href="css/system.css?v=2.10">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar">
+    <a class="brand" href="../index.html" aria-label="ART ARCHIVE">
+      <span class="brand-mark">◒</span>
+      <span class="brand-copy"><b>ART ARCHIVE</b><small>OPERATIONS SYSTEM</small></span>
+    </a>
+
+    <div class="env-card">
+      <span class="live-orb"></span>
+      <div><b>PRODUCTION</b><small>LIVE ENVIRONMENT</small></div>
+    </div>
+
+    <nav class="nav-groups">
+      <div class="nav-group">
+        <span class="nav-label">COMMAND</span>
+        <a class="active" href="#overview"><i>01</i><span>Overview</span></a>
+        <a href="#today"><i>02</i><span>Today</span></a><a href="#telemetry"><i>03</i><span>Telemetry</span></a>
+      </div>
+      <div class="nav-group">
+        <span class="nav-label">WORKFLOW</span>
+        <a href="#series"><i>04</i><span>Auto Series</span></a>
+        <a href="#manual"><i>05</i><span>Manual Series</span></a>
+        <a href="#delay"><i>06</i><span>Schedule</span></a>
+      </div>
+      <div class="nav-group">
+        <span class="nav-label">SYSTEM</span>
+        <a href="#runtime"><i>07</i><span>Runtime</span></a>
+        <a href="#services"><i>08</i><span>Services</span></a>
+        <a href="#analytics"><i>09</i><span>Diagnostics</span></a>
+        <a href="#events"><i>10</i><span>Incidents</span></a>
+        <a href="#activity"><i>11</i><span>Activity</span></a>
+      </div>
+    </nav>
+
+    <div class="side-foot">
+      <div><span>LOCAL TIME</span><b id="clock">--:--:--</b></div>
+      <a href="../index.html">← RETURN TO NEXUS</a>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="command-bar">
+      <div>
+        <p class="eyebrow">OPS CONSOLE / LIVE</p>
+        <h1>Operations Command Center</h1>
+        <p class="page-sub">생성 · 저장 · 동기화 · 배포 상태를 하나의 화면에서 관제합니다.</p>
+      </div>
+      <div class="command-actions">
+        <div class="sync-chip"><span></span><b id="lastSync">SYNC —</b></div>
+        <button id="refresh" class="refresh-btn">↻ REFRESH</button>
+      </div>
+    </header>
+
+    <div id="alertCenter" class="alert-center hidden" role="status" aria-live="polite" hidden>
+      <div class="alert-main"><span class="alert-icon">!</span><div><b id="alertTitle">SYSTEM ALERT</b><small id="alertMessage">상태를 확인하는 중입니다.</small></div></div>
+      <a id="alertAction" href="#services">DETAILS →</a>
+    </div>
+
+    <section id="overview" class="overview-grid">
+      <article class="health-card panel">
+        <div class="card-head"><span>SYSTEM HEALTH</span><span class="status good" id="healthBadge">OPERATIONAL</span></div>
+        <div class="health-score"><strong id="healthScore">—</strong><span>%</span></div>
+        <p id="healthCopy">상태 데이터를 불러오는 중입니다.</p>
+        <div class="health-track"><i id="healthLine"></i></div>
+        <div class="health-foot"><span>DRIVE</span><span>APPS SCRIPT</span><span>NOTION</span><span>DEPLOY</span></div>
+        <div class="health-breakdown">
+          <div><span>CORE</span><b id="healthCore">—</b></div>
+          <div><span>RELIABILITY</span><b id="healthReliability">—</b></div>
+          <div><span>PERFORMANCE</span><b id="healthPerformance">—</b></div>
+          <div><span>DELIVERY</span><b id="healthDelivery">—</b></div>
+        </div>
+      </article>
+      <article class="hero-metric panel"><span>TODAY OUTPUT</span><strong id="todayTotal">—</strong><small>ALL ARTWORKS TODAY</small></article>
+      <article class="hero-metric panel"><span>TOTAL ARCHIVE</span><strong id="archiveTotal">—</strong><small>WORKS INDEXED</small></article>
+      <article class="hero-metric panel"><span>ACTIVE SERIES</span><strong id="seriesTotal">—</strong><small>SERIES MONITORED</small></article>
+    </section>
+
+    <section class="panel command-panel" id="today">
+      <div class="section-head">
+        <div><p class="eyebrow">DAILY OPERATIONS</p><h2>Today at a Glance</h2></div>
+        <span id="todaySummaryState" class="section-state">CHECKING</span>
+      </div>
+      <div class="today-summary-grid">
+        <div><span>AUTO GENERATED</span><strong id="todayAutoCount">—</strong><small id="todayAutoSub">8 series</small></div>
+        <div><span>MANUAL ADDED</span><strong id="todayManualCount">—</strong><small id="todayManualSub">5 manual series</small></div>
+        <div><span>MANUAL UPDATED</span><strong id="todayManualUpdated">—</strong><small>updated today</small></div>
+        <div><span>FAILED TODAY</span><strong id="todayFailed">—</strong><small>automation runs</small></div>
+        <div><span>DRIVE VERIFIED</span><strong id="todayDriveVerified">—</strong><small>today's auto runs</small></div>
+      </div>
+    </section>
+
+    <section class="telemetry-section" id="telemetry">
+      <div class="section-title-row telemetry-title">
+        <div><p class="eyebrow">LIVE OBSERVABILITY</p><h2>Production Telemetry</h2><p class="telemetry-sub">실제 자동화 로그와 아카이브 데이터를 기반으로 처리량 · 실행시간 · 안정성을 시각화합니다.</p></div>
+        <span id="telemetryWindow">RECENT DATA</span>
+      </div>
+
+      <div class="telemetry-controlbar">
+        <div class="control-group">
+          <span class="control-label">RANGE</span>
+          <div class="segmented" id="rangeControls">
+            <button data-range="1h">1H</button>
+            <button data-range="6h">6H</button>
+            <button class="active" data-range="24h">24H</button>
+            <button data-range="7d">7D</button>
+            <button data-range="30d">30D</button>
+          </div>
+        </div>
+        <div class="control-group series-control">
+          <span class="control-label">SERIES</span>
+          <select id="telemetrySeries">
+            <option value="all">ALL SERIES</option>
+            <option value="크레스트">크레스트</option>
+            <option value="묵수">묵수</option>
+            <option value="신수">신수</option>
+            <option value="수채화">수채화</option>
+            <option value="펄퍼스">펄퍼스</option>
+            <option value="잉크">잉크</option>
+            <option value="성수">성수</option>
+            <option value="융화">융화</option>
+          </select>
+        </div>
+        <div class="analysis-context" id="analysisContext">24H · ALL SERIES · — RUNS</div>
+      </div>
+
+      <section class="anomaly-center" id="anomalyCenter">
+        <div class="anomaly-head">
+          <div><p class="eyebrow">AUTOMATED DETECTION</p><h3>Anomaly Center</h3><p>실행시간 · 성공률 · Drive 검증 · 예약 지연의 비정상 신호를 자동 탐지합니다.</p></div>
+          <div class="anomaly-status"><span id="anomalyStatusDot"></span><b id="anomalyStatus">ANALYZING</b></div>
+        </div>
+        <div class="anomaly-summary">
+          <div><span>DETECTED</span><strong id="anomalyCount">—</strong></div>
+          <div><span>CRITICAL</span><strong id="anomalyCritical">—</strong></div>
+          <div><span>WARNING</span><strong id="anomalyWarning">—</strong></div>
+          <div><span>WATCH</span><strong id="anomalyWatch">—</strong></div>
+        </div>
+        <div class="anomaly-list" id="anomalyList"><p class="muted">이상 신호를 분석하는 중입니다.</p></div>
+      </section>
+
+      <div class="telemetry-kpis">
+        <article class="telemetry-kpi"><span>AVG RUNTIME</span><strong id="telemetryAvgRuntime">—</strong><small>recent executions</small><div class="sparkline" id="runtimeSpark"></div></article>
+        <article class="telemetry-kpi"><span>P95 / PEAK</span><strong id="telemetryPeakRuntime">—</strong><small>execution duration</small><div class="sparkline" id="peakSpark"></div></article>
+        <article class="telemetry-kpi"><span>SUCCESS RATE</span><strong id="telemetrySuccessRate">—</strong><small>recorded automation runs</small><div class="gauge-mini" id="successGaugeMini"></div></article>
+        <article class="telemetry-kpi"><span>DRIVE VERIFIED</span><strong id="telemetryDriveRate">—</strong><small>verified run ratio</small><div class="gauge-mini" id="driveGaugeMini"></div></article>
+      </div>
+
+      <div class="chart-grid">
+        <article class="chart-card chart-card-wide">
+          <div class="chart-head"><div><p class="eyebrow">EXECUTION PERFORMANCE</p><h3>Runtime Duration Trend</h3></div><div class="chart-stat"><span>AVG</span><b id="runtimeChartAvg">—</b></div></div>
+          <div class="chart-wrap" id="runtimeTrendChart"><p class="muted">실행시간 데이터를 불러오는 중입니다.</p></div>
+          <div class="chart-foot"><span>RECENT EXECUTIONS</span><span id="runtimeChartRange">—</span></div>
+        </article>
+
+        <article class="chart-card">
+          <div class="chart-head"><div><p class="eyebrow">TODAY THROUGHPUT</p><h3>Series Output</h3></div><div class="chart-stat"><span>TOTAL</span><b id="outputChartTotal">—</b></div></div>
+          <div class="chart-wrap" id="seriesOutputChart"><p class="muted">시리즈 데이터를 불러오는 중입니다.</p></div>
+          <div class="chart-foot"><span>AUTO + MANUAL</span><span>TODAY</span></div>
+        </article>
+
+        <article class="chart-card">
+          <div class="chart-head"><div><p class="eyebrow">QUALITY SIGNAL</p><h3>Reliability Matrix</h3></div><div class="chart-stat"><span>RUNS</span><b id="reliabilityChartRuns">—</b></div></div>
+          <div class="chart-wrap" id="reliabilityChart"><p class="muted">신뢰도 데이터를 불러오는 중입니다.</p></div>
+          <div class="chart-foot"><span>SUCCESS RATE BY SERIES</span><span id="reliabilityChartAvg">—</span></div>
+        </article>
+
+        <article class="chart-card chart-card-wide">
+          <div class="chart-head"><div><p class="eyebrow">DELIVERY PIPELINE</p><h3>Deployment Outcomes</h3></div><div class="chart-stat"><span>WINDOW</span><b id="deployChartWindow">—</b></div></div>
+          <div class="chart-wrap compact-chart" id="deployOutcomeChart"><p class="muted">배포 이력을 불러오는 중입니다.</p></div>
+          <div class="chart-foot"><span>GITHUB PAGES RECENT RUNS</span><span id="deployChartSummary">—</span></div>
+        </article>
+      </div>
+
+      <aside class="run-detail-drawer" id="runDetailDrawer" aria-hidden="true">
+        <div class="run-detail-head">
+          <div><p class="eyebrow">EXECUTION DRILL-DOWN</p><h3 id="runDetailTitle">Run Details</h3></div>
+          <button id="runDetailClose" aria-label="Close">×</button>
+        </div>
+        <div class="run-detail-grid">
+          <div><span>SERIES</span><strong id="detailSeries">—</strong></div>
+          <div><span>RESULT</span><strong id="detailResult">—</strong></div>
+          <div><span>RUNTIME</span><strong id="detailRuntime">—</strong></div>
+          <div><span>GENERATIONS</span><strong id="detailGeneration">—</strong></div>
+          <div><span>REGENERATIONS</span><strong id="detailRegeneration">—</strong></div>
+          <div><span>DRIVE VERIFIED</span><strong id="detailDrive">—</strong></div>
+          <div><span>SCHEDULED</span><strong id="detailScheduled">—</strong></div>
+          <div><span>START DELAY</span><strong id="detailDelay">—</strong></div>
+        </div>
+        <div class="run-detail-meta"><span>START TIME</span><b id="detailTime">—</b></div>
+      </aside>
+
+      <section class="long-range-analysis" id="longRangeAnalysis" hidden>
+        <div class="long-range-head">
+          <div><p class="eyebrow">LONG-RANGE ANALYTICS</p><h3>Daily Trend Analysis</h3><p>7D / 30D 히스토리를 날짜별로 비교합니다.</p></div>
+          <span id="longRangeCoverage">—</span>
+        </div>
+        <div class="long-range-grid">
+          <article class="chart-card">
+            <div class="chart-head"><div><p class="eyebrow">DAILY THROUGHPUT</p><h3>Runs per Day</h3></div><div class="chart-stat"><span>TOTAL</span><b id="dailyRunsTotal">—</b></div></div>
+            <div class="daily-chart" id="dailyRunsChart"><p class="muted">장기 데이터를 불러오는 중입니다.</p></div>
+            <div class="chart-foot"><span>RUN COUNT</span><span id="dailyRunsAvg">—</span></div>
+          </article>
+          <article class="chart-card">
+            <div class="chart-head"><div><p class="eyebrow">DAILY RELIABILITY</p><h3>Success Rate</h3></div><div class="chart-stat"><span>AVG</span><b id="dailySuccessAvg">—</b></div></div>
+            <div class="daily-chart" id="dailySuccessChart"><p class="muted">장기 데이터를 불러오는 중입니다.</p></div>
+            <div class="chart-foot"><span>SUCCESS %</span><span id="dailyFailureTotal">—</span></div>
+          </article>
+          <article class="chart-card">
+            <div class="chart-head"><div><p class="eyebrow">DAILY PERFORMANCE</p><h3>Average Runtime</h3></div><div class="chart-stat"><span>AVG</span><b id="dailyRuntimeAvg">—</b></div></div>
+            <div class="daily-chart" id="dailyRuntimeChart"><p class="muted">장기 데이터를 불러오는 중입니다.</p></div>
+            <div class="chart-foot"><span>SECONDS</span><span id="dailyRuntimePeak">—</span></div>
+          </article>
+        </div>
+
+        <article class="chart-card multi-series-card">
+          <div class="multi-series-head">
+            <div>
+              <p class="eyebrow">CROSS-SERIES COMPARISON</p>
+              <h3>Multi-Series Trend</h3>
+              <p>같은 기간의 시리즈별 추세를 한 그래프에서 비교합니다.</p>
+            </div>
+            <div class="metric-switch" id="multiMetricSwitch">
+              <button class="active" data-metric="avgElapsed">RUNTIME</button>
+              <button data-metric="runs">RUNS</button>
+              <button data-metric="successRate">SUCCESS</button>
+            </div>
+          </div>
+          <div class="multi-series-legend" id="multiSeriesLegend"></div>
+          <div class="multi-series-chart" id="multiSeriesTrendChart"><p class="muted">시리즈 비교 데이터를 불러오는 중입니다.</p></div>
+          <div class="chart-foot"><span id="multiMetricLabel">AVERAGE RUNTIME · SECONDS</span><span id="multiSeriesCoverage">—</span></div>
+        </article>
+      </section>
+
+      <div class="advanced-observability">
+        <article class="chart-card">
+          <div class="chart-head"><div><p class="eyebrow">24H ACTIVITY</p><h3>Operations Timeline</h3></div><div class="chart-stat"><span>EVENTS</span><b id="timelineEventCount">—</b></div></div>
+          <div class="ops-timeline-chart" id="operationsTimeline"><p class="muted">최근 24시간 운영 이벤트를 불러오는 중입니다.</p></div>
+          <div class="chart-foot"><span>APPS SCRIPT · NOTION · DEPLOY</span><span>LAST 24 HOURS</span></div>
+        </article>
+
+        <article class="chart-card">
+          <div class="chart-head"><div><p class="eyebrow">HOURLY LOAD</p><h3>Generation Heatmap</h3></div><div class="chart-stat"><span>PEAK</span><b id="heatmapPeak">—</b></div></div>
+          <div class="hour-heatmap" id="generationHeatmap"><p class="muted">시간대별 실행 데이터를 불러오는 중입니다.</p></div>
+          <div class="chart-foot"><span>KST HOURLY ACTIVITY</span><span id="heatmapTotal">—</span></div>
+        </article>
+
+        <article class="chart-card">
+          <div class="chart-head"><div><p class="eyebrow">SERIES PERFORMANCE</p><h3>Average Processing Time</h3></div><div class="chart-stat"><span>SLOWEST</span><b id="slowestSeries">—</b></div></div>
+          <div class="horizontal-metrics" id="seriesDurationChart"><p class="muted">시리즈별 평균 처리시간 데이터를 불러오는 중입니다.</p></div>
+          <div class="chart-foot"><span>AVERAGE ELAPSED SECONDS</span><span id="durationSeriesCount">—</span></div>
+        </article>
+
+        <article class="chart-card">
+          <div class="chart-head"><div><p class="eyebrow">RUN QUALITY</p><h3>Success / Failure Trend</h3></div><div class="chart-stat"><span>FAILURES</span><b id="trendFailureCount">—</b></div></div>
+          <div class="quality-trend" id="qualityTrend"><p class="muted">실행 성공·실패 이력을 불러오는 중입니다.</p></div>
+          <div class="chart-foot"><span>ORDERED EXECUTION HISTORY</span><span id="qualityTrendWindow">—</span></div>
+        </article>
+
+        <article class="chart-card chart-card-full">
+          <div class="chart-head"><div><p class="eyebrow">STATE CHANGES</p><h3>System State Timeline</h3></div><div class="chart-stat"><span>WINDOW</span><b>24H</b></div></div>
+          <div class="state-timeline" id="systemStateTimeline"><p class="muted">상태 변경 이벤트를 불러오는 중입니다.</p></div>
+          <div class="chart-foot"><span>FAILURE · RECOVERY · BUSY · DEPLOY</span><span id="stateTimelineSummary">—</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel" id="series">
+      <div class="section-head">
+        <div><p class="eyebrow">AUTOMATED GENERATION</p><h2>Auto Series</h2></div>
+        <span id="scheduleLabel" class="section-state">SCHEDULE —</span>
+      </div>
+      <div class="series-grid" id="seriesGrid"></div>
+    </section>
+
+    <section class="panel" id="manual">
+      <div class="section-head">
+        <div><p class="eyebrow">HUMAN-TRIGGERED WORKFLOW</p><h2>Manual Series</h2></div>
+        <span id="manualSummary" class="section-state">TODAY —</span>
+      </div>
+      <div class="manual-kpis">
+        <div><span>TODAY ADDED</span><strong id="manualTodayTotal">—</strong></div>
+        <div><span>UPDATED TODAY</span><strong id="manualUpdatedToday">—</strong></div>
+        <div><span>MANUAL SERIES</span><strong id="manualSeriesTotal">5</strong></div>
+      </div>
+      <div class="series-grid manual-series-grid" id="manualSeriesGrid"><p class="muted">수동 시리즈 상태를 불러오는 중입니다.</p></div>
+    </section>
+
+    <section class="panel" id="delay">
+      <div class="section-head">
+        <div><p class="eyebrow">SCHEDULE TELEMETRY</p><h2>Schedule Delay</h2></div>
+        <span id="delayState" class="section-state">WAITING DATA</span>
+      </div>
+      <div class="analytics-kpis delay-kpis">
+        <div><span>RECORDED DELAYS</span><strong id="delaySamples">—</strong></div>
+        <div><span>AVERAGE DELAY</span><strong id="delayAverage">—</strong></div>
+        <div><span>MAX DELAY</span><strong id="delayMax">—</strong></div>
+        <div><span>MOST DELAYED</span><strong id="delayWorst">—</strong></div>
+      </div>
+      <div class="two-col compact">
+        <div><p class="eyebrow">RECENT SCHEDULED RUNS</p><div id="delayRunTable" class="delay-run-table"><p class="muted">예약시각 데이터가 쌓이면 자동 표시됩니다.</p></div></div>
+        <div class="insight-box"><p class="eyebrow">INTERPRETATION</p><p id="delayCopy" class="muted">다음 실행부터 예약시각과 실제 시작시각의 차이를 추적합니다.</p><div class="legend"><span><i class="good-dot"></i>0–60s 정상</span><span><i class="warn-dot"></i>61–300s 확인</span><span><i class="bad-dot"></i>301s+ 점검</span></div></div>
+      </div>
+    </section>
+
+    <section id="runtime" class="runtime-section">
+      <div class="section-title-row">
+        <div><p class="eyebrow">CORE SERVICES</p><h2>Runtime Control</h2></div>
+        <span>APPS SCRIPT · NOTION · GITHUB PAGES</span>
+      </div>
+      <div class="monitor-grid">
+        <article class="panel monitor-panel" id="engine">
+          <div class="section-head"><div><p class="eyebrow">RUNTIME ENGINE</p><h3>Apps Script</h3></div><span class="status" id="scriptBadge">CHECKING</span></div>
+          <div class="mini-kpis"><div><span>LAST FUNCTION</span><strong id="scriptFunction">—</strong></div><div><span>LAST RESULT</span><strong id="scriptResult">—</strong></div><div><span>DURATION</span><strong id="scriptDuration">—</strong></div><div><span>FAILURES</span><strong id="scriptFailures">—</strong></div></div>
+          <div class="runtime-detail"><div class="pipeline"><div class="pipe-row"><b>Started</b><span></span><span id="scriptStarted">—</span></div><div class="pipe-row"><b>Finished</b><span></span><span id="scriptFinished">—</span></div><div class="pipe-row"><b>Status sync</b><span></span><span id="scriptSync">—</span></div></div><div><p class="eyebrow">LAST ERROR / STATE</p><div id="scriptError" class="muted">No runtime error reported.</div></div></div>
+        </article>
+
+        <article class="panel monitor-panel" id="notion">
+          <div class="section-head"><div><p class="eyebrow">DATABASE SYNC</p><h3>Notion</h3></div><span class="status" id="notionBadge">CHECKING</span></div>
+          <div class="mini-kpis"><div><span>LAST RESULT</span><strong id="notionResult">—</strong></div><div><span>LAST SERIES</span><strong id="notionSeries">—</strong></div><div><span>DURATION</span><strong id="notionDuration">—</strong></div><div><span>FAILURES</span><strong id="notionFailures">—</strong></div></div>
+          <div class="runtime-detail"><div class="pipeline"><div class="pipe-row"><b>Artwork</b><span></span><span id="notionArtwork">—</span></div><div class="pipe-row"><b>Started</b><span></span><span id="notionStarted">—</span></div><div class="pipe-row"><b>Finished</b><span></span><span id="notionFinished">—</span></div></div><div><p class="eyebrow">LAST ERROR</p><div id="notionError" class="muted">No Notion sync error reported.</div></div></div>
+        </article>
+
+        <article class="panel monitor-panel" id="deploy">
+          <div class="section-head"><div><p class="eyebrow">SOURCE CONTROL + PAGES</p><h3>GitHub Deploy</h3></div><span class="status" id="deployBadge">CHECKING</span></div>
+          <div class="mini-kpis"><div><span>TODAY COMMITS</span><strong id="todayCommits">—</strong></div><div><span>LAST DEPLOY</span><strong id="deployResult">—</strong></div><div><span>DEPLOY TIME</span><strong id="deployDuration">—</strong></div><div><span>CANCELLED</span><strong id="deployCancelled">—</strong></div></div>
+          <div class="runtime-detail"><div class="pipeline"><div class="pipe-row"><b>Commit</b><span></span><span id="deploySha">—</span></div><div class="pipe-row"><b>Started</b><span></span><span id="deployStarted">—</span></div><div class="pipe-row"><b>Finished</b><span></span><span id="deployFinished">—</span></div></div><div><p class="eyebrow">LATEST COMMIT</p><div id="deployMessage" class="muted">GitHub 데이터를 불러오는 중…</div><p class="eyebrow gap-top">DEPLOYMENT HEALTH</p><div id="deployHealth" class="muted">GitHub Pages 상태를 확인하는 중입니다.</div></div></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel" id="services">
+      <div class="section-head"><div><p class="eyebrow">INTEGRATIONS</p><h2>Service Matrix</h2></div><span class="section-state">LIVE CONNECTIONS</span></div>
+      <div class="service-grid">
+        <div class="service"><i class="service-icon">D</i><div><b>Google Drive</b><small>Artwork storage</small></div><span class="pill good" id="driveService">CONNECTED</span></div>
+        <div class="service"><i class="service-icon">N</i><div><b>Notion</b><small>Archive database</small></div><span class="pill" id="notionService">CHECKING</span></div>
+        <div class="service"><i class="service-icon">G</i><div><b>GitHub</b><small>Site & deployment</small></div><span class="pill" id="githubService">CHECKING</span></div>
+        <div class="service"><i class="service-icon">A</i><div><b>Apps Script</b><small>Runtime engine</small></div><span class="pill" id="scriptService">CHECKING</span></div>
+      </div>
+    </section>
+
+    <section class="panel" id="analytics">
+      <div class="section-head"><div><p class="eyebrow">USAGE LOG ANALYTICS</p><h2>Automation Diagnostics</h2></div><span id="usageSync" class="section-state">LOG SYNC —</span></div>
+      <div class="analytics-kpis"><div><span>SUCCESS RATE</span><strong id="logSuccessRate">—</strong></div><div><span>RECORDED RUNS</span><strong id="logRuns">—</strong></div><div><span>FAILED</span><strong id="logFailed">—</strong></div><div><span>REGENERATIONS</span><strong id="logRegens">—</strong></div></div>
+      <div class="two-col"><div><p class="eyebrow">SERIES RELIABILITY</p><div id="reliability"></div></div><div><p class="eyebrow">RECENT EXECUTIONS</p><div id="runTable" class="run-table"></div></div></div>
+    </section>
+
+    <section class="panel" id="events">
+      <div class="section-head"><div><p class="eyebrow">OPERATIONAL HISTORY</p><h2>Incident & Event Center</h2></div><span id="eventSync" class="section-state">EVENT SYNC —</span></div>
+      <div class="analytics-kpis event-kpis"><div><span>24H ERRORS</span><strong id="eventErrors24h">—</strong></div><div><span>24H WARNINGS</span><strong id="eventWarnings24h">—</strong></div><div><span>LAST INCIDENT</span><strong id="eventLastIncident">—</strong></div><div><span>LAST RECOVERY</span><strong id="eventLastRecovery">—</strong></div></div>
+      <div class="event-toolbar"><div id="eventFilters" class="event-filters"><button class="event-filter active" data-filter="all">ALL</button><button class="event-filter" data-filter="error">ERROR</button><button class="event-filter" data-filter="busy">BUSY</button><button class="event-filter" data-filter="Apps Script">APPS SCRIPT</button><button class="event-filter" data-filter="Notion">NOTION</button><button class="event-filter" data-filter="GitHub Pages">DEPLOY</button></div><span id="eventStateSummary" class="muted">현재 상태 분석 중…</span></div>
+      <div class="activity event-log" id="eventLog"><p class="muted">이벤트 이력을 불러오는 중입니다.</p></div>
+    </section>
+
+    <section class="dual-panels">
+      <article class="panel" id="automation"><div class="section-head"><div><p class="eyebrow">AUTOMATION</p><h2>Generation Pipeline</h2></div><span class="live-dot">LIVE</span></div><div class="pipeline" id="pipeline"></div></article>
+      <article class="panel" id="github"><div class="section-head"><div><p class="eyebrow">SOURCE CONTROL</p><h2>Recent Commits</h2></div><a class="tiny-link" href="https://github.com/tom981105-web/art-archive" target="_blank" rel="noreferrer">OPEN ↗</a></div><div class="github-stat"><strong id="commitCount">—</strong><span>recent commits loaded</span></div><div id="commits" class="commit-list"><p class="muted">GitHub 데이터를 불러오는 중…</p></div></article>
+    </section>
+
+    <section class="panel" id="activity">
+      <div class="section-head"><div><p class="eyebrow">DRIVE ACTIVITY</p><h2>Artwork Activity</h2></div><span class="section-state">DRIVE + AUTOMATION</span></div>
+      <div class="activity" id="activityList"></div>
+    </section>
+
+    <footer><span>ART ARCHIVE / SYSTEM · OPERATIONS COMMAND CENTER</span><span id="footerTime"></span></footer>
+  </main>
+</div>
+<script src="js/system.js?v=2.10"></script>
+<script src="js/system-events.js?v=2.0"></script>
+</body>
+</html>
