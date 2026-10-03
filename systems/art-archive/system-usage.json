@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-10-03T21:13:59.736Z",
+  "generatedAt": "2026-10-03T21:14:35.043Z",
   "source": "그림 자동화 사용량 로그 / 사용량 로그",
   "schemaVersion": 3,
   "summary": {
-    "runs": 35,
+    "runs": 36,
     "success": 34,
     "failed": 1,
-    "successRate": 97.1,
+    "successRate": 94.4,
     "driveVerified": 34,
     "regenerations": 1,
-    "sourceRows": 35,
+    "sourceRows": 36,
     "normalizedPartialRows": 0
   },
   "series": [
@@ -39,7 +39,7 @@
     },
     {
       "name": "수채화",
-      "runs": 5,
+      "runs": 6,
       "success": 5,
       "failed": 0,
       "avgElapsed": 176.8,
@@ -79,6 +79,20 @@
     }
   ],
   "recentRuns": [
+    {
+      "time": "2026-10-04 06:14:31",
+      "series": "수채화",
+      "generationAttempts": 0,
+      "regenerations": 0,
+      "uploadAttempts": 0,
+      "driveVerified": false,
+      "result": "in_progress",
+      "elapsedSeconds": 0,
+      "stage": "STARTED",
+      "scheduledTime": "2026-10-04 6:09:00",
+      "startDelaySeconds": 331,
+      "generatedFilename": null
+    },
     {
       "time": "2026-10-04 06:07:55",
       "series": "신수",
@@ -232,20 +246,6 @@
       "scheduledTime": null,
       "startDelaySeconds": null,
       "generatedFilename": "아홀로틀 융화.png"
-    },
-    {
-      "time": "2026-10-03 6:18:47",
-      "series": "성수",
-      "generationAttempts": 1,
-      "regenerations": 0,
-      "uploadAttempts": 1,
-      "driveVerified": true,
-      "result": "success",
-      "elapsedSeconds": 263,
-      "stage": "COMPLETED",
-      "scheduledTime": null,
-      "startDelaySeconds": null,
-      "generatedFilename": "홍학 성수.png"
     }
   ]
 }
