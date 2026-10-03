@@ -1,0 +1,204 @@
+{
+  "version": "1.4",
+  "updatedAt": "2026-10-03T10:12:08.076Z",
+  "events": [
+    {
+      "id": "578679c9-5c59-4360-91d2-9c75f0a318ce",
+      "at": "2026-10-03T10:12:05.348Z",
+      "service": "Apps Script",
+      "level": "info",
+      "status": "skipped",
+      "title": "Apps Script 실행 건너뜀",
+      "message": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
+    },
+    {
+      "id": "16d6aac1-3d33-4fbb-aea2-f96ebb97c941",
+      "at": "2026-10-03T09:55:05.416Z",
+      "service": "Apps Script",
+      "level": "info",
+      "status": "skipped",
+      "title": "Apps Script 실행 건너뜀",
+      "message": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
+    },
+    {
+      "id": "4be56814-dd66-4cc7-bae7-af112a740944",
+      "at": "2026-10-03T09:34:05.376Z",
+      "service": "Apps Script",
+      "level": "info",
+      "status": "skipped",
+      "title": "Apps Script 실행 건너뜀",
+      "message": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
+    },
+    {
+      "id": "30d7ac1b-b4a5-495b-9433-b8feb8e45dc3",
+      "at": "2026-10-03T09:11:05.482Z",
+      "service": "Apps Script",
+      "level": "info",
+      "status": "skipped",
+      "title": "Apps Script 실행 건너뜀",
+      "message": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
+    },
+    {
+      "id": "264bae1c-7b62-4a8d-8479-69b90093d295",
+      "at": "2026-10-03T08:35:05.862Z",
+      "service": "Apps Script",
+      "level": "info",
+      "status": "skipped",
+      "title": "Apps Script 실행 건너뜀",
+      "message": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
+    },
+    {
+      "id": "645e49b5-4b67-41b1-ab59-066a0d555cbe",
+      "at": "2026-10-03T08:10:05.470Z",
+      "service": "Apps Script",
+      "level": "info",
+      "status": "skipped",
+      "title": "Apps Script 실행 건너뜀",
+      "message": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
+    },
+    {
+      "id": "51b56d61-fd0d-4f91-9f48-62ef154a8f0d",
+      "at": "2026-10-03T07:35:06.223Z",
+      "service": "Apps Script",
+      "level": "info",
+      "status": "skipped",
+      "title": "Apps Script 실행 건너뜀",
+      "message": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
+    },
+    {
+      "id": "ce5573ec-927c-45ed-a61e-4878df2f9bfa",
+      "at": "2026-10-03T07:20:05.862Z",
+      "service": "Apps Script",
+      "level": "info",
+      "status": "skipped",
+      "title": "Apps Script 실행 건너뜀",
+      "message": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
+    },
+    {
+      "id": "016cb979-b209-41db-a287-890262c679ec",
+      "at": "2026-10-03T07:02:05.471Z",
+      "service": "Apps Script",
+      "level": "info",
+      "status": "skipped",
+      "title": "Apps Script 실행 건너뜀",
+      "message": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
+    },
+    {
+      "id": "fb92e772-cb4e-488c-8178-c73458138ab2",
+      "at": "2026-10-03T06:36:05.180Z",
+      "service": "Apps Script",
+      "level": "info",
+      "status": "skipped",
+      "title": "Apps Script 실행 건너뜀",
+      "message": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
+    },
+    {
+      "id": "5079fde9-ef30-479b-b40a-94ddd724ebb4",
+      "at": "2026-10-03T06:18:05.476Z",
+      "service": "Apps Script",
+      "level": "info",
+      "status": "skipped",
+      "title": "Apps Script 실행 건너뜀",
+      "message": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
+    },
+    {
+      "id": "a191e107-b26d-4cec-ab9c-4884aa34be52",
+      "at": "2026-10-03T05:41:05.485Z",
+      "service": "Apps Script",
+      "level": "info",
+      "status": "skipped",
+      "title": "Apps Script 실행 건너뜀",
+      "message": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
+    },
+    {
+      "id": "7dee0a3e-d2f7-4547-97f8-91267a8f662f",
+      "at": "2026-10-03T05:24:05.615Z",
+      "service": "Apps Script",
+      "level": "info",
+      "status": "skipped",
+      "title": "Apps Script 실행 건너뜀",
+      "message": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
+    },
+    {
+      "id": "e8d7de92-eca1-46a8-9f1c-02f86d2c31da",
+      "at": "2026-10-03T05:04:41.402Z",
+      "service": "Apps Script",
+      "level": "success",
+      "status": "success",
+      "title": "Apps Script 정상 상태",
+      "message": "checkArtworkCompletion"
+    },
+    {
+      "id": "eb50f681-157a-486e-a1d3-a5ba3ca5ad1a",
+      "at": "2026-10-03T05:04:05.605Z",
+      "service": "Apps Script",
+      "level": "info",
+      "status": "skipped",
+      "title": "Apps Script 실행 건너뜀",
+      "message": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
+    },
+    {
+      "id": "c89fb562-3683-49fc-8a5c-b33093b4bfa3",
+      "at": "2026-10-03T05:01:40.086Z",
+      "service": "Apps Script",
+      "level": "success",
+      "status": "success",
+      "title": "Apps Script 정상 상태",
+      "message": "checkArtworkCompletion"
+    },
+    {
+      "id": "6fa1d65b-fb94-4b17-99ec-c2c7d4e12382",
+      "at": "2026-10-03T04:59:05.583Z",
+      "service": "Apps Script",
+      "level": "info",
+      "status": "skipped",
+      "title": "Apps Script 실행 건너뜀",
+      "message": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
+    },
+    {
+      "id": "53d1de1b-b4cb-40c9-b098-370ff3a97fa4",
+      "at": "2026-10-03T04:56:57.507Z",
+      "service": "Apps Script",
+      "level": "success",
+      "status": "success",
+      "title": "Apps Script 정상 상태",
+      "message": "checkArtworkCompletion"
+    },
+    {
+      "id": "74acae11-42c8-4adb-ab0a-d297c88ac2cf",
+      "at": "2026-10-03T04:55:06.212Z",
+      "service": "Apps Script",
+      "level": "warning",
+      "status": "skipped",
+      "title": "Apps Script 실행 건너뜀",
+      "message": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
+    },
+    {
+      "id": "6ca468fe-aeea-4d1b-8072-d108c9af88cb",
+      "at": "2026-10-03T04:51:10.926Z",
+      "service": "Apps Script",
+      "level": "success",
+      "status": "success",
+      "title": "Apps Script 정상 상태",
+      "message": "checkArtworkCompletion"
+    },
+    {
+      "id": "28682dcf-caee-4e0d-936a-16d1f3801c1d",
+      "at": "2026-10-03T04:49:05.370Z",
+      "service": "Apps Script",
+      "level": "warning",
+      "status": "skipped",
+      "title": "Apps Script 실행 건너뜀",
+      "message": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
+    },
+    {
+      "id": "8a4f9831-119a-4d1b-a1e5-64017d290dff",
+      "at": "2026-10-02T12:51:54.421Z",
+      "service": "SYSTEM",
+      "level": "info",
+      "status": "enabled",
+      "title": "SYSTEM v0.7 이벤트 로그 활성화",
+      "message": "Apps Script / Notion 상태 변경 및 GitHub Pages 배포 이력을 SYSTEM에서 통합 표시합니다."
+    }
+  ]
+}
