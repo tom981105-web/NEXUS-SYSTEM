@@ -1,0 +1,49 @@
+name: Sync ART ARCHIVE telemetry
+
+on:
+  schedule:
+    - cron: "*/5 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: art-archive-telemetry-sync
+  cancel-in-progress: true
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout NEXUS
+        uses: actions/checkout@v6
+
+      - name: Pull ART ARCHIVE telemetry
+        shell: bash
+        run: |
+          set -euo pipefail
+          BASE="https://raw.githubusercontent.com/tom981105-web/art-archive/main"
+          DEST="systems/art-archive"
+          mkdir -p "$DEST"
+
+          for file in             automation-status.json             system-status.json             system-events.json             system-history.json             system-usage.json
+          do
+            curl --fail --silent --show-error --location               "$BASE/$file?ts=$(date +%s)"               --output "$DEST/$file.tmp"
+            python -m json.tool "$DEST/$file.tmp" >/dev/null
+            mv "$DEST/$file.tmp" "$DEST/$file"
+          done
+
+      - name: Commit only when telemetry changed
+        shell: bash
+        run: |
+          if git diff --quiet -- systems/art-archive/*.json; then
+            echo "No telemetry changes."
+            exit 0
+          fi
+
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add systems/art-archive/*.json
+          git commit -m "Sync ART ARCHIVE telemetry"
+          git push
