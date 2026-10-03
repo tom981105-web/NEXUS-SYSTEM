@@ -1,3 +1,4 @@
+const ART_DATA_BASE='https://raw.githubusercontent.com/tom981105-web/art-archive/main/';
 const $=s=>document.querySelector(s);const fmtDate=v=>v?new Date(v).toLocaleString('ko-KR',{month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit'}):'—';
 function tick(){const d=new Date();$('#clock').textContent=d.toLocaleTimeString('ko-KR',{hour12:false});$('#footerTime').textContent=d.toLocaleString('ko-KR')}tick();setInterval(tick,1000);const monitored=['크레스트','묵수','신수','수채화','펄퍼스','잉크','성수','융화'];
 const systemHealthState={drive:null,script:null,notion:null,deploy:null,reliability:null,performance:null,delivery:null};
@@ -637,11 +638,11 @@ function renderGithubSnapshot(d){
   alertState.deploy=deployFailed?'error':'ok';
   updateOverallHealth();renderAlertCenter();
 }
-async function loadStatus(){try{const r=await fetch('automation-status.json?ts='+Date.now(),{cache:'no-store'});if(!r.ok)throw Error('status');renderStatus(await r.json());$('#driveService').textContent='CONNECTED'}catch(e){$('#healthBadge').textContent='DATA ERROR';$('#healthBadge').className='status bad';$('#healthCopy').textContent='automation-status.json을 불러오지 못했습니다.';$('#driveService').textContent='CHECK DATA';$('#driveService').className='pill bad';systemHealthState.drive=0;alertState.drive='error';updateOverallHealth();renderAlertCenter()}}
+async function loadStatus(){try{const r=await fetch(ART_DATA_BASE+'automation-status.json?ts='+Date.now(),{cache:'no-store'});if(!r.ok)throw Error('status');renderStatus(await r.json());$('#driveService').textContent='CONNECTED'}catch(e){$('#healthBadge').textContent='DATA ERROR';$('#healthBadge').className='status bad';$('#healthCopy').textContent='automation-status.json을 불러오지 못했습니다.';$('#driveService').textContent='CHECK DATA';$('#driveService').className='pill bad';systemHealthState.drive=0;alertState.drive='error';updateOverallHealth();renderAlertCenter()}}
 async function loadHistory(){
   const urls=[
-    'system-history.json?ts='+Date.now(),
-    'system-history.json?ts='+Date.now()
+    ART_DATA_BASE+'system-history.json?ts='+Date.now(),
+    ART_DATA_BASE+'system-history.json?ts='+Date.now()
   ];
   let lastError=null;
   for(const url of urls){
@@ -665,10 +666,10 @@ async function loadHistory(){
   renderTelemetry();
   return false;
 }
-async function loadUsage(){try{const r=await fetch('system-usage.json?ts='+Date.now(),{cache:'no-store'});if(!r.ok)throw Error('usage');renderUsage(await r.json())}catch(e){$('#usageSync').textContent='LOG DATA ERROR';$('#runTable').innerHTML='<p class="muted">진단 로그 데이터를 불러오지 못했습니다.</p>'}}
-async function loadScript(){try{const r=await fetch('system-status.json?ts='+Date.now(),{cache:'no-store'});if(!r.ok)throw Error('script');const d=await r.json();renderScript(d);renderNotion(d);renderGithubSnapshot(d)}catch(e){$('#scriptBadge').textContent='DATA ERROR';$('#scriptBadge').className='status bad';$('#scriptService').textContent='UNAVAILABLE';$('#scriptService').className='pill bad';$('#scriptError').textContent='system-status.json을 불러오지 못했습니다.';systemHealthState.script=0;systemHealthState.notion=0;alertState.script='error';alertState.notion='error';updateOverallHealth();renderAlertCenter()}}
-async function loadOpsEvents(){try{const r=await fetch('system-events.json?ts='+Date.now(),{cache:'no-store'});if(!r.ok)throw Error('events');const d=await r.json();telemetryState.events=d.events||[];renderAdvancedTelemetry()}catch(e){telemetryState.events=[];renderAdvancedTelemetry()}}
-async function loadGithub(){try{const r=await fetch('system-status.json?ts='+Date.now(),{cache:'no-store'});if(!r.ok)throw Error('status');renderGithubSnapshot(await r.json())}catch(e){$('#githubService').textContent='UNAVAILABLE';$('#githubService').className='pill warn';$('#deployBadge').textContent='DATA ERROR';$('#deployBadge').className='status bad';$('#deployHealth').textContent='로컬 SYSTEM 상태 파일을 불러오지 못했습니다.';systemHealthState.deploy=0;alertState.deploy='error';updateOverallHealth();renderAlertCenter()}}
+async function loadUsage(){try{const r=await fetch(ART_DATA_BASE+'system-usage.json?ts='+Date.now(),{cache:'no-store'});if(!r.ok)throw Error('usage');renderUsage(await r.json())}catch(e){$('#usageSync').textContent='LOG DATA ERROR';$('#runTable').innerHTML='<p class="muted">진단 로그 데이터를 불러오지 못했습니다.</p>'}}
+async function loadScript(){try{const r=await fetch(ART_DATA_BASE+'system-status.json?ts='+Date.now(),{cache:'no-store'});if(!r.ok)throw Error('script');const d=await r.json();renderScript(d);renderNotion(d);renderGithubSnapshot(d)}catch(e){$('#scriptBadge').textContent='DATA ERROR';$('#scriptBadge').className='status bad';$('#scriptService').textContent='UNAVAILABLE';$('#scriptService').className='pill bad';$('#scriptError').textContent='system-status.json을 불러오지 못했습니다.';systemHealthState.script=0;systemHealthState.notion=0;alertState.script='error';alertState.notion='error';updateOverallHealth();renderAlertCenter()}}
+async function loadOpsEvents(){try{const r=await fetch(ART_DATA_BASE+'system-events.json?ts='+Date.now(),{cache:'no-store'});if(!r.ok)throw Error('events');const d=await r.json();telemetryState.events=d.events||[];renderAdvancedTelemetry()}catch(e){telemetryState.events=[];renderAdvancedTelemetry()}}
+async function loadGithub(){try{const r=await fetch(ART_DATA_BASE+'system-status.json?ts='+Date.now(),{cache:'no-store'});if(!r.ok)throw Error('status');renderGithubSnapshot(await r.json())}catch(e){$('#githubService').textContent='UNAVAILABLE';$('#githubService').className='pill warn';$('#deployBadge').textContent='DATA ERROR';$('#deployBadge').className='status bad';$('#deployHealth').textContent='로컬 SYSTEM 상태 파일을 불러오지 못했습니다.';systemHealthState.deploy=0;alertState.deploy='error';updateOverallHealth();renderAlertCenter()}}
 function setupTelemetryInteractions(){
   syncTelemetryControls();
   document.querySelectorAll('#rangeControls button').forEach(btn=>btn.addEventListener('click',()=>{
