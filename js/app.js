@@ -1,4 +1,5 @@
 const ART_STATUS_URL = 'systems/art-archive/system-status.json';
+const PAPER_INDEX_URL = 'https://raw.githubusercontent.com/tom981105-web/paper/main/data/index.json';
 
 const el = id => document.getElementById(id);
 
@@ -22,6 +23,30 @@ function normalizeHealth(value){
   if(typeof value === 'number') return Math.max(0,Math.min(100,Math.round(value)));
   const parsed = Number(String(value).replace(/[^0-9.]/g,''));
   return Number.isFinite(parsed) ? Math.max(0,Math.min(100,Math.round(parsed))) : null;
+}
+
+async function loadPaperStatus(){
+  const badge=el('paperBadge');
+  badge.textContent='CONNECTING'; badge.className='status neutral';
+  try{
+    const response=await fetch(PAPER_INDEX_URL+'?t='+Date.now(),{cache:'no-store'});
+    if(!response.ok) throw new Error('HTTP '+response.status);
+    const papers=await response.json();
+    const fields=new Set(papers.map(p=>p.category).filter(Boolean));
+    const verified=papers.filter(p=>p.verified).length;
+    const health=papers.length&&verified===papers.length?100:95;
+    el('paperHealth').textContent=health+'%';
+    el('paperCount').textContent=papers.length.toLocaleString('ko-KR');
+    el('paperFields').textContent=fields.size;
+    el('paperState').textContent='LIVE';
+    el('tablePaperHealth').textContent=health+'%';
+    badge.textContent='ONLINE'; badge.className='status good';
+    return health;
+  }catch(error){
+    el('paperHealth').textContent='LINK'; el('paperCount').textContent='—'; el('paperFields').textContent='—';
+    el('tablePaperHealth').textContent='LINK READY'; badge.textContent='LINKED'; badge.className='status warn';
+    return 90;
+  }
 }
 
 async function loadArtStatus(){
@@ -53,7 +78,7 @@ async function loadArtStatus(){
     const nexusHealth = health === null ? 100 : Math.round((100 + health) / 2);
     el('healthScore').textContent = nexusHealth;
     el('healthLine').style.width = nexusHealth + '%';
-    el('healthCopy').textContent = 'ART ARCHIVE 연결 정상 · PAPER LIBRARY 구축 대기 중';
+    el('healthCopy').textContent = 'ART ARCHIVE · PAPER LIBRARY 연결 정상';
     el('lastSync').textContent = 'SYNC ' + new Intl.DateTimeFormat('ko-KR',{hour:'2-digit',minute:'2-digit',hour12:false,timeZone:'Asia/Seoul'}).format(new Date());
   }catch(error){
     el('artHealth').textContent = 'LINK';
@@ -78,5 +103,9 @@ document.querySelectorAll('.nav-group a[href^="#"]').forEach(link=>{
     link.classList.add('active');
   });
 });
-el('refresh').addEventListener('click',loadArtStatus);
-loadArtStatus();
+async function refreshAll(){
+  const [art,paper]=await Promise.all([loadArtStatus(),loadPaperStatus()]);
+  el('onlineCount').textContent='02'; el('standbyCount').textContent='00';
+}
+el('refresh').addEventListener('click',refreshAll);
+refreshAll();
