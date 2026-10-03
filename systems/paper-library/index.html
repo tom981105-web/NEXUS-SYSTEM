@@ -18,6 +18,8 @@
       <a href="#deploy">04 Deploy</a>
       <a href="#signals">05 Signals</a>
       <a href="#automation">06 Automation</a>
+      <a href="#trends">07 Trends</a>
+      <a href="#quality">08 Quality</a>
     </nav>
     <div class="side-foot"><span>PUBLIC SOURCE</span><b>tom981105-web/paper</b><small id="clock">--:--:--</small></div>
   </aside>
@@ -149,6 +151,57 @@
           <span>LAST SIGNAL <b id="lastSignal">—</b></span>
         </div>
       </div>
+    </section>
+
+    <section class="grid two intelligence-grid">
+      <article class="panel" id="trends">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">PRODUCTION INTELLIGENCE</p>
+            <h2>Generation Trend</h2>
+            <p class="section-copy">실제 논문 생성 커밋을 한국시간 날짜별로 집계합니다.</p>
+          </div>
+          <div class="range-switch">
+            <button class="range-btn active" data-range="7">7D</button>
+            <button class="range-btn" data-range="30">30D</button>
+          </div>
+        </div>
+        <div class="trend-summary">
+          <div><span>RANGE OUTPUT</span><b id="trendOutput">—</b></div>
+          <div><span>DAILY AVG</span><b id="trendAverage">—</b></div>
+          <div><span>BEST DAY</span><b id="trendBest">—</b></div>
+          <div><span>ACTIVE DAYS</span><b id="trendActiveDays">—</b></div>
+        </div>
+        <div class="trend-chart" id="trendChart"></div>
+        <div class="trend-axis" id="trendAxis"></div>
+      </article>
+
+      <article class="panel" id="quality">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">QUALITY CONTROL</p>
+            <h2>Schema & Data Integrity</h2>
+            <p class="section-copy">전체 인덱스와 최신 상세 JSON 샘플을 자동 검사합니다.</p>
+          </div>
+          <span class="state neutral" id="qualityBadge">SCANNING</span>
+        </div>
+
+        <div class="quality-score">
+          <div><strong id="qualityScore">—</strong><span>/100</span></div>
+          <div><b id="qualityHeadline">검사 중</b><small id="qualityCopy">논문 메타데이터 무결성을 확인하고 있습니다.</small></div>
+        </div>
+
+        <div class="quality-grid">
+          <div><span>MISSING DOI</span><b id="missingDoi">—</b></div>
+          <div><span>DUPLICATE DOI</span><b id="duplicateDoi">—</b></div>
+          <div><span>MISSING FIELDS</span><b id="missingFields">—</b></div>
+          <div><span>SECTION ANOMALY</span><b id="sectionAnomaly">—</b></div>
+          <div><span>CATEGORY ANOMALY</span><b id="categoryAnomaly">—</b></div>
+          <div><span>DETAIL SAMPLE</span><b id="detailSample">—</b></div>
+        </div>
+
+        <div class="quality-events" id="qualityEvents"></div>
+      </article>
     </section>
 
     <footer>NEXUS SYSTEM · PAPER LIBRARY OPERATIONS · NODE P1</footer>
