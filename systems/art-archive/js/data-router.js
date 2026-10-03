@@ -48,6 +48,13 @@
     }
   }
 
+  window.__ART_DATA_SOURCES__={};
+
+  function announce(file,source,stamp){
+    window.__ART_DATA_SOURCES__[file]={source,stamp,at:Date.now()};
+    window.dispatchEvent(new CustomEvent('art-data-source-change',{detail:{file,source,stamp}}));
+  }
+
   window.fetch=async function(input,init){
     const file=fileNameOf(input);
     if(!MIGRATING.has(file)) return nativeFetch(input,init);
@@ -76,6 +83,7 @@
     }
 
     const source=selected.url===localUrl?'nexus':'legacy';
+    announce(file,source,selected.stamp);
     return new Response(JSON.stringify(selected.data),{
       status:200,
       headers:{
