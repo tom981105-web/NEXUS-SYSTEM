@@ -1,21 +1,21 @@
 {
   "version": "1.8",
-  "updatedAt": "2026-10-03T21:30:18.858Z",
+  "updatedAt": "2026-10-03T21:47:05.640Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "ok",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-03T21:30:00.001Z",
-      "finishedAt": "2026-10-03T21:30:18.386Z",
-      "result": "success",
-      "durationMs": 18385,
-      "error": null
+      "startedAt": "2026-10-03T21:46:59.972Z",
+      "finishedAt": "2026-10-03T21:47:05.060Z",
+      "result": "skipped",
+      "durationMs": 5088,
+      "error": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
     },
     "consecutiveFailures": 0,
-    "busyOrSkipped": false,
-    "busyReason": null,
+    "busyOrSkipped": true,
+    "busyReason": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀",
     "triggerInventoryAvailable": false
   },
   "notionSync": {
@@ -30,9 +30,9 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-03T21:30:19.275Z",
-    "fetchResult": "success",
-    "error": null,
+    "updatedAt": "2026-10-03T21:47:06.106Z",
+    "fetchResult": "failed",
+    "error": "GitHub API 조회 실패 (/actions/runs?branch=main&per_page=10, HTTP 503): {\"message\": \"No server is currently available to service your request. Sorry about that. Please try resubmitting your request and contact us if the problem persists.\"}\r\n",
     "latestRun": {
       "id": 37154953680,
       "name": "pages build and deployment",
