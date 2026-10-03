@@ -1,16 +1,16 @@
 {
   "version": "1.8",
-  "updatedAt": "2026-10-03T12:46:32.449Z",
+  "updatedAt": "2026-10-03T14:01:14.600Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "ok",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-03T12:46:00.021Z",
-      "finishedAt": "2026-10-03T12:46:31.732Z",
+      "startedAt": "2026-10-03T14:01:00.109Z",
+      "finishedAt": "2026-10-03T14:01:14.169Z",
       "result": "success",
-      "durationMs": 31711,
+      "durationMs": 14060,
       "error": null
     },
     "consecutiveFailures": 0,
@@ -30,24 +30,150 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-03T12:46:33.136Z",
+    "updatedAt": "2026-10-03T14:01:14.782Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
-      "id": 37123155485,
+      "id": 37125479547,
       "name": "pages build and deployment",
       "display_title": "pages build and deployment",
       "event": "dynamic",
       "status": "completed",
       "conclusion": "success",
-      "head_sha": "afa91a1c043b71657c4065e817a242f1de4575dc",
-      "created_at": "2026-10-03T12:31:32Z",
-      "run_started_at": "2026-10-03T12:31:32Z",
-      "updated_at": "2026-10-03T12:32:15Z",
-      "html_url": "https://github.com/tom981105-web/art-archive/actions/runs/37123155485",
-      "message": "Batch SYSTEM operational events"
+      "head_sha": "e2c257e81ab434af05bcdc633ab6bd0abf451bac",
+      "created_at": "2026-10-03T13:14:02Z",
+      "run_started_at": "2026-10-03T13:14:02Z",
+      "updated_at": "2026-10-03T13:14:39Z",
+      "html_url": "https://github.com/tom981105-web/art-archive/actions/runs/37125479547",
+      "message": "Remove misplaced NEXUS migration test file"
     },
     "recentRuns": [
+      {
+        "id": 37125479547,
+        "name": "pages build and deployment",
+        "display_title": "pages build and deployment",
+        "event": "dynamic",
+        "status": "completed",
+        "conclusion": "success",
+        "head_sha": "e2c257e81ab434af05bcdc633ab6bd0abf451bac",
+        "created_at": "2026-10-03T13:14:02Z",
+        "run_started_at": "2026-10-03T13:14:02Z",
+        "updated_at": "2026-10-03T13:14:39Z",
+        "html_url": "https://github.com/tom981105-web/art-archive/actions/runs/37125479547",
+        "message": "Remove misplaced NEXUS migration test file"
+      },
+      {
+        "id": 37125441681,
+        "name": "pages build and deployment",
+        "display_title": "pages build and deployment",
+        "event": "dynamic",
+        "status": "completed",
+        "conclusion": "success",
+        "head_sha": "dd4513dc493bb2d40f9db6817e03395807fa07ae",
+        "created_at": "2026-10-03T13:13:17Z",
+        "run_started_at": "2026-10-03T13:13:17Z",
+        "updated_at": "2026-10-03T13:13:55Z",
+        "html_url": "https://github.com/tom981105-web/art-archive/actions/runs/37125441681",
+        "message": "Test NEXUS SYSTEM write routing"
+      },
+      {
+        "id": 37124796297,
+        "name": "pages build and deployment",
+        "display_title": "pages build and deployment",
+        "event": "dynamic",
+        "status": "completed",
+        "conclusion": "success",
+        "head_sha": "310c3d46c4063c09348a522d4937cbd894ae00a3",
+        "created_at": "2026-10-03T13:01:37Z",
+        "run_started_at": "2026-10-03T13:01:37Z",
+        "updated_at": "2026-10-03T13:02:21Z",
+        "html_url": "https://github.com/tom981105-web/art-archive/actions/runs/37124796297",
+        "message": "Batch SYSTEM operational events"
+      },
+      {
+        "id": 37124794378,
+        "name": "pages build and deployment",
+        "display_title": "pages build and deployment",
+        "event": "dynamic",
+        "status": "completed",
+        "conclusion": "cancelled",
+        "head_sha": "8e02e25174584f7eda29a121af94753575fe2d58",
+        "created_at": "2026-10-03T13:01:36Z",
+        "run_started_at": "2026-10-03T13:01:36Z",
+        "updated_at": "2026-10-03T13:01:40Z",
+        "html_url": "https://github.com/tom981105-web/art-archive/actions/runs/37124794378",
+        "message": "Update SYSTEM runtime status"
+      },
+      {
+        "id": 37124409979,
+        "name": "pages build and deployment",
+        "display_title": "pages build and deployment",
+        "event": "dynamic",
+        "status": "completed",
+        "conclusion": "success",
+        "head_sha": "0d1288d1e55e5ff178d055b2838cab01c1efea5e",
+        "created_at": "2026-10-03T12:54:42Z",
+        "run_started_at": "2026-10-03T12:54:42Z",
+        "updated_at": "2026-10-03T12:55:20Z",
+        "html_url": "https://github.com/tom981105-web/art-archive/actions/runs/37124409979",
+        "message": "Remove legacy ART system UI after NEXUS migration"
+      },
+      {
+        "id": 37124402591,
+        "name": "pages build and deployment",
+        "display_title": "pages build and deployment",
+        "event": "dynamic",
+        "status": "completed",
+        "conclusion": "cancelled",
+        "head_sha": "e72a2116b4ccb0fe8d15aa088a972003a2629068",
+        "created_at": "2026-10-03T12:54:34Z",
+        "run_started_at": "2026-10-03T12:54:34Z",
+        "updated_at": "2026-10-03T12:54:46Z",
+        "html_url": "https://github.com/tom981105-web/art-archive/actions/runs/37124402591",
+        "message": "Remove legacy ART system UI after NEXUS migration"
+      },
+      {
+        "id": 37124400951,
+        "name": "pages build and deployment",
+        "display_title": "pages build and deployment",
+        "event": "dynamic",
+        "status": "completed",
+        "conclusion": "cancelled",
+        "head_sha": "fa3761351a6147255c7cb7d4676c1c2369bc0a8a",
+        "created_at": "2026-10-03T12:54:31Z",
+        "run_started_at": "2026-10-03T12:54:31Z",
+        "updated_at": "2026-10-03T12:54:36Z",
+        "html_url": "https://github.com/tom981105-web/art-archive/actions/runs/37124400951",
+        "message": "Remove legacy ART system UI after NEXUS migration"
+      },
+      {
+        "id": 37124398713,
+        "name": "pages build and deployment",
+        "display_title": "pages build and deployment",
+        "event": "dynamic",
+        "status": "completed",
+        "conclusion": "cancelled",
+        "head_sha": "dfc2066d31d55399917501365b11d4236b0dba99",
+        "created_at": "2026-10-03T12:54:29Z",
+        "run_started_at": "2026-10-03T12:54:29Z",
+        "updated_at": "2026-10-03T12:54:36Z",
+        "html_url": "https://github.com/tom981105-web/art-archive/actions/runs/37124398713",
+        "message": "Remove legacy ART system UI after NEXUS migration"
+      },
+      {
+        "id": 37123967609,
+        "name": "pages build and deployment",
+        "display_title": "pages build and deployment",
+        "event": "dynamic",
+        "status": "completed",
+        "conclusion": "success",
+        "head_sha": "cb04753ac2a6ace9569d7cd3cef6685ad88f5d6c",
+        "created_at": "2026-10-03T12:46:37Z",
+        "run_started_at": "2026-10-03T12:46:37Z",
+        "updated_at": "2026-10-03T12:47:34Z",
+        "html_url": "https://github.com/tom981105-web/art-archive/actions/runs/37123967609",
+        "message": "Update SYSTEM runtime status"
+      },
       {
         "id": 37123155485,
         "name": "pages build and deployment",
@@ -61,194 +187,68 @@
         "updated_at": "2026-10-03T12:32:15Z",
         "html_url": "https://github.com/tom981105-web/art-archive/actions/runs/37123155485",
         "message": "Batch SYSTEM operational events"
-      },
-      {
-        "id": 37123154392,
-        "name": "pages build and deployment",
-        "display_title": "pages build and deployment",
-        "event": "dynamic",
-        "status": "completed",
-        "conclusion": "cancelled",
-        "head_sha": "f78e8062d8dc9b18e2f7b7b96a8268ebe2ae2d89",
-        "created_at": "2026-10-03T12:31:30Z",
-        "run_started_at": "2026-10-03T12:31:30Z",
-        "updated_at": "2026-10-03T12:31:34Z",
-        "html_url": "https://github.com/tom981105-web/art-archive/actions/runs/37123154392",
-        "message": "Update SYSTEM runtime status"
-      },
-      {
-        "id": 37122333553,
-        "name": "pages build and deployment",
-        "display_title": "pages build and deployment",
-        "event": "dynamic",
-        "status": "completed",
-        "conclusion": "success",
-        "head_sha": "a4eca8a279a829a31d1c7aa996c9a49b2f2fd69f",
-        "created_at": "2026-10-03T12:16:25Z",
-        "run_started_at": "2026-10-03T12:16:25Z",
-        "updated_at": "2026-10-03T12:17:10Z",
-        "html_url": "https://github.com/tom981105-web/art-archive/actions/runs/37122333553",
-        "message": "Batch SYSTEM operational events"
-      },
-      {
-        "id": 37122331910,
-        "name": "pages build and deployment",
-        "display_title": "pages build and deployment",
-        "event": "dynamic",
-        "status": "completed",
-        "conclusion": "cancelled",
-        "head_sha": "bcbf5daff8f99d4a58e0042cc19a4db4f735cf3e",
-        "created_at": "2026-10-03T12:16:23Z",
-        "run_started_at": "2026-10-03T12:16:23Z",
-        "updated_at": "2026-10-03T12:16:27Z",
-        "html_url": "https://github.com/tom981105-web/art-archive/actions/runs/37122331910",
-        "message": "Update SYSTEM runtime status"
-      },
-      {
-        "id": 37121466554,
-        "name": "pages build and deployment",
-        "display_title": "pages build and deployment",
-        "event": "dynamic",
-        "status": "completed",
-        "conclusion": "success",
-        "head_sha": "c1e4c52409e7d9318f4fbb1b46e8105c255f0cd5",
-        "created_at": "2026-10-03T12:00:27Z",
-        "run_started_at": "2026-10-03T12:00:27Z",
-        "updated_at": "2026-10-03T12:01:08Z",
-        "html_url": "https://github.com/tom981105-web/art-archive/actions/runs/37121466554",
-        "message": "Update SYSTEM runtime status"
-      },
-      {
-        "id": 37120628309,
-        "name": "pages build and deployment",
-        "display_title": "pages build and deployment",
-        "event": "dynamic",
-        "status": "completed",
-        "conclusion": "success",
-        "head_sha": "c67816f12f711179d21a6c444180a9ddeafa8036",
-        "created_at": "2026-10-03T11:44:36Z",
-        "run_started_at": "2026-10-03T11:44:36Z",
-        "updated_at": "2026-10-03T11:45:16Z",
-        "html_url": "https://github.com/tom981105-web/art-archive/actions/runs/37120628309",
-        "message": "Update SYSTEM runtime status"
-      },
-      {
-        "id": 37119801022,
-        "name": "pages build and deployment",
-        "display_title": "pages build and deployment",
-        "event": "dynamic",
-        "status": "completed",
-        "conclusion": "success",
-        "head_sha": "a86498f088f69c45d7ae2f8fec9e414e0b64f5be",
-        "created_at": "2026-10-03T11:29:10Z",
-        "run_started_at": "2026-10-03T11:29:10Z",
-        "updated_at": "2026-10-03T11:29:58Z",
-        "html_url": "https://github.com/tom981105-web/art-archive/actions/runs/37119801022",
-        "message": "Batch SYSTEM operational events"
-      },
-      {
-        "id": 37119800009,
-        "name": "pages build and deployment",
-        "display_title": "pages build and deployment",
-        "event": "dynamic",
-        "status": "completed",
-        "conclusion": "cancelled",
-        "head_sha": "83df227707c4ca8d3573226b0e5a11029e10be52",
-        "created_at": "2026-10-03T11:29:09Z",
-        "run_started_at": "2026-10-03T11:29:09Z",
-        "updated_at": "2026-10-03T11:29:12Z",
-        "html_url": "https://github.com/tom981105-web/art-archive/actions/runs/37119800009",
-        "message": "Update SYSTEM runtime status"
-      },
-      {
-        "id": 37118973465,
-        "name": "pages build and deployment",
-        "display_title": "pages build and deployment",
-        "event": "dynamic",
-        "status": "completed",
-        "conclusion": "success",
-        "head_sha": "557108d5272e4f58dd82171f091f0e8d51c7a195",
-        "created_at": "2026-10-03T11:13:35Z",
-        "run_started_at": "2026-10-03T11:13:35Z",
-        "updated_at": "2026-10-03T11:14:15Z",
-        "html_url": "https://github.com/tom981105-web/art-archive/actions/runs/37118973465",
-        "message": "Batch SYSTEM operational events"
-      },
-      {
-        "id": 37118972083,
-        "name": "pages build and deployment",
-        "display_title": "pages build and deployment",
-        "event": "dynamic",
-        "status": "completed",
-        "conclusion": "cancelled",
-        "head_sha": "adeeab05d2640924162a486c44376c8eecd09e7d",
-        "created_at": "2026-10-03T11:13:34Z",
-        "run_started_at": "2026-10-03T11:13:34Z",
-        "updated_at": "2026-10-03T11:13:37Z",
-        "html_url": "https://github.com/tom981105-web/art-archive/actions/runs/37118972083",
-        "message": "Update SYSTEM runtime status"
       }
     ],
     "recentCommits": [
+      {
+        "sha": "e2c257e81ab434af05bcdc633ab6bd0abf451bac",
+        "message": "Remove misplaced NEXUS migration test file",
+        "date": "2026-10-03T13:14:00Z",
+        "html_url": "https://github.com/tom981105-web/art-archive/commit/e2c257e81ab434af05bcdc633ab6bd0abf451bac"
+      },
+      {
+        "sha": "dd4513dc493bb2d40f9db6817e03395807fa07ae",
+        "message": "Test NEXUS SYSTEM write routing",
+        "date": "2026-10-03T13:13:15Z",
+        "html_url": "https://github.com/tom981105-web/art-archive/commit/dd4513dc493bb2d40f9db6817e03395807fa07ae"
+      },
+      {
+        "sha": "310c3d46c4063c09348a522d4937cbd894ae00a3",
+        "message": "Batch SYSTEM operational events",
+        "date": "2026-10-03T13:01:36Z",
+        "html_url": "https://github.com/tom981105-web/art-archive/commit/310c3d46c4063c09348a522d4937cbd894ae00a3"
+      },
+      {
+        "sha": "8e02e25174584f7eda29a121af94753575fe2d58",
+        "message": "Update SYSTEM runtime status",
+        "date": "2026-10-03T13:01:34Z",
+        "html_url": "https://github.com/tom981105-web/art-archive/commit/8e02e25174584f7eda29a121af94753575fe2d58"
+      },
+      {
+        "sha": "0d1288d1e55e5ff178d055b2838cab01c1efea5e",
+        "message": "Remove legacy ART system UI after NEXUS migration",
+        "date": "2026-10-03T12:54:40Z",
+        "html_url": "https://github.com/tom981105-web/art-archive/commit/0d1288d1e55e5ff178d055b2838cab01c1efea5e"
+      },
+      {
+        "sha": "e72a2116b4ccb0fe8d15aa088a972003a2629068",
+        "message": "Remove legacy ART system UI after NEXUS migration",
+        "date": "2026-10-03T12:54:32Z",
+        "html_url": "https://github.com/tom981105-web/art-archive/commit/e72a2116b4ccb0fe8d15aa088a972003a2629068"
+      },
+      {
+        "sha": "fa3761351a6147255c7cb7d4676c1c2369bc0a8a",
+        "message": "Remove legacy ART system UI after NEXUS migration",
+        "date": "2026-10-03T12:54:30Z",
+        "html_url": "https://github.com/tom981105-web/art-archive/commit/fa3761351a6147255c7cb7d4676c1c2369bc0a8a"
+      },
+      {
+        "sha": "dfc2066d31d55399917501365b11d4236b0dba99",
+        "message": "Remove legacy ART system UI after NEXUS migration",
+        "date": "2026-10-03T12:54:27Z",
+        "html_url": "https://github.com/tom981105-web/art-archive/commit/dfc2066d31d55399917501365b11d4236b0dba99"
+      },
+      {
+        "sha": "cb04753ac2a6ace9569d7cd3cef6685ad88f5d6c",
+        "message": "Update SYSTEM runtime status",
+        "date": "2026-10-03T12:46:35Z",
+        "html_url": "https://github.com/tom981105-web/art-archive/commit/cb04753ac2a6ace9569d7cd3cef6685ad88f5d6c"
+      },
       {
         "sha": "afa91a1c043b71657c4065e817a242f1de4575dc",
         "message": "Batch SYSTEM operational events",
         "date": "2026-10-03T12:31:30Z",
         "html_url": "https://github.com/tom981105-web/art-archive/commit/afa91a1c043b71657c4065e817a242f1de4575dc"
-      },
-      {
-        "sha": "f78e8062d8dc9b18e2f7b7b96a8268ebe2ae2d89",
-        "message": "Update SYSTEM runtime status",
-        "date": "2026-10-03T12:31:29Z",
-        "html_url": "https://github.com/tom981105-web/art-archive/commit/f78e8062d8dc9b18e2f7b7b96a8268ebe2ae2d89"
-      },
-      {
-        "sha": "a4eca8a279a829a31d1c7aa996c9a49b2f2fd69f",
-        "message": "Batch SYSTEM operational events",
-        "date": "2026-10-03T12:16:23Z",
-        "html_url": "https://github.com/tom981105-web/art-archive/commit/a4eca8a279a829a31d1c7aa996c9a49b2f2fd69f"
-      },
-      {
-        "sha": "bcbf5daff8f99d4a58e0042cc19a4db4f735cf3e",
-        "message": "Update SYSTEM runtime status",
-        "date": "2026-10-03T12:16:22Z",
-        "html_url": "https://github.com/tom981105-web/art-archive/commit/bcbf5daff8f99d4a58e0042cc19a4db4f735cf3e"
-      },
-      {
-        "sha": "c1e4c52409e7d9318f4fbb1b46e8105c255f0cd5",
-        "message": "Update SYSTEM runtime status",
-        "date": "2026-10-03T12:00:25Z",
-        "html_url": "https://github.com/tom981105-web/art-archive/commit/c1e4c52409e7d9318f4fbb1b46e8105c255f0cd5"
-      },
-      {
-        "sha": "c67816f12f711179d21a6c444180a9ddeafa8036",
-        "message": "Update SYSTEM runtime status",
-        "date": "2026-10-03T11:44:35Z",
-        "html_url": "https://github.com/tom981105-web/art-archive/commit/c67816f12f711179d21a6c444180a9ddeafa8036"
-      },
-      {
-        "sha": "a86498f088f69c45d7ae2f8fec9e414e0b64f5be",
-        "message": "Batch SYSTEM operational events",
-        "date": "2026-10-03T11:29:08Z",
-        "html_url": "https://github.com/tom981105-web/art-archive/commit/a86498f088f69c45d7ae2f8fec9e414e0b64f5be"
-      },
-      {
-        "sha": "83df227707c4ca8d3573226b0e5a11029e10be52",
-        "message": "Update SYSTEM runtime status",
-        "date": "2026-10-03T11:29:07Z",
-        "html_url": "https://github.com/tom981105-web/art-archive/commit/83df227707c4ca8d3573226b0e5a11029e10be52"
-      },
-      {
-        "sha": "557108d5272e4f58dd82171f091f0e8d51c7a195",
-        "message": "Batch SYSTEM operational events",
-        "date": "2026-10-03T11:13:33Z",
-        "html_url": "https://github.com/tom981105-web/art-archive/commit/557108d5272e4f58dd82171f091f0e8d51c7a195"
-      },
-      {
-        "sha": "adeeab05d2640924162a486c44376c8eecd09e7d",
-        "message": "Update SYSTEM runtime status",
-        "date": "2026-10-03T11:13:32Z",
-        "html_url": "https://github.com/tom981105-web/art-archive/commit/adeeab05d2640924162a486c44376c8eecd09e7d"
       }
     ]
   }
