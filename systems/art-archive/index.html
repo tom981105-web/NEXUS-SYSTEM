@@ -119,6 +119,49 @@
       <article class="hero-metric panel"><span>ACTIVE SERIES</span><strong id="seriesTotal">—</strong><small>SERIES MONITORED</small></article>
     </section>
 
+    <section class="overview-intel-grid" aria-label="ART ARCHIVE command intelligence">
+      <article class="panel overview-intel-card">
+        <div class="intel-head"><span>DATA FRESHNESS</span><b id="overviewFreshnessState">CHECKING</b></div>
+        <strong id="overviewFreshnessAge">—</strong>
+        <small id="overviewFreshnessCopy">NEXUS 미러 데이터 최신성을 확인 중입니다.</small>
+        <div class="intel-track"><i id="overviewFreshnessBar"></i></div>
+      </article>
+
+      <article class="panel overview-intel-card">
+        <div class="intel-head"><span>AUTOMATION QUALITY</span><b id="overviewQualityState">CHECKING</b></div>
+        <strong id="overviewQualityRate">—</strong>
+        <small id="overviewQualityCopy">최근 자동화 성공률을 계산 중입니다.</small>
+        <div class="intel-track"><i id="overviewQualityBar"></i></div>
+      </article>
+
+      <article class="panel overview-intel-card">
+        <div class="intel-head"><span>RECENT SIGNAL</span><b id="overviewSignalState">SCANNING</b></div>
+        <strong id="overviewSignalCount">—</strong>
+        <small id="overviewSignalCopy">최근 실행 이상징후를 확인 중입니다.</small>
+        <div class="signal-dots" id="overviewSignalDots"><i></i><i></i><i></i><i></i><i></i></div>
+      </article>
+
+      <article class="panel overview-intel-card overview-control-card">
+        <div class="intel-head"><span>COMMAND ROUTES</span><b>READY</b></div>
+        <div class="overview-control-actions">
+          <a href="#telemetry">OPEN TELEMETRY</a>
+          <a href="#services">CHECK SERVICES</a>
+          <a href="#events">VIEW INCIDENTS</a>
+          <a href="../../index.html">RETURN NEXUS</a>
+        </div>
+      </article>
+    </section>
+
+    <section class="overview-series-panel panel">
+      <div class="overview-series-head">
+        <div><p class="eyebrow">LIVE SERIES SNAPSHOT</p><h2>Series Pulse</h2><p>오늘 생성량과 최근 저장 상태를 시리즈별로 빠르게 확인합니다.</p></div>
+        <span id="overviewSeriesSummary">CHECKING</span>
+      </div>
+      <div class="overview-series-grid" id="overviewSeriesGrid">
+        <div class="overview-series-loading">시리즈 상태를 불러오는 중입니다.</div>
+      </div>
+    </section>
+
     <section class="panel command-panel" id="today">
       <div class="section-head">
         <div><p class="eyebrow">DAILY OPERATIONS</p><h2>Today at a Glance</h2></div>
