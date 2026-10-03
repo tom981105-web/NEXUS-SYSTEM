@@ -1,8 +1,11 @@
 const PAPER_INDEX='https://raw.githubusercontent.com/tom981105-web/paper/main/data/index.json';
 const API='https://api.github.com/repos/tom981105-web/paper';
+const PAPER_DATA_BASE='https://raw.githubusercontent.com/tom981105-web/paper/main/data/';
 const DAY=24*60*60*1000;
 const $=id=>document.getElementById(id);
 const fmt=n=>Number(n||0).toLocaleString('ko-KR');
+let trendHistory=[];
+let activeTrendRange=7;
 const timeFmt=v=>v?new Intl.DateTimeFormat('ko-KR',{month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hour12:false,timeZone:'Asia/Seoul'}).format(new Date(v)):'—';
 
 function clock(){ $('clock').textContent=new Intl.DateTimeFormat('ko-KR',{hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false,timeZone:'Asia/Seoul'}).format(new Date()); }
@@ -15,6 +18,167 @@ async function getJson(url){
 }
 function setSignal(id,textId,ok,text){ $(id).className='dot '+(ok?'ok':'fail'); $(textId).textContent=text; }
 
+
+
+async function getCommitHistory(days=30){
+  const since=new Date(Date.now()-days*DAY).toISOString();
+  const all=[];
+  for(let page=1;page<=4;page++){
+    const rows=await getJson(API+'/commits?per_page=100&page='+page+'&since='+encodeURIComponent(since));
+    all.push(...rows);
+    if(rows.length<100)break;
+  }
+  return all;
+}
+
+function kstDayKey(value){
+  const parts=new Intl.DateTimeFormat('en-CA',{
+    timeZone:'Asia/Seoul',year:'numeric',month:'2-digit',day:'2-digit'
+  }).formatToParts(new Date(value));
+  const obj=Object.fromEntries(parts.map(p=>[p.type,p.value]));
+  return obj.year+'-'+obj.month+'-'+obj.day;
+}
+
+function buildTrend(history,days){
+  const end=new Date();
+  const rows=[];
+  for(let i=days-1;i>=0;i--){
+    const d=new Date(end.getTime()-i*DAY);
+    rows.push({key:kstDayKey(d),count:0,batches:0});
+  }
+  const byKey=Object.fromEntries(rows.map(r=>[r.key,r]));
+  (history||[]).map(parseBatch).filter(Boolean).forEach(b=>{
+    const key=kstDayKey(b.date);
+    if(byKey[key]){
+      byKey[key].count+=b.count;
+      byKey[key].batches++;
+    }
+  });
+  return rows;
+}
+
+function renderTrend(days=activeTrendRange){
+  activeTrendRange=days;
+  const rows=buildTrend(trendHistory,days);
+  const total=rows.reduce((s,r)=>s+r.count,0);
+  const active=rows.filter(r=>r.count>0);
+  const best=rows.reduce((a,b)=>b.count>a.count?b:a,{key:'—',count:0});
+  const max=Math.max(...rows.map(r=>r.count),1);
+
+  $('trendOutput').textContent=fmt(total);
+  $('trendAverage').textContent=(total/Math.max(days,1)).toFixed(1);
+  $('trendBest').textContent=best.count?best.key.slice(5)+' · '+best.count:'—';
+  $('trendActiveDays').textContent=active.length+' / '+days;
+
+  $('trendChart').innerHTML=rows.map(r=>{
+    const pct=Math.max(1,(r.count/max)*100);
+    return '<div class="trend-bar"><i style="height:'+pct+'%"></i><em>'+r.key+' · '+r.count+' papers / '+r.batches+' batches</em></div>';
+  }).join('');
+
+  const marks=days<=7?rows:rows.filter((_,i)=>i===0||i===rows.length-1||i%5===0);
+  $('trendAxis').innerHTML='<span>'+rows[0].key.slice(5)+'</span><span>'+rows[Math.floor((rows.length-1)/2)].key.slice(5)+'</span><span>'+rows[rows.length-1].key.slice(5)+'</span>';
+
+  document.querySelectorAll('.range-btn').forEach(btn=>{
+    btn.classList.toggle('active',Number(btn.dataset.range)===days);
+  });
+}
+
+function auditIndex(papers){
+  const expectedCats=new Set(['인공지능','전기','로봇·자동화','에너지·환경','건축·시설관리','도서관·문헌정보']);
+  const seenDoi=new Set();
+  let missingDoi=0,duplicateDoi=0,missingFields=0,sectionAnomaly=0,categoryAnomaly=0;
+  const issues=[];
+
+  papers.forEach((p,idx)=>{
+    const doi=String(p.doi||'').trim().toLowerCase();
+    if(!doi) missingDoi++;
+    else if(seenDoi.has(doi)) duplicateDoi++;
+    else seenDoi.add(doi);
+
+    const required=['id','category','title','file','sectionCount','year'];
+    const missing=required.filter(k=>p[k]===undefined||p[k]===null||p[k]==='');
+    if(missing.length){
+      missingFields++;
+      if(issues.length<6)issues.push({level:'bad',title:'필수 필드 누락',detail:(p.id||'#'+idx)+' · '+missing.join(', ')});
+    }
+
+    const sc=Number(p.sectionCount);
+    if(!Number.isFinite(sc)||sc<10||sc>20){
+      sectionAnomaly++;
+      if(issues.length<6)issues.push({level:'warn',title:'섹션 수 이상',detail:(p.id||'#'+idx)+' · '+String(p.sectionCount)});
+    }
+
+    if(!expectedCats.has(p.category)){
+      categoryAnomaly++;
+      if(issues.length<6)issues.push({level:'warn',title:'비표준 카테고리',detail:(p.id||'#'+idx)+' · '+String(p.category)});
+    }
+  });
+
+  return {missingDoi,duplicateDoi,missingFields,sectionAnomaly,categoryAnomaly,issues};
+}
+
+function detailSections(raw){
+  if(Array.isArray(raw))return raw;
+  if(!raw||typeof raw!=='object')return [];
+  if(Array.isArray(raw.sections)){
+    if(raw.sections.length===1&&raw.sections[0]&&Array.isArray(raw.sections[0].sections))return raw.sections[0].sections;
+    return raw.sections;
+  }
+  return [];
+}
+
+async function auditDetailSample(papers,limit=12){
+  const sample=papers.slice(0,limit);
+  const results=await Promise.allSettled(sample.map(async p=>{
+    const raw=await getJson(PAPER_DATA_BASE+p.file);
+    const sections=detailSections(raw).filter(s=>s&&typeof s==='object');
+    if(!sections.length)throw new Error('sections empty');
+    return {id:p.id,count:sections.length};
+  }));
+  return {
+    total:sample.length,
+    ok:results.filter(r=>r.status==='fulfilled').length,
+    failed:results.filter(r=>r.status==='rejected').length
+  };
+}
+
+async function renderQuality(papers){
+  const q=auditIndex(papers);
+  $('missingDoi').textContent=fmt(q.missingDoi);
+  $('duplicateDoi').textContent=fmt(q.duplicateDoi);
+  $('missingFields').textContent=fmt(q.missingFields);
+  $('sectionAnomaly').textContent=fmt(q.sectionAnomaly);
+  $('categoryAnomaly').textContent=fmt(q.categoryAnomaly);
+
+  let sample={total:0,ok:0,failed:0};
+  try{ sample=await auditDetailSample(papers,12); }catch(_){}
+  $('detailSample').textContent=sample.ok+' / '+sample.total;
+
+  const penalty=
+    Math.min(25,q.missingDoi*2)+
+    Math.min(30,q.duplicateDoi*5)+
+    Math.min(25,q.missingFields*4)+
+    Math.min(10,q.sectionAnomaly)+
+    Math.min(5,q.categoryAnomaly)+
+    Math.min(20,sample.failed*4);
+  const score=Math.max(0,100-penalty);
+
+  $('qualityScore').textContent=score;
+  $('qualityBadge').textContent=score>=95?'CLEAN':score>=80?'REVIEW':'ATTENTION';
+  $('qualityBadge').className='state '+(score>=95?'good':score>=80?'warn':'bad');
+  $('qualityHeadline').textContent=score>=95?'데이터 구조 정상':score>=80?'일부 항목 점검 필요':'데이터 이상 확인 필요';
+  $('qualityCopy').textContent='INDEX '+fmt(papers.length)+'편 전체 검사 · 상세 JSON '+sample.total+'편 샘플 검사';
+
+  const events=q.issues.slice();
+  if(q.missingDoi)events.unshift({level:'warn',title:'DOI 누락',detail:q.missingDoi+'건'});
+  if(q.duplicateDoi)events.unshift({level:'bad',title:'DOI 중복',detail:q.duplicateDoi+'건'});
+  if(sample.failed)events.unshift({level:'bad',title:'상세 JSON 읽기 실패',detail:sample.failed+' / '+sample.total});
+  if(!events.length)events.push({level:'ok',title:'무결성 검사 통과',detail:'현재 감지된 주요 구조 이상 없음'});
+
+  $('qualityEvents').innerHTML=events.slice(0,7).map(e=>
+    '<div class="quality-event '+(e.level==='ok'?'':e.level)+'"><span></span><b>'+e.title+'</b><small>'+e.detail+'</small></div>'
+  ).join('');
+}
 
 function parseBatch(commit){
   const msg=(commit.commit&&commit.commit.message||'').split('\n')[0];
@@ -103,7 +267,7 @@ async function load(){
     $('verifiedCount').textContent=fmt(a.verified); $('verifiedBadge').textContent=(a.verified===papers.length?'100% VERIFIED':fmt(a.verified)+' VERIFIED');
     $('yearRange').textContent=a.minYear+'–'+a.maxYear; $('avgSections').textContent=(a.sections/Math.max(papers.length,1)).toFixed(1);
     $('indexSize').textContent=(new Blob([JSON.stringify(papers)]).size/1024/1024).toFixed(2)+' MB';
-    renderFields(a.cats); renderLatest(papers);
+    renderFields(a.cats); renderLatest(papers); renderQuality(papers);
     setSignal('sigIndex','sigIndexText',true,fmt(papers.length)+'개 메타데이터 로드 정상');
     setSignal('sigVerify','sigVerifyText',a.verified===papers.length,fmt(a.verified)+' / '+fmt(papers.length)+' verified');
     setSignal('sigDoi','sigDoiText',a.duplicateDois===0,a.duplicateDois===0?'중복 DOI 없음':a.duplicateDois+'건 중복 감지');
@@ -112,7 +276,7 @@ async function load(){
   }
 
   try{
-    const [runs,commits]=await Promise.all([getJson(API+'/actions/runs?per_page=20'),getJson(API+'/commits?per_page=50')]);
+    const [runs,commits,history]=await Promise.all([getJson(API+'/actions/runs?per_page=20'),getJson(API+'/commits?per_page=50'),getCommitHistory(30)]);
     const run=runs.workflow_runs&&runs.workflow_runs[0];
     deployOK=!!run&&run.status==='completed'&&run.conclusion==='success';
     $('deployBadge').textContent=deployOK?'DEPLOYED':'ATTENTION'; $('deployBadge').className='state '+(deployOK?'good':'warn');
@@ -121,6 +285,8 @@ async function load(){
     $('commitList').innerHTML=(commits||[]).slice(0,5).map(c=>`<div class="commit"><span>${c.commit.message.split('\n')[0]}</span><small>${String(c.sha).slice(0,7)} · ${timeFmt(c.commit.author.date)}</small></div>`).join('');
     setSignal('sigDeploy','sigDeployText',deployOK,deployOK?'GitHub Pages 최신 배포 성공':'최근 배포 확인 필요');
     renderAutomation(commits,runs);
+    trendHistory=history;
+    renderTrend(activeTrendRange);
   }catch(e){
     $('deployBadge').textContent='UNAVAILABLE'; $('deployBadge').className='state warn'; setSignal('sigDeploy','sigDeployText',false,'GitHub API 조회 실패');
   }
