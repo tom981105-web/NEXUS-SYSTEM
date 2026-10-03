@@ -1,0 +1,352 @@
+{
+  "generatedAt": "2026-10-03T10:17:19.565Z",
+  "timezone": "Asia/Seoul",
+  "schemaVersion": 1,
+  "retentionDays": 90,
+  "source": "그림 자동화 사용량 로그 / 사용량 로그",
+  "summary": {
+    "days": 4,
+    "runs": 32,
+    "success": 31,
+    "failed": 1,
+    "successRate": 96.9,
+    "avgElapsed": 213.7
+  },
+  "daily": [
+    {
+      "date": "2026-09-30",
+      "runs": 5,
+      "success": 4,
+      "failed": 1,
+      "successRate": 80,
+      "avgElapsed": null,
+      "maxElapsed": 0,
+      "driveVerified": 4,
+      "driveVerifiedRate": 80,
+      "regenerations": 0,
+      "avgStartDelay": null,
+      "series": [
+        {
+          "name": "크레스트",
+          "runs": 1,
+          "success": 0,
+          "failed": 1,
+          "successRate": 0,
+          "avgElapsed": null,
+          "driveVerified": 0,
+          "regenerations": 0,
+          "avgStartDelay": null
+        },
+        {
+          "name": "신수",
+          "runs": 1,
+          "success": 1,
+          "failed": 0,
+          "successRate": 100,
+          "avgElapsed": null,
+          "driveVerified": 1,
+          "regenerations": 0,
+          "avgStartDelay": null
+        },
+        {
+          "name": "수채화",
+          "runs": 1,
+          "success": 1,
+          "failed": 0,
+          "successRate": 100,
+          "avgElapsed": null,
+          "driveVerified": 1,
+          "regenerations": 0,
+          "avgStartDelay": null
+        },
+        {
+          "name": "성수",
+          "runs": 1,
+          "success": 1,
+          "failed": 0,
+          "successRate": 100,
+          "avgElapsed": null,
+          "driveVerified": 1,
+          "regenerations": 0,
+          "avgStartDelay": null
+        },
+        {
+          "name": "융화",
+          "runs": 1,
+          "success": 1,
+          "failed": 0,
+          "successRate": 100,
+          "avgElapsed": null,
+          "driveVerified": 1,
+          "regenerations": 0,
+          "avgStartDelay": null
+        }
+      ]
+    },
+    {
+      "date": "2026-10-01",
+      "runs": 6,
+      "success": 6,
+      "failed": 0,
+      "successRate": 100,
+      "avgElapsed": 175.5,
+      "maxElapsed": 274,
+      "driveVerified": 6,
+      "driveVerifiedRate": 100,
+      "regenerations": 0,
+      "avgStartDelay": null,
+      "series": [
+        {
+          "name": "크레스트",
+          "runs": 1,
+          "success": 1,
+          "failed": 0,
+          "successRate": 100,
+          "avgElapsed": 177,
+          "driveVerified": 1,
+          "regenerations": 0,
+          "avgStartDelay": null
+        },
+        {
+          "name": "묵수",
+          "runs": 1,
+          "success": 1,
+          "failed": 0,
+          "successRate": 100,
+          "avgElapsed": 170,
+          "driveVerified": 1,
+          "regenerations": 0,
+          "avgStartDelay": null
+        },
+        {
+          "name": "신수",
+          "runs": 1,
+          "success": 1,
+          "failed": 0,
+          "successRate": 100,
+          "avgElapsed": 152,
+          "driveVerified": 1,
+          "regenerations": 0,
+          "avgStartDelay": null
+        },
+        {
+          "name": "수채화",
+          "runs": 1,
+          "success": 1,
+          "failed": 0,
+          "successRate": 100,
+          "avgElapsed": 121,
+          "driveVerified": 1,
+          "regenerations": 0,
+          "avgStartDelay": null
+        },
+        {
+          "name": "펄퍼스",
+          "runs": 1,
+          "success": 1,
+          "failed": 0,
+          "successRate": 100,
+          "avgElapsed": 159,
+          "driveVerified": 1,
+          "regenerations": 0,
+          "avgStartDelay": null
+        },
+        {
+          "name": "융화",
+          "runs": 1,
+          "success": 1,
+          "failed": 0,
+          "successRate": 100,
+          "avgElapsed": 274,
+          "driveVerified": 1,
+          "regenerations": 0,
+          "avgStartDelay": null
+        }
+      ]
+    },
+    {
+      "date": "2026-10-02",
+      "runs": 7,
+      "success": 7,
+      "failed": 0,
+      "successRate": 100,
+      "avgElapsed": 185.4,
+      "maxElapsed": 262,
+      "driveVerified": 7,
+      "driveVerifiedRate": 100,
+      "regenerations": 1,
+      "avgStartDelay": null,
+      "series": [
+        {
+          "name": "크레스트",
+          "runs": 1,
+          "success": 1,
+          "failed": 0,
+          "successRate": 100,
+          "avgElapsed": 154,
+          "driveVerified": 1,
+          "regenerations": 0,
+          "avgStartDelay": null
+        },
+        {
+          "name": "묵수",
+          "runs": 1,
+          "success": 1,
+          "failed": 0,
+          "successRate": 100,
+          "avgElapsed": 192,
+          "driveVerified": 1,
+          "regenerations": 0,
+          "avgStartDelay": null
+        },
+        {
+          "name": "수채화",
+          "runs": 1,
+          "success": 1,
+          "failed": 0,
+          "successRate": 100,
+          "avgElapsed": 110,
+          "driveVerified": 1,
+          "regenerations": 0,
+          "avgStartDelay": null
+        },
+        {
+          "name": "펄퍼스",
+          "runs": 1,
+          "success": 1,
+          "failed": 0,
+          "successRate": 100,
+          "avgElapsed": 226,
+          "driveVerified": 1,
+          "regenerations": 0,
+          "avgStartDelay": null
+        },
+        {
+          "name": "잉크",
+          "runs": 1,
+          "success": 1,
+          "failed": 0,
+          "successRate": 100,
+          "avgElapsed": 120,
+          "driveVerified": 1,
+          "regenerations": 0,
+          "avgStartDelay": null
+        },
+        {
+          "name": "성수",
+          "runs": 2,
+          "success": 2,
+          "failed": 0,
+          "successRate": 100,
+          "avgElapsed": 248,
+          "driveVerified": 2,
+          "regenerations": 1,
+          "avgStartDelay": null
+        }
+      ]
+    },
+    {
+      "date": "2026-10-03",
+      "runs": 14,
+      "success": 14,
+      "failed": 0,
+      "successRate": 100,
+      "avgElapsed": 244.1,
+      "maxElapsed": 458,
+      "driveVerified": 14,
+      "driveVerifiedRate": 100,
+      "regenerations": 0,
+      "avgStartDelay": 119.3,
+      "series": [
+        {
+          "name": "크레스트",
+          "runs": 2,
+          "success": 2,
+          "failed": 0,
+          "successRate": 100,
+          "avgElapsed": 261.5,
+          "driveVerified": 2,
+          "regenerations": 0,
+          "avgStartDelay": 0
+        },
+        {
+          "name": "묵수",
+          "runs": 2,
+          "success": 2,
+          "failed": 0,
+          "successRate": 100,
+          "avgElapsed": 254,
+          "driveVerified": 2,
+          "regenerations": 0,
+          "avgStartDelay": 128
+        },
+        {
+          "name": "신수",
+          "runs": 2,
+          "success": 2,
+          "failed": 0,
+          "successRate": 100,
+          "avgElapsed": 262.5,
+          "driveVerified": 2,
+          "regenerations": 0,
+          "avgStartDelay": 225.5
+        },
+        {
+          "name": "수채화",
+          "runs": 2,
+          "success": 2,
+          "failed": 0,
+          "successRate": 100,
+          "avgElapsed": 238,
+          "driveVerified": 2,
+          "regenerations": 0,
+          "avgStartDelay": 215
+        },
+        {
+          "name": "펄퍼스",
+          "runs": 2,
+          "success": 2,
+          "failed": 0,
+          "successRate": 100,
+          "avgElapsed": 187.5,
+          "driveVerified": 2,
+          "regenerations": 0,
+          "avgStartDelay": 41
+        },
+        {
+          "name": "잉크",
+          "runs": 2,
+          "success": 2,
+          "failed": 0,
+          "successRate": 100,
+          "avgElapsed": 145,
+          "driveVerified": 2,
+          "regenerations": 0,
+          "avgStartDelay": 0
+        },
+        {
+          "name": "성수",
+          "runs": 1,
+          "success": 1,
+          "failed": 0,
+          "successRate": 100,
+          "avgElapsed": 263,
+          "driveVerified": 1,
+          "regenerations": 0,
+          "avgStartDelay": null
+        },
+        {
+          "name": "융화",
+          "runs": 1,
+          "success": 1,
+          "failed": 0,
+          "successRate": 100,
+          "avgElapsed": 458,
+          "driveVerified": 1,
+          "regenerations": 0,
+          "avgStartDelay": null
+        }
+      ]
+    }
+  ]
+}
