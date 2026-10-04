@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-10-04T08:13:43.820Z",
+  "generatedAt": "2026-10-04T08:15:35.650Z",
   "source": "그림 자동화 사용량 로그 / 사용량 로그",
   "schemaVersion": 3,
   "summary": {
     "runs": 40,
-    "success": 36,
+    "success": 37,
     "failed": 1,
-    "successRate": 90,
-    "driveVerified": 36,
+    "successRate": 92.5,
+    "driveVerified": 38,
     "regenerations": 1,
     "sourceRows": 42,
     "normalizedPartialRows": 0
@@ -32,9 +32,9 @@
     {
       "name": "신수",
       "runs": 6,
-      "success": 5,
+      "success": 6,
       "failed": 0,
-      "avgElapsed": 221.8,
+      "avgElapsed": 221.6,
       "regenerations": 0
     },
     {
@@ -42,7 +42,7 @@
       "runs": 7,
       "success": 5,
       "failed": 0,
-      "avgElapsed": 164.8,
+      "avgElapsed": 163.2,
       "regenerations": 0
     },
     {
@@ -85,27 +85,27 @@
       "generationAttempts": 0,
       "regenerations": 0,
       "uploadAttempts": 0,
-      "driveVerified": false,
+      "driveVerified": true,
       "result": "in_progress",
-      "elapsedSeconds": 0,
-      "stage": "GENERATING",
+      "elapsedSeconds": 155,
+      "stage": "COMPLETED",
       "scheduledTime": "2026-10-04 17:09:00",
       "startDelaySeconds": 225,
-      "generatedFilename": null
+      "generatedFilename": "자두 펄퍼스.png"
     },
     {
       "time": "2026-10-04 17:12:05",
       "series": "신수",
-      "generationAttempts": 0,
+      "generationAttempts": 1,
       "regenerations": 0,
-      "uploadAttempts": 0,
-      "driveVerified": false,
-      "result": "running",
-      "elapsedSeconds": 0,
-      "stage": "GENERATING",
+      "uploadAttempts": 1,
+      "driveVerified": true,
+      "result": "success",
+      "elapsedSeconds": 221,
+      "stage": "COMPLETED",
       "scheduledTime": "2026-10-04 17:06:00",
       "startDelaySeconds": 366,
-      "generatedFilename": null
+      "generatedFilename": "아메리카들소 신수.png"
     },
     {
       "time": "2026-10-04 17:06:25",
