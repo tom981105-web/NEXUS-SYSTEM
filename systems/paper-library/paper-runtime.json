@@ -1,152 +1,107 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-04T15:18:13.985Z",
+  "updatedAt": "2026-10-04T16:14:25.417Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "success",
-    "runId": "paper-20261005-001425",
-    "startedAt": "2026-10-04T15:14:25.150Z",
-    "finishedAt": "2026-10-04T15:18:13.985Z",
-    "durationMs": 228835,
-    "generatedCount": 6,
+    "status": "running",
+    "runId": "paper-20261005-011425",
+    "startedAt": "2026-10-04T16:14:25.214Z",
+    "finishedAt": null,
+    "durationMs": null,
+    "generatedCount": 0,
     "expectedMax": 6,
-    "lastCommitSha": "d165e5d3a762911c31820ce40a5f02ffdb8db3ca",
+    "lastCommitSha": null,
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 73,
-      "success": 73,
+      "calls": 0,
+      "success": 0,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": 200,
+      "lastHttpStatus": null,
       "disabledForRun": false
     },
     "crossref": {
-      "calls": 30,
-      "success": 29,
-      "retries": 1,
-      "http429": 1,
-      "errors": 1,
-      "lastHttpStatus": 200,
-      "adaptiveIntervalMs": 1000,
-      "throttleEvents": 1,
-      "earlyStops": 6
-    },
-    "gemini": {
-      "calls": 6,
-      "success": 6,
+      "calls": 0,
+      "success": 0,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": 200
+      "lastHttpStatus": null,
+      "adaptiveIntervalMs": 650,
+      "throttleEvents": 0,
+      "earlyStops": 0
+    },
+    "gemini": {
+      "calls": 0,
+      "success": 0,
+      "retries": 0,
+      "http429": 0,
+      "errors": 0,
+      "lastHttpStatus": null
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 139,
-      "selectedTitle": "Deep Learning-Based Learning Strategies in Realizing Meaningful, Critical, and Enjoyable Learning",
-      "selectedDoi": "10.23917/jdl.v1i2.11572",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "전기",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 99,
-      "selectedTitle": "Sizing power transformers in power systems planning using thermal rating",
-      "selectedDoi": "10.1016/j.ijepes.2019.105781",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "로봇·자동화",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 109,
-      "selectedTitle": "H-SLAM: Hybrid direct–indirect visual SLAM",
-      "selectedDoi": "10.1016/j.robot.2024.104729",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "에너지·환경",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 146,
-      "selectedTitle": "Evaluating solar photovoltaic potential of buildings based on the installation parameters of photovoltaic modules",
-      "selectedDoi": "10.1016/j.solener.2025.113304",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "건축·시설관리",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 80,
-      "selectedTitle": "U.S. Military Veterans as a Source of Facility Management Talent",
-      "selectedDoi": "10.22361/jfmer/200940",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "도서관·문헌정보",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 30,
-      "selectedTitle": "Artificial Intelligence in academic library strategy in the United Kingdom and the Mainland of China",
-      "selectedDoi": "10.1016/j.acalib.2023.102772",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     }
   ],
-  "verification": {
-    "filesExist": true,
-    "jsonValid": true,
-    "indexHeadCorrect": true,
-    "indexDetailDoiMatch": true,
-    "noOldDoiDuplicates": true,
-    "noNewDoiDuplicates": true,
-    "ok": true
-  },
-  "stages": [
-    {
-      "at": "2026-10-04T15:14:26.589Z",
-      "name": "START",
-      "status": "running",
-      "message": "논문 자동화 V2.7.4 시작"
-    },
-    {
-      "at": "2026-10-04T15:14:27.045Z",
-      "name": "GITHUB_HEAD",
-      "status": "success",
-      "message": "09a9128"
-    },
-    {
-      "at": "2026-10-04T15:14:29.532Z",
-      "name": "INDEX",
-      "status": "success",
-      "message": "papers=691"
-    },
-    {
-      "at": "2026-10-04T15:18:10.733Z",
-      "name": "GITHUB_COMMIT",
-      "status": "success",
-      "message": "d165e5d"
-    },
-    {
-      "at": "2026-10-04T15:18:13.962Z",
-      "name": "VERIFY",
-      "status": "success",
-      "message": "최종 검증 통과"
-    },
-    {
-      "at": "2026-10-04T15:18:13.985Z",
-      "name": "FINISH",
-      "status": "success",
-      "message": "generated=6"
-    }
-  ]
+  "verification": null,
+  "stages": []
 }
