@@ -1,107 +1,152 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-04T14:14:25.887Z",
+  "updatedAt": "2026-10-04T14:18:58.061Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "running",
+    "status": "success",
     "runId": "paper-20261004-231425",
     "startedAt": "2026-10-04T14:14:25.680Z",
-    "finishedAt": null,
-    "durationMs": null,
-    "generatedCount": 0,
+    "finishedAt": "2026-10-04T14:18:58.061Z",
+    "durationMs": 272381,
+    "generatedCount": 6,
     "expectedMax": 6,
-    "lastCommitSha": null,
+    "lastCommitSha": "09a91280f0f326daadeb957a4b1df7105bfa1525",
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 0,
-      "success": 0,
+      "calls": 73,
+      "success": 73,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": null,
+      "lastHttpStatus": 200,
       "disabledForRun": false
     },
     "crossref": {
-      "calls": 0,
-      "success": 0,
-      "retries": 0,
-      "http429": 0,
-      "errors": 0,
-      "lastHttpStatus": null,
-      "adaptiveIntervalMs": 650,
-      "throttleEvents": 0,
-      "earlyStops": 0
+      "calls": 34,
+      "success": 29,
+      "retries": 5,
+      "http429": 5,
+      "errors": 5,
+      "lastHttpStatus": 200,
+      "adaptiveIntervalMs": 2400,
+      "throttleEvents": 5,
+      "earlyStops": 6
     },
     "gemini": {
-      "calls": 0,
-      "success": 0,
+      "calls": 6,
+      "success": 6,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": null
+      "lastHttpStatus": 200
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 140,
+      "selectedTitle": "A machine learning approach for hierarchical classification of software requirements",
+      "selectedDoi": "10.1016/j.mlwa.2023.100457",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "전기",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 100,
+      "selectedTitle": "Linear battery models for power systems analysis",
+      "selectedDoi": "10.1016/j.epsr.2022.108565",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "로봇·자동화",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 110,
+      "selectedTitle": "AUTONOMOUS NAVIGATION FOR MOBILE ROBOT USING COMPUTER VISION",
+      "selectedDoi": "10.56726/irjmets81768",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "에너지·환경",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 148,
+      "selectedTitle": "Solid gravity energy storage: Pioneering energy storage solution–A review",
+      "selectedDoi": "10.1016/j.est.2025.115691",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "건축·시설관리",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 81,
+      "selectedTitle": "Benefits of using Building Information Modeling for project management",
+      "selectedDoi": "10.1590/1806-9649-2025v32e2125",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "도서관·문헌정보",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 31,
+      "selectedTitle": "The CLEAR path: A framework for enhancing information literacy through prompt engineering",
+      "selectedDoi": "10.1016/j.acalib.2023.102720",
+      "sourceProvider": "Crossref"
     }
   ],
-  "verification": null,
-  "stages": []
+  "verification": {
+    "filesExist": true,
+    "jsonValid": true,
+    "indexHeadCorrect": true,
+    "indexDetailDoiMatch": true,
+    "noOldDoiDuplicates": true,
+    "noNewDoiDuplicates": true,
+    "ok": true
+  },
+  "stages": [
+    {
+      "at": "2026-10-04T14:14:27.165Z",
+      "name": "START",
+      "status": "running",
+      "message": "논문 자동화 V2.7.4 시작"
+    },
+    {
+      "at": "2026-10-04T14:14:27.435Z",
+      "name": "GITHUB_HEAD",
+      "status": "success",
+      "message": "68f5cf7"
+    },
+    {
+      "at": "2026-10-04T14:14:28.876Z",
+      "name": "INDEX",
+      "status": "success",
+      "message": "papers=685"
+    },
+    {
+      "at": "2026-10-04T14:18:53.400Z",
+      "name": "GITHUB_COMMIT",
+      "status": "success",
+      "message": "09a9128"
+    },
+    {
+      "at": "2026-10-04T14:18:58.045Z",
+      "name": "VERIFY",
+      "status": "success",
+      "message": "최종 검증 통과"
+    },
+    {
+      "at": "2026-10-04T14:18:58.061Z",
+      "name": "FINISH",
+      "status": "success",
+      "message": "generated=6"
+    }
+  ]
 }
