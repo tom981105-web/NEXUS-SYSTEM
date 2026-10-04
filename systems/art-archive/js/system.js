@@ -541,7 +541,8 @@ function renderAlertCenter(){
   const errors=issues.filter(x=>x.level==='error').length;
   const warnings=issues.filter(x=>x.level==='warning').length;
   box.hidden=false;box.className='alert-center '+(first.level==='error'?'':'warn-state');
-  $('#alertTitle').textContent=errors?('SYSTEM ALERT · '+errors+' ERROR'+(errors>1?'S':'')):('SYSTEM NOTICE · '+warnings+' WARNING'+(warnings>1?'S':''));
+  const scheduleOnly=issues.length===1&&alertState.schedule==='error'&&alertState.script!=='error'&&alertState.notion!=='error'&&alertState.deploy!=='error'&&alertState.drive!=='error';
+  $('#alertTitle').textContent=scheduleOnly?'AUTOMATION ALERT · 1 ISSUE':errors?('SYSTEM ALERT · '+errors+' ERROR'+(errors>1?'S':'')):('SYSTEM NOTICE · '+warnings+' WARNING'+(warnings>1?'S':''));
   $('#alertMessage').textContent=issues.map(x=>x.title).join(' · ');
   $('#alertAction').href=first.href;
 }
