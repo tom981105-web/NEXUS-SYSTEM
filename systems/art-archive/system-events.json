@@ -1,7 +1,16 @@
 {
   "version": "1.4",
-  "updatedAt": "2026-10-03T23:48:22.599Z",
+  "updatedAt": "2026-10-04T00:18:27.804Z",
   "events": [
+    {
+      "id": "830c98b2-9a46-412e-a565-ed41d38bf059",
+      "at": "2026-10-04T00:08:06.074Z",
+      "service": "Apps Script",
+      "level": "info",
+      "status": "skipped",
+      "title": "Apps Script 실행 건너뜀",
+      "message": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
+    },
     {
       "id": "86ced47c-da20-4b3a-8d60-351c4b41e02b",
       "at": "2026-10-03T23:47:05.636Z",
