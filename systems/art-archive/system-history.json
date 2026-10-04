@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T08:13:46.249Z",
+  "generatedAt": "2026-10-04T08:15:37.076Z",
   "timezone": "Asia/Seoul",
   "schemaVersion": 1,
   "retentionDays": 90,
@@ -7,10 +7,10 @@
   "summary": {
     "days": 5,
     "runs": 40,
-    "success": 36,
+    "success": 37,
     "failed": 1,
-    "successRate": 90,
-    "avgElapsed": 201.2
+    "successRate": 92.5,
+    "avgElapsed": 207.5
   },
   "daily": [
     {
@@ -351,13 +351,13 @@
     {
       "date": "2026-10-04",
       "runs": 8,
-      "success": 5,
+      "success": 6,
       "failed": 0,
-      "successRate": 62.5,
-      "avgElapsed": 159,
+      "successRate": 75,
+      "avgElapsed": 186.6,
       "maxElapsed": 308,
-      "driveVerified": 5,
-      "driveVerifiedRate": 62.5,
+      "driveVerified": 7,
+      "driveVerifiedRate": 87.5,
       "regenerations": 0,
       "avgStartDelay": 200.6,
       "series": [
@@ -386,11 +386,11 @@
         {
           "name": "신수",
           "runs": 2,
-          "success": 1,
+          "success": 2,
           "failed": 0,
-          "successRate": 50,
-          "avgElapsed": 105,
-          "driveVerified": 1,
+          "successRate": 100,
+          "avgElapsed": 215.5,
+          "driveVerified": 2,
           "regenerations": 0,
           "avgStartDelay": 240.5
         },
@@ -401,7 +401,7 @@
           "failed": 0,
           "successRate": 0,
           "avgElapsed": 0,
-          "driveVerified": 0,
+          "driveVerified": 1,
           "regenerations": 0,
           "avgStartDelay": 278
         }
