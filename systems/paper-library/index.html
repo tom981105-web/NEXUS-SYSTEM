@@ -22,6 +22,7 @@
       <a href="#quality">08 Quality</a>
       <a href="#latest-quality">09 Latest Quality</a>
       <a href="#incidents">10 Incidents</a>
+      <a href="#batches">11 Batches</a>
     </nav>
     <div class="side-foot"><span>PUBLIC SOURCE</span><b>tom981105-web/paper</b><small id="clock">--:--:--</small></div>
   </aside>
@@ -267,6 +268,42 @@
         <div class="anomaly-wrap">
           <div class="box-head"><b>Anomalous Papers</b><span id="anomalyCount">—</span></div>
           <div class="anomaly-list" id="anomalyList"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel batch-intelligence" id="batches">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">BATCH INTELLIGENCE</p>
+          <h2>Generation Batch Watchdog</h2>
+          <p class="section-copy">최근 생성 커밋의 예상 논문 수와 실제 추가된 상세 JSON 수를 비교합니다.</p>
+        </div>
+        <span class="state neutral" id="batchHealthBadge">SCANNING</span>
+      </div>
+
+      <div class="batch-kpis">
+        <div><span>CHECKED BATCHES</span><b id="batchChecked">—</b></div>
+        <div><span>COMPLETE</span><b id="batchComplete">—</b></div>
+        <div><span>MISMATCH</span><b id="batchMismatch">—</b></div>
+        <div><span>DETAIL JSON ADDED</span><b id="batchAddedFiles">—</b></div>
+        <div><span>INDEX UPDATED</span><b id="batchIndexTouched">—</b></div>
+      </div>
+
+      <div class="batch-table-wrap">
+        <div class="box-head"><b>Recent Batch Integrity</b><span>LIVE GITHUB COMMIT DIFF</span></div>
+        <div class="batch-table" id="batchIntegrityTable"></div>
+      </div>
+
+      <div class="watchdog-strip">
+        <div>
+          <span class="incident-light" id="watchdogLight"></span>
+          <div><b id="watchdogState">CHECKING</b><small id="watchdogCopy">자동 생성 신호를 확인하고 있습니다.</small></div>
+        </div>
+        <div>
+          <span>LAST BATCH <b id="watchdogLastBatch">—</b></span>
+          <span>EXPECTED CADENCE <b>~1H</b></span>
+          <span>CRITICAL AFTER <b>4H</b></span>
         </div>
       </div>
     </section>
