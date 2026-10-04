@@ -1,14 +1,14 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-04T12:15:33.652Z",
+  "updatedAt": "2026-10-04T12:16:12.235Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.2",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.2",
-    "status": "test",
-    "runId": "paper-20261004-211533",
-    "startedAt": "2026-10-04T12:15:33.650Z",
+    "status": "running",
+    "runId": "paper-20261004-211612",
+    "startedAt": "2026-10-04T12:16:12.165Z",
     "finishedAt": null,
     "durationMs": null,
     "generatedCount": 0,
@@ -100,12 +100,5 @@
     }
   ],
   "verification": null,
-  "stages": [
-    {
-      "at": "2026-10-04T12:15:33.652Z",
-      "name": "TEST",
-      "status": "success",
-      "message": "NEXUS PAPER runtime telemetry 연결 테스트"
-    }
-  ]
+  "stages": []
 }
