@@ -1,7 +1,25 @@
 {
   "version": "1.4",
-  "updatedAt": "2026-10-04T11:24:40.427Z",
+  "updatedAt": "2026-10-04T11:40:34.656Z",
   "events": [
+    {
+      "id": "742fbf33-86b1-41a1-9c7f-4b659ded2197",
+      "at": "2026-10-04T11:40:30.736Z",
+      "service": "Apps Script",
+      "level": "success",
+      "status": "success",
+      "title": "Apps Script 정상 복구",
+      "message": "checkArtworkCompletion"
+    },
+    {
+      "id": "45baa75f-63f8-46f2-9f5a-95257fb6a570",
+      "at": "2026-10-04T11:38:25.587Z",
+      "service": "Apps Script",
+      "level": "error",
+      "status": "failed",
+      "title": "Apps Script 실행 실패",
+      "message": "SYSTEM 사용량 동기화 실패: Error: GitHub 파일 읽기 실패 [NEXUS] (NEXUS-SYSTEM/systems/art-archive/system-usage.json): HTTP 401 / {\r\n  \"message\": \"Bad credentials\",\r\n  \"documentation_url\": \"https://docs.github.com/rest\",\r\n  \"status\": \"401\"\r\n}\n    at githubReadTextFile_ (Code:2116:11)\n    at updateSystemUsage_ (Code:2937:16)\n    at checkArtworkCompletion (Code:235:7)\n    at __GS_INTERNAL_top_function_call__.gs:1:8"
+    },
     {
       "id": "669316a7-2e60-44ec-b3a2-edaf2644ccbd",
       "at": "2026-10-04T11:20:05.316Z",
