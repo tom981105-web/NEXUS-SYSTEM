@@ -1,149 +1,107 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-04T12:49:31.781Z",
+  "updatedAt": "2026-10-04T13:05:30.525Z",
   "timezone": "Asia/Seoul",
-  "source": "PAPER automation V2.7.2",
+  "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
-    "version": "2.7.2",
-    "status": "success",
-    "runId": "paper-20261004-214445",
-    "startedAt": "2026-10-04T12:44:45.176Z",
-    "finishedAt": "2026-10-04T12:49:31.781Z",
-    "durationMs": 286605,
-    "generatedCount": 6,
+    "version": "2.7.4",
+    "status": "running",
+    "runId": "paper-20261004-220530",
+    "startedAt": "2026-10-04T13:05:30.375Z",
+    "finishedAt": null,
+    "durationMs": null,
+    "generatedCount": 0,
     "expectedMax": 6,
-    "lastCommitSha": "5fdf33dd97ec6436fee4750c2f3f3cd329ab80ab",
+    "lastCommitSha": null,
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 73,
-      "success": 73,
+      "calls": 0,
+      "success": 0,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": 200,
+      "lastHttpStatus": null,
       "disabledForRun": false
     },
     "crossref": {
-      "calls": 59,
-      "success": 53,
-      "retries": 6,
-      "http429": 6,
-      "errors": 6,
-      "lastHttpStatus": 200
-    },
-    "gemini": {
-      "calls": 6,
-      "success": 6,
+      "calls": 0,
+      "success": 0,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": 200
+      "lastHttpStatus": null,
+      "adaptiveIntervalMs": 650,
+      "throttleEvents": 0,
+      "earlyStops": 0
+    },
+    "gemini": {
+      "calls": 0,
+      "success": 0,
+      "retries": 0,
+      "http429": 0,
+      "errors": 0,
+      "lastHttpStatus": null
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "generated",
-      "openAlexCandidates": 1,
+      "status": "pending",
+      "openAlexCandidates": null,
       "crossrefCandidates": null,
-      "selectedTitle": "Advances in neural information processing systems 7",
-      "selectedDoi": "10.1016/s0898-1221(96)90463-0",
-      "sourceProvider": "OpenAlex+Crossref"
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "전기",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 140,
-      "selectedTitle": "Planning and Investment Decisions for a Highway Self-Sustained Microgrid System",
-      "selectedDoi": "10.70729/se26314102429",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "로봇·자동화",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 142,
-      "selectedTitle": "ObVi-SLAM: Long-Term Object-Visual SLAM",
-      "selectedDoi": "10.1109/lra.2024.3363534",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "에너지·환경",
-      "status": "generated",
-      "openAlexCandidates": 3,
+      "status": "pending",
+      "openAlexCandidates": null,
       "crossrefCandidates": null,
-      "selectedTitle": "Biodiesel from microalgae",
-      "selectedDoi": "10.1016/j.biotechadv.2007.02.001",
-      "sourceProvider": "OpenAlex+Crossref"
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "건축·시설관리",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 121,
-      "selectedTitle": "Advancing smart building upgrades through an innovative decision support framework for smart readiness indicator implementation: A Greek case study",
-      "selectedDoi": "10.1016/j.buildenv.2025.113189",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "도서관·문헌정보",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 55,
-      "selectedTitle": "Exploring artificial intelligence (AI) chatbots adoption among research scholars using unified theory of acceptance and use of technology (UTAUT)",
-      "selectedDoi": "10.1177/09610006241269189",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     }
   ],
-  "verification": {
-    "filesExist": true,
-    "jsonValid": true,
-    "indexHeadCorrect": true,
-    "indexDetailDoiMatch": true,
-    "noOldDoiDuplicates": true,
-    "noNewDoiDuplicates": true,
-    "ok": true
-  },
-  "stages": [
-    {
-      "at": "2026-10-04T12:44:46.922Z",
-      "name": "START",
-      "status": "running",
-      "message": "논문 자동화 V2.7.3 시작"
-    },
-    {
-      "at": "2026-10-04T12:44:47.306Z",
-      "name": "GITHUB_HEAD",
-      "status": "success",
-      "message": "b8de01d"
-    },
-    {
-      "at": "2026-10-04T12:44:49.020Z",
-      "name": "INDEX",
-      "status": "success",
-      "message": "papers=667"
-    },
-    {
-      "at": "2026-10-04T12:49:28.279Z",
-      "name": "GITHUB_COMMIT",
-      "status": "success",
-      "message": "5fdf33d"
-    },
-    {
-      "at": "2026-10-04T12:49:31.770Z",
-      "name": "VERIFY",
-      "status": "success",
-      "message": "최종 검증 통과"
-    },
-    {
-      "at": "2026-10-04T12:49:31.781Z",
-      "name": "FINISH",
-      "status": "success",
-      "message": "generated=6"
-    }
-  ]
+  "verification": null,
+  "stages": []
 }
