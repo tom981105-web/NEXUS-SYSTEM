@@ -83,38 +83,175 @@ function renderTrend(days=activeTrendRange){
   });
 }
 
+
+function paperQualityScore(p){
+  let score=100;
+  const issues=[];
+  if(!p.id){score-=18;issues.push('id');}
+  if(!p.title&&!p.shortTitle&&!p.originalTitle){score-=18;issues.push('title');}
+  if(!p.category){score-=15;issues.push('category');}
+  if(!p.file){score-=18;issues.push('file');}
+  if(!p.doi){score-=10;issues.push('doi');}
+  if(!p.verified){score-=12;issues.push('verified');}
+  const sc=Number(p.sectionCount);
+  if(!Number.isFinite(sc)||sc<10||sc>20){score-=12;issues.push('sections');}
+  const y=Number(p.year);
+  if(!Number.isFinite(y)||y<1900||y>2100){score-=8;issues.push('year');}
+  return {score:Math.max(0,score),issues};
+}
+
+function renderLatestQuality(papers){
+  const sample=(papers||[]).slice(0,12);
+  const rows=sample.map(p=>({paper:p,...paperQualityScore(p)}));
+  const clean=rows.filter(x=>x.score>=95).length;
+  const review=rows.length-clean;
+  const avg=rows.length?Math.round(rows.reduce((s,x)=>s+x.score,0)/rows.length):0;
+
+  $('latestQualityWindow').textContent=rows.length+' PAPERS';
+  $('latestQualityClean').textContent=clean;
+  $('latestQualityReview').textContent=review;
+  $('latestQualityAvg').textContent=avg;
+  $('latestQualityBadge').textContent=review?'REVIEW':'CLEAN';
+  $('latestQualityBadge').className='state '+(review?'warn':'good');
+
+  $('paperQualityList').innerHTML=rows.map(x=>{
+    const p=x.paper;
+    const state=x.score>=95?'good':x.score>=80?'warn':'bad';
+    const label=x.score>=95?'CLEAN':x.score>=80?'REVIEW':'ATTENTION';
+    return '<div class="paper-quality-row">'+
+      '<span>'+String(p.category||'미분류')+'</span>'+
+      '<b title="'+String(p.shortTitle||p.title||p.originalTitle||p.id||'').replace(/"/g,'&quot;')+'">'+String(p.shortTitle||p.title||p.originalTitle||p.id||'—')+'</b>'+
+      '<strong>'+x.score+'</strong>'+
+      '<em class="'+state+'">'+label+'</em>'+
+    '</div>';
+  }).join('')||'<p class="muted">최신 논문 데이터가 없습니다.</p>';
+}
+
+function renderFieldFlow(papers){
+  const sample=(papers||[]).slice(0,60);
+  const counts={};
+  sample.forEach(p=>{const k=p.category||'미분류';counts[k]=(counts[k]||0)+1;});
+  const rows=Object.entries(counts).sort((a,b)=>b[1]-a[1]);
+  const max=Math.max(1,...rows.map(x=>x[1]));
+  $('fieldFlowSummary').textContent=sample.length+' LATEST';
+  $('fieldFlowBars').innerHTML=rows.map(([name,count])=>{
+    const pct=sample.length?Math.round(count/sample.length*100):0;
+    return '<div class="field-flow-row"><span>'+name+'</span><div class="flow-bar"><i style="width:'+Math.max(2,count/max*100)+'%"></i></div><b>'+count+'</b><small>'+pct+'%</small></div>';
+  }).join('');
+  $('fieldFlowTop').textContent=rows.length?rows[0][0]+' · '+rows[0][1]+'편':'—';
+}
+
+function renderIncidentCenter(papers,commits,runs,audit){
+  const now=Date.now();
+  const batches=(commits||[]).map(parseBatch).filter(Boolean).sort((a,b)=>b.date-a.date);
+  const last=batches[0]||null;
+  const age=last?now-last.date.getTime():Infinity;
+
+  const workflowRuns=(runs&&runs.workflow_runs)||[];
+  const deployFailures=workflowRuns.filter(r=>
+    r.status==='completed'&&['failure','timed_out','action_required','stale'].includes(String(r.conclusion||''))
+  );
+
+  const textPool=[
+    ...(commits||[]).map(c=>(c.commit&&c.commit.message)||''),
+    ...workflowRuns.map(r=>String(r.display_title||'')+' '+String(r.name||''))
+  ].join('\n');
+  const explicit429=/\b429\b|too many requests|rate limit(?:ed|ing)?/i.test(textPool);
+
+  const anomalyTotal=audit
+    ? audit.missingDoi+audit.duplicateDoi+audit.missingFields+audit.sectionAnomaly+audit.categoryAnomaly
+    : 0;
+
+  $('incidentGap').textContent=last?humanGap(age):'NO SIGNAL';
+  $('incidentDeployFail').textContent=deployFailures.length;
+  $('incidentData').textContent=anomalyTotal;
+  $('incident429').textContent=explicit429?'DETECTED':'UNOBSERVED';
+  $('incident429Copy').textContent=explicit429?'explicit public signal':'OpenAlex/Gemini 로그 미연결';
+
+  const incidents=[];
+  if(!last){
+    incidents.push({level:'bad',title:'생성 신호 없음',detail:'논문 생성 커밋을 찾지 못했습니다.',time:'NOW'});
+  }else if(age>4*60*60*1000){
+    incidents.push({level:'bad',title:'자동 생성 장기 공백',detail:'마지막 생성 배치 이후 '+humanGap(age)+' 경과',time:timeFmt(last.date)});
+  }else if(age>2.25*60*60*1000){
+    incidents.push({level:'warn',title:'자동 생성 지연',detail:'평소 주기보다 생성 신호가 늦습니다 · '+humanGap(age),time:timeFmt(last.date)});
+  }
+  deployFailures.slice(0,4).forEach(r=>{
+    incidents.push({level:'bad',title:'GitHub Pages 배포 실패',detail:String(r.display_title||r.name||'workflow')+' · '+String(r.conclusion||'failure').toUpperCase(),time:timeFmt(r.updated_at)});
+  });
+  if(anomalyTotal){
+    incidents.push({level:audit.duplicateDoi||audit.missingFields?'bad':'warn',title:'논문 데이터 이상',detail:'인덱스 무결성 이상 합계 '+anomalyTotal+'건',time:'INDEX'});
+  }
+  if(explicit429){
+    incidents.push({level:'warn',title:'HTTP 429 신호 감지',detail:'공개 GitHub 신호에서 429/rate-limit 문구 감지',time:'PUBLIC'});
+  }else{
+    incidents.push({level:'good',title:'HTTP 429 직접 계측 미연결',detail:'OpenAlex/Gemini Apps Script 로그가 연결되기 전에는 429를 추정하지 않습니다.',time:'INFO'});
+  }
+  if(!incidents.some(x=>x.level==='bad'||x.level==='warn')){
+    incidents.unshift({level:'good',title:'관측 가능한 주요 장애 없음',detail:'생성 커밋·배포·인덱스 기준',time:'NOW'});
+  }
+
+  const bad=incidents.filter(x=>x.level==='bad').length;
+  const warn=incidents.filter(x=>x.level==='warn').length;
+  $('incidentCenterBadge').textContent=bad?'ATTENTION':warn?'WATCH':'CLEAR';
+  $('incidentCenterBadge').className='state '+(bad?'bad':warn?'warn':'good');
+  $('incidentCount').textContent=(bad+warn)+' ACTIVE';
+  $('paperIncidentFeed').innerHTML=incidents.slice(0,8).map(x=>
+    '<div class="paper-incident '+x.level+'"><span></span><div><b>'+x.title+'</b><small>'+x.detail+'</small></div><time>'+x.time+'</time></div>'
+  ).join('');
+
+  const anomalies=(audit&&audit.anomalies)||[];
+  $('anomalyCount').textContent=anomalies.length+' ITEMS';
+  $('anomalyList').innerHTML=anomalies.slice(0,10).map(x=>
+    '<div class="anomaly-item"><span>'+String(x.category||'미분류')+'</span><div><b>'+String(x.title||x.id||'—')+'</b><small>'+x.reasons.join(' · ')+'</small></div></div>'
+  ).join('')||'<div class="anomaly-item"><span>CLEAN</span><div><b>표시할 이상 논문 없음</b><small>현재 인덱스 규칙 기준</small></div></div>';
+}
+
 function auditIndex(papers){
   const expectedCats=new Set(['인공지능','전기','로봇·자동화','에너지·환경','건축·시설관리','도서관·문헌정보']);
   const seenDoi=new Set();
   let missingDoi=0,duplicateDoi=0,missingFields=0,sectionAnomaly=0,categoryAnomaly=0;
   const issues=[];
+  const anomalies=[];
 
   papers.forEach((p,idx)=>{
+    const reasons=[];
     const doi=String(p.doi||'').trim().toLowerCase();
-    if(!doi) missingDoi++;
-    else if(seenDoi.has(doi)) duplicateDoi++;
+    if(!doi){missingDoi++;reasons.push('DOI 누락');}
+    else if(seenDoi.has(doi)){duplicateDoi++;reasons.push('DOI 중복');}
     else seenDoi.add(doi);
 
     const required=['id','category','title','file','sectionCount','year'];
     const missing=required.filter(k=>p[k]===undefined||p[k]===null||p[k]==='');
     if(missing.length){
       missingFields++;
+      reasons.push('필수필드: '+missing.join(', '));
       if(issues.length<6)issues.push({level:'bad',title:'필수 필드 누락',detail:(p.id||'#'+idx)+' · '+missing.join(', ')});
     }
 
     const sc=Number(p.sectionCount);
     if(!Number.isFinite(sc)||sc<10||sc>20){
       sectionAnomaly++;
+      reasons.push('섹션 수 '+String(p.sectionCount));
       if(issues.length<6)issues.push({level:'warn',title:'섹션 수 이상',detail:(p.id||'#'+idx)+' · '+String(p.sectionCount)});
     }
 
     if(!expectedCats.has(p.category)){
       categoryAnomaly++;
+      reasons.push('비표준 카테고리');
       if(issues.length<6)issues.push({level:'warn',title:'비표준 카테고리',detail:(p.id||'#'+idx)+' · '+String(p.category)});
+    }
+    if(reasons.length&&anomalies.length<40){
+      anomalies.push({
+        id:p.id||'#'+idx,
+        title:p.shortTitle||p.title||p.originalTitle||p.id||('#'+idx),
+        category:p.category||'미분류',
+        reasons
+      });
     }
   });
 
-  return {missingDoi,duplicateDoi,missingFields,sectionAnomaly,categoryAnomaly,issues};
+  return {missingDoi,duplicateDoi,missingFields,sectionAnomaly,categoryAnomaly,issues,anomalies};
 }
 
 function detailSections(raw){
@@ -142,8 +279,8 @@ async function auditDetailSample(papers,limit=12){
   };
 }
 
-async function renderQuality(papers){
-  const q=auditIndex(papers);
+async function renderQuality(papers,q){
+  q=q||auditIndex(papers);
   $('missingDoi').textContent=fmt(q.missingDoi);
   $('duplicateDoi').textContent=fmt(q.duplicateDoi);
   $('missingFields').textContent=fmt(q.missingFields);
@@ -207,7 +344,7 @@ function renderAutomation(commits,runs){
   for(let i=0;i<recent.length-1;i++)gaps.push(recent[i].date-recent[i+1].date);
   const med=median(gaps);
   const abnormal=gaps.filter(g=>g>2.25*60*60*1000).length;
-  const failed=(runs.workflow_runs||[]).filter(r=>r.status==='completed'&&r.conclusion&&r.conclusion!=='success').length;
+  const failed=(runs.workflow_runs||[]).filter(r=>r.status==='completed'&&['failure','timed_out','action_required','stale'].includes(String(r.conclusion||''))).length;
   const last=batches[0]||null;
   const age=last?now-last.date.getTime():Infinity;
 
@@ -257,7 +394,7 @@ function renderLatest(papers){
 
 async function load(){
   $('refresh').disabled=true; $('overall').textContent='SYNCING';
-  let indexOK=false, deployOK=false, papers=[];
+  let indexOK=false, deployOK=false, papers=[], indexAudit=null;
   try{
     papers=await getJson(PAPER_INDEX);
     indexOK=Array.isArray(papers);
@@ -267,7 +404,7 @@ async function load(){
     $('verifiedCount').textContent=fmt(a.verified); $('verifiedBadge').textContent=(a.verified===papers.length?'100% VERIFIED':fmt(a.verified)+' VERIFIED');
     $('yearRange').textContent=a.minYear+'–'+a.maxYear; $('avgSections').textContent=(a.sections/Math.max(papers.length,1)).toFixed(1);
     $('indexSize').textContent=(new Blob([JSON.stringify(papers)]).size/1024/1024).toFixed(2)+' MB';
-    renderFields(a.cats); renderLatest(papers); renderQuality(papers);
+    renderFields(a.cats); renderLatest(papers); renderLatestQuality(papers); renderFieldFlow(papers); indexAudit=auditIndex(papers); renderQuality(papers,indexAudit);
     setSignal('sigIndex','sigIndexText',true,fmt(papers.length)+'개 메타데이터 로드 정상');
     setSignal('sigVerify','sigVerifyText',a.verified===papers.length,fmt(a.verified)+' / '+fmt(papers.length)+' verified');
     setSignal('sigDoi','sigDoiText',a.duplicateDois===0,a.duplicateDois===0?'중복 DOI 없음':a.duplicateDois+'건 중복 감지');
@@ -285,6 +422,7 @@ async function load(){
     $('commitList').innerHTML=(commits||[]).slice(0,5).map(c=>`<div class="commit"><span>${c.commit.message.split('\n')[0]}</span><small>${String(c.sha).slice(0,7)} · ${timeFmt(c.commit.author.date)}</small></div>`).join('');
     setSignal('sigDeploy','sigDeployText',deployOK,deployOK?'GitHub Pages 최신 배포 성공':'최근 배포 확인 필요');
     renderAutomation(commits,runs);
+    renderIncidentCenter(papers,commits,runs,indexAudit);
     trendHistory=history;
     renderTrend(activeTrendRange);
   }catch(e){
