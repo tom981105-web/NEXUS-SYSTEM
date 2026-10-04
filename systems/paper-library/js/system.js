@@ -6,6 +6,7 @@ const $=id=>document.getElementById(id);
 const fmt=n=>Number(n||0).toLocaleString('ko-KR');
 let trendHistory=[];
 let activeTrendRange=7;
+let automationRuntimeState={score:100,critical:false,age:null,last:null};
 const timeFmt=v=>v?new Intl.DateTimeFormat('ko-KR',{month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hour12:false,timeZone:'Asia/Seoul'}).format(new Date(v)):'—';
 
 function clock(){ $('clock').textContent=new Intl.DateTimeFormat('ko-KR',{hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false,timeZone:'Asia/Seoul'}).format(new Date()); }
@@ -317,6 +318,81 @@ async function renderQuality(papers,q){
   ).join('');
 }
 
+
+async function getRecentBatchDetails(commits,limit=6){
+  const batches=(commits||[]).map(c=>({raw:c,parsed:parseBatch(c)})).filter(x=>x.parsed).slice(0,limit);
+  const details=await Promise.all(batches.map(async x=>{
+    try{
+      const d=await getJson(API+'/commits/'+x.raw.sha);
+      const files=(d.files||[]);
+      const paperFiles=files.filter(f=>f.status==='added'&&String(f.filename||'').startsWith('data/papers/')&&String(f.filename||'').endsWith('.json'));
+      const indexTouched=files.some(f=>String(f.filename||'')==='data/index.json');
+      return {
+        sha:String(x.raw.sha).slice(0,7),
+        date:new Date(x.raw.commit.author.date),
+        expected:x.parsed.count,
+        actual:paperFiles.length,
+        indexTouched,
+        ok:paperFiles.length===x.parsed.count&&indexTouched,
+        files:paperFiles.map(f=>f.filename)
+      };
+    }catch(e){
+      return {
+        sha:String(x.raw.sha).slice(0,7),
+        date:new Date(x.raw.commit.author.date),
+        expected:x.parsed.count,
+        actual:null,
+        indexTouched:false,
+        ok:false,
+        error:e.message,
+        files:[]
+      };
+    }
+  }));
+  return details;
+}
+
+function renderBatchWatchdog(details){
+  const rows=details||[];
+  const complete=rows.filter(x=>x.ok).length;
+  const mismatch=rows.filter(x=>!x.ok).length;
+  const added=rows.reduce((s,x)=>s+(Number.isFinite(x.actual)?x.actual:0),0);
+  const indexTouched=rows.filter(x=>x.indexTouched).length;
+
+  $('batchChecked').textContent=rows.length;
+  $('batchComplete').textContent=complete;
+  $('batchMismatch').textContent=mismatch;
+  $('batchAddedFiles').textContent=added;
+  $('batchIndexTouched').textContent=indexTouched;
+
+  $('batchHealthBadge').textContent=mismatch?'REVIEW':'COMPLETE';
+  $('batchHealthBadge').className='state '+(mismatch?'warn':'good');
+
+  $('batchIntegrityTable').innerHTML=rows.map(x=>{
+    const state=x.ok?'good':x.error?'bad':'warn';
+    const label=x.ok?'COMPLETE':x.error?'API ERROR':'MISMATCH';
+    return '<div class="batch-integrity-row">'+
+      '<span>'+timeFmt(x.date)+'</span>'+
+      '<b>'+x.sha+'</b>'+
+      '<strong>EXP '+x.expected+'</strong>'+
+      '<strong>JSON '+(x.actual===null?'—':x.actual)+'</strong>'+
+      '<em class="'+state+'">'+label+'</em>'+
+    '</div>';
+  }).join('')||'<p class="muted">최근 생성 배치가 없습니다.</p>';
+
+  const age=automationRuntimeState.age;
+  const critical=automationRuntimeState.critical;
+  const delayed=Number.isFinite(age)&&age>2.25*60*60*1000;
+  $('watchdogLastBatch').textContent=Number.isFinite(age)?humanGap(age):'—';
+  $('watchdogState').textContent=critical?'CRITICAL':delayed?'DELAYED':'HEALTHY';
+  $('watchdogCopy').textContent=critical
+    ?'자동 생성 신호가 4시간 이상 끊겼습니다. 트리거 또는 Apps Script 실행 상태를 확인해야 합니다.'
+    :delayed
+      ?'자동 생성 간격이 평소 주기보다 길어지고 있습니다.'
+      :'최근 생성 배치가 정상 주기 범위에 있습니다.';
+  $('watchdogLight').className='incident-light '+(critical?'bad':delayed?'warn':'good');
+}
+
 function parseBatch(commit){
   const msg=(commit.commit&&commit.commit.message||'').split('\n')[0];
   const m=msg.match(/^Add\s+(\d+)\s+academic paper analyses/i);
@@ -362,6 +438,12 @@ function renderAutomation(commits,runs){
 
   const healthy=last&&age<2.25*60*60*1000&&failed===0;
   const watch=last&&age<4*60*60*1000;
+  automationRuntimeState={
+    score:healthy?100:watch?70:(last&&age<12*60*60*1000?35:0),
+    critical:!last||age>=4*60*60*1000,
+    age:last?age:null,
+    last:last?last.date:null
+  };
   $('automationBadge').textContent=healthy?'ACTIVE':watch?'WATCH':'ATTENTION';
   $('automationBadge').className='state '+(healthy?'good':watch?'warn':'bad');
   $('incidentLevel').textContent=healthy?'CLEAR':watch?'WATCH':'ATTENTION';
@@ -422,6 +504,8 @@ async function load(){
     $('commitList').innerHTML=(commits||[]).slice(0,5).map(c=>`<div class="commit"><span>${c.commit.message.split('\n')[0]}</span><small>${String(c.sha).slice(0,7)} · ${timeFmt(c.commit.author.date)}</small></div>`).join('');
     setSignal('sigDeploy','sigDeployText',deployOK,deployOK?'GitHub Pages 최신 배포 성공':'최근 배포 확인 필요');
     renderAutomation(commits,runs);
+    const batchDetails=await getRecentBatchDetails(commits,6);
+    renderBatchWatchdog(batchDetails);
     renderIncidentCenter(papers,commits,runs,indexAudit);
     trendHistory=history;
     renderTrend(activeTrendRange);
@@ -429,12 +513,22 @@ async function load(){
     $('deployBadge').textContent='UNAVAILABLE'; $('deployBadge').className='state warn'; setSignal('sigDeploy','sigDeployText',false,'GitHub API 조회 실패');
   }
 
-  const score=(indexOK?60:0)+(deployOK?25:0)+(papers.length?15:0);
+  const baseScore=(indexOK?35:0)+(deployOK?20:0)+(papers.length?10:0);
+  const score=Math.round(baseScore+35*(automationRuntimeState.score/100));
+  const critical=automationRuntimeState.critical===true;
+  const healthLabel=critical?'ATTENTION':score>=90?'OPERATIONAL':score>=70?'DEGRADED':'ATTENTION';
+  const healthClass=healthLabel==='OPERATIONAL'?'good':healthLabel==='DEGRADED'?'warn':'bad';
   $('healthScore').textContent=score; $('healthLine').style.width=score+'%';
-  $('healthBadge').textContent=score>=90?'OPERATIONAL':score>=60?'DEGRADED':'ATTENTION';
-  $('healthBadge').className='state '+(score>=90?'good':score>=60?'warn':'bad');
-  $('overall').textContent=score>=90?'OPERATIONAL':score>=60?'DEGRADED':'ATTENTION'; $('overall').className=$('healthBadge').className;
-  $('healthCopy').textContent=indexOK?(deployOK?'논문 인덱스와 GitHub Pages 배포가 정상입니다.':'논문 데이터는 정상이나 배포 상태를 확인하세요.'):'논문 인덱스 연결을 확인하세요.';
+  $('healthBadge').textContent=healthLabel;
+  $('healthBadge').className='state '+healthClass;
+  $('overall').textContent=healthLabel; $('overall').className='state '+healthClass;
+  $('healthCopy').textContent=!indexOK
+    ?'논문 인덱스 연결을 확인하세요.'
+    :critical
+      ?'논문 데이터는 읽히지만 자동 생성 신호가 4시간 이상 끊겨 있습니다.'
+      :deployOK
+        ?'논문 인덱스·배포·자동 생성 주기가 정상 범위입니다.'
+        :'논문 데이터는 정상이나 배포 상태를 확인하세요.';
   $('signalBadge').textContent=score>=90?'ALL CLEAR':'CHECK SIGNALS'; $('signalBadge').className='state '+(score>=90?'good':'warn');
   $('lastSync').textContent=timeFmt(new Date());
   $('refresh').disabled=false;
