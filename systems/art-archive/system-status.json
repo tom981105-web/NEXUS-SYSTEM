@@ -1,21 +1,21 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-04T22:05:15.827Z",
+  "updatedAt": "2026-10-04T22:20:44.565Z",
   "timezone": "Asia/Seoul",
-  "overallStatus": "ok",
+  "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-04T22:05:00.073Z",
-      "finishedAt": "2026-10-04T22:05:05.162Z",
-      "result": "skipped",
-      "durationMs": 5089,
-      "error": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
+      "startedAt": "2026-10-04T22:20:00.144Z",
+      "finishedAt": "2026-10-04T22:20:33.508Z",
+      "result": "success",
+      "durationMs": 33364,
+      "error": null
     },
     "consecutiveFailures": 0,
-    "busyOrSkipped": true,
-    "busyReason": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀",
+    "busyOrSkipped": false,
+    "busyReason": null,
     "triggerInventoryAvailable": false
   },
   "notionSync": {
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-04T22:05:16.318Z",
+    "updatedAt": "2026-10-04T22:20:44.995Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,17 +253,17 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-04T22:05:10.409Z",
+    "checkedAt": "2026-10-04T22:20:38.977Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-05",
     "planned": 16,
     "success": 7,
     "failed": 0,
     "stalled": 0,
-    "missed": 0,
+    "missed": 1,
     "running": 0,
-    "pending": 9,
-    "status": "pending",
+    "pending": 8,
+    "status": "error",
     "slots": [
       {
         "series": "크레스트",
@@ -366,7 +366,7 @@
       {
         "series": "융화",
         "scheduledTime": "06:21",
-        "status": "PENDING",
+        "status": "MISSED",
         "logRow": null,
         "runId": null,
         "stage": null,
@@ -375,7 +375,7 @@
         "filename": null,
         "startDelaySeconds": null,
         "elapsedMinutes": null,
-        "diagnosis": "예정시각 경과 후 로그 생성 대기"
+        "diagnosis": "예정시각 후 45분이 지났지만 실행 로그가 없음"
       },
       {
         "series": "크레스트",
