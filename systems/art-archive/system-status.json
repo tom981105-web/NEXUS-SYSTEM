@@ -1,16 +1,16 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-04T12:12:13.974Z",
+  "updatedAt": "2026-10-04T12:27:15.891Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-04T12:12:00.196Z",
-      "finishedAt": "2026-10-04T12:12:05.252Z",
+      "startedAt": "2026-10-04T12:27:00.352Z",
+      "finishedAt": "2026-10-04T12:27:05.465Z",
       "result": "skipped",
-      "durationMs": 5056,
+      "durationMs": 5113,
       "error": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
     },
     "consecutiveFailures": 0,
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-04T12:12:14.407Z",
+    "updatedAt": "2026-10-04T12:27:16.287Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,7 +253,7 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-04T12:12:09.122Z",
+    "checkedAt": "2026-10-04T12:27:09.599Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-04",
     "planned": 16,
@@ -332,8 +332,8 @@
         "subject": null,
         "filename": null,
         "startDelaySeconds": 268,
-        "elapsedMinutes": 895.7,
-        "diagnosis": "미완료 상태에서 355분간 새 로그가 없어 중단 의심"
+        "elapsedMinutes": 910.7,
+        "diagnosis": "미완료 상태에서 370분간 새 로그가 없어 중단 의심"
       },
       {
         "series": "잉크",
@@ -347,7 +347,7 @@
         "filename": null,
         "startDelaySeconds": 331,
         "elapsedMinutes": 0,
-        "diagnosis": "미완료 상태에서 895분간 새 로그가 없어 중단 의심"
+        "diagnosis": "미완료 상태에서 910분간 새 로그가 없어 중단 의심"
       },
       {
         "series": "성수",
