@@ -1,7 +1,16 @@
 {
   "version": "1.4",
-  "updatedAt": "2026-10-04T12:27:18.340Z",
+  "updatedAt": "2026-10-04T12:43:09.410Z",
   "events": [
+    {
+      "id": "4eef38b5-a5c3-4ff5-b8be-4181a7622517",
+      "at": "2026-10-04T12:39:06.169Z",
+      "service": "Apps Script",
+      "level": "info",
+      "status": "skipped",
+      "title": "Apps Script 실행 건너뜀",
+      "message": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
+    },
     {
       "id": "e71ae2a0-0584-4e96-914d-b2e81b52b7d1",
       "at": "2026-10-04T12:21:06.176Z",
@@ -892,15 +901,6 @@
       "status": "skipped",
       "title": "Apps Script 실행 건너뜀",
       "message": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
-    },
-    {
-      "id": "8a4f9831-119a-4d1b-a1e5-64017d290dff",
-      "at": "2026-10-02T12:51:54.421Z",
-      "service": "SYSTEM",
-      "level": "info",
-      "status": "enabled",
-      "title": "SYSTEM v0.7 이벤트 로그 활성화",
-      "message": "Apps Script / Notion 상태 변경 및 GitHub Pages 배포 이력을 SYSTEM에서 통합 표시합니다."
     }
   ]
 }
