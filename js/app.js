@@ -1,4 +1,5 @@
 const ART_STATUS_URL = 'systems/art-archive/system-status.json';
+const ART_AUTOMATION_URL = 'https://raw.githubusercontent.com/tom981105-web/art-archive/main/automation-status.json';
 const PAPER_INDEX_URL = 'https://raw.githubusercontent.com/tom981105-web/paper/main/data/index.json';
 
 const el = id => document.getElementById(id);
@@ -57,30 +58,53 @@ async function loadArtStatus(){
   badge.className = 'status neutral';
 
   try{
-    const response = await fetch(ART_STATUS_URL + '?t=' + Date.now(), {cache:'no-store'});
-    if(!response.ok) throw new Error('HTTP ' + response.status);
-    const data = await response.json();
+    const [statusResponse, automationResponse] = await Promise.all([
+      fetch(ART_STATUS_URL + '?t=' + Date.now(), {cache:'no-store'}),
+      fetch(ART_AUTOMATION_URL + '?t=' + Date.now(), {cache:'no-store'})
+    ]);
+    if(!statusResponse.ok) throw new Error('ART STATUS HTTP ' + statusResponse.status);
+    if(!automationResponse.ok) throw new Error('ART AUTOMATION HTTP ' + automationResponse.status);
 
-    const healthRaw = pick(data,['healthScore','health.score','summary.health','system.health','overall.health'],null);
-    const health = normalizeHealth(healthRaw);
-    const works = pick(data,['archiveTotal','archive.total','summary.totalWorks','totals.works','works.total'],'—');
-    const series = pick(data,['seriesTotal','series.total','summary.totalSeries','totals.series'],'—');
+    const data = await statusResponse.json();
+    const automation = await automationResponse.json();
 
-    el('artHealth').textContent = health === null ? 'LIVE' : health + '%';
-    el('artWorks').textContent = works;
-    el('artSeries').textContent = series;
+    const diagnosis = data.automationDailyDiagnosis || automation.todayRunHealth || {};
+    const success = Number(diagnosis.success || 0);
+    const failed = Number(diagnosis.failed || 0);
+    const stalled = Number(diagnosis.stalled || 0);
+    const missed = Number(diagnosis.missed || 0);
+    const running = Number(diagnosis.running || 0);
+    const due = success + failed + stalled + missed + running;
+    const health = due > 0 ? Math.round((success / due) * 100) : 100;
+
+    const validSeries = (automation.series || []).filter(item =>
+      item && item.name !== '자동화 상태' && Number(item.totalCount || 0) > 0
+    );
+    const works = validSeries.reduce((sum,item)=>sum + Number(item.totalCount || 0),0);
+    const series = validSeries.length;
+
+    el('artHealth').textContent = health + '%';
+    el('artWorks').textContent = works.toLocaleString('ko-KR');
+    el('artSeries').textContent = series.toLocaleString('ko-KR');
     el('artState').textContent = 'LIVE';
-    el('tableArtHealth').textContent = health === null ? 'OPERATIONAL' : health + '%';
+    el('tableArtHealth').textContent = health + '%';
 
-    badge.textContent = 'ONLINE';
-    badge.className = 'status good';
+    const hasIssue = failed > 0 || stalled > 0 || missed > 0 || data.overallStatus === 'error';
+    badge.textContent = hasIssue ? 'ATTENTION' : 'ONLINE';
+    badge.className = hasIssue ? 'status warn' : 'status good';
 
-    const nexusHealth = health === null ? 100 : Math.round((100 + health) / 2);
+    const paperHealth = normalizeHealth((el('paperHealth').textContent || '').replace('%',''));
+    const nexusHealth = paperHealth === null ? health : Math.round((health + paperHealth) / 2);
     el('healthScore').textContent = nexusHealth;
     el('healthLine').style.width = nexusHealth + '%';
-    el('healthCopy').textContent = 'ART ARCHIVE · PAPER LIBRARY 연결 정상';
+    el('healthCopy').textContent = hasIssue
+      ? 'ART 자동화 점검 필요 · PAPER LIBRARY 연결 정상'
+      : 'ART ARCHIVE · PAPER LIBRARY 연결 정상';
     el('lastSync').textContent = 'SYNC ' + new Intl.DateTimeFormat('ko-KR',{hour:'2-digit',minute:'2-digit',hour12:false,timeZone:'Asia/Seoul'}).format(new Date());
+
+    return health;
   }catch(error){
+    console.error('ART status load failed:', error);
     el('artHealth').textContent = 'LINK';
     el('artWorks').textContent = '—';
     el('artSeries').textContent = '—';
@@ -88,10 +112,9 @@ async function loadArtStatus(){
     el('tableArtHealth').textContent = 'LINK READY';
     badge.textContent = 'LINKED';
     badge.className = 'status warn';
-    el('healthScore').textContent = '95';
-    el('healthLine').style.width = '95%';
-    el('healthCopy').textContent = 'ART ARCHIVE 진입 링크 정상 · 원격 상태 데이터 확인 대기';
+    el('healthCopy').textContent = 'ART ARCHIVE 상태 데이터 연결 확인 필요';
     el('lastSync').textContent = 'SYNC LINK';
+    return null;
   }finally{
     refresh.disabled = false;
   }
@@ -105,7 +128,12 @@ document.querySelectorAll('.nav-group a[href^="#"]').forEach(link=>{
 });
 async function refreshAll(){
   const [art,paper]=await Promise.all([loadArtStatus(),loadPaperStatus()]);
-  el('onlineCount').textContent='02'; el('standbyCount').textContent='00';
+  const values=[art,paper].filter(v=>typeof v==='number'&&Number.isFinite(v));
+  const nexusHealth=values.length?Math.round(values.reduce((a,b)=>a+b,0)/values.length):0;
+  el('healthScore').textContent=nexusHealth;
+  el('healthLine').style.width=nexusHealth+'%';
+  el('onlineCount').textContent='02';
+  el('standbyCount').textContent='00';
 }
 el('refresh').addEventListener('click',refreshAll);
 refreshAll();
