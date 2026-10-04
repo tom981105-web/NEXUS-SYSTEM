@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T21:29:25.009Z",
+  "generatedAt": "2026-10-04T21:30:32.351Z",
   "timezone": "Asia/Seoul",
   "schemaVersion": 1,
   "retentionDays": 90,
@@ -476,7 +476,7 @@
           "avgStartDelay": 227
         },
         {
-          "name": "수채화",
+          "name": "펄퍼스",
           "runs": 1,
           "success": 0,
           "failed": 0,
