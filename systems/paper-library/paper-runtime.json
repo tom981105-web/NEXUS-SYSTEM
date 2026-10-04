@@ -1,107 +1,152 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-04T19:14:26.178Z",
+  "updatedAt": "2026-10-04T19:18:59.091Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "running",
+    "status": "success",
     "runId": "paper-20261005-041425",
     "startedAt": "2026-10-04T19:14:25.766Z",
-    "finishedAt": null,
-    "durationMs": null,
-    "generatedCount": 0,
+    "finishedAt": "2026-10-04T19:18:59.091Z",
+    "durationMs": 273325,
+    "generatedCount": 6,
     "expectedMax": 6,
-    "lastCommitSha": null,
+    "lastCommitSha": "dd3f45dc930632f6b9173d5e05e1c6f7b84d4639",
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 0,
-      "success": 0,
+      "calls": 73,
+      "success": 73,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": null,
+      "lastHttpStatus": 200,
       "disabledForRun": false
     },
     "crossref": {
-      "calls": 0,
-      "success": 0,
-      "retries": 0,
-      "http429": 0,
-      "errors": 0,
-      "lastHttpStatus": null,
-      "adaptiveIntervalMs": 650,
-      "throttleEvents": 0,
-      "earlyStops": 0
+      "calls": 44,
+      "success": 43,
+      "retries": 1,
+      "http429": 1,
+      "errors": 1,
+      "lastHttpStatus": 200,
+      "adaptiveIntervalMs": 800,
+      "throttleEvents": 1,
+      "earlyStops": 6
     },
     "gemini": {
-      "calls": 0,
-      "success": 0,
-      "retries": 0,
+      "calls": 7,
+      "success": 6,
+      "retries": 1,
       "http429": 0,
-      "errors": 0,
-      "lastHttpStatus": null
+      "errors": 2,
+      "lastHttpStatus": 200
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 135,
+      "selectedTitle": "Deep Learning vs. Traditional Machine Learning for Consumer Credit Default Prediction: A Comparative Study",
+      "selectedDoi": "10.64820/aepjmldl.31.29.38.62026",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "전기",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 96,
+      "selectedTitle": "Novel Power Electronics Solutions for Sustainable Power Systems",
+      "selectedDoi": "10.71465/ajpeps2536",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "로봇·자동화",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 105,
+      "selectedTitle": "AVK-SLAM: an efficient LiDAR–inertial SLAM with density-aware voxelization and keyframe selection in unstructured environments",
+      "selectedDoi": "10.1007/s11370-026-00701-w",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "에너지·환경",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 142,
+      "selectedTitle": "Defining long duration energy storage",
+      "selectedDoi": "10.1016/j.est.2022.105787",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "건축·시설관리",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 103,
+      "selectedTitle": "Operational text-mining methods for enhancing building maintenance management",
+      "selectedDoi": "10.1080/09613218.2021.1953368",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "도서관·문헌정보",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 47,
+      "selectedTitle": "Implementing artificial intelligence in library services: a review of current prospects and challenges of developing countries",
+      "selectedDoi": "10.1108/lhtn-07-2023-0126",
+      "sourceProvider": "Crossref"
     }
   ],
-  "verification": null,
-  "stages": []
+  "verification": {
+    "filesExist": true,
+    "jsonValid": true,
+    "indexHeadCorrect": true,
+    "indexDetailDoiMatch": true,
+    "noOldDoiDuplicates": true,
+    "noNewDoiDuplicates": true,
+    "ok": true
+  },
+  "stages": [
+    {
+      "at": "2026-10-04T19:14:27.541Z",
+      "name": "START",
+      "status": "running",
+      "message": "논문 자동화 V2.7.4 시작"
+    },
+    {
+      "at": "2026-10-04T19:14:27.879Z",
+      "name": "GITHUB_HEAD",
+      "status": "success",
+      "message": "3117ec3"
+    },
+    {
+      "at": "2026-10-04T19:14:31.802Z",
+      "name": "INDEX",
+      "status": "success",
+      "message": "papers=715"
+    },
+    {
+      "at": "2026-10-04T19:18:53.812Z",
+      "name": "GITHUB_COMMIT",
+      "status": "success",
+      "message": "dd3f45d"
+    },
+    {
+      "at": "2026-10-04T19:18:59.056Z",
+      "name": "VERIFY",
+      "status": "success",
+      "message": "최종 검증 통과"
+    },
+    {
+      "at": "2026-10-04T19:18:59.091Z",
+      "name": "FINISH",
+      "status": "success",
+      "message": "generated=6"
+    }
+  ]
 }
