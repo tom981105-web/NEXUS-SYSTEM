@@ -1,17 +1,17 @@
 {
   "version": "1.0",
-  "updatedAt": null,
+  "updatedAt": "2026-10-04T12:15:33.652Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.2",
-  "instrumentation": "waiting",
+  "instrumentation": "live",
   "automation": {
     "version": "2.7.2",
-    "status": "waiting",
-    "runId": null,
-    "startedAt": null,
+    "status": "test",
+    "runId": "paper-20261004-211533",
+    "startedAt": "2026-10-04T12:15:33.650Z",
     "finishedAt": null,
     "durationMs": null,
-    "generatedCount": null,
+    "generatedCount": 0,
     "expectedMax": 6,
     "lastCommitSha": null,
     "error": null
@@ -29,6 +29,7 @@
     "crossref": {
       "calls": 0,
       "success": 0,
+      "retries": 0,
       "http429": 0,
       "errors": 0,
       "lastHttpStatus": null
@@ -42,6 +43,69 @@
       "lastHttpStatus": null
     }
   },
-  "categories": [],
-  "stages": []
+  "categories": [
+    {
+      "name": "인공지능",
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
+    },
+    {
+      "name": "전기",
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
+    },
+    {
+      "name": "로봇·자동화",
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
+    },
+    {
+      "name": "에너지·환경",
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
+    },
+    {
+      "name": "건축·시설관리",
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
+    },
+    {
+      "name": "도서관·문헌정보",
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
+    }
+  ],
+  "verification": null,
+  "stages": [
+    {
+      "at": "2026-10-04T12:15:33.652Z",
+      "name": "TEST",
+      "status": "success",
+      "message": "NEXUS PAPER runtime telemetry 연결 테스트"
+    }
+  ]
 }
