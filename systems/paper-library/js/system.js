@@ -43,6 +43,9 @@ function renderProviderRuntime(d){
   $('#runtimeTime').textContent=a.finishedAt?timeFmt(a.finishedAt):(a.startedAt?timeFmt(a.startedAt):'waiting telemetry');
   $('#runtimeOpenAlexCalls').textContent=o.calls??'—';
   $('#runtimeOpenAlex429').textContent='429 '+(o.http429??'—')+(o.disabledForRun?' · FALLBACK':'');
+  const c=(d.providers&&d.providers.crossref)||{};
+  const cCalls=$('runtimeCrossrefCalls'); if(cCalls)cCalls.textContent=c.calls??'—';
+  const cState=$('runtimeCrossrefState'); if(cState)cState.textContent='429 '+(c.http429??'—')+' · retry '+(c.retries??'—')+' · '+(c.adaptiveIntervalMs??'—')+'ms · early '+(c.earlyStops??0);
   $('#runtimeGeminiCalls').textContent=g.calls??'—';
   $('#runtimeGeminiRetry').textContent='retry '+(g.retries??'—');
   $('#runtimeGenerated').textContent=a.generatedCount??'—';
