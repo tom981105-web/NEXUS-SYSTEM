@@ -1,12 +1,14 @@
 const PAPER_INDEX='https://raw.githubusercontent.com/tom981105-web/paper/main/data/index.json';
 const API='https://api.github.com/repos/tom981105-web/paper';
 const PAPER_DATA_BASE='https://raw.githubusercontent.com/tom981105-web/paper/main/data/';
+const PAPER_RUNTIME_URL='https://raw.githubusercontent.com/tom981105-web/NEXUS-SYSTEM/main/systems/paper-library/paper-runtime.json';
 const DAY=24*60*60*1000;
 const $=id=>document.getElementById(id);
 const fmt=n=>Number(n||0).toLocaleString('ko-KR');
 let trendHistory=[];
 let activeTrendRange=7;
 let automationRuntimeState={score:100,critical:false,age:null,last:null};
+let runtimeTelemetry=null;
 const timeFmt=v=>v?new Intl.DateTimeFormat('ko-KR',{month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hour12:false,timeZone:'Asia/Seoul'}).format(new Date(v)):'—';
 
 function clock(){ $('clock').textContent=new Intl.DateTimeFormat('ko-KR',{hour:'2-digit',minute:'2-digit',second:'2-digit',hour12:false,timeZone:'Asia/Seoul'}).format(new Date()); }
@@ -18,6 +20,35 @@ async function getJson(url){
   return r.json();
 }
 function setSignal(id,textId,ok,text){ $(id).className='dot '+(ok?'ok':'fail'); $(textId).textContent=text; }
+
+function runtimeDot(id,state){
+  const el=$(id); if(!el)return;
+  el.className='svc-dot '+(state==='ok'?'ok':state==='warn'?'warn':state==='bad'?'bad':'pending');
+}
+function renderProviderRuntime(d){
+  if(!d||typeof d!=='object')return;
+  const a=d.automation||{},o=(d.providers&&d.providers.openAlex)||{},g=(d.providers&&d.providers.gemini)||{};
+  const status=String(a.status||'unknown').toLowerCase();
+  const scriptState=status==='success'?'ok':status==='running'||status==='skipped'||status==='no_change'?'warn':status==='failed'?'bad':'pending';
+  runtimeDot('svcScriptDot',scriptState);
+  $('#svcScriptText').textContent=(status||'UNKNOWN').toUpperCase()+(a.version?' · '+a.version:'');
+  const oaState=o.http429>0||o.disabledForRun?'warn':o.errors>0?'warn':o.calls>0?'ok':'pending';
+  runtimeDot('svcOpenAlexDot',oaState);
+  $('#svcOpenAlexText').textContent=o.calls>0?('CALL '+o.calls+' · 429 '+(o.http429||0)+(o.disabledForRun?' · FALLBACK':'')):'NO CALL DATA';
+  const gmState=g.http429>0?'bad':g.errors>0?'warn':g.calls>0?'ok':'pending';
+  runtimeDot('svcGeminiDot',gmState);
+  $('#svcGeminiText').textContent=g.calls>0?('CALL '+g.calls+' · RETRY '+(g.retries||0)+' · 429 '+(g.http429||0)):'NO CALL DATA';
+
+  $('#runtimeResult').textContent=(status||'unknown').toUpperCase();
+  $('#runtimeTime').textContent=a.finishedAt?timeFmt(a.finishedAt):(a.startedAt?timeFmt(a.startedAt):'waiting telemetry');
+  $('#runtimeOpenAlexCalls').textContent=o.calls??'—';
+  $('#runtimeOpenAlex429').textContent='429 '+(o.http429??'—')+(o.disabledForRun?' · FALLBACK':'');
+  $('#runtimeGeminiCalls').textContent=g.calls??'—';
+  $('#runtimeGeminiRetry').textContent='retry '+(g.retries??'—');
+  $('#runtimeGenerated').textContent=a.generatedCount??'—';
+  $('#runtimeCommit').textContent='commit '+(a.lastCommitSha?String(a.lastCommitSha).slice(0,7):'—');
+}
+
 
 
 
@@ -157,7 +188,8 @@ function renderIncidentCenter(papers,commits,runs,audit){
     ...(commits||[]).map(c=>(c.commit&&c.commit.message)||''),
     ...workflowRuns.map(r=>String(r.display_title||'')+' '+String(r.name||''))
   ].join('\n');
-  const explicit429=/\b429\b|too many requests|rate limit(?:ed|ing)?/i.test(textPool);
+  const runtime429=runtimeTelemetry&&runtimeTelemetry.providers?Number((runtimeTelemetry.providers.openAlex||{}).http429||0)+Number((runtimeTelemetry.providers.gemini||{}).http429||0):0;
+  const explicit429=runtime429>0||/\b429\b|too many requests|rate limit(?:ed|ing)?/i.test(textPool);
 
   const anomalyTotal=audit
     ? audit.missingDoi+audit.duplicateDoi+audit.missingFields+audit.sectionAnomaly+audit.categoryAnomaly
@@ -167,7 +199,7 @@ function renderIncidentCenter(papers,commits,runs,audit){
   $('incidentDeployFail').textContent=deployFailures.length;
   $('incidentData').textContent=anomalyTotal;
   $('incident429').textContent=explicit429?'DETECTED':'UNOBSERVED';
-  $('incident429Copy').textContent=explicit429?'explicit public signal':'OpenAlex/Gemini 로그 미연결';
+  $('incident429Copy').textContent=runtime429>0?'live runtime telemetry':explicit429?'explicit public signal':runtimeTelemetry?'runtime 429 없음':'OpenAlex/Gemini 로그 미연결';
 
   const incidents=[];
   if(!last){
@@ -476,6 +508,7 @@ function renderLatest(papers){
 
 async function load(){
   $('refresh').disabled=true; $('overall').textContent='SYNCING';
+  try{runtimeTelemetry=await getJson(PAPER_RUNTIME_URL);renderProviderRuntime(runtimeTelemetry);}catch(_){runtimeTelemetry=null;}
   let indexOK=false, deployOK=false, papers=[], indexAudit=null;
   try{
     papers=await getJson(PAPER_INDEX);
