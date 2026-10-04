@@ -20,6 +20,8 @@
       <a href="#automation">06 Automation</a>
       <a href="#trends">07 Trends</a>
       <a href="#quality">08 Quality</a>
+      <a href="#latest-quality">09 Latest Quality</a>
+      <a href="#incidents">10 Incidents</a>
     </nav>
     <div class="side-foot"><span>PUBLIC SOURCE</span><b>tom981105-web/paper</b><small id="clock">--:--:--</small></div>
   </aside>
@@ -202,6 +204,71 @@
 
         <div class="quality-events" id="qualityEvents"></div>
       </article>
+    </section>
+
+    <section class="grid two intelligence-grid">
+      <article class="panel" id="latest-quality">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">LATEST PAPER QUALITY</p>
+            <h2>Recent Analysis Quality Center</h2>
+            <p class="section-copy">최신 인덱스 구간의 메타데이터·검증·섹션 구조를 논문별로 점검합니다.</p>
+          </div>
+          <span class="state neutral" id="latestQualityBadge">SCANNING</span>
+        </div>
+        <div class="latest-quality-summary">
+          <div><span>WINDOW</span><b id="latestQualityWindow">—</b></div>
+          <div><span>CLEAN</span><b id="latestQualityClean">—</b></div>
+          <div><span>REVIEW</span><b id="latestQualityReview">—</b></div>
+          <div><span>AVG SCORE</span><b id="latestQualityAvg">—</b></div>
+        </div>
+        <div class="paper-quality-list" id="paperQualityList"></div>
+      </article>
+
+      <article class="panel" id="field-flow">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">RECENT FIELD FLOW</p>
+            <h2>Latest Index Distribution</h2>
+            <p class="section-copy">최신 논문 60편을 기준으로 분야별 최근 유입 비중을 봅니다.</p>
+          </div>
+          <span class="mini" id="fieldFlowSummary">—</span>
+        </div>
+        <div class="field-flow-bars" id="fieldFlowBars"></div>
+        <div class="field-flow-foot">
+          <span>기준: data/index.json 최신 순서</span>
+          <b id="fieldFlowTop">—</b>
+        </div>
+      </article>
+    </section>
+
+    <section class="panel incident-center" id="incidents">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">INCIDENT CENTER</p>
+          <h2>Automation & Data Incidents</h2>
+          <p class="section-copy">관측 가능한 실제 신호만으로 생성 중단·배포 실패·데이터 이상을 분류합니다.</p>
+        </div>
+        <span class="state neutral" id="incidentCenterBadge">SCANNING</span>
+      </div>
+
+      <div class="incident-kpis">
+        <div><span>GENERATION GAP</span><b id="incidentGap">—</b><small>latest batch age</small></div>
+        <div><span>DEPLOY FAILURES</span><b id="incidentDeployFail">—</b><small>recent workflow runs</small></div>
+        <div><span>DATA ANOMALIES</span><b id="incidentData">—</b><small>index integrity</small></div>
+        <div><span>HTTP 429</span><b id="incident429">—</b><small id="incident429Copy">telemetry check</small></div>
+      </div>
+
+      <div class="incident-layout">
+        <div class="incident-feed-wrap">
+          <div class="box-head"><b>Active / Recent Incidents</b><span id="incidentCount">—</span></div>
+          <div class="paper-incident-feed" id="paperIncidentFeed"></div>
+        </div>
+        <div class="anomaly-wrap">
+          <div class="box-head"><b>Anomalous Papers</b><span id="anomalyCount">—</span></div>
+          <div class="anomaly-list" id="anomalyList"></div>
+        </div>
+      </div>
     </section>
 
     <footer>NEXUS SYSTEM · PAPER LIBRARY OPERATIONS · NODE P1</footer>
