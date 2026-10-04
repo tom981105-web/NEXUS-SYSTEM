@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-10-03T21:23:48.149Z",
+  "generatedAt": "2026-10-04T08:07:24.773Z",
   "source": "그림 자동화 사용량 로그 / 사용량 로그",
   "schemaVersion": 3,
   "summary": {
-    "runs": 36,
+    "runs": 38,
     "success": 34,
     "failed": 1,
-    "successRate": 94.4,
+    "successRate": 89.5,
     "driveVerified": 34,
     "regenerations": 1,
-    "sourceRows": 37,
+    "sourceRows": 39,
     "normalizedPartialRows": 0
   },
   "series": [
     {
       "name": "크레스트",
-      "runs": 6,
+      "runs": 7,
       "success": 5,
       "failed": 1,
       "avgElapsed": 217.2,
@@ -23,7 +23,7 @@
     },
     {
       "name": "묵수",
-      "runs": 5,
+      "runs": 6,
       "success": 5,
       "failed": 0,
       "avgElapsed": 235.6,
@@ -79,6 +79,34 @@
     }
   ],
   "recentRuns": [
+    {
+      "time": "2026-10-04 17:06:25",
+      "series": "묵수",
+      "generationAttempts": 0,
+      "regenerations": 0,
+      "uploadAttempts": 0,
+      "driveVerified": false,
+      "result": "running",
+      "elapsedSeconds": 0,
+      "stage": "STARTED",
+      "scheduledTime": "2026-10-04 17:03:00",
+      "startDelaySeconds": 205,
+      "generatedFilename": null
+    },
+    {
+      "time": "2026-10-04 17:05:01",
+      "series": "크레스트",
+      "generationAttempts": 0,
+      "regenerations": 0,
+      "uploadAttempts": 0,
+      "driveVerified": false,
+      "result": "running",
+      "elapsedSeconds": 0,
+      "stage": "STARTED",
+      "scheduledTime": "2026-10-04 17:00:00",
+      "startDelaySeconds": 0,
+      "generatedFilename": null
+    },
     {
       "time": "2026-10-04 06:14:31",
       "series": "수채화",
@@ -218,34 +246,6 @@
       "scheduledTime": "2026-10-03 17:00:00",
       "startDelaySeconds": 0,
       "generatedFilename": "여우 크레스트.png"
-    },
-    {
-      "time": "2026-10-03 6:21:53",
-      "series": "잉크",
-      "generationAttempts": 1,
-      "regenerations": 0,
-      "uploadAttempts": 1,
-      "driveVerified": true,
-      "result": "success",
-      "elapsedSeconds": 144,
-      "stage": "COMPLETED",
-      "scheduledTime": null,
-      "startDelaySeconds": null,
-      "generatedFilename": "사마귀 잉크.png"
-    },
-    {
-      "time": "2026-10-03 06:18:52",
-      "series": "융화",
-      "generationAttempts": 1,
-      "regenerations": 0,
-      "uploadAttempts": 1,
-      "driveVerified": true,
-      "result": "success",
-      "elapsedSeconds": 458,
-      "stage": "COMPLETED",
-      "scheduledTime": null,
-      "startDelaySeconds": null,
-      "generatedFilename": "아홀로틀 융화.png"
     }
   ]
 }
