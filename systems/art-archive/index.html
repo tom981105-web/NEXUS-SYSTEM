@@ -386,6 +386,23 @@
         <div><p class="eyebrow">RECENT SCHEDULED RUNS</p><div id="delayRunTable" class="delay-run-table"><p class="muted">예약시각 데이터가 쌓이면 자동 표시됩니다.</p></div></div>
         <div class="insight-box"><p class="eyebrow">INTERPRETATION</p><p id="delayCopy" class="muted">다음 실행부터 예약시각과 실제 시작시각의 차이를 추적합니다.</p><div class="legend"><span><i class="good-dot"></i>0–60s 정상</span><span><i class="warn-dot"></i>61–300s 확인</span><span><i class="bad-dot"></i>301s+ 점검</span></div></div>
       </div>
+
+      <div class="slot-diagnostics" id="slotDiagnostics">
+        <div class="slot-diagnostics-head">
+          <div><p class="eyebrow">DAILY SLOT DIAGNOSTICS</p><h3>16 Automation Slots</h3></div>
+          <span id="slotDiagState" class="section-state">WAITING DATA</span>
+        </div>
+        <div class="slot-summary-grid">
+          <div><span>PLANNED</span><strong id="slotPlanned">16</strong></div>
+          <div><span>SUCCESS</span><strong id="slotSuccess">—</strong></div>
+          <div><span>FAILED</span><strong id="slotFailed">—</strong></div>
+          <div><span>STALLED</span><strong id="slotStalled">—</strong></div>
+          <div><span>MISSED</span><strong id="slotMissed">—</strong></div>
+          <div><span>RUNNING</span><strong id="slotRunning">—</strong></div>
+          <div><span>PENDING</span><strong id="slotPending">—</strong></div>
+        </div>
+        <div id="slotGrid" class="slot-grid"><p class="muted">Apps Script 진단 데이터가 생성되면 자동 표시됩니다.</p></div>
+      </div>
     </section>
 
     <section class="live-system-room panel" id="live-room">
