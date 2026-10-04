@@ -45,6 +45,11 @@
       if(age<=12*60*60000)return {cls:'warn',label:'AGING'};
       return {cls:'bad',label:'STALE'};
     }
+    if(key==='automation'){
+      if(age<=15*60000)return {cls:'good',label:'FRESH'};
+      if(age<=45*60000)return {cls:'warn',label:'DELAYED'};
+      return {cls:'bad',label:'STALE'};
+    }
     if(age<=10*60000)return {cls:'good',label:'FRESH'};
     if(age<=30*60000)return {cls:'warn',label:'DELAYED'};
     return {cls:'bad',label:'STALE'};
