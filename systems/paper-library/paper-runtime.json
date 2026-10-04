@@ -1,19 +1,19 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-04T13:09:51.289Z",
+  "updatedAt": "2026-10-04T13:18:54.791Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
     "status": "success",
-    "runId": "paper-20261004-220530",
-    "startedAt": "2026-10-04T13:05:30.375Z",
-    "finishedAt": "2026-10-04T13:09:51.289Z",
-    "durationMs": 260914,
+    "runId": "paper-20261004-221425",
+    "startedAt": "2026-10-04T13:14:25.211Z",
+    "finishedAt": "2026-10-04T13:18:54.791Z",
+    "durationMs": 269580,
     "generatedCount": 6,
     "expectedMax": 6,
-    "lastCommitSha": "050d87ad906190bd885b3d30870d6f0e8ff25d69",
+    "lastCommitSha": "68f5cf7721fec62576c912727cf2d4ef0759cc99",
     "error": null
   },
   "providers": {
@@ -27,14 +27,14 @@
       "disabledForRun": false
     },
     "crossref": {
-      "calls": 25,
+      "calls": 26,
       "success": 25,
-      "retries": 0,
-      "http429": 0,
-      "errors": 0,
+      "retries": 1,
+      "http429": 1,
+      "errors": 1,
       "lastHttpStatus": 200,
-      "adaptiveIntervalMs": 650,
-      "throttleEvents": 0,
+      "adaptiveIntervalMs": 1000,
+      "throttleEvents": 1,
       "earlyStops": 5
     },
     "gemini": {
@@ -51,36 +51,36 @@
       "name": "인공지능",
       "status": "generated",
       "openAlexCandidates": 0,
-      "crossrefCandidates": 142,
-      "selectedTitle": "Komparasi Deep Learning Convolutional Neural Network (CNN) dan Deep Learning CNN- Support Vector Machine (SVM) untuk Identifikasi Tumor Otak dan Payudara",
-      "selectedDoi": "10.25077/jfu.15.4.372-381.2026",
+      "crossrefCandidates": 141,
+      "selectedTitle": "Designing Mathematics Teaching through Deep Learning Pedagogy: Toward Meaningful, Mindful, and Joyful Learning",
+      "selectedDoi": "10.23917/jdl.v1i2.11969",
       "sourceProvider": "Crossref"
     },
     {
       "name": "전기",
       "status": "generated",
       "openAlexCandidates": 0,
-      "crossrefCandidates": 102,
-      "selectedTitle": "Stochastic quantum power flow for risk assessment in power systems",
-      "selectedDoi": "10.1016/j.epsr.2025.111409",
+      "crossrefCandidates": 101,
+      "selectedTitle": "Editorial Board",
+      "selectedDoi": "10.1016/s0142-0615(26)00358-3",
       "sourceProvider": "Crossref"
     },
     {
       "name": "로봇·자동화",
       "status": "generated",
       "openAlexCandidates": 0,
-      "crossrefCandidates": 112,
-      "selectedTitle": "GADS-SLAM: A Robust Underground Visual SLAM System Integrating Grayscale-Aware Enhancement, Deep Feature Association, and Scale-Decoupled Optimization",
-      "selectedDoi": "10.1016/j.robot.2026.105790",
+      "crossrefCandidates": 111,
+      "selectedTitle": "SR-SLAM: Scene reliability-based RGB-D SLAM in diverse environments",
+      "selectedDoi": "10.1016/j.robot.2025.105306",
       "sourceProvider": "Crossref"
     },
     {
       "name": "에너지·환경",
       "status": "generated",
-      "openAlexCandidates": 2,
+      "openAlexCandidates": 1,
       "crossrefCandidates": null,
-      "selectedTitle": "Alternative energy technologies",
-      "selectedDoi": "10.1038/35104599",
+      "selectedTitle": "The Path Forward for Biofuels and Biomaterials",
+      "selectedDoi": "10.1126/science.1114736",
       "sourceProvider": "OpenAlex+Crossref"
     },
     {
@@ -88,17 +88,17 @@
       "status": "generated",
       "openAlexCandidates": 0,
       "crossrefCandidates": 80,
-      "selectedTitle": "HVAC control based on reinforcement learning and fuzzy reasoning: Optimizing HVAC supply air temperature, flow rate, and velocity",
-      "selectedDoi": "10.1016/j.jobe.2025.112143",
+      "selectedTitle": "A novel methodology for rapid aging of HVAC filters using a synthetic submicron aerosol: Effects of HVAC system operational and environmental conditions on filter loading",
+      "selectedDoi": "10.1016/j.buildenv.2025.113564",
       "sourceProvider": "Crossref"
     },
     {
       "name": "도서관·문헌정보",
       "status": "generated",
       "openAlexCandidates": 0,
-      "crossrefCandidates": 33,
-      "selectedTitle": "How do university libraries contribute to the research process?",
-      "selectedDoi": "10.1016/j.acalib.2024.102930",
+      "crossrefCandidates": 32,
+      "selectedTitle": "Ethical dimensions of algorithmic literacy for college students: Case studies and cross-disciplinary connections",
+      "selectedDoi": "10.1016/j.acalib.2024.102865",
       "sourceProvider": "Crossref"
     }
   ],
@@ -113,37 +113,37 @@
   },
   "stages": [
     {
-      "at": "2026-10-04T13:05:32.276Z",
+      "at": "2026-10-04T13:14:26.914Z",
       "name": "START",
       "status": "running",
       "message": "논문 자동화 V2.7.4 시작"
     },
     {
-      "at": "2026-10-04T13:05:32.708Z",
+      "at": "2026-10-04T13:14:27.286Z",
       "name": "GITHUB_HEAD",
-      "status": "success",
-      "message": "5fdf33d"
-    },
-    {
-      "at": "2026-10-04T13:05:34.993Z",
-      "name": "INDEX",
-      "status": "success",
-      "message": "papers=673"
-    },
-    {
-      "at": "2026-10-04T13:09:46.383Z",
-      "name": "GITHUB_COMMIT",
       "status": "success",
       "message": "050d87a"
     },
     {
-      "at": "2026-10-04T13:09:51.275Z",
+      "at": "2026-10-04T13:14:30.111Z",
+      "name": "INDEX",
+      "status": "success",
+      "message": "papers=679"
+    },
+    {
+      "at": "2026-10-04T13:18:49.603Z",
+      "name": "GITHUB_COMMIT",
+      "status": "success",
+      "message": "68f5cf7"
+    },
+    {
+      "at": "2026-10-04T13:18:54.405Z",
       "name": "VERIFY",
       "status": "success",
       "message": "최종 검증 통과"
     },
     {
-      "at": "2026-10-04T13:09:51.289Z",
+      "at": "2026-10-04T13:18:54.791Z",
       "name": "FINISH",
       "status": "success",
       "message": "generated=6"
