@@ -35,10 +35,16 @@
     return parsed.length?new Date(Math.max(...parsed.map(d=>d.getTime()))):null;
   }
 
-  function grade(entry){
+  function grade(entry,key){
     if(!entry||entry.error)return {cls:'bad',label:'UNAVAILABLE'};
     if(!entry.timestamp)return {cls:'warn',label:'CONNECTED'};
     const age=Date.now()-entry.timestamp.getTime();
+    const snapshot=key==='usage'||key==='history';
+    if(snapshot){
+      if(age<=6*60*60000)return {cls:'good',label:'CURRENT'};
+      if(age<=12*60*60000)return {cls:'warn',label:'AGING'};
+      return {cls:'bad',label:'STALE'};
+    }
     if(age<=10*60000)return {cls:'good',label:'FRESH'};
     if(age<=30*60000)return {cls:'warn',label:'DELAYED'};
     return {cls:'bad',label:'STALE'};
@@ -242,7 +248,7 @@
 
     grid.innerHTML=SOURCES.map(src=>{
       const e=state[src.key];
-      const g=grade(e);
+      const g=grade(e,src.key);
       if(e&&!e.error)connected++;
       if(e&&e.timestamp&&(!newest||e.timestamp>newest))newest=e.timestamp;
       worst=Math.max(worst,rank[g.cls]);
