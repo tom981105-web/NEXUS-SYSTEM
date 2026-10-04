@@ -1,21 +1,21 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-04T21:49:10.535Z",
+  "updatedAt": "2026-10-04T22:05:15.827Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "ok",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-04T21:49:00.008Z",
-      "finishedAt": "2026-10-04T21:49:05.130Z",
-      "result": "success",
-      "durationMs": 5122,
+      "startedAt": "2026-10-04T22:05:00.073Z",
+      "finishedAt": "2026-10-04T22:05:05.162Z",
+      "result": "skipped",
+      "durationMs": 5089,
       "error": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
     },
     "consecutiveFailures": 0,
-    "busyOrSkipped": false,
-    "busyReason": null,
+    "busyOrSkipped": true,
+    "busyReason": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀",
     "triggerInventoryAvailable": false
   },
   "notionSync": {
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-04T21:49:11.093Z",
+    "updatedAt": "2026-10-04T22:05:16.318Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -38,12 +38,12 @@
       "name": "pages build and deployment",
       "display_title": "pages build and deployment",
       "event": "dynamic",
-      "status": "in_progress",
-      "conclusion": null,
+      "status": "completed",
+      "conclusion": "success",
       "head_sha": "85edce8ac76f417e86afd0eb1cad4c9f4c1c648b",
       "created_at": "2026-10-04T21:48:52Z",
       "run_started_at": "2026-10-04T21:48:52Z",
-      "updated_at": "2026-10-04T21:48:59Z",
+      "updated_at": "2026-10-04T21:49:40Z",
       "html_url": "https://github.com/tom981105-web/art-archive/actions/runs/37237591661",
       "message": "Update ART ARCHIVE automation status"
     },
@@ -53,12 +53,12 @@
         "name": "pages build and deployment",
         "display_title": "pages build and deployment",
         "event": "dynamic",
-        "status": "in_progress",
-        "conclusion": null,
+        "status": "completed",
+        "conclusion": "success",
         "head_sha": "85edce8ac76f417e86afd0eb1cad4c9f4c1c648b",
         "created_at": "2026-10-04T21:48:52Z",
         "run_started_at": "2026-10-04T21:48:52Z",
-        "updated_at": "2026-10-04T21:48:59Z",
+        "updated_at": "2026-10-04T21:49:40Z",
         "html_url": "https://github.com/tom981105-web/art-archive/actions/runs/37237591661",
         "message": "Update ART ARCHIVE automation status"
       },
@@ -253,7 +253,7 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-04T21:49:05.863Z",
+    "checkedAt": "2026-10-04T22:05:10.409Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-05",
     "planned": 16,
