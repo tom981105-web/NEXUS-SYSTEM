@@ -1,0 +1,47 @@
+{
+  "version": "1.0",
+  "updatedAt": null,
+  "timezone": "Asia/Seoul",
+  "source": "PAPER automation V2.7.2",
+  "instrumentation": "waiting",
+  "automation": {
+    "version": "2.7.2",
+    "status": "waiting",
+    "runId": null,
+    "startedAt": null,
+    "finishedAt": null,
+    "durationMs": null,
+    "generatedCount": null,
+    "expectedMax": 6,
+    "lastCommitSha": null,
+    "error": null
+  },
+  "providers": {
+    "openAlex": {
+      "calls": 0,
+      "success": 0,
+      "retries": 0,
+      "http429": 0,
+      "errors": 0,
+      "lastHttpStatus": null,
+      "disabledForRun": false
+    },
+    "crossref": {
+      "calls": 0,
+      "success": 0,
+      "http429": 0,
+      "errors": 0,
+      "lastHttpStatus": null
+    },
+    "gemini": {
+      "calls": 0,
+      "success": 0,
+      "retries": 0,
+      "http429": 0,
+      "errors": 0,
+      "lastHttpStatus": null
+    }
+  },
+  "categories": [],
+  "stages": []
+}
