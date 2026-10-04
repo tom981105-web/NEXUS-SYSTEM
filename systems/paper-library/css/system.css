@@ -160,7 +160,7 @@
   .watchdog-strip{align-items:flex-start;flex-direction:column}
 }
 
-.provider-runtime-grid{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid var(--line);margin-top:10px;background:#0a0d0d}
+.provider-runtime-grid{display:grid;grid-template-columns:repeat(5,1fr);border:1px solid var(--line);margin-top:10px;background:#0a0d0d}
 .provider-runtime-grid>div{padding:12px;border-right:1px solid var(--line)}
 .provider-runtime-grid>div:last-child{border-right:0}
 .provider-runtime-grid span{display:block;color:#707a76;font-size:9px;font-weight:700;letter-spacing:.12em}
