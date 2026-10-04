@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T08:17:22.924Z",
+  "generatedAt": "2026-10-04T11:45:08.800Z",
   "timezone": "Asia/Seoul",
   "schemaVersion": 1,
   "retentionDays": 90,
@@ -396,14 +396,14 @@
         },
         {
           "name": "수채화",
-          "runs": 2,
+          "runs": 1,
           "success": 1,
           "failed": 0,
-          "successRate": 50,
-          "avgElapsed": 95,
+          "successRate": 100,
+          "avgElapsed": 190,
           "driveVerified": 1,
           "regenerations": 0,
-          "avgStartDelay": 278
+          "avgStartDelay": 225
         },
         {
           "name": "펄퍼스",
@@ -418,14 +418,14 @@
         },
         {
           "name": "잉크",
-          "runs": 1,
+          "runs": 2,
           "success": 1,
           "failed": 0,
-          "successRate": 100,
-          "avgElapsed": 153,
+          "successRate": 50,
+          "avgElapsed": 76.5,
           "driveVerified": 1,
           "regenerations": 0,
-          "avgStartDelay": 0
+          "avgStartDelay": 165.5
         }
       ]
     }
