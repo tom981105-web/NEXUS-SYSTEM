@@ -136,11 +136,18 @@
           <div class="service-list">
             <div><span class="svc-dot ok"></span><b>GitHub Repository</b><small>LIVE · commits/index</small></div>
             <div><span class="svc-dot ok"></span><b>GitHub Pages</b><small>LIVE · deploy API</small></div>
-            <div><span class="svc-dot pending"></span><b>Apps Script</b><small>NOT INSTRUMENTED</small></div>
-            <div><span class="svc-dot pending"></span><b>OpenAlex</b><small>NOT INSTRUMENTED</small></div>
-            <div><span class="svc-dot pending"></span><b>Gemini</b><small>NOT INSTRUMENTED</small></div>
+            <div><span class="svc-dot pending" id="svcScriptDot"></span><b>Apps Script</b><small id="svcScriptText">WAITING TELEMETRY</small></div>
+            <div><span class="svc-dot pending" id="svcOpenAlexDot"></span><b>OpenAlex</b><small id="svcOpenAlexText">WAITING TELEMETRY</small></div>
+            <div><span class="svc-dot pending" id="svcGeminiDot"></span><b>Gemini</b><small id="svcGeminiText">WAITING TELEMETRY</small></div>
           </div>
         </div>
+      </div>
+
+      <div class="provider-runtime-grid" id="providerRuntimeGrid">
+        <div><span>RUNTIME</span><b id="runtimeResult">—</b><small id="runtimeTime">waiting telemetry</small></div>
+        <div><span>OPENALEX CALLS</span><b id="runtimeOpenAlexCalls">—</b><small id="runtimeOpenAlex429">429 —</small></div>
+        <div><span>GEMINI CALLS</span><b id="runtimeGeminiCalls">—</b><small id="runtimeGeminiRetry">retry —</small></div>
+        <div><span>GENERATED</span><b id="runtimeGenerated">—</b><small id="runtimeCommit">commit —</small></div>
       </div>
 
       <div class="incident-bar" id="incidentBar">
