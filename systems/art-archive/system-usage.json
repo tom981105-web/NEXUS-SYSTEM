@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-10-04T08:12:19.805Z",
+  "generatedAt": "2026-10-04T08:13:43.820Z",
   "source": "그림 자동화 사용량 로그 / 사용량 로그",
   "schemaVersion": 3,
   "summary": {
-    "runs": 39,
+    "runs": 40,
     "success": 36,
     "failed": 1,
-    "successRate": 92.3,
+    "successRate": 90,
     "driveVerified": 36,
     "regenerations": 1,
-    "sourceRows": 40,
+    "sourceRows": 42,
     "normalizedPartialRows": 0
   },
   "series": [
@@ -39,7 +39,7 @@
     },
     {
       "name": "수채화",
-      "runs": 6,
+      "runs": 7,
       "success": 5,
       "failed": 0,
       "avgElapsed": 164.8,
@@ -80,6 +80,20 @@
   ],
   "recentRuns": [
     {
+      "time": "2026-10-04 17:13:09",
+      "series": "수채화",
+      "generationAttempts": 0,
+      "regenerations": 0,
+      "uploadAttempts": 0,
+      "driveVerified": false,
+      "result": "in_progress",
+      "elapsedSeconds": 0,
+      "stage": "GENERATING",
+      "scheduledTime": "2026-10-04 17:09:00",
+      "startDelaySeconds": 225,
+      "generatedFilename": null
+    },
+    {
       "time": "2026-10-04 17:12:05",
       "series": "신수",
       "generationAttempts": 0,
@@ -88,7 +102,7 @@
       "driveVerified": false,
       "result": "running",
       "elapsedSeconds": 0,
-      "stage": "STARTED",
+      "stage": "GENERATING",
       "scheduledTime": "2026-10-04 17:06:00",
       "startDelaySeconds": 366,
       "generatedFilename": null
@@ -232,20 +246,6 @@
       "scheduledTime": "2026-10-03 17:06:00",
       "startDelaySeconds": 107,
       "generatedFilename": "비버 신수.png"
-    },
-    {
-      "time": "2026-10-03 17:05:08",
-      "series": "묵수",
-      "generationAttempts": 1,
-      "regenerations": 0,
-      "uploadAttempts": 1,
-      "driveVerified": true,
-      "result": "success",
-      "elapsedSeconds": 207,
-      "stage": "COMPLETED",
-      "scheduledTime": "2026-10-03 17:03:00",
-      "startDelaySeconds": 128,
-      "generatedFilename": "황제펭귄 묵수.png"
     }
   ]
 }
