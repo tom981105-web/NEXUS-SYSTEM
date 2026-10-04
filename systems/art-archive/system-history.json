@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T21:08:27.336Z",
+  "generatedAt": "2026-10-04T21:14:29.858Z",
   "timezone": "Asia/Seoul",
   "schemaVersion": 1,
   "retentionDays": 90,
@@ -7,10 +7,10 @@
   "summary": {
     "days": 6,
     "runs": 44,
-    "success": 41,
+    "success": 42,
     "failed": 1,
-    "successRate": 93.2,
-    "avgElapsed": 205
+    "successRate": 95.5,
+    "avgElapsed": 210.1
   },
   "daily": [
     {
@@ -432,13 +432,13 @@
     {
       "date": "2026-10-05",
       "runs": 2,
-      "success": 1,
+      "success": 2,
       "failed": 0,
-      "successRate": 50,
-      "avgElapsed": 117.5,
+      "successRate": 100,
+      "avgElapsed": 216,
       "maxElapsed": 235,
-      "driveVerified": 1,
-      "driveVerifiedRate": 50,
+      "driveVerified": 2,
+      "driveVerifiedRate": 100,
       "regenerations": 0,
       "avgStartDelay": 74.5,
       "series": [
@@ -456,11 +456,11 @@
         {
           "name": "묵수",
           "runs": 1,
-          "success": 0,
+          "success": 1,
           "failed": 0,
-          "successRate": 0,
-          "avgElapsed": 0,
-          "driveVerified": 0,
+          "successRate": 100,
+          "avgElapsed": 197,
+          "driveVerified": 1,
           "regenerations": 0,
           "avgStartDelay": 149
         }
