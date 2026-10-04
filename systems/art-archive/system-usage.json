@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T21:20:25.859Z",
+  "generatedAt": "2026-10-04T21:22:22.350Z",
   "source": "그림 자동화 사용량 로그 / 사용량 로그",
   "schemaVersion": 3,
   "summary": {
@@ -34,7 +34,7 @@
       "runs": 7,
       "success": 6,
       "failed": 0,
-      "avgElapsed": 221.6,
+      "avgElapsed": 202.3,
       "regenerations": 0
     },
     {
@@ -82,16 +82,16 @@
     {
       "time": "2026-10-05 06:19:46",
       "series": "신수",
-      "generationAttempts": 0,
+      "generationAttempts": 1,
       "regenerations": 0,
-      "uploadAttempts": 0,
+      "uploadAttempts": 1,
       "driveVerified": false,
       "result": "running",
-      "elapsedSeconds": 0,
-      "stage": "GENERATING",
+      "elapsedSeconds": 106,
+      "stage": "UPLOADING",
       "scheduledTime": "2026-10-05 06:16:00",
       "startDelaySeconds": 227,
-      "generatedFilename": null
+      "generatedFilename": "코모도왕도마뱀 신수.png"
     },
     {
       "time": "2026-10-05 06:05:29",
