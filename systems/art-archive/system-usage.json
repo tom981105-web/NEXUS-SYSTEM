@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-10-04T08:10:12.278Z",
+  "generatedAt": "2026-10-04T08:12:19.805Z",
   "source": "그림 자동화 사용량 로그 / 사용량 로그",
   "schemaVersion": 3,
   "summary": {
-    "runs": 38,
+    "runs": 39,
     "success": 36,
     "failed": 1,
-    "successRate": 94.7,
+    "successRate": 92.3,
     "driveVerified": 36,
     "regenerations": 1,
-    "sourceRows": 39,
+    "sourceRows": 40,
     "normalizedPartialRows": 0
   },
   "series": [
@@ -31,7 +31,7 @@
     },
     {
       "name": "신수",
-      "runs": 5,
+      "runs": 6,
       "success": 5,
       "failed": 0,
       "avgElapsed": 221.8,
@@ -79,6 +79,20 @@
     }
   ],
   "recentRuns": [
+    {
+      "time": "2026-10-04 17:12:05",
+      "series": "신수",
+      "generationAttempts": 0,
+      "regenerations": 0,
+      "uploadAttempts": 0,
+      "driveVerified": false,
+      "result": "running",
+      "elapsedSeconds": 0,
+      "stage": "STARTED",
+      "scheduledTime": "2026-10-04 17:06:00",
+      "startDelaySeconds": 366,
+      "generatedFilename": null
+    },
     {
       "time": "2026-10-04 17:06:25",
       "series": "묵수",
@@ -232,20 +246,6 @@
       "scheduledTime": "2026-10-03 17:03:00",
       "startDelaySeconds": 128,
       "generatedFilename": "황제펭귄 묵수.png"
-    },
-    {
-      "time": "2026-10-03 16:57:04",
-      "series": "크레스트",
-      "generationAttempts": 1,
-      "regenerations": 0,
-      "uploadAttempts": 1,
-      "driveVerified": true,
-      "result": "success",
-      "elapsedSeconds": 216,
-      "stage": "COMPLETED",
-      "scheduledTime": "2026-10-03 17:00:00",
-      "startDelaySeconds": 0,
-      "generatedFilename": "여우 크레스트.png"
     }
   ]
 }
