@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-04T08:07:26.802Z",
+  "generatedAt": "2026-10-04T08:10:13.854Z",
   "timezone": "Asia/Seoul",
   "schemaVersion": 1,
   "retentionDays": 90,
@@ -7,10 +7,10 @@
   "summary": {
     "days": 5,
     "runs": 38,
-    "success": 34,
+    "success": 36,
     "failed": 1,
-    "successRate": 89.5,
-    "avgElapsed": 197.5
+    "successRate": 94.7,
+    "avgElapsed": 213.4
   },
   "daily": [
     {
@@ -351,35 +351,35 @@
     {
       "date": "2026-10-04",
       "runs": 6,
-      "success": 3,
+      "success": 5,
       "failed": 0,
-      "successRate": 50,
-      "avgElapsed": 125,
+      "successRate": 83.3,
+      "avgElapsed": 212,
       "maxElapsed": 308,
-      "driveVerified": 3,
-      "driveVerifiedRate": 50,
+      "driveVerified": 5,
+      "driveVerifiedRate": 83.3,
       "regenerations": 0,
       "avgStartDelay": 169,
       "series": [
         {
           "name": "크레스트",
           "runs": 2,
-          "success": 1,
+          "success": 2,
           "failed": 0,
-          "successRate": 50,
-          "avgElapsed": 116,
-          "driveVerified": 1,
+          "successRate": 100,
+          "avgElapsed": 268,
+          "driveVerified": 2,
           "regenerations": 0,
           "avgStartDelay": 37
         },
         {
           "name": "묵수",
           "runs": 2,
-          "success": 1,
+          "success": 2,
           "failed": 0,
-          "successRate": 50,
-          "avgElapsed": 154,
-          "driveVerified": 1,
+          "successRate": 100,
+          "avgElapsed": 263,
+          "driveVerified": 2,
           "regenerations": 0,
           "avgStartDelay": 247
         },
