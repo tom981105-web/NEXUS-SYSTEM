@@ -1,152 +1,107 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-05T16:18:02.644Z",
+  "updatedAt": "2026-10-05T17:14:26.715Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "success",
-    "runId": "paper-20261006-011425",
-    "startedAt": "2026-10-05T16:14:25.198Z",
-    "finishedAt": "2026-10-05T16:18:02.644Z",
-    "durationMs": 217446,
-    "generatedCount": 6,
+    "status": "running",
+    "runId": "paper-20261006-021426",
+    "startedAt": "2026-10-05T17:14:26.474Z",
+    "finishedAt": null,
+    "durationMs": null,
+    "generatedCount": 0,
     "expectedMax": 6,
-    "lastCommitSha": "5e4b1797d988f012a9ca7be2704cd07376a310ee",
+    "lastCommitSha": null,
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 1,
+      "calls": 0,
       "success": 0,
-      "retries": 0,
-      "http429": 1,
-      "errors": 1,
-      "lastHttpStatus": 429,
-      "disabledForRun": true
-    },
-    "crossref": {
-      "calls": 47,
-      "success": 43,
-      "retries": 4,
-      "http429": 4,
-      "errors": 4,
-      "lastHttpStatus": 200,
-      "adaptiveIntervalMs": 2400,
-      "throttleEvents": 4,
-      "earlyStops": 6
-    },
-    "gemini": {
-      "calls": 6,
-      "success": 6,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": 200
+      "lastHttpStatus": null,
+      "disabledForRun": false
+    },
+    "crossref": {
+      "calls": 0,
+      "success": 0,
+      "retries": 0,
+      "http429": 0,
+      "errors": 0,
+      "lastHttpStatus": null,
+      "adaptiveIntervalMs": 650,
+      "throttleEvents": 0,
+      "earlyStops": 0
+    },
+    "gemini": {
+      "calls": 0,
+      "success": 0,
+      "retries": 0,
+      "http429": 0,
+      "errors": 0,
+      "lastHttpStatus": null
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 124,
-      "selectedTitle": "Deep Learning - Based Diabetic Retinopathy Detection: A Survey on Deep Learning Architectures",
-      "selectedDoi": "10.21275/sr24805160228",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "전기",
-      "status": "generated",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 83,
-      "selectedTitle": "IEEE Power Electronics",
-      "selectedDoi": "10.1109/tpel.2026.3720764",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "로봇·자동화",
-      "status": "generated",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 91,
-      "selectedTitle": "SIMULTANEOUS LOCALISATION AND MAPPING (SLAM) TECHNIQUE IN REAL TIME: AN INTRODUCTION OF DIK-SLAM, 490-503.",
-      "selectedDoi": "10.2316/j.2024.206-1045",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "에너지·환경",
-      "status": "generated",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 131,
-      "selectedTitle": "Heat transfer analysis in thermal energy storage—A comprehensive review‐based latent heat storage system",
-      "selectedDoi": "10.1002/est2.434",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "건축·시설관리",
-      "status": "generated",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 89,
-      "selectedTitle": "A review of Building Information Modeling research for green building design through building performance analysis",
-      "selectedDoi": "10.36680/j.itcon.2020.001",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "도서관·문헌정보",
-      "status": "generated",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 33,
-      "selectedTitle": "Artificial intelligence (AI) library services innovative conceptual framework for the digital transformation of university education",
-      "selectedDoi": "10.1108/lht-07-2021-0242",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     }
   ],
-  "verification": {
-    "filesExist": true,
-    "jsonValid": true,
-    "indexHeadCorrect": true,
-    "indexDetailDoiMatch": true,
-    "noOldDoiDuplicates": true,
-    "noNewDoiDuplicates": true,
-    "ok": true
-  },
-  "stages": [
-    {
-      "at": "2026-10-05T16:14:26.666Z",
-      "name": "START",
-      "status": "running",
-      "message": "논문 자동화 V2.7.4 시작"
-    },
-    {
-      "at": "2026-10-05T16:14:26.988Z",
-      "name": "GITHUB_HEAD",
-      "status": "success",
-      "message": "10032dc"
-    },
-    {
-      "at": "2026-10-05T16:14:28.526Z",
-      "name": "INDEX",
-      "status": "success",
-      "message": "papers=805"
-    },
-    {
-      "at": "2026-10-05T16:17:59.258Z",
-      "name": "GITHUB_COMMIT",
-      "status": "success",
-      "message": "5e4b179"
-    },
-    {
-      "at": "2026-10-05T16:18:02.635Z",
-      "name": "VERIFY",
-      "status": "success",
-      "message": "최종 검증 통과"
-    },
-    {
-      "at": "2026-10-05T16:18:02.644Z",
-      "name": "FINISH",
-      "status": "success",
-      "message": "generated=6"
-    }
-  ]
+  "verification": null,
+  "stages": []
 }
