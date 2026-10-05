@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-10-05T08:17:48.395Z",
+  "generatedAt": "2026-10-05T08:18:26.249Z",
   "source": "그림 자동화 사용량 로그 / 사용량 로그",
   "schemaVersion": 3,
   "summary": {
     "runs": 51,
-    "success": 47,
+    "success": 48,
     "failed": 1,
-    "successRate": 92.2,
+    "successRate": 94.1,
     "driveVerified": 48,
     "regenerations": 1,
     "sourceRows": 52,
@@ -16,9 +16,9 @@
     {
       "name": "크레스트",
       "runs": 9,
-      "success": 7,
+      "success": 8,
       "failed": 1,
-      "avgElapsed": 269.6,
+      "avgElapsed": 275.8,
       "regenerations": 0
     },
     {
@@ -26,7 +26,7 @@
       "runs": 8,
       "success": 7,
       "failed": 0,
-      "avgElapsed": 227.6,
+      "avgElapsed": 243.3,
       "regenerations": 0
     },
     {
@@ -87,8 +87,8 @@
       "uploadAttempts": 0,
       "driveVerified": false,
       "result": "running",
-      "elapsedSeconds": 0,
-      "stage": "GENERATING",
+      "elapsedSeconds": 353,
+      "stage": "GENERATED",
       "scheduledTime": "2026-10-05 17:03:00",
       "startDelaySeconds": 540,
       "generatedFilename": null
@@ -100,9 +100,9 @@
       "regenerations": 0,
       "uploadAttempts": 1,
       "driveVerified": true,
-      "result": "running",
-      "elapsedSeconds": 532,
-      "stage": "DRIVE_VERIFIED",
+      "result": "success",
+      "elapsedSeconds": 581,
+      "stage": "COMPLETED",
       "scheduledTime": "2026-10-05 17:00:00",
       "startDelaySeconds": 0,
       "generatedFilename": "황소 크레스트.png"
