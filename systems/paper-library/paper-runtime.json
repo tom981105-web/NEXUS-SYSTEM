@@ -1,107 +1,152 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-05T00:14:25.324Z",
+  "updatedAt": "2026-10-05T00:19:05.692Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "running",
+    "status": "success",
     "runId": "paper-20261005-091425",
     "startedAt": "2026-10-05T00:14:25.156Z",
-    "finishedAt": null,
-    "durationMs": null,
-    "generatedCount": 0,
+    "finishedAt": "2026-10-05T00:19:05.692Z",
+    "durationMs": 280536,
+    "generatedCount": 6,
     "expectedMax": 6,
-    "lastCommitSha": null,
+    "lastCommitSha": "1687be30284a1f15c7e6f1b3627ba40169941deb",
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 0,
-      "success": 0,
+      "calls": 73,
+      "success": 73,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": null,
+      "lastHttpStatus": 200,
       "disabledForRun": false
     },
     "crossref": {
-      "calls": 0,
-      "success": 0,
-      "retries": 0,
-      "http429": 0,
-      "errors": 0,
-      "lastHttpStatus": null,
+      "calls": 44,
+      "success": 43,
+      "retries": 1,
+      "http429": 1,
+      "errors": 1,
+      "lastHttpStatus": 200,
       "adaptiveIntervalMs": 650,
-      "throttleEvents": 0,
-      "earlyStops": 0
+      "throttleEvents": 1,
+      "earlyStops": 6
     },
     "gemini": {
-      "calls": 0,
-      "success": 0,
+      "calls": 6,
+      "success": 6,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": null
+      "lastHttpStatus": 200
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 134,
+      "selectedTitle": "FEATURE SELECTION AND DEEP LEARNING MODEL FOR AIR QUALITY PREDICTION",
+      "selectedDoi": "10.34218/ijaidl_02_02_001",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "전기",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 93,
+      "selectedTitle": "Microcontroller and solar power based electrical energy management system for renewable energy applications",
+      "selectedDoi": "10.1016/j.ijepes.2012.08.041",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "로봇·자동화",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 104,
+      "selectedTitle": "Dynamic Affect-Based Motion Planning of a Humanoid Robot for Human-Robot Collaborative Assembly in Manufacturing",
+      "selectedDoi": "10.3390/electronics13061044",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "에너지·환경",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 140,
+      "selectedTitle": "Energy storage on demand: Thermal energy storage development, materials, design, and integration challenges",
+      "selectedDoi": "10.1016/j.ensm.2022.01.017",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "건축·시설관리",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 101,
+      "selectedTitle": "Analisis Quantity Take Off Dengan Metode Building Information Modeling Pada Pekerjaan Struktur Gedung Poltekkes Palangka Raya",
+      "selectedDoi": "10.25299/saintis.2024.vol24(01).16561",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "도서관·문헌정보",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 45,
+      "selectedTitle": "General Synthesis of a Diatomic Catalyst Library via a Macrocyclic Precursor-Mediated Approach",
+      "selectedDoi": "10.1021/jacs.2c13886",
+      "sourceProvider": "Crossref"
     }
   ],
-  "verification": null,
-  "stages": []
+  "verification": {
+    "filesExist": true,
+    "jsonValid": true,
+    "indexHeadCorrect": true,
+    "indexDetailDoiMatch": true,
+    "noOldDoiDuplicates": true,
+    "noNewDoiDuplicates": true,
+    "ok": true
+  },
+  "stages": [
+    {
+      "at": "2026-10-05T00:14:26.553Z",
+      "name": "START",
+      "status": "running",
+      "message": "논문 자동화 V2.7.4 시작"
+    },
+    {
+      "at": "2026-10-05T00:14:26.821Z",
+      "name": "GITHUB_HEAD",
+      "status": "success",
+      "message": "bd69fe3"
+    },
+    {
+      "at": "2026-10-05T00:14:28.237Z",
+      "name": "INDEX",
+      "status": "success",
+      "message": "papers=727"
+    },
+    {
+      "at": "2026-10-05T00:19:03.086Z",
+      "name": "GITHUB_COMMIT",
+      "status": "success",
+      "message": "1687be3"
+    },
+    {
+      "at": "2026-10-05T00:19:05.684Z",
+      "name": "VERIFY",
+      "status": "success",
+      "message": "최종 검증 통과"
+    },
+    {
+      "at": "2026-10-05T00:19:05.692Z",
+      "name": "FINISH",
+      "status": "success",
+      "message": "generated=6"
+    }
+  ]
 }
