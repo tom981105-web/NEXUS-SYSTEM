@@ -1,19 +1,19 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-05T08:12:27.950Z",
+  "updatedAt": "2026-10-05T08:13:37.082Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-05T08:11:00.310Z",
-      "finishedAt": "2026-10-05T08:12:17.215Z",
-      "result": "failed",
-      "durationMs": 76905,
-      "error": "SYSTEM 사용량 동기화 실패: Error: GitHub 파일 저장 실패 [NEXUS] (NEXUS-SYSTEM/systems/art-archive/system-usage.json): HTTP 409 / {\"message\":\"is at 165dd6920bf54b04b19c82667d92126efc30f286 but expected ff9c167389cbc457e1355435686e313f42a604b5\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#create-or-update-file-contents\",\"status\":\"409\"}\n    at githubUpsertTextFile_ (Code:4032:11)\n    at updateSystemUsage_ (Code:3335:3)\n    at checkArtworkCompletion (Code:235:7)\n    at __GS_INTERNAL_top_function_call__.gs:1:8"
+      "startedAt": "2026-10-05T08:13:00.954Z",
+      "finishedAt": "2026-10-05T08:13:27.758Z",
+      "result": "success",
+      "durationMs": 26804,
+      "error": null
     },
-    "consecutiveFailures": 1,
+    "consecutiveFailures": 0,
     "busyOrSkipped": false,
     "busyReason": null,
     "triggerInventoryAvailable": false
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-05T08:12:28.436Z",
+    "updatedAt": "2026-10-05T08:13:37.282Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,7 +253,7 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-05T08:12:21.777Z",
+    "checkedAt": "2026-10-05T08:13:33.322Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-05",
     "planned": 16,
@@ -261,8 +261,8 @@
     "failed": 0,
     "stalled": 0,
     "missed": 1,
-    "running": 1,
-    "pending": 7,
+    "running": 2,
+    "pending": 6,
     "status": "error",
     "slots": [
       {
@@ -383,27 +383,27 @@
         "status": "RUNNING",
         "logRow": 52,
         "runId": "크레스트-20261005-170821",
-        "stage": "STARTED",
+        "stage": "REFERENCE_OK",
         "result": "running",
-        "subject": null,
+        "subject": "황소",
         "filename": null,
         "startDelaySeconds": 0,
         "elapsedMinutes": 0,
-        "diagnosis": "STARTED 단계 진행 중"
+        "diagnosis": "REFERENCE_OK 단계 진행 중"
       },
       {
         "series": "묵수",
         "scheduledTime": "17:03",
-        "status": "PENDING",
-        "logRow": null,
-        "runId": null,
-        "stage": null,
-        "result": null,
+        "status": "RUNNING",
+        "logRow": 53,
+        "runId": "묵수-20261005-171200",
+        "stage": "STARTED",
+        "result": "running",
         "subject": null,
         "filename": null,
-        "startDelaySeconds": null,
-        "elapsedMinutes": null,
-        "diagnosis": "예정시각 경과 후 로그 생성 대기"
+        "startDelaySeconds": 540,
+        "elapsedMinutes": 0,
+        "diagnosis": "STARTED 단계 진행 중"
       },
       {
         "series": "신수",
