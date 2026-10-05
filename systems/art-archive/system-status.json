@@ -1,21 +1,21 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-05T22:18:54.768Z",
+  "updatedAt": "2026-10-05T22:34:19.020Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-05T22:18:00.175Z",
-      "finishedAt": "2026-10-05T22:18:36.877Z",
-      "result": "success",
-      "durationMs": 36702,
+      "startedAt": "2026-10-05T22:32:02.168Z",
+      "finishedAt": "2026-10-05T22:34:11.815Z",
+      "result": "skipped",
+      "durationMs": 129647,
       "error": null
     },
     "consecutiveFailures": 0,
-    "busyOrSkipped": false,
-    "busyReason": null,
+    "busyOrSkipped": true,
+    "busyReason": "중복 실행 방지를 위해 이번 회차를 건너뜀",
     "triggerInventoryAvailable": false
   },
   "notionSync": {
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-05T22:18:55.426Z",
+    "updatedAt": "2026-10-05T22:34:19.138Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,7 +253,7 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-05T22:18:44.040Z",
+    "checkedAt": "2026-10-05T22:34:14.014Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-06",
     "planned": 16,
@@ -291,7 +291,7 @@
         "filename": null,
         "startDelaySeconds": 843,
         "elapsedMinutes": 0,
-        "diagnosis": "미완료 상태에서 61분간 새 로그가 없어 중단 의심"
+        "diagnosis": "미완료 상태에서 77분간 새 로그가 없어 중단 의심"
       },
       {
         "series": "신수",
