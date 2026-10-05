@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T08:18:26.249Z",
+  "generatedAt": "2026-10-05T08:20:11.894Z",
   "source": "그림 자동화 사용량 로그 / 사용량 로그",
   "schemaVersion": 3,
   "summary": {
@@ -7,7 +7,7 @@
     "success": 48,
     "failed": 1,
     "successRate": 94.1,
-    "driveVerified": 48,
+    "driveVerified": 49,
     "regenerations": 1,
     "sourceRows": 52,
     "normalizedPartialRows": 0
@@ -26,7 +26,7 @@
       "runs": 8,
       "success": 7,
       "failed": 0,
-      "avgElapsed": 243.3,
+      "avgElapsed": 256.9,
       "regenerations": 0
     },
     {
@@ -84,11 +84,11 @@
       "series": "묵수",
       "generationAttempts": 1,
       "regenerations": 0,
-      "uploadAttempts": 0,
-      "driveVerified": false,
+      "uploadAttempts": 1,
+      "driveVerified": true,
       "result": "running",
-      "elapsedSeconds": 353,
-      "stage": "GENERATED",
+      "elapsedSeconds": 462,
+      "stage": "DRIVE_VERIFIED",
       "scheduledTime": "2026-10-05 17:03:00",
       "startDelaySeconds": 540,
       "generatedFilename": null
