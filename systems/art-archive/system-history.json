@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T08:28:30.041Z",
+  "generatedAt": "2026-10-05T08:33:08.466Z",
   "timezone": "Asia/Seoul",
   "schemaVersion": 1,
   "retentionDays": 90,
@@ -7,10 +7,10 @@
   "summary": {
     "days": 6,
     "runs": 53,
-    "success": 49,
+    "success": 51,
     "failed": 1,
-    "successRate": 92.5,
-    "avgElapsed": 213.5
+    "successRate": 96.2,
+    "avgElapsed": 227.6
   },
   "daily": [
     {
@@ -432,13 +432,13 @@
     {
       "date": "2026-10-05",
       "runs": 11,
-      "success": 9,
+      "success": 11,
       "failed": 0,
-      "successRate": 81.8,
-      "avgElapsed": 226.1,
+      "successRate": 100,
+      "avgElapsed": 287.8,
       "maxElapsed": 581,
-      "driveVerified": 9,
-      "driveVerifiedRate": 81.8,
+      "driveVerified": 11,
+      "driveVerifiedRate": 100,
       "regenerations": 0,
       "avgStartDelay": 721,
       "series": [
@@ -467,22 +467,22 @@
         {
           "name": "신수",
           "runs": 2,
-          "success": 1,
+          "success": 2,
           "failed": 0,
-          "successRate": 50,
-          "avgElapsed": 116,
-          "driveVerified": 1,
+          "successRate": 100,
+          "avgElapsed": 310.5,
+          "driveVerified": 2,
           "regenerations": 0,
           "avgStartDelay": 455
         },
         {
           "name": "수채화",
           "runs": 2,
-          "success": 1,
+          "success": 2,
           "failed": 0,
-          "successRate": 50,
-          "avgElapsed": 109.5,
-          "driveVerified": 1,
+          "successRate": 100,
+          "avgElapsed": 254.5,
+          "driveVerified": 2,
           "regenerations": 0,
           "avgStartDelay": 1139
         },
