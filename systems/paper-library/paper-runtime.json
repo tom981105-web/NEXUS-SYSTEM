@@ -1,107 +1,152 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-05T08:14:27.932Z",
+  "updatedAt": "2026-10-05T08:18:39.066Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "running",
+    "status": "success",
     "runId": "paper-20261005-171425",
     "startedAt": "2026-10-05T08:14:25.188Z",
-    "finishedAt": null,
-    "durationMs": null,
-    "generatedCount": 0,
+    "finishedAt": "2026-10-05T08:18:39.066Z",
+    "durationMs": 253878,
+    "generatedCount": 6,
     "expectedMax": 6,
-    "lastCommitSha": null,
+    "lastCommitSha": "6a4389dfea79d9c344d415c05d80ff9f516c786a",
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 0,
-      "success": 0,
+      "calls": 73,
+      "success": 73,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": null,
+      "lastHttpStatus": 200,
       "disabledForRun": false
     },
     "crossref": {
-      "calls": 0,
-      "success": 0,
-      "retries": 0,
-      "http429": 0,
-      "errors": 0,
-      "lastHttpStatus": null,
-      "adaptiveIntervalMs": 650,
-      "throttleEvents": 0,
-      "earlyStops": 0
+      "calls": 44,
+      "success": 43,
+      "retries": 1,
+      "http429": 1,
+      "errors": 1,
+      "lastHttpStatus": 200,
+      "adaptiveIntervalMs": 700,
+      "throttleEvents": 1,
+      "earlyStops": 6
     },
     "gemini": {
-      "calls": 0,
-      "success": 0,
+      "calls": 6,
+      "success": 6,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": null
+      "lastHttpStatus": 200
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 128,
+      "selectedTitle": "Improving Student Learning Motivation in Islamic Education Learning Using an Activity-Based Approach at SD Negeri Inpres Baralau",
+      "selectedDoi": "10.62945/deeplearning.v1i1.196",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "전기",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 88,
+      "selectedTitle": "More intelligent DC railway electrical power systems with traction power control",
+      "selectedDoi": "10.1002/eej.4391140709",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "로봇·자동화",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 97,
+      "selectedTitle": "Evaluations of ORB-SLAM3, DROID-SLAM, DPVO, and DPV-SLAM",
+      "selectedDoi": "10.1299/jsmermd.2025.2p2-l06",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "에너지·환경",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 137,
+      "selectedTitle": "How renewable energy and non-renewable energy affect environmental excellence in N-11 economies?",
+      "selectedDoi": "10.1016/j.renene.2022.07.013",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "건축·시설관리",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 95,
+      "selectedTitle": "Bridging the gap between the project management and facility management – Use of Uncertainty management in Facility management",
+      "selectedDoi": "10.1016/j.procs.2025.02.297",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "도서관·문헌정보",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 39,
+      "selectedTitle": "The deal.II Library, Version 9.5",
+      "selectedDoi": "10.1515/jnma-2023-0089",
+      "sourceProvider": "Crossref"
     }
   ],
-  "verification": null,
-  "stages": []
+  "verification": {
+    "filesExist": true,
+    "jsonValid": true,
+    "indexHeadCorrect": true,
+    "indexDetailDoiMatch": true,
+    "noOldDoiDuplicates": true,
+    "noNewDoiDuplicates": true,
+    "ok": true
+  },
+  "stages": [
+    {
+      "at": "2026-10-05T08:14:29.329Z",
+      "name": "START",
+      "status": "running",
+      "message": "논문 자동화 V2.7.4 시작"
+    },
+    {
+      "at": "2026-10-05T08:14:29.596Z",
+      "name": "GITHUB_HEAD",
+      "status": "success",
+      "message": "6ffc769"
+    },
+    {
+      "at": "2026-10-05T08:14:31.811Z",
+      "name": "INDEX",
+      "status": "success",
+      "message": "papers=763"
+    },
+    {
+      "at": "2026-10-05T08:18:34.436Z",
+      "name": "GITHUB_COMMIT",
+      "status": "success",
+      "message": "6a4389d"
+    },
+    {
+      "at": "2026-10-05T08:18:39.039Z",
+      "name": "VERIFY",
+      "status": "success",
+      "message": "최종 검증 통과"
+    },
+    {
+      "at": "2026-10-05T08:18:39.066Z",
+      "name": "FINISH",
+      "status": "success",
+      "message": "generated=6"
+    }
+  ]
 }
