@@ -1,152 +1,107 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-05T15:17:39.268Z",
+  "updatedAt": "2026-10-05T16:14:25.387Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "success",
-    "runId": "paper-20261006-001426",
-    "startedAt": "2026-10-05T15:14:26.156Z",
-    "finishedAt": "2026-10-05T15:17:39.268Z",
-    "durationMs": 193112,
-    "generatedCount": 6,
+    "status": "running",
+    "runId": "paper-20261006-011425",
+    "startedAt": "2026-10-05T16:14:25.198Z",
+    "finishedAt": null,
+    "durationMs": null,
+    "generatedCount": 0,
     "expectedMax": 6,
-    "lastCommitSha": "10032dc321bf67a59120ba747c364550b6227666",
+    "lastCommitSha": null,
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 1,
+      "calls": 0,
       "success": 0,
-      "retries": 0,
-      "http429": 1,
-      "errors": 1,
-      "lastHttpStatus": 429,
-      "disabledForRun": true
-    },
-    "crossref": {
-      "calls": 45,
-      "success": 43,
-      "retries": 2,
-      "http429": 2,
-      "errors": 2,
-      "lastHttpStatus": 200,
-      "adaptiveIntervalMs": 1650,
-      "throttleEvents": 2,
-      "earlyStops": 6
-    },
-    "gemini": {
-      "calls": 6,
-      "success": 6,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": 200
+      "lastHttpStatus": null,
+      "disabledForRun": false
+    },
+    "crossref": {
+      "calls": 0,
+      "success": 0,
+      "retries": 0,
+      "http429": 0,
+      "errors": 0,
+      "lastHttpStatus": null,
+      "adaptiveIntervalMs": 650,
+      "throttleEvents": 0,
+      "earlyStops": 0
+    },
+    "gemini": {
+      "calls": 0,
+      "success": 0,
+      "retries": 0,
+      "http429": 0,
+      "errors": 0,
+      "lastHttpStatus": null
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 125,
-      "selectedTitle": "Straight Forward Constructive Deep Learning Neural Network (SFC-DLNN) Algorithm",
-      "selectedDoi": "10.33140/amlai.03.02.04",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "전기",
-      "status": "generated",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 84,
-      "selectedTitle": "Power Quality Improvement in Industrial Power Systems Using Power Electronics",
-      "selectedDoi": "10.71465/ajpeps2457",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "로봇·자동화",
-      "status": "generated",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 93,
-      "selectedTitle": "GG-SLAM: An Object-Level SLAM System Using Gaussian Grouping and Splatting",
-      "selectedDoi": "10.7746/jkros.2025.20.1.084",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "에너지·환경",
-      "status": "generated",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 130,
-      "selectedTitle": "Energy storage requirements to address wind energy variability",
-      "selectedDoi": "10.1002/est2.77",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "건축·시설관리",
-      "status": "generated",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 90,
-      "selectedTitle": "Fault detection in commercial building VAV AHU: A case study of an academic building",
-      "selectedDoi": "10.1016/j.enbuild.2019.06.051",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "도서관·문헌정보",
-      "status": "generated",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 34,
-      "selectedTitle": "A systematic literature review of data literacy education",
-      "selectedDoi": "10.1080/08963568.2023.2171552",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     }
   ],
-  "verification": {
-    "filesExist": true,
-    "jsonValid": true,
-    "indexHeadCorrect": true,
-    "indexDetailDoiMatch": true,
-    "noOldDoiDuplicates": true,
-    "noNewDoiDuplicates": true,
-    "ok": true
-  },
-  "stages": [
-    {
-      "at": "2026-10-05T15:14:28.010Z",
-      "name": "START",
-      "status": "running",
-      "message": "논문 자동화 V2.7.4 시작"
-    },
-    {
-      "at": "2026-10-05T15:14:28.329Z",
-      "name": "GITHUB_HEAD",
-      "status": "success",
-      "message": "ec7624e"
-    },
-    {
-      "at": "2026-10-05T15:14:31.284Z",
-      "name": "INDEX",
-      "status": "success",
-      "message": "papers=799"
-    },
-    {
-      "at": "2026-10-05T15:17:36.403Z",
-      "name": "GITHUB_COMMIT",
-      "status": "success",
-      "message": "10032dc"
-    },
-    {
-      "at": "2026-10-05T15:17:39.254Z",
-      "name": "VERIFY",
-      "status": "success",
-      "message": "최종 검증 통과"
-    },
-    {
-      "at": "2026-10-05T15:17:39.268Z",
-      "name": "FINISH",
-      "status": "success",
-      "message": "generated=6"
-    }
-  ]
+  "verification": null,
+  "stages": []
 }
