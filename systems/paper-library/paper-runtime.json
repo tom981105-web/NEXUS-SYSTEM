@@ -1,107 +1,152 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-05T01:14:25.514Z",
+  "updatedAt": "2026-10-05T01:19:26.087Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "running",
+    "status": "success",
     "runId": "paper-20261005-101425",
     "startedAt": "2026-10-05T01:14:25.299Z",
-    "finishedAt": null,
-    "durationMs": null,
-    "generatedCount": 0,
+    "finishedAt": "2026-10-05T01:19:26.087Z",
+    "durationMs": 300788,
+    "generatedCount": 6,
     "expectedMax": 6,
-    "lastCommitSha": null,
+    "lastCommitSha": "9e64219a13b63b2ec96653a99aa0ec6eae59e2d7",
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 0,
-      "success": 0,
+      "calls": 73,
+      "success": 73,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": null,
+      "lastHttpStatus": 200,
       "disabledForRun": false
     },
     "crossref": {
-      "calls": 0,
-      "success": 0,
-      "retries": 0,
-      "http429": 0,
-      "errors": 0,
-      "lastHttpStatus": null,
-      "adaptiveIntervalMs": 650,
-      "throttleEvents": 0,
-      "earlyStops": 0
+      "calls": 45,
+      "success": 43,
+      "retries": 2,
+      "http429": 2,
+      "errors": 2,
+      "lastHttpStatus": 200,
+      "adaptiveIntervalMs": 1350,
+      "throttleEvents": 2,
+      "earlyStops": 6
     },
     "gemini": {
-      "calls": 0,
-      "success": 0,
-      "retries": 0,
+      "calls": 8,
+      "success": 6,
+      "retries": 2,
       "http429": 0,
-      "errors": 0,
-      "lastHttpStatus": null
+      "errors": 4,
+      "lastHttpStatus": 200
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 133,
+      "selectedTitle": "Plant disease detection using Machine learning and Deep learning",
+      "selectedDoi": "10.55248/gengpi.06.1125.38111",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "전기",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 94,
+      "selectedTitle": "Optimal routing of ring power distribution systems",
+      "selectedDoi": "10.1016/j.epsr.2021.107392",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "로봇·자동화",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 102,
+      "selectedTitle": "MVS‐SLAM: Enhanced multiview geometry for improved semantic RGBD SLAM in dynamic environment",
+      "selectedDoi": "10.1002/rob.22248",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "에너지·환경",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 139,
+      "selectedTitle": "Proton batteries shape the next energy storage",
+      "selectedDoi": "10.1016/j.ensm.2023.102913",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "건축·시설관리",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 100,
+      "selectedTitle": "A model to support long-term building maintenance planning for multifamily housing",
+      "selectedDoi": "10.1016/j.jobe.2021.103000",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "도서관·문헌정보",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 44,
+      "selectedTitle": "Cytoscape.js 2023 update: a graph theory library for visualization and analysis",
+      "selectedDoi": "10.1093/bioinformatics/btad031",
+      "sourceProvider": "Crossref"
     }
   ],
-  "verification": null,
-  "stages": []
+  "verification": {
+    "filesExist": true,
+    "jsonValid": true,
+    "indexHeadCorrect": true,
+    "indexDetailDoiMatch": true,
+    "noOldDoiDuplicates": true,
+    "noNewDoiDuplicates": true,
+    "ok": true
+  },
+  "stages": [
+    {
+      "at": "2026-10-05T01:14:26.682Z",
+      "name": "START",
+      "status": "running",
+      "message": "논문 자동화 V2.7.4 시작"
+    },
+    {
+      "at": "2026-10-05T01:14:26.968Z",
+      "name": "GITHUB_HEAD",
+      "status": "success",
+      "message": "1687be3"
+    },
+    {
+      "at": "2026-10-05T01:14:28.696Z",
+      "name": "INDEX",
+      "status": "success",
+      "message": "papers=733"
+    },
+    {
+      "at": "2026-10-05T01:19:21.976Z",
+      "name": "GITHUB_COMMIT",
+      "status": "success",
+      "message": "9e64219"
+    },
+    {
+      "at": "2026-10-05T01:19:26.064Z",
+      "name": "VERIFY",
+      "status": "success",
+      "message": "최종 검증 통과"
+    },
+    {
+      "at": "2026-10-05T01:19:26.087Z",
+      "name": "FINISH",
+      "status": "success",
+      "message": "generated=6"
+    }
+  ]
 }
