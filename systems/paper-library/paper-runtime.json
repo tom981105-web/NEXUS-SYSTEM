@@ -1,107 +1,152 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-05T11:14:25.631Z",
+  "updatedAt": "2026-10-05T11:17:53.749Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "running",
+    "status": "success",
     "runId": "paper-20261005-201425",
     "startedAt": "2026-10-05T11:14:25.320Z",
-    "finishedAt": null,
-    "durationMs": null,
-    "generatedCount": 0,
+    "finishedAt": "2026-10-05T11:17:53.749Z",
+    "durationMs": 208429,
+    "generatedCount": 6,
     "expectedMax": 6,
-    "lastCommitSha": null,
+    "lastCommitSha": "859f6756a1909c6d1f050c5b7ff2075daca94d6e",
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 0,
-      "success": 0,
+      "calls": 73,
+      "success": 73,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": null,
+      "lastHttpStatus": 200,
       "disabledForRun": false
     },
     "crossref": {
-      "calls": 0,
-      "success": 0,
+      "calls": 9,
+      "success": 8,
       "retries": 0,
       "http429": 0,
-      "errors": 0,
-      "lastHttpStatus": null,
+      "errors": 1,
+      "lastHttpStatus": 200,
       "adaptiveIntervalMs": 650,
       "throttleEvents": 0,
-      "earlyStops": 0
+      "earlyStops": 1
     },
     "gemini": {
-      "calls": 0,
-      "success": 0,
+      "calls": 6,
+      "success": 6,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": null
+      "lastHttpStatus": 200
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "pending",
-      "openAlexCandidates": null,
+      "status": "generated",
+      "openAlexCandidates": 7,
       "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "selectedTitle": "Accurate structure prediction of biomolecular interactions with AlphaFold 3",
+      "selectedDoi": "10.1038/s41586-024-07487-w",
+      "sourceProvider": "OpenAlex+Crossref"
     },
     {
       "name": "전기",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 85,
+      "selectedTitle": "Power handling capabilities of transmission systems using a temperature-dependent power flow",
+      "selectedDoi": "10.1016/j.epsr.2018.12.021",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "로봇·자동화",
-      "status": "pending",
-      "openAlexCandidates": null,
+      "status": "generated",
+      "openAlexCandidates": 1,
       "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "selectedTitle": "Control Barrier Function Based Quadratic Programs for Safety Critical Systems",
+      "selectedDoi": "10.1109/tac.2016.2638961",
+      "sourceProvider": "OpenAlex+Crossref"
     },
     {
       "name": "에너지·환경",
-      "status": "pending",
-      "openAlexCandidates": null,
+      "status": "generated",
+      "openAlexCandidates": 1,
       "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "selectedTitle": "Two new Later Stone Age sites from the Final Pleistocene in the Falémé Valley, eastern Senegal",
+      "selectedDoi": "10.3929/ethz-b-000667478",
+      "sourceProvider": "OpenAlex"
     },
     {
       "name": "건축·시설관리",
-      "status": "pending",
-      "openAlexCandidates": null,
+      "status": "generated",
+      "openAlexCandidates": 1,
       "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "selectedTitle": "Energy, environment and sustainable development",
+      "selectedDoi": "10.1016/j.rser.2007.05.001",
+      "sourceProvider": "OpenAlex+Crossref"
     },
     {
       "name": "도서관·문헌정보",
-      "status": "pending",
-      "openAlexCandidates": null,
+      "status": "generated",
+      "openAlexCandidates": 1,
       "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "selectedTitle": "Artificial intelligence literacy in higher and adult education: A scoping literature review",
+      "selectedDoi": "10.1016/j.caeai.2022.100101",
+      "sourceProvider": "OpenAlex+Crossref"
     }
   ],
-  "verification": null,
-  "stages": []
+  "verification": {
+    "filesExist": true,
+    "jsonValid": true,
+    "indexHeadCorrect": true,
+    "indexDetailDoiMatch": true,
+    "noOldDoiDuplicates": true,
+    "noNewDoiDuplicates": true,
+    "ok": true
+  },
+  "stages": [
+    {
+      "at": "2026-10-05T11:14:27.052Z",
+      "name": "START",
+      "status": "running",
+      "message": "논문 자동화 V2.7.4 시작"
+    },
+    {
+      "at": "2026-10-05T11:14:27.351Z",
+      "name": "GITHUB_HEAD",
+      "status": "success",
+      "message": "95b03ee"
+    },
+    {
+      "at": "2026-10-05T11:14:29.306Z",
+      "name": "INDEX",
+      "status": "success",
+      "message": "papers=781"
+    },
+    {
+      "at": "2026-10-05T11:17:48.978Z",
+      "name": "GITHUB_COMMIT",
+      "status": "success",
+      "message": "859f675"
+    },
+    {
+      "at": "2026-10-05T11:17:53.728Z",
+      "name": "VERIFY",
+      "status": "success",
+      "message": "최종 검증 통과"
+    },
+    {
+      "at": "2026-10-05T11:17:53.749Z",
+      "name": "FINISH",
+      "status": "success",
+      "message": "generated=6"
+    }
+  ]
 }
