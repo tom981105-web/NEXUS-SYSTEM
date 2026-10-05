@@ -1,21 +1,21 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-05T08:12:14.649Z",
+  "updatedAt": "2026-10-05T08:12:27.950Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-05T08:12:00.107Z",
-      "finishedAt": "2026-10-05T08:12:05.169Z",
-      "result": "skipped",
-      "durationMs": 5062,
-      "error": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
+      "startedAt": "2026-10-05T08:11:00.310Z",
+      "finishedAt": "2026-10-05T08:12:17.215Z",
+      "result": "failed",
+      "durationMs": 76905,
+      "error": "SYSTEM 사용량 동기화 실패: Error: GitHub 파일 저장 실패 [NEXUS] (NEXUS-SYSTEM/systems/art-archive/system-usage.json): HTTP 409 / {\"message\":\"is at 165dd6920bf54b04b19c82667d92126efc30f286 but expected ff9c167389cbc457e1355435686e313f42a604b5\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#create-or-update-file-contents\",\"status\":\"409\"}\n    at githubUpsertTextFile_ (Code:4032:11)\n    at updateSystemUsage_ (Code:3335:3)\n    at checkArtworkCompletion (Code:235:7)\n    at __GS_INTERNAL_top_function_call__.gs:1:8"
     },
-    "consecutiveFailures": 0,
-    "busyOrSkipped": true,
-    "busyReason": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀",
+    "consecutiveFailures": 1,
+    "busyOrSkipped": false,
+    "busyReason": null,
     "triggerInventoryAvailable": false
   },
   "notionSync": {
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-05T08:12:15.255Z",
+    "updatedAt": "2026-10-05T08:12:28.436Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,7 +253,7 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-05T08:12:10.420Z",
+    "checkedAt": "2026-10-05T08:12:21.777Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-05",
     "planned": 16,
