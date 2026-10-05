@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-10-05T08:35:14.291Z",
+  "generatedAt": "2026-10-05T08:40:41.094Z",
   "timezone": "Asia/Seoul",
   "schemaVersion": 1,
   "retentionDays": 90,
   "source": "그림 자동화 사용량 로그 / 사용량 로그",
   "summary": {
     "days": 6,
-    "runs": 53,
-    "success": 51,
+    "runs": 54,
+    "success": 52,
     "failed": 1,
-    "successRate": 96.2,
-    "avgElapsed": 228.4
+    "successRate": 96.3,
+    "avgElapsed": 229.3
   },
   "daily": [
     {
@@ -431,16 +431,16 @@
     },
     {
       "date": "2026-10-05",
-      "runs": 11,
-      "success": 11,
+      "runs": 12,
+      "success": 12,
       "failed": 0,
       "successRate": 100,
-      "avgElapsed": 291.4,
+      "avgElapsed": 289.7,
       "maxElapsed": 581,
-      "driveVerified": 11,
+      "driveVerified": 12,
       "driveVerifiedRate": 100,
       "regenerations": 0,
-      "avgStartDelay": 721,
+      "avgStartDelay": 773.7,
       "series": [
         {
           "name": "크레스트",
@@ -488,14 +488,14 @@
         },
         {
           "name": "펄퍼스",
-          "runs": 1,
-          "success": 1,
+          "runs": 2,
+          "success": 2,
           "failed": 0,
           "successRate": 100,
-          "avgElapsed": 180,
-          "driveVerified": 1,
+          "avgElapsed": 225.5,
+          "driveVerified": 2,
           "regenerations": 0,
-          "avgStartDelay": 1094
+          "avgStartDelay": 1223.5
         },
         {
           "name": "잉크",
