@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T08:33:08.466Z",
+  "generatedAt": "2026-10-05T08:35:14.291Z",
   "timezone": "Asia/Seoul",
   "schemaVersion": 1,
   "retentionDays": 90,
@@ -10,7 +10,7 @@
     "success": 51,
     "failed": 1,
     "successRate": 96.2,
-    "avgElapsed": 227.6
+    "avgElapsed": 228.4
   },
   "daily": [
     {
@@ -435,7 +435,7 @@
       "success": 11,
       "failed": 0,
       "successRate": 100,
-      "avgElapsed": 287.8,
+      "avgElapsed": 291.4,
       "maxElapsed": 581,
       "driveVerified": 11,
       "driveVerifiedRate": 100,
@@ -481,7 +481,7 @@
           "success": 2,
           "failed": 0,
           "successRate": 100,
-          "avgElapsed": 254.5,
+          "avgElapsed": 274,
           "driveVerified": 2,
           "regenerations": 0,
           "avgStartDelay": 1139
