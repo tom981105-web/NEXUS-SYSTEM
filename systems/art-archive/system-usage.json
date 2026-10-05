@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T08:29:31.542Z",
+  "generatedAt": "2026-10-05T08:30:28.952Z",
   "source": "그림 자동화 사용량 로그 / 사용량 로그",
   "schemaVersion": 3,
   "summary": {
@@ -102,7 +102,7 @@
       "driveVerified": false,
       "result": "in_progress",
       "elapsedSeconds": 0,
-      "stage": "STARTED",
+      "stage": "GENERATING",
       "scheduledTime": "2026-10-05 17:09:00",
       "startDelaySeconds": 1029,
       "generatedFilename": null
