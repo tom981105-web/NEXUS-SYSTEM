@@ -1,152 +1,107 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-05T22:17:23.831Z",
+  "updatedAt": "2026-10-05T23:14:26.188Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "success",
-    "runId": "paper-20261006-071425",
-    "startedAt": "2026-10-05T22:14:25.788Z",
-    "finishedAt": "2026-10-05T22:17:23.831Z",
-    "durationMs": 178043,
-    "generatedCount": 6,
+    "status": "running",
+    "runId": "paper-20261006-081425",
+    "startedAt": "2026-10-05T23:14:25.970Z",
+    "finishedAt": null,
+    "durationMs": null,
+    "generatedCount": 0,
     "expectedMax": 6,
-    "lastCommitSha": "e4d9dc00b7f63a624d23994854f0837b66bfcd57",
+    "lastCommitSha": null,
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 1,
+      "calls": 0,
       "success": 0,
-      "retries": 0,
-      "http429": 1,
-      "errors": 1,
-      "lastHttpStatus": 429,
-      "disabledForRun": true
-    },
-    "crossref": {
-      "calls": 58,
-      "success": 56,
-      "retries": 2,
-      "http429": 2,
-      "errors": 2,
-      "lastHttpStatus": 200,
-      "adaptiveIntervalMs": 1000,
-      "throttleEvents": 2,
-      "earlyStops": 5
-    },
-    "gemini": {
-      "calls": 6,
-      "success": 6,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": 200
+      "lastHttpStatus": null,
+      "disabledForRun": false
+    },
+    "crossref": {
+      "calls": 0,
+      "success": 0,
+      "retries": 0,
+      "http429": 0,
+      "errors": 0,
+      "lastHttpStatus": null,
+      "adaptiveIntervalMs": 650,
+      "throttleEvents": 0,
+      "earlyStops": 0
+    },
+    "gemini": {
+      "calls": 0,
+      "success": 0,
+      "retries": 0,
+      "http429": 0,
+      "errors": 0,
+      "lastHttpStatus": null
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 119,
-      "selectedTitle": "Cooperative Learning Strategy to Improve Student Learning Outcomes on the Theme of Always Saving Energy at MI Nurul Ihsan",
-      "selectedDoi": "10.62945/deeplearning.v1i1.208",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "전기",
-      "status": "generated",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 88,
-      "selectedTitle": "Analisis Pengukuran Power Quality Menggunakan Power Quality Analyzer Pada Perusahaan X",
-      "selectedDoi": "10.32493/epic.v6i2.36864",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "로봇·자동화",
-      "status": "generated",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 86,
-      "selectedTitle": "CLOUD TECHNOLOGIES IN ROBOT MOTION PLANNING: CURRENT STATE",
-      "selectedDoi": "10.32743/unitech.2025.141.12.21592",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "에너지·환경",
-      "status": "generated",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 123,
-      "selectedTitle": "Species‐specific biological energy storage and reuse",
-      "selectedDoi": "10.1002/est2.382",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "건축·시설관리",
-      "status": "generated",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 83,
-      "selectedTitle": "Mixed method review for integrating building information modeling and life-cycle assessments",
-      "selectedDoi": "10.1016/j.buildenv.2020.106703",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "도서관·문헌정보",
-      "status": "generated",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 27,
-      "selectedTitle": "Investigating mobile acceptance in academic library services based on Unified Theory of Acceptance and Use of Technology Model (UTAUT-2)",
-      "selectedDoi": "10.1016/j.acalib.2022.102570",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     }
   ],
-  "verification": {
-    "filesExist": true,
-    "jsonValid": true,
-    "indexHeadCorrect": true,
-    "indexDetailDoiMatch": true,
-    "noOldDoiDuplicates": true,
-    "noNewDoiDuplicates": true,
-    "ok": true
-  },
-  "stages": [
-    {
-      "at": "2026-10-05T22:14:28.242Z",
-      "name": "START",
-      "status": "running",
-      "message": "논문 자동화 V2.7.4 시작"
-    },
-    {
-      "at": "2026-10-05T22:14:28.542Z",
-      "name": "GITHUB_HEAD",
-      "status": "success",
-      "message": "3db1aa9"
-    },
-    {
-      "at": "2026-10-05T22:14:30.640Z",
-      "name": "INDEX",
-      "status": "success",
-      "message": "papers=841"
-    },
-    {
-      "at": "2026-10-05T22:17:16.534Z",
-      "name": "GITHUB_COMMIT",
-      "status": "success",
-      "message": "e4d9dc0"
-    },
-    {
-      "at": "2026-10-05T22:17:23.822Z",
-      "name": "VERIFY",
-      "status": "success",
-      "message": "최종 검증 통과"
-    },
-    {
-      "at": "2026-10-05T22:17:23.831Z",
-      "name": "FINISH",
-      "status": "success",
-      "message": "generated=6"
-    }
-  ]
+  "verification": null,
+  "stages": []
 }
