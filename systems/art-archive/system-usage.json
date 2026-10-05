@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-10-05T08:31:46.581Z",
+  "generatedAt": "2026-10-05T08:33:07.090Z",
   "source": "그림 자동화 사용량 로그 / 사용량 로그",
   "schemaVersion": 3,
   "summary": {
     "runs": 53,
-    "success": 49,
+    "success": 51,
     "failed": 1,
-    "successRate": 92.5,
-    "driveVerified": 49,
+    "successRate": 96.2,
+    "driveVerified": 51,
     "regenerations": 1,
     "sourceRows": 54,
     "normalizedPartialRows": 0
@@ -32,17 +32,17 @@
     {
       "name": "신수",
       "runs": 8,
-      "success": 7,
+      "success": 8,
       "failed": 0,
-      "avgElapsed": 210.1,
+      "avgElapsed": 247,
       "regenerations": 0
     },
     {
       "name": "수채화",
       "runs": 8,
-      "success": 7,
+      "success": 8,
       "failed": 0,
-      "avgElapsed": 174.1,
+      "avgElapsed": 200.9,
       "regenerations": 0
     },
     {
@@ -84,11 +84,11 @@
       "series": "신수",
       "generationAttempts": 1,
       "regenerations": 0,
-      "uploadAttempts": 0,
-      "driveVerified": false,
-      "result": "running",
-      "elapsedSeconds": 131,
-      "stage": "GENERATED",
+      "uploadAttempts": 1,
+      "driveVerified": true,
+      "result": "success",
+      "elapsedSeconds": 389,
+      "stage": "COMPLETED",
       "scheduledTime": "2026-10-05 17:16:00",
       "startDelaySeconds": 683,
       "generatedFilename": "해달 신수.png"
@@ -96,16 +96,16 @@
     {
       "time": "2026-10-05 17:26:09",
       "series": "수채화",
-      "generationAttempts": 0,
+      "generationAttempts": 1,
       "regenerations": 0,
-      "uploadAttempts": 0,
-      "driveVerified": false,
-      "result": "in_progress",
-      "elapsedSeconds": 103,
-      "stage": "UPLOADING",
+      "uploadAttempts": 1,
+      "driveVerified": true,
+      "result": "success",
+      "elapsedSeconds": 290,
+      "stage": "COMPLETED",
       "scheduledTime": "2026-10-05 17:09:00",
       "startDelaySeconds": 1029,
-      "generatedFilename": null
+      "generatedFilename": "해마 수채화.png"
     },
     {
       "time": "2026-10-05 17:12:00",
