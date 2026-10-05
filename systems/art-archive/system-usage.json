@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-10-05T08:38:31.758Z",
+  "generatedAt": "2026-10-05T08:40:38.387Z",
   "source": "그림 자동화 사용량 로그 / 사용량 로그",
   "schemaVersion": 3,
   "summary": {
-    "runs": 53,
-    "success": 51,
+    "runs": 54,
+    "success": 52,
     "failed": 1,
-    "successRate": 96.2,
-    "driveVerified": 51,
+    "successRate": 96.3,
+    "driveVerified": 52,
     "regenerations": 1,
     "sourceRows": 55,
     "normalizedPartialRows": 0
@@ -47,10 +47,10 @@
     },
     {
       "name": "펄퍼스",
-      "runs": 6,
-      "success": 6,
+      "runs": 7,
+      "success": 7,
       "failed": 0,
-      "avgElapsed": 182.5,
+      "avgElapsed": 195.1,
       "regenerations": 0
     },
     {
@@ -79,6 +79,20 @@
     }
   ],
   "recentRuns": [
+    {
+      "time": "2026-10-05 17:34:33",
+      "series": "펄퍼스",
+      "generationAttempts": 1,
+      "regenerations": 0,
+      "uploadAttempts": 1,
+      "driveVerified": true,
+      "result": "success",
+      "elapsedSeconds": 271,
+      "stage": "COMPLETED",
+      "scheduledTime": "2026-10-05 17:12:00",
+      "startDelaySeconds": 1353,
+      "generatedFilename": "감 펄퍼스.png"
+    },
     {
       "time": "2026-10-05 17:27:22",
       "series": "신수",
@@ -232,20 +246,6 @@
       "scheduledTime": "2026-10-05 6:00:00",
       "startDelaySeconds": 0,
       "generatedFilename": "사자 크레스트.png"
-    },
-    {
-      "time": "2026-10-04 17:13:26",
-      "series": "잉크",
-      "generationAttempts": 1,
-      "regenerations": 0,
-      "uploadAttempts": 1,
-      "driveVerified": true,
-      "result": "success",
-      "elapsedSeconds": 153,
-      "stage": "COMPLETED",
-      "scheduledTime": "2026-10-04 17:15:00",
-      "startDelaySeconds": 0,
-      "generatedFilename": "카멜레온 잉크.png"
     }
   ]
 }
