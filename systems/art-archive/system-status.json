@@ -1,16 +1,16 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-05T08:44:17.575Z",
+  "updatedAt": "2026-10-05T08:59:24.819Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-05T08:44:00.511Z",
-      "finishedAt": "2026-10-05T08:44:05.632Z",
+      "startedAt": "2026-10-05T08:59:00.410Z",
+      "finishedAt": "2026-10-05T08:59:05.635Z",
       "result": "skipped",
-      "durationMs": 5121,
+      "durationMs": 5225,
       "error": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
     },
     "consecutiveFailures": 0,
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-05T08:44:18.077Z",
+    "updatedAt": "2026-10-05T08:59:25.797Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,7 +253,7 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-05T08:44:12.791Z",
+    "checkedAt": "2026-10-05T08:59:16.511Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-05",
     "planned": 16,
@@ -453,13 +453,13 @@
         "status": "RUNNING",
         "logRow": 57,
         "runId": "잉크-20261005-174219",
-        "stage": "GENERATING",
+        "stage": "GENERATED",
         "result": null,
         "subject": "말",
         "filename": null,
         "startDelaySeconds": 1639,
-        "elapsedMinutes": 1.9,
-        "diagnosis": "GENERATING 단계 진행 중"
+        "elapsedMinutes": 3,
+        "diagnosis": "GENERATED 단계 진행 중"
       },
       {
         "series": "성수",
