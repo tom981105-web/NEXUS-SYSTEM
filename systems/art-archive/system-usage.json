@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T08:33:07.090Z",
+  "generatedAt": "2026-10-05T08:35:12.364Z",
   "source": "그림 자동화 사용량 로그 / 사용량 로그",
   "schemaVersion": 3,
   "summary": {
@@ -42,7 +42,7 @@
       "runs": 8,
       "success": 8,
       "failed": 0,
-      "avgElapsed": 200.9,
+      "avgElapsed": 206.4,
       "regenerations": 0
     },
     {
@@ -101,7 +101,7 @@
       "uploadAttempts": 1,
       "driveVerified": true,
       "result": "success",
-      "elapsedSeconds": 290,
+      "elapsedSeconds": 329,
       "stage": "COMPLETED",
       "scheduledTime": "2026-10-05 17:09:00",
       "startDelaySeconds": 1029,
