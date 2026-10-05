@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T08:30:28.952Z",
+  "generatedAt": "2026-10-05T08:31:46.581Z",
   "source": "그림 자동화 사용량 로그 / 사용량 로그",
   "schemaVersion": 3,
   "summary": {
@@ -34,7 +34,7 @@
       "runs": 8,
       "success": 7,
       "failed": 0,
-      "avgElapsed": 223.3,
+      "avgElapsed": 210.1,
       "regenerations": 0
     },
     {
@@ -42,7 +42,7 @@
       "runs": 8,
       "success": 7,
       "failed": 0,
-      "avgElapsed": 186,
+      "avgElapsed": 174.1,
       "regenerations": 0
     },
     {
@@ -82,16 +82,16 @@
     {
       "time": "2026-10-05 17:27:22",
       "series": "신수",
-      "generationAttempts": 0,
+      "generationAttempts": 1,
       "regenerations": 0,
       "uploadAttempts": 0,
       "driveVerified": false,
       "result": "running",
-      "elapsedSeconds": 0,
-      "stage": "GENERATING",
+      "elapsedSeconds": 131,
+      "stage": "GENERATED",
       "scheduledTime": "2026-10-05 17:16:00",
       "startDelaySeconds": 683,
-      "generatedFilename": null
+      "generatedFilename": "해달 신수.png"
     },
     {
       "time": "2026-10-05 17:26:09",
@@ -101,8 +101,8 @@
       "uploadAttempts": 0,
       "driveVerified": false,
       "result": "in_progress",
-      "elapsedSeconds": 0,
-      "stage": "GENERATING",
+      "elapsedSeconds": 103,
+      "stage": "UPLOADING",
       "scheduledTime": "2026-10-05 17:09:00",
       "startDelaySeconds": 1029,
       "generatedFilename": null
