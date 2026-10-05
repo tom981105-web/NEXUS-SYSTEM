@@ -1,152 +1,107 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-05T09:18:54.073Z",
+  "updatedAt": "2026-10-05T10:14:25.379Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "success",
-    "runId": "paper-20261005-181426",
-    "startedAt": "2026-10-05T09:14:26.197Z",
-    "finishedAt": "2026-10-05T09:18:54.073Z",
-    "durationMs": 267876,
-    "generatedCount": 6,
+    "status": "running",
+    "runId": "paper-20261005-191425",
+    "startedAt": "2026-10-05T10:14:25.208Z",
+    "finishedAt": null,
+    "durationMs": null,
+    "generatedCount": 0,
     "expectedMax": 6,
-    "lastCommitSha": "d9b7dff4b857a84201118abf3f5d88f7ebb16ceb",
+    "lastCommitSha": null,
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 73,
-      "success": 73,
+      "calls": 0,
+      "success": 0,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": 200,
+      "lastHttpStatus": null,
       "disabledForRun": false
     },
     "crossref": {
-      "calls": 44,
-      "success": 43,
-      "retries": 1,
-      "http429": 1,
-      "errors": 1,
-      "lastHttpStatus": 200,
-      "adaptiveIntervalMs": 1100,
-      "throttleEvents": 1,
-      "earlyStops": 6
-    },
-    "gemini": {
-      "calls": 6,
-      "success": 6,
+      "calls": 0,
+      "success": 0,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": 200
+      "lastHttpStatus": null,
+      "adaptiveIntervalMs": 650,
+      "throttleEvents": 0,
+      "earlyStops": 0
+    },
+    "gemini": {
+      "calls": 0,
+      "success": 0,
+      "retries": 0,
+      "http429": 0,
+      "errors": 0,
+      "lastHttpStatus": null
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 128,
-      "selectedTitle": "Deep Learning vs Differentiated Learning: Learning Innovation in Islamic Boarding School-Based Middle Schools",
-      "selectedDoi": "10.23917/jdl.v1i1.11246",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "전기",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 88,
-      "selectedTitle": "Phase-shift control of transients in electrical power systems",
-      "selectedDoi": "10.1016/0142-0615(81)90028-4",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "로봇·자동화",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 97,
-      "selectedTitle": "NR-SLAM: Nonrigid Monocular SLAM",
-      "selectedDoi": "10.1109/tro.2024.3422004",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "에너지·환경",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 135,
-      "selectedTitle": "Overview of compressed air energy storage projects and regulatory framework for energy storage",
-      "selectedDoi": "10.1016/j.est.2022.105862",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "건축·시설관리",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 94,
-      "selectedTitle": "‘A facility based on change’: architecture and facility management",
-      "selectedDoi": "10.1080/13602365.2025.2458022",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "도서관·문헌정보",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 38,
-      "selectedTitle": "An all-in-one nanoprinting approach for the synthesis of a nanofilm library for unclonable anti-counterfeiting applications",
-      "selectedDoi": "10.1038/s41565-023-01405-3",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     }
   ],
-  "verification": {
-    "filesExist": true,
-    "jsonValid": true,
-    "indexHeadCorrect": true,
-    "indexDetailDoiMatch": true,
-    "noOldDoiDuplicates": true,
-    "noNewDoiDuplicates": true,
-    "ok": true
-  },
-  "stages": [
-    {
-      "at": "2026-10-05T09:14:27.697Z",
-      "name": "START",
-      "status": "running",
-      "message": "논문 자동화 V2.7.4 시작"
-    },
-    {
-      "at": "2026-10-05T09:14:28.006Z",
-      "name": "GITHUB_HEAD",
-      "status": "success",
-      "message": "6a4389d"
-    },
-    {
-      "at": "2026-10-05T09:14:30.812Z",
-      "name": "INDEX",
-      "status": "success",
-      "message": "papers=769"
-    },
-    {
-      "at": "2026-10-05T09:18:47.005Z",
-      "name": "GITHUB_COMMIT",
-      "status": "success",
-      "message": "d9b7dff"
-    },
-    {
-      "at": "2026-10-05T09:18:54.051Z",
-      "name": "VERIFY",
-      "status": "success",
-      "message": "최종 검증 통과"
-    },
-    {
-      "at": "2026-10-05T09:18:54.073Z",
-      "name": "FINISH",
-      "status": "success",
-      "message": "generated=6"
-    }
-  ]
+  "verification": null,
+  "stages": []
 }
