@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-05T08:35:12.364Z",
+  "generatedAt": "2026-10-05T08:38:31.758Z",
   "source": "그림 자동화 사용량 로그 / 사용량 로그",
   "schemaVersion": 3,
   "summary": {
@@ -9,7 +9,7 @@
     "successRate": 96.2,
     "driveVerified": 51,
     "regenerations": 1,
-    "sourceRows": 54,
+    "sourceRows": 55,
     "normalizedPartialRows": 0
   },
   "series": [
