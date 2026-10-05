@@ -1,152 +1,107 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-05T20:17:23.277Z",
+  "updatedAt": "2026-10-05T21:14:26.580Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "success",
-    "runId": "paper-20261006-051426",
-    "startedAt": "2026-10-05T20:14:26.331Z",
-    "finishedAt": "2026-10-05T20:17:23.277Z",
-    "durationMs": 176946,
-    "generatedCount": 6,
+    "status": "running",
+    "runId": "paper-20261006-061426",
+    "startedAt": "2026-10-05T21:14:26.399Z",
+    "finishedAt": null,
+    "durationMs": null,
+    "generatedCount": 0,
     "expectedMax": 6,
-    "lastCommitSha": "b703d61cf00d9b021ffeffc13cf0c93f7b79f01b",
+    "lastCommitSha": null,
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 1,
+      "calls": 0,
       "success": 0,
-      "retries": 0,
-      "http429": 1,
-      "errors": 1,
-      "lastHttpStatus": 429,
-      "disabledForRun": true
-    },
-    "crossref": {
-      "calls": 45,
-      "success": 44,
-      "retries": 1,
-      "http429": 1,
-      "errors": 1,
-      "lastHttpStatus": 200,
-      "adaptiveIntervalMs": 1100,
-      "throttleEvents": 1,
-      "earlyStops": 6
-    },
-    "gemini": {
-      "calls": 6,
-      "success": 6,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": 200
+      "lastHttpStatus": null,
+      "disabledForRun": false
+    },
+    "crossref": {
+      "calls": 0,
+      "success": 0,
+      "retries": 0,
+      "http429": 0,
+      "errors": 0,
+      "lastHttpStatus": null,
+      "adaptiveIntervalMs": 650,
+      "throttleEvents": 0,
+      "earlyStops": 0
+    },
+    "gemini": {
+      "calls": 0,
+      "success": 0,
+      "retries": 0,
+      "http429": 0,
+      "errors": 0,
+      "lastHttpStatus": null
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 121,
-      "selectedTitle": "Small Group Discussion Strategies Reviewed to Improve Student Learning Outcomes in Civics Learning at MI Sultan Agung",
-      "selectedDoi": "10.62945/deeplearning.v1i1.202",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "전기",
-      "status": "generated",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 80,
-      "selectedTitle": "Brief Review: Exploring Avicenna's Recommendations for Preventing Age-Related Sarcopenia and Improving Motor Control: Insights from Persian Medicine",
-      "selectedDoi": "10.5812/jmcl-146113",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "로봇·자동화",
-      "status": "generated",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 87,
-      "selectedTitle": "Hyperspectral Imaging for Mobile Robot Navigation",
-      "selectedDoi": "10.3390/s23010383",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "에너지·환경",
-      "status": "generated",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 127,
-      "selectedTitle": "Temperature sensitivity of solar photovoltaic systems in makurdi, nigeria",
-      "selectedDoi": "10.61955/frnokx",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "건축·시설관리",
-      "status": "generated",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 85,
-      "selectedTitle": "United States Facility Management Industry Demographic Trends and Contemporary Workforce Challenges",
-      "selectedDoi": "10.22361/jfmer/151121",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "도서관·문헌정보",
-      "status": "generated",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 29,
-      "selectedTitle": "Preliminary Investigation of Sustainability Awareness and Activities among Academic Libraries in the United States",
-      "selectedDoi": "10.1016/j.acalib.2022.102661",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     }
   ],
-  "verification": {
-    "filesExist": true,
-    "jsonValid": true,
-    "indexHeadCorrect": true,
-    "indexDetailDoiMatch": true,
-    "noOldDoiDuplicates": true,
-    "noNewDoiDuplicates": true,
-    "ok": true
-  },
-  "stages": [
-    {
-      "at": "2026-10-05T20:14:27.927Z",
-      "name": "START",
-      "status": "running",
-      "message": "논문 자동화 V2.7.4 시작"
-    },
-    {
-      "at": "2026-10-05T20:14:28.318Z",
-      "name": "GITHUB_HEAD",
-      "status": "success",
-      "message": "1b2a374"
-    },
-    {
-      "at": "2026-10-05T20:14:31.960Z",
-      "name": "INDEX",
-      "status": "success",
-      "message": "papers=829"
-    },
-    {
-      "at": "2026-10-05T20:17:18.633Z",
-      "name": "GITHUB_COMMIT",
-      "status": "success",
-      "message": "b703d61"
-    },
-    {
-      "at": "2026-10-05T20:17:23.257Z",
-      "name": "VERIFY",
-      "status": "success",
-      "message": "최종 검증 통과"
-    },
-    {
-      "at": "2026-10-05T20:17:23.277Z",
-      "name": "FINISH",
-      "status": "success",
-      "message": "generated=6"
-    }
-  ]
+  "verification": null,
+  "stages": []
 }
