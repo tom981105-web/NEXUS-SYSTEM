@@ -1,152 +1,107 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-06T09:20:04.560Z",
+  "updatedAt": "2026-10-06T10:14:25.117Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "success",
-    "runId": "paper-20261006-181425",
-    "startedAt": "2026-10-06T09:14:25.056Z",
-    "finishedAt": "2026-10-06T09:20:04.560Z",
-    "durationMs": 339504,
-    "generatedCount": 6,
+    "status": "running",
+    "runId": "paper-20261006-191424",
+    "startedAt": "2026-10-06T10:14:24.977Z",
+    "finishedAt": null,
+    "durationMs": null,
+    "generatedCount": 0,
     "expectedMax": 6,
-    "lastCommitSha": "488f16fe461d6255532eab048f68c633c257dde8",
+    "lastCommitSha": null,
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 73,
-      "success": 73,
+      "calls": 0,
+      "success": 0,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": 200,
+      "lastHttpStatus": null,
       "disabledForRun": false
     },
     "crossref": {
-      "calls": 61,
-      "success": 57,
-      "retries": 4,
-      "http429": 4,
-      "errors": 4,
-      "lastHttpStatus": 200,
-      "adaptiveIntervalMs": 1600,
-      "throttleEvents": 4,
-      "earlyStops": 5
-    },
-    "gemini": {
-      "calls": 6,
-      "success": 6,
+      "calls": 0,
+      "success": 0,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": 200
+      "lastHttpStatus": null,
+      "adaptiveIntervalMs": 650,
+      "throttleEvents": 0,
+      "earlyStops": 0
+    },
+    "gemini": {
+      "calls": 0,
+      "success": 0,
+      "retries": 0,
+      "http429": 0,
+      "errors": 0,
+      "lastHttpStatus": null
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 117,
-      "selectedTitle": "The Use of Audio Visual Media in Improving Student Learning Outcomes in Islamic Education Learning at SD Negeri 6 Bandar Baru",
-      "selectedDoi": "10.62945/deeplearning.v1i1.214",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "전기",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 83,
-      "selectedTitle": "Power quality improvement using a dual unified power quality conditioner/uninterruptible power supply in three‐phase four‐wire systems",
-      "selectedDoi": "10.1049/iet-pel.2014.0734",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "로봇·자동화",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 81,
-      "selectedTitle": "Kinematic analysis and motion planning simulation of cooperative robot",
-      "selectedDoi": "10.12688/cobot.17465.1",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "에너지·환경",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 120,
-      "selectedTitle": "EXPERIMENTAL INVESTIGATION ON LITHIUM-ION BATTERY AGING UNDER UZBEKISTAN’S CLIMATE",
-      "selectedDoi": "10.47390/ts-v4i3y2026n13",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "건축·시설관리",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 87,
-      "selectedTitle": "Smart building management system: Performance specifications and design requirements",
-      "selectedDoi": "10.1016/j.jobe.2021.102222",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "도서관·문헌정보",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 21,
-      "selectedTitle": "Using soil library hyperspectral reflectance and machine learning to predict soil organic carbon: Assessing potential of airborne and spaceborne optical soil sensing",
-      "selectedDoi": "10.1016/j.rse.2022.112914",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     }
   ],
-  "verification": {
-    "filesExist": true,
-    "jsonValid": true,
-    "indexHeadCorrect": true,
-    "indexDetailDoiMatch": true,
-    "noOldDoiDuplicates": true,
-    "noNewDoiDuplicates": true,
-    "ok": true
-  },
-  "stages": [
-    {
-      "at": "2026-10-06T09:14:26.576Z",
-      "name": "START",
-      "status": "running",
-      "message": "논문 자동화 V2.7.4 시작"
-    },
-    {
-      "at": "2026-10-06T09:14:26.904Z",
-      "name": "GITHUB_HEAD",
-      "status": "success",
-      "message": "c43ae2e"
-    },
-    {
-      "at": "2026-10-06T09:14:29.043Z",
-      "name": "INDEX",
-      "status": "success",
-      "message": "papers=877"
-    },
-    {
-      "at": "2026-10-06T09:20:00.987Z",
-      "name": "GITHUB_COMMIT",
-      "status": "success",
-      "message": "488f16f"
-    },
-    {
-      "at": "2026-10-06T09:20:04.551Z",
-      "name": "VERIFY",
-      "status": "success",
-      "message": "최종 검증 통과"
-    },
-    {
-      "at": "2026-10-06T09:20:04.560Z",
-      "name": "FINISH",
-      "status": "success",
-      "message": "generated=6"
-    }
-  ]
+  "verification": null,
+  "stages": []
 }
