@@ -1,7 +1,16 @@
 {
   "version": "1.4",
-  "updatedAt": "2026-10-06T13:33:24.281Z",
+  "updatedAt": "2026-10-06T13:48:24.249Z",
   "events": [
+    {
+      "id": "a2cf0bfd-2eb3-4068-81c5-6f52fcd6ae37",
+      "at": "2026-10-06T13:43:05.886Z",
+      "service": "Apps Script",
+      "level": "info",
+      "status": "skipped",
+      "title": "Apps Script 실행 건너뜀",
+      "message": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
+    },
     {
       "id": "4b622b84-28cf-4a10-bf64-022d07cee2e9",
       "at": "2026-10-06T13:26:08.392Z",
@@ -892,15 +901,6 @@
       "status": "skipped",
       "title": "Apps Script 실행 건너뜀",
       "message": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
-    },
-    {
-      "id": "f7506d2e-f181-44a2-9549-d7e20d7030e4",
-      "at": "2026-10-05T08:20:16.339Z",
-      "service": "Apps Script",
-      "level": "error",
-      "status": "failed",
-      "title": "Apps Script 실행 실패",
-      "message": "묵수 / 비버 묵수.png :: Error: GitHub 파일 읽기 실패 [ART_ARCHIVE] (art-archive/automation-status.json): HTTP 404 / {\"message\":\"Not Found\",\"documentation_url\":\"https://docs.github.com/rest/repos/contents#get-repository-content\",\"status\":\"404\"}\n    at githubReadTextFile_ (Code:2122:11)\n    at updateAutomationStatus_ (Code:1975:22)\n    at checkArtworkCompletion (Code:184:9)\n    a"
     }
   ]
 }
