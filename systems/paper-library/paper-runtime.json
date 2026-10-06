@@ -1,152 +1,107 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-06T20:17:26.343Z",
+  "updatedAt": "2026-10-06T21:14:25.523Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "success",
-    "runId": "paper-20261007-051425",
-    "startedAt": "2026-10-06T20:14:25.183Z",
-    "finishedAt": "2026-10-06T20:17:26.342Z",
-    "durationMs": 181159,
-    "generatedCount": 6,
+    "status": "running",
+    "runId": "paper-20261007-061425",
+    "startedAt": "2026-10-06T21:14:25.297Z",
+    "finishedAt": null,
+    "durationMs": null,
+    "generatedCount": 0,
     "expectedMax": 6,
-    "lastCommitSha": "84391bcaa41cfc7700a90bd270440a0be618b78d",
+    "lastCommitSha": null,
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 1,
+      "calls": 0,
       "success": 0,
-      "retries": 0,
-      "http429": 1,
-      "errors": 1,
-      "lastHttpStatus": 429,
-      "disabledForRun": true
-    },
-    "crossref": {
-      "calls": 61,
-      "success": 60,
-      "retries": 1,
-      "http429": 1,
-      "errors": 1,
-      "lastHttpStatus": 200,
-      "adaptiveIntervalMs": 650,
-      "throttleEvents": 1,
-      "earlyStops": 5
-    },
-    "gemini": {
-      "calls": 6,
-      "success": 6,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": 200
+      "lastHttpStatus": null,
+      "disabledForRun": false
+    },
+    "crossref": {
+      "calls": 0,
+      "success": 0,
+      "retries": 0,
+      "http429": 0,
+      "errors": 0,
+      "lastHttpStatus": null,
+      "adaptiveIntervalMs": 650,
+      "throttleEvents": 0,
+      "earlyStops": 0
+    },
+    "gemini": {
+      "calls": 0,
+      "success": 0,
+      "retries": 0,
+      "http429": 0,
+      "errors": 0,
+      "lastHttpStatus": null
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 109,
-      "selectedTitle": "A novel parallel merge neural network with streams of spiking neural network and artificial neural network",
-      "selectedDoi": "10.1016/j.ins.2023.119034",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "전기",
-      "status": "generated",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 101,
-      "selectedTitle": "Optimization of grid-connected MicroGrid demand considering demand response",
-      "selectedDoi": "10.37468/2307-1400-2024-1-60-65",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "로봇·자동화",
-      "status": "generated",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 97,
-      "selectedTitle": "EIL‐SLAM: Depth‐enhanced edge‐based infrared‐LiDAR SLAM",
-      "selectedDoi": "10.1002/rob.22040",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "에너지·환경",
-      "status": "generated",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 108,
-      "selectedTitle": "Hybrid energy storage approach for renewable energy applications",
-      "selectedDoi": "10.1016/j.est.2016.01.004",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "건축·시설관리",
-      "status": "generated",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 98,
-      "selectedTitle": "The Role of Building Automation System For Interior Design of Building",
-      "selectedDoi": "10.55248/gengpi.5.0424.1115",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "도서관·문헌정보",
-      "status": "generated",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 12,
-      "selectedTitle": "Student Learning Outcomes Assessment in Higher Education and in Academic Libraries: A Review of the Literature",
-      "selectedDoi": "10.1016/j.acalib.2021.102485",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     }
   ],
-  "verification": {
-    "filesExist": true,
-    "jsonValid": true,
-    "indexHeadCorrect": true,
-    "indexDetailDoiMatch": true,
-    "noOldDoiDuplicates": true,
-    "noNewDoiDuplicates": true,
-    "ok": true
-  },
-  "stages": [
-    {
-      "at": "2026-10-06T20:14:27.321Z",
-      "name": "START",
-      "status": "running",
-      "message": "논문 자동화 V2.7.4 시작"
-    },
-    {
-      "at": "2026-10-06T20:14:27.672Z",
-      "name": "GITHUB_HEAD",
-      "status": "success",
-      "message": "5dd6833"
-    },
-    {
-      "at": "2026-10-06T20:14:35.356Z",
-      "name": "INDEX",
-      "status": "success",
-      "message": "papers=937"
-    },
-    {
-      "at": "2026-10-06T20:17:19.508Z",
-      "name": "GITHUB_COMMIT",
-      "status": "success",
-      "message": "84391bc"
-    },
-    {
-      "at": "2026-10-06T20:17:26.303Z",
-      "name": "VERIFY",
-      "status": "success",
-      "message": "최종 검증 통과"
-    },
-    {
-      "at": "2026-10-06T20:17:26.343Z",
-      "name": "FINISH",
-      "status": "success",
-      "message": "generated=6"
-    }
-  ]
+  "verification": null,
+  "stages": []
 }
