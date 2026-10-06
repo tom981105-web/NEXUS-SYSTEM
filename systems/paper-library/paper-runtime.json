@@ -1,152 +1,107 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-05T23:17:34.265Z",
+  "updatedAt": "2026-10-06T00:14:25.755Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "success",
-    "runId": "paper-20261006-081425",
-    "startedAt": "2026-10-05T23:14:25.970Z",
-    "finishedAt": "2026-10-05T23:17:34.265Z",
-    "durationMs": 188295,
-    "generatedCount": 6,
+    "status": "running",
+    "runId": "paper-20261006-091425",
+    "startedAt": "2026-10-06T00:14:25.562Z",
+    "finishedAt": null,
+    "durationMs": null,
+    "generatedCount": 0,
     "expectedMax": 6,
-    "lastCommitSha": "1fa8275dbeba65318d6eebc5a0b035171743f4fb",
+    "lastCommitSha": null,
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 1,
+      "calls": 0,
       "success": 0,
       "retries": 0,
-      "http429": 1,
-      "errors": 1,
-      "lastHttpStatus": 429,
-      "disabledForRun": true
+      "http429": 0,
+      "errors": 0,
+      "lastHttpStatus": null,
+      "disabledForRun": false
     },
     "crossref": {
-      "calls": 56,
-      "success": 54,
-      "retries": 2,
-      "http429": 2,
-      "errors": 2,
-      "lastHttpStatus": 200,
-      "adaptiveIntervalMs": 1100,
-      "throttleEvents": 2,
-      "earlyStops": 5
+      "calls": 0,
+      "success": 0,
+      "retries": 0,
+      "http429": 0,
+      "errors": 0,
+      "lastHttpStatus": null,
+      "adaptiveIntervalMs": 650,
+      "throttleEvents": 0,
+      "earlyStops": 0
     },
     "gemini": {
-      "calls": 7,
-      "success": 7,
-      "retries": 1,
+      "calls": 0,
+      "success": 0,
+      "retries": 0,
       "http429": 0,
-      "errors": 1,
-      "lastHttpStatus": 200
+      "errors": 0,
+      "lastHttpStatus": null
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 117,
-      "selectedTitle": "Improving Understanding and Attitude of Gratitude Using Project Based Learning Model in Islamic Education Learning at SMP Negeri 1 Barumun Baru",
-      "selectedDoi": "10.62945/deeplearning.v1i1.205",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "전기",
-      "status": "generated",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 80,
-      "selectedTitle": "Editorial Board",
-      "selectedDoi": "10.1016/s0142-0615(22)00406-9",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "로봇·자동화",
-      "status": "generated",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 85,
-      "selectedTitle": "OPTIMIZING MOBILE ROBOT NAVIGATION FOR MULTIPLE TASK EXECUTION",
-      "selectedDoi": "10.32743/unitech.2025.133.4.19749",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "에너지·환경",
-      "status": "generated",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 124,
-      "selectedTitle": "Energy storage in the forest ecosystem",
-      "selectedDoi": "10.1002/est2.517",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "건축·시설관리",
-      "status": "generated",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 82,
-      "selectedTitle": "Condition Assessments in the Facility Management Profession – A Literature Review",
-      "selectedDoi": "10.22361/jfmer/151123",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "도서관·문헌정보",
-      "status": "generated",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 26,
-      "selectedTitle": "Academic library spaces and student activities during the COVID-19 pandemic",
-      "selectedDoi": "10.1016/j.acalib.2022.102529",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     }
   ],
-  "verification": {
-    "filesExist": true,
-    "jsonValid": true,
-    "indexHeadCorrect": true,
-    "indexDetailDoiMatch": true,
-    "noOldDoiDuplicates": true,
-    "noNewDoiDuplicates": true,
-    "ok": true
-  },
-  "stages": [
-    {
-      "at": "2026-10-05T23:14:28.041Z",
-      "name": "START",
-      "status": "running",
-      "message": "논문 자동화 V2.7.4 시작"
-    },
-    {
-      "at": "2026-10-05T23:14:28.314Z",
-      "name": "GITHUB_HEAD",
-      "status": "success",
-      "message": "e4d9dc0"
-    },
-    {
-      "at": "2026-10-05T23:14:30.211Z",
-      "name": "INDEX",
-      "status": "success",
-      "message": "papers=847"
-    },
-    {
-      "at": "2026-10-05T23:17:30.940Z",
-      "name": "GITHUB_COMMIT",
-      "status": "success",
-      "message": "1fa8275"
-    },
-    {
-      "at": "2026-10-05T23:17:34.254Z",
-      "name": "VERIFY",
-      "status": "success",
-      "message": "최종 검증 통과"
-    },
-    {
-      "at": "2026-10-05T23:17:34.265Z",
-      "name": "FINISH",
-      "status": "success",
-      "message": "generated=6"
-    }
-  ]
+  "verification": null,
+  "stages": []
 }
