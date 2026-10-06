@@ -1,107 +1,152 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-06T04:14:25.422Z",
+  "updatedAt": "2026-10-06T04:19:04.030Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "running",
+    "status": "success",
     "runId": "paper-20261006-131425",
     "startedAt": "2026-10-06T04:14:25.243Z",
-    "finishedAt": null,
-    "durationMs": null,
-    "generatedCount": 0,
+    "finishedAt": "2026-10-06T04:19:04.030Z",
+    "durationMs": 278787,
+    "generatedCount": 6,
     "expectedMax": 6,
-    "lastCommitSha": null,
+    "lastCommitSha": "9a026c2e602c3fe0dd4480e2fa4915f115c2c7bc",
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 0,
-      "success": 0,
+      "calls": 73,
+      "success": 73,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": null,
+      "lastHttpStatus": 200,
       "disabledForRun": false
     },
     "crossref": {
-      "calls": 0,
-      "success": 0,
-      "retries": 0,
-      "http429": 0,
-      "errors": 0,
-      "lastHttpStatus": null,
-      "adaptiveIntervalMs": 650,
-      "throttleEvents": 0,
-      "earlyStops": 0
+      "calls": 53,
+      "success": 51,
+      "retries": 2,
+      "http429": 2,
+      "errors": 2,
+      "lastHttpStatus": 200,
+      "adaptiveIntervalMs": 1050,
+      "throttleEvents": 2,
+      "earlyStops": 4
     },
     "gemini": {
-      "calls": 0,
-      "success": 0,
+      "calls": 6,
+      "success": 6,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": null
+      "lastHttpStatus": 200
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "pending",
-      "openAlexCandidates": null,
+      "status": "generated",
+      "openAlexCandidates": 2,
       "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "selectedTitle": "Collective dynamics of ‘small-world’ networks",
+      "selectedDoi": "10.1038/30918",
+      "sourceProvider": "OpenAlex+Crossref"
     },
     {
       "name": "전기",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 80,
+      "selectedTitle": "Guest Editorial: WBG Semiconductor Power Electronics for Industrial and AutomotiveApplications",
+      "selectedDoi": "10.1049/iet-pel.2020.0051",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "로봇·자동화",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 82,
+      "selectedTitle": "Acknowledgment to Reviewers of Robotics in 2021",
+      "selectedDoi": "10.3390/robotics11010021",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "에너지·환경",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 120,
+      "selectedTitle": "Political economy of renewable energy: Does institutional quality make a difference in renewable energy consumption?",
+      "selectedDoi": "10.1016/j.renene.2020.03.172",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "건축·시설관리",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 80,
+      "selectedTitle": "Study of Traffic Management Impact on Business Facility Construction",
+      "selectedDoi": "10.21275/sr21404115710",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "도서관·문헌정보",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 23,
+      "selectedTitle": "Leveraging information literacy: Mapping the conceptual influence and appropriation of information literacy in other disciplinary landscapes",
+      "selectedDoi": "10.1177/09610006221090677",
+      "sourceProvider": "Crossref"
     }
   ],
-  "verification": null,
-  "stages": []
+  "verification": {
+    "filesExist": true,
+    "jsonValid": true,
+    "indexHeadCorrect": true,
+    "indexDetailDoiMatch": true,
+    "noOldDoiDuplicates": true,
+    "noNewDoiDuplicates": true,
+    "ok": true
+  },
+  "stages": [
+    {
+      "at": "2026-10-06T04:14:26.487Z",
+      "name": "START",
+      "status": "running",
+      "message": "논문 자동화 V2.7.4 시작"
+    },
+    {
+      "at": "2026-10-06T04:14:26.794Z",
+      "name": "GITHUB_HEAD",
+      "status": "success",
+      "message": "4e4f5cc"
+    },
+    {
+      "at": "2026-10-06T04:14:28.979Z",
+      "name": "INDEX",
+      "status": "success",
+      "message": "papers=865"
+    },
+    {
+      "at": "2026-10-06T04:18:59.826Z",
+      "name": "GITHUB_COMMIT",
+      "status": "success",
+      "message": "9a026c2"
+    },
+    {
+      "at": "2026-10-06T04:19:04.021Z",
+      "name": "VERIFY",
+      "status": "success",
+      "message": "최종 검증 통과"
+    },
+    {
+      "at": "2026-10-06T04:19:04.030Z",
+      "name": "FINISH",
+      "status": "success",
+      "message": "generated=6"
+    }
+  ]
 }
