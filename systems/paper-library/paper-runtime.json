@@ -1,152 +1,107 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-06T01:19:12.832Z",
+  "updatedAt": "2026-10-06T02:14:25.495Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "success",
-    "runId": "paper-20261006-101425",
-    "startedAt": "2026-10-06T01:14:25.321Z",
-    "finishedAt": "2026-10-06T01:19:12.832Z",
-    "durationMs": 287511,
-    "generatedCount": 6,
+    "status": "running",
+    "runId": "paper-20261006-111425",
+    "startedAt": "2026-10-06T02:14:25.331Z",
+    "finishedAt": null,
+    "durationMs": null,
+    "generatedCount": 0,
     "expectedMax": 6,
-    "lastCommitSha": "270cb40ff14afe684ea886982672d95d26e29f79",
+    "lastCommitSha": null,
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 73,
-      "success": 73,
+      "calls": 0,
+      "success": 0,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": 200,
+      "lastHttpStatus": null,
       "disabledForRun": false
     },
     "crossref": {
-      "calls": 54,
-      "success": 53,
-      "retries": 1,
-      "http429": 1,
-      "errors": 1,
-      "lastHttpStatus": 200,
-      "adaptiveIntervalMs": 650,
-      "throttleEvents": 1,
-      "earlyStops": 4
-    },
-    "gemini": {
-      "calls": 6,
-      "success": 6,
+      "calls": 0,
+      "success": 0,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": 200
+      "lastHttpStatus": null,
+      "adaptiveIntervalMs": 650,
+      "throttleEvents": 0,
+      "earlyStops": 0
+    },
+    "gemini": {
+      "calls": 0,
+      "success": 0,
+      "retries": 0,
+      "http429": 0,
+      "errors": 0,
+      "lastHttpStatus": null
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "generated",
-      "openAlexCandidates": 4,
+      "status": "pending",
+      "openAlexCandidates": null,
       "crossrefCandidates": null,
-      "selectedTitle": "QUANTUM ESPRESSO: a modular and open-source software project for quantum simulations of materials",
-      "selectedDoi": "10.1088/0953-8984/21/39/395502",
-      "sourceProvider": "OpenAlex+Crossref"
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "전기",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 88,
-      "selectedTitle": "Hybrid unified power quality conditioner for power quality enhancement",
-      "selectedDoi": "10.11591/ijpeds.v11.i4.pp2126-2134",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "로봇·자동화",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 84,
-      "selectedTitle": "VB-T PHD-SLAM: efficient SLAM under heavy-tailed noise",
-      "selectedDoi": "10.1080/01691864.2024.2384425",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "에너지·환경",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 123,
-      "selectedTitle": "Building-integrated photovoltaic applied Bi-facial photovoltaic module structural design",
-      "selectedDoi": "10.1016/j.solmat.2024.112758",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "건축·시설관리",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 81,
-      "selectedTitle": "Impact of Convenience Facility Installation Standards on Medical Welfare Facility Management",
-      "selectedDoi": "10.37674/ceoms.26.3.6",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "도서관·문헌정보",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 25,
-      "selectedTitle": "Defining artificial intelligence for librarians",
-      "selectedDoi": "10.1177/09610006221142029",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     }
   ],
-  "verification": {
-    "filesExist": true,
-    "jsonValid": true,
-    "indexHeadCorrect": true,
-    "indexDetailDoiMatch": true,
-    "noOldDoiDuplicates": true,
-    "noNewDoiDuplicates": true,
-    "ok": true
-  },
-  "stages": [
-    {
-      "at": "2026-10-06T01:14:27.040Z",
-      "name": "START",
-      "status": "running",
-      "message": "논문 자동화 V2.7.4 시작"
-    },
-    {
-      "at": "2026-10-06T01:14:27.421Z",
-      "name": "GITHUB_HEAD",
-      "status": "success",
-      "message": "1fa8275"
-    },
-    {
-      "at": "2026-10-06T01:14:31.371Z",
-      "name": "INDEX",
-      "status": "success",
-      "message": "papers=853"
-    },
-    {
-      "at": "2026-10-06T01:19:07.629Z",
-      "name": "GITHUB_COMMIT",
-      "status": "success",
-      "message": "270cb40"
-    },
-    {
-      "at": "2026-10-06T01:19:12.766Z",
-      "name": "VERIFY",
-      "status": "success",
-      "message": "최종 검증 통과"
-    },
-    {
-      "at": "2026-10-06T01:19:12.832Z",
-      "name": "FINISH",
-      "status": "success",
-      "message": "generated=6"
-    }
-  ]
+  "verification": null,
+  "stages": []
 }
