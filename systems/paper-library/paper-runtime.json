@@ -1,152 +1,107 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-06T15:18:13.005Z",
+  "updatedAt": "2026-10-06T16:14:25.394Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "success",
-    "runId": "paper-20261007-001425",
-    "startedAt": "2026-10-06T15:14:25.155Z",
-    "finishedAt": "2026-10-06T15:18:13.005Z",
-    "durationMs": 227850,
-    "generatedCount": 6,
+    "status": "running",
+    "runId": "paper-20261007-011425",
+    "startedAt": "2026-10-06T16:14:25.063Z",
+    "finishedAt": null,
+    "durationMs": null,
+    "generatedCount": 0,
     "expectedMax": 6,
-    "lastCommitSha": "5838f2730f374056cac0a8965231f7834287d327",
+    "lastCommitSha": null,
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 1,
+      "calls": 0,
       "success": 0,
-      "retries": 0,
-      "http429": 1,
-      "errors": 1,
-      "lastHttpStatus": 429,
-      "disabledForRun": true
-    },
-    "crossref": {
-      "calls": 60,
-      "success": 58,
-      "retries": 2,
-      "http429": 2,
-      "errors": 2,
-      "lastHttpStatus": 200,
-      "adaptiveIntervalMs": 1050,
-      "throttleEvents": 2,
-      "earlyStops": 5
-    },
-    "gemini": {
-      "calls": 6,
-      "success": 6,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": 200
+      "lastHttpStatus": null,
+      "disabledForRun": false
+    },
+    "crossref": {
+      "calls": 0,
+      "success": 0,
+      "retries": 0,
+      "http429": 0,
+      "errors": 0,
+      "lastHttpStatus": null,
+      "adaptiveIntervalMs": 650,
+      "throttleEvents": 0,
+      "earlyStops": 0
+    },
+    "gemini": {
+      "calls": 0,
+      "success": 0,
+      "retries": 0,
+      "http429": 0,
+      "errors": 0,
+      "lastHttpStatus": null
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 113,
-      "selectedTitle": "Tabular machine learning using conjunctive threshold neural networks",
-      "selectedDoi": "10.1016/j.mlwa.2022.100429",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "전기",
-      "status": "generated",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 81,
-      "selectedTitle": "Applications of artificial intelligence in power systems",
-      "selectedDoi": "10.1016/s0378-7796(96)01188-1",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "로봇·자동화",
-      "status": "generated",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 102,
-      "selectedTitle": "Predictive and Robust Robot Assistance for Sequential Manipulation",
-      "selectedDoi": "10.1109/lra.2023.3320029",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "에너지·환경",
-      "status": "generated",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 114,
-      "selectedTitle": "Guest editorial for the special issue on Renewable Energy and Energy Storage Systems",
-      "selectedDoi": "10.1002/est2.161",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "건축·시설관리",
-      "status": "generated",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 82,
-      "selectedTitle": "Application and Effects Analysis of BIM(Building Information Modeling) for Construction Management of a Construction Field",
-      "selectedDoi": "10.5345/jkibc.2015.15.1.115",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "도서관·문헌정보",
-      "status": "generated",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 17,
-      "selectedTitle": "OpenFL: the open federated learning library",
-      "selectedDoi": "10.1088/1361-6560/ac97d9",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     }
   ],
-  "verification": {
-    "filesExist": true,
-    "jsonValid": true,
-    "indexHeadCorrect": true,
-    "indexDetailDoiMatch": true,
-    "noOldDoiDuplicates": true,
-    "noNewDoiDuplicates": true,
-    "ok": true
-  },
-  "stages": [
-    {
-      "at": "2026-10-06T15:14:27.560Z",
-      "name": "START",
-      "status": "running",
-      "message": "논문 자동화 V2.7.4 시작"
-    },
-    {
-      "at": "2026-10-06T15:14:27.900Z",
-      "name": "GITHUB_HEAD",
-      "status": "success",
-      "message": "7f53603"
-    },
-    {
-      "at": "2026-10-06T15:14:30.554Z",
-      "name": "INDEX",
-      "status": "success",
-      "message": "papers=907"
-    },
-    {
-      "at": "2026-10-06T15:18:08.857Z",
-      "name": "GITHUB_COMMIT",
-      "status": "success",
-      "message": "5838f27"
-    },
-    {
-      "at": "2026-10-06T15:18:12.924Z",
-      "name": "VERIFY",
-      "status": "success",
-      "message": "최종 검증 통과"
-    },
-    {
-      "at": "2026-10-06T15:18:13.005Z",
-      "name": "FINISH",
-      "status": "success",
-      "message": "generated=6"
-    }
-  ]
+  "verification": null,
+  "stages": []
 }
