@@ -1,19 +1,19 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-06T11:28:21.671Z",
+  "updatedAt": "2026-10-06T11:44:03.886Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-06T11:28:00.488Z",
-      "finishedAt": "2026-10-06T11:28:08.722Z",
-      "result": "failed",
-      "durationMs": 8234,
-      "error": "Exception: Service error: Drive\n    at getArtworkRootFolder_ (Code:17:18)\n    at getSeriesFolders_ (Code:21:16)\n    at checkArtworkCompletion (Code:106:27)\n    at __GS_INTERNAL_top_function_call__.gs:1:8"
+      "startedAt": "2026-10-06T11:43:00.275Z",
+      "finishedAt": "2026-10-06T11:43:45.316Z",
+      "result": "success",
+      "durationMs": 45041,
+      "error": null
     },
-    "consecutiveFailures": 1,
+    "consecutiveFailures": 0,
     "busyOrSkipped": false,
     "busyReason": null,
     "triggerInventoryAvailable": false
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-06T11:28:22.323Z",
+    "updatedAt": "2026-10-06T11:44:04.482Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,7 +253,7 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-06T11:28:15.128Z",
+    "checkedAt": "2026-10-06T11:43:53.722Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-06",
     "planned": 16,
@@ -291,7 +291,7 @@
         "filename": null,
         "startDelaySeconds": 843,
         "elapsedMinutes": 0,
-        "diagnosis": "미완료 상태에서 851분간 새 로그가 없어 중단 의심"
+        "diagnosis": "미완료 상태에서 866분간 새 로그가 없어 중단 의심"
       },
       {
         "series": "신수",
