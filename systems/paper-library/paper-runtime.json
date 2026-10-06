@@ -1,152 +1,107 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-06T10:19:19.507Z",
+  "updatedAt": "2026-10-06T11:14:25.690Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "success",
-    "runId": "paper-20261006-191424",
-    "startedAt": "2026-10-06T10:14:24.977Z",
-    "finishedAt": "2026-10-06T10:19:19.507Z",
-    "durationMs": 294530,
-    "generatedCount": 6,
+    "status": "running",
+    "runId": "paper-20261006-201425",
+    "startedAt": "2026-10-06T11:14:25.509Z",
+    "finishedAt": null,
+    "durationMs": null,
+    "generatedCount": 0,
     "expectedMax": 6,
-    "lastCommitSha": "37efc7c4c1575eaf514eb65eb44b2d90f16737fe",
+    "lastCommitSha": null,
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 73,
-      "success": 73,
+      "calls": 0,
+      "success": 0,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": 200,
+      "lastHttpStatus": null,
       "disabledForRun": false
     },
     "crossref": {
-      "calls": 58,
-      "success": 58,
+      "calls": 0,
+      "success": 0,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": 200,
+      "lastHttpStatus": null,
       "adaptiveIntervalMs": 650,
       "throttleEvents": 0,
-      "earlyStops": 5
+      "earlyStops": 0
     },
     "gemini": {
-      "calls": 6,
-      "success": 6,
+      "calls": 0,
+      "success": 0,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": 200
+      "lastHttpStatus": null
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 116,
-      "selectedTitle": "Deep Chinese Teaching and Learning Model Based on Deep Learning",
-      "selectedDoi": "10.18178/ijlll.2024.10.1.479",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "전기",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 83,
-      "selectedTitle": "Indirect current controlled shunt active power filter for power quality improvement",
-      "selectedDoi": "10.1016/j.ijepes.2014.05.002",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "로봇·자동화",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 106,
-      "selectedTitle": "Affordance-based robot manipulation with flow matching",
-      "selectedDoi": "10.3389/frobt.2026.1906861",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "에너지·환경",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 117,
-      "selectedTitle": "All‐in‐All: Dead Lithium‐Ion Battery to Active Lithium‐Ion Capacitor",
-      "selectedDoi": "10.1002/cssc.202400449",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "건축·시설관리",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 86,
-      "selectedTitle": "Enhancing the Potential of Smart Building for Hospital Pulau Pinang: A Case Study in Malaysia",
-      "selectedDoi": "10.33140/jeee.02.02.02",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "도서관·문헌정보",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 20,
-      "selectedTitle": "Implementing a Chatbot on a Library Website",
-      "selectedDoi": "10.1080/19322909.2022.2060893",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     }
   ],
-  "verification": {
-    "filesExist": true,
-    "jsonValid": true,
-    "indexHeadCorrect": true,
-    "indexDetailDoiMatch": true,
-    "noOldDoiDuplicates": true,
-    "noNewDoiDuplicates": true,
-    "ok": true
-  },
-  "stages": [
-    {
-      "at": "2026-10-06T10:14:26.343Z",
-      "name": "START",
-      "status": "running",
-      "message": "논문 자동화 V2.7.4 시작"
-    },
-    {
-      "at": "2026-10-06T10:14:26.600Z",
-      "name": "GITHUB_HEAD",
-      "status": "success",
-      "message": "488f16f"
-    },
-    {
-      "at": "2026-10-06T10:14:28.243Z",
-      "name": "INDEX",
-      "status": "success",
-      "message": "papers=883"
-    },
-    {
-      "at": "2026-10-06T10:19:16.525Z",
-      "name": "GITHUB_COMMIT",
-      "status": "success",
-      "message": "37efc7c"
-    },
-    {
-      "at": "2026-10-06T10:19:19.497Z",
-      "name": "VERIFY",
-      "status": "success",
-      "message": "최종 검증 통과"
-    },
-    {
-      "at": "2026-10-06T10:19:19.507Z",
-      "name": "FINISH",
-      "status": "success",
-      "message": "generated=6"
-    }
-  ]
+  "verification": null,
+  "stages": []
 }
