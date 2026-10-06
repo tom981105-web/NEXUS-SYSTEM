@@ -1,14 +1,14 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-06T13:14:26.640Z",
+  "updatedAt": "2026-10-06T14:14:25.684Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
     "status": "running",
-    "runId": "paper-20261006-221426",
-    "startedAt": "2026-10-06T13:14:26.297Z",
+    "runId": "paper-20261006-231425",
+    "startedAt": "2026-10-06T14:14:25.513Z",
     "finishedAt": null,
     "durationMs": null,
     "generatedCount": 0,
