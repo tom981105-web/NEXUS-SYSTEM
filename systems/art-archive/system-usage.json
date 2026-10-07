@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-10-07T08:05:29.803Z",
+  "generatedAt": "2026-10-07T08:12:54.495Z",
   "source": "그림 자동화 사용량 로그 / 사용량 로그",
   "schemaVersion": 3,
   "summary": {
     "runs": 57,
-    "success": 53,
+    "success": 54,
     "failed": 1,
-    "successRate": 93,
-    "driveVerified": 53,
+    "successRate": 94.7,
+    "driveVerified": 54,
     "regenerations": 1,
     "sourceRows": 59,
     "normalizedPartialRows": 0
@@ -16,9 +16,9 @@
     {
       "name": "크레스트",
       "runs": 11,
-      "success": 9,
+      "success": 10,
       "failed": 1,
-      "avgElapsed": 258.8,
+      "avgElapsed": 264.5,
       "regenerations": 0
     },
     {
@@ -85,10 +85,10 @@
       "generationAttempts": 1,
       "regenerations": 0,
       "uploadAttempts": 1,
-      "driveVerified": false,
-      "result": "running",
-      "elapsedSeconds": 122,
-      "stage": "UPLOADING",
+      "driveVerified": true,
+      "result": "success",
+      "elapsedSeconds": 179,
+      "stage": "COMPLETED",
       "scheduledTime": "2026-10-07 17:00:00",
       "startDelaySeconds": 0,
       "generatedFilename": "말 크레스트.png"
