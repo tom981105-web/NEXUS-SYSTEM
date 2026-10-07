@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T21:44:27.635Z",
+  "generatedAt": "2026-10-07T21:57:57.089Z",
   "timezone": "Asia/Seoul",
   "schemaVersion": 1,
   "retentionDays": 90,
@@ -7,10 +7,10 @@
   "summary": {
     "days": 9,
     "runs": 64,
-    "success": 58,
-    "failed": 4,
-    "successRate": 90.6,
-    "avgElapsed": 217.4
+    "success": 57,
+    "failed": 5,
+    "successRate": 89.1,
+    "avgElapsed": 218
   },
   "daily": [
     {
@@ -560,16 +560,16 @@
     },
     {
       "date": "2026-10-07",
-      "runs": 5,
-      "success": 5,
+      "runs": 4,
+      "success": 4,
       "failed": 0,
       "successRate": 100,
-      "avgElapsed": 229.8,
+      "avgElapsed": 241.5,
       "maxElapsed": 294,
-      "driveVerified": 5,
+      "driveVerified": 4,
       "driveVerifiedRate": 100,
       "regenerations": 0,
-      "avgStartDelay": 1751.6,
+      "avgStartDelay": 1209.5,
       "series": [
         {
           "name": "크레스트",
@@ -614,32 +614,21 @@
           "driveVerified": 1,
           "regenerations": 0,
           "avgStartDelay": 3260
-        },
-        {
-          "name": "펄퍼스",
-          "runs": 1,
-          "success": 1,
-          "failed": 0,
-          "successRate": 100,
-          "avgElapsed": 183,
-          "driveVerified": 1,
-          "regenerations": 0,
-          "avgStartDelay": 3920
         }
       ]
     },
     {
       "date": "2026-10-08",
-      "runs": 3,
+      "runs": 4,
       "success": 0,
-      "failed": 3,
+      "failed": 4,
       "successRate": 0,
       "avgElapsed": 60,
       "maxElapsed": 180,
       "driveVerified": 0,
       "driveVerifiedRate": 0,
-      "regenerations": 3,
-      "avgStartDelay": 1092.7,
+      "regenerations": 4,
+      "avgStartDelay": 1799.5,
       "series": [
         {
           "name": "크레스트",
@@ -673,6 +662,17 @@
           "driveVerified": 0,
           "regenerations": 1,
           "avgStartDelay": 2076
+        },
+        {
+          "name": "수채화",
+          "runs": 1,
+          "success": 0,
+          "failed": 1,
+          "successRate": 0,
+          "avgElapsed": null,
+          "driveVerified": 0,
+          "regenerations": 1,
+          "avgStartDelay": 3920
         }
       ]
     }
