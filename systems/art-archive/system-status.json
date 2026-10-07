@@ -1,17 +1,17 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-07T10:51:19.536Z",
+  "updatedAt": "2026-10-07T11:07:00.926Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-07T10:51:01.476Z",
-      "finishedAt": "2026-10-07T10:51:06.533Z",
+      "startedAt": "2026-10-07T11:06:00.718Z",
+      "finishedAt": "2026-10-07T11:06:38.702Z",
       "result": "success",
-      "durationMs": 5057,
-      "error": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
+      "durationMs": 37984,
+      "error": null
     },
     "consecutiveFailures": 0,
     "busyOrSkipped": false,
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-07T10:51:20.862Z",
+    "updatedAt": "2026-10-07T11:07:01.248Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,7 +253,7 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-07T10:51:05.693Z",
+    "checkedAt": "2026-10-07T11:06:49.818Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-07",
     "planned": 16,
@@ -458,7 +458,7 @@
         "subject": "토끼",
         "filename": null,
         "startDelaySeconds": 5476,
-        "elapsedMinutes": 64.8,
+        "elapsedMinutes": 80.6,
         "diagnosis": "STARTED 단계 진행 중"
       },
       {
