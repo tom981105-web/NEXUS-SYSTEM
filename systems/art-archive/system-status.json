@@ -1,21 +1,21 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-07T11:39:44.552Z",
+  "updatedAt": "2026-10-07T11:54:56.379Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-07T11:39:01.553Z",
-      "finishedAt": "2026-10-07T11:39:06.986Z",
-      "result": "skipped",
-      "durationMs": 5433,
-      "error": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
+      "startedAt": "2026-10-07T11:54:00.244Z",
+      "finishedAt": "2026-10-07T11:54:41.734Z",
+      "result": "success",
+      "durationMs": 41490,
+      "error": null
     },
     "consecutiveFailures": 0,
-    "busyOrSkipped": true,
-    "busyReason": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀",
+    "busyOrSkipped": false,
+    "busyReason": null,
     "triggerInventoryAvailable": false
   },
   "notionSync": {
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-07T11:39:45.806Z",
+    "updatedAt": "2026-10-07T11:54:56.985Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,7 +253,7 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-07T11:39:29.431Z",
+    "checkedAt": "2026-10-07T11:54:49.696Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-07",
     "planned": 16,
@@ -458,7 +458,7 @@
         "subject": "토끼",
         "filename": null,
         "startDelaySeconds": 5476,
-        "elapsedMinutes": 113.2,
+        "elapsedMinutes": 128.6,
         "diagnosis": "STARTED 단계 진행 중"
       },
       {
