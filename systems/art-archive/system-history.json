@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T21:41:36.315Z",
+  "generatedAt": "2026-10-07T21:44:27.635Z",
   "timezone": "Asia/Seoul",
   "schemaVersion": 1,
   "retentionDays": 90,
@@ -8,7 +8,7 @@
     "days": 9,
     "runs": 64,
     "success": 58,
-    "failed": 3,
+    "failed": 4,
     "successRate": 90.6,
     "avgElapsed": 217.4
   },
@@ -632,13 +632,13 @@
       "date": "2026-10-08",
       "runs": 3,
       "success": 0,
-      "failed": 2,
+      "failed": 3,
       "successRate": 0,
       "avgElapsed": 60,
       "maxElapsed": 180,
       "driveVerified": 0,
       "driveVerifiedRate": 0,
-      "regenerations": 2,
+      "regenerations": 3,
       "avgStartDelay": 1092.7,
       "series": [
         {
@@ -667,11 +667,11 @@
           "name": "신수",
           "runs": 1,
           "success": 0,
-          "failed": 0,
+          "failed": 1,
           "successRate": 0,
           "avgElapsed": 0,
           "driveVerified": 0,
-          "regenerations": 0,
+          "regenerations": 1,
           "avgStartDelay": 2076
         }
       ]
