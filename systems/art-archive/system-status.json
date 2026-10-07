@@ -1,21 +1,21 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-07T21:18:44.792Z",
+  "updatedAt": "2026-10-07T21:35:23.524Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-07T21:18:00.046Z",
-      "finishedAt": "2026-10-07T21:18:33.108Z",
-      "result": "success",
-      "durationMs": 33062,
+      "startedAt": "2026-10-07T21:34:00.484Z",
+      "finishedAt": "2026-10-07T21:35:13.436Z",
+      "result": "skipped",
+      "durationMs": 72952,
       "error": null
     },
     "consecutiveFailures": 0,
-    "busyOrSkipped": false,
-    "busyReason": null,
+    "busyOrSkipped": true,
+    "busyReason": "중복 실행 방지를 위해 이번 회차를 건너뜀",
     "triggerInventoryAvailable": false
   },
   "notionSync": {
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-07T21:18:45.232Z",
+    "updatedAt": "2026-10-07T21:35:23.924Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,16 +253,16 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-07T21:18:37.984Z",
+    "checkedAt": "2026-10-07T21:35:14.470Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-08",
     "planned": 16,
     "success": 0,
-    "failed": 1,
+    "failed": 2,
     "stalled": 0,
     "missed": 0,
     "running": 0,
-    "pending": 15,
+    "pending": 14,
     "status": "error",
     "slots": [
       {
@@ -282,16 +282,16 @@
       {
         "series": "묵수",
         "scheduledTime": "06:03",
-        "status": "PENDING",
-        "logRow": null,
-        "runId": null,
-        "stage": null,
-        "result": null,
-        "subject": null,
+        "status": "FAILED",
+        "logRow": 67,
+        "runId": "묵수-20261008-062302",
+        "stage": "FAILED",
+        "result": "failed",
+        "subject": "사이가산양",
         "filename": null,
-        "startDelaySeconds": null,
-        "elapsedMinutes": null,
-        "diagnosis": "예정시각 경과 후 로그 생성 대기"
+        "startDelaySeconds": 1202,
+        "elapsedMinutes": 3,
+        "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
         "series": "신수",
@@ -375,7 +375,7 @@
         "filename": null,
         "startDelaySeconds": null,
         "elapsedMinutes": null,
-        "diagnosis": "예약시각 전"
+        "diagnosis": "예정시각 경과 후 로그 생성 대기"
       },
       {
         "series": "크레스트",
