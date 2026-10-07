@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-10-07T21:42:26.960Z",
+  "generatedAt": "2026-10-07T21:44:26.175Z",
   "source": "그림 자동화 사용량 로그 / 사용량 로그",
   "schemaVersion": 3,
   "summary": {
     "runs": 64,
     "success": 58,
-    "failed": 3,
+    "failed": 4,
     "successRate": 90.6,
     "driveVerified": 58,
-    "regenerations": 3,
+    "regenerations": 4,
     "sourceRows": 67,
     "normalizedPartialRows": 0
   },
@@ -33,9 +33,9 @@
       "name": "신수",
       "runs": 10,
       "success": 9,
-      "failed": 0,
-      "avgElapsed": 252.9,
-      "regenerations": 0
+      "failed": 1,
+      "avgElapsed": 247.4,
+      "regenerations": 1
     },
     {
       "name": "수채화",
@@ -82,13 +82,13 @@
     {
       "time": "2026-10-08 06:40:36",
       "series": "신수",
-      "generationAttempts": 0,
-      "regenerations": 0,
+      "generationAttempts": 2,
+      "regenerations": 1,
       "uploadAttempts": 0,
       "driveVerified": false,
-      "result": "in_progress",
-      "elapsedSeconds": 0,
-      "stage": "GENERATING",
+      "result": "failed",
+      "elapsedSeconds": 204,
+      "stage": "FAILED",
       "scheduledTime": "2026-10-08 6:06:00",
       "startDelaySeconds": 2076,
       "generatedFilename": null
