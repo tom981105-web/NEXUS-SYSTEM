@@ -1,16 +1,16 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-07T23:24:55.587Z",
+  "updatedAt": "2026-10-07T23:41:05.048Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-07T23:24:01.296Z",
-      "finishedAt": "2026-10-07T23:24:38.292Z",
+      "startedAt": "2026-10-07T23:40:00.139Z",
+      "finishedAt": "2026-10-07T23:40:47.099Z",
       "result": "success",
-      "durationMs": 36996,
+      "durationMs": 46960,
       "error": null
     },
     "consecutiveFailures": 0,
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-07T23:24:56.285Z",
+    "updatedAt": "2026-10-07T23:41:05.725Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,14 +253,14 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-07T23:24:46.303Z",
+    "checkedAt": "2026-10-07T23:40:57.318Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-08",
     "planned": 16,
     "success": 0,
-    "failed": 5,
+    "failed": 6,
     "stalled": 0,
-    "missed": 3,
+    "missed": 2,
     "running": 0,
     "pending": 8,
     "status": "error",
@@ -338,16 +338,16 @@
       {
         "series": "잉크",
         "scheduledTime": "06:15",
-        "status": "MISSED",
-        "logRow": null,
-        "runId": null,
-        "stage": null,
-        "result": null,
-        "subject": null,
-        "filename": null,
-        "startDelaySeconds": null,
-        "elapsedMinutes": null,
-        "diagnosis": "예정시각 후 45분이 지났지만 실행 로그가 없음"
+        "status": "FAILED",
+        "logRow": 70,
+        "runId": "잉크-20261008-082550",
+        "stage": "FAILED",
+        "result": "failed",
+        "subject": "대왕문어",
+        "filename": "대왕문어 잉크.png",
+        "startDelaySeconds": 7850,
+        "elapsedMinutes": 3.8,
+        "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
         "series": "성수",
