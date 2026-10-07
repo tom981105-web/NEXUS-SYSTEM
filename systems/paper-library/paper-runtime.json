@@ -1,152 +1,107 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-07T03:19:14.942Z",
+  "updatedAt": "2026-10-07T04:14:26.017Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "success",
-    "runId": "paper-20261007-121425",
-    "startedAt": "2026-10-07T03:14:25.185Z",
-    "finishedAt": "2026-10-07T03:19:14.942Z",
-    "durationMs": 289757,
-    "generatedCount": 6,
+    "status": "running",
+    "runId": "paper-20261007-131425",
+    "startedAt": "2026-10-07T04:14:25.676Z",
+    "finishedAt": null,
+    "durationMs": null,
+    "generatedCount": 0,
     "expectedMax": 6,
-    "lastCommitSha": "c63e19e7593822c364ee7d3852ab7c02332623e3",
+    "lastCommitSha": null,
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 73,
-      "success": 73,
+      "calls": 0,
+      "success": 0,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": 200,
+      "lastHttpStatus": null,
       "disabledForRun": false
     },
     "crossref": {
-      "calls": 58,
-      "success": 56,
-      "retries": 2,
-      "http429": 2,
-      "errors": 2,
-      "lastHttpStatus": 200,
-      "adaptiveIntervalMs": 1050,
-      "throttleEvents": 2,
-      "earlyStops": 4
-    },
-    "gemini": {
-      "calls": 6,
-      "success": 6,
+      "calls": 0,
+      "success": 0,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": 200
+      "lastHttpStatus": null,
+      "adaptiveIntervalMs": 650,
+      "throttleEvents": 0,
+      "earlyStops": 0
+    },
+    "gemini": {
+      "calls": 0,
+      "success": 0,
+      "retries": 0,
+      "http429": 0,
+      "errors": 0,
+      "lastHttpStatus": null
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "generated",
-      "openAlexCandidates": 1,
+      "status": "pending",
+      "openAlexCandidates": null,
       "crossrefCandidates": null,
-      "selectedTitle": "First-principles simulation: ideas, illustrations and the CASTEP code",
-      "selectedDoi": "10.1088/0953-8984/14/11/301",
-      "sourceProvider": "OpenAlex+Crossref"
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "전기",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 80,
-      "selectedTitle": "Superconducting electric power systems",
-      "selectedDoi": "10.1016/0378-7796(89)90052-7",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "로봇·자동화",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 92,
-      "selectedTitle": "Mobile Robot Navigation and Obstacle Avoidance Techniques: A Review",
-      "selectedDoi": "10.15406/iratj.2017.02.00023",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "에너지·환경",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 102,
-      "selectedTitle": "Editorial CPOTE 2018 renewable energy SI",
-      "selectedDoi": "10.1016/j.renene.2019.11.042",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "건축·시설관리",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 91,
-      "selectedTitle": "Implementation of model predictive control for an HVAC system in a mid-size commercial building",
-      "selectedDoi": "10.1080/10789669.2013.834781",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "도서관·문헌정보",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 8,
-      "selectedTitle": "University libraries as open innovation partners: Harnessing hidden potential to foster global entrepreneurship",
-      "selectedDoi": "10.1016/j.acalib.2021.102432",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     }
   ],
-  "verification": {
-    "filesExist": true,
-    "jsonValid": true,
-    "indexHeadCorrect": true,
-    "indexDetailDoiMatch": true,
-    "noOldDoiDuplicates": true,
-    "noNewDoiDuplicates": true,
-    "ok": true
-  },
-  "stages": [
-    {
-      "at": "2026-10-07T03:14:26.784Z",
-      "name": "START",
-      "status": "running",
-      "message": "논문 자동화 V2.7.4 시작"
-    },
-    {
-      "at": "2026-10-07T03:14:27.486Z",
-      "name": "GITHUB_HEAD",
-      "status": "success",
-      "message": "8f829d2"
-    },
-    {
-      "at": "2026-10-07T03:14:30.856Z",
-      "name": "INDEX",
-      "status": "success",
-      "message": "papers=979"
-    },
-    {
-      "at": "2026-10-07T03:19:10.180Z",
-      "name": "GITHUB_COMMIT",
-      "status": "success",
-      "message": "c63e19e"
-    },
-    {
-      "at": "2026-10-07T03:19:14.914Z",
-      "name": "VERIFY",
-      "status": "success",
-      "message": "최종 검증 통과"
-    },
-    {
-      "at": "2026-10-07T03:19:14.942Z",
-      "name": "FINISH",
-      "status": "success",
-      "message": "generated=6"
-    }
-  ]
+  "verification": null,
+  "stages": []
 }
