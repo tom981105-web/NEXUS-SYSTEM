@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-10-07T21:44:26.175Z",
+  "generatedAt": "2026-10-07T21:57:54.879Z",
   "source": "그림 자동화 사용량 로그 / 사용량 로그",
   "schemaVersion": 3,
   "summary": {
     "runs": 64,
-    "success": 58,
-    "failed": 4,
-    "successRate": 90.6,
-    "driveVerified": 58,
-    "regenerations": 4,
+    "success": 57,
+    "failed": 5,
+    "successRate": 89.1,
+    "driveVerified": 57,
+    "regenerations": 5,
     "sourceRows": 67,
     "normalizedPartialRows": 0
   },
@@ -39,18 +39,18 @@
     },
     {
       "name": "수채화",
-      "runs": 9,
+      "runs": 10,
       "success": 9,
-      "failed": 0,
+      "failed": 1,
       "avgElapsed": 209.5,
-      "regenerations": 0
+      "regenerations": 1
     },
     {
       "name": "펄퍼스",
-      "runs": 8,
-      "success": 8,
+      "runs": 7,
+      "success": 7,
       "failed": 0,
-      "avgElapsed": 193.6,
+      "avgElapsed": 195.1,
       "regenerations": 0
     },
     {
@@ -79,6 +79,20 @@
     }
   ],
   "recentRuns": [
+    {
+      "time": "2026-10-08 06:56:00",
+      "series": "수채화",
+      "generationAttempts": 2,
+      "regenerations": 1,
+      "uploadAttempts": 0,
+      "driveVerified": false,
+      "result": "failed",
+      "elapsedSeconds": 0,
+      "stage": "FAILED",
+      "scheduledTime": "2026-10-07 17:12:00",
+      "startDelaySeconds": 3920,
+      "generatedFilename": "참외 펄퍼스.png"
+    },
     {
       "time": "2026-10-08 06:40:36",
       "series": "신수",
@@ -120,20 +134,6 @@
       "scheduledTime": "2026-10-08 06:00:00",
       "startDelaySeconds": 0,
       "generatedFilename": "라쿤 크레스트.png"
-    },
-    {
-      "time": "2026-10-07 18:17:20",
-      "series": "펄퍼스",
-      "generationAttempts": 1,
-      "regenerations": 0,
-      "uploadAttempts": 1,
-      "driveVerified": true,
-      "result": "success",
-      "elapsedSeconds": 183,
-      "stage": "COMPLETED",
-      "scheduledTime": "2026-10-07 17:12:00",
-      "startDelaySeconds": 3920,
-      "generatedFilename": "참외 펄퍼스.png"
     },
     {
       "time": "2026-10-07 18:03:20",
