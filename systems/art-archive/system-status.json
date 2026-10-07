@@ -1,21 +1,21 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-07T14:47:28.438Z",
+  "updatedAt": "2026-10-07T15:03:06.746Z",
   "timezone": "Asia/Seoul",
-  "overallStatus": "error",
+  "overallStatus": "ok",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-07T14:46:00.468Z",
-      "finishedAt": "2026-10-07T14:47:08.575Z",
-      "result": "skipped",
-      "durationMs": 68107,
-      "error": null
+      "startedAt": "2026-10-07T15:03:00.204Z",
+      "finishedAt": "2026-10-07T15:03:05.292Z",
+      "result": "success",
+      "durationMs": 5088,
+      "error": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
     },
     "consecutiveFailures": 0,
-    "busyOrSkipped": true,
-    "busyReason": "중복 실행 방지를 위해 이번 회차를 건너뜀",
+    "busyOrSkipped": false,
+    "busyReason": null,
     "triggerInventoryAvailable": false
   },
   "notionSync": {
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-07T14:47:29.031Z",
+    "updatedAt": "2026-10-07T15:03:07.287Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,22 +253,22 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-07T14:47:17.838Z",
+    "checkedAt": "2026-10-07T15:02:50.741Z",
     "timezone": "Asia/Seoul",
-    "date": "2026-10-07",
+    "date": "2026-10-08",
     "planned": 16,
-    "success": 5,
+    "success": 0,
     "failed": 0,
     "stalled": 0,
-    "missed": 10,
-    "running": 1,
-    "pending": 0,
-    "status": "error",
+    "missed": 0,
+    "running": 0,
+    "pending": 16,
+    "status": "pending",
     "slots": [
       {
         "series": "크레스트",
         "scheduledTime": "06:00",
-        "status": "MISSED",
+        "status": "PENDING",
         "logRow": null,
         "runId": null,
         "stage": null,
@@ -277,12 +277,12 @@
         "filename": null,
         "startDelaySeconds": null,
         "elapsedMinutes": null,
-        "diagnosis": "예정시각 후 45분이 지났지만 실행 로그가 없음"
+        "diagnosis": "예약시각 전"
       },
       {
         "series": "묵수",
         "scheduledTime": "06:03",
-        "status": "MISSED",
+        "status": "PENDING",
         "logRow": null,
         "runId": null,
         "stage": null,
@@ -291,12 +291,12 @@
         "filename": null,
         "startDelaySeconds": null,
         "elapsedMinutes": null,
-        "diagnosis": "예정시각 후 45분이 지났지만 실행 로그가 없음"
+        "diagnosis": "예약시각 전"
       },
       {
         "series": "신수",
         "scheduledTime": "06:06",
-        "status": "MISSED",
+        "status": "PENDING",
         "logRow": null,
         "runId": null,
         "stage": null,
@@ -305,12 +305,12 @@
         "filename": null,
         "startDelaySeconds": null,
         "elapsedMinutes": null,
-        "diagnosis": "예정시각 후 45분이 지났지만 실행 로그가 없음"
+        "diagnosis": "예약시각 전"
       },
       {
         "series": "수채화",
         "scheduledTime": "06:09",
-        "status": "MISSED",
+        "status": "PENDING",
         "logRow": null,
         "runId": null,
         "stage": null,
@@ -319,12 +319,12 @@
         "filename": null,
         "startDelaySeconds": null,
         "elapsedMinutes": null,
-        "diagnosis": "예정시각 후 45분이 지났지만 실행 로그가 없음"
+        "diagnosis": "예약시각 전"
       },
       {
         "series": "펄퍼스",
         "scheduledTime": "06:12",
-        "status": "MISSED",
+        "status": "PENDING",
         "logRow": null,
         "runId": null,
         "stage": null,
@@ -333,12 +333,12 @@
         "filename": null,
         "startDelaySeconds": null,
         "elapsedMinutes": null,
-        "diagnosis": "예정시각 후 45분이 지났지만 실행 로그가 없음"
+        "diagnosis": "예약시각 전"
       },
       {
         "series": "잉크",
         "scheduledTime": "06:15",
-        "status": "MISSED",
+        "status": "PENDING",
         "logRow": null,
         "runId": null,
         "stage": null,
@@ -347,12 +347,12 @@
         "filename": null,
         "startDelaySeconds": null,
         "elapsedMinutes": null,
-        "diagnosis": "예정시각 후 45분이 지났지만 실행 로그가 없음"
+        "diagnosis": "예약시각 전"
       },
       {
         "series": "성수",
         "scheduledTime": "06:18",
-        "status": "MISSED",
+        "status": "PENDING",
         "logRow": null,
         "runId": null,
         "stage": null,
@@ -361,12 +361,12 @@
         "filename": null,
         "startDelaySeconds": null,
         "elapsedMinutes": null,
-        "diagnosis": "예정시각 후 45분이 지났지만 실행 로그가 없음"
+        "diagnosis": "예약시각 전"
       },
       {
         "series": "융화",
         "scheduledTime": "06:21",
-        "status": "MISSED",
+        "status": "PENDING",
         "logRow": null,
         "runId": null,
         "stage": null,
@@ -375,96 +375,96 @@
         "filename": null,
         "startDelaySeconds": null,
         "elapsedMinutes": null,
-        "diagnosis": "예정시각 후 45분이 지났지만 실행 로그가 없음"
+        "diagnosis": "예약시각 전"
       },
       {
         "series": "크레스트",
         "scheduledTime": "17:00",
-        "status": "SUCCESS",
-        "logRow": 60,
-        "runId": "크레스트-20261007-170311",
-        "stage": "COMPLETED",
-        "result": "success",
-        "subject": "말",
-        "filename": "말 크레스트.png",
-        "startDelaySeconds": 0,
-        "elapsedMinutes": 3,
-        "diagnosis": "실행 완료"
+        "status": "PENDING",
+        "logRow": null,
+        "runId": null,
+        "stage": null,
+        "result": null,
+        "subject": null,
+        "filename": null,
+        "startDelaySeconds": null,
+        "elapsedMinutes": null,
+        "diagnosis": "예약시각 전"
       },
       {
         "series": "묵수",
         "scheduledTime": "17:03",
-        "status": "SUCCESS",
-        "logRow": 61,
-        "runId": "묵수-20261007-172440",
-        "stage": "COMPLETED",
-        "result": "success",
-        "subject": "제왕나비",
-        "filename": "제왕나비 묵수.png",
-        "startDelaySeconds": 1300,
-        "elapsedMinutes": 4.4,
-        "diagnosis": "실행 완료"
+        "status": "PENDING",
+        "logRow": null,
+        "runId": null,
+        "stage": null,
+        "result": null,
+        "subject": null,
+        "filename": null,
+        "startDelaySeconds": null,
+        "elapsedMinutes": null,
+        "diagnosis": "예약시각 전"
       },
       {
         "series": "신수",
         "scheduledTime": "17:06",
-        "status": "SUCCESS",
-        "logRow": 62,
-        "runId": "신수-20261007174438",
-        "stage": "COMPLETED",
-        "result": "success",
-        "subject": "큰날여우박쥐",
-        "filename": "큰날여우박쥐 신수.png",
-        "startDelaySeconds": 278,
-        "elapsedMinutes": 4.9,
-        "diagnosis": "실행 완료"
+        "status": "PENDING",
+        "logRow": null,
+        "runId": null,
+        "stage": null,
+        "result": null,
+        "subject": null,
+        "filename": null,
+        "startDelaySeconds": null,
+        "elapsedMinutes": null,
+        "diagnosis": "예약시각 전"
       },
       {
         "series": "수채화",
         "scheduledTime": "17:09",
-        "status": "SUCCESS",
-        "logRow": 63,
-        "runId": "수채화-20261007180320",
-        "stage": "COMPLETED",
-        "result": "success",
-        "subject": "문어",
-        "filename": "문어 수채화.png",
-        "startDelaySeconds": 3260,
-        "elapsedMinutes": 3.9,
-        "diagnosis": "실행 완료"
+        "status": "PENDING",
+        "logRow": null,
+        "runId": null,
+        "stage": null,
+        "result": null,
+        "subject": null,
+        "filename": null,
+        "startDelaySeconds": null,
+        "elapsedMinutes": null,
+        "diagnosis": "예약시각 전"
       },
       {
         "series": "펄퍼스",
         "scheduledTime": "17:12",
-        "status": "SUCCESS",
-        "logRow": 64,
-        "runId": "펄퍼스-20261007-181720",
-        "stage": "COMPLETED",
-        "result": "success",
-        "subject": "참외",
-        "filename": "참외 펄퍼스.png",
-        "startDelaySeconds": 3920,
-        "elapsedMinutes": 3.1,
-        "diagnosis": "실행 완료"
+        "status": "PENDING",
+        "logRow": null,
+        "runId": null,
+        "stage": null,
+        "result": null,
+        "subject": null,
+        "filename": null,
+        "startDelaySeconds": null,
+        "elapsedMinutes": null,
+        "diagnosis": "예약시각 전"
       },
       {
         "series": "잉크",
         "scheduledTime": "17:15",
-        "status": "RUNNING",
-        "logRow": 65,
-        "runId": "잉크-20261007-184616",
-        "stage": "STARTED",
+        "status": "PENDING",
+        "logRow": null,
+        "runId": null,
+        "stage": null,
         "result": null,
-        "subject": "토끼",
+        "subject": null,
         "filename": null,
-        "startDelaySeconds": 5476,
-        "elapsedMinutes": 301,
-        "diagnosis": "STARTED 단계 진행 중"
+        "startDelaySeconds": null,
+        "elapsedMinutes": null,
+        "diagnosis": "예약시각 전"
       },
       {
         "series": "성수",
         "scheduledTime": "17:18",
-        "status": "MISSED",
+        "status": "PENDING",
         "logRow": null,
         "runId": null,
         "stage": null,
@@ -473,12 +473,12 @@
         "filename": null,
         "startDelaySeconds": null,
         "elapsedMinutes": null,
-        "diagnosis": "예정시각 후 45분이 지났지만 실행 로그가 없음"
+        "diagnosis": "예약시각 전"
       },
       {
         "series": "융화",
         "scheduledTime": "17:21",
-        "status": "MISSED",
+        "status": "PENDING",
         "logRow": null,
         "runId": null,
         "stage": null,
@@ -487,7 +487,7 @@
         "filename": null,
         "startDelaySeconds": null,
         "elapsedMinutes": null,
-        "diagnosis": "예정시각 후 45분이 지났지만 실행 로그가 없음"
+        "diagnosis": "예약시각 전"
       }
     ]
   }
