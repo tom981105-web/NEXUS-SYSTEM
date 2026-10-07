@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-10-07T08:49:32.514Z",
+  "generatedAt": "2026-10-07T09:05:23.398Z",
   "timezone": "Asia/Seoul",
   "schemaVersion": 1,
   "retentionDays": 90,
   "source": "그림 자동화 사용량 로그 / 사용량 로그",
   "summary": {
     "days": 8,
-    "runs": 59,
+    "runs": 60,
     "success": 56,
     "failed": 1,
-    "successRate": 94.9,
-    "avgElapsed": 226.5
+    "successRate": 93.3,
+    "avgElapsed": 222.4
   },
   "daily": [
     {
@@ -560,16 +560,16 @@
     },
     {
       "date": "2026-10-07",
-      "runs": 3,
+      "runs": 4,
       "success": 3,
       "failed": 0,
-      "successRate": 100,
-      "avgElapsed": 245,
+      "successRate": 75,
+      "avgElapsed": 183.8,
       "maxElapsed": 294,
       "driveVerified": 3,
-      "driveVerifiedRate": 100,
+      "driveVerifiedRate": 75,
       "regenerations": 0,
-      "avgStartDelay": 526,
+      "avgStartDelay": 1209.5,
       "series": [
         {
           "name": "크레스트",
@@ -603,6 +603,17 @@
           "driveVerified": 1,
           "regenerations": 0,
           "avgStartDelay": 278
+        },
+        {
+          "name": "수채화",
+          "runs": 1,
+          "success": 0,
+          "failed": 0,
+          "successRate": 0,
+          "avgElapsed": 0,
+          "driveVerified": 0,
+          "regenerations": 0,
+          "avgStartDelay": 3260
         }
       ]
     }
