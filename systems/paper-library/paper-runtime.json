@@ -1,152 +1,107 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-07T13:19:31.532Z",
+  "updatedAt": "2026-10-07T14:14:25.756Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "success",
-    "runId": "paper-20261007-221426",
-    "startedAt": "2026-10-07T13:14:26.070Z",
-    "finishedAt": "2026-10-07T13:19:31.532Z",
-    "durationMs": 305462,
-    "generatedCount": 6,
+    "status": "running",
+    "runId": "paper-20261007-231425",
+    "startedAt": "2026-10-07T14:14:25.543Z",
+    "finishedAt": null,
+    "durationMs": null,
+    "generatedCount": 0,
     "expectedMax": 6,
-    "lastCommitSha": "92069141e0f3e03b36c902d7fe5ad720e2dc13ac",
+    "lastCommitSha": null,
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 53,
-      "success": 52,
-      "retries": 0,
-      "http429": 1,
-      "errors": 1,
-      "lastHttpStatus": 429,
-      "disabledForRun": true
-    },
-    "crossref": {
-      "calls": 63,
-      "success": 60,
-      "retries": 3,
-      "http429": 3,
-      "errors": 3,
-      "lastHttpStatus": 200,
-      "adaptiveIntervalMs": 2100,
-      "throttleEvents": 3,
-      "earlyStops": 5
-    },
-    "gemini": {
-      "calls": 6,
-      "success": 6,
+      "calls": 0,
+      "success": 0,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": 200
+      "lastHttpStatus": null,
+      "disabledForRun": false
+    },
+    "crossref": {
+      "calls": 0,
+      "success": 0,
+      "retries": 0,
+      "http429": 0,
+      "errors": 0,
+      "lastHttpStatus": null,
+      "adaptiveIntervalMs": 650,
+      "throttleEvents": 0,
+      "earlyStops": 0
+    },
+    "gemini": {
+      "calls": 0,
+      "success": 0,
+      "retries": 0,
+      "http429": 0,
+      "errors": 0,
+      "lastHttpStatus": null
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 98,
-      "selectedTitle": "Deep Iris: Deep Learning for Gender Classification Through Iris Patterns",
-      "selectedDoi": "10.5455/aim.2019.27.96-102",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "전기",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 87,
-      "selectedTitle": "A Ship Is a Microgrid and a Microgrid Is a Ship: Commonalities and Synergies [About This Issue]",
-      "selectedDoi": "10.1109/mele.2019.2943945",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "로봇·자동화",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 84,
-      "selectedTitle": "CVI-SLAM—Collaborative Visual-Inertial SLAM",
-      "selectedDoi": "10.1109/lra.2018.2837226",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "에너지·환경",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 96,
-      "selectedTitle": "Photovoltaic system derived data for determining the solar resource and for modeling the performance of other photovoltaic systems",
-      "selectedDoi": "10.1016/j.solener.2017.03.043",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "건축·시설관리",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 82,
-      "selectedTitle": "Improving maintenance and reducing building defects through ISO 9000",
-      "selectedDoi": "10.1108/13552510110386865",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "도서관·문헌정보",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 1,
-      "selectedTitle": "Applications of Internet of Things in university libraries of Pakistan: An empirical investigation",
-      "selectedDoi": "10.1016/j.acalib.2022.102613",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     }
   ],
-  "verification": {
-    "filesExist": true,
-    "jsonValid": true,
-    "indexHeadCorrect": true,
-    "indexDetailDoiMatch": true,
-    "noOldDoiDuplicates": true,
-    "noNewDoiDuplicates": true,
-    "ok": true
-  },
-  "stages": [
-    {
-      "at": "2026-10-07T13:14:27.561Z",
-      "name": "START",
-      "status": "running",
-      "message": "논문 자동화 V2.7.4 시작"
-    },
-    {
-      "at": "2026-10-07T13:14:27.903Z",
-      "name": "GITHUB_HEAD",
-      "status": "success",
-      "message": "175f0b2"
-    },
-    {
-      "at": "2026-10-07T13:14:31.414Z",
-      "name": "INDEX",
-      "status": "success",
-      "message": "papers=1021"
-    },
-    {
-      "at": "2026-10-07T13:19:25.577Z",
-      "name": "GITHUB_COMMIT",
-      "status": "success",
-      "message": "9206914"
-    },
-    {
-      "at": "2026-10-07T13:19:31.501Z",
-      "name": "VERIFY",
-      "status": "success",
-      "message": "최종 검증 통과"
-    },
-    {
-      "at": "2026-10-07T13:19:31.532Z",
-      "name": "FINISH",
-      "status": "success",
-      "message": "generated=6"
-    }
-  ]
+  "verification": null,
+  "stages": []
 }
