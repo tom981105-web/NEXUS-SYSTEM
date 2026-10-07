@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-10-07T23:44:24.704Z",
+  "generatedAt": "2026-10-07T23:46:42.054Z",
   "source": "그림 자동화 사용량 로그 / 사용량 로그",
   "schemaVersion": 3,
   "summary": {
-    "runs": 66,
-    "success": 57,
+    "runs": 67,
+    "success": 58,
     "failed": 7,
-    "successRate": 86.4,
-    "driveVerified": 57,
+    "successRate": 86.6,
+    "driveVerified": 58,
     "regenerations": 7,
     "sourceRows": 70,
     "normalizedPartialRows": 0
@@ -63,10 +63,10 @@
     },
     {
       "name": "성수",
-      "runs": 5,
-      "success": 5,
+      "runs": 6,
+      "success": 6,
       "failed": 0,
-      "avgElapsed": 227.5,
+      "avgElapsed": 211,
       "regenerations": 1
     },
     {
@@ -79,6 +79,20 @@
     }
   ],
   "recentRuns": [
+    {
+      "time": "2026-10-08 8:43:34",
+      "series": "성수",
+      "generationAttempts": 1,
+      "regenerations": 0,
+      "uploadAttempts": 1,
+      "driveVerified": true,
+      "result": "success",
+      "elapsedSeconds": 145,
+      "stage": "COMPLETED",
+      "scheduledTime": "2026-10-08 6:18:00",
+      "startDelaySeconds": 8734,
+      "generatedFilename": "코뿔소 성수.png"
+    },
     {
       "time": "2026-10-08 08:26:07",
       "series": "잉크",
@@ -232,20 +246,6 @@
       "scheduledTime": "2026-10-06 6:03:00",
       "startDelaySeconds": 843,
       "generatedFilename": null
-    },
-    {
-      "time": "2026-10-06 06:01:37",
-      "series": "크레스트",
-      "generationAttempts": 1,
-      "regenerations": 0,
-      "uploadAttempts": 1,
-      "driveVerified": true,
-      "result": "success",
-      "elapsedSeconds": 260,
-      "stage": "COMPLETED",
-      "scheduledTime": "2026-10-06 6:00:00",
-      "startDelaySeconds": 0,
-      "generatedFilename": "불곰 크레스트.png"
     }
   ]
 }
