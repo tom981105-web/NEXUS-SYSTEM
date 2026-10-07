@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-10-07T08:34:56.014Z",
+  "generatedAt": "2026-10-07T08:46:01.793Z",
   "source": "그림 자동화 사용량 로그 / 사용량 로그",
   "schemaVersion": 3,
   "summary": {
-    "runs": 58,
+    "runs": 59,
     "success": 55,
     "failed": 1,
-    "successRate": 94.8,
+    "successRate": 93.2,
     "driveVerified": 55,
     "regenerations": 1,
-    "sourceRows": 60,
+    "sourceRows": 61,
     "normalizedPartialRows": 0
   },
   "series": [
@@ -31,7 +31,7 @@
     },
     {
       "name": "신수",
-      "runs": 8,
+      "runs": 9,
       "success": 8,
       "failed": 0,
       "avgElapsed": 247,
@@ -79,6 +79,20 @@
     }
   ],
   "recentRuns": [
+    {
+      "time": "2026-10-07 17:44:38",
+      "series": "신수",
+      "generationAttempts": 0,
+      "regenerations": 0,
+      "uploadAttempts": 0,
+      "driveVerified": false,
+      "result": "running",
+      "elapsedSeconds": 0,
+      "stage": "GENERATING",
+      "scheduledTime": "2026-10-07 17:40:00",
+      "startDelaySeconds": 278,
+      "generatedFilename": null
+    },
     {
       "time": "2026-10-07 17:24:40",
       "series": "묵수",
@@ -232,20 +246,6 @@
       "scheduledTime": "2026-10-05 6:15:00",
       "startDelaySeconds": 1344,
       "generatedFilename": "코끼리 잉크.png"
-    },
-    {
-      "time": "2026-10-05 06:27:14",
-      "series": "펄퍼스",
-      "generationAttempts": 1,
-      "regenerations": 0,
-      "uploadAttempts": 1,
-      "driveVerified": true,
-      "result": "success",
-      "elapsedSeconds": 180,
-      "stage": "COMPLETED",
-      "scheduledTime": "2026-10-05 6:09:00",
-      "startDelaySeconds": 1094,
-      "generatedFilename": "배 펄퍼스.png"
     }
   ]
 }
