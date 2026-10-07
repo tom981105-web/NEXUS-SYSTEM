@@ -1,107 +1,152 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-07T21:14:25.381Z",
+  "updatedAt": "2026-10-07T21:18:25.199Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "running",
+    "status": "success",
     "runId": "paper-20261008-061425",
     "startedAt": "2026-10-07T21:14:25.233Z",
-    "finishedAt": null,
-    "durationMs": null,
-    "generatedCount": 0,
+    "finishedAt": "2026-10-07T21:18:25.199Z",
+    "durationMs": 239966,
+    "generatedCount": 5,
     "expectedMax": 6,
-    "lastCommitSha": null,
+    "lastCommitSha": "40f9e7c7077e5dbf56a7dd627cc4c02c1a48b2f7",
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 0,
+      "calls": 1,
       "success": 0,
       "retries": 0,
-      "http429": 0,
-      "errors": 0,
-      "lastHttpStatus": null,
-      "disabledForRun": false
+      "http429": 1,
+      "errors": 1,
+      "lastHttpStatus": 429,
+      "disabledForRun": true
     },
     "crossref": {
-      "calls": 0,
-      "success": 0,
-      "retries": 0,
-      "http429": 0,
-      "errors": 0,
-      "lastHttpStatus": null,
-      "adaptiveIntervalMs": 650,
-      "throttleEvents": 0,
-      "earlyStops": 0
+      "calls": 63,
+      "success": 61,
+      "retries": 2,
+      "http429": 2,
+      "errors": 2,
+      "lastHttpStatus": 200,
+      "adaptiveIntervalMs": 950,
+      "throttleEvents": 2,
+      "earlyStops": 4
     },
     "gemini": {
-      "calls": 0,
-      "success": 0,
-      "retries": 0,
+      "calls": 7,
+      "success": 5,
+      "retries": 2,
       "http429": 0,
-      "errors": 0,
-      "lastHttpStatus": null
+      "errors": 4,
+      "lastHttpStatus": 200
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 91,
+      "selectedTitle": "AI, Machine Learning &amp; Deep Learning Risk Management &amp; Controls: Beyond Deep Learning and Generative Adversarial Networks: Model Risk Management in AI, Machine Learning &amp; Deep Learning",
+      "selectedDoi": "10.2139/ssrn.3193693",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "전기",
-      "status": "pending",
+      "status": "generated",
       "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "crossrefCandidates": 80,
+      "selectedTitle": "Applications of fuzzy systems in power systems",
+      "selectedDoi": "10.1016/0378-7796(95)00985-x",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "로봇·자동화",
-      "status": "pending",
+      "status": "generated",
       "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "crossrefCandidates": 115,
+      "selectedTitle": "Behavior Trees in Robot Control Systems",
+      "selectedDoi": "10.1146/annurev-control-042920-095314",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "에너지·환경",
-      "status": "pending",
+      "status": "generated",
       "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "crossrefCandidates": 88,
+      "selectedTitle": "New Rechargeable Lithium-ion AA Battery: More Economic and Eco-friendlier for Home Sleep Apnea Test",
+      "selectedDoi": "10.33140/abbsr.05.01.06",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "건축·시설관리",
-      "status": "pending",
+      "status": "generated",
       "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "crossrefCandidates": 77,
+      "selectedTitle": "Energy efficiency using the simulation software of atrium thermal environment in residential building: a case study",
+      "selectedDoi": "10.1080/17512549.2017.1354781",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "도서관·문헌정보",
-      "status": "pending",
+      "status": "no_candidate",
       "openAlexCandidates": null,
-      "crossrefCandidates": null,
+      "crossrefCandidates": 0,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     }
   ],
-  "verification": null,
-  "stages": []
+  "verification": {
+    "filesExist": true,
+    "jsonValid": true,
+    "indexHeadCorrect": true,
+    "indexDetailDoiMatch": true,
+    "noOldDoiDuplicates": true,
+    "noNewDoiDuplicates": true,
+    "ok": true
+  },
+  "stages": [
+    {
+      "at": "2026-10-07T21:14:27.363Z",
+      "name": "START",
+      "status": "running",
+      "message": "논문 자동화 V2.7.4 시작"
+    },
+    {
+      "at": "2026-10-07T21:14:27.700Z",
+      "name": "GITHUB_HEAD",
+      "status": "success",
+      "message": "61a6d05"
+    },
+    {
+      "at": "2026-10-07T21:14:31.482Z",
+      "name": "INDEX",
+      "status": "success",
+      "message": "papers=1057"
+    },
+    {
+      "at": "2026-10-07T21:18:18.977Z",
+      "name": "GITHUB_COMMIT",
+      "status": "success",
+      "message": "40f9e7c"
+    },
+    {
+      "at": "2026-10-07T21:18:25.012Z",
+      "name": "VERIFY",
+      "status": "success",
+      "message": "최종 검증 통과"
+    },
+    {
+      "at": "2026-10-07T21:18:25.199Z",
+      "name": "FINISH",
+      "status": "success",
+      "message": "generated=5"
+    }
+  ]
 }
