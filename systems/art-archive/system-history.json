@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T20:56:28.695Z",
+  "generatedAt": "2026-10-07T20:59:27.956Z",
   "timezone": "Asia/Seoul",
   "schemaVersion": 1,
   "retentionDays": 90,
@@ -8,7 +8,7 @@
     "days": 9,
     "runs": 62,
     "success": 58,
-    "failed": 1,
+    "failed": 2,
     "successRate": 93.5,
     "avgElapsed": 221.8
   },
@@ -632,24 +632,24 @@
       "date": "2026-10-08",
       "runs": 1,
       "success": 0,
-      "failed": 0,
+      "failed": 1,
       "successRate": 0,
       "avgElapsed": 0,
       "maxElapsed": 0,
       "driveVerified": 0,
       "driveVerifiedRate": 0,
-      "regenerations": 0,
+      "regenerations": 1,
       "avgStartDelay": 0,
       "series": [
         {
           "name": "크레스트",
           "runs": 1,
           "success": 0,
-          "failed": 0,
+          "failed": 1,
           "successRate": 0,
           "avgElapsed": 0,
           "driveVerified": 0,
-          "regenerations": 0,
+          "regenerations": 1,
           "avgStartDelay": 0
         }
       ]
