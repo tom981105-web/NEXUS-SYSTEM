@@ -1,107 +1,152 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-07T02:14:26.093Z",
+  "updatedAt": "2026-10-07T02:18:26.925Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "running",
+    "status": "success",
     "runId": "paper-20261007-111425",
     "startedAt": "2026-10-07T02:14:25.886Z",
-    "finishedAt": null,
-    "durationMs": null,
-    "generatedCount": 0,
+    "finishedAt": "2026-10-07T02:18:26.925Z",
+    "durationMs": 241039,
+    "generatedCount": 6,
     "expectedMax": 6,
-    "lastCommitSha": null,
+    "lastCommitSha": "8f829d2db0e72cc4eae06b84aa6a2e895f432584",
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 0,
-      "success": 0,
+      "calls": 73,
+      "success": 73,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": null,
+      "lastHttpStatus": 200,
       "disabledForRun": false
     },
     "crossref": {
-      "calls": 0,
-      "success": 0,
+      "calls": 26,
+      "success": 26,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": null,
+      "lastHttpStatus": 200,
       "adaptiveIntervalMs": 650,
       "throttleEvents": 0,
-      "earlyStops": 0
+      "earlyStops": 4
     },
     "gemini": {
-      "calls": 0,
-      "success": 0,
+      "calls": 6,
+      "success": 6,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": null
+      "lastHttpStatus": 200
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "pending",
-      "openAlexCandidates": null,
+      "status": "generated",
+      "openAlexCandidates": 2,
       "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "selectedTitle": "The concept of a linguistic variable and its application to approximate reasoning—I",
+      "selectedDoi": "10.1016/0020-0255(75)90036-5",
+      "sourceProvider": "OpenAlex+Crossref"
     },
     {
       "name": "전기",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 94,
+      "selectedTitle": "Advanced optimal planning for microgrid technologies including hydrogen and mobility at a real microgrid testbed",
+      "selectedDoi": "10.1016/j.ijhydene.2021.03.110",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "로봇·자동화",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 93,
+      "selectedTitle": "DR-SLAM: drift rejection SLAM with Manhattan regularity for indoor environments",
+      "selectedDoi": "10.1080/01691864.2022.2129032",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "에너지·환경",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 104,
+      "selectedTitle": "Experimental assessment of compressed air energy storage (CAES) system and buoyancy work energy storage (BWES) as cellular wind energy storage options",
+      "selectedDoi": "10.1016/j.est.2015.05.004",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "건축·시설관리",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 92,
+      "selectedTitle": "The prevalence of IoT in the facility services industry",
+      "selectedDoi": "10.22361/2474-6630-4.1.9",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "도서관·문헌정보",
-      "status": "pending",
-      "openAlexCandidates": null,
+      "status": "generated",
+      "openAlexCandidates": 1,
       "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "selectedTitle": "Search where you will find most: Comparing the disciplinary coverage of 56 bibliographic databases",
+      "selectedDoi": "10.1007/s11192-022-04289-7",
+      "sourceProvider": "OpenAlex+Crossref"
     }
   ],
-  "verification": null,
-  "stages": []
+  "verification": {
+    "filesExist": true,
+    "jsonValid": true,
+    "indexHeadCorrect": true,
+    "indexDetailDoiMatch": true,
+    "noOldDoiDuplicates": true,
+    "noNewDoiDuplicates": true,
+    "ok": true
+  },
+  "stages": [
+    {
+      "at": "2026-10-07T02:14:27.655Z",
+      "name": "START",
+      "status": "running",
+      "message": "논문 자동화 V2.7.4 시작"
+    },
+    {
+      "at": "2026-10-07T02:14:27.909Z",
+      "name": "GITHUB_HEAD",
+      "status": "success",
+      "message": "d250416"
+    },
+    {
+      "at": "2026-10-07T02:14:32.543Z",
+      "name": "INDEX",
+      "status": "success",
+      "message": "papers=973"
+    },
+    {
+      "at": "2026-10-07T02:18:17.544Z",
+      "name": "GITHUB_COMMIT",
+      "status": "success",
+      "message": "8f829d2"
+    },
+    {
+      "at": "2026-10-07T02:18:26.829Z",
+      "name": "VERIFY",
+      "status": "success",
+      "message": "최종 검증 통과"
+    },
+    {
+      "at": "2026-10-07T02:18:26.925Z",
+      "name": "FINISH",
+      "status": "success",
+      "message": "generated=6"
+    }
+  ]
 }
