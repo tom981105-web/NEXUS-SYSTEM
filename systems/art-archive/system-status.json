@@ -1,21 +1,21 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-07T09:33:20.561Z",
+  "updatedAt": "2026-10-07T09:48:46.169Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-07T09:33:00.599Z",
-      "finishedAt": "2026-10-07T09:33:05.758Z",
-      "result": "skipped",
-      "durationMs": 5159,
-      "error": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
+      "startedAt": "2026-10-07T09:47:00.403Z",
+      "finishedAt": "2026-10-07T09:48:25.548Z",
+      "result": "success",
+      "durationMs": 85145,
+      "error": null
     },
     "consecutiveFailures": 0,
-    "busyOrSkipped": true,
-    "busyReason": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀",
+    "busyOrSkipped": false,
+    "busyReason": null,
     "triggerInventoryAvailable": false
   },
   "notionSync": {
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-07T09:33:20.905Z",
+    "updatedAt": "2026-10-07T09:48:46.734Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,15 +253,15 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-07T09:33:13.332Z",
+    "checkedAt": "2026-10-07T09:48:34.674Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-07",
     "planned": 16,
     "success": 5,
     "failed": 0,
     "stalled": 0,
-    "missed": 11,
-    "running": 0,
+    "missed": 10,
+    "running": 1,
     "pending": 0,
     "status": "error",
     "slots": [
@@ -450,16 +450,16 @@
       {
         "series": "잉크",
         "scheduledTime": "17:15",
-        "status": "MISSED",
-        "logRow": null,
-        "runId": null,
-        "stage": null,
+        "status": "RUNNING",
+        "logRow": 65,
+        "runId": "잉크-20261007-184616",
+        "stage": "STARTED",
         "result": null,
-        "subject": null,
+        "subject": "토끼",
         "filename": null,
-        "startDelaySeconds": null,
-        "elapsedMinutes": null,
-        "diagnosis": "예정시각 후 45분이 지났지만 실행 로그가 없음"
+        "startDelaySeconds": 5476,
+        "elapsedMinutes": 2.3,
+        "diagnosis": "STARTED 단계 진행 중"
       },
       {
         "series": "성수",
