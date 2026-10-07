@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-07T08:04:06.316Z",
+  "generatedAt": "2026-10-07T08:12:56.981Z",
   "timezone": "Asia/Seoul",
   "schemaVersion": 1,
   "retentionDays": 90,
@@ -7,10 +7,10 @@
   "summary": {
     "days": 8,
     "runs": 57,
-    "success": 53,
+    "success": 54,
     "failed": 1,
-    "successRate": 93,
-    "avgElapsed": 221.1
+    "successRate": 94.7,
+    "avgElapsed": 224.5
   },
   "daily": [
     {
@@ -561,24 +561,24 @@
     {
       "date": "2026-10-07",
       "runs": 1,
-      "success": 0,
+      "success": 1,
       "failed": 0,
-      "successRate": 0,
-      "avgElapsed": 0,
-      "maxElapsed": 0,
-      "driveVerified": 0,
-      "driveVerifiedRate": 0,
+      "successRate": 100,
+      "avgElapsed": 179,
+      "maxElapsed": 179,
+      "driveVerified": 1,
+      "driveVerifiedRate": 100,
       "regenerations": 0,
       "avgStartDelay": 0,
       "series": [
         {
           "name": "크레스트",
           "runs": 1,
-          "success": 0,
+          "success": 1,
           "failed": 0,
-          "successRate": 0,
-          "avgElapsed": 0,
-          "driveVerified": 0,
+          "successRate": 100,
+          "avgElapsed": 179,
+          "driveVerified": 1,
           "regenerations": 0,
           "avgStartDelay": 0
         }
