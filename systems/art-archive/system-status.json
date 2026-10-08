@@ -1,16 +1,16 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-08T22:48:22.624Z",
+  "updatedAt": "2026-10-08T23:03:42.989Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-08T22:47:59.977Z",
-      "finishedAt": "2026-10-08T22:48:05.074Z",
+      "startedAt": "2026-10-08T23:03:01.354Z",
+      "finishedAt": "2026-10-08T23:03:06.598Z",
       "result": "skipped",
-      "durationMs": 5097,
+      "durationMs": 5244,
       "error": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
     },
     "consecutiveFailures": 0,
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-08T22:48:22.846Z",
+    "updatedAt": "2026-10-08T23:03:44.414Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,14 +253,14 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-08T22:48:15.135Z",
+    "checkedAt": "2026-10-08T23:03:24.834Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-09",
     "planned": 16,
     "success": 3,
-    "failed": 1,
+    "failed": 3,
     "stalled": 0,
-    "missed": 4,
+    "missed": 2,
     "running": 0,
     "pending": 8,
     "status": "error",
@@ -290,7 +290,7 @@
         "subject": "큰뿔양",
         "filename": "큰뿔양 묵수.png",
         "startDelaySeconds": 2003,
-        "elapsedMinutes": 71.9,
+        "elapsedMinutes": 87,
         "diagnosis": "실행 완료"
       },
       {
@@ -310,16 +310,16 @@
       {
         "series": "수채화",
         "scheduledTime": "06:09",
-        "status": "MISSED",
-        "logRow": null,
-        "runId": null,
-        "stage": null,
-        "result": null,
-        "subject": null,
+        "status": "FAILED",
+        "logRow": 84,
+        "runId": "수채화-20261009-075534",
+        "stage": "FAILED",
+        "result": "failed",
+        "subject": "천산갑",
         "filename": null,
-        "startDelaySeconds": null,
-        "elapsedMinutes": null,
-        "diagnosis": "예정시각 후 45분이 지났지만 실행 로그가 없음"
+        "startDelaySeconds": 6394,
+        "elapsedMinutes": 7.8,
+        "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
         "series": "펄퍼스",
@@ -346,7 +346,7 @@
         "subject": "오징어",
         "filename": "오징어 잉크.png",
         "startDelaySeconds": 1283,
-        "elapsedMinutes": 71.9,
+        "elapsedMinutes": 87,
         "diagnosis": "실행 완료"
       },
       {
@@ -366,16 +366,16 @@
       {
         "series": "융화",
         "scheduledTime": "06:21",
-        "status": "MISSED",
-        "logRow": null,
-        "runId": null,
-        "stage": null,
-        "result": null,
-        "subject": null,
+        "status": "FAILED",
+        "logRow": 85,
+        "runId": "융화-20261009-075700",
+        "stage": "FAILED",
+        "result": "failed",
+        "subject": "반딧불이",
         "filename": null,
-        "startDelaySeconds": null,
-        "elapsedMinutes": null,
-        "diagnosis": "예정시각 후 45분이 지났지만 실행 로그가 없음"
+        "startDelaySeconds": 5760,
+        "elapsedMinutes": 6.4,
+        "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
         "series": "크레스트",
