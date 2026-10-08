@@ -1,21 +1,21 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-08T14:43:29.792Z",
+  "updatedAt": "2026-10-08T14:58:45.715Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-08T14:42:59.938Z",
-      "finishedAt": "2026-10-08T14:43:05.051Z",
-      "result": "skipped",
-      "durationMs": 5113,
-      "error": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
+      "startedAt": "2026-10-08T14:58:00.449Z",
+      "finishedAt": "2026-10-08T14:58:29.392Z",
+      "result": "success",
+      "durationMs": 28943,
+      "error": null
     },
     "consecutiveFailures": 0,
-    "busyOrSkipped": true,
-    "busyReason": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀",
+    "busyOrSkipped": false,
+    "busyReason": null,
     "triggerInventoryAvailable": false
   },
   "notionSync": {
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-08T14:43:30.021Z",
+    "updatedAt": "2026-10-08T14:58:45.921Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,7 +253,7 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-08T14:43:20.527Z",
+    "checkedAt": "2026-10-08T14:58:36.927Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-08",
     "planned": 16,
@@ -472,7 +472,7 @@
         "subject": "악어",
         "filename": "악어 성수.png",
         "startDelaySeconds": 8633,
-        "elapsedMinutes": 241.5,
+        "elapsedMinutes": 256.7,
         "diagnosis": "실행 완료"
       },
       {
