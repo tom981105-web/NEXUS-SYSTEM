@@ -1,25 +1,25 @@
 {
-  "generatedAt": "2026-10-08T10:44:54.812Z",
+  "generatedAt": "2026-10-08T21:08:05.391Z",
   "source": "그림 자동화 사용량 로그 / 사용량 로그",
   "schemaVersion": 3,
   "summary": {
-    "runs": 73,
-    "success": 61,
-    "failed": 10,
-    "successRate": 83.6,
-    "driveVerified": 61,
-    "regenerations": 10,
-    "sourceRows": 76,
+    "runs": 75,
+    "success": 62,
+    "failed": 11,
+    "successRate": 82.7,
+    "driveVerified": 62,
+    "regenerations": 15,
+    "sourceRows": 78,
     "normalizedPartialRows": 0
   },
   "series": [
     {
       "name": "크레스트",
-      "runs": 13,
-      "success": 11,
+      "runs": 14,
+      "success": 12,
       "failed": 2,
-      "avgElapsed": 248.5,
-      "regenerations": 1
+      "avgElapsed": 250.2,
+      "regenerations": 4
     },
     {
       "name": "묵수",
@@ -47,11 +47,11 @@
     },
     {
       "name": "펄퍼스",
-      "runs": 8,
+      "runs": 9,
       "success": 7,
-      "failed": 1,
-      "avgElapsed": 186.9,
-      "regenerations": 1
+      "failed": 2,
+      "avgElapsed": 186.2,
+      "regenerations": 3
     },
     {
       "name": "잉크",
@@ -79,6 +79,34 @@
     }
   ],
   "recentRuns": [
+    {
+      "time": "2026-10-09 06:02:10",
+      "series": "펄퍼스",
+      "generationAttempts": 3,
+      "regenerations": 2,
+      "uploadAttempts": 0,
+      "driveVerified": false,
+      "result": "failed",
+      "elapsedSeconds": 181,
+      "stage": "FAILED",
+      "scheduledTime": "2026-10-09 06:00:00",
+      "startDelaySeconds": 0,
+      "generatedFilename": "리치 펄퍼스.png"
+    },
+    {
+      "time": "2026-10-09 05:57:39",
+      "series": "크레스트",
+      "generationAttempts": 4,
+      "regenerations": 3,
+      "uploadAttempts": 2,
+      "driveVerified": true,
+      "result": "success",
+      "elapsedSeconds": 270,
+      "stage": "COMPLETED",
+      "scheduledTime": "2026-10-09 06:00:00",
+      "startDelaySeconds": 0,
+      "generatedFilename": "하마 크레스트.png"
+    },
     {
       "time": "2026-10-08 19:41:53",
       "series": "성수",
@@ -218,34 +246,6 @@
       "scheduledTime": "2026-10-07 17:12:00",
       "startDelaySeconds": 3920,
       "generatedFilename": "참외 펄퍼스.png"
-    },
-    {
-      "time": "2026-10-08 06:40:36",
-      "series": "신수",
-      "generationAttempts": 2,
-      "regenerations": 1,
-      "uploadAttempts": 0,
-      "driveVerified": false,
-      "result": "failed",
-      "elapsedSeconds": 204,
-      "stage": "FAILED",
-      "scheduledTime": "2026-10-08 6:06:00",
-      "startDelaySeconds": 2076,
-      "generatedFilename": null
-    },
-    {
-      "time": "2026-10-08 06:23:02",
-      "series": "묵수",
-      "generationAttempts": 2,
-      "regenerations": 1,
-      "uploadAttempts": 0,
-      "driveVerified": false,
-      "result": "failed",
-      "elapsedSeconds": 180,
-      "stage": "FAILED",
-      "scheduledTime": "2026-10-08 6:03:00",
-      "startDelaySeconds": 1202,
-      "generatedFilename": null
     }
   ]
 }
