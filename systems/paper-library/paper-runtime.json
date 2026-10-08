@@ -1,107 +1,138 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-08T18:14:27.327Z",
+  "updatedAt": "2026-10-08T18:17:23.548Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "running",
+    "status": "failed",
     "runId": "paper-20261009-031426",
     "startedAt": "2026-10-08T18:14:26.777Z",
-    "finishedAt": null,
-    "durationMs": null,
+    "finishedAt": "2026-10-08T18:17:23.548Z",
+    "durationMs": 176771,
     "generatedCount": 0,
     "expectedMax": 6,
     "lastCommitSha": null,
-    "error": null
+    "error": "Error: Gemini HTTP 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n\n    at callGeminiJson_ (Code:4942:15)\n    at runPaperAutomation (Code:969:9)\n    at __GS_INTERNAL_top_function_call__.gs:1:8"
   },
   "providers": {
     "openAlex": {
-      "calls": 0,
+      "calls": 1,
       "success": 0,
       "retries": 0,
-      "http429": 0,
-      "errors": 0,
-      "lastHttpStatus": null,
-      "disabledForRun": false
+      "http429": 1,
+      "errors": 1,
+      "lastHttpStatus": 429,
+      "disabledForRun": true
     },
     "crossref": {
-      "calls": 0,
-      "success": 0,
-      "retries": 0,
-      "http429": 0,
-      "errors": 0,
-      "lastHttpStatus": null,
-      "adaptiveIntervalMs": 650,
-      "throttleEvents": 0,
-      "earlyStops": 0
+      "calls": 66,
+      "success": 65,
+      "retries": 1,
+      "http429": 1,
+      "errors": 1,
+      "lastHttpStatus": 200,
+      "adaptiveIntervalMs": 800,
+      "throttleEvents": 1,
+      "earlyStops": 4
     },
     "gemini": {
-      "calls": 0,
+      "calls": 3,
       "success": 0,
-      "retries": 0,
+      "retries": 2,
       "http429": 0,
-      "errors": 0,
-      "lastHttpStatus": null
+      "errors": 6,
+      "lastHttpStatus": 503
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "analyzing",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 116,
+      "selectedTitle": "Guest editorial: Graph learning for computer vision",
+      "selectedDoi": "10.1049/cvi2.12071",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "전기",
-      "status": "pending",
+      "status": "selected",
       "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "crossrefCandidates": 98,
+      "selectedTitle": "Rancang Bangun Inverter Pada Generator Aksial Satu Phasa",
+      "selectedDoi": "10.23960/elc.v14n3.2154",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "로봇·자동화",
-      "status": "pending",
+      "status": "selected",
       "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "crossrefCandidates": 100,
+      "selectedTitle": "Vision for Robust Robot Manipulation",
+      "selectedDoi": "10.3390/s19071648",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "에너지·환경",
-      "status": "pending",
+      "status": "selected",
       "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "crossrefCandidates": 112,
+      "selectedTitle": "Energy storage systems for PV-based communal grids",
+      "selectedDoi": "10.1016/j.est.2016.05.001",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "건축·시설관리",
-      "status": "pending",
+      "status": "selected",
       "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "crossrefCandidates": 61,
+      "selectedTitle": "Modelling user acceptance of building management systems",
+      "selectedDoi": "10.1016/s0926-5805(02)00010-9",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "도서관·문헌정보",
-      "status": "pending",
+      "status": "no_candidate",
       "openAlexCandidates": null,
-      "crossrefCandidates": null,
+      "crossrefCandidates": 0,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     }
   ],
   "verification": null,
-  "stages": []
+  "stages": [
+    {
+      "at": "2026-10-08T18:14:29.697Z",
+      "name": "START",
+      "status": "running",
+      "message": "논문 자동화 V2.7.4 시작"
+    },
+    {
+      "at": "2026-10-08T18:14:30.130Z",
+      "name": "GITHUB_HEAD",
+      "status": "success",
+      "message": "c4c4829"
+    },
+    {
+      "at": "2026-10-08T18:14:36.332Z",
+      "name": "INDEX",
+      "status": "success",
+      "message": "papers=1147"
+    },
+    {
+      "at": "2026-10-08T18:17:23.546Z",
+      "name": "ERROR",
+      "status": "failed",
+      "message": "Error: Gemini HTTP 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n\n    at callGeminiJson_ (Code:4942:15)\n    at runPaperAutomation (Code:969:9)\n    at __GS_INTERNAL_top_function_call__.gs:1:8"
+    },
+    {
+      "at": "2026-10-08T18:17:23.548Z",
+      "name": "FINISH",
+      "status": "failed",
+      "message": "Error: Gemini HTTP 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n\n    at callGeminiJson_ (Code:4942:15)\n    at runPaperAutomation (Code:969:9)\n    at __GS_INTERNAL_top_function_call__.gs:1:8"
+    }
+  ]
 }
