@@ -1,16 +1,16 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-08T13:24:29.024Z",
+  "updatedAt": "2026-10-08T13:40:33.118Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-08T13:24:00.398Z",
-      "finishedAt": "2026-10-08T13:24:05.556Z",
+      "startedAt": "2026-10-08T13:40:01.057Z",
+      "finishedAt": "2026-10-08T13:40:06.138Z",
       "result": "skipped",
-      "durationMs": 5158,
+      "durationMs": 5081,
       "error": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
     },
     "consecutiveFailures": 0,
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-08T13:24:29.877Z",
+    "updatedAt": "2026-10-08T13:40:33.770Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,7 +253,7 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-08T13:24:16.361Z",
+    "checkedAt": "2026-10-08T13:40:23.779Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-08",
     "planned": 16,
@@ -472,7 +472,7 @@
         "subject": "악어",
         "filename": "악어 성수.png",
         "startDelaySeconds": 8633,
-        "elapsedMinutes": 162.4,
+        "elapsedMinutes": 178.5,
         "diagnosis": "실행 완료"
       },
       {
