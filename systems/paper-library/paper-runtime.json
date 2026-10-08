@@ -1,152 +1,107 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-08T12:18:53.681Z",
+  "updatedAt": "2026-10-08T13:14:25.599Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "success",
-    "runId": "paper-20261008-211426",
-    "startedAt": "2026-10-08T12:14:26.743Z",
-    "finishedAt": "2026-10-08T12:18:53.681Z",
-    "durationMs": 266938,
-    "generatedCount": 5,
+    "status": "running",
+    "runId": "paper-20261008-221425",
+    "startedAt": "2026-10-08T13:14:25.405Z",
+    "finishedAt": null,
+    "durationMs": null,
+    "generatedCount": 0,
     "expectedMax": 6,
-    "lastCommitSha": "4c8b8bf26d74bc393e8007bf149922c0cb3b020b",
+    "lastCommitSha": null,
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 73,
-      "success": 73,
+      "calls": 0,
+      "success": 0,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": 200,
+      "lastHttpStatus": null,
       "disabledForRun": false
     },
     "crossref": {
-      "calls": 65,
-      "success": 63,
-      "retries": 2,
-      "http429": 2,
-      "errors": 2,
-      "lastHttpStatus": 200,
-      "adaptiveIntervalMs": 950,
-      "throttleEvents": 2,
-      "earlyStops": 4
-    },
-    "gemini": {
-      "calls": 5,
-      "success": 5,
+      "calls": 0,
+      "success": 0,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": 200
+      "lastHttpStatus": null,
+      "adaptiveIntervalMs": 650,
+      "throttleEvents": 0,
+      "earlyStops": 0
+    },
+    "gemini": {
+      "calls": 0,
+      "success": 0,
+      "retries": 0,
+      "http429": 0,
+      "errors": 0,
+      "lastHttpStatus": null
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 80,
-      "selectedTitle": "Embodied artificial intelligence",
-      "selectedDoi": "10.1016/s0004-3702(03)00055-9",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "전기",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 100,
-      "selectedTitle": "IEEE Power Electronics Society",
-      "selectedDoi": "10.1109/ojpel.2021.3054488",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "로봇·자동화",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 104,
-      "selectedTitle": "A Cooperative Human-Robot Interface for Constrained Manipulation in Robot-Assisted Endonasal Surgery",
-      "selectedDoi": "10.3390/app10144809",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "에너지·환경",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 117,
-      "selectedTitle": "5538563 Solar energy concentrator apparatus for bifacial photovoltaic cells",
-      "selectedDoi": "10.1016/s0038-092x(97)87973-x",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "건축·시설관리",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 65,
-      "selectedTitle": "Evaluationen zu den Potenzialen von Building Information Modeling/Evaluations on the potentials of Building Information Modeling",
-      "selectedDoi": "10.37544/0005-6650-2018-07-08-52",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "도서관·문헌정보",
-      "status": "no_candidate",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 0,
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     }
   ],
-  "verification": {
-    "filesExist": true,
-    "jsonValid": true,
-    "indexHeadCorrect": true,
-    "indexDetailDoiMatch": true,
-    "noOldDoiDuplicates": true,
-    "noNewDoiDuplicates": true,
-    "ok": true
-  },
-  "stages": [
-    {
-      "at": "2026-10-08T12:14:28.400Z",
-      "name": "START",
-      "status": "running",
-      "message": "논문 자동화 V2.7.4 시작"
-    },
-    {
-      "at": "2026-10-08T12:14:28.676Z",
-      "name": "GITHUB_HEAD",
-      "status": "success",
-      "message": "c87f3c7"
-    },
-    {
-      "at": "2026-10-08T12:14:31.002Z",
-      "name": "INDEX",
-      "status": "success",
-      "message": "papers=1122"
-    },
-    {
-      "at": "2026-10-08T12:18:50.383Z",
-      "name": "GITHUB_COMMIT",
-      "status": "success",
-      "message": "4c8b8bf"
-    },
-    {
-      "at": "2026-10-08T12:18:53.672Z",
-      "name": "VERIFY",
-      "status": "success",
-      "message": "최종 검증 통과"
-    },
-    {
-      "at": "2026-10-08T12:18:53.681Z",
-      "name": "FINISH",
-      "status": "success",
-      "message": "generated=5"
-    }
-  ]
+  "verification": null,
+  "stages": []
 }
