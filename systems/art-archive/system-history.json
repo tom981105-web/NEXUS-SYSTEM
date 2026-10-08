@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-10-08T08:24:41.757Z",
+  "generatedAt": "2026-10-08T08:36:20.813Z",
   "timezone": "Asia/Seoul",
   "schemaVersion": 1,
   "retentionDays": 90,
   "source": "그림 자동화 사용량 로그 / 사용량 로그",
   "summary": {
     "days": 9,
-    "runs": 69,
+    "runs": 70,
     "success": 59,
     "failed": 8,
-    "successRate": 85.5,
+    "successRate": 84.3,
     "avgElapsed": 211.1
   },
   "daily": [
@@ -619,16 +619,16 @@
     },
     {
       "date": "2026-10-08",
-      "runs": 9,
+      "runs": 10,
       "success": 2,
       "failed": 7,
-      "successRate": 22.2,
+      "successRate": 20,
       "avgElapsed": 116.3,
       "maxElapsed": 227,
       "driveVerified": 2,
-      "driveVerifiedRate": 22.2,
+      "driveVerifiedRate": 20,
       "regenerations": 7,
-      "avgStartDelay": 3494.1,
+      "avgStartDelay": 3324.2,
       "series": [
         {
           "name": "크레스트",
@@ -654,14 +654,14 @@
         },
         {
           "name": "신수",
-          "runs": 1,
+          "runs": 2,
           "success": 0,
           "failed": 1,
           "successRate": 0,
           "avgElapsed": 0,
           "driveVerified": 0,
           "regenerations": 1,
-          "avgStartDelay": 2076
+          "avgStartDelay": 1935.5
         },
         {
           "name": "수채화",
