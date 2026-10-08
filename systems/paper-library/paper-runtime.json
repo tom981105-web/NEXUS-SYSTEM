@@ -1,152 +1,107 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-08T14:17:47.315Z",
+  "updatedAt": "2026-10-08T15:14:25.722Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "success",
-    "runId": "paper-20261008-231425",
-    "startedAt": "2026-10-08T14:14:25.634Z",
-    "finishedAt": "2026-10-08T14:17:47.315Z",
-    "durationMs": 201681,
-    "generatedCount": 5,
+    "status": "running",
+    "runId": "paper-20261009-001425",
+    "startedAt": "2026-10-08T15:14:25.445Z",
+    "finishedAt": null,
+    "durationMs": null,
+    "generatedCount": 0,
     "expectedMax": 6,
-    "lastCommitSha": "4b13960ceb37064eb4e8914434502fd77cd0ef0a",
+    "lastCommitSha": null,
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 1,
+      "calls": 0,
       "success": 0,
-      "retries": 0,
-      "http429": 1,
-      "errors": 1,
-      "lastHttpStatus": 429,
-      "disabledForRun": true
-    },
-    "crossref": {
-      "calls": 69,
-      "success": 65,
-      "retries": 4,
-      "http429": 4,
-      "errors": 4,
-      "lastHttpStatus": 200,
-      "adaptiveIntervalMs": 1900,
-      "throttleEvents": 4,
-      "earlyStops": 4
-    },
-    "gemini": {
-      "calls": 5,
-      "success": 5,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": 200
+      "lastHttpStatus": null,
+      "disabledForRun": false
+    },
+    "crossref": {
+      "calls": 0,
+      "success": 0,
+      "retries": 0,
+      "http429": 0,
+      "errors": 0,
+      "lastHttpStatus": null,
+      "adaptiveIntervalMs": 650,
+      "throttleEvents": 0,
+      "earlyStops": 0
+    },
+    "gemini": {
+      "calls": 0,
+      "success": 0,
+      "retries": 0,
+      "http429": 0,
+      "errors": 0,
+      "lastHttpStatus": null
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 118,
-      "selectedTitle": "Context understanding in computer vision: A survey",
-      "selectedDoi": "10.1016/j.cviu.2023.103646",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "전기",
-      "status": "generated",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 100,
-      "selectedTitle": "Cascaded Multilevel Inverter Topology Based on Cascaded H-Bridge Multilevel Inverter",
-      "selectedDoi": "10.3390/en11040895",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "로봇·자동화",
-      "status": "generated",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 101,
-      "selectedTitle": "NASA workshop on robotics and automation in space",
-      "selectedDoi": "10.1016/0167-8493(86)90037-9",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "에너지·환경",
-      "status": "generated",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 114,
-      "selectedTitle": "Silicon photovoltaic cells and the utilization of solar energy",
-      "selectedDoi": "10.1016/0038-092x(61)90077-9",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "건축·시설관리",
-      "status": "generated",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 64,
-      "selectedTitle": "Renovation concepts for net zero energy buildings – best practice residential building Kapfenberg/Austria",
-      "selectedDoi": "10.1080/17512549.2014.941007",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "도서관·문헌정보",
-      "status": "no_candidate",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 0,
+      "crossrefCandidates": null,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     }
   ],
-  "verification": {
-    "filesExist": true,
-    "jsonValid": true,
-    "indexHeadCorrect": true,
-    "indexDetailDoiMatch": true,
-    "noOldDoiDuplicates": true,
-    "noNewDoiDuplicates": true,
-    "ok": true
-  },
-  "stages": [
-    {
-      "at": "2026-10-08T14:14:27.210Z",
-      "name": "START",
-      "status": "running",
-      "message": "논문 자동화 V2.7.4 시작"
-    },
-    {
-      "at": "2026-10-08T14:14:27.561Z",
-      "name": "GITHUB_HEAD",
-      "status": "success",
-      "message": "d68593d"
-    },
-    {
-      "at": "2026-10-08T14:14:30.874Z",
-      "name": "INDEX",
-      "status": "success",
-      "message": "papers=1132"
-    },
-    {
-      "at": "2026-10-08T14:17:42.670Z",
-      "name": "GITHUB_COMMIT",
-      "status": "success",
-      "message": "4b13960"
-    },
-    {
-      "at": "2026-10-08T14:17:47.271Z",
-      "name": "VERIFY",
-      "status": "success",
-      "message": "최종 검증 통과"
-    },
-    {
-      "at": "2026-10-08T14:17:47.315Z",
-      "name": "FINISH",
-      "status": "success",
-      "message": "generated=5"
-    }
-  ]
+  "verification": null,
+  "stages": []
 }
