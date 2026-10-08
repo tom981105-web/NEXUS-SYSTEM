@@ -1,138 +1,107 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-08T19:15:59.864Z",
+  "updatedAt": "2026-10-08T20:14:25.552Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "failed",
-    "runId": "paper-20261009-041425",
-    "startedAt": "2026-10-08T19:14:25.254Z",
-    "finishedAt": "2026-10-08T19:15:59.864Z",
-    "durationMs": 94610,
+    "status": "running",
+    "runId": "paper-20261009-051425",
+    "startedAt": "2026-10-08T20:14:25.341Z",
+    "finishedAt": null,
+    "durationMs": null,
     "generatedCount": 0,
     "expectedMax": 6,
     "lastCommitSha": null,
-    "error": "Error: Gemini HTTP 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n\n    at callGeminiJson_ (Code:4942:15)\n    at runPaperAutomation (Code:969:9)\n    at __GS_INTERNAL_top_function_call__.gs:1:8"
+    "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 1,
+      "calls": 0,
       "success": 0,
       "retries": 0,
-      "http429": 1,
-      "errors": 1,
-      "lastHttpStatus": 429,
-      "disabledForRun": true
+      "http429": 0,
+      "errors": 0,
+      "lastHttpStatus": null,
+      "disabledForRun": false
     },
     "crossref": {
-      "calls": 66,
-      "success": 65,
-      "retries": 1,
-      "http429": 1,
-      "errors": 1,
-      "lastHttpStatus": 200,
-      "adaptiveIntervalMs": 700,
-      "throttleEvents": 1,
-      "earlyStops": 4
+      "calls": 0,
+      "success": 0,
+      "retries": 0,
+      "http429": 0,
+      "errors": 0,
+      "lastHttpStatus": null,
+      "adaptiveIntervalMs": 650,
+      "throttleEvents": 0,
+      "earlyStops": 0
     },
     "gemini": {
-      "calls": 3,
+      "calls": 0,
       "success": 0,
-      "retries": 2,
+      "retries": 0,
       "http429": 0,
-      "errors": 6,
-      "lastHttpStatus": 503
+      "errors": 0,
+      "lastHttpStatus": null
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "analyzing",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 116,
-      "selectedTitle": "Guest Editorial: Local Image Descriptors in Computer Vision",
-      "selectedDoi": "10.1049/iet-cvi.2020.0229",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "전기",
-      "status": "selected",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 97,
-      "selectedTitle": "Rancang Bangun Inverter Pada Generator Aksial Satu Phasa",
-      "selectedDoi": "10.23960/elc.v14n3.2154",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "로봇·자동화",
-      "status": "selected",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 99,
-      "selectedTitle": "Vision for Robust Robot Manipulation",
-      "selectedDoi": "10.3390/s19071648",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "에너지·환경",
-      "status": "selected",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 111,
-      "selectedTitle": "Energy storage systems for PV-based communal grids",
-      "selectedDoi": "10.1016/j.est.2016.05.001",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "건축·시설관리",
-      "status": "selected",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 61,
-      "selectedTitle": "Modelling user acceptance of building management systems",
-      "selectedDoi": "10.1016/s0926-5805(02)00010-9",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "도서관·문헌정보",
-      "status": "no_candidate",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 0,
+      "crossrefCandidates": null,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     }
   ],
   "verification": null,
-  "stages": [
-    {
-      "at": "2026-10-08T19:14:26.766Z",
-      "name": "START",
-      "status": "running",
-      "message": "논문 자동화 V2.7.4 시작"
-    },
-    {
-      "at": "2026-10-08T19:14:27.105Z",
-      "name": "GITHUB_HEAD",
-      "status": "success",
-      "message": "c4c4829"
-    },
-    {
-      "at": "2026-10-08T19:14:29.695Z",
-      "name": "INDEX",
-      "status": "success",
-      "message": "papers=1147"
-    },
-    {
-      "at": "2026-10-08T19:15:59.864Z",
-      "name": "ERROR",
-      "status": "failed",
-      "message": "Error: Gemini HTTP 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n\n    at callGeminiJson_ (Code:4942:15)\n    at runPaperAutomation (Code:969:9)\n    at __GS_INTERNAL_top_function_call__.gs:1:8"
-    },
-    {
-      "at": "2026-10-08T19:15:59.864Z",
-      "name": "FINISH",
-      "status": "failed",
-      "message": "Error: Gemini HTTP 503: {\n  \"error\": {\n    \"code\": 503,\n    \"message\": \"This model is currently experiencing high demand. Spikes in demand are usually temporary. Please try again later.\",\n    \"status\": \"UNAVAILABLE\"\n  }\n}\n\n    at callGeminiJson_ (Code:4942:15)\n    at runPaperAutomation (Code:969:9)\n    at __GS_INTERNAL_top_function_call__.gs:1:8"
-    }
-  ]
+  "stages": []
 }
