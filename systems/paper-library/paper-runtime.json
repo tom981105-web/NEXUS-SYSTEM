@@ -1,107 +1,152 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-08T07:14:26.927Z",
+  "updatedAt": "2026-10-08T07:19:17.955Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "running",
+    "status": "success",
     "runId": "paper-20261008-161426",
     "startedAt": "2026-10-08T07:14:26.722Z",
-    "finishedAt": null,
-    "durationMs": null,
-    "generatedCount": 0,
+    "finishedAt": "2026-10-08T07:19:17.955Z",
+    "durationMs": 291233,
+    "generatedCount": 5,
     "expectedMax": 6,
-    "lastCommitSha": null,
+    "lastCommitSha": "e8ef862fdde295caf20344888d2df18dba2022af",
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 0,
-      "success": 0,
+      "calls": 73,
+      "success": 73,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": null,
+      "lastHttpStatus": 200,
       "disabledForRun": false
     },
     "crossref": {
-      "calls": 0,
-      "success": 0,
-      "retries": 0,
-      "http429": 0,
-      "errors": 0,
-      "lastHttpStatus": null,
-      "adaptiveIntervalMs": 650,
-      "throttleEvents": 0,
-      "earlyStops": 0
+      "calls": 64,
+      "success": 62,
+      "retries": 2,
+      "http429": 2,
+      "errors": 2,
+      "lastHttpStatus": 200,
+      "adaptiveIntervalMs": 1350,
+      "throttleEvents": 2,
+      "earlyStops": 4
     },
     "gemini": {
-      "calls": 0,
-      "success": 0,
+      "calls": 5,
+      "success": 5,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": null
+      "lastHttpStatus": 200
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 83,
+      "selectedTitle": "Artificial intelligence and robotics",
+      "selectedDoi": "10.1016/0004-3702(85)90013-x",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "전기",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 105,
+      "selectedTitle": "Solar PV Sustained Quasi Z-Source Network-Based Unified Power Quality Conditioner for Enhancement of Power Quality",
+      "selectedDoi": "10.3390/en13102657",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "로봇·자동화",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 107,
+      "selectedTitle": "Mobile Robot Simulation and Navigation in ROS and Gazebo",
+      "selectedDoi": "10.46300/9102.2020.14.6",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "에너지·환경",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 81,
+      "selectedTitle": "Effect of temperature on photovoltaic solar energy conversion",
+      "selectedDoi": "10.1016/0038-092x(61)90082-2",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "건축·시설관리",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 68,
+      "selectedTitle": "Facility Management in Ghanaian Public Second Cycle Institutions and Implications for Effective School Facility Management. A Study of the Upper West Region",
+      "selectedDoi": "10.7176/jep/11-7-08",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "도서관·문헌정보",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
+      "status": "no_candidate",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 0,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     }
   ],
-  "verification": null,
-  "stages": []
+  "verification": {
+    "filesExist": true,
+    "jsonValid": true,
+    "indexHeadCorrect": true,
+    "indexDetailDoiMatch": true,
+    "noOldDoiDuplicates": true,
+    "noNewDoiDuplicates": true,
+    "ok": true
+  },
+  "stages": [
+    {
+      "at": "2026-10-08T07:14:28.233Z",
+      "name": "START",
+      "status": "running",
+      "message": "논문 자동화 V2.7.4 시작"
+    },
+    {
+      "at": "2026-10-08T07:14:28.537Z",
+      "name": "GITHUB_HEAD",
+      "status": "success",
+      "message": "4b52fd0"
+    },
+    {
+      "at": "2026-10-08T07:14:32.617Z",
+      "name": "INDEX",
+      "status": "success",
+      "message": "papers=1102"
+    },
+    {
+      "at": "2026-10-08T07:19:08.901Z",
+      "name": "GITHUB_COMMIT",
+      "status": "success",
+      "message": "e8ef862"
+    },
+    {
+      "at": "2026-10-08T07:19:17.934Z",
+      "name": "VERIFY",
+      "status": "success",
+      "message": "최종 검증 통과"
+    },
+    {
+      "at": "2026-10-08T07:19:17.955Z",
+      "name": "FINISH",
+      "status": "success",
+      "message": "generated=5"
+    }
+  ]
 }
