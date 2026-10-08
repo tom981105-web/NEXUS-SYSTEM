@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-10-08T09:02:33.445Z",
+  "generatedAt": "2026-10-08T09:04:57.640Z",
   "source": "그림 자동화 사용량 로그 / 사용량 로그",
   "schemaVersion": 3,
   "summary": {
     "runs": 71,
     "success": 59,
-    "failed": 9,
+    "failed": 10,
     "successRate": 83.1,
     "driveVerified": 59,
-    "regenerations": 8,
+    "regenerations": 9,
     "sourceRows": 74,
     "normalizedPartialRows": 0
   },
@@ -41,9 +41,9 @@
       "name": "수채화",
       "runs": 11,
       "success": 9,
-      "failed": 1,
-      "avgElapsed": 209.5,
-      "regenerations": 1
+      "failed": 2,
+      "avgElapsed": 205.9,
+      "regenerations": 2
     },
     {
       "name": "펄퍼스",
@@ -82,13 +82,13 @@
     {
       "time": "2026-10-08 18:01:39",
       "series": "수채화",
-      "generationAttempts": 0,
-      "regenerations": 0,
+      "generationAttempts": 2,
+      "regenerations": 1,
       "uploadAttempts": 0,
       "driveVerified": false,
-      "result": "running",
-      "elapsedSeconds": null,
-      "stage": "GENERATING",
+      "result": "failed",
+      "elapsedSeconds": 177,
+      "stage": "FAILED",
       "scheduledTime": "2026-10-08 17:09:00",
       "startDelaySeconds": 3159,
       "generatedFilename": null
