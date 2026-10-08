@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T09:02:37.693Z",
+  "generatedAt": "2026-10-08T09:05:02.683Z",
   "timezone": "Asia/Seoul",
   "schemaVersion": 1,
   "retentionDays": 90,
@@ -8,9 +8,9 @@
     "days": 9,
     "runs": 71,
     "success": 59,
-    "failed": 9,
+    "failed": 10,
     "successRate": 83.1,
-    "avgElapsed": 209.7
+    "avgElapsed": 209.2
   },
   "daily": [
     {
@@ -621,13 +621,13 @@
       "date": "2026-10-08",
       "runs": 11,
       "success": 2,
-      "failed": 8,
+      "failed": 9,
       "successRate": 18.2,
-      "avgElapsed": 116.6,
+      "avgElapsed": 122.1,
       "maxElapsed": 227,
       "driveVerified": 2,
       "driveVerifiedRate": 18.2,
-      "regenerations": 7,
+      "regenerations": 8,
       "avgStartDelay": 3309.2,
       "series": [
         {
@@ -667,11 +667,11 @@
           "name": "수채화",
           "runs": 2,
           "success": 0,
-          "failed": 1,
+          "failed": 2,
           "successRate": 0,
-          "avgElapsed": 0,
+          "avgElapsed": 88.5,
           "driveVerified": 0,
-          "regenerations": 1,
+          "regenerations": 2,
           "avgStartDelay": 3539.5
         },
         {
