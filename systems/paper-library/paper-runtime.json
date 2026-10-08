@@ -1,152 +1,107 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-08T15:18:25.791Z",
+  "updatedAt": "2026-10-08T16:14:25.917Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "success",
-    "runId": "paper-20261009-001425",
-    "startedAt": "2026-10-08T15:14:25.445Z",
-    "finishedAt": "2026-10-08T15:18:25.791Z",
-    "durationMs": 240346,
-    "generatedCount": 5,
+    "status": "running",
+    "runId": "paper-20261009-011425",
+    "startedAt": "2026-10-08T16:14:25.711Z",
+    "finishedAt": null,
+    "durationMs": null,
+    "generatedCount": 0,
     "expectedMax": 6,
-    "lastCommitSha": "538d28791e151665ab622fdd1dbb2286aea53af2",
+    "lastCommitSha": null,
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 1,
+      "calls": 0,
       "success": 0,
-      "retries": 0,
-      "http429": 1,
-      "errors": 1,
-      "lastHttpStatus": 429,
-      "disabledForRun": true
-    },
-    "crossref": {
-      "calls": 66,
-      "success": 65,
-      "retries": 1,
-      "http429": 1,
-      "errors": 1,
-      "lastHttpStatus": 200,
-      "adaptiveIntervalMs": 900,
-      "throttleEvents": 1,
-      "earlyStops": 4
-    },
-    "gemini": {
-      "calls": 5,
-      "success": 5,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": 200
+      "lastHttpStatus": null,
+      "disabledForRun": false
+    },
+    "crossref": {
+      "calls": 0,
+      "success": 0,
+      "retries": 0,
+      "http429": 0,
+      "errors": 0,
+      "lastHttpStatus": null,
+      "adaptiveIntervalMs": 650,
+      "throttleEvents": 0,
+      "earlyStops": 0
+    },
+    "gemini": {
+      "calls": 0,
+      "success": 0,
+      "retries": 0,
+      "http429": 0,
+      "errors": 0,
+      "lastHttpStatus": null
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 118,
-      "selectedTitle": "LAS-Transformer: An Enhanced Transformer Based on the Local Attention Mechanism for Speech Recognition",
-      "selectedDoi": "10.3390/info13050250",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "전기",
-      "status": "generated",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 97,
-      "selectedTitle": "GRID TIE INVERTER UNTUK PLTS ATAP DI INDONESIA: REVIEW STANDAR DAN INVERTER YANG COMPLIANCE DI PASAR DOMESTIK",
-      "selectedDoi": "10.24843/spektrum.2020.v07.i02.p9",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "로봇·자동화",
-      "status": "generated",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 101,
-      "selectedTitle": "Autonomous robot motion control situational planning model",
-      "selectedDoi": "10.20998/2522-9052.2020.3.05",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "에너지·환경",
-      "status": "generated",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 115,
-      "selectedTitle": "Wind energy literature survey no. 33",
-      "selectedDoi": "10.1002/we.1782",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "건축·시설관리",
-      "status": "generated",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 64,
-      "selectedTitle": "Building power demand response methods toward smart grid",
-      "selectedDoi": "10.1080/10789669.2014.929887",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "도서관·문헌정보",
-      "status": "no_candidate",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 0,
+      "crossrefCandidates": null,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     }
   ],
-  "verification": {
-    "filesExist": true,
-    "jsonValid": true,
-    "indexHeadCorrect": true,
-    "indexDetailDoiMatch": true,
-    "noOldDoiDuplicates": true,
-    "noNewDoiDuplicates": true,
-    "ok": true
-  },
-  "stages": [
-    {
-      "at": "2026-10-08T15:14:28.523Z",
-      "name": "START",
-      "status": "running",
-      "message": "논문 자동화 V2.7.4 시작"
-    },
-    {
-      "at": "2026-10-08T15:14:29.044Z",
-      "name": "GITHUB_HEAD",
-      "status": "success",
-      "message": "4b13960"
-    },
-    {
-      "at": "2026-10-08T15:14:33.330Z",
-      "name": "INDEX",
-      "status": "success",
-      "message": "papers=1137"
-    },
-    {
-      "at": "2026-10-08T15:18:18.053Z",
-      "name": "GITHUB_COMMIT",
-      "status": "success",
-      "message": "538d287"
-    },
-    {
-      "at": "2026-10-08T15:18:25.566Z",
-      "name": "VERIFY",
-      "status": "success",
-      "message": "최종 검증 통과"
-    },
-    {
-      "at": "2026-10-08T15:18:25.791Z",
-      "name": "FINISH",
-      "status": "success",
-      "message": "generated=5"
-    }
-  ]
+  "verification": null,
+  "stages": []
 }
