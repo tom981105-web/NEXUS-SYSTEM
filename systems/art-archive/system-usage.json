@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-10-08T08:01:18.716Z",
+  "generatedAt": "2026-10-08T08:06:25.440Z",
   "source": "그림 자동화 사용량 로그 / 사용량 로그",
   "schemaVersion": 3,
   "summary": {
     "runs": 68,
-    "success": 58,
+    "success": 59,
     "failed": 7,
-    "successRate": 85.3,
-    "driveVerified": 58,
+    "successRate": 86.8,
+    "driveVerified": 59,
     "regenerations": 7,
     "sourceRows": 71,
     "normalizedPartialRows": 0
@@ -16,9 +16,9 @@
     {
       "name": "크레스트",
       "runs": 13,
-      "success": 10,
+      "success": 11,
       "failed": 2,
-      "avgElapsed": 241.5,
+      "avgElapsed": 248.5,
       "regenerations": 1
     },
     {
@@ -84,11 +84,11 @@
       "series": "크레스트",
       "generationAttempts": 1,
       "regenerations": 0,
-      "uploadAttempts": 0,
-      "driveVerified": false,
-      "result": "running",
-      "elapsedSeconds": 140,
-      "stage": "GENERATED",
+      "uploadAttempts": 2,
+      "driveVerified": true,
+      "result": "success",
+      "elapsedSeconds": 224,
+      "stage": "COMPLETED",
       "scheduledTime": "2026-10-08 17:00:00",
       "startDelaySeconds": 0,
       "generatedFilename": "라쿤 크레스트.png"
