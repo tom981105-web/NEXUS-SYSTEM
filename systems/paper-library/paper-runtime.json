@@ -1,152 +1,107 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-08T01:19:16.879Z",
+  "updatedAt": "2026-10-08T02:14:25.175Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "success",
-    "runId": "paper-20261008-101425",
-    "startedAt": "2026-10-08T01:14:25.308Z",
-    "finishedAt": "2026-10-08T01:19:16.879Z",
-    "durationMs": 291571,
-    "generatedCount": 5,
+    "status": "running",
+    "runId": "paper-20261008-111425",
+    "startedAt": "2026-10-08T02:14:25.008Z",
+    "finishedAt": null,
+    "durationMs": null,
+    "generatedCount": 0,
     "expectedMax": 6,
-    "lastCommitSha": "35e19c1950c4d7e5ae54d173c01824e9d790bc80",
+    "lastCommitSha": null,
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 73,
-      "success": 73,
+      "calls": 0,
+      "success": 0,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": 200,
+      "lastHttpStatus": null,
       "disabledForRun": false
     },
     "crossref": {
-      "calls": 49,
-      "success": 47,
-      "retries": 2,
-      "http429": 2,
-      "errors": 2,
-      "lastHttpStatus": 200,
-      "adaptiveIntervalMs": 1250,
-      "throttleEvents": 2,
-      "earlyStops": 1
-    },
-    "gemini": {
-      "calls": 5,
-      "success": 5,
+      "calls": 0,
+      "success": 0,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": 200
+      "lastHttpStatus": null,
+      "adaptiveIntervalMs": 650,
+      "throttleEvents": 0,
+      "earlyStops": 0
+    },
+    "gemini": {
+      "calls": 0,
+      "success": 0,
+      "retries": 0,
+      "http429": 0,
+      "errors": 0,
+      "lastHttpStatus": null
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 90,
-      "selectedTitle": "Damage Calculation of Distribution Network Lines Relying on BP Neural Network",
-      "selectedDoi": "10.38007/nn.2020.010305",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "전기",
-      "status": "generated",
-      "openAlexCandidates": 2,
+      "status": "pending",
+      "openAlexCandidates": null,
       "crossrefCandidates": null,
-      "selectedTitle": "Sustainable Energy Transition for Renewable and Low Carbon Grid Electricity Generation and Supply",
-      "selectedDoi": "10.3389/fenrg.2021.743114",
-      "sourceProvider": "OpenAlex+Crossref"
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "로봇·자동화",
-      "status": "generated",
-      "openAlexCandidates": 1,
+      "status": "pending",
+      "openAlexCandidates": null,
       "crossrefCandidates": null,
-      "selectedTitle": "Why Are There Still So Many Jobs? The History and Future of Workplace Automation",
-      "selectedDoi": "10.1257/jep.29.3.3",
-      "sourceProvider": "OpenAlex+Crossref"
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "에너지·환경",
-      "status": "generated",
-      "openAlexCandidates": 1,
+      "status": "pending",
+      "openAlexCandidates": null,
       "crossrefCandidates": null,
-      "selectedTitle": "An Overview of CMIP5 and the Experiment Design",
-      "selectedDoi": "10.1175/bams-d-11-00094.1",
-      "sourceProvider": "OpenAlex+Crossref"
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "건축·시설관리",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 73,
-      "selectedTitle": "Integrating web map service and building information modeling for location and transportation analysis in green building certification process",
-      "selectedDoi": "10.1016/j.autcon.2017.01.014",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "도서관·문헌정보",
-      "status": "no_candidate",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 0,
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     }
   ],
-  "verification": {
-    "filesExist": true,
-    "jsonValid": true,
-    "indexHeadCorrect": true,
-    "indexDetailDoiMatch": true,
-    "noOldDoiDuplicates": true,
-    "noNewDoiDuplicates": true,
-    "ok": true
-  },
-  "stages": [
-    {
-      "at": "2026-10-08T01:14:26.926Z",
-      "name": "START",
-      "status": "running",
-      "message": "논문 자동화 V2.7.4 시작"
-    },
-    {
-      "at": "2026-10-08T01:14:27.227Z",
-      "name": "GITHUB_HEAD",
-      "status": "success",
-      "message": "c92b7b6"
-    },
-    {
-      "at": "2026-10-08T01:14:30.920Z",
-      "name": "INDEX",
-      "status": "success",
-      "message": "papers=1072"
-    },
-    {
-      "at": "2026-10-08T01:19:09.101Z",
-      "name": "GITHUB_COMMIT",
-      "status": "success",
-      "message": "35e19c1"
-    },
-    {
-      "at": "2026-10-08T01:19:16.734Z",
-      "name": "VERIFY",
-      "status": "success",
-      "message": "최종 검증 통과"
-    },
-    {
-      "at": "2026-10-08T01:19:16.879Z",
-      "name": "FINISH",
-      "status": "success",
-      "message": "generated=5"
-    }
-  ]
+  "verification": null,
+  "stages": []
 }
