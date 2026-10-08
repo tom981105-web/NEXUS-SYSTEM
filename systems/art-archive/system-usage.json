@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-10-07T23:46:42.054Z",
+  "generatedAt": "2026-10-08T08:00:03.665Z",
   "source": "그림 자동화 사용량 로그 / 사용량 로그",
   "schemaVersion": 3,
   "summary": {
-    "runs": 67,
+    "runs": 68,
     "success": 58,
     "failed": 7,
-    "successRate": 86.6,
+    "successRate": 85.3,
     "driveVerified": 58,
     "regenerations": 7,
-    "sourceRows": 70,
+    "sourceRows": 71,
     "normalizedPartialRows": 0
   },
   "series": [
     {
       "name": "크레스트",
-      "runs": 12,
+      "runs": 13,
       "success": 10,
       "failed": 2,
       "avgElapsed": 250.7,
@@ -79,6 +79,20 @@
     }
   ],
   "recentRuns": [
+    {
+      "time": "2026-10-08 16:58:21",
+      "series": "크레스트",
+      "generationAttempts": 0,
+      "regenerations": 0,
+      "uploadAttempts": 0,
+      "driveVerified": false,
+      "result": "running",
+      "elapsedSeconds": 0,
+      "stage": "GENERATING",
+      "scheduledTime": "2026-10-08 17:00:00",
+      "startDelaySeconds": 0,
+      "generatedFilename": null
+    },
     {
       "time": "2026-10-08 8:43:34",
       "series": "성수",
@@ -232,20 +246,6 @@
       "scheduledTime": "2026-10-07 17:00:00",
       "startDelaySeconds": 0,
       "generatedFilename": "말 크레스트.png"
-    },
-    {
-      "time": "2026-10-06 06:17:03",
-      "series": "묵수",
-      "generationAttempts": 0,
-      "regenerations": 0,
-      "uploadAttempts": 0,
-      "driveVerified": false,
-      "result": "running",
-      "elapsedSeconds": 0,
-      "stage": "REFERENCE_OK",
-      "scheduledTime": "2026-10-06 6:03:00",
-      "startDelaySeconds": 843,
-      "generatedFilename": null
     }
   ]
 }
