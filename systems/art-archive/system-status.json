@@ -1,21 +1,21 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-08T08:29:43.705Z",
+  "updatedAt": "2026-10-08T08:45:26.850Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-08T08:29:00.120Z",
-      "finishedAt": "2026-10-08T08:29:27.646Z",
-      "result": "success",
-      "durationMs": 27526,
-      "error": null
+      "startedAt": "2026-10-08T08:45:00.617Z",
+      "finishedAt": "2026-10-08T08:45:05.682Z",
+      "result": "skipped",
+      "durationMs": 5065,
+      "error": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
     },
     "consecutiveFailures": 0,
-    "busyOrSkipped": false,
-    "busyReason": null,
+    "busyOrSkipped": true,
+    "busyReason": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀",
     "triggerInventoryAvailable": false
   },
   "notionSync": {
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-08T08:29:44.018Z",
+    "updatedAt": "2026-10-08T08:45:27.279Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,16 +253,16 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-08T08:29:33.015Z",
+    "checkedAt": "2026-10-08T08:45:16.774Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-08",
     "planned": 16,
     "success": 2,
-    "failed": 7,
+    "failed": 8,
     "stalled": 0,
     "missed": 1,
     "running": 0,
-    "pending": 6,
+    "pending": 5,
     "status": "error",
     "slots": [
       {
@@ -408,16 +408,16 @@
       {
         "series": "신수",
         "scheduledTime": "17:06",
-        "status": "PENDING",
-        "logRow": null,
-        "runId": null,
-        "stage": null,
-        "result": null,
-        "subject": null,
+        "status": "FAILED",
+        "logRow": 74,
+        "runId": "신수-20261008-173555",
+        "stage": "FAILED",
+        "result": "failed",
+        "subject": "사향소",
         "filename": null,
-        "startDelaySeconds": null,
-        "elapsedMinutes": null,
-        "diagnosis": "예정시각 경과 후 로그 생성 대기"
+        "startDelaySeconds": 1795,
+        "elapsedMinutes": 2,
+        "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
         "series": "수채화",
