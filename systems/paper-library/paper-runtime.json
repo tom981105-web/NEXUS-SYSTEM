@@ -1,152 +1,107 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-08T10:19:08.033Z",
+  "updatedAt": "2026-10-08T11:14:25.983Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "success",
-    "runId": "paper-20261008-191425",
-    "startedAt": "2026-10-08T10:14:25.468Z",
-    "finishedAt": "2026-10-08T10:19:08.033Z",
-    "durationMs": 282565,
-    "generatedCount": 5,
+    "status": "running",
+    "runId": "paper-20261008-201425",
+    "startedAt": "2026-10-08T11:14:25.654Z",
+    "finishedAt": null,
+    "durationMs": null,
+    "generatedCount": 0,
     "expectedMax": 6,
-    "lastCommitSha": "e29ab48b88245bfa4fc14f54613c0545fd4a4eab",
+    "lastCommitSha": null,
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 73,
-      "success": 73,
+      "calls": 0,
+      "success": 0,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": 200,
+      "lastHttpStatus": null,
       "disabledForRun": false
     },
     "crossref": {
-      "calls": 68,
-      "success": 63,
-      "retries": 5,
-      "http429": 3,
-      "errors": 5,
-      "lastHttpStatus": 200,
-      "adaptiveIntervalMs": 1900,
-      "throttleEvents": 3,
-      "earlyStops": 4
-    },
-    "gemini": {
-      "calls": 5,
-      "success": 5,
+      "calls": 0,
+      "success": 0,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": 200
+      "lastHttpStatus": null,
+      "adaptiveIntervalMs": 650,
+      "throttleEvents": 0,
+      "earlyStops": 0
+    },
+    "gemini": {
+      "calls": 0,
+      "success": 0,
+      "retries": 0,
+      "http429": 0,
+      "errors": 0,
+      "lastHttpStatus": null
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 81,
-      "selectedTitle": "Logic and artificial intelligence",
-      "selectedDoi": "10.1016/0004-3702(91)90049-p",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "전기",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 102,
-      "selectedTitle": "Determining potential passive islanding detection indicators for single-point single inverter, single-point multi-inverter and multi-point multi-inverter scenarios",
-      "selectedDoi": "10.17775/cseejpes.2020.05300",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "로봇·자동화",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 106,
-      "selectedTitle": "Acknowledgement to Reviewers of Robotics in 2017",
-      "selectedDoi": "10.3390/robotics7010006",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "에너지·환경",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 118,
-      "selectedTitle": "Wind Energy flips to Open Access",
-      "selectedDoi": "10.1002/we.2632",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "건축·시설관리",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 69,
-      "selectedTitle": "The Building Envelope: A Maintenance Challenge",
-      "selectedDoi": "10.1177/109719639201600205",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "도서관·문헌정보",
-      "status": "no_candidate",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 0,
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     }
   ],
-  "verification": {
-    "filesExist": true,
-    "jsonValid": true,
-    "indexHeadCorrect": true,
-    "indexDetailDoiMatch": true,
-    "noOldDoiDuplicates": true,
-    "noNewDoiDuplicates": true,
-    "ok": true
-  },
-  "stages": [
-    {
-      "at": "2026-10-08T10:14:26.947Z",
-      "name": "START",
-      "status": "running",
-      "message": "논문 자동화 V2.7.4 시작"
-    },
-    {
-      "at": "2026-10-08T10:14:27.402Z",
-      "name": "GITHUB_HEAD",
-      "status": "success",
-      "message": "99d5bb2"
-    },
-    {
-      "at": "2026-10-08T10:14:32.122Z",
-      "name": "INDEX",
-      "status": "success",
-      "message": "papers=1112"
-    },
-    {
-      "at": "2026-10-08T10:19:00.135Z",
-      "name": "GITHUB_COMMIT",
-      "status": "success",
-      "message": "e29ab48"
-    },
-    {
-      "at": "2026-10-08T10:19:07.990Z",
-      "name": "VERIFY",
-      "status": "success",
-      "message": "최종 검증 통과"
-    },
-    {
-      "at": "2026-10-08T10:19:08.033Z",
-      "name": "FINISH",
-      "status": "success",
-      "message": "generated=5"
-    }
-  ]
+  "verification": null,
+  "stages": []
 }
