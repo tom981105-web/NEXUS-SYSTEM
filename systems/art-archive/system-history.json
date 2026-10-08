@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-10-08T09:05:02.683Z",
+  "generatedAt": "2026-10-08T10:30:53.516Z",
   "timezone": "Asia/Seoul",
   "schemaVersion": 1,
   "retentionDays": 90,
   "source": "그림 자동화 사용량 로그 / 사용량 로그",
   "summary": {
     "days": 9,
-    "runs": 71,
-    "success": 59,
+    "runs": 72,
+    "success": 60,
     "failed": 10,
-    "successRate": 83.1,
-    "avgElapsed": 209.2
+    "successRate": 83.3,
+    "avgElapsed": 208.5
   },
   "daily": [
     {
@@ -619,16 +619,16 @@
     },
     {
       "date": "2026-10-08",
-      "runs": 11,
-      "success": 2,
+      "runs": 12,
+      "success": 3,
       "failed": 9,
-      "successRate": 18.2,
-      "avgElapsed": 122.1,
+      "successRate": 25,
+      "avgElapsed": 125.5,
       "maxElapsed": 227,
-      "driveVerified": 2,
-      "driveVerifiedRate": 18.2,
-      "regenerations": 8,
-      "avgStartDelay": 3309.2,
+      "driveVerified": 3,
+      "driveVerifiedRate": 25,
+      "regenerations": 9,
+      "avgStartDelay": 3679.6,
       "series": [
         {
           "name": "크레스트",
@@ -687,14 +687,14 @@
         },
         {
           "name": "잉크",
-          "runs": 1,
-          "success": 0,
+          "runs": 2,
+          "success": 1,
           "failed": 1,
-          "successRate": 0,
-          "avgElapsed": 227,
-          "driveVerified": 0,
-          "regenerations": 1,
-          "avgStartDelay": 7850
+          "successRate": 50,
+          "avgElapsed": 195,
+          "driveVerified": 1,
+          "regenerations": 2,
+          "avgStartDelay": 7802
         },
         {
           "name": "성수",
