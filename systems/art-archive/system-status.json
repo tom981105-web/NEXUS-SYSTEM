@@ -1,16 +1,16 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-08T23:34:46.127Z",
+  "updatedAt": "2026-10-08T23:50:04.620Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-08T23:34:00.053Z",
-      "finishedAt": "2026-10-08T23:34:30.769Z",
+      "startedAt": "2026-10-08T23:45:00.947Z",
+      "finishedAt": "2026-10-08T23:49:37.502Z",
       "result": "success",
-      "durationMs": 30716,
+      "durationMs": 276555,
       "error": null
     },
     "consecutiveFailures": 0,
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-08T23:34:46.627Z",
+    "updatedAt": "2026-10-08T23:50:05.716Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,7 +253,7 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-08T23:34:37.160Z",
+    "checkedAt": "2026-10-08T23:49:49.752Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-09",
     "planned": 16,
@@ -290,7 +290,7 @@
         "subject": "큰뿔양",
         "filename": "큰뿔양 묵수.png",
         "startDelaySeconds": 2003,
-        "elapsedMinutes": 118.2,
+        "elapsedMinutes": 133.4,
         "diagnosis": "실행 완료"
       },
       {
@@ -318,7 +318,7 @@
         "subject": "천산갑",
         "filename": null,
         "startDelaySeconds": 6394,
-        "elapsedMinutes": 39.1,
+        "elapsedMinutes": 54.3,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -346,7 +346,7 @@
         "subject": "오징어",
         "filename": "오징어 잉크.png",
         "startDelaySeconds": 1283,
-        "elapsedMinutes": 118.2,
+        "elapsedMinutes": 133.4,
         "diagnosis": "실행 완료"
       },
       {
@@ -374,7 +374,7 @@
         "subject": "반딧불이",
         "filename": null,
         "startDelaySeconds": 5760,
-        "elapsedMinutes": 37.6,
+        "elapsedMinutes": 52.8,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
