@@ -1,152 +1,107 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-08T05:18:47.005Z",
+  "updatedAt": "2026-10-08T06:14:25.289Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "success",
-    "runId": "paper-20261008-141425",
-    "startedAt": "2026-10-08T05:14:25.496Z",
-    "finishedAt": "2026-10-08T05:18:47.005Z",
-    "durationMs": 261509,
-    "generatedCount": 5,
+    "status": "running",
+    "runId": "paper-20261008-151425",
+    "startedAt": "2026-10-08T06:14:25.094Z",
+    "finishedAt": null,
+    "durationMs": null,
+    "generatedCount": 0,
     "expectedMax": 6,
-    "lastCommitSha": "cce043e6267e5b191a55b61f4acfec5c1a242095",
+    "lastCommitSha": null,
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 73,
-      "success": 73,
+      "calls": 0,
+      "success": 0,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": 200,
+      "lastHttpStatus": null,
       "disabledForRun": false
     },
     "crossref": {
-      "calls": 63,
-      "success": 62,
-      "retries": 1,
-      "http429": 1,
-      "errors": 1,
-      "lastHttpStatus": 200,
-      "adaptiveIntervalMs": 650,
-      "throttleEvents": 1,
-      "earlyStops": 4
-    },
-    "gemini": {
-      "calls": 5,
-      "success": 5,
+      "calls": 0,
+      "success": 0,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": 200
+      "lastHttpStatus": null,
+      "adaptiveIntervalMs": 650,
+      "throttleEvents": 0,
+      "earlyStops": 0
+    },
+    "gemini": {
+      "calls": 0,
+      "success": 0,
+      "retries": 0,
+      "http429": 0,
+      "errors": 0,
+      "lastHttpStatus": null
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 86,
-      "selectedTitle": "Guest Editors' Introduction: On Applied Research in Machine Learning",
-      "selectedDoi": "10.1023/a:1007442505281",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "전기",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 106,
-      "selectedTitle": "Pareto Front Analysis Method for Optimization of PV Inverter Based Volt/Var Control Considering Inverter Lifetime",
-      "selectedDoi": "10.17775/cseejpes.2022.00840",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "로봇·자동화",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 109,
-      "selectedTitle": "Motion Planning Defense Robot Dalam Mengikuti Throw Robot Menggunakan Kontrol Kinematik",
-      "selectedDoi": "10.33795/elk.v8i3.259",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "에너지·환경",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 82,
-      "selectedTitle": "Low-Cost photovoltaic conversion of solar energy",
-      "selectedDoi": "10.1016/0038-092x(63)90181-6",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "건축·시설관리",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 70,
-      "selectedTitle": "Design methods for sustainable, high-performance building facades",
-      "selectedDoi": "10.1080/17512549.2015.1083885",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "도서관·문헌정보",
-      "status": "no_candidate",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 0,
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     }
   ],
-  "verification": {
-    "filesExist": true,
-    "jsonValid": true,
-    "indexHeadCorrect": true,
-    "indexDetailDoiMatch": true,
-    "noOldDoiDuplicates": true,
-    "noNewDoiDuplicates": true,
-    "ok": true
-  },
-  "stages": [
-    {
-      "at": "2026-10-08T05:14:27.413Z",
-      "name": "START",
-      "status": "running",
-      "message": "논문 자동화 V2.7.4 시작"
-    },
-    {
-      "at": "2026-10-08T05:14:27.885Z",
-      "name": "GITHUB_HEAD",
-      "status": "success",
-      "message": "1177273"
-    },
-    {
-      "at": "2026-10-08T05:14:31.129Z",
-      "name": "INDEX",
-      "status": "success",
-      "message": "papers=1092"
-    },
-    {
-      "at": "2026-10-08T05:18:41.857Z",
-      "name": "GITHUB_COMMIT",
-      "status": "success",
-      "message": "cce043e"
-    },
-    {
-      "at": "2026-10-08T05:18:46.995Z",
-      "name": "VERIFY",
-      "status": "success",
-      "message": "최종 검증 통과"
-    },
-    {
-      "at": "2026-10-08T05:18:47.005Z",
-      "name": "FINISH",
-      "status": "success",
-      "message": "generated=5"
-    }
-  ]
+  "verification": null,
+  "stages": []
 }
