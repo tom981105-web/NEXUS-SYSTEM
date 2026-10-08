@@ -1,19 +1,19 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-08T07:19:17.955Z",
+  "updatedAt": "2026-10-08T08:18:40.897Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
     "status": "success",
-    "runId": "paper-20261008-161426",
-    "startedAt": "2026-10-08T07:14:26.722Z",
-    "finishedAt": "2026-10-08T07:19:17.955Z",
-    "durationMs": 291233,
+    "runId": "paper-20261008-171425",
+    "startedAt": "2026-10-08T08:14:25.376Z",
+    "finishedAt": "2026-10-08T08:18:40.897Z",
+    "durationMs": 255521,
     "generatedCount": 5,
     "expectedMax": 6,
-    "lastCommitSha": "e8ef862fdde295caf20344888d2df18dba2022af",
+    "lastCommitSha": "99d5bb2e1c7162740cf1752c53b691060f29f617",
     "error": null
   },
   "providers": {
@@ -30,11 +30,11 @@
       "calls": 64,
       "success": 62,
       "retries": 2,
-      "http429": 2,
+      "http429": 1,
       "errors": 2,
       "lastHttpStatus": 200,
-      "adaptiveIntervalMs": 1350,
-      "throttleEvents": 2,
+      "adaptiveIntervalMs": 650,
+      "throttleEvents": 1,
       "earlyStops": 4
     },
     "gemini": {
@@ -51,18 +51,18 @@
       "name": "인공지능",
       "status": "generated",
       "openAlexCandidates": 0,
-      "crossrefCandidates": 83,
-      "selectedTitle": "Artificial intelligence and robotics",
-      "selectedDoi": "10.1016/0004-3702(85)90013-x",
+      "crossrefCandidates": 82,
+      "selectedTitle": "Artificial intelligence: an empirical science",
+      "selectedDoi": "10.1016/0004-3702(95)00039-h",
       "sourceProvider": "Crossref"
     },
     {
       "name": "전기",
       "status": "generated",
       "openAlexCandidates": 0,
-      "crossrefCandidates": 105,
-      "selectedTitle": "Solar PV Sustained Quasi Z-Source Network-Based Unified Power Quality Conditioner for Enhancement of Power Quality",
-      "selectedDoi": "10.3390/en13102657",
+      "crossrefCandidates": 103,
+      "selectedTitle": "Evaluating Influence of Inverter-based Resources on System Strength Considering Inverter Interaction Level",
+      "selectedDoi": "10.3390/su12083469",
       "sourceProvider": "Crossref"
     },
     {
@@ -70,26 +70,26 @@
       "status": "generated",
       "openAlexCandidates": 0,
       "crossrefCandidates": 107,
-      "selectedTitle": "Mobile Robot Simulation and Navigation in ROS and Gazebo",
-      "selectedDoi": "10.46300/9102.2020.14.6",
+      "selectedTitle": "Water Sink Model for Robot Motion Planning",
+      "selectedDoi": "10.3390/s19061269",
       "sourceProvider": "Crossref"
     },
     {
       "name": "에너지·환경",
       "status": "generated",
       "openAlexCandidates": 0,
-      "crossrefCandidates": 81,
-      "selectedTitle": "Effect of temperature on photovoltaic solar energy conversion",
-      "selectedDoi": "10.1016/0038-092x(61)90082-2",
+      "crossrefCandidates": 80,
+      "selectedTitle": "Evaporated CdS film photovoltaic cells for solar energy conversion",
+      "selectedDoi": "10.1016/0038-092x(60)90094-3",
       "sourceProvider": "Crossref"
     },
     {
       "name": "건축·시설관리",
       "status": "generated",
       "openAlexCandidates": 0,
-      "crossrefCandidates": 68,
-      "selectedTitle": "Facility Management in Ghanaian Public Second Cycle Institutions and Implications for Effective School Facility Management. A Study of the Upper West Region",
-      "selectedDoi": "10.7176/jep/11-7-08",
+      "crossrefCandidates": 67,
+      "selectedTitle": "SCADA Based Centralized Building Energy Management and Automation System",
+      "selectedDoi": "10.23883/ijrter.2018.4027.tx5lm",
       "sourceProvider": "Crossref"
     },
     {
@@ -113,37 +113,37 @@
   },
   "stages": [
     {
-      "at": "2026-10-08T07:14:28.233Z",
+      "at": "2026-10-08T08:14:27.674Z",
       "name": "START",
       "status": "running",
       "message": "논문 자동화 V2.7.4 시작"
     },
     {
-      "at": "2026-10-08T07:14:28.537Z",
+      "at": "2026-10-08T08:14:28.188Z",
       "name": "GITHUB_HEAD",
-      "status": "success",
-      "message": "4b52fd0"
-    },
-    {
-      "at": "2026-10-08T07:14:32.617Z",
-      "name": "INDEX",
-      "status": "success",
-      "message": "papers=1102"
-    },
-    {
-      "at": "2026-10-08T07:19:08.901Z",
-      "name": "GITHUB_COMMIT",
       "status": "success",
       "message": "e8ef862"
     },
     {
-      "at": "2026-10-08T07:19:17.934Z",
+      "at": "2026-10-08T08:14:32.267Z",
+      "name": "INDEX",
+      "status": "success",
+      "message": "papers=1107"
+    },
+    {
+      "at": "2026-10-08T08:18:35.432Z",
+      "name": "GITHUB_COMMIT",
+      "status": "success",
+      "message": "99d5bb2"
+    },
+    {
+      "at": "2026-10-08T08:18:40.877Z",
       "name": "VERIFY",
       "status": "success",
       "message": "최종 검증 통과"
     },
     {
-      "at": "2026-10-08T07:19:17.955Z",
+      "at": "2026-10-08T08:18:40.897Z",
       "name": "FINISH",
       "status": "success",
       "message": "generated=5"
