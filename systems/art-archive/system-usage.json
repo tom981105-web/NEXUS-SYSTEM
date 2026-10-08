@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-10-08T22:25:13.233Z",
+  "generatedAt": "2026-10-08T23:04:33.280Z",
   "source": "그림 자동화 사용량 로그 / 사용량 로그",
   "schemaVersion": 3,
   "summary": {
-    "runs": 77,
+    "runs": 79,
     "success": 64,
-    "failed": 11,
-    "successRate": 83.1,
+    "failed": 13,
+    "successRate": 81,
     "driveVerified": 64,
-    "regenerations": 18,
-    "sourceRows": 82,
+    "regenerations": 20,
+    "sourceRows": 84,
     "normalizedPartialRows": 0
   },
   "series": [
@@ -39,11 +39,11 @@
     },
     {
       "name": "수채화",
-      "runs": 11,
+      "runs": 12,
       "success": 9,
-      "failed": 2,
+      "failed": 3,
       "avgElapsed": 205.9,
-      "regenerations": 2
+      "regenerations": 3
     },
     {
       "name": "펄퍼스",
@@ -71,14 +71,42 @@
     },
     {
       "name": "융화",
-      "runs": 3,
+      "runs": 4,
       "success": 3,
-      "failed": 0,
+      "failed": 1,
       "avgElapsed": 366,
-      "regenerations": 0
+      "regenerations": 1
     }
   ],
   "recentRuns": [
+    {
+      "time": "2026-10-09 07:59:20",
+      "series": "수채화",
+      "generationAttempts": 2,
+      "regenerations": 1,
+      "uploadAttempts": 0,
+      "driveVerified": false,
+      "result": "failed",
+      "elapsedSeconds": null,
+      "stage": "FAILED",
+      "scheduledTime": "2026-10-09 6:09:00",
+      "startDelaySeconds": 6394,
+      "generatedFilename": null
+    },
+    {
+      "time": "2026-10-09 07:59:20",
+      "series": "융화",
+      "generationAttempts": 2,
+      "regenerations": 1,
+      "uploadAttempts": 0,
+      "driveVerified": false,
+      "result": "failed",
+      "elapsedSeconds": null,
+      "stage": "FAILED",
+      "scheduledTime": "2026-10-09 6:21:00",
+      "startDelaySeconds": 5760,
+      "generatedFilename": null
+    },
     {
       "time": "2026-10-09 06:44:20",
       "series": "묵수",
@@ -218,34 +246,6 @@
       "scheduledTime": "2026-10-08 17:00:00",
       "startDelaySeconds": 0,
       "generatedFilename": "라쿤 크레스트.png"
-    },
-    {
-      "time": "2026-10-08 8:43:34",
-      "series": "성수",
-      "generationAttempts": 1,
-      "regenerations": 0,
-      "uploadAttempts": 1,
-      "driveVerified": true,
-      "result": "success",
-      "elapsedSeconds": 145,
-      "stage": "COMPLETED",
-      "scheduledTime": "2026-10-08 6:18:00",
-      "startDelaySeconds": 8734,
-      "generatedFilename": "코뿔소 성수.png"
-    },
-    {
-      "time": "2026-10-08 08:26:07",
-      "series": "잉크",
-      "generationAttempts": 2,
-      "regenerations": 1,
-      "uploadAttempts": 2,
-      "driveVerified": false,
-      "result": "failed",
-      "elapsedSeconds": 227,
-      "stage": "FAILED",
-      "scheduledTime": "2026-10-08 6:15:00",
-      "startDelaySeconds": 7850,
-      "generatedFilename": "대왕문어 잉크.png"
     }
   ]
 }
