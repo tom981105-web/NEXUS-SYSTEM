@@ -1,16 +1,16 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-09T09:39:57.908Z",
+  "updatedAt": "2026-10-09T09:55:58.833Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-09T09:39:00.268Z",
-      "finishedAt": "2026-10-09T09:39:39.182Z",
+      "startedAt": "2026-10-09T09:55:00.258Z",
+      "finishedAt": "2026-10-09T09:55:39.574Z",
       "result": "success",
-      "durationMs": 38914,
+      "durationMs": 39316,
       "error": null
     },
     "consecutiveFailures": 0,
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-09T09:39:58.355Z",
+    "updatedAt": "2026-10-09T09:55:59.412Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,7 +253,7 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-09T09:39:48.256Z",
+    "checkedAt": "2026-10-09T09:55:46.932Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-09",
     "planned": 16,
@@ -290,7 +290,7 @@
         "subject": "큰뿔양",
         "filename": "큰뿔양 묵수.png",
         "startDelaySeconds": 2003,
-        "elapsedMinutes": 723.4,
+        "elapsedMinutes": 739.4,
         "diagnosis": "실행 완료"
       },
       {
@@ -318,7 +318,7 @@
         "subject": "큰부리새",
         "filename": null,
         "startDelaySeconds": 15803,
-        "elapsedMinutes": 487.4,
+        "elapsedMinutes": 503.4,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -346,7 +346,7 @@
         "subject": "오징어",
         "filename": "오징어 잉크.png",
         "startDelaySeconds": 1283,
-        "elapsedMinutes": 723.4,
+        "elapsedMinutes": 739.4,
         "diagnosis": "실행 완료"
       },
       {
@@ -374,7 +374,7 @@
         "subject": "반딧불이",
         "filename": null,
         "startDelaySeconds": 5760,
-        "elapsedMinutes": 642.8,
+        "elapsedMinutes": 658.8,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -388,7 +388,7 @@
         "subject": "사마귀",
         "filename": "사마귀 크레스트.png",
         "startDelaySeconds": 301,
-        "elapsedMinutes": 94.8,
+        "elapsedMinutes": 110.8,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -416,7 +416,7 @@
         "subject": "바다코끼리",
         "filename": "바다코끼리 신수.png",
         "startDelaySeconds": 4410,
-        "elapsedMinutes": 20.3,
+        "elapsedMinutes": 36.3,
         "diagnosis": "COMPLETED_WITH_FORMAT_DEVIATION 단계 진행 중"
       },
       {
@@ -472,7 +472,7 @@
         "subject": "백룡",
         "filename": "백룡 성수.png",
         "startDelaySeconds": 3690,
-        "elapsedMinutes": 20.3,
+        "elapsedMinutes": 36.3,
         "diagnosis": "COMPLETED_WITH_FORMAT_DEVIATION 단계 진행 중"
       },
       {
