@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-10-09T08:11:56.013Z",
+  "generatedAt": "2026-10-09T09:28:01.371Z",
   "timezone": "Asia/Seoul",
   "schemaVersion": 1,
   "retentionDays": 90,
   "source": "그림 자동화 사용량 로그 / 사용량 로그",
   "summary": {
     "days": 10,
-    "runs": 85,
+    "runs": 87,
     "success": 66,
     "failed": 17,
-    "successRate": 77.6,
+    "successRate": 75.9,
     "avgElapsed": 206.8
   },
   "daily": [
@@ -711,14 +711,14 @@
     },
     {
       "date": "2026-10-09",
-      "runs": 12,
+      "runs": 14,
       "success": 5,
       "failed": 7,
-      "successRate": 41.7,
+      "successRate": 35.7,
       "avgElapsed": 179.5,
       "maxElapsed": 270,
-      "driveVerified": 5,
-      "driveVerifiedRate": 41.7,
+      "driveVerified": 7,
+      "driveVerifiedRate": 50,
       "regenerations": 15,
       "avgStartDelay": 4716.7,
       "series": [
@@ -743,6 +743,17 @@
           "driveVerified": 1,
           "regenerations": 2,
           "avgStartDelay": 2003
+        },
+        {
+          "name": "신수",
+          "runs": 1,
+          "success": 0,
+          "failed": 0,
+          "successRate": 0,
+          "avgElapsed": null,
+          "driveVerified": 1,
+          "regenerations": 0,
+          "avgStartDelay": null
         },
         {
           "name": "수채화",
@@ -776,6 +787,17 @@
           "driveVerified": 1,
           "regenerations": 1,
           "avgStartDelay": 1283
+        },
+        {
+          "name": "성수",
+          "runs": 1,
+          "success": 0,
+          "failed": 0,
+          "successRate": 0,
+          "avgElapsed": null,
+          "driveVerified": 1,
+          "regenerations": 0,
+          "avgStartDelay": null
         },
         {
           "name": "융화",
