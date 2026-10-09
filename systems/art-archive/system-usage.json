@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-10-09T09:33:19.427Z",
+  "generatedAt": "2026-10-09T10:04:40.046Z",
   "source": "그림 자동화 사용량 로그 / 사용량 로그",
   "schemaVersion": 3,
   "summary": {
-    "runs": 87,
+    "runs": 89,
     "success": 66,
-    "failed": 17,
-    "successRate": 75.9,
+    "failed": 19,
+    "successRate": 74.2,
     "driveVerified": 68,
-    "regenerations": 25,
-    "sourceRows": 94,
+    "regenerations": 27,
+    "sourceRows": 96,
     "normalizedPartialRows": 0
   },
   "series": [
@@ -39,11 +39,11 @@
     },
     {
       "name": "수채화",
-      "runs": 14,
+      "runs": 15,
       "success": 9,
-      "failed": 5,
+      "failed": 6,
       "avgElapsed": 205.9,
-      "regenerations": 5
+      "regenerations": 6
     },
     {
       "name": "펄퍼스",
@@ -71,14 +71,42 @@
     },
     {
       "name": "융화",
-      "runs": 4,
+      "runs": 5,
       "success": 3,
-      "failed": 1,
+      "failed": 2,
       "avgElapsed": 366,
-      "regenerations": 1
+      "regenerations": 2
     }
   ],
   "recentRuns": [
+    {
+      "time": "2026-10-09 19:04:15",
+      "series": "수채화",
+      "generationAttempts": 2,
+      "regenerations": 1,
+      "uploadAttempts": 0,
+      "driveVerified": false,
+      "result": "failed",
+      "elapsedSeconds": null,
+      "stage": "FAILED",
+      "scheduledTime": "2026-10-09 17:09:00",
+      "startDelaySeconds": 6671,
+      "generatedFilename": null
+    },
+    {
+      "time": "2026-10-09 19:04:15",
+      "series": "융화",
+      "generationAttempts": 2,
+      "regenerations": 1,
+      "uploadAttempts": 0,
+      "driveVerified": false,
+      "result": "failed",
+      "elapsedSeconds": null,
+      "stage": "FAILED",
+      "scheduledTime": "2026-10-09 17:21:00",
+      "startDelaySeconds": 5951,
+      "generatedFilename": null
+    },
     {
       "time": "2026-10-09 18:26:40",
       "series": "신수",
@@ -218,34 +246,6 @@
       "scheduledTime": "2026-10-09 6:21:00",
       "startDelaySeconds": 5760,
       "generatedFilename": null
-    },
-    {
-      "time": "2026-10-09 06:44:20",
-      "series": "묵수",
-      "generationAttempts": 3,
-      "regenerations": 2,
-      "uploadAttempts": 2,
-      "driveVerified": true,
-      "result": "success",
-      "elapsedSeconds": null,
-      "stage": "COMPLETED",
-      "scheduledTime": "2026-10-09 6:03:00",
-      "startDelaySeconds": 2003,
-      "generatedFilename": "큰뿔양 묵수.png"
-    },
-    {
-      "time": "2026-10-09 06:44:20",
-      "series": "잉크",
-      "generationAttempts": 2,
-      "regenerations": 1,
-      "uploadAttempts": 1,
-      "driveVerified": true,
-      "result": "success",
-      "elapsedSeconds": null,
-      "stage": "COMPLETED",
-      "scheduledTime": "2026-10-09 6:15:00",
-      "startDelaySeconds": 1283,
-      "generatedFilename": "오징어 잉크.png"
     }
   ]
 }
