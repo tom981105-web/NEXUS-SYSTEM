@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-10-09T00:31:49.510Z",
+  "generatedAt": "2026-10-09T01:38:24.653Z",
   "source": "그림 자동화 사용량 로그 / 사용량 로그",
   "schemaVersion": 3,
   "summary": {
-    "runs": 81,
-    "success": 64,
-    "failed": 15,
-    "successRate": 79,
-    "driveVerified": 64,
-    "regenerations": 22,
-    "sourceRows": 86,
+    "runs": 83,
+    "success": 65,
+    "failed": 16,
+    "successRate": 78.3,
+    "driveVerified": 65,
+    "regenerations": 23,
+    "sourceRows": 88,
     "normalizedPartialRows": 0
   },
   "series": [
@@ -39,18 +39,18 @@
     },
     {
       "name": "수채화",
-      "runs": 13,
+      "runs": 14,
       "success": 9,
-      "failed": 4,
+      "failed": 5,
       "avgElapsed": 205.9,
-      "regenerations": 4
+      "regenerations": 5
     },
     {
       "name": "펄퍼스",
-      "runs": 10,
-      "success": 7,
+      "runs": 11,
+      "success": 8,
       "failed": 3,
-      "avgElapsed": 186.2,
+      "avgElapsed": 194.3,
       "regenerations": 4
     },
     {
@@ -79,6 +79,34 @@
     }
   ],
   "recentRuns": [
+    {
+      "time": "2026-10-09 10:38:07",
+      "series": "수채화",
+      "generationAttempts": 2,
+      "regenerations": 1,
+      "uploadAttempts": 0,
+      "driveVerified": false,
+      "result": "failed",
+      "elapsedSeconds": null,
+      "stage": "FAILED",
+      "scheduledTime": null,
+      "startDelaySeconds": null,
+      "generatedFilename": null
+    },
+    {
+      "time": "2026-10-09 10:38:07",
+      "series": "펄퍼스",
+      "generationAttempts": 1,
+      "regenerations": 0,
+      "uploadAttempts": 2,
+      "driveVerified": true,
+      "result": "success",
+      "elapsedSeconds": 267,
+      "stage": "COMPLETED",
+      "scheduledTime": null,
+      "startDelaySeconds": null,
+      "generatedFilename": null
+    },
     {
       "time": "2026-10-09 09:31:03",
       "series": "수채화",
@@ -218,34 +246,6 @@
       "scheduledTime": "2026-10-08 17:15:00",
       "startDelaySeconds": 7754,
       "generatedFilename": "용 잉크.png"
-    },
-    {
-      "time": "2026-10-08 18:01:39",
-      "series": "수채화",
-      "generationAttempts": 2,
-      "regenerations": 1,
-      "uploadAttempts": 0,
-      "driveVerified": false,
-      "result": "failed",
-      "elapsedSeconds": 177,
-      "stage": "FAILED",
-      "scheduledTime": "2026-10-08 17:09:00",
-      "startDelaySeconds": 3159,
-      "generatedFilename": null
-    },
-    {
-      "time": "2026-10-08 17:35:55",
-      "series": "신수",
-      "generationAttempts": 1,
-      "regenerations": 0,
-      "uploadAttempts": 2,
-      "driveVerified": false,
-      "result": "failed",
-      "elapsedSeconds": 119,
-      "stage": "FAILED",
-      "scheduledTime": "2026-10-08 17:06:00",
-      "startDelaySeconds": 1795,
-      "generatedFilename": null
     }
   ]
 }
