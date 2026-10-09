@@ -1,25 +1,25 @@
 {
-  "generatedAt": "2026-10-09T10:04:40.046Z",
+  "generatedAt": "2026-10-09T12:30:44.610Z",
   "source": "그림 자동화 사용량 로그 / 사용량 로그",
   "schemaVersion": 3,
   "summary": {
-    "runs": 89,
+    "runs": 90,
     "success": 66,
-    "failed": 19,
-    "successRate": 74.2,
+    "failed": 20,
+    "successRate": 73.3,
     "driveVerified": 68,
-    "regenerations": 27,
-    "sourceRows": 96,
+    "regenerations": 28,
+    "sourceRows": 97,
     "normalizedPartialRows": 0
   },
   "series": [
     {
       "name": "크레스트",
-      "runs": 15,
+      "runs": 16,
       "success": 12,
-      "failed": 3,
+      "failed": 4,
       "avgElapsed": 250.2,
-      "regenerations": 5
+      "regenerations": 6
     },
     {
       "name": "묵수",
@@ -79,6 +79,20 @@
     }
   ],
   "recentRuns": [
+    {
+      "time": "2026-10-09 21:29:57",
+      "series": "크레스트",
+      "generationAttempts": 2,
+      "regenerations": 1,
+      "uploadAttempts": 0,
+      "driveVerified": false,
+      "result": "failed",
+      "elapsedSeconds": null,
+      "stage": null,
+      "scheduledTime": null,
+      "startDelaySeconds": null,
+      "generatedFilename": null
+    },
     {
       "time": "2026-10-09 19:04:15",
       "series": "수채화",
@@ -231,20 +245,6 @@
       "stage": "FAILED",
       "scheduledTime": "2026-10-09 6:09:00",
       "startDelaySeconds": 6394,
-      "generatedFilename": null
-    },
-    {
-      "time": "2026-10-09 07:59:20",
-      "series": "융화",
-      "generationAttempts": 2,
-      "regenerations": 1,
-      "uploadAttempts": 0,
-      "driveVerified": false,
-      "result": "failed",
-      "elapsedSeconds": null,
-      "stage": "FAILED",
-      "scheduledTime": "2026-10-09 6:21:00",
-      "startDelaySeconds": 5760,
       "generatedFilename": null
     }
   ]
