@@ -1,152 +1,107 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-09T07:19:32.112Z",
+  "updatedAt": "2026-10-09T08:14:25.465Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "success",
-    "runId": "paper-20261009-161425",
-    "startedAt": "2026-10-09T07:14:25.397Z",
-    "finishedAt": "2026-10-09T07:19:32.111Z",
-    "durationMs": 306714,
-    "generatedCount": 5,
+    "status": "running",
+    "runId": "paper-20261009-171425",
+    "startedAt": "2026-10-09T08:14:25.257Z",
+    "finishedAt": null,
+    "durationMs": null,
+    "generatedCount": 0,
     "expectedMax": 6,
-    "lastCommitSha": "8fcef2a50b0759b9bd3498252b64136ae6abc5b3",
+    "lastCommitSha": null,
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 73,
-      "success": 73,
+      "calls": 0,
+      "success": 0,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": 200,
+      "lastHttpStatus": null,
       "disabledForRun": false
     },
     "crossref": {
-      "calls": 71,
-      "success": 65,
-      "retries": 6,
-      "http429": 6,
-      "errors": 6,
-      "lastHttpStatus": 200,
-      "adaptiveIntervalMs": 2400,
-      "throttleEvents": 6,
-      "earlyStops": 4
-    },
-    "gemini": {
-      "calls": 5,
-      "success": 5,
+      "calls": 0,
+      "success": 0,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": 200
+      "lastHttpStatus": null,
+      "adaptiveIntervalMs": 650,
+      "throttleEvents": 0,
+      "earlyStops": 0
+    },
+    "gemini": {
+      "calls": 0,
+      "success": 0,
+      "retries": 0,
+      "http429": 0,
+      "errors": 0,
+      "lastHttpStatus": null
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 109,
-      "selectedTitle": "Guest Editorial: Computer Vision for Animal Biometrics",
-      "selectedDoi": "10.1049/iet-cvi.2018.0019",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "전기",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 86,
-      "selectedTitle": "Power quality enhancement utilising single-phase unified power quality conditioner: digital signal processor-based experimental validation",
-      "selectedDoi": "10.1049/iet-pel.2010.0031",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "로봇·자동화",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 90,
-      "selectedTitle": "Robotics and the space station",
-      "selectedDoi": "10.1016/s0167-8493(85)90121-4",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "에너지·환경",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 102,
-      "selectedTitle": "Wind Energy literature survey no. 3",
-      "selectedDoi": "10.1002/we.53",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "건축·시설관리",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 50,
-      "selectedTitle": "<i>Editorial:</i>\n            Building Performance Simulation: The Now and the Not Yet",
-      "selectedDoi": "10.1080/10789669.2006.10391194",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "도서관·문헌정보",
-      "status": "no_candidate",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 0,
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     }
   ],
-  "verification": {
-    "filesExist": true,
-    "jsonValid": true,
-    "indexHeadCorrect": true,
-    "indexDetailDoiMatch": true,
-    "noOldDoiDuplicates": true,
-    "noNewDoiDuplicates": true,
-    "ok": true
-  },
-  "stages": [
-    {
-      "at": "2026-10-09T07:14:27.017Z",
-      "name": "START",
-      "status": "running",
-      "message": "논문 자동화 V2.7.4 시작"
-    },
-    {
-      "at": "2026-10-09T07:14:27.313Z",
-      "name": "GITHUB_HEAD",
-      "status": "success",
-      "message": "c1d8431"
-    },
-    {
-      "at": "2026-10-09T07:14:31.326Z",
-      "name": "INDEX",
-      "status": "success",
-      "message": "papers=1202"
-    },
-    {
-      "at": "2026-10-09T07:19:28.883Z",
-      "name": "GITHUB_COMMIT",
-      "status": "success",
-      "message": "8fcef2a"
-    },
-    {
-      "at": "2026-10-09T07:19:32.090Z",
-      "name": "VERIFY",
-      "status": "success",
-      "message": "최종 검증 통과"
-    },
-    {
-      "at": "2026-10-09T07:19:32.111Z",
-      "name": "FINISH",
-      "status": "success",
-      "message": "generated=5"
-    }
-  ]
+  "verification": null,
+  "stages": []
 }
