@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-10-09T21:05:32.169Z",
+  "generatedAt": "2026-10-09T21:40:26.963Z",
   "source": "그림 자동화 사용량 로그 / 사용량 로그",
   "schemaVersion": 3,
   "summary": {
-    "runs": 94,
+    "runs": 96,
     "success": 66,
-    "failed": 24,
-    "successRate": 70.2,
+    "failed": 26,
+    "successRate": 68.8,
     "driveVerified": 68,
-    "regenerations": 31,
-    "sourceRows": 101,
+    "regenerations": 33,
+    "sourceRows": 103,
     "normalizedPartialRows": 0
   },
   "series": [
@@ -23,11 +23,11 @@
     },
     {
       "name": "묵수",
-      "runs": 14,
+      "runs": 15,
       "success": 10,
-      "failed": 3,
+      "failed": 4,
       "avgElapsed": 243.7,
-      "regenerations": 4
+      "regenerations": 5
     },
     {
       "name": "신수",
@@ -55,11 +55,11 @@
     },
     {
       "name": "잉크",
-      "runs": 9,
+      "runs": 10,
       "success": 7,
-      "failed": 1,
+      "failed": 2,
       "avgElapsed": 157.3,
-      "regenerations": 3
+      "regenerations": 4
     },
     {
       "name": "성수",
@@ -79,6 +79,34 @@
     }
   ],
   "recentRuns": [
+    {
+      "time": "2026-10-10 06:35:34",
+      "series": "묵수",
+      "generationAttempts": 2,
+      "regenerations": 1,
+      "uploadAttempts": 0,
+      "driveVerified": false,
+      "result": "failed",
+      "elapsedSeconds": null,
+      "stage": "FAILED",
+      "scheduledTime": "2026-10-10 6:03:00",
+      "startDelaySeconds": 1954,
+      "generatedFilename": null
+    },
+    {
+      "time": "2026-10-10 06:35:34",
+      "series": "잉크",
+      "generationAttempts": 2,
+      "regenerations": 1,
+      "uploadAttempts": 0,
+      "driveVerified": false,
+      "result": "failed",
+      "elapsedSeconds": null,
+      "stage": "FAILED",
+      "scheduledTime": "2026-10-10 6:15:00",
+      "startDelaySeconds": 1234,
+      "generatedFilename": null
+    },
     {
       "time": "2026-10-10 06:04:52",
       "series": "크레스트",
@@ -218,34 +246,6 @@
       "scheduledTime": "2026-10-09 17:00:00",
       "startDelaySeconds": 0,
       "generatedFilename": "패션프루트 펄퍼스.png"
-    },
-    {
-      "time": "2026-10-09 17:05:01",
-      "series": "크레스트",
-      "generationAttempts": 2,
-      "regenerations": 1,
-      "uploadAttempts": 0,
-      "driveVerified": false,
-      "result": "failed",
-      "elapsedSeconds": null,
-      "stage": "FAILED",
-      "scheduledTime": "2026-10-09 17:00:00",
-      "startDelaySeconds": 301,
-      "generatedFilename": "사마귀 크레스트.png"
-    },
-    {
-      "time": "2026-10-09 10:38:07",
-      "series": "수채화",
-      "generationAttempts": 2,
-      "regenerations": 1,
-      "uploadAttempts": 0,
-      "driveVerified": false,
-      "result": "failed",
-      "elapsedSeconds": null,
-      "stage": "FAILED",
-      "scheduledTime": "2026-10-09 6:09:00",
-      "startDelaySeconds": 15803,
-      "generatedFilename": null
     }
   ]
 }
