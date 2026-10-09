@@ -1,21 +1,21 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-09T18:21:55.692Z",
+  "updatedAt": "2026-10-09T18:37:31.680Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-09T18:21:00.396Z",
-      "finishedAt": "2026-10-09T18:21:36.559Z",
-      "result": "success",
-      "durationMs": 36163,
-      "error": null
+      "startedAt": "2026-10-09T18:37:00.357Z",
+      "finishedAt": "2026-10-09T18:37:05.555Z",
+      "result": "skipped",
+      "durationMs": 5198,
+      "error": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
     },
     "consecutiveFailures": 0,
-    "busyOrSkipped": false,
-    "busyReason": null,
+    "busyOrSkipped": true,
+    "busyReason": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀",
     "triggerInventoryAvailable": false
   },
   "notionSync": {
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-09T18:21:56.164Z",
+    "updatedAt": "2026-10-09T18:37:31.856Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,7 +253,7 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-09T18:21:44.202Z",
+    "checkedAt": "2026-10-09T18:37:18.588Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-10",
     "planned": 16,
@@ -276,7 +276,7 @@
         "subject": "공작",
         "filename": null,
         "startDelaySeconds": 0,
-        "elapsedMinutes": 174.3,
+        "elapsedMinutes": 189.8,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -290,7 +290,7 @@
         "subject": "북극여우",
         "filename": null,
         "startDelaySeconds": 0,
-        "elapsedMinutes": 174.3,
+        "elapsedMinutes": 189.8,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
