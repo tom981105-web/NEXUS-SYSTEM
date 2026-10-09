@@ -1,16 +1,16 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-09T19:55:34.207Z",
+  "updatedAt": "2026-10-09T20:11:27.461Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-09T19:55:00.921Z",
-      "finishedAt": "2026-10-09T19:55:06.126Z",
+      "startedAt": "2026-10-09T20:11:00.743Z",
+      "finishedAt": "2026-10-09T20:11:05.804Z",
       "result": "skipped",
-      "durationMs": 5205,
+      "durationMs": 5061,
       "error": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
     },
     "consecutiveFailures": 0,
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-09T19:55:35.071Z",
+    "updatedAt": "2026-10-09T20:11:27.998Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,7 +253,7 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-09T19:55:21.015Z",
+    "checkedAt": "2026-10-09T20:11:16.763Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-10",
     "planned": 16,
@@ -276,7 +276,7 @@
         "subject": "공작",
         "filename": null,
         "startDelaySeconds": 0,
-        "elapsedMinutes": 267.9,
+        "elapsedMinutes": 283.8,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -290,7 +290,7 @@
         "subject": "북극여우",
         "filename": null,
         "startDelaySeconds": 0,
-        "elapsedMinutes": 267.9,
+        "elapsedMinutes": 283.8,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
