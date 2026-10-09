@@ -1,21 +1,21 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-09T14:23:03.948Z",
+  "updatedAt": "2026-10-09T14:23:32.239Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-09T14:22:10.463Z",
-      "finishedAt": "2026-10-09T14:22:45.301Z",
-      "result": "success",
-      "durationMs": 34838,
-      "error": null
+      "startedAt": "2026-10-09T14:23:00.603Z",
+      "finishedAt": "2026-10-09T14:23:05.710Z",
+      "result": "skipped",
+      "durationMs": 5107,
+      "error": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
     },
     "consecutiveFailures": 0,
-    "busyOrSkipped": false,
-    "busyReason": null,
+    "busyOrSkipped": true,
+    "busyReason": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀",
     "triggerInventoryAvailable": false
   },
   "notionSync": {
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-09T14:23:04.283Z",
+    "updatedAt": "2026-10-09T14:23:32.468Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,7 +253,7 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-09T14:22:53.071Z",
+    "checkedAt": "2026-10-09T14:23:19.254Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-09",
     "planned": 16,
@@ -290,7 +290,7 @@
         "subject": "큰뿔양",
         "filename": "큰뿔양 묵수.png",
         "startDelaySeconds": 2003,
-        "elapsedMinutes": 1006.5,
+        "elapsedMinutes": 1006.9,
         "diagnosis": "실행 완료"
       },
       {
@@ -318,7 +318,7 @@
         "subject": "큰부리새",
         "filename": null,
         "startDelaySeconds": 15803,
-        "elapsedMinutes": 770.5,
+        "elapsedMinutes": 770.9,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -346,7 +346,7 @@
         "subject": "오징어",
         "filename": "오징어 잉크.png",
         "startDelaySeconds": 1283,
-        "elapsedMinutes": 1006.5,
+        "elapsedMinutes": 1006.9,
         "diagnosis": "실행 완료"
       },
       {
@@ -374,7 +374,7 @@
         "subject": "반딧불이",
         "filename": null,
         "startDelaySeconds": 5760,
-        "elapsedMinutes": 925.9,
+        "elapsedMinutes": 926.3,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -388,7 +388,7 @@
         "subject": null,
         "filename": null,
         "startDelaySeconds": 16197,
-        "elapsedMinutes": 112.9,
+        "elapsedMinutes": 113.4,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -416,7 +416,7 @@
         "subject": "바다코끼리",
         "filename": "바다코끼리 신수.png",
         "startDelaySeconds": 4410,
-        "elapsedMinutes": 303.4,
+        "elapsedMinutes": 303.8,
         "diagnosis": "미완료 상태에서 296분간 새 로그가 없어 중단 의심"
       },
       {
@@ -430,7 +430,7 @@
         "subject": "천산갑",
         "filename": null,
         "startDelaySeconds": 6671,
-        "elapsedMinutes": 262.7,
+        "elapsedMinutes": 263.1,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -472,7 +472,7 @@
         "subject": "백룡",
         "filename": "백룡 성수.png",
         "startDelaySeconds": 3690,
-        "elapsedMinutes": 303.4,
+        "elapsedMinutes": 303.8,
         "diagnosis": "미완료 상태에서 296분간 새 로그가 없어 중단 의심"
       },
       {
@@ -486,7 +486,7 @@
         "subject": "전갈",
         "filename": null,
         "startDelaySeconds": 5951,
-        "elapsedMinutes": 262.7,
+        "elapsedMinutes": 263.1,
         "diagnosis": "실행 로그가 실패로 종료됨"
       }
     ]
