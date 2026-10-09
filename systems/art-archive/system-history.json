@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T01:38:27.606Z",
+  "generatedAt": "2026-10-09T01:39:33.221Z",
   "timezone": "Asia/Seoul",
   "schemaVersion": 1,
   "retentionDays": 90,
@@ -10,7 +10,7 @@
     "success": 65,
     "failed": 16,
     "successRate": 78.3,
-    "avgElapsed": 209
+    "avgElapsed": 209.8
   },
   "daily": [
     {
@@ -715,12 +715,12 @@
       "success": 4,
       "failed": 6,
       "successRate": 40,
-      "avgElapsed": 225.5,
+      "avgElapsed": 239.3,
       "maxElapsed": 270,
       "driveVerified": 4,
       "driveVerifiedRate": 40,
       "regenerations": 13,
-      "avgStartDelay": 2573.3,
+      "avgStartDelay": 5858.3,
       "series": [
         {
           "name": "크레스트",
@@ -753,7 +753,7 @@
           "avgElapsed": null,
           "driveVerified": 0,
           "regenerations": 3,
-          "avgStartDelay": 6394
+          "avgStartDelay": 11098.5
         },
         {
           "name": "펄퍼스",
@@ -761,10 +761,10 @@
           "success": 1,
           "failed": 2,
           "successRate": 33.3,
-          "avgElapsed": 181,
+          "avgElapsed": 224,
           "driveVerified": 1,
           "regenerations": 3,
-          "avgStartDelay": 0
+          "avgStartDelay": 7811.5
         },
         {
           "name": "잉크",
