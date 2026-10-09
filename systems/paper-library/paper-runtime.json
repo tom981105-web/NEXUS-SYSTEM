@@ -1,152 +1,107 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-09T01:19:40.496Z",
+  "updatedAt": "2026-10-09T02:14:25.925Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "success",
-    "runId": "paper-20261009-101425",
-    "startedAt": "2026-10-09T01:14:25.465Z",
-    "finishedAt": "2026-10-09T01:19:40.496Z",
-    "durationMs": 315031,
-    "generatedCount": 5,
+    "status": "running",
+    "runId": "paper-20261009-111425",
+    "startedAt": "2026-10-09T02:14:25.500Z",
+    "finishedAt": null,
+    "durationMs": null,
+    "generatedCount": 0,
     "expectedMax": 6,
-    "lastCommitSha": "aacee493fd7dbf84a9230d41acc16710c545acef",
+    "lastCommitSha": null,
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 73,
-      "success": 73,
+      "calls": 0,
+      "success": 0,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": 200,
+      "lastHttpStatus": null,
       "disabledForRun": false
     },
     "crossref": {
-      "calls": 70,
-      "success": 65,
-      "retries": 5,
-      "http429": 5,
-      "errors": 5,
-      "lastHttpStatus": 200,
-      "adaptiveIntervalMs": 2100,
-      "throttleEvents": 5,
-      "earlyStops": 4
-    },
-    "gemini": {
-      "calls": 5,
-      "success": 5,
+      "calls": 0,
+      "success": 0,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": 200
+      "lastHttpStatus": null,
+      "adaptiveIntervalMs": 650,
+      "throttleEvents": 0,
+      "earlyStops": 0
+    },
+    "gemini": {
+      "calls": 0,
+      "success": 0,
+      "retries": 0,
+      "http429": 0,
+      "errors": 0,
+      "lastHttpStatus": null
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 114,
-      "selectedTitle": "Guest Editorial: Computer Vision for Smart Cameras and Camera Networks",
-      "selectedDoi": "10.1049/iet-cvi.2020.0601",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "전기",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 96,
-      "selectedTitle": "Three-dimensional visualization and animation for power systems analysis",
-      "selectedDoi": "10.1016/j.epsr.2009.06.009",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "로봇·자동화",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 95,
-      "selectedTitle": "1998 International Ground Robotics Vehicle Competition Robotics Competition Corner",
-      "selectedDoi": "10.1016/s0921-8890(98)90018-5",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "에너지·환경",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 108,
-      "selectedTitle": "Wind energy literature survey no. 29",
-      "selectedDoi": "10.1002/we.1642",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "건축·시설관리",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 55,
-      "selectedTitle": "Investigation into capital costs of HVAC systems",
-      "selectedDoi": "10.1016/j.buildenv.2004.11.011",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "도서관·문헌정보",
-      "status": "no_candidate",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 0,
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     }
   ],
-  "verification": {
-    "filesExist": true,
-    "jsonValid": true,
-    "indexHeadCorrect": true,
-    "indexDetailDoiMatch": true,
-    "noOldDoiDuplicates": true,
-    "noNewDoiDuplicates": true,
-    "ok": true
-  },
-  "stages": [
-    {
-      "at": "2026-10-09T01:14:26.831Z",
-      "name": "START",
-      "status": "running",
-      "message": "논문 자동화 V2.7.4 시작"
-    },
-    {
-      "at": "2026-10-09T01:14:27.104Z",
-      "name": "GITHUB_HEAD",
-      "status": "success",
-      "message": "fc24c2f"
-    },
-    {
-      "at": "2026-10-09T01:14:29.721Z",
-      "name": "INDEX",
-      "status": "success",
-      "message": "papers=1172"
-    },
-    {
-      "at": "2026-10-09T01:19:35.562Z",
-      "name": "GITHUB_COMMIT",
-      "status": "success",
-      "message": "aacee49"
-    },
-    {
-      "at": "2026-10-09T01:19:40.473Z",
-      "name": "VERIFY",
-      "status": "success",
-      "message": "최종 검증 통과"
-    },
-    {
-      "at": "2026-10-09T01:19:40.496Z",
-      "name": "FINISH",
-      "status": "success",
-      "message": "generated=5"
-    }
-  ]
+  "verification": null,
+  "stages": []
 }
