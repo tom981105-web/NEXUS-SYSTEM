@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-10-09T12:30:46.166Z",
+  "generatedAt": "2026-10-09T15:35:02.246Z",
   "timezone": "Asia/Seoul",
   "schemaVersion": 1,
   "retentionDays": 90,
   "source": "그림 자동화 사용량 로그 / 사용량 로그",
   "summary": {
-    "days": 10,
-    "runs": 90,
+    "days": 11,
+    "runs": 92,
     "success": 66,
-    "failed": 20,
-    "successRate": 73.3,
+    "failed": 22,
+    "successRate": 71.7,
     "avgElapsed": 206.8
   },
   "daily": [
@@ -809,6 +809,43 @@
           "driveVerified": 0,
           "regenerations": 2,
           "avgStartDelay": 5855.5
+        }
+      ]
+    },
+    {
+      "date": "2026-10-10",
+      "runs": 2,
+      "success": 0,
+      "failed": 2,
+      "successRate": 0,
+      "avgElapsed": null,
+      "maxElapsed": 0,
+      "driveVerified": 0,
+      "driveVerifiedRate": 0,
+      "regenerations": 1,
+      "avgStartDelay": 0,
+      "series": [
+        {
+          "name": "크레스트",
+          "runs": 1,
+          "success": 0,
+          "failed": 1,
+          "successRate": 0,
+          "avgElapsed": null,
+          "driveVerified": 0,
+          "regenerations": 1,
+          "avgStartDelay": 0
+        },
+        {
+          "name": "묵수",
+          "runs": 1,
+          "success": 0,
+          "failed": 1,
+          "successRate": 0,
+          "avgElapsed": null,
+          "driveVerified": 0,
+          "regenerations": 0,
+          "avgStartDelay": 0
         }
       ]
     }
