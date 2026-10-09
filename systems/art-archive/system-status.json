@@ -1,21 +1,21 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-09T21:30:23.190Z",
+  "updatedAt": "2026-10-09T21:45:56.955Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-09T21:30:00.339Z",
-      "finishedAt": "2026-10-09T21:30:05.429Z",
-      "result": "skipped",
-      "durationMs": 5090,
-      "error": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
+      "startedAt": "2026-10-09T21:45:00.598Z",
+      "finishedAt": "2026-10-09T21:45:40.226Z",
+      "result": "success",
+      "durationMs": 39628,
+      "error": null
     },
     "consecutiveFailures": 0,
-    "busyOrSkipped": true,
-    "busyReason": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀",
+    "busyOrSkipped": false,
+    "busyReason": null,
     "triggerInventoryAvailable": false
   },
   "notionSync": {
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-09T21:30:23.725Z",
+    "updatedAt": "2026-10-09T21:45:57.454Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,16 +253,16 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-09T21:30:12.976Z",
+    "checkedAt": "2026-10-09T21:45:47.126Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-10",
     "planned": 16,
     "success": 0,
-    "failed": 3,
+    "failed": 4,
     "stalled": 0,
     "missed": 0,
     "running": 0,
-    "pending": 13,
+    "pending": 12,
     "status": "error",
     "slots": [
       {
@@ -283,14 +283,14 @@
         "series": "묵수",
         "scheduledTime": "06:03",
         "status": "FAILED",
-        "logRow": 101,
-        "runId": "묵수-20261010-002729",
+        "logRow": 104,
+        "runId": "묵수-20261010-063534",
         "stage": "FAILED",
         "result": "failed",
-        "subject": "북극여우",
+        "subject": "오카피",
         "filename": null,
-        "startDelaySeconds": 0,
-        "elapsedMinutes": 362.7,
+        "startDelaySeconds": 1954,
+        "elapsedMinutes": 10.2,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -338,16 +338,16 @@
       {
         "series": "잉크",
         "scheduledTime": "06:15",
-        "status": "PENDING",
-        "logRow": null,
-        "runId": null,
-        "stage": null,
-        "result": null,
-        "subject": null,
+        "status": "FAILED",
+        "logRow": 105,
+        "runId": "잉크-20261010-063534",
+        "stage": "FAILED",
+        "result": "failed",
+        "subject": "바다거북",
         "filename": null,
-        "startDelaySeconds": null,
-        "elapsedMinutes": null,
-        "diagnosis": "예정시각 경과 후 로그 생성 대기"
+        "startDelaySeconds": 1234,
+        "elapsedMinutes": 10.2,
+        "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
         "series": "성수",
