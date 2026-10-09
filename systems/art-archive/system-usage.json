@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T09:27:53.796Z",
+  "generatedAt": "2026-10-09T09:33:19.427Z",
   "source": "그림 자동화 사용량 로그 / 사용량 로그",
   "schemaVersion": 3,
   "summary": {
@@ -89,9 +89,9 @@
       "result": "partial",
       "elapsedSeconds": null,
       "stage": "COMPLETED_WITH_FORMAT_DEVIATION",
-      "scheduledTime": null,
-      "startDelaySeconds": null,
-      "generatedFilename": null
+      "scheduledTime": "2026-10-09 17:06:00",
+      "startDelaySeconds": 4410,
+      "generatedFilename": "바다코끼리 신수.png"
     },
     {
       "time": "2026-10-09 18:26:40",
@@ -103,9 +103,9 @@
       "result": "partial",
       "elapsedSeconds": null,
       "stage": "COMPLETED_WITH_FORMAT_DEVIATION",
-      "scheduledTime": null,
-      "startDelaySeconds": null,
-      "generatedFilename": null
+      "scheduledTime": "2026-10-09 17:18:00",
+      "startDelaySeconds": 3690,
+      "generatedFilename": "백룡 성수.png"
     },
     {
       "time": "2026-10-09 17:10:30",
