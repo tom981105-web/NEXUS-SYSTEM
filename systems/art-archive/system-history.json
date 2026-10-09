@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T09:28:01.371Z",
+  "generatedAt": "2026-10-09T09:33:22.225Z",
   "timezone": "Asia/Seoul",
   "schemaVersion": 1,
   "retentionDays": 90,
@@ -720,7 +720,7 @@
       "driveVerified": 7,
       "driveVerifiedRate": 50,
       "regenerations": 15,
-      "avgStartDelay": 4716.7,
+      "avgStartDelay": 4605.6,
       "series": [
         {
           "name": "크레스트",
@@ -753,7 +753,7 @@
           "avgElapsed": null,
           "driveVerified": 1,
           "regenerations": 0,
-          "avgStartDelay": null
+          "avgStartDelay": 4410
         },
         {
           "name": "수채화",
@@ -797,7 +797,7 @@
           "avgElapsed": null,
           "driveVerified": 1,
           "regenerations": 0,
-          "avgStartDelay": null
+          "avgStartDelay": 3690
         },
         {
           "name": "융화",
