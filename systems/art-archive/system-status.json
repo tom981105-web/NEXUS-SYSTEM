@@ -1,19 +1,19 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-09T21:45:56.955Z",
+  "updatedAt": "2026-10-09T21:57:25.882Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-09T21:45:00.598Z",
-      "finishedAt": "2026-10-09T21:45:40.226Z",
-      "result": "success",
-      "durationMs": 39628,
-      "error": null
+      "startedAt": "2026-10-09T21:57:00.014Z",
+      "finishedAt": "2026-10-09T21:57:09.402Z",
+      "result": "failed",
+      "durationMs": 9388,
+      "error": "Exception: Service error: Drive\n    at getArtworkRootFolder_ (Code:10:25)\n    at getSeriesFolders_ (Code:21:16)\n    at checkArtworkCompletion (Code:106:27)\n    at __GS_INTERNAL_top_function_call__.gs:1:8"
     },
-    "consecutiveFailures": 0,
+    "consecutiveFailures": 1,
     "busyOrSkipped": false,
     "busyReason": null,
     "triggerInventoryAvailable": false
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-09T21:45:57.454Z",
+    "updatedAt": "2026-10-09T21:57:26.551Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,16 +253,16 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-09T21:45:47.126Z",
+    "checkedAt": "2026-10-09T21:57:17.120Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-10",
     "planned": 16,
     "success": 0,
     "failed": 4,
     "stalled": 0,
-    "missed": 0,
+    "missed": 2,
     "running": 0,
-    "pending": 12,
+    "pending": 10,
     "status": "error",
     "slots": [
       {
@@ -290,13 +290,13 @@
         "subject": "오카피",
         "filename": null,
         "startDelaySeconds": 1954,
-        "elapsedMinutes": 10.2,
+        "elapsedMinutes": 21.7,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
         "series": "신수",
         "scheduledTime": "06:06",
-        "status": "PENDING",
+        "status": "MISSED",
         "logRow": null,
         "runId": null,
         "stage": null,
@@ -305,12 +305,12 @@
         "filename": null,
         "startDelaySeconds": null,
         "elapsedMinutes": null,
-        "diagnosis": "예정시각 경과 후 로그 생성 대기"
+        "diagnosis": "예정시각 후 45분이 지났지만 실행 로그가 없음"
       },
       {
         "series": "수채화",
         "scheduledTime": "06:09",
-        "status": "PENDING",
+        "status": "MISSED",
         "logRow": null,
         "runId": null,
         "stage": null,
@@ -319,7 +319,7 @@
         "filename": null,
         "startDelaySeconds": null,
         "elapsedMinutes": null,
-        "diagnosis": "예정시각 경과 후 로그 생성 대기"
+        "diagnosis": "예정시각 후 45분이 지났지만 실행 로그가 없음"
       },
       {
         "series": "펄퍼스",
@@ -346,7 +346,7 @@
         "subject": "바다거북",
         "filename": null,
         "startDelaySeconds": 1234,
-        "elapsedMinutes": 10.2,
+        "elapsedMinutes": 21.7,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
