@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-10-09T22:21:52.510Z",
+  "generatedAt": "2026-10-09T22:59:26.326Z",
   "source": "그림 자동화 사용량 로그 / 사용량 로그",
   "schemaVersion": 3,
   "summary": {
-    "runs": 98,
+    "runs": 100,
     "success": 66,
-    "failed": 28,
-    "successRate": 67.3,
+    "failed": 30,
+    "successRate": 66,
     "driveVerified": 68,
-    "regenerations": 33,
-    "sourceRows": 105,
+    "regenerations": 35,
+    "sourceRows": 107,
     "normalizedPartialRows": 0
   },
   "series": [
@@ -39,11 +39,11 @@
     },
     {
       "name": "수채화",
-      "runs": 15,
+      "runs": 16,
       "success": 9,
-      "failed": 6,
+      "failed": 7,
       "avgElapsed": 205.9,
-      "regenerations": 6
+      "regenerations": 7
     },
     {
       "name": "펄퍼스",
@@ -71,14 +71,42 @@
     },
     {
       "name": "융화",
-      "runs": 5,
+      "runs": 6,
       "success": 3,
-      "failed": 2,
+      "failed": 3,
       "avgElapsed": 366,
-      "regenerations": 2
+      "regenerations": 3
     }
   ],
   "recentRuns": [
+    {
+      "time": "2026-10-10 07:55:07",
+      "series": "수채화",
+      "generationAttempts": 2,
+      "regenerations": 1,
+      "uploadAttempts": 0,
+      "driveVerified": false,
+      "result": "failed",
+      "elapsedSeconds": null,
+      "stage": "FAILED",
+      "scheduledTime": "2026-10-10 6:09:00",
+      "startDelaySeconds": 6367,
+      "generatedFilename": null
+    },
+    {
+      "time": "2026-10-10 07:55:07",
+      "series": "융화",
+      "generationAttempts": 2,
+      "regenerations": 1,
+      "uploadAttempts": 0,
+      "driveVerified": false,
+      "result": "failed",
+      "elapsedSeconds": null,
+      "stage": "FAILED",
+      "scheduledTime": "2026-10-10 6:21:00",
+      "startDelaySeconds": 5647,
+      "generatedFilename": null
+    },
     {
       "time": "2026-10-10 7:15:48",
       "series": "신수",
@@ -218,34 +246,6 @@
       "scheduledTime": "2026-10-09 17:09:00",
       "startDelaySeconds": 6671,
       "generatedFilename": null
-    },
-    {
-      "time": "2026-10-09 19:04:15",
-      "series": "융화",
-      "generationAttempts": 2,
-      "regenerations": 1,
-      "uploadAttempts": 0,
-      "driveVerified": false,
-      "result": "failed",
-      "elapsedSeconds": null,
-      "stage": "FAILED",
-      "scheduledTime": "2026-10-09 17:21:00",
-      "startDelaySeconds": 5951,
-      "generatedFilename": null
-    },
-    {
-      "time": "2026-10-09 18:26:40",
-      "series": "신수",
-      "generationAttempts": 1,
-      "regenerations": 0,
-      "uploadAttempts": 2,
-      "driveVerified": true,
-      "result": "partial",
-      "elapsedSeconds": null,
-      "stage": "COMPLETED_WITH_FORMAT_DEVIATION",
-      "scheduledTime": "2026-10-09 17:06:00",
-      "startDelaySeconds": 4410,
-      "generatedFilename": "바다코끼리 신수.png"
     }
   ]
 }
