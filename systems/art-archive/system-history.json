@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-10-09T01:39:33.221Z",
+  "generatedAt": "2026-10-09T08:11:56.013Z",
   "timezone": "Asia/Seoul",
   "schemaVersion": 1,
   "retentionDays": 90,
   "source": "그림 자동화 사용량 로그 / 사용량 로그",
   "summary": {
     "days": 10,
-    "runs": 83,
-    "success": 65,
-    "failed": 16,
-    "successRate": 78.3,
-    "avgElapsed": 209.8
+    "runs": 85,
+    "success": 66,
+    "failed": 17,
+    "successRate": 77.6,
+    "avgElapsed": 206.8
   },
   "daily": [
     {
@@ -711,27 +711,27 @@
     },
     {
       "date": "2026-10-09",
-      "runs": 10,
-      "success": 4,
-      "failed": 6,
-      "successRate": 40,
-      "avgElapsed": 239.3,
+      "runs": 12,
+      "success": 5,
+      "failed": 7,
+      "successRate": 41.7,
+      "avgElapsed": 179.5,
       "maxElapsed": 270,
-      "driveVerified": 4,
-      "driveVerifiedRate": 40,
-      "regenerations": 13,
-      "avgStartDelay": 5858.3,
+      "driveVerified": 5,
+      "driveVerifiedRate": 41.7,
+      "regenerations": 15,
+      "avgStartDelay": 4716.7,
       "series": [
         {
           "name": "크레스트",
-          "runs": 1,
+          "runs": 2,
           "success": 1,
-          "failed": 0,
-          "successRate": 100,
+          "failed": 1,
+          "successRate": 50,
           "avgElapsed": 270,
           "driveVerified": 1,
-          "regenerations": 3,
-          "avgStartDelay": 0
+          "regenerations": 4,
+          "avgStartDelay": 150.5
         },
         {
           "name": "묵수",
@@ -757,14 +757,14 @@
         },
         {
           "name": "펄퍼스",
-          "runs": 3,
-          "success": 1,
+          "runs": 4,
+          "success": 2,
           "failed": 2,
-          "successRate": 33.3,
-          "avgElapsed": 224,
-          "driveVerified": 1,
-          "regenerations": 3,
-          "avgStartDelay": 7811.5
+          "successRate": 50,
+          "avgElapsed": 149.3,
+          "driveVerified": 2,
+          "regenerations": 4,
+          "avgStartDelay": 5207.7
         },
         {
           "name": "잉크",
