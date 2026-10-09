@@ -1,21 +1,21 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-09T01:08:24.097Z",
+  "updatedAt": "2026-10-09T01:08:44.787Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-09T01:08:00.318Z",
-      "finishedAt": "2026-10-09T01:08:05.439Z",
-      "result": "skipped",
-      "durationMs": 5121,
-      "error": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
+      "startedAt": "2026-10-09T01:07:05.652Z",
+      "finishedAt": "2026-10-09T01:08:25.699Z",
+      "result": "success",
+      "durationMs": 80047,
+      "error": null
     },
     "consecutiveFailures": 0,
-    "busyOrSkipped": true,
-    "busyReason": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀",
+    "busyOrSkipped": false,
+    "busyReason": null,
     "triggerInventoryAvailable": false
   },
   "notionSync": {
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-09T01:08:24.213Z",
+    "updatedAt": "2026-10-09T01:08:45.196Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,7 +253,7 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-09T01:08:12.513Z",
+    "checkedAt": "2026-10-09T01:08:34.230Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-09",
     "planned": 16,
@@ -290,7 +290,7 @@
         "subject": "큰뿔양",
         "filename": "큰뿔양 묵수.png",
         "startDelaySeconds": 2003,
-        "elapsedMinutes": 211.8,
+        "elapsedMinutes": 212.2,
         "diagnosis": "실행 완료"
       },
       {
@@ -318,7 +318,7 @@
         "subject": null,
         "filename": null,
         "startDelaySeconds": 12123,
-        "elapsedMinutes": 37.2,
+        "elapsedMinutes": 37.5,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -332,7 +332,7 @@
         "subject": null,
         "filename": null,
         "startDelaySeconds": 11943,
-        "elapsedMinutes": 37.2,
+        "elapsedMinutes": 37.5,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -346,7 +346,7 @@
         "subject": "오징어",
         "filename": "오징어 잉크.png",
         "startDelaySeconds": 1283,
-        "elapsedMinutes": 211.8,
+        "elapsedMinutes": 212.2,
         "diagnosis": "실행 완료"
       },
       {
@@ -374,7 +374,7 @@
         "subject": "반딧불이",
         "filename": null,
         "startDelaySeconds": 5760,
-        "elapsedMinutes": 131.2,
+        "elapsedMinutes": 131.6,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
