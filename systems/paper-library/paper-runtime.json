@@ -1,107 +1,152 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-10T14:14:25.369Z",
+  "updatedAt": "2026-10-10T14:16:31.718Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "running",
+    "status": "success",
     "runId": "paper-20261010-231425",
     "startedAt": "2026-10-10T14:14:25.166Z",
-    "finishedAt": null,
-    "durationMs": null,
-    "generatedCount": 0,
+    "finishedAt": "2026-10-10T14:16:31.718Z",
+    "durationMs": 126552,
+    "generatedCount": 5,
     "expectedMax": 6,
-    "lastCommitSha": null,
+    "lastCommitSha": "623e6683520e1f81557f9adeb12c69dabd0b96f7",
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 0,
+      "calls": 1,
       "success": 0,
       "retries": 0,
-      "http429": 0,
-      "errors": 0,
-      "lastHttpStatus": null,
-      "disabledForRun": false
+      "http429": 1,
+      "errors": 1,
+      "lastHttpStatus": 429,
+      "disabledForRun": true
     },
     "crossref": {
-      "calls": 0,
-      "success": 0,
-      "retries": 0,
-      "http429": 0,
-      "errors": 0,
-      "lastHttpStatus": null,
-      "adaptiveIntervalMs": 650,
-      "throttleEvents": 0,
-      "earlyStops": 0
+      "calls": 69,
+      "success": 68,
+      "retries": 1,
+      "http429": 1,
+      "errors": 1,
+      "lastHttpStatus": 200,
+      "adaptiveIntervalMs": 1200,
+      "throttleEvents": 1,
+      "earlyStops": 3
     },
     "gemini": {
-      "calls": 0,
-      "success": 0,
+      "calls": 5,
+      "success": 5,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": null
+      "lastHttpStatus": 200
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 82,
+      "selectedTitle": "Image analysis and computer vision: 1989",
+      "selectedDoi": "10.1016/0734-189x(90)90041-s",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "전기",
-      "status": "pending",
+      "status": "generated",
       "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "crossrefCandidates": 76,
+      "selectedTitle": "An introduction to power electronics",
+      "selectedDoi": "10.1016/0142-0615(84)90039-5",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "로봇·자동화",
-      "status": "pending",
+      "status": "generated",
       "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "crossrefCandidates": 88,
+      "selectedTitle": "An Autonomous Micro Robot Fish Based on IPMC Actuator",
+      "selectedDoi": "10.3724/sp.j.1218.2010.00262",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "에너지·환경",
-      "status": "pending",
+      "status": "generated",
       "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "crossrefCandidates": 118,
+      "selectedTitle": "Wind energy literature survey No. 5",
+      "selectedDoi": "10.1002/we.110",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "건축·시설관리",
-      "status": "pending",
+      "status": "generated",
       "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "crossrefCandidates": 22,
+      "selectedTitle": "Corrigendum",
+      "selectedDoi": "10.1080/17512549.2017.1334328",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "도서관·문헌정보",
-      "status": "pending",
+      "status": "no_candidate",
       "openAlexCandidates": null,
-      "crossrefCandidates": null,
+      "crossrefCandidates": 0,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     }
   ],
-  "verification": null,
-  "stages": []
+  "verification": {
+    "filesExist": true,
+    "jsonValid": true,
+    "indexHeadCorrect": true,
+    "indexDetailDoiMatch": true,
+    "noOldDoiDuplicates": true,
+    "noNewDoiDuplicates": true,
+    "ok": true
+  },
+  "stages": [
+    {
+      "at": "2026-10-10T14:14:26.455Z",
+      "name": "START",
+      "status": "running",
+      "message": "논문 자동화 V2.7.4 시작"
+    },
+    {
+      "at": "2026-10-10T14:14:26.697Z",
+      "name": "GITHUB_HEAD",
+      "status": "success",
+      "message": "afad2ef"
+    },
+    {
+      "at": "2026-10-10T14:14:28.840Z",
+      "name": "INDEX",
+      "status": "success",
+      "message": "papers=1347"
+    },
+    {
+      "at": "2026-10-10T14:16:28.091Z",
+      "name": "GITHUB_COMMIT",
+      "status": "success",
+      "message": "623e668"
+    },
+    {
+      "at": "2026-10-10T14:16:31.705Z",
+      "name": "VERIFY",
+      "status": "success",
+      "message": "최종 검증 통과"
+    },
+    {
+      "at": "2026-10-10T14:16:31.718Z",
+      "name": "FINISH",
+      "status": "success",
+      "message": "generated=5"
+    }
+  ]
 }
