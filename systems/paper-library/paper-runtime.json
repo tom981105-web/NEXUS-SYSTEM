@@ -1,107 +1,152 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-10T17:14:28.224Z",
+  "updatedAt": "2026-10-10T17:18:41.902Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "running",
+    "status": "success",
     "runId": "paper-20261011-021426",
     "startedAt": "2026-10-10T17:14:26.726Z",
-    "finishedAt": null,
-    "durationMs": null,
-    "generatedCount": 0,
+    "finishedAt": "2026-10-10T17:18:41.902Z",
+    "durationMs": 255176,
+    "generatedCount": 5,
     "expectedMax": 6,
-    "lastCommitSha": null,
+    "lastCommitSha": "d660ca8a3a5904cf65f213652be2c672f79c82a0",
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 0,
+      "calls": 1,
       "success": 0,
       "retries": 0,
-      "http429": 0,
-      "errors": 0,
-      "lastHttpStatus": null,
-      "disabledForRun": false
+      "http429": 1,
+      "errors": 1,
+      "lastHttpStatus": 429,
+      "disabledForRun": true
     },
     "crossref": {
-      "calls": 0,
-      "success": 0,
-      "retries": 0,
-      "http429": 0,
-      "errors": 0,
-      "lastHttpStatus": null,
+      "calls": 70,
+      "success": 69,
+      "retries": 1,
+      "http429": 1,
+      "errors": 1,
+      "lastHttpStatus": 200,
       "adaptiveIntervalMs": 650,
-      "throttleEvents": 0,
-      "earlyStops": 0
+      "throttleEvents": 1,
+      "earlyStops": 3
     },
     "gemini": {
-      "calls": 0,
-      "success": 0,
+      "calls": 5,
+      "success": 5,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": null
+      "lastHttpStatus": 200
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 101,
+      "selectedTitle": "Uzbek language morphology analyser",
+      "selectedDoi": "10.1016/j.nlp.2025.100195",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "전기",
-      "status": "pending",
+      "status": "generated",
       "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "crossrefCandidates": 78,
+      "selectedTitle": "Protection and Commissioning of Digital Transformer Relays: Improvements in Medium-Voltage Industrial Transformer Protection",
+      "selectedDoi": "10.1109/mias.2012.2210092",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "로봇·자동화",
-      "status": "pending",
+      "status": "generated",
       "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "crossrefCandidates": 85,
+      "selectedTitle": "Power-SLAM: a linear-complexity, anytime algorithm for SLAM",
+      "selectedDoi": "10.1177/0278364910390539",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "에너지·환경",
-      "status": "pending",
+      "status": "generated",
       "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "crossrefCandidates": 116,
+      "selectedTitle": "Development of China renewable energy",
+      "selectedDoi": "10.1016/0960-1481(96)88478-3",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "건축·시설관리",
-      "status": "pending",
+      "status": "generated",
       "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "crossrefCandidates": 19,
+      "selectedTitle": "Building process summary",
+      "selectedDoi": "10.1016/s0926-5805(96)00174-4",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "도서관·문헌정보",
-      "status": "pending",
+      "status": "no_candidate",
       "openAlexCandidates": null,
-      "crossrefCandidates": null,
+      "crossrefCandidates": 0,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     }
   ],
-  "verification": null,
-  "stages": []
+  "verification": {
+    "filesExist": true,
+    "jsonValid": true,
+    "indexHeadCorrect": true,
+    "indexDetailDoiMatch": true,
+    "noOldDoiDuplicates": true,
+    "noNewDoiDuplicates": true,
+    "ok": true
+  },
+  "stages": [
+    {
+      "at": "2026-10-10T17:14:30.843Z",
+      "name": "START",
+      "status": "running",
+      "message": "논문 자동화 V2.7.4 시작"
+    },
+    {
+      "at": "2026-10-10T17:14:31.523Z",
+      "name": "GITHUB_HEAD",
+      "status": "success",
+      "message": "612b501"
+    },
+    {
+      "at": "2026-10-10T17:15:19.025Z",
+      "name": "INDEX",
+      "status": "success",
+      "message": "papers=1362"
+    },
+    {
+      "at": "2026-10-10T17:18:17.049Z",
+      "name": "GITHUB_COMMIT",
+      "status": "success",
+      "message": "d660ca8"
+    },
+    {
+      "at": "2026-10-10T17:18:41.830Z",
+      "name": "VERIFY",
+      "status": "success",
+      "message": "최종 검증 통과"
+    },
+    {
+      "at": "2026-10-10T17:18:41.902Z",
+      "name": "FINISH",
+      "status": "success",
+      "message": "generated=5"
+    }
+  ]
 }
