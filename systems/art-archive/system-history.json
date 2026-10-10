@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T21:01:35.903Z",
+  "generatedAt": "2026-10-10T21:02:31.632Z",
   "timezone": "Asia/Seoul",
   "schemaVersion": 1,
   "retentionDays": 90,
@@ -8,9 +8,9 @@
     "days": 12,
     "runs": 106,
     "success": 68,
-    "failed": 32,
+    "failed": 34,
     "successRate": 64.2,
-    "avgElapsed": 206.6
+    "avgElapsed": 210.5
   },
   "daily": [
     {
@@ -919,35 +919,35 @@
       "date": "2026-10-11",
       "runs": 2,
       "success": 0,
-      "failed": 0,
+      "failed": 2,
       "successRate": 0,
-      "avgElapsed": 0,
-      "maxElapsed": 0,
+      "avgElapsed": 153,
+      "maxElapsed": 153,
       "driveVerified": 0,
       "driveVerifiedRate": 0,
-      "regenerations": 0,
+      "regenerations": 2,
       "avgStartDelay": 0,
       "series": [
         {
           "name": "크레스트",
           "runs": 1,
           "success": 0,
-          "failed": 0,
+          "failed": 1,
           "successRate": 0,
-          "avgElapsed": 0,
+          "avgElapsed": 153,
           "driveVerified": 0,
-          "regenerations": 0,
+          "regenerations": 1,
           "avgStartDelay": 0
         },
         {
           "name": "펄퍼스",
           "runs": 1,
           "success": 0,
-          "failed": 0,
+          "failed": 1,
           "successRate": 0,
-          "avgElapsed": 0,
+          "avgElapsed": 153,
           "driveVerified": 0,
-          "regenerations": 0,
+          "regenerations": 1,
           "avgStartDelay": 0
         }
       ]
