@@ -1,19 +1,19 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-10T03:51:38.219Z",
+  "updatedAt": "2026-10-10T03:52:42.626Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-10T03:51:00.076Z",
-      "finishedAt": "2026-10-10T03:51:13.737Z",
-      "result": "failed",
-      "durationMs": 13661,
-      "error": "Exception: Service error: Drive\n    at syncExistingArtworkMetadata_ (Code:1503:18)\n    at checkArtworkCompletion (Code:109:5)\n    at __GS_INTERNAL_top_function_call__.gs:1:8"
+      "startedAt": "2026-10-10T03:52:00.198Z",
+      "finishedAt": "2026-10-10T03:52:26.283Z",
+      "result": "success",
+      "durationMs": 26085,
+      "error": null
     },
-    "consecutiveFailures": 1,
+    "consecutiveFailures": 0,
     "busyOrSkipped": false,
     "busyReason": null,
     "triggerInventoryAvailable": false
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-10T03:51:38.842Z",
+    "updatedAt": "2026-10-10T03:52:43.100Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,7 +253,7 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-10T03:51:25.167Z",
+    "checkedAt": "2026-10-10T03:52:31.563Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-10",
     "planned": 16,
@@ -290,7 +290,7 @@
         "subject": "오카피",
         "filename": null,
         "startDelaySeconds": 1954,
-        "elapsedMinutes": 375.9,
+        "elapsedMinutes": 377,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -304,7 +304,7 @@
         "subject": "매너티",
         "filename": null,
         "startDelaySeconds": 4188,
-        "elapsedMinutes": 335.6,
+        "elapsedMinutes": 336.7,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -318,7 +318,7 @@
         "subject": "오카피",
         "filename": null,
         "startDelaySeconds": 6367,
-        "elapsedMinutes": 296.3,
+        "elapsedMinutes": 297.4,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -346,7 +346,7 @@
         "subject": "바다거북",
         "filename": null,
         "startDelaySeconds": 1234,
-        "elapsedMinutes": 375.9,
+        "elapsedMinutes": 377,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -360,7 +360,7 @@
         "subject": "만타가오리",
         "filename": null,
         "startDelaySeconds": 3468,
-        "elapsedMinutes": 335.6,
+        "elapsedMinutes": 336.7,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -374,7 +374,7 @@
         "subject": "청개구리",
         "filename": null,
         "startDelaySeconds": 5647,
-        "elapsedMinutes": 296.3,
+        "elapsedMinutes": 297.4,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
