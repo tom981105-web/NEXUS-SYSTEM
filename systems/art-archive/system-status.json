@@ -1,16 +1,16 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-09T23:47:37.389Z",
+  "updatedAt": "2026-10-10T00:03:29.378Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-09T23:47:00.537Z",
-      "finishedAt": "2026-10-09T23:47:05.674Z",
+      "startedAt": "2026-10-10T00:03:00.628Z",
+      "finishedAt": "2026-10-10T00:03:05.696Z",
       "result": "skipped",
-      "durationMs": 5137,
+      "durationMs": 5068,
       "error": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
     },
     "consecutiveFailures": 0,
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-09T23:47:38.009Z",
+    "updatedAt": "2026-10-10T00:03:29.923Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,7 +253,7 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-09T23:47:21.482Z",
+    "checkedAt": "2026-10-10T00:03:15.057Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-10",
     "planned": 16,
@@ -290,7 +290,7 @@
         "subject": "오카피",
         "filename": null,
         "startDelaySeconds": 1954,
-        "elapsedMinutes": 131.8,
+        "elapsedMinutes": 147.7,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -304,7 +304,7 @@
         "subject": "매너티",
         "filename": null,
         "startDelaySeconds": 4188,
-        "elapsedMinutes": 91.6,
+        "elapsedMinutes": 107.5,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -318,7 +318,7 @@
         "subject": "오카피",
         "filename": null,
         "startDelaySeconds": 6367,
-        "elapsedMinutes": 52.2,
+        "elapsedMinutes": 68.1,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -346,7 +346,7 @@
         "subject": "바다거북",
         "filename": null,
         "startDelaySeconds": 1234,
-        "elapsedMinutes": 131.8,
+        "elapsedMinutes": 147.7,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -360,7 +360,7 @@
         "subject": "만타가오리",
         "filename": null,
         "startDelaySeconds": 3468,
-        "elapsedMinutes": 91.6,
+        "elapsedMinutes": 107.5,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -374,7 +374,7 @@
         "subject": "청개구리",
         "filename": null,
         "startDelaySeconds": 5647,
-        "elapsedMinutes": 52.2,
+        "elapsedMinutes": 68.1,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
