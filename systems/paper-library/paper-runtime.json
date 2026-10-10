@@ -1,107 +1,152 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-10T19:14:25.575Z",
+  "updatedAt": "2026-10-10T19:17:21.381Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "running",
+    "status": "success",
     "runId": "paper-20261011-041425",
     "startedAt": "2026-10-10T19:14:25.394Z",
-    "finishedAt": null,
-    "durationMs": null,
-    "generatedCount": 0,
+    "finishedAt": "2026-10-10T19:17:21.381Z",
+    "durationMs": 175987,
+    "generatedCount": 5,
     "expectedMax": 6,
-    "lastCommitSha": null,
+    "lastCommitSha": "b910a990ad3751ae743a6ec14b72ce03a7434c51",
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 0,
+      "calls": 1,
       "success": 0,
       "retries": 0,
-      "http429": 0,
-      "errors": 0,
-      "lastHttpStatus": null,
-      "disabledForRun": false
+      "http429": 1,
+      "errors": 1,
+      "lastHttpStatus": 429,
+      "disabledForRun": true
     },
     "crossref": {
-      "calls": 0,
-      "success": 0,
-      "retries": 0,
-      "http429": 0,
-      "errors": 0,
-      "lastHttpStatus": null,
-      "adaptiveIntervalMs": 650,
-      "throttleEvents": 0,
-      "earlyStops": 0
+      "calls": 72,
+      "success": 69,
+      "retries": 3,
+      "http429": 3,
+      "errors": 3,
+      "lastHttpStatus": 200,
+      "adaptiveIntervalMs": 1400,
+      "throttleEvents": 3,
+      "earlyStops": 3
     },
     "gemini": {
-      "calls": 0,
-      "success": 0,
+      "calls": 5,
+      "success": 5,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": null
+      "lastHttpStatus": 200
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 100,
+      "selectedTitle": "Whose morality do they speak? Unraveling cultural bias in multilingual language models",
+      "selectedDoi": "10.1016/j.nlp.2025.100172",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "전기",
-      "status": "pending",
+      "status": "generated",
       "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "crossrefCandidates": 73,
+      "selectedTitle": "An Effective Space-Vector PWM Method for Multi-level Inverter Based on Two-level Inverter",
+      "selectedDoi": "10.7763/ijcee.2010.v2.144",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "로봇·자동화",
-      "status": "pending",
+      "status": "generated",
       "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "crossrefCandidates": 83,
+      "selectedTitle": "Spanish association of robotics formed",
+      "selectedDoi": "10.1016/s0167-8493(85)80028-0",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "에너지·환경",
-      "status": "pending",
+      "status": "generated",
       "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "crossrefCandidates": 113,
+      "selectedTitle": "UK launches Renewable Energy Strategy",
+      "selectedDoi": "10.1016/s1471-0846(08)70121-5",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "건축·시설관리",
-      "status": "pending",
+      "status": "generated",
       "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "crossrefCandidates": 16,
+      "selectedTitle": "WITHDRAWN: A building data model for automation-based building's spatial performance evaluation in schematic design stage",
+      "selectedDoi": "10.1016/j.autcon.2008.04.007",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "도서관·문헌정보",
-      "status": "pending",
+      "status": "no_candidate",
       "openAlexCandidates": null,
-      "crossrefCandidates": null,
+      "crossrefCandidates": 0,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     }
   ],
-  "verification": null,
-  "stages": []
+  "verification": {
+    "filesExist": true,
+    "jsonValid": true,
+    "indexHeadCorrect": true,
+    "indexDetailDoiMatch": true,
+    "noOldDoiDuplicates": true,
+    "noNewDoiDuplicates": true,
+    "ok": true
+  },
+  "stages": [
+    {
+      "at": "2026-10-10T19:14:26.613Z",
+      "name": "START",
+      "status": "running",
+      "message": "논문 자동화 V2.7.4 시작"
+    },
+    {
+      "at": "2026-10-10T19:14:26.873Z",
+      "name": "GITHUB_HEAD",
+      "status": "success",
+      "message": "1b5eb4f"
+    },
+    {
+      "at": "2026-10-10T19:14:30.440Z",
+      "name": "INDEX",
+      "status": "success",
+      "message": "papers=1372"
+    },
+    {
+      "at": "2026-10-10T19:17:16.309Z",
+      "name": "GITHUB_COMMIT",
+      "status": "success",
+      "message": "b910a99"
+    },
+    {
+      "at": "2026-10-10T19:17:21.369Z",
+      "name": "VERIFY",
+      "status": "success",
+      "message": "최종 검증 통과"
+    },
+    {
+      "at": "2026-10-10T19:17:21.381Z",
+      "name": "FINISH",
+      "status": "success",
+      "message": "generated=5"
+    }
+  ]
 }
