@@ -1,7 +1,16 @@
 {
   "version": "1.4",
-  "updatedAt": "2026-10-10T19:26:49.448Z",
+  "updatedAt": "2026-10-10T19:40:54.529Z",
   "events": [
+    {
+      "id": "b024624a-cc89-4d4b-b342-b26d032a1525",
+      "at": "2026-10-10T19:40:25.318Z",
+      "service": "Apps Script",
+      "level": "error",
+      "status": "failed",
+      "title": "Apps Script 실행 실패",
+      "message": "Exception: Service error: Drive\n    at checkArtworkCompletion (Code:122:20)\n    at __GS_INTERNAL_top_function_call__.gs:1:8"
+    },
     {
       "id": "78e7e55b-4b98-4531-a876-6702f2184b48",
       "at": "2026-10-10T19:23:05.394Z",
@@ -887,15 +896,6 @@
     {
       "id": "9c2cb55c-dc62-474d-9bbb-19633a47de67",
       "at": "2026-10-09T15:37:05.772Z",
-      "service": "Apps Script",
-      "level": "info",
-      "status": "skipped",
-      "title": "Apps Script 실행 건너뜀",
-      "message": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
-    },
-    {
-      "id": "5bd39d0d-53f7-4103-8ace-8c4c57af1511",
-      "at": "2026-10-09T15:19:05.690Z",
       "service": "Apps Script",
       "level": "info",
       "status": "skipped",
