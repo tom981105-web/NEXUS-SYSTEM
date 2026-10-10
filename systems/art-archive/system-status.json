@@ -1,19 +1,19 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-10T19:56:30.348Z",
+  "updatedAt": "2026-10-10T19:57:44.956Z",
   "timezone": "Asia/Seoul",
-  "overallStatus": "error",
+  "overallStatus": "ok",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-10T19:56:00.298Z",
-      "finishedAt": "2026-10-10T19:56:10.743Z",
-      "result": "failed",
-      "durationMs": 10445,
-      "error": "Exception: Service error: Drive\n    at syncExistingArtworkMetadata_ (Code:1503:18)\n    at checkArtworkCompletion (Code:109:5)\n    at __GS_INTERNAL_top_function_call__.gs:1:8"
+      "startedAt": "2026-10-10T19:57:00.176Z",
+      "finishedAt": "2026-10-10T19:57:28.141Z",
+      "result": "success",
+      "durationMs": 27965,
+      "error": null
     },
-    "consecutiveFailures": 1,
+    "consecutiveFailures": 0,
     "busyOrSkipped": false,
     "busyReason": null,
     "triggerInventoryAvailable": false
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-10T19:56:30.960Z",
+    "updatedAt": "2026-10-10T19:57:45.352Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,7 +253,7 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-10T19:56:19.061Z",
+    "checkedAt": "2026-10-10T19:57:34.409Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-11",
     "planned": 16,
