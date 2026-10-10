@@ -1,107 +1,152 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-10T16:14:25.316Z",
+  "updatedAt": "2026-10-10T16:16:58.966Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "running",
+    "status": "success",
     "runId": "paper-20261011-011425",
     "startedAt": "2026-10-10T16:14:25.133Z",
-    "finishedAt": null,
-    "durationMs": null,
-    "generatedCount": 0,
+    "finishedAt": "2026-10-10T16:16:58.966Z",
+    "durationMs": 153833,
+    "generatedCount": 5,
     "expectedMax": 6,
-    "lastCommitSha": null,
+    "lastCommitSha": "612b501af7bfe6905cd973f30f1df5e9e9e35d50",
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 0,
+      "calls": 1,
       "success": 0,
       "retries": 0,
-      "http429": 0,
-      "errors": 0,
-      "lastHttpStatus": null,
-      "disabledForRun": false
+      "http429": 1,
+      "errors": 1,
+      "lastHttpStatus": 429,
+      "disabledForRun": true
     },
     "crossref": {
-      "calls": 0,
-      "success": 0,
-      "retries": 0,
-      "http429": 0,
-      "errors": 0,
-      "lastHttpStatus": null,
-      "adaptiveIntervalMs": 650,
-      "throttleEvents": 0,
-      "earlyStops": 0
+      "calls": 70,
+      "success": 68,
+      "retries": 2,
+      "http429": 2,
+      "errors": 2,
+      "lastHttpStatus": 200,
+      "adaptiveIntervalMs": 1150,
+      "throttleEvents": 2,
+      "earlyStops": 3
     },
     "gemini": {
-      "calls": 0,
-      "success": 0,
+      "calls": 5,
+      "success": 5,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": null
+      "lastHttpStatus": 200
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 80,
+      "selectedTitle": "The effectiveness of analogue ‘neural network’ hardware",
+      "selectedDoi": "10.1088/0954-898x_1_1_003",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "전기",
-      "status": "pending",
+      "status": "generated",
       "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "crossrefCandidates": 78,
+      "selectedTitle": "Photo-Voltaic Array Fed Transformer-Less Inverter with Energy Storage System for Non-isolated Micro Inverter Applications",
+      "selectedDoi": "10.20508/ijrer.v7i1.5089.g6970",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "로봇·자동화",
-      "status": "pending",
+      "status": "generated",
       "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "crossrefCandidates": 87,
+      "selectedTitle": "Amortized constant time state estimation in Pose SLAM and hierarchical SLAM using a mixed Kalman-information filter",
+      "selectedDoi": "10.1016/j.robot.2011.02.010",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "에너지·환경",
-      "status": "pending",
+      "status": "generated",
       "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "crossrefCandidates": 117,
+      "selectedTitle": "Making a renewable energy future a reality: Case studies in successful renewable energy development",
+      "selectedDoi": "10.1016/0960-1481(94)90168-6",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "건축·시설관리",
-      "status": "pending",
+      "status": "generated",
       "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "crossrefCandidates": 20,
+      "selectedTitle": "Continuous accountability for acceptable building performance",
+      "selectedDoi": "10.1016/0926-5805(93)90020-x",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "도서관·문헌정보",
-      "status": "pending",
+      "status": "no_candidate",
       "openAlexCandidates": null,
-      "crossrefCandidates": null,
+      "crossrefCandidates": 0,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     }
   ],
-  "verification": null,
-  "stages": []
+  "verification": {
+    "filesExist": true,
+    "jsonValid": true,
+    "indexHeadCorrect": true,
+    "indexDetailDoiMatch": true,
+    "noOldDoiDuplicates": true,
+    "noNewDoiDuplicates": true,
+    "ok": true
+  },
+  "stages": [
+    {
+      "at": "2026-10-10T16:14:26.541Z",
+      "name": "START",
+      "status": "running",
+      "message": "논문 자동화 V2.7.4 시작"
+    },
+    {
+      "at": "2026-10-10T16:14:26.794Z",
+      "name": "GITHUB_HEAD",
+      "status": "success",
+      "message": "e81fcc6"
+    },
+    {
+      "at": "2026-10-10T16:14:29.844Z",
+      "name": "INDEX",
+      "status": "success",
+      "message": "papers=1357"
+    },
+    {
+      "at": "2026-10-10T16:16:55.349Z",
+      "name": "GITHUB_COMMIT",
+      "status": "success",
+      "message": "612b501"
+    },
+    {
+      "at": "2026-10-10T16:16:58.955Z",
+      "name": "VERIFY",
+      "status": "success",
+      "message": "최종 검증 통과"
+    },
+    {
+      "at": "2026-10-10T16:16:58.966Z",
+      "name": "FINISH",
+      "status": "success",
+      "message": "generated=5"
+    }
+  ]
 }
