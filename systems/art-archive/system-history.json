@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-10-10T09:26:30.302Z",
+  "generatedAt": "2026-10-10T21:01:35.903Z",
   "timezone": "Asia/Seoul",
   "schemaVersion": 1,
   "retentionDays": 90,
   "source": "그림 자동화 사용량 로그 / 사용량 로그",
   "summary": {
-    "days": 11,
-    "runs": 104,
+    "days": 12,
+    "runs": 106,
     "success": 68,
     "failed": 32,
-    "successRate": 65.4,
-    "avgElapsed": 212
+    "successRate": 64.2,
+    "avgElapsed": 206.6
   },
   "daily": [
     {
@@ -912,6 +912,43 @@
           "driveVerified": 0,
           "regenerations": 1,
           "avgStartDelay": 5647
+        }
+      ]
+    },
+    {
+      "date": "2026-10-11",
+      "runs": 2,
+      "success": 0,
+      "failed": 0,
+      "successRate": 0,
+      "avgElapsed": 0,
+      "maxElapsed": 0,
+      "driveVerified": 0,
+      "driveVerifiedRate": 0,
+      "regenerations": 0,
+      "avgStartDelay": 0,
+      "series": [
+        {
+          "name": "크레스트",
+          "runs": 1,
+          "success": 0,
+          "failed": 0,
+          "successRate": 0,
+          "avgElapsed": 0,
+          "driveVerified": 0,
+          "regenerations": 0,
+          "avgStartDelay": 0
+        },
+        {
+          "name": "펄퍼스",
+          "runs": 1,
+          "success": 0,
+          "failed": 0,
+          "successRate": 0,
+          "avgElapsed": 0,
+          "driveVerified": 0,
+          "regenerations": 0,
+          "avgStartDelay": 0
         }
       ]
     }
