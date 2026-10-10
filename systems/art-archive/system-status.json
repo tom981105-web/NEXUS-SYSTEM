@@ -1,16 +1,16 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-10T09:20:45.667Z",
+  "updatedAt": "2026-10-10T09:36:03.542Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-10T09:20:00.293Z",
-      "finishedAt": "2026-10-10T09:20:27.616Z",
+      "startedAt": "2026-10-10T09:35:00.231Z",
+      "finishedAt": "2026-10-10T09:35:40.123Z",
       "result": "success",
-      "durationMs": 27323,
+      "durationMs": 39892,
       "error": null
     },
     "consecutiveFailures": 0,
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-10T09:20:45.988Z",
+    "updatedAt": "2026-10-10T09:36:03.788Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,14 +253,14 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-10T09:20:34.039Z",
+    "checkedAt": "2026-10-10T09:35:50.978Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-10",
     "planned": 16,
     "success": 2,
-    "failed": 8,
+    "failed": 10,
     "stalled": 0,
-    "missed": 6,
+    "missed": 4,
     "running": 0,
     "pending": 0,
     "status": "error",
@@ -290,7 +290,7 @@
         "subject": "오카피",
         "filename": null,
         "startDelaySeconds": 1954,
-        "elapsedMinutes": 705,
+        "elapsedMinutes": 720.3,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -304,7 +304,7 @@
         "subject": "매너티",
         "filename": null,
         "startDelaySeconds": 4188,
-        "elapsedMinutes": 664.8,
+        "elapsedMinutes": 680,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -318,7 +318,7 @@
         "subject": "오카피",
         "filename": null,
         "startDelaySeconds": 6367,
-        "elapsedMinutes": 625.5,
+        "elapsedMinutes": 640.7,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -346,7 +346,7 @@
         "subject": "바다거북",
         "filename": null,
         "startDelaySeconds": 1234,
-        "elapsedMinutes": 705,
+        "elapsedMinutes": 720.3,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -360,7 +360,7 @@
         "subject": "만타가오리",
         "filename": null,
         "startDelaySeconds": 3468,
-        "elapsedMinutes": 664.8,
+        "elapsedMinutes": 680,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -374,7 +374,7 @@
         "subject": "청개구리",
         "filename": null,
         "startDelaySeconds": 5647,
-        "elapsedMinutes": 625.5,
+        "elapsedMinutes": 640.7,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -408,16 +408,16 @@
       {
         "series": "신수",
         "scheduledTime": "17:06",
-        "status": "MISSED",
-        "logRow": null,
-        "runId": null,
-        "stage": null,
-        "result": null,
-        "subject": null,
+        "status": "FAILED",
+        "logRow": 115,
+        "runId": "신수-20261010-182250",
+        "stage": "FAILED",
+        "result": "failed",
+        "subject": "큰개미핥기",
         "filename": null,
-        "startDelaySeconds": null,
-        "elapsedMinutes": null,
-        "diagnosis": "예정시각 후 45분이 지났지만 실행 로그가 없음"
+        "startDelaySeconds": 4610,
+        "elapsedMinutes": 3.3,
+        "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
         "series": "수채화",
@@ -464,16 +464,16 @@
       {
         "series": "성수",
         "scheduledTime": "17:18",
-        "status": "MISSED",
-        "logRow": null,
-        "runId": null,
-        "stage": null,
-        "result": null,
-        "subject": null,
+        "status": "FAILED",
+        "logRow": 116,
+        "runId": "성수-20261010-182250",
+        "stage": "FAILED",
+        "result": "failed",
+        "subject": "아홀로틀",
         "filename": null,
-        "startDelaySeconds": null,
-        "elapsedMinutes": null,
-        "diagnosis": "예정시각 후 45분이 지났지만 실행 로그가 없음"
+        "startDelaySeconds": 3890,
+        "elapsedMinutes": 3.3,
+        "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
         "series": "융화",
