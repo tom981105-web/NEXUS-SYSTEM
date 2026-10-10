@@ -1,152 +1,107 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-10T08:18:21.747Z",
+  "updatedAt": "2026-10-10T09:14:25.785Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "success",
-    "runId": "paper-20261010-171425",
-    "startedAt": "2026-10-10T08:14:25.162Z",
-    "finishedAt": "2026-10-10T08:18:21.747Z",
-    "durationMs": 236585,
-    "generatedCount": 5,
+    "status": "running",
+    "runId": "paper-20261010-181425",
+    "startedAt": "2026-10-10T09:14:25.625Z",
+    "finishedAt": null,
+    "durationMs": null,
+    "generatedCount": 0,
     "expectedMax": 6,
-    "lastCommitSha": "91df00cfd8fb2aa272e90aa45bef2e2e6eec9fcc",
+    "lastCommitSha": null,
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 73,
-      "success": 73,
+      "calls": 0,
+      "success": 0,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": 200,
+      "lastHttpStatus": null,
       "disabledForRun": false
     },
     "crossref": {
-      "calls": 69,
-      "success": 67,
-      "retries": 2,
-      "http429": 2,
-      "errors": 2,
-      "lastHttpStatus": 200,
-      "adaptiveIntervalMs": 850,
-      "throttleEvents": 2,
-      "earlyStops": 4
-    },
-    "gemini": {
-      "calls": 5,
-      "success": 5,
+      "calls": 0,
+      "success": 0,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": 200
+      "lastHttpStatus": null,
+      "adaptiveIntervalMs": 650,
+      "throttleEvents": 0,
+      "earlyStops": 0
+    },
+    "gemini": {
+      "calls": 0,
+      "success": 0,
+      "retries": 0,
+      "http429": 0,
+      "errors": 0,
+      "lastHttpStatus": null
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 86,
-      "selectedTitle": "Digital image processing and computer vision",
-      "selectedDoi": "10.1016/0734-189x(90)90171-q",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "전기",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 84,
-      "selectedTitle": "Rescheduling of power systems constrained with transient stability limits in restructured power systems",
-      "selectedDoi": "10.1016/j.epsr.2010.07.008",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "로봇·자동화",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 95,
-      "selectedTitle": "Optimal path generation for a simulated autonomous mobile robot",
-      "selectedDoi": "10.1007/bf00735436",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "에너지·환경",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 84,
-      "selectedTitle": "Erratum",
-      "selectedDoi": "10.1002/est2.175",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "건축·시설관리",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 27,
-      "selectedTitle": "Facility management: a cutting‐edge field?",
-      "selectedDoi": "10.1108/eum0000000003355",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "도서관·문헌정보",
-      "status": "no_candidate",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 0,
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     }
   ],
-  "verification": {
-    "filesExist": true,
-    "jsonValid": true,
-    "indexHeadCorrect": true,
-    "indexDetailDoiMatch": true,
-    "noOldDoiDuplicates": true,
-    "noNewDoiDuplicates": true,
-    "ok": true
-  },
-  "stages": [
-    {
-      "at": "2026-10-10T08:14:26.523Z",
-      "name": "START",
-      "status": "running",
-      "message": "논문 자동화 V2.7.4 시작"
-    },
-    {
-      "at": "2026-10-10T08:14:26.772Z",
-      "name": "GITHUB_HEAD",
-      "status": "success",
-      "message": "51a8d87"
-    },
-    {
-      "at": "2026-10-10T08:14:28.541Z",
-      "name": "INDEX",
-      "status": "success",
-      "message": "papers=1317"
-    },
-    {
-      "at": "2026-10-10T08:18:18.631Z",
-      "name": "GITHUB_COMMIT",
-      "status": "success",
-      "message": "91df00c"
-    },
-    {
-      "at": "2026-10-10T08:18:21.733Z",
-      "name": "VERIFY",
-      "status": "success",
-      "message": "최종 검증 통과"
-    },
-    {
-      "at": "2026-10-10T08:18:21.747Z",
-      "name": "FINISH",
-      "status": "success",
-      "message": "generated=5"
-    }
-  ]
+  "verification": null,
+  "stages": []
 }
