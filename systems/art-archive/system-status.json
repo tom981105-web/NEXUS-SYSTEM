@@ -1,21 +1,21 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-10T21:00:23.070Z",
+  "updatedAt": "2026-10-10T21:16:28.301Z",
   "timezone": "Asia/Seoul",
-  "overallStatus": "warning",
+  "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-10T21:00:00.168Z",
-      "finishedAt": "2026-10-10T21:00:05.265Z",
+      "startedAt": "2026-10-10T21:15:00.654Z",
+      "finishedAt": "2026-10-10T21:16:26.023Z",
       "result": "skipped",
-      "durationMs": 5097,
-      "error": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
+      "durationMs": 85369,
+      "error": null
     },
     "consecutiveFailures": 0,
     "busyOrSkipped": true,
-    "busyReason": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀",
+    "busyReason": "중복 실행 방지를 위해 이번 회차를 건너뜀",
     "triggerInventoryAvailable": false
   },
   "notionSync": {
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-10T21:00:23.581Z",
+    "updatedAt": "2026-10-10T21:16:28.483Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,31 +253,31 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-10T21:00:12.292Z",
+    "checkedAt": "2026-10-10T21:16:16.463Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-11",
     "planned": 16,
     "success": 0,
-    "failed": 0,
+    "failed": 2,
     "stalled": 0,
     "missed": 0,
-    "running": 2,
+    "running": 0,
     "pending": 14,
-    "status": "running",
+    "status": "error",
     "slots": [
       {
         "series": "크레스트",
         "scheduledTime": "06:00",
-        "status": "RUNNING",
+        "status": "FAILED",
         "logRow": 120,
         "runId": "크레스트-20261011-055845",
-        "stage": "GENERATING",
-        "result": "pending",
+        "stage": "FAILED",
+        "result": "failed",
         "subject": "천산갑",
         "filename": null,
         "startDelaySeconds": 0,
-        "elapsedMinutes": 0,
-        "diagnosis": "GENERATING 단계 진행 중"
+        "elapsedMinutes": 2.6,
+        "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
         "series": "묵수",
@@ -291,7 +291,7 @@
         "filename": null,
         "startDelaySeconds": null,
         "elapsedMinutes": null,
-        "diagnosis": "예약시각 전"
+        "diagnosis": "예정시각 경과 후 로그 생성 대기"
       },
       {
         "series": "신수",
@@ -305,7 +305,7 @@
         "filename": null,
         "startDelaySeconds": null,
         "elapsedMinutes": null,
-        "diagnosis": "예약시각 전"
+        "diagnosis": "예정시각 경과 후 로그 생성 대기"
       },
       {
         "series": "수채화",
@@ -319,21 +319,21 @@
         "filename": null,
         "startDelaySeconds": null,
         "elapsedMinutes": null,
-        "diagnosis": "예약시각 전"
+        "diagnosis": "예정시각 경과 후 로그 생성 대기"
       },
       {
         "series": "펄퍼스",
         "scheduledTime": "06:12",
-        "status": "RUNNING",
+        "status": "FAILED",
         "logRow": 121,
         "runId": "펄퍼스-20261011-055845",
-        "stage": "STARTED",
-        "result": "pending",
+        "stage": "FAILED",
+        "result": "failed",
         "subject": "구아바",
         "filename": null,
         "startDelaySeconds": 0,
-        "elapsedMinutes": 0,
-        "diagnosis": "STARTED 단계 진행 중"
+        "elapsedMinutes": 2.6,
+        "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
         "series": "잉크",
@@ -347,7 +347,7 @@
         "filename": null,
         "startDelaySeconds": null,
         "elapsedMinutes": null,
-        "diagnosis": "예약시각 전"
+        "diagnosis": "예정시각 경과 후 로그 생성 대기"
       },
       {
         "series": "성수",
