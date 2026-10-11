@@ -1,7 +1,25 @@
 {
   "version": "1.4",
-  "updatedAt": "2026-10-11T13:49:29.884Z",
+  "updatedAt": "2026-10-11T14:04:49.544Z",
   "events": [
+    {
+      "id": "e75dd80d-87a3-4ffb-8716-70b234163287",
+      "at": "2026-10-11T14:04:26.231Z",
+      "service": "Apps Script",
+      "level": "error",
+      "status": "failed",
+      "title": "Apps Script 실행 실패",
+      "message": "Exception: Service error: Drive\n    at checkArtworkCompletion (Code:122:20)\n    at __GS_INTERNAL_top_function_call__.gs:1:8"
+    },
+    {
+      "id": "b547beb2-13b5-4efb-88d9-cf1ae24148dc",
+      "at": "2026-10-11T13:53:05.554Z",
+      "service": "Apps Script",
+      "level": "info",
+      "status": "skipped",
+      "title": "Apps Script 실행 건너뜀",
+      "message": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
+    },
     {
       "id": "caf106d8-1f7d-4e1d-9b81-99dc2dfe19d3",
       "at": "2026-10-11T13:35:05.493Z",
@@ -878,24 +896,6 @@
     {
       "id": "4f140166-bdf1-4be0-a242-910cf7601fd6",
       "at": "2026-10-10T09:36:05.700Z",
-      "service": "Apps Script",
-      "level": "info",
-      "status": "skipped",
-      "title": "Apps Script 실행 건너뜀",
-      "message": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
-    },
-    {
-      "id": "8a4a9841-3aa5-42a3-ba8f-f866d4a53369",
-      "at": "2026-10-10T09:14:07.078Z",
-      "service": "Apps Script",
-      "level": "info",
-      "status": "skipped",
-      "title": "Apps Script 실행 건너뜀",
-      "message": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
-    },
-    {
-      "id": "6c929565-dbeb-46fb-bc61-1661b5e039c3",
-      "at": "2026-10-10T08:57:06.737Z",
       "service": "Apps Script",
       "level": "info",
       "status": "skipped",
