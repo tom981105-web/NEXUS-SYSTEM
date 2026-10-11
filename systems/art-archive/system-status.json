@@ -1,17 +1,17 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-11T14:06:21.093Z",
+  "updatedAt": "2026-10-11T14:21:53.797Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-11T14:06:00.729Z",
-      "finishedAt": "2026-10-11T14:06:05.940Z",
+      "startedAt": "2026-10-11T14:21:00.467Z",
+      "finishedAt": "2026-10-11T14:21:35.463Z",
       "result": "success",
-      "durationMs": 5211,
-      "error": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
+      "durationMs": 34996,
+      "error": null
     },
     "consecutiveFailures": 0,
     "busyOrSkipped": false,
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-11T14:06:21.753Z",
+    "updatedAt": "2026-10-11T14:21:54.371Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,7 +253,7 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-11T14:06:07.702Z",
+    "checkedAt": "2026-10-11T14:21:42.492Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-11",
     "planned": 16,
@@ -416,8 +416,8 @@
         "subject": null,
         "filename": null,
         "startDelaySeconds": 15635,
-        "elapsedMinutes": 99.5,
-        "diagnosis": "미완료 상태에서 99분간 새 로그가 없어 중단 의심"
+        "elapsedMinutes": 115.1,
+        "diagnosis": "미완료 상태에서 115분간 새 로그가 없어 중단 의심"
       },
       {
         "series": "수채화",
@@ -430,7 +430,7 @@
         "subject": "나무늘보",
         "filename": null,
         "startDelaySeconds": 6441,
-        "elapsedMinutes": 249.8,
+        "elapsedMinutes": 265.4,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -472,7 +472,7 @@
         "subject": "오카피",
         "filename": null,
         "startDelaySeconds": 3720,
-        "elapsedMinutes": 286.1,
+        "elapsedMinutes": 301.7,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -486,7 +486,7 @@
         "subject": "전갈",
         "filename": null,
         "startDelaySeconds": 5721,
-        "elapsedMinutes": 249.8,
+        "elapsedMinutes": 265.4,
         "diagnosis": "실행 로그가 실패로 종료됨"
       }
     ]
