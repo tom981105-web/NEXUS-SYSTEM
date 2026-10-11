@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-10-11T21:50:04.886Z",
+  "generatedAt": "2026-10-11T22:23:03.565Z",
   "timezone": "Asia/Seoul",
   "schemaVersion": 1,
   "retentionDays": 90,
   "source": "그림 자동화 사용량 로그 / 사용량 로그",
   "summary": {
     "days": 13,
-    "runs": 121,
-    "success": 72,
+    "runs": 123,
+    "success": 74,
     "failed": 44,
-    "successRate": 59.5,
+    "successRate": 60.2,
     "avgElapsed": 210.6
   },
   "daily": [
@@ -1020,16 +1020,16 @@
     },
     {
       "date": "2026-10-12",
-      "runs": 6,
-      "success": 0,
+      "runs": 8,
+      "success": 2,
       "failed": 6,
-      "successRate": 0,
+      "successRate": 25,
       "avgElapsed": 184,
       "maxElapsed": 184,
-      "driveVerified": 0,
-      "driveVerifiedRate": 0,
-      "regenerations": 6,
-      "avgStartDelay": 710,
+      "driveVerified": 2,
+      "driveVerifiedRate": 25,
+      "regenerations": 7,
+      "avgStartDelay": 1489.3,
       "series": [
         {
           "name": "크레스트",
@@ -1055,14 +1055,14 @@
         },
         {
           "name": "신수",
-          "runs": 1,
-          "success": 0,
+          "runs": 2,
+          "success": 1,
           "failed": 1,
-          "successRate": 0,
+          "successRate": 50,
           "avgElapsed": null,
-          "driveVerified": 0,
+          "driveVerified": 1,
           "regenerations": 1,
-          "avgStartDelay": 0
+          "avgStartDelay": 2093.5
         },
         {
           "name": "수채화",
@@ -1096,6 +1096,17 @@
           "driveVerified": 0,
           "regenerations": 1,
           "avgStartDelay": 1770
+        },
+        {
+          "name": "성수",
+          "runs": 1,
+          "success": 1,
+          "failed": 0,
+          "successRate": 100,
+          "avgElapsed": null,
+          "driveVerified": 1,
+          "regenerations": 1,
+          "avgStartDelay": 3467
         }
       ]
     }
