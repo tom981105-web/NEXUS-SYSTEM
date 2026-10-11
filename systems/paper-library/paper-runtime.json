@@ -1,107 +1,152 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-11T16:14:25.506Z",
+  "updatedAt": "2026-10-11T16:17:21.415Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "running",
+    "status": "success",
     "runId": "paper-20261012-011425",
     "startedAt": "2026-10-11T16:14:25.328Z",
-    "finishedAt": null,
-    "durationMs": null,
-    "generatedCount": 0,
+    "finishedAt": "2026-10-11T16:17:21.415Z",
+    "durationMs": 176087,
+    "generatedCount": 4,
     "expectedMax": 6,
-    "lastCommitSha": null,
+    "lastCommitSha": "3712347a0db2b5fd88db9b2a1ec8feb1293798a3",
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 0,
+      "calls": 1,
       "success": 0,
       "retries": 0,
-      "http429": 0,
-      "errors": 0,
-      "lastHttpStatus": null,
-      "disabledForRun": false
+      "http429": 1,
+      "errors": 1,
+      "lastHttpStatus": 429,
+      "disabledForRun": true
     },
     "crossref": {
-      "calls": 0,
-      "success": 0,
-      "retries": 0,
-      "http429": 0,
-      "errors": 0,
-      "lastHttpStatus": null,
-      "adaptiveIntervalMs": 650,
-      "throttleEvents": 0,
-      "earlyStops": 0
+      "calls": 73,
+      "success": 70,
+      "retries": 3,
+      "http429": 3,
+      "errors": 3,
+      "lastHttpStatus": 200,
+      "adaptiveIntervalMs": 1700,
+      "throttleEvents": 3,
+      "earlyStops": 3
     },
     "gemini": {
-      "calls": 0,
-      "success": 0,
+      "calls": 4,
+      "success": 4,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": null
+      "lastHttpStatus": 200
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 83,
+      "selectedTitle": "Classifying the Literature Related to Computer Vision and Image Analysis",
+      "selectedDoi": "10.1006/cviu.2000.0851",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "전기",
-      "status": "pending",
+      "status": "generated",
       "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "crossrefCandidates": 58,
+      "selectedTitle": "SIMULATION AND COMPARISON OF MULTI LEVEL INVERTER USING H-BRIDGE INVERTER TOPOLOGY FOR INDUCTION MOTOR DRIVE",
+      "selectedDoi": "10.21090/ijaerd.020511",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "로봇·자동화",
-      "status": "pending",
+      "status": "generated",
       "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "crossrefCandidates": 89,
+      "selectedTitle": "Robot Awareness in Cooperative Mobile Robot Learning",
+      "selectedDoi": "10.1023/a:1008945119734",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "에너지·환경",
-      "status": "pending",
+      "status": "generated",
       "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "crossrefCandidates": 99,
+      "selectedTitle": "Renewable Energy",
+      "selectedDoi": "10.1016/s0960-1481(01)00195-1",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "건축·시설관리",
-      "status": "pending",
+      "status": "no_candidate",
       "openAlexCandidates": null,
-      "crossrefCandidates": null,
+      "crossrefCandidates": 0,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     },
     {
       "name": "도서관·문헌정보",
-      "status": "pending",
+      "status": "no_candidate",
       "openAlexCandidates": null,
-      "crossrefCandidates": null,
+      "crossrefCandidates": 0,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     }
   ],
-  "verification": null,
-  "stages": []
+  "verification": {
+    "filesExist": true,
+    "jsonValid": true,
+    "indexHeadCorrect": true,
+    "indexDetailDoiMatch": true,
+    "noOldDoiDuplicates": true,
+    "noNewDoiDuplicates": true,
+    "ok": true
+  },
+  "stages": [
+    {
+      "at": "2026-10-11T16:14:26.751Z",
+      "name": "START",
+      "status": "running",
+      "message": "논문 자동화 V2.7.4 시작"
+    },
+    {
+      "at": "2026-10-11T16:14:27.009Z",
+      "name": "GITHUB_HEAD",
+      "status": "success",
+      "message": "096b326"
+    },
+    {
+      "at": "2026-10-11T16:14:30.975Z",
+      "name": "INDEX",
+      "status": "success",
+      "message": "papers=1461"
+    },
+    {
+      "at": "2026-10-11T16:17:15.185Z",
+      "name": "GITHUB_COMMIT",
+      "status": "success",
+      "message": "3712347"
+    },
+    {
+      "at": "2026-10-11T16:17:21.368Z",
+      "name": "VERIFY",
+      "status": "success",
+      "message": "최종 검증 통과"
+    },
+    {
+      "at": "2026-10-11T16:17:21.415Z",
+      "name": "FINISH",
+      "status": "success",
+      "message": "generated=4"
+    }
+  ]
 }
