@@ -1,16 +1,16 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-11T16:11:47.530Z",
+  "updatedAt": "2026-10-11T16:28:00.840Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-11T16:11:00.214Z",
-      "finishedAt": "2026-10-11T16:11:27.096Z",
+      "startedAt": "2026-10-11T16:27:00.062Z",
+      "finishedAt": "2026-10-11T16:27:35.343Z",
       "result": "success",
-      "durationMs": 26882,
+      "durationMs": 35281,
       "error": null
     },
     "consecutiveFailures": 0,
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-11T16:11:47.865Z",
+    "updatedAt": "2026-10-11T16:28:01.097Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,7 +253,7 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-11T16:11:33.124Z",
+    "checkedAt": "2026-10-11T16:27:47.542Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-12",
     "planned": 16,
@@ -304,7 +304,7 @@
         "subject": "일각고래",
         "filename": null,
         "startDelaySeconds": 0,
-        "elapsedMinutes": 39.2,
+        "elapsedMinutes": 55.4,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -318,7 +318,7 @@
         "subject": "왕관앵무",
         "filename": null,
         "startDelaySeconds": 0,
-        "elapsedMinutes": 39.2,
+        "elapsedMinutes": 55.4,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
