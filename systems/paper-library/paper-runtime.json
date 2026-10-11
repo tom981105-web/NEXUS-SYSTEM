@@ -1,152 +1,107 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-11T02:19:21.467Z",
+  "updatedAt": "2026-10-11T03:14:26.201Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "success",
-    "runId": "paper-20261011-111426",
-    "startedAt": "2026-10-11T02:14:26.919Z",
-    "finishedAt": "2026-10-11T02:19:21.467Z",
-    "durationMs": 294548,
-    "generatedCount": 5,
+    "status": "running",
+    "runId": "paper-20261011-121425",
+    "startedAt": "2026-10-11T03:14:25.695Z",
+    "finishedAt": null,
+    "durationMs": null,
+    "generatedCount": 0,
     "expectedMax": 6,
-    "lastCommitSha": "ad629d70e5109febbc90c02d06c8dea6cb75d076",
+    "lastCommitSha": null,
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 73,
-      "success": 73,
+      "calls": 0,
+      "success": 0,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": 200,
+      "lastHttpStatus": null,
       "disabledForRun": false
     },
     "crossref": {
-      "calls": 78,
-      "success": 69,
-      "retries": 8,
-      "http429": 9,
-      "errors": 9,
-      "lastHttpStatus": 200,
-      "adaptiveIntervalMs": 2300,
-      "throttleEvents": 9,
-      "earlyStops": 3
-    },
-    "gemini": {
-      "calls": 5,
-      "success": 5,
+      "calls": 0,
+      "success": 0,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": 200
+      "lastHttpStatus": null,
+      "adaptiveIntervalMs": 650,
+      "throttleEvents": 0,
+      "earlyStops": 0
+    },
+    "gemini": {
+      "calls": 0,
+      "success": 0,
+      "retries": 0,
+      "http429": 0,
+      "errors": 0,
+      "lastHttpStatus": null
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 94,
-      "selectedTitle": "Semantic mediation in audio and music intelligence through natural language processing a systematic literature review",
-      "selectedDoi": "10.1016/j.nlp.2026.100225",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "전기",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 67,
-      "selectedTitle": "Noise and vibration in brushless doubly fed machine and brushless doubly fed reluctance machine",
-      "selectedDoi": "10.1049/iet-epa.2013.0113",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "로봇·자동화",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 100,
-      "selectedTitle": "Space Robotics in 2050",
-      "selectedDoi": "10.1163/016918609x12469686515539",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "에너지·환경",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 109,
-      "selectedTitle": "Hydrogen energy",
-      "selectedDoi": "10.1016/0360-3199(88)90057-2",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "건축·시설관리",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 10,
-      "selectedTitle": "Facility Supervision: A Vital Function in Overall Facility Management",
-      "selectedDoi": "10.1123/nirsa.10.1.42",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "도서관·문헌정보",
-      "status": "no_candidate",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 0,
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     }
   ],
-  "verification": {
-    "filesExist": true,
-    "jsonValid": true,
-    "indexHeadCorrect": true,
-    "indexDetailDoiMatch": true,
-    "noOldDoiDuplicates": true,
-    "noNewDoiDuplicates": true,
-    "ok": true
-  },
-  "stages": [
-    {
-      "at": "2026-10-11T02:14:28.479Z",
-      "name": "START",
-      "status": "running",
-      "message": "논문 자동화 V2.7.4 시작"
-    },
-    {
-      "at": "2026-10-11T02:14:28.703Z",
-      "name": "GITHUB_HEAD",
-      "status": "success",
-      "message": "0989418"
-    },
-    {
-      "at": "2026-10-11T02:14:31.128Z",
-      "name": "INDEX",
-      "status": "success",
-      "message": "papers=1402"
-    },
-    {
-      "at": "2026-10-11T02:19:16.675Z",
-      "name": "GITHUB_COMMIT",
-      "status": "success",
-      "message": "ad629d7"
-    },
-    {
-      "at": "2026-10-11T02:19:21.310Z",
-      "name": "VERIFY",
-      "status": "success",
-      "message": "최종 검증 통과"
-    },
-    {
-      "at": "2026-10-11T02:19:21.467Z",
-      "name": "FINISH",
-      "status": "success",
-      "message": "generated=5"
-    }
-  ]
+  "verification": null,
+  "stages": []
 }
