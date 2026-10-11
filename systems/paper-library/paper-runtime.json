@@ -1,152 +1,107 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-11T04:18:34.044Z",
+  "updatedAt": "2026-10-11T05:14:25.529Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "success",
-    "runId": "paper-20261011-131425",
-    "startedAt": "2026-10-11T04:14:25.610Z",
-    "finishedAt": "2026-10-11T04:18:34.044Z",
-    "durationMs": 248434,
-    "generatedCount": 5,
+    "status": "running",
+    "runId": "paper-20261011-141425",
+    "startedAt": "2026-10-11T05:14:25.327Z",
+    "finishedAt": null,
+    "durationMs": null,
+    "generatedCount": 0,
     "expectedMax": 6,
-    "lastCommitSha": "23b395de4d68c0a0895e8af4adfc48cdd197453f",
+    "lastCommitSha": null,
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 73,
-      "success": 73,
+      "calls": 0,
+      "success": 0,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": 200,
+      "lastHttpStatus": null,
       "disabledForRun": false
     },
     "crossref": {
-      "calls": 70,
-      "success": 70,
+      "calls": 0,
+      "success": 0,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": 200,
+      "lastHttpStatus": null,
       "adaptiveIntervalMs": 650,
       "throttleEvents": 0,
-      "earlyStops": 3
+      "earlyStops": 0
     },
     "gemini": {
-      "calls": 5,
-      "success": 5,
+      "calls": 0,
+      "success": 0,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": 200
+      "lastHttpStatus": null
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 92,
-      "selectedTitle": "A novel Data Extraction Framework Using Natural Language Processing (DEFNLP) techniques",
-      "selectedDoi": "10.1016/j.nlp.2025.100149",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "전기",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 66,
-      "selectedTitle": "Power quality problem mitigation by unified power quality conditioner: an adaptive hysteresis control technique",
-      "selectedDoi": "10.1504/ijpelec.2014.067442",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "로봇·자동화",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 99,
-      "selectedTitle": "SLAM Aided GPS/INS/Vision Navigation System for Helicopter",
-      "selectedDoi": "10.5302/j.icros.2008.14.8.745",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "에너지·환경",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 108,
-      "selectedTitle": "Global prospects for renewable energy",
-      "selectedDoi": "10.1016/0960-1481(94)90349-2",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "건축·시설관리",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 8,
-      "selectedTitle": "Addendum",
-      "selectedDoi": "10.1080/17512549.2015.1099908",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "도서관·문헌정보",
-      "status": "no_candidate",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 0,
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     }
   ],
-  "verification": {
-    "filesExist": true,
-    "jsonValid": true,
-    "indexHeadCorrect": true,
-    "indexDetailDoiMatch": true,
-    "noOldDoiDuplicates": true,
-    "noNewDoiDuplicates": true,
-    "ok": true
-  },
-  "stages": [
-    {
-      "at": "2026-10-11T04:14:27.211Z",
-      "name": "START",
-      "status": "running",
-      "message": "논문 자동화 V2.7.4 시작"
-    },
-    {
-      "at": "2026-10-11T04:14:27.550Z",
-      "name": "GITHUB_HEAD",
-      "status": "success",
-      "message": "88e92e6"
-    },
-    {
-      "at": "2026-10-11T04:14:35.087Z",
-      "name": "INDEX",
-      "status": "success",
-      "message": "papers=1412"
-    },
-    {
-      "at": "2026-10-11T04:18:25.961Z",
-      "name": "GITHUB_COMMIT",
-      "status": "success",
-      "message": "23b395d"
-    },
-    {
-      "at": "2026-10-11T04:18:33.900Z",
-      "name": "VERIFY",
-      "status": "success",
-      "message": "최종 검증 통과"
-    },
-    {
-      "at": "2026-10-11T04:18:34.044Z",
-      "name": "FINISH",
-      "status": "success",
-      "message": "generated=5"
-    }
-  ]
+  "verification": null,
+  "stages": []
 }
