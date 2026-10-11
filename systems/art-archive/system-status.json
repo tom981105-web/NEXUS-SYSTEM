@@ -1,16 +1,16 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-11T11:44:49.303Z",
+  "updatedAt": "2026-10-11T12:00:58.535Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-11T11:44:00.280Z",
-      "finishedAt": "2026-10-11T11:44:30.550Z",
+      "startedAt": "2026-10-11T12:00:00.043Z",
+      "finishedAt": "2026-10-11T12:00:39.500Z",
       "result": "success",
-      "durationMs": 30270,
+      "durationMs": 39457,
       "error": null
     },
     "consecutiveFailures": 0,
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-11T11:44:49.717Z",
+    "updatedAt": "2026-10-11T12:00:59.485Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,7 +253,7 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-11T11:44:37.103Z",
+    "checkedAt": "2026-10-11T12:00:45.566Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-11",
     "planned": 16,
@@ -416,7 +416,7 @@
         "subject": "바비루사",
         "filename": null,
         "startDelaySeconds": 4246,
-        "elapsedMinutes": 147.9,
+        "elapsedMinutes": 164,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -430,7 +430,7 @@
         "subject": "나무늘보",
         "filename": null,
         "startDelaySeconds": 6441,
-        "elapsedMinutes": 108.3,
+        "elapsedMinutes": 124.4,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -472,7 +472,7 @@
         "subject": "오카피",
         "filename": null,
         "startDelaySeconds": 3720,
-        "elapsedMinutes": 144.6,
+        "elapsedMinutes": 160.8,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -486,7 +486,7 @@
         "subject": "전갈",
         "filename": null,
         "startDelaySeconds": 5721,
-        "elapsedMinutes": 108.3,
+        "elapsedMinutes": 124.4,
         "diagnosis": "실행 로그가 실패로 종료됨"
       }
     ]
