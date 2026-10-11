@@ -1,152 +1,107 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-11T17:17:34.290Z",
+  "updatedAt": "2026-10-11T18:14:25.422Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "success",
-    "runId": "paper-20261012-021425",
-    "startedAt": "2026-10-11T17:14:25.653Z",
-    "finishedAt": "2026-10-11T17:17:34.290Z",
-    "durationMs": 188637,
-    "generatedCount": 4,
+    "status": "running",
+    "runId": "paper-20261012-031425",
+    "startedAt": "2026-10-11T18:14:25.227Z",
+    "finishedAt": null,
+    "durationMs": null,
+    "generatedCount": 0,
     "expectedMax": 6,
-    "lastCommitSha": "02f6c26407b1bcd6f8739627e3b3c1305b7c1c54",
+    "lastCommitSha": null,
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 1,
+      "calls": 0,
       "success": 0,
       "retries": 0,
-      "http429": 1,
-      "errors": 1,
-      "lastHttpStatus": 429,
-      "disabledForRun": true
+      "http429": 0,
+      "errors": 0,
+      "lastHttpStatus": null,
+      "disabledForRun": false
     },
     "crossref": {
-      "calls": 72,
-      "success": 70,
-      "retries": 2,
-      "http429": 2,
-      "errors": 2,
-      "lastHttpStatus": 200,
-      "adaptiveIntervalMs": 950,
-      "throttleEvents": 2,
-      "earlyStops": 3
+      "calls": 0,
+      "success": 0,
+      "retries": 0,
+      "http429": 0,
+      "errors": 0,
+      "lastHttpStatus": null,
+      "adaptiveIntervalMs": 650,
+      "throttleEvents": 0,
+      "earlyStops": 0
     },
     "gemini": {
-      "calls": 6,
-      "success": 6,
-      "retries": 2,
+      "calls": 0,
+      "success": 0,
+      "retries": 0,
       "http429": 0,
-      "errors": 2,
-      "lastHttpStatus": 200
+      "errors": 0,
+      "lastHttpStatus": null
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 81,
-      "selectedTitle": "Study on Constants of Natural Language Texts",
-      "selectedDoi": "10.5715/jnlp.21.877",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "전기",
-      "status": "generated",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 55,
-      "selectedTitle": "A practical discussion of problems in transformer differential protection",
-      "selectedDoi": "10.1109/ee.1942.6435537",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "로봇·자동화",
-      "status": "generated",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 90,
-      "selectedTitle": "EuRathlon: the autonomous robot challenge",
-      "selectedDoi": "10.1108/ir-10-2013-405",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "에너지·환경",
-      "status": "generated",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 96,
-      "selectedTitle": "World renewable energy",
-      "selectedDoi": "10.1016/s0960-1481(01)00159-8",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "건축·시설관리",
-      "status": "no_candidate",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 0,
+      "crossrefCandidates": null,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     },
     {
       "name": "도서관·문헌정보",
-      "status": "no_candidate",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 0,
+      "crossrefCandidates": null,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     }
   ],
-  "verification": {
-    "filesExist": true,
-    "jsonValid": true,
-    "indexHeadCorrect": true,
-    "indexDetailDoiMatch": true,
-    "noOldDoiDuplicates": true,
-    "noNewDoiDuplicates": true,
-    "ok": true
-  },
-  "stages": [
-    {
-      "at": "2026-10-11T17:14:27.033Z",
-      "name": "START",
-      "status": "running",
-      "message": "논문 자동화 V2.7.4 시작"
-    },
-    {
-      "at": "2026-10-11T17:14:27.369Z",
-      "name": "GITHUB_HEAD",
-      "status": "success",
-      "message": "3712347"
-    },
-    {
-      "at": "2026-10-11T17:14:32.237Z",
-      "name": "INDEX",
-      "status": "success",
-      "message": "papers=1465"
-    },
-    {
-      "at": "2026-10-11T17:17:27.903Z",
-      "name": "GITHUB_COMMIT",
-      "status": "success",
-      "message": "02f6c26"
-    },
-    {
-      "at": "2026-10-11T17:17:34.279Z",
-      "name": "VERIFY",
-      "status": "success",
-      "message": "최종 검증 통과"
-    },
-    {
-      "at": "2026-10-11T17:17:34.290Z",
-      "name": "FINISH",
-      "status": "success",
-      "message": "generated=4"
-    }
-  ]
+  "verification": null,
+  "stages": []
 }
