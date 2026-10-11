@@ -1,16 +1,16 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-11T12:47:26.602Z",
+  "updatedAt": "2026-10-11T13:02:41.508Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-11T12:47:00.502Z",
-      "finishedAt": "2026-10-11T12:47:05.575Z",
+      "startedAt": "2026-10-11T13:02:00.707Z",
+      "finishedAt": "2026-10-11T13:02:05.946Z",
       "result": "skipped",
-      "durationMs": 5073,
+      "durationMs": 5239,
       "error": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
     },
     "consecutiveFailures": 0,
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-11T12:47:27.098Z",
+    "updatedAt": "2026-10-11T13:02:41.865Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,15 +253,15 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-11T12:47:13.905Z",
+    "checkedAt": "2026-10-11T13:02:24.237Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-11",
     "planned": 16,
     "success": 4,
     "failed": 5,
-    "stalled": 0,
+    "stalled": 1,
     "missed": 6,
-    "running": 1,
+    "running": 0,
     "pending": 0,
     "status": "error",
     "slots": [
@@ -408,7 +408,7 @@
       {
         "series": "신수",
         "scheduledTime": "17:06",
-        "status": "RUNNING",
+        "status": "STALLED",
         "logRow": 130,
         "runId": null,
         "stage": null,
@@ -416,8 +416,8 @@
         "subject": null,
         "filename": null,
         "startDelaySeconds": 15635,
-        "elapsedMinutes": 20.6,
-        "diagnosis": "실행 로그 생성됨 / 완료 대기"
+        "elapsedMinutes": 35.8,
+        "diagnosis": "미완료 상태에서 35분간 새 로그가 없어 중단 의심"
       },
       {
         "series": "수채화",
@@ -430,7 +430,7 @@
         "subject": "나무늘보",
         "filename": null,
         "startDelaySeconds": 6441,
-        "elapsedMinutes": 170.9,
+        "elapsedMinutes": 186.1,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -472,7 +472,7 @@
         "subject": "오카피",
         "filename": null,
         "startDelaySeconds": 3720,
-        "elapsedMinutes": 207.2,
+        "elapsedMinutes": 222.4,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -486,7 +486,7 @@
         "subject": "전갈",
         "filename": null,
         "startDelaySeconds": 5721,
-        "elapsedMinutes": 170.9,
+        "elapsedMinutes": 186.1,
         "diagnosis": "실행 로그가 실패로 종료됨"
       }
     ]
