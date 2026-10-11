@@ -1,21 +1,21 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-11T18:31:28.567Z",
+  "updatedAt": "2026-10-11T18:46:44.041Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-11T18:31:00.351Z",
-      "finishedAt": "2026-10-11T18:31:05.476Z",
-      "result": "skipped",
-      "durationMs": 5125,
-      "error": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
+      "startedAt": "2026-10-11T18:46:00.332Z",
+      "finishedAt": "2026-10-11T18:46:25.043Z",
+      "result": "success",
+      "durationMs": 24711,
+      "error": null
     },
     "consecutiveFailures": 0,
-    "busyOrSkipped": true,
-    "busyReason": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀",
+    "busyOrSkipped": false,
+    "busyReason": null,
     "triggerInventoryAvailable": false
   },
   "notionSync": {
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-11T18:31:28.767Z",
+    "updatedAt": "2026-10-11T18:46:44.428Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,7 +253,7 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-11T18:31:16.890Z",
+    "checkedAt": "2026-10-11T18:46:30.930Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-12",
     "planned": 16,
@@ -304,7 +304,7 @@
         "subject": "일각고래",
         "filename": null,
         "startDelaySeconds": 0,
-        "elapsedMinutes": 178.9,
+        "elapsedMinutes": 194.1,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -318,7 +318,7 @@
         "subject": "왕관앵무",
         "filename": null,
         "startDelaySeconds": 0,
-        "elapsedMinutes": 178.9,
+        "elapsedMinutes": 194.1,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
