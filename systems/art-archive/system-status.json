@@ -1,21 +1,21 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-11T09:22:45.912Z",
+  "updatedAt": "2026-10-11T09:38:29.577Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-11T09:22:00.224Z",
-      "finishedAt": "2026-10-11T09:22:25.778Z",
-      "result": "success",
-      "durationMs": 25554,
-      "error": null
+      "startedAt": "2026-10-11T09:38:00.258Z",
+      "finishedAt": "2026-10-11T09:38:05.383Z",
+      "result": "skipped",
+      "durationMs": 5125,
+      "error": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
     },
     "consecutiveFailures": 0,
-    "busyOrSkipped": false,
-    "busyReason": null,
+    "busyOrSkipped": true,
+    "busyReason": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀",
     "triggerInventoryAvailable": false
   },
   "notionSync": {
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-11T09:22:46.219Z",
+    "updatedAt": "2026-10-11T09:38:29.666Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,14 +253,14 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-11T09:22:31.980Z",
+    "checkedAt": "2026-10-11T09:38:15.187Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-11",
     "planned": 16,
     "success": 4,
-    "failed": 2,
+    "failed": 4,
     "stalled": 0,
-    "missed": 10,
+    "missed": 8,
     "running": 0,
     "pending": 0,
     "status": "error",
@@ -408,16 +408,16 @@
       {
         "series": "신수",
         "scheduledTime": "17:06",
-        "status": "MISSED",
-        "logRow": null,
-        "runId": null,
-        "stage": null,
-        "result": null,
-        "subject": null,
+        "status": "FAILED",
+        "logRow": 126,
+        "runId": "신수-20261011-181646",
+        "stage": "FAILED",
+        "result": "failed",
+        "subject": "바비루사",
         "filename": null,
-        "startDelaySeconds": null,
-        "elapsedMinutes": null,
-        "diagnosis": "예정시각 후 45분이 지났지만 실행 로그가 없음"
+        "startDelaySeconds": 4246,
+        "elapsedMinutes": 21.5,
+        "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
         "series": "수채화",
@@ -464,16 +464,16 @@
       {
         "series": "성수",
         "scheduledTime": "17:18",
-        "status": "MISSED",
-        "logRow": null,
-        "runId": null,
-        "stage": null,
-        "result": null,
-        "subject": null,
+        "status": "FAILED",
+        "logRow": 127,
+        "runId": "성수-20261011-182000",
+        "stage": "FAILED",
+        "result": "failed",
+        "subject": "오카피",
         "filename": null,
-        "startDelaySeconds": null,
-        "elapsedMinutes": null,
-        "diagnosis": "예정시각 후 45분이 지났지만 실행 로그가 없음"
+        "startDelaySeconds": 3720,
+        "elapsedMinutes": 18.3,
+        "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
         "series": "융화",
