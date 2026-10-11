@@ -1,7 +1,16 @@
 {
   "version": "1.4",
-  "updatedAt": "2026-10-11T01:27:33.226Z",
+  "updatedAt": "2026-10-11T01:43:38.561Z",
   "events": [
+    {
+      "id": "dc024545-c117-426a-a063-3e8e70db563e",
+      "at": "2026-10-11T01:37:05.664Z",
+      "service": "Apps Script",
+      "level": "info",
+      "status": "skipped",
+      "title": "Apps Script 실행 건너뜀",
+      "message": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
+    },
     {
       "id": "d27ddfd5-1423-47eb-82a0-0e597ba253a0",
       "at": "2026-10-11T01:20:06.168Z",
@@ -892,15 +901,6 @@
       "status": "skipped",
       "title": "Apps Script 실행 건너뜀",
       "message": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
-    },
-    {
-      "id": "93e8019c-b4a8-441c-8a5d-f823dcd8818e",
-      "at": "2026-10-09T21:57:09.609Z",
-      "service": "Apps Script",
-      "level": "error",
-      "status": "failed",
-      "title": "Apps Script 실행 실패",
-      "message": "Exception: Service error: Drive\n    at getArtworkRootFolder_ (Code:10:25)\n    at getSeriesFolders_ (Code:21:16)\n    at checkArtworkCompletion (Code:106:27)\n    at __GS_INTERNAL_top_function_call__.gs:1:8"
     }
   ]
 }
