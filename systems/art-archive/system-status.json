@@ -1,21 +1,21 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-11T09:38:29.577Z",
+  "updatedAt": "2026-10-11T09:53:57.683Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-11T09:38:00.258Z",
-      "finishedAt": "2026-10-11T09:38:05.383Z",
-      "result": "skipped",
-      "durationMs": 5125,
-      "error": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
+      "startedAt": "2026-10-11T09:53:07.219Z",
+      "finishedAt": "2026-10-11T09:53:36.840Z",
+      "result": "success",
+      "durationMs": 29621,
+      "error": null
     },
     "consecutiveFailures": 0,
-    "busyOrSkipped": true,
-    "busyReason": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀",
+    "busyOrSkipped": false,
+    "busyReason": null,
     "triggerInventoryAvailable": false
   },
   "notionSync": {
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-11T09:38:29.666Z",
+    "updatedAt": "2026-10-11T09:53:58.044Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,7 +253,7 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-11T09:38:15.187Z",
+    "checkedAt": "2026-10-11T09:53:43.422Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-11",
     "planned": 16,
@@ -416,7 +416,7 @@
         "subject": "바비루사",
         "filename": null,
         "startDelaySeconds": 4246,
-        "elapsedMinutes": 21.5,
+        "elapsedMinutes": 37,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -472,7 +472,7 @@
         "subject": "오카피",
         "filename": null,
         "startDelaySeconds": 3720,
-        "elapsedMinutes": 18.3,
+        "elapsedMinutes": 33.7,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
