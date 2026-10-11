@@ -1,21 +1,21 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-11T21:40:23.602Z",
+  "updatedAt": "2026-10-11T21:55:29.682Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-11T21:40:00.453Z",
-      "finishedAt": "2026-10-11T21:40:05.752Z",
-      "result": "success",
-      "durationMs": 5299,
+      "startedAt": "2026-10-11T21:55:00.336Z",
+      "finishedAt": "2026-10-11T21:55:05.449Z",
+      "result": "skipped",
+      "durationMs": 5113,
       "error": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
     },
     "consecutiveFailures": 0,
-    "busyOrSkipped": false,
-    "busyReason": null,
+    "busyOrSkipped": true,
+    "busyReason": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀",
     "triggerInventoryAvailable": false
   },
   "notionSync": {
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-11T21:40:23.906Z",
+    "updatedAt": "2026-10-11T21:55:30.273Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,16 +253,16 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-11T21:40:07.692Z",
+    "checkedAt": "2026-10-11T21:55:16.646Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-12",
     "planned": 16,
     "success": 0,
-    "failed": 4,
+    "failed": 6,
     "stalled": 0,
     "missed": 0,
     "running": 0,
-    "pending": 12,
+    "pending": 10,
     "status": "error",
     "slots": [
       {
@@ -282,16 +282,16 @@
       {
         "series": "묵수",
         "scheduledTime": "06:03",
-        "status": "PENDING",
-        "logRow": null,
-        "runId": null,
-        "stage": null,
-        "result": null,
-        "subject": null,
+        "status": "FAILED",
+        "logRow": 135,
+        "runId": "묵수-20261012-064430",
+        "stage": "FAILED",
+        "result": "failed",
+        "subject": "카피바라",
         "filename": null,
-        "startDelaySeconds": null,
-        "elapsedMinutes": null,
-        "diagnosis": "예정시각 경과 후 로그 생성 대기"
+        "startDelaySeconds": 2490,
+        "elapsedMinutes": 10.8,
+        "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
         "series": "신수",
@@ -304,7 +304,7 @@
         "subject": "일각고래",
         "filename": null,
         "startDelaySeconds": 0,
-        "elapsedMinutes": 367.7,
+        "elapsedMinutes": 382.9,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -318,7 +318,7 @@
         "subject": "왕관앵무",
         "filename": null,
         "startDelaySeconds": 0,
-        "elapsedMinutes": 367.7,
+        "elapsedMinutes": 382.9,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -338,16 +338,16 @@
       {
         "series": "잉크",
         "scheduledTime": "06:15",
-        "status": "PENDING",
-        "logRow": null,
-        "runId": null,
-        "stage": null,
-        "result": null,
-        "subject": null,
+        "status": "FAILED",
+        "logRow": 136,
+        "runId": "잉크-20261012-064430",
+        "stage": "FAILED",
+        "result": "failed",
+        "subject": "장수풍뎅이",
         "filename": null,
-        "startDelaySeconds": null,
-        "elapsedMinutes": null,
-        "diagnosis": "예정시각 경과 후 로그 생성 대기"
+        "startDelaySeconds": 1770,
+        "elapsedMinutes": 10.8,
+        "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
         "series": "성수",
