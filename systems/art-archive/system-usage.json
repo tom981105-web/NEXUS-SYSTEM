@@ -1,25 +1,25 @@
 {
-  "generatedAt": "2026-10-11T15:37:21.863Z",
+  "generatedAt": "2026-10-11T21:01:43.020Z",
   "source": "그림 자동화 사용량 로그 / 사용량 로그",
   "schemaVersion": 3,
   "summary": {
-    "runs": 117,
+    "runs": 119,
     "success": 72,
-    "failed": 40,
-    "successRate": 61.5,
+    "failed": 42,
+    "successRate": 60.5,
     "driveVerified": 74,
-    "regenerations": 47,
-    "sourceRows": 130,
+    "regenerations": 49,
+    "sourceRows": 132,
     "normalizedPartialRows": 0
   },
   "series": [
     {
       "name": "크레스트",
-      "runs": 21,
+      "runs": 22,
       "success": 14,
-      "failed": 7,
-      "avgElapsed": 248.9,
-      "regenerations": 10
+      "failed": 8,
+      "avgElapsed": 245.3,
+      "regenerations": 11
     },
     {
       "name": "묵수",
@@ -47,11 +47,11 @@
     },
     {
       "name": "펄퍼스",
-      "runs": 16,
+      "runs": 17,
       "success": 11,
-      "failed": 5,
-      "avgElapsed": 208.7,
-      "regenerations": 7
+      "failed": 6,
+      "avgElapsed": 207.1,
+      "regenerations": 8
     },
     {
       "name": "잉크",
@@ -79,6 +79,34 @@
     }
   ],
   "recentRuns": [
+    {
+      "time": "2026-10-12 05:57:59",
+      "series": "크레스트",
+      "generationAttempts": 2,
+      "regenerations": 1,
+      "uploadAttempts": 0,
+      "driveVerified": false,
+      "result": "failed",
+      "elapsedSeconds": 184,
+      "stage": "FAILED",
+      "scheduledTime": "2026-10-12 6:00:00",
+      "startDelaySeconds": 0,
+      "generatedFilename": null
+    },
+    {
+      "time": "2026-10-12 05:57:59",
+      "series": "펄퍼스",
+      "generationAttempts": 2,
+      "regenerations": 1,
+      "uploadAttempts": 0,
+      "driveVerified": false,
+      "result": "failed",
+      "elapsedSeconds": 184,
+      "stage": "FAILED",
+      "scheduledTime": "2026-10-12 6:12:00",
+      "startDelaySeconds": 0,
+      "generatedFilename": null
+    },
     {
       "time": "2026-10-12 00:32:24",
       "series": "신수",
@@ -218,34 +246,6 @@
       "scheduledTime": "2026-10-11 17:00:00",
       "startDelaySeconds": 200,
       "generatedFilename": "천산갑 크레스트.png"
-    },
-    {
-      "time": "2026-10-11 17:06:47",
-      "series": "펄퍼스",
-      "generationAttempts": 1,
-      "regenerations": 0,
-      "uploadAttempts": 1,
-      "driveVerified": true,
-      "result": "success",
-      "elapsedSeconds": 207,
-      "stage": "COMPLETED",
-      "scheduledTime": "2026-10-11 17:00:00",
-      "startDelaySeconds": 200,
-      "generatedFilename": "구아바 펄퍼스.png"
-    },
-    {
-      "time": "2026-10-11 06:01:18",
-      "series": "크레스트",
-      "generationAttempts": 2,
-      "regenerations": 1,
-      "uploadAttempts": 0,
-      "driveVerified": false,
-      "result": "failed",
-      "elapsedSeconds": 153,
-      "stage": "FAILED",
-      "scheduledTime": "2026-10-11 6:00:00",
-      "startDelaySeconds": 0,
-      "generatedFilename": null
     }
   ]
 }
