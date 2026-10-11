@@ -1,21 +1,21 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-11T10:25:25.192Z",
+  "updatedAt": "2026-10-11T10:40:52.230Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-11T10:25:00.173Z",
-      "finishedAt": "2026-10-11T10:25:05.268Z",
-      "result": "skipped",
-      "durationMs": 5095,
-      "error": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
+      "startedAt": "2026-10-11T10:40:00.391Z",
+      "finishedAt": "2026-10-11T10:40:30.727Z",
+      "result": "success",
+      "durationMs": 30336,
+      "error": null
     },
     "consecutiveFailures": 0,
-    "busyOrSkipped": true,
-    "busyReason": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀",
+    "busyOrSkipped": false,
+    "busyReason": null,
     "triggerInventoryAvailable": false
   },
   "notionSync": {
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-11T10:25:25.692Z",
+    "updatedAt": "2026-10-11T10:40:52.718Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,7 +253,7 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-11T10:25:12.156Z",
+    "checkedAt": "2026-10-11T10:40:37.809Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-11",
     "planned": 16,
@@ -416,7 +416,7 @@
         "subject": "바비루사",
         "filename": null,
         "startDelaySeconds": 4246,
-        "elapsedMinutes": 68.4,
+        "elapsedMinutes": 83.9,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -430,7 +430,7 @@
         "subject": "나무늘보",
         "filename": null,
         "startDelaySeconds": 6441,
-        "elapsedMinutes": 28.9,
+        "elapsedMinutes": 44.3,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -472,7 +472,7 @@
         "subject": "오카피",
         "filename": null,
         "startDelaySeconds": 3720,
-        "elapsedMinutes": 65.2,
+        "elapsedMinutes": 80.6,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -486,7 +486,7 @@
         "subject": "전갈",
         "filename": null,
         "startDelaySeconds": 5721,
-        "elapsedMinutes": 28.9,
+        "elapsedMinutes": 44.3,
         "diagnosis": "실행 로그가 실패로 종료됨"
       }
     ]
