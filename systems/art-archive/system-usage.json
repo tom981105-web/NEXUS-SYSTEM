@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-10-11T12:31:18.067Z",
+  "generatedAt": "2026-10-11T15:37:21.863Z",
   "source": "그림 자동화 사용량 로그 / 사용량 로그",
   "schemaVersion": 3,
   "summary": {
-    "runs": 115,
+    "runs": 117,
     "success": 72,
-    "failed": 38,
-    "successRate": 62.6,
+    "failed": 40,
+    "successRate": 61.5,
     "driveVerified": 74,
-    "regenerations": 45,
-    "sourceRows": 128,
+    "regenerations": 47,
+    "sourceRows": 130,
     "normalizedPartialRows": 0
   },
   "series": [
@@ -31,19 +31,19 @@
     },
     {
       "name": "신수",
-      "runs": 16,
+      "runs": 17,
       "success": 9,
-      "failed": 5,
+      "failed": 6,
       "avgElapsed": 231.5,
-      "regenerations": 4
+      "regenerations": 5
     },
     {
       "name": "수채화",
-      "runs": 17,
+      "runs": 18,
       "success": 9,
-      "failed": 8,
+      "failed": 9,
       "avgElapsed": 205.9,
-      "regenerations": 8
+      "regenerations": 9
     },
     {
       "name": "펄퍼스",
@@ -79,6 +79,34 @@
     }
   ],
   "recentRuns": [
+    {
+      "time": "2026-10-12 00:32:24",
+      "series": "신수",
+      "generationAttempts": 2,
+      "regenerations": 1,
+      "uploadAttempts": 0,
+      "driveVerified": false,
+      "result": "failed",
+      "elapsedSeconds": null,
+      "stage": "FAILED",
+      "scheduledTime": "2026-10-12 6:06:00",
+      "startDelaySeconds": 0,
+      "generatedFilename": null
+    },
+    {
+      "time": "2026-10-12 00:32:24",
+      "series": "수채화",
+      "generationAttempts": 2,
+      "regenerations": 1,
+      "uploadAttempts": 0,
+      "driveVerified": false,
+      "result": "failed",
+      "elapsedSeconds": null,
+      "stage": "FAILED",
+      "scheduledTime": "2026-10-12 6:09:00",
+      "startDelaySeconds": 0,
+      "generatedFilename": null
+    },
     {
       "time": "2026-10-11 21:26:35",
       "series": "신수",
@@ -217,34 +245,6 @@
       "stage": "FAILED",
       "scheduledTime": "2026-10-11 6:00:00",
       "startDelaySeconds": 0,
-      "generatedFilename": null
-    },
-    {
-      "time": "2026-10-11 06:01:18",
-      "series": "펄퍼스",
-      "generationAttempts": 2,
-      "regenerations": 1,
-      "uploadAttempts": 0,
-      "driveVerified": false,
-      "result": "failed",
-      "elapsedSeconds": 153,
-      "stage": "FAILED",
-      "scheduledTime": "2026-10-11 6:12:00",
-      "startDelaySeconds": 0,
-      "generatedFilename": null
-    },
-    {
-      "time": "2026-10-10 18:26:10",
-      "series": "신수",
-      "generationAttempts": 2,
-      "regenerations": 1,
-      "uploadAttempts": 0,
-      "driveVerified": false,
-      "result": "failed",
-      "elapsedSeconds": 200,
-      "stage": "FAILED",
-      "scheduledTime": "2026-10-10 17:06:00",
-      "startDelaySeconds": 4610,
       "generatedFilename": null
     }
   ]
