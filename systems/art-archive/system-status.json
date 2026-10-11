@@ -1,21 +1,21 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-11T13:49:27.326Z",
+  "updatedAt": "2026-10-11T14:04:47.043Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-11T13:48:00.518Z",
-      "finishedAt": "2026-10-11T13:49:08.175Z",
-      "result": "skipped",
-      "durationMs": 67657,
-      "error": null
+      "startedAt": "2026-10-11T14:04:00.188Z",
+      "finishedAt": "2026-10-11T14:04:25.965Z",
+      "result": "failed",
+      "durationMs": 25777,
+      "error": "Exception: Service error: Drive\n    at checkArtworkCompletion (Code:122:20)\n    at __GS_INTERNAL_top_function_call__.gs:1:8"
     },
-    "consecutiveFailures": 0,
-    "busyOrSkipped": true,
-    "busyReason": "중복 실행 방지를 위해 이번 회차를 건너뜀",
+    "consecutiveFailures": 1,
+    "busyOrSkipped": false,
+    "busyReason": null,
     "triggerInventoryAvailable": false
   },
   "notionSync": {
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-11T13:49:27.918Z",
+    "updatedAt": "2026-10-11T14:04:47.647Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,7 +253,7 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-11T13:49:13.820Z",
+    "checkedAt": "2026-10-11T14:04:34.620Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-11",
     "planned": 16,
@@ -416,8 +416,8 @@
         "subject": null,
         "filename": null,
         "startDelaySeconds": 15635,
-        "elapsedMinutes": 82.6,
-        "diagnosis": "미완료 상태에서 82분간 새 로그가 없어 중단 의심"
+        "elapsedMinutes": 98,
+        "diagnosis": "미완료 상태에서 97분간 새 로그가 없어 중단 의심"
       },
       {
         "series": "수채화",
@@ -430,7 +430,7 @@
         "subject": "나무늘보",
         "filename": null,
         "startDelaySeconds": 6441,
-        "elapsedMinutes": 232.9,
+        "elapsedMinutes": 248.2,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -472,7 +472,7 @@
         "subject": "오카피",
         "filename": null,
         "startDelaySeconds": 3720,
-        "elapsedMinutes": 269.2,
+        "elapsedMinutes": 284.6,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -486,7 +486,7 @@
         "subject": "전갈",
         "filename": null,
         "startDelaySeconds": 5721,
-        "elapsedMinutes": 232.9,
+        "elapsedMinutes": 248.2,
         "diagnosis": "실행 로그가 실패로 종료됨"
       }
     ]
