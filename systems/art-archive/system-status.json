@@ -1,17 +1,17 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-11T12:00:58.535Z",
+  "updatedAt": "2026-10-11T12:16:13.456Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-11T12:00:00.043Z",
-      "finishedAt": "2026-10-11T12:00:39.500Z",
+      "startedAt": "2026-10-11T12:16:00.187Z",
+      "finishedAt": "2026-10-11T12:16:05.287Z",
       "result": "success",
-      "durationMs": 39457,
-      "error": null
+      "durationMs": 5100,
+      "error": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
     },
     "consecutiveFailures": 0,
     "busyOrSkipped": false,
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-11T12:00:59.485Z",
+    "updatedAt": "2026-10-11T12:16:14.109Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,7 +253,7 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-11T12:00:45.566Z",
+    "checkedAt": "2026-10-11T12:15:59.513Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-11",
     "planned": 16,
@@ -416,7 +416,7 @@
         "subject": "바비루사",
         "filename": null,
         "startDelaySeconds": 4246,
-        "elapsedMinutes": 164,
+        "elapsedMinutes": 179.2,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -430,7 +430,7 @@
         "subject": "나무늘보",
         "filename": null,
         "startDelaySeconds": 6441,
-        "elapsedMinutes": 124.4,
+        "elapsedMinutes": 139.6,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -472,7 +472,7 @@
         "subject": "오카피",
         "filename": null,
         "startDelaySeconds": 3720,
-        "elapsedMinutes": 160.8,
+        "elapsedMinutes": 176,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -486,7 +486,7 @@
         "subject": "전갈",
         "filename": null,
         "startDelaySeconds": 5721,
-        "elapsedMinutes": 124.4,
+        "elapsedMinutes": 139.6,
         "diagnosis": "실행 로그가 실패로 종료됨"
       }
     ]
