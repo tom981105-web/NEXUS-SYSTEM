@@ -1,152 +1,107 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-12T17:17:44.627Z",
+  "updatedAt": "2026-10-12T18:14:26.113Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "success",
-    "runId": "paper-20261013-021425",
-    "startedAt": "2026-10-12T17:14:25.357Z",
-    "finishedAt": "2026-10-12T17:17:44.627Z",
-    "durationMs": 199270,
-    "generatedCount": 4,
+    "status": "running",
+    "runId": "paper-20261013-031425",
+    "startedAt": "2026-10-12T18:14:25.913Z",
+    "finishedAt": null,
+    "durationMs": null,
+    "generatedCount": 0,
     "expectedMax": 6,
-    "lastCommitSha": "1691db9d6a6d14992c80d642a88032c76158c7c2",
+    "lastCommitSha": null,
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 1,
+      "calls": 0,
       "success": 0,
-      "retries": 0,
-      "http429": 1,
-      "errors": 1,
-      "lastHttpStatus": 429,
-      "disabledForRun": true
-    },
-    "crossref": {
-      "calls": 75,
-      "success": 72,
-      "retries": 3,
-      "http429": 3,
-      "errors": 3,
-      "lastHttpStatus": 200,
-      "adaptiveIntervalMs": 1400,
-      "throttleEvents": 3,
-      "earlyStops": 2
-    },
-    "gemini": {
-      "calls": 4,
-      "success": 4,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": 200
+      "lastHttpStatus": null,
+      "disabledForRun": false
+    },
+    "crossref": {
+      "calls": 0,
+      "success": 0,
+      "retries": 0,
+      "http429": 0,
+      "errors": 0,
+      "lastHttpStatus": null,
+      "adaptiveIntervalMs": 650,
+      "throttleEvents": 0,
+      "earlyStops": 0
+    },
+    "gemini": {
+      "calls": 0,
+      "success": 0,
+      "retries": 0,
+      "http429": 0,
+      "errors": 0,
+      "lastHttpStatus": null
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 92,
-      "selectedTitle": "Comparison of Multiple Reinforcement Learning and Deep Reinforcement Learning Methods for the Task Aimed at Achieving the Goal",
-      "selectedDoi": "10.13164/mendel.2021.1.001",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "전기",
-      "status": "generated",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 36,
-      "selectedTitle": "Electronics: high and low power",
-      "selectedDoi": "10.1049/ep.1969.0158",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "로봇·자동화",
-      "status": "generated",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 69,
-      "selectedTitle": "Design and Experiment of Remote Semi-autonomous Robot Monitoring System",
-      "selectedDoi": "10.3724/sp.j.1218.2010.00125",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "에너지·환경",
-      "status": "generated",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 118,
-      "selectedTitle": "Beyond energy labels: estimating housing energy efficiency and energy underconsumption using administrative microdata",
-      "selectedDoi": "10.1007/s12053-025-10405-2",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "건축·시설관리",
-      "status": "no_candidate",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 0,
+      "crossrefCandidates": null,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     },
     {
       "name": "도서관·문헌정보",
-      "status": "no_candidate",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 0,
+      "crossrefCandidates": null,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     }
   ],
-  "verification": {
-    "filesExist": true,
-    "jsonValid": true,
-    "indexHeadCorrect": true,
-    "indexDetailDoiMatch": true,
-    "noOldDoiDuplicates": true,
-    "noNewDoiDuplicates": true,
-    "ok": true
-  },
-  "stages": [
-    {
-      "at": "2026-10-12T17:14:26.969Z",
-      "name": "START",
-      "status": "running",
-      "message": "논문 자동화 V2.7.4 시작"
-    },
-    {
-      "at": "2026-10-12T17:14:27.436Z",
-      "name": "GITHUB_HEAD",
-      "status": "success",
-      "message": "b1ff140"
-    },
-    {
-      "at": "2026-10-12T17:14:32.688Z",
-      "name": "INDEX",
-      "status": "success",
-      "message": "papers=1562"
-    },
-    {
-      "at": "2026-10-12T17:17:34.989Z",
-      "name": "GITHUB_COMMIT",
-      "status": "success",
-      "message": "1691db9"
-    },
-    {
-      "at": "2026-10-12T17:17:44.588Z",
-      "name": "VERIFY",
-      "status": "success",
-      "message": "최종 검증 통과"
-    },
-    {
-      "at": "2026-10-12T17:17:44.627Z",
-      "name": "FINISH",
-      "status": "success",
-      "message": "generated=4"
-    }
-  ]
+  "verification": null,
+  "stages": []
 }
