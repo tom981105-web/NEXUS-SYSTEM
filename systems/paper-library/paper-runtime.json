@@ -1,107 +1,152 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-12T16:14:27.198Z",
+  "updatedAt": "2026-10-12T16:17:30.245Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "running",
+    "status": "success",
     "runId": "paper-20261013-011426",
     "startedAt": "2026-10-12T16:14:26.328Z",
-    "finishedAt": null,
-    "durationMs": null,
-    "generatedCount": 0,
+    "finishedAt": "2026-10-12T16:17:30.245Z",
+    "durationMs": 183917,
+    "generatedCount": 4,
     "expectedMax": 6,
-    "lastCommitSha": null,
+    "lastCommitSha": "b1ff140ab7789793d58387d4c5408e01143e1fb0",
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 0,
+      "calls": 1,
       "success": 0,
       "retries": 0,
-      "http429": 0,
-      "errors": 0,
-      "lastHttpStatus": null,
-      "disabledForRun": false
+      "http429": 1,
+      "errors": 1,
+      "lastHttpStatus": 429,
+      "disabledForRun": true
     },
     "crossref": {
-      "calls": 0,
-      "success": 0,
+      "calls": 72,
+      "success": 72,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": null,
+      "lastHttpStatus": 200,
       "adaptiveIntervalMs": 650,
       "throttleEvents": 0,
-      "earlyStops": 0
+      "earlyStops": 2
     },
     "gemini": {
-      "calls": 0,
-      "success": 0,
+      "calls": 4,
+      "success": 4,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": null
+      "lastHttpStatus": 200
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 93,
+      "selectedTitle": "REIN-2: Giving birth to prepared reinforcement learning agents using reinforcement learning agents",
+      "selectedDoi": "10.1016/j.neucom.2022.05.004",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "전기",
-      "status": "pending",
+      "status": "generated",
       "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "crossrefCandidates": 32,
+      "selectedTitle": "IEEE Power Electronics Society Information",
+      "selectedDoi": "10.1109/lpel.2004.831246",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "로봇·자동화",
-      "status": "pending",
+      "status": "generated",
       "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "crossrefCandidates": 70,
+      "selectedTitle": "Robot facts 1986",
+      "selectedDoi": "10.1016/0921-8890(88)90014-0",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "에너지·환경",
-      "status": "pending",
+      "status": "generated",
       "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "crossrefCandidates": 119,
+      "selectedTitle": "Role of green finance in improving energy efficiency and renewable energy development",
+      "selectedDoi": "10.1007/s12053-022-10021-4",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "건축·시설관리",
-      "status": "pending",
+      "status": "no_candidate",
       "openAlexCandidates": null,
-      "crossrefCandidates": null,
+      "crossrefCandidates": 0,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     },
     {
       "name": "도서관·문헌정보",
-      "status": "pending",
+      "status": "no_candidate",
       "openAlexCandidates": null,
-      "crossrefCandidates": null,
+      "crossrefCandidates": 0,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     }
   ],
-  "verification": null,
-  "stages": []
+  "verification": {
+    "filesExist": true,
+    "jsonValid": true,
+    "indexHeadCorrect": true,
+    "indexDetailDoiMatch": true,
+    "noOldDoiDuplicates": true,
+    "noNewDoiDuplicates": true,
+    "ok": true
+  },
+  "stages": [
+    {
+      "at": "2026-10-12T16:14:29.557Z",
+      "name": "START",
+      "status": "running",
+      "message": "논문 자동화 V2.7.4 시작"
+    },
+    {
+      "at": "2026-10-12T16:14:30.061Z",
+      "name": "GITHUB_HEAD",
+      "status": "success",
+      "message": "32064fd"
+    },
+    {
+      "at": "2026-10-12T16:14:39.134Z",
+      "name": "INDEX",
+      "status": "success",
+      "message": "papers=1558"
+    },
+    {
+      "at": "2026-10-12T16:17:10.702Z",
+      "name": "GITHUB_COMMIT",
+      "status": "success",
+      "message": "b1ff140"
+    },
+    {
+      "at": "2026-10-12T16:17:30.068Z",
+      "name": "VERIFY",
+      "status": "success",
+      "message": "최종 검증 통과"
+    },
+    {
+      "at": "2026-10-12T16:17:30.245Z",
+      "name": "FINISH",
+      "status": "success",
+      "message": "generated=4"
+    }
+  ]
 }
