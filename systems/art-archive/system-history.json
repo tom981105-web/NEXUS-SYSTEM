@@ -1,16 +1,16 @@
 {
-  "generatedAt": "2026-10-12T09:29:31.575Z",
+  "generatedAt": "2026-10-12T10:10:38.133Z",
   "timezone": "Asia/Seoul",
   "schemaVersion": 1,
   "retentionDays": 90,
   "source": "그림 자동화 사용량 로그 / 사용량 로그",
   "summary": {
     "days": 13,
-    "runs": 132,
-    "success": 76,
+    "runs": 134,
+    "success": 78,
     "failed": 51,
-    "successRate": 57.6,
-    "avgElapsed": 212.3
+    "successRate": 58.2,
+    "avgElapsed": 207.5
   },
   "daily": [
     {
@@ -1020,16 +1020,16 @@
     },
     {
       "date": "2026-10-12",
-      "runs": 17,
-      "success": 4,
+      "runs": 19,
+      "success": 6,
       "failed": 13,
-      "successRate": 23.5,
-      "avgElapsed": 234.5,
+      "successRate": 31.6,
+      "avgElapsed": 156.3,
       "maxElapsed": 285,
-      "driveVerified": 4,
-      "driveVerifiedRate": 23.5,
-      "regenerations": 15,
-      "avgStartDelay": 2390.4,
+      "driveVerified": 6,
+      "driveVerifiedRate": 31.6,
+      "regenerations": 19,
+      "avgStartDelay": 2872.1,
       "series": [
         {
           "name": "크레스트",
@@ -1066,14 +1066,14 @@
         },
         {
           "name": "수채화",
-          "runs": 2,
-          "success": 0,
+          "runs": 3,
+          "success": 1,
           "failed": 2,
-          "successRate": 0,
-          "avgElapsed": 285,
-          "driveVerified": 0,
-          "regenerations": 2,
-          "avgStartDelay": 3268.5
+          "successRate": 33.3,
+          "avgElapsed": 142.5,
+          "driveVerified": 1,
+          "regenerations": 3,
+          "avgStartDelay": 4540.7
         },
         {
           "name": "펄퍼스",
@@ -1110,14 +1110,14 @@
         },
         {
           "name": "융화",
-          "runs": 1,
-          "success": 0,
+          "runs": 2,
+          "success": 1,
           "failed": 1,
-          "successRate": 0,
-          "avgElapsed": 285,
-          "driveVerified": 0,
-          "regenerations": 1,
-          "avgStartDelay": 5817
+          "successRate": 50,
+          "avgElapsed": 142.5,
+          "driveVerified": 1,
+          "regenerations": 4,
+          "avgStartDelay": 6091
         }
       ]
     }
