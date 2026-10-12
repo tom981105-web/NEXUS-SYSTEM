@@ -1,152 +1,107 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-12T00:18:59.033Z",
+  "updatedAt": "2026-10-12T01:14:25.554Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "success",
-    "runId": "paper-20261012-091425",
-    "startedAt": "2026-10-12T00:14:25.831Z",
-    "finishedAt": "2026-10-12T00:18:59.033Z",
-    "durationMs": 273202,
-    "generatedCount": 4,
+    "status": "running",
+    "runId": "paper-20261012-101425",
+    "startedAt": "2026-10-12T01:14:25.369Z",
+    "finishedAt": null,
+    "durationMs": null,
+    "generatedCount": 0,
     "expectedMax": 6,
-    "lastCommitSha": "61a5d36a91cf0a7cf8973cbb42ac390c4f19a670",
+    "lastCommitSha": null,
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 73,
-      "success": 73,
+      "calls": 0,
+      "success": 0,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": 200,
+      "lastHttpStatus": null,
       "disabledForRun": false
     },
     "crossref": {
-      "calls": 74,
-      "success": 71,
-      "retries": 3,
-      "http429": 3,
-      "errors": 3,
-      "lastHttpStatus": 200,
-      "adaptiveIntervalMs": 1400,
-      "throttleEvents": 3,
-      "earlyStops": 3
-    },
-    "gemini": {
-      "calls": 4,
-      "success": 4,
+      "calls": 0,
+      "success": 0,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": 200
+      "lastHttpStatus": null,
+      "adaptiveIntervalMs": 650,
+      "throttleEvents": 0,
+      "earlyStops": 0
+    },
+    "gemini": {
+      "calls": 0,
+      "success": 0,
+      "retries": 0,
+      "http429": 0,
+      "errors": 0,
+      "lastHttpStatus": null
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 105,
-      "selectedTitle": "An exploration of reinforcement learning and deep reinforcement learning",
-      "selectedDoi": "10.54254/2755-2721/73/20240386",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "전기",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 50,
-      "selectedTitle": "Low Speed Electric Machine Used for Electric Generating from Savonius Windmill",
-      "selectedDoi": "10.4028/www.scientific.net/amr.789.443",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "로봇·자동화",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 82,
-      "selectedTitle": "Modelling and Control of Robot Manipulators",
-      "selectedDoi": "10.1108/ir.2000.04927eae.002",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "에너지·환경",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 91,
-      "selectedTitle": "Wren (World renewable energy network) charter",
-      "selectedDoi": "10.1016/0960-1481(93)90003-y",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "건축·시설관리",
-      "status": "no_candidate",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 0,
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     },
     {
       "name": "도서관·문헌정보",
-      "status": "no_candidate",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 0,
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     }
   ],
-  "verification": {
-    "filesExist": true,
-    "jsonValid": true,
-    "indexHeadCorrect": true,
-    "indexDetailDoiMatch": true,
-    "noOldDoiDuplicates": true,
-    "noNewDoiDuplicates": true,
-    "ok": true
-  },
-  "stages": [
-    {
-      "at": "2026-10-12T00:14:27.307Z",
-      "name": "START",
-      "status": "running",
-      "message": "논문 자동화 V2.7.4 시작"
-    },
-    {
-      "at": "2026-10-12T00:14:27.562Z",
-      "name": "GITHUB_HEAD",
-      "status": "success",
-      "message": "7e5eba1"
-    },
-    {
-      "at": "2026-10-12T00:14:33.089Z",
-      "name": "INDEX",
-      "status": "success",
-      "message": "papers=1493"
-    },
-    {
-      "at": "2026-10-12T00:18:53.293Z",
-      "name": "GITHUB_COMMIT",
-      "status": "success",
-      "message": "61a5d36"
-    },
-    {
-      "at": "2026-10-12T00:18:59.011Z",
-      "name": "VERIFY",
-      "status": "success",
-      "message": "최종 검증 통과"
-    },
-    {
-      "at": "2026-10-12T00:18:59.033Z",
-      "name": "FINISH",
-      "status": "success",
-      "message": "generated=4"
-    }
-  ]
+  "verification": null,
+  "stages": []
 }
