@@ -1,16 +1,16 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-12T09:22:30.026Z",
+  "updatedAt": "2026-10-12T09:37:28.449Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-12T09:22:00.277Z",
-      "finishedAt": "2026-10-12T09:22:05.411Z",
+      "startedAt": "2026-10-12T09:37:00.221Z",
+      "finishedAt": "2026-10-12T09:37:05.329Z",
       "result": "skipped",
-      "durationMs": 5134,
+      "durationMs": 5108,
       "error": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
     },
     "consecutiveFailures": 0,
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-12T09:22:30.432Z",
+    "updatedAt": "2026-10-12T09:37:28.823Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,14 +253,14 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-12T09:22:13.920Z",
+    "checkedAt": "2026-10-12T09:37:14.154Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-12",
     "planned": 16,
     "success": 4,
-    "failed": 8,
+    "failed": 10,
     "stalled": 0,
-    "missed": 4,
+    "missed": 2,
     "running": 0,
     "pending": 0,
     "status": "error",
@@ -276,7 +276,7 @@
         "subject": null,
         "filename": null,
         "startDelaySeconds": 15900,
-        "elapsedMinutes": 477.2,
+        "elapsedMinutes": 492.2,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -290,7 +290,7 @@
         "subject": "카피바라",
         "filename": null,
         "startDelaySeconds": 2490,
-        "elapsedMinutes": 697.7,
+        "elapsedMinutes": 712.7,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -304,7 +304,7 @@
         "subject": "일각고래",
         "filename": "일각고래 신수.png",
         "startDelaySeconds": 4187,
-        "elapsedMinutes": 666.4,
+        "elapsedMinutes": 681.5,
         "diagnosis": "실행 완료"
       },
       {
@@ -346,7 +346,7 @@
         "subject": "장수풍뎅이",
         "filename": null,
         "startDelaySeconds": 1770,
-        "elapsedMinutes": 697.7,
+        "elapsedMinutes": 712.7,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -360,7 +360,7 @@
         "subject": "봉황",
         "filename": "봉황 성수.png",
         "startDelaySeconds": 3467,
-        "elapsedMinutes": 666.4,
+        "elapsedMinutes": 681.5,
         "diagnosis": "실행 완료"
       },
       {
@@ -388,7 +388,7 @@
         "subject": "바다거북",
         "filename": "바다거북 크레스트.png",
         "startDelaySeconds": 1071,
-        "elapsedMinutes": 64.4,
+        "elapsedMinutes": 79.4,
         "diagnosis": "실행 완료"
       },
       {
@@ -402,22 +402,22 @@
         "subject": "바다수달",
         "filename": null,
         "startDelaySeconds": 2392,
-        "elapsedMinutes": 39.4,
+        "elapsedMinutes": 54.4,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
         "series": "신수",
         "scheduledTime": "17:06",
-        "status": "MISSED",
-        "logRow": null,
-        "runId": null,
-        "stage": null,
-        "result": null,
-        "subject": null,
+        "status": "FAILED",
+        "logRow": 146,
+        "runId": "신수-20261012-182246",
+        "stage": "FAILED",
+        "result": "failed",
+        "subject": "사이가영양",
         "filename": null,
-        "startDelaySeconds": null,
-        "elapsedMinutes": null,
-        "diagnosis": "예정시각 후 45분이 지났지만 실행 로그가 없음"
+        "startDelaySeconds": 4606,
+        "elapsedMinutes": 14.5,
+        "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
         "series": "수채화",
@@ -444,7 +444,7 @@
         "subject": "망고스틴",
         "filename": "망고스틴 펄퍼스.png",
         "startDelaySeconds": 351,
-        "elapsedMinutes": 64.4,
+        "elapsedMinutes": 79.4,
         "diagnosis": "실행 완료"
       },
       {
@@ -458,22 +458,22 @@
         "subject": "벌새",
         "filename": null,
         "startDelaySeconds": 1672,
-        "elapsedMinutes": 39.4,
+        "elapsedMinutes": 54.4,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
         "series": "성수",
         "scheduledTime": "17:18",
-        "status": "MISSED",
-        "logRow": null,
-        "runId": null,
-        "stage": null,
-        "result": null,
-        "subject": null,
+        "status": "FAILED",
+        "logRow": 147,
+        "runId": "성수-20261012-182247",
+        "stage": "FAILED",
+        "result": "failed",
+        "subject": "장수거북",
         "filename": null,
-        "startDelaySeconds": null,
-        "elapsedMinutes": null,
-        "diagnosis": "예정시각 후 45분이 지났지만 실행 로그가 없음"
+        "startDelaySeconds": 3887,
+        "elapsedMinutes": 14.5,
+        "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
         "series": "융화",
