@@ -1,25 +1,25 @@
 {
-  "generatedAt": "2026-10-12T01:28:51.589Z",
+  "generatedAt": "2026-10-12T08:24:29.855Z",
   "source": "그림 자동화 사용량 로그 / 사용량 로그",
   "schemaVersion": 3,
   "summary": {
-    "runs": 126,
-    "success": 74,
+    "runs": 128,
+    "success": 76,
     "failed": 47,
-    "successRate": 58.7,
-    "driveVerified": 76,
-    "regenerations": 55,
-    "sourceRows": 139,
+    "successRate": 59.4,
+    "driveVerified": 78,
+    "regenerations": 56,
+    "sourceRows": 141,
     "normalizedPartialRows": 0
   },
   "series": [
     {
       "name": "크레스트",
-      "runs": 23,
-      "success": 14,
+      "runs": 24,
+      "success": 15,
       "failed": 9,
       "avgElapsed": 245.3,
-      "regenerations": 12
+      "regenerations": 13
     },
     {
       "name": "묵수",
@@ -47,8 +47,8 @@
     },
     {
       "name": "펄퍼스",
-      "runs": 17,
-      "success": 11,
+      "runs": 18,
+      "success": 12,
       "failed": 6,
       "avgElapsed": 207.1,
       "regenerations": 8
@@ -79,6 +79,34 @@
     }
   ],
   "recentRuns": [
+    {
+      "time": "2026-10-12 17:21:08",
+      "series": "펄퍼스",
+      "generationAttempts": 2,
+      "regenerations": 0,
+      "uploadAttempts": 1,
+      "driveVerified": true,
+      "result": "success",
+      "elapsedSeconds": null,
+      "stage": "COMPLETED",
+      "scheduledTime": "2026-10-12 17:12:00",
+      "startDelaySeconds": 351,
+      "generatedFilename": "망고스틴 펄퍼스.png"
+    },
+    {
+      "time": "2026-10-12 17:21:00",
+      "series": "크레스트",
+      "generationAttempts": 2,
+      "regenerations": 1,
+      "uploadAttempts": 2,
+      "driveVerified": true,
+      "result": "success",
+      "elapsedSeconds": null,
+      "stage": "COMPLETED",
+      "scheduledTime": "2026-10-12 17:00:00",
+      "startDelaySeconds": 1071,
+      "generatedFilename": "바다거북 크레스트.png"
+    },
     {
       "time": "2026-10-12 10:25:00",
       "series": "크레스트",
@@ -217,34 +245,6 @@
       "stage": "FAILED",
       "scheduledTime": "2026-10-12 6:06:00",
       "startDelaySeconds": 0,
-      "generatedFilename": null
-    },
-    {
-      "time": "2026-10-12 00:32:24",
-      "series": "수채화",
-      "generationAttempts": 2,
-      "regenerations": 1,
-      "uploadAttempts": 0,
-      "driveVerified": false,
-      "result": "failed",
-      "elapsedSeconds": null,
-      "stage": "FAILED",
-      "scheduledTime": "2026-10-12 6:09:00",
-      "startDelaySeconds": 0,
-      "generatedFilename": null
-    },
-    {
-      "time": "2026-10-11 21:26:35",
-      "series": "신수",
-      "generationAttempts": 2,
-      "regenerations": 1,
-      "uploadAttempts": 0,
-      "driveVerified": false,
-      "result": "failed_subject_lock_mismatch",
-      "elapsedSeconds": null,
-      "stage": null,
-      "scheduledTime": null,
-      "startDelaySeconds": null,
       "generatedFilename": null
     }
   ]
