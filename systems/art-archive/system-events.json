@@ -1,7 +1,16 @@
 {
   "version": "1.4",
-  "updatedAt": "2026-10-12T08:19:36.498Z",
+  "updatedAt": "2026-10-12T08:20:52.830Z",
   "events": [
+    {
+      "id": "f36079ad-b5fe-4330-b786-2b7a89f0f309",
+      "at": "2026-10-12T08:20:30.739Z",
+      "service": "Apps Script",
+      "level": "success",
+      "status": "success",
+      "title": "Apps Script 정상 복구",
+      "message": "checkArtworkCompletion"
+    },
     {
       "id": "a53f92c5-a02e-4cd5-abea-3d4a45522012",
       "at": "2026-10-12T08:19:13.588Z",
@@ -892,15 +901,6 @@
       "status": "failed",
       "title": "Apps Script 실행 실패",
       "message": "Exception: Service error: Drive\n    at getSeriesFolders_ (Code:25:18)\n    at checkArtworkCompletion (Code:106:27)\n    at __GS_INTERNAL_top_function_call__.gs:1:8"
-    },
-    {
-      "id": "439b08a6-26ef-42e0-b068-7d39228aec39",
-      "at": "2026-10-11T04:06:08.937Z",
-      "service": "Apps Script",
-      "level": "info",
-      "status": "skipped",
-      "title": "Apps Script 실행 건너뜀",
-      "message": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
     }
   ]
 }
