@@ -1,53 +1,67 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-12T09:53:11.641Z",
+  "updatedAt": "2026-10-12T10:08:43.393Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-12T09:53:00.171Z",
-      "finishedAt": "2026-10-12T09:53:05.310Z",
-      "result": "success",
-      "durationMs": 5139,
+      "startedAt": "2026-10-12T10:08:00.497Z",
+      "finishedAt": "2026-10-12T10:08:07.705Z",
+      "result": "skipped",
+      "durationMs": 7208,
       "error": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
     },
     "consecutiveFailures": 0,
-    "busyOrSkipped": false,
-    "busyReason": null,
+    "busyOrSkipped": true,
+    "busyReason": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀",
     "triggerInventoryAvailable": false
   },
   "notionSync": {
     "lastResult": "success",
-    "lastSeries": "펄퍼스",
-    "lastArtwork": "망고스틴",
-    "startedAt": "2026-10-12T08:22:53.725Z",
-    "finishedAt": "2026-10-12T08:22:59.989Z",
-    "durationMs": 6264,
+    "lastSeries": "수채화",
+    "lastArtwork": "설표",
+    "startedAt": "2026-10-12T10:07:47.159Z",
+    "finishedAt": "2026-10-12T10:07:55.535Z",
+    "durationMs": 8376,
     "error": null,
     "consecutiveFailures": 0
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-12T09:53:12.351Z",
+    "updatedAt": "2026-10-12T10:08:43.620Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
-      "id": 38223351377,
+      "id": 38234380708,
       "name": "pages build and deployment",
       "display_title": "pages build and deployment",
       "event": "dynamic",
       "status": "completed",
       "conclusion": "success",
-      "head_sha": "b7427d28688308b902571445ca3304ce85b27add",
-      "created_at": "2026-10-12T08:24:15Z",
-      "run_started_at": "2026-10-12T08:24:15Z",
-      "updated_at": "2026-10-12T08:24:59Z",
-      "html_url": "https://github.com/tom981105-web/art-archive/actions/runs/38223351377",
-      "message": "Update ART ARCHIVE automation status"
+      "head_sha": "517731942225f3cea1ac2733706cb8ab63367219",
+      "created_at": "2026-10-12T10:07:58Z",
+      "run_started_at": "2026-10-12T10:07:58Z",
+      "updated_at": "2026-10-12T10:08:39Z",
+      "html_url": "https://github.com/tom981105-web/art-archive/actions/runs/38234380708",
+      "message": "Update ART ARCHIVE artworks"
     },
     "recentRuns": [
+      {
+        "id": 38234380708,
+        "name": "pages build and deployment",
+        "display_title": "pages build and deployment",
+        "event": "dynamic",
+        "status": "completed",
+        "conclusion": "success",
+        "head_sha": "517731942225f3cea1ac2733706cb8ab63367219",
+        "created_at": "2026-10-12T10:07:58Z",
+        "run_started_at": "2026-10-12T10:07:58Z",
+        "updated_at": "2026-10-12T10:08:39Z",
+        "html_url": "https://github.com/tom981105-web/art-archive/actions/runs/38234380708",
+        "message": "Update ART ARCHIVE artworks"
+      },
       {
         "id": 38223351377,
         "name": "pages build and deployment",
@@ -173,23 +187,15 @@
         "updated_at": "2026-10-11T08:51:30Z",
         "html_url": "https://github.com/tom981105-web/art-archive/actions/runs/38126244690",
         "message": "Update ART ARCHIVE automation status"
-      },
-      {
-        "id": 38126210192,
-        "name": "pages build and deployment",
-        "display_title": "pages build and deployment",
-        "event": "dynamic",
-        "status": "completed",
-        "conclusion": "cancelled",
-        "head_sha": "58c69fbf227966d4281bf549d4feee5f01aa68e0",
-        "created_at": "2026-10-11T08:50:11Z",
-        "run_started_at": "2026-10-11T08:50:11Z",
-        "updated_at": "2026-10-11T08:50:46Z",
-        "html_url": "https://github.com/tom981105-web/art-archive/actions/runs/38126210192",
-        "message": "Update ART ARCHIVE artworks"
       }
     ],
     "recentCommits": [
+      {
+        "sha": "517731942225f3cea1ac2733706cb8ab63367219",
+        "message": "Update ART ARCHIVE artworks",
+        "date": "2026-10-12T10:07:56Z",
+        "html_url": "https://github.com/tom981105-web/art-archive/commit/517731942225f3cea1ac2733706cb8ab63367219"
+      },
       {
         "sha": "b7427d28688308b902571445ca3304ce85b27add",
         "message": "Update ART ARCHIVE automation status",
@@ -243,24 +249,18 @@
         "message": "Update ART ARCHIVE automation status",
         "date": "2026-10-11T08:50:41Z",
         "html_url": "https://github.com/tom981105-web/art-archive/commit/29e3e9706235e7aa2e3efe8df18a2c0b01808404"
-      },
-      {
-        "sha": "58c69fbf227966d4281bf549d4feee5f01aa68e0",
-        "message": "Update ART ARCHIVE artworks",
-        "date": "2026-10-11T08:50:09Z",
-        "html_url": "https://github.com/tom981105-web/art-archive/commit/58c69fbf227966d4281bf549d4feee5f01aa68e0"
       }
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-12T09:52:57.217Z",
+    "checkedAt": "2026-10-12T10:08:25.414Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-12",
     "planned": 16,
-    "success": 4,
+    "success": 6,
     "failed": 10,
     "stalled": 0,
-    "missed": 2,
+    "missed": 0,
     "running": 0,
     "pending": 0,
     "status": "error",
@@ -276,7 +276,7 @@
         "subject": null,
         "filename": null,
         "startDelaySeconds": 15900,
-        "elapsedMinutes": 508,
+        "elapsedMinutes": 523.4,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -290,7 +290,7 @@
         "subject": "카피바라",
         "filename": null,
         "startDelaySeconds": 2490,
-        "elapsedMinutes": 728.5,
+        "elapsedMinutes": 743.9,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -304,7 +304,7 @@
         "subject": "일각고래",
         "filename": "일각고래 신수.png",
         "startDelaySeconds": 4187,
-        "elapsedMinutes": 697.2,
+        "elapsedMinutes": 712.6,
         "diagnosis": "실행 완료"
       },
       {
@@ -346,7 +346,7 @@
         "subject": "장수풍뎅이",
         "filename": null,
         "startDelaySeconds": 1770,
-        "elapsedMinutes": 728.5,
+        "elapsedMinutes": 743.9,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -360,7 +360,7 @@
         "subject": "봉황",
         "filename": "봉황 성수.png",
         "startDelaySeconds": 3467,
-        "elapsedMinutes": 697.2,
+        "elapsedMinutes": 712.6,
         "diagnosis": "실행 완료"
       },
       {
@@ -388,7 +388,7 @@
         "subject": "바다거북",
         "filename": "바다거북 크레스트.png",
         "startDelaySeconds": 1071,
-        "elapsedMinutes": 95.1,
+        "elapsedMinutes": 110.6,
         "diagnosis": "실행 완료"
       },
       {
@@ -402,7 +402,7 @@
         "subject": "바다수달",
         "filename": null,
         "startDelaySeconds": 2392,
-        "elapsedMinutes": 70.1,
+        "elapsedMinutes": 85.6,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -416,22 +416,22 @@
         "subject": "사이가영양",
         "filename": null,
         "startDelaySeconds": 4606,
-        "elapsedMinutes": 30.2,
+        "elapsedMinutes": 45.7,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
         "series": "수채화",
         "scheduledTime": "17:09",
-        "status": "MISSED",
-        "logRow": null,
-        "runId": null,
-        "stage": null,
-        "result": null,
-        "subject": null,
-        "filename": null,
-        "startDelaySeconds": null,
-        "elapsedMinutes": null,
-        "diagnosis": "예정시각 후 45분이 지났지만 실행 로그가 없음"
+        "status": "SUCCESS",
+        "logRow": 148,
+        "runId": "수채화-20261012-190705",
+        "stage": "COMPLETED",
+        "result": "success",
+        "subject": "설표",
+        "filename": "설표 수채화.png",
+        "startDelaySeconds": 7085,
+        "elapsedMinutes": 0,
+        "diagnosis": "실행 완료"
       },
       {
         "series": "펄퍼스",
@@ -444,7 +444,7 @@
         "subject": "망고스틴",
         "filename": "망고스틴 펄퍼스.png",
         "startDelaySeconds": 351,
-        "elapsedMinutes": 95.1,
+        "elapsedMinutes": 110.6,
         "diagnosis": "실행 완료"
       },
       {
@@ -458,7 +458,7 @@
         "subject": "벌새",
         "filename": null,
         "startDelaySeconds": 1672,
-        "elapsedMinutes": 70.1,
+        "elapsedMinutes": 85.6,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -472,22 +472,22 @@
         "subject": "장수거북",
         "filename": null,
         "startDelaySeconds": 3887,
-        "elapsedMinutes": 30.2,
+        "elapsedMinutes": 45.6,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
         "series": "융화",
         "scheduledTime": "17:21",
-        "status": "MISSED",
-        "logRow": null,
-        "runId": null,
-        "stage": null,
-        "result": null,
-        "subject": null,
-        "filename": null,
-        "startDelaySeconds": null,
-        "elapsedMinutes": null,
-        "diagnosis": "예정시각 후 45분이 지났지만 실행 로그가 없음"
+        "status": "SUCCESS",
+        "logRow": 149,
+        "runId": "융화-20261012-190705",
+        "stage": "COMPLETED",
+        "result": "success",
+        "subject": "설표",
+        "filename": "설표 융화.png",
+        "startDelaySeconds": 6365,
+        "elapsedMinutes": 0,
+        "diagnosis": "실행 완료"
       }
     ]
   }
