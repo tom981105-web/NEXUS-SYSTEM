@@ -1,16 +1,16 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-12T00:29:33.616Z",
+  "updatedAt": "2026-10-12T00:44:49.255Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-12T00:28:00.963Z",
-      "finishedAt": "2026-10-12T00:29:10.876Z",
+      "startedAt": "2026-10-12T00:44:00.498Z",
+      "finishedAt": "2026-10-12T00:44:29.031Z",
       "result": "success",
-      "durationMs": 69913,
+      "durationMs": 28533,
       "error": null
     },
     "consecutiveFailures": 0,
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-12T00:29:34.232Z",
+    "updatedAt": "2026-10-12T00:44:49.672Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,7 +253,7 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-12T00:29:18.781Z",
+    "checkedAt": "2026-10-12T00:44:35.510Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-12",
     "planned": 16,
@@ -290,7 +290,7 @@
         "subject": "카피바라",
         "filename": null,
         "startDelaySeconds": 2490,
-        "elapsedMinutes": 164.8,
+        "elapsedMinutes": 180.1,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -304,7 +304,7 @@
         "subject": "일각고래",
         "filename": "일각고래 신수.png",
         "startDelaySeconds": 4187,
-        "elapsedMinutes": 133.5,
+        "elapsedMinutes": 148.8,
         "diagnosis": "실행 완료"
       },
       {
@@ -346,7 +346,7 @@
         "subject": "장수풍뎅이",
         "filename": null,
         "startDelaySeconds": 1770,
-        "elapsedMinutes": 164.8,
+        "elapsedMinutes": 180.1,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -360,7 +360,7 @@
         "subject": "봉황",
         "filename": "봉황 성수.png",
         "startDelaySeconds": 3467,
-        "elapsedMinutes": 133.5,
+        "elapsedMinutes": 148.8,
         "diagnosis": "실행 완료"
       },
       {
