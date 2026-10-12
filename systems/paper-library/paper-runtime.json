@@ -1,107 +1,152 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-12T13:14:26.048Z",
+  "updatedAt": "2026-10-12T13:18:37.239Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "running",
+    "status": "success",
     "runId": "paper-20261012-221425",
     "startedAt": "2026-10-12T13:14:25.890Z",
-    "finishedAt": null,
-    "durationMs": null,
-    "generatedCount": 0,
+    "finishedAt": "2026-10-12T13:18:37.239Z",
+    "durationMs": 251349,
+    "generatedCount": 4,
     "expectedMax": 6,
-    "lastCommitSha": null,
+    "lastCommitSha": "25f0fcdb3b3d34dd3fc405455c3162733b6ee63a",
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 0,
-      "success": 0,
+      "calls": 52,
+      "success": 51,
       "retries": 0,
-      "http429": 0,
-      "errors": 0,
-      "lastHttpStatus": null,
-      "disabledForRun": false
+      "http429": 1,
+      "errors": 1,
+      "lastHttpStatus": 429,
+      "disabledForRun": true
     },
     "crossref": {
-      "calls": 0,
-      "success": 0,
-      "retries": 0,
-      "http429": 0,
-      "errors": 0,
-      "lastHttpStatus": null,
-      "adaptiveIntervalMs": 650,
-      "throttleEvents": 0,
+      "calls": 51,
+      "success": 44,
+      "retries": 7,
+      "http429": 7,
+      "errors": 7,
+      "lastHttpStatus": 200,
+      "adaptiveIntervalMs": 2400,
+      "throttleEvents": 7,
       "earlyStops": 0
     },
     "gemini": {
-      "calls": 0,
-      "success": 0,
+      "calls": 4,
+      "success": 4,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": null
+      "lastHttpStatus": 200
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "pending",
-      "openAlexCandidates": null,
+      "status": "generated",
+      "openAlexCandidates": 4,
       "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "selectedTitle": "A Survey on Evaluation of Large Language Models",
+      "selectedDoi": "10.1145/3641289",
+      "sourceProvider": "OpenAlex+Crossref"
     },
     {
       "name": "전기",
-      "status": "pending",
-      "openAlexCandidates": null,
+      "status": "generated",
+      "openAlexCandidates": 1,
       "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "selectedTitle": "Model Predictive Control for Power Converters and Drives: Advances and Trends",
+      "selectedDoi": "10.1109/tie.2016.2625238",
+      "sourceProvider": "OpenAlex+Crossref"
     },
     {
       "name": "로봇·자동화",
-      "status": "pending",
-      "openAlexCandidates": null,
+      "status": "generated",
+      "openAlexCandidates": 1,
       "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "selectedTitle": "A Survey of Motion Planning and Control Techniques for Self-Driving Urban Vehicles",
+      "selectedDoi": "10.1109/tiv.2016.2578706",
+      "sourceProvider": "OpenAlex+Crossref"
     },
     {
       "name": "에너지·환경",
-      "status": "pending",
-      "openAlexCandidates": null,
+      "status": "generated",
+      "openAlexCandidates": 1,
       "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "selectedTitle": "A Survey on Mobile Edge Computing: The Communication Perspective",
+      "selectedDoi": "10.1109/comst.2017.2745201",
+      "sourceProvider": "OpenAlex+Crossref"
     },
     {
       "name": "건축·시설관리",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
+      "status": "no_candidate",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 0,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     },
     {
       "name": "도서관·문헌정보",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
+      "status": "no_candidate",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 0,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     }
   ],
-  "verification": null,
-  "stages": []
+  "verification": {
+    "filesExist": true,
+    "jsonValid": true,
+    "indexHeadCorrect": true,
+    "indexDetailDoiMatch": true,
+    "noOldDoiDuplicates": true,
+    "noNewDoiDuplicates": true,
+    "ok": true
+  },
+  "stages": [
+    {
+      "at": "2026-10-12T13:14:28.003Z",
+      "name": "START",
+      "status": "running",
+      "message": "논문 자동화 V2.7.4 시작"
+    },
+    {
+      "at": "2026-10-12T13:14:28.384Z",
+      "name": "GITHUB_HEAD",
+      "status": "success",
+      "message": "feefab1"
+    },
+    {
+      "at": "2026-10-12T13:14:33.675Z",
+      "name": "INDEX",
+      "status": "success",
+      "message": "papers=1546"
+    },
+    {
+      "at": "2026-10-12T13:18:27.343Z",
+      "name": "GITHUB_COMMIT",
+      "status": "success",
+      "message": "25f0fcd"
+    },
+    {
+      "at": "2026-10-12T13:18:37.154Z",
+      "name": "VERIFY",
+      "status": "success",
+      "message": "최종 검증 통과"
+    },
+    {
+      "at": "2026-10-12T13:18:37.239Z",
+      "name": "FINISH",
+      "status": "success",
+      "message": "generated=4"
+    }
+  ]
 }
