@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-10-12T10:10:35.027Z",
+  "generatedAt": "2026-10-12T12:45:57.389Z",
   "source": "그림 자동화 사용량 로그 / 사용량 로그",
   "schemaVersion": 3,
   "summary": {
-    "runs": 134,
+    "runs": 135,
     "success": 78,
     "failed": 51,
-    "successRate": 58.2,
+    "successRate": 57.8,
     "driveVerified": 80,
-    "regenerations": 64,
-    "sourceRows": 147,
+    "regenerations": 65,
+    "sourceRows": 148,
     "normalizedPartialRows": 0
   },
   "series": [
@@ -23,11 +23,11 @@
     },
     {
       "name": "묵수",
-      "runs": 18,
+      "runs": 19,
       "success": 11,
       "failed": 6,
       "avgElapsed": 243.7,
-      "regenerations": 7
+      "regenerations": 8
     },
     {
       "name": "신수",
