@@ -1,25 +1,25 @@
 {
-  "generatedAt": "2026-10-12T15:38:21.060Z",
+  "generatedAt": "2026-10-12T21:02:55.321Z",
   "source": "그림 자동화 사용량 로그 / 사용량 로그",
   "schemaVersion": 3,
   "summary": {
-    "runs": 137,
+    "runs": 139,
     "success": 78,
-    "failed": 51,
-    "successRate": 56.9,
+    "failed": 53,
+    "successRate": 56.1,
     "driveVerified": 80,
-    "regenerations": 67,
-    "sourceRows": 150,
+    "regenerations": 69,
+    "sourceRows": 152,
     "normalizedPartialRows": 0
   },
   "series": [
     {
       "name": "크레스트",
-      "runs": 25,
+      "runs": 26,
       "success": 15,
-      "failed": 9,
+      "failed": 10,
       "avgElapsed": 245.3,
-      "regenerations": 14
+      "regenerations": 15
     },
     {
       "name": "묵수",
@@ -47,11 +47,11 @@
     },
     {
       "name": "펄퍼스",
-      "runs": 18,
+      "runs": 19,
       "success": 12,
-      "failed": 6,
+      "failed": 7,
       "avgElapsed": 207.1,
-      "regenerations": 8
+      "regenerations": 9
     },
     {
       "name": "잉크",
@@ -79,6 +79,34 @@
     }
   ],
   "recentRuns": [
+    {
+      "time": "2026-10-13 05:56:57",
+      "series": "크레스트",
+      "generationAttempts": 2,
+      "regenerations": 1,
+      "uploadAttempts": 0,
+      "driveVerified": false,
+      "result": "failed",
+      "elapsedSeconds": null,
+      "stage": "FAILED",
+      "scheduledTime": "2026-10-13 06:00:00",
+      "startDelaySeconds": 0,
+      "generatedFilename": null
+    },
+    {
+      "time": "2026-10-13 05:56:57",
+      "series": "펄퍼스",
+      "generationAttempts": 2,
+      "regenerations": 1,
+      "uploadAttempts": 0,
+      "driveVerified": false,
+      "result": "failed",
+      "elapsedSeconds": null,
+      "stage": "FAILED",
+      "scheduledTime": "2026-10-13 06:00:00",
+      "startDelaySeconds": 0,
+      "generatedFilename": null
+    },
     {
       "time": "2026-10-12 19:07:05",
       "series": "수채화",
@@ -218,34 +246,6 @@
       "scheduledTime": "2026-10-12 6:09:00",
       "startDelaySeconds": 6537,
       "generatedFilename": null
-    },
-    {
-      "time": "2026-10-12 08:02:42",
-      "series": "융화",
-      "generationAttempts": 2,
-      "regenerations": 1,
-      "uploadAttempts": 0,
-      "driveVerified": false,
-      "result": "failed",
-      "elapsedSeconds": 285,
-      "stage": "FAILED",
-      "scheduledTime": "2026-10-12 6:21:00",
-      "startDelaySeconds": 5817,
-      "generatedFilename": null
-    },
-    {
-      "time": "2026-10-12 07:21:34",
-      "series": "신수",
-      "generationAttempts": 1,
-      "regenerations": 0,
-      "uploadAttempts": 3,
-      "driveVerified": true,
-      "result": "success",
-      "elapsedSeconds": null,
-      "stage": "COMPLETED",
-      "scheduledTime": "2026-10-12 07:20:00",
-      "startDelaySeconds": 4187,
-      "generatedFilename": "일각고래 신수.png"
     }
   ]
 }
