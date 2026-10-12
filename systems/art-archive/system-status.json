@@ -1,21 +1,21 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-12T22:06:31.757Z",
+  "updatedAt": "2026-10-12T22:21:51.334Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-12T22:06:01.251Z",
-      "finishedAt": "2026-10-12T22:06:06.377Z",
-      "result": "skipped",
-      "durationMs": 5126,
-      "error": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
+      "startedAt": "2026-10-12T22:21:00.135Z",
+      "finishedAt": "2026-10-12T22:21:30.143Z",
+      "result": "success",
+      "durationMs": 30008,
+      "error": null
     },
     "consecutiveFailures": 0,
-    "busyOrSkipped": true,
-    "busyReason": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀",
+    "busyOrSkipped": false,
+    "busyReason": null,
     "triggerInventoryAvailable": false
   },
   "notionSync": {
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-12T22:06:32.400Z",
+    "updatedAt": "2026-10-12T22:21:51.765Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,7 +253,7 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-12T22:06:17.251Z",
+    "checkedAt": "2026-10-12T22:21:36.930Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-13",
     "planned": 16,
@@ -276,7 +276,7 @@
         "subject": "잠자리",
         "filename": null,
         "startDelaySeconds": 0,
-        "elapsedMinutes": 69.3,
+        "elapsedMinutes": 84.7,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -290,7 +290,7 @@
         "subject": "고슴도치",
         "filename": null,
         "startDelaySeconds": 2376,
-        "elapsedMinutes": 23.7,
+        "elapsedMinutes": 39,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -332,7 +332,7 @@
         "subject": "람부탄",
         "filename": null,
         "startDelaySeconds": 0,
-        "elapsedMinutes": 69.3,
+        "elapsedMinutes": 84.7,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -346,7 +346,7 @@
         "subject": "올빼미",
         "filename": null,
         "startDelaySeconds": 1656,
-        "elapsedMinutes": 23.7,
+        "elapsedMinutes": 39,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
