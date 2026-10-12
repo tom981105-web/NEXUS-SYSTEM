@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-10-12T08:44:01.237Z",
+  "generatedAt": "2026-10-12T09:29:25.417Z",
   "source": "그림 자동화 사용량 로그 / 사용량 로그",
   "schemaVersion": 3,
   "summary": {
-    "runs": 130,
+    "runs": 132,
     "success": 76,
-    "failed": 49,
-    "successRate": 58.5,
+    "failed": 51,
+    "successRate": 57.6,
     "driveVerified": 78,
-    "regenerations": 58,
-    "sourceRows": 143,
+    "regenerations": 60,
+    "sourceRows": 145,
     "normalizedPartialRows": 0
   },
   "series": [
@@ -31,11 +31,11 @@
     },
     {
       "name": "신수",
-      "runs": 18,
+      "runs": 19,
       "success": 10,
-      "failed": 6,
+      "failed": 7,
       "avgElapsed": 231.5,
-      "regenerations": 5
+      "regenerations": 6
     },
     {
       "name": "수채화",
@@ -63,11 +63,11 @@
     },
     {
       "name": "성수",
-      "runs": 12,
+      "runs": 13,
       "success": 8,
-      "failed": 3,
+      "failed": 4,
       "avgElapsed": 190.6,
-      "regenerations": 4
+      "regenerations": 5
     },
     {
       "name": "융화",
@@ -79,6 +79,34 @@
     }
   ],
   "recentRuns": [
+    {
+      "time": "2026-10-12 18:27:25",
+      "series": "신수",
+      "generationAttempts": 2,
+      "regenerations": 1,
+      "uploadAttempts": 0,
+      "driveVerified": false,
+      "result": "failed",
+      "elapsedSeconds": null,
+      "stage": "FAILED",
+      "scheduledTime": "2026-10-12 17:06:00",
+      "startDelaySeconds": 4606,
+      "generatedFilename": null
+    },
+    {
+      "time": "2026-10-12 18:27:25",
+      "series": "성수",
+      "generationAttempts": 2,
+      "regenerations": 1,
+      "uploadAttempts": 0,
+      "driveVerified": false,
+      "result": "failed",
+      "elapsedSeconds": null,
+      "stage": "FAILED",
+      "scheduledTime": "2026-10-12 17:18:00",
+      "startDelaySeconds": 3887,
+      "generatedFilename": null
+    },
     {
       "time": "2026-10-12 17:42:52",
       "series": "묵수",
@@ -217,34 +245,6 @@
       "stage": "FAILED",
       "scheduledTime": "2026-10-12 6:03:00",
       "startDelaySeconds": 2490,
-      "generatedFilename": null
-    },
-    {
-      "time": "2026-10-12 06:44:30",
-      "series": "잉크",
-      "generationAttempts": 2,
-      "regenerations": 1,
-      "uploadAttempts": 0,
-      "driveVerified": false,
-      "result": "failed",
-      "elapsedSeconds": null,
-      "stage": "FAILED",
-      "scheduledTime": "2026-10-12 6:15:00",
-      "startDelaySeconds": 1770,
-      "generatedFilename": null
-    },
-    {
-      "time": "2026-10-12 05:57:59",
-      "series": "크레스트",
-      "generationAttempts": 2,
-      "regenerations": 1,
-      "uploadAttempts": 0,
-      "driveVerified": false,
-      "result": "failed",
-      "elapsedSeconds": 184,
-      "stage": "FAILED",
-      "scheduledTime": "2026-10-12 6:00:00",
-      "startDelaySeconds": 0,
       "generatedFilename": null
     }
   ]
