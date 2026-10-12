@@ -1,7 +1,16 @@
 {
   "version": "1.4",
-  "updatedAt": "2026-10-12T08:16:31.685Z",
+  "updatedAt": "2026-10-12T08:19:36.498Z",
   "events": [
+    {
+      "id": "a53f92c5-a02e-4cd5-abea-3d4a45522012",
+      "at": "2026-10-12T08:19:13.588Z",
+      "service": "Apps Script",
+      "level": "error",
+      "status": "failed",
+      "title": "Apps Script 실행 실패",
+      "message": "Exception: Service error: Drive\n    at syncExistingArtworkMetadata_ (Code:1503:18)\n    at checkArtworkCompletion (Code:109:5)\n    at __GS_INTERNAL_top_function_call__.gs:1:8"
+    },
     {
       "id": "03582613-b639-47d2-844d-9bf47942649f",
       "at": "2026-10-12T08:15:05.959Z",
@@ -887,15 +896,6 @@
     {
       "id": "439b08a6-26ef-42e0-b068-7d39228aec39",
       "at": "2026-10-11T04:06:08.937Z",
-      "service": "Apps Script",
-      "level": "info",
-      "status": "skipped",
-      "title": "Apps Script 실행 건너뜀",
-      "message": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
-    },
-    {
-      "id": "85e2d5a9-c8ac-497a-8e90-d84b8615bdd4",
-      "at": "2026-10-11T03:51:05.713Z",
       "service": "Apps Script",
       "level": "info",
       "status": "skipped",
