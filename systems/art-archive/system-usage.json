@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-10-12T08:24:29.855Z",
+  "generatedAt": "2026-10-12T08:44:01.237Z",
   "source": "그림 자동화 사용량 로그 / 사용량 로그",
   "schemaVersion": 3,
   "summary": {
-    "runs": 128,
+    "runs": 130,
     "success": 76,
-    "failed": 47,
-    "successRate": 59.4,
+    "failed": 49,
+    "successRate": 58.5,
     "driveVerified": 78,
-    "regenerations": 56,
-    "sourceRows": 141,
+    "regenerations": 58,
+    "sourceRows": 143,
     "normalizedPartialRows": 0
   },
   "series": [
@@ -23,11 +23,11 @@
     },
     {
       "name": "묵수",
-      "runs": 17,
+      "runs": 18,
       "success": 11,
-      "failed": 5,
+      "failed": 6,
       "avgElapsed": 243.7,
-      "regenerations": 6
+      "regenerations": 7
     },
     {
       "name": "신수",
@@ -55,11 +55,11 @@
     },
     {
       "name": "잉크",
-      "runs": 12,
+      "runs": 13,
       "success": 8,
-      "failed": 3,
+      "failed": 4,
       "avgElapsed": 166.8,
-      "regenerations": 5
+      "regenerations": 6
     },
     {
       "name": "성수",
@@ -79,6 +79,34 @@
     }
   ],
   "recentRuns": [
+    {
+      "time": "2026-10-12 17:42:52",
+      "series": "묵수",
+      "generationAttempts": 2,
+      "regenerations": 1,
+      "uploadAttempts": 0,
+      "driveVerified": false,
+      "result": "failed",
+      "elapsedSeconds": null,
+      "stage": "FAILED",
+      "scheduledTime": "2026-10-12 17:03:00",
+      "startDelaySeconds": 2392,
+      "generatedFilename": null
+    },
+    {
+      "time": "2026-10-12 17:42:52",
+      "series": "잉크",
+      "generationAttempts": 2,
+      "regenerations": 1,
+      "uploadAttempts": 0,
+      "driveVerified": false,
+      "result": "failed",
+      "elapsedSeconds": null,
+      "stage": "FAILED",
+      "scheduledTime": "2026-10-12 17:15:00",
+      "startDelaySeconds": 1672,
+      "generatedFilename": null
+    },
     {
       "time": "2026-10-12 17:21:08",
       "series": "펄퍼스",
@@ -216,34 +244,6 @@
       "elapsedSeconds": 184,
       "stage": "FAILED",
       "scheduledTime": "2026-10-12 6:00:00",
-      "startDelaySeconds": 0,
-      "generatedFilename": null
-    },
-    {
-      "time": "2026-10-12 05:57:59",
-      "series": "펄퍼스",
-      "generationAttempts": 2,
-      "regenerations": 1,
-      "uploadAttempts": 0,
-      "driveVerified": false,
-      "result": "failed",
-      "elapsedSeconds": 184,
-      "stage": "FAILED",
-      "scheduledTime": "2026-10-12 6:12:00",
-      "startDelaySeconds": 0,
-      "generatedFilename": null
-    },
-    {
-      "time": "2026-10-12 00:32:24",
-      "series": "신수",
-      "generationAttempts": 2,
-      "regenerations": 1,
-      "uploadAttempts": 0,
-      "driveVerified": false,
-      "result": "failed",
-      "elapsedSeconds": null,
-      "stage": "FAILED",
-      "scheduledTime": "2026-10-12 6:06:00",
       "startDelaySeconds": 0,
       "generatedFilename": null
     }
