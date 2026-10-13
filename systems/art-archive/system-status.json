@@ -1,16 +1,16 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-13T22:25:00.623Z",
+  "updatedAt": "2026-10-13T22:41:06.465Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-13T22:24:00.132Z",
-      "finishedAt": "2026-10-13T22:24:42.239Z",
+      "startedAt": "2026-10-13T22:40:00.378Z",
+      "finishedAt": "2026-10-13T22:40:43.508Z",
       "result": "success",
-      "durationMs": 42107,
+      "durationMs": 43130,
       "error": null
     },
     "consecutiveFailures": 0,
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-13T22:25:01.111Z",
+    "updatedAt": "2026-10-13T22:41:06.680Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,14 +253,14 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-13T22:24:48.860Z",
+    "checkedAt": "2026-10-13T22:40:54.544Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-14",
     "planned": 16,
     "success": 0,
-    "failed": 4,
+    "failed": 6,
     "stalled": 0,
-    "missed": 4,
+    "missed": 2,
     "running": 0,
     "pending": 8,
     "status": "error",
@@ -276,7 +276,7 @@
         "subject": "기린",
         "filename": null,
         "startDelaySeconds": 251,
-        "elapsedMinutes": 80.6,
+        "elapsedMinutes": 96.7,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -290,22 +290,22 @@
         "subject": "아홀로틀(의도, 생성 요청 미반영)",
         "filename": null,
         "startDelaySeconds": 1986,
-        "elapsedMinutes": 48.7,
+        "elapsedMinutes": 64.8,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
         "series": "신수",
         "scheduledTime": "06:06",
-        "status": "MISSED",
-        "logRow": null,
-        "runId": null,
-        "stage": null,
-        "result": null,
-        "subject": null,
+        "status": "FAILED",
+        "logRow": 177,
+        "runId": "신수-20261014-072231",
+        "stage": "FAILED",
+        "result": "failed",
+        "subject": "카피바라",
         "filename": null,
-        "startDelaySeconds": null,
-        "elapsedMinutes": null,
-        "diagnosis": "예정시각 후 45분이 지났지만 실행 로그가 없음"
+        "startDelaySeconds": 151,
+        "elapsedMinutes": 18.4,
+        "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
         "series": "수채화",
@@ -332,7 +332,7 @@
         "subject": "자몽",
         "filename": null,
         "startDelaySeconds": 0,
-        "elapsedMinutes": 80.6,
+        "elapsedMinutes": 96.7,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -346,22 +346,22 @@
         "subject": "해마(의도, 생성 요청 미반영)",
         "filename": null,
         "startDelaySeconds": 1266,
-        "elapsedMinutes": 48.7,
+        "elapsedMinutes": 64.8,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
         "series": "성수",
         "scheduledTime": "06:18",
-        "status": "MISSED",
-        "logRow": null,
-        "runId": null,
-        "stage": null,
-        "result": null,
-        "subject": null,
+        "status": "FAILED",
+        "logRow": 178,
+        "runId": "성수-20261014-072231",
+        "stage": "FAILED",
+        "result": "failed",
+        "subject": "해파리",
         "filename": null,
-        "startDelaySeconds": null,
-        "elapsedMinutes": null,
-        "diagnosis": "예정시각 후 45분이 지났지만 실행 로그가 없음"
+        "startDelaySeconds": 151,
+        "elapsedMinutes": 18.4,
+        "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
         "series": "융화",
