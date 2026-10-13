@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-10-13T12:34:50.181Z",
+  "generatedAt": "2026-10-13T15:34:11.895Z",
   "source": "그림 자동화 사용량 로그 / 사용량 로그",
   "schemaVersion": 3,
   "summary": {
-    "runs": 155,
+    "runs": 157,
     "success": 79,
     "failed": 65,
-    "successRate": 51,
+    "successRate": 50.3,
     "driveVerified": 82,
-    "regenerations": 84,
-    "sourceRows": 168,
+    "regenerations": 86,
+    "sourceRows": 170,
     "normalizedPartialRows": 0
   },
   "series": [
@@ -47,19 +47,19 @@
     },
     {
       "name": "펄퍼스",
-      "runs": 21,
+      "runs": 22,
       "success": 12,
       "failed": 8,
       "avgElapsed": 209.4,
-      "regenerations": 11
+      "regenerations": 12
     },
     {
       "name": "잉크",
-      "runs": 15,
+      "runs": 16,
       "success": 8,
       "failed": 6,
       "avgElapsed": 179.9,
-      "regenerations": 8
+      "regenerations": 9
     },
     {
       "name": "성수",
