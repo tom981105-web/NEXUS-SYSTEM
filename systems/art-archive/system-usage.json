@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-10-13T22:29:07.440Z",
+  "generatedAt": "2026-10-13T23:08:03.735Z",
   "source": "그림 자동화 사용량 로그 / 사용량 로그",
   "schemaVersion": 3,
   "summary": {
-    "runs": 163,
+    "runs": 165,
     "success": 79,
-    "failed": 71,
-    "successRate": 48.5,
+    "failed": 73,
+    "successRate": 47.9,
     "driveVerified": 82,
-    "regenerations": 92,
-    "sourceRows": 176,
+    "regenerations": 94,
+    "sourceRows": 178,
     "normalizedPartialRows": 0
   },
   "series": [
@@ -39,11 +39,11 @@
     },
     {
       "name": "수채화",
-      "runs": 22,
+      "runs": 23,
       "success": 10,
-      "failed": 11,
+      "failed": 12,
       "avgElapsed": 213.8,
-      "regenerations": 12
+      "regenerations": 13
     },
     {
       "name": "펄퍼스",
@@ -71,11 +71,11 @@
     },
     {
       "name": "융화",
-      "runs": 11,
+      "runs": 12,
       "success": 4,
-      "failed": 7,
+      "failed": 8,
       "avgElapsed": 339,
-      "regenerations": 10
+      "regenerations": 11
     }
   ],
   "recentRuns": [
