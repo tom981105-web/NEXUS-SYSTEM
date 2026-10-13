@@ -1,152 +1,107 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-13T03:19:21.129Z",
+  "updatedAt": "2026-10-13T04:14:25.234Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "success",
-    "runId": "paper-20261013-121426",
-    "startedAt": "2026-10-13T03:14:26.313Z",
-    "finishedAt": "2026-10-13T03:19:21.129Z",
-    "durationMs": 294816,
-    "generatedCount": 5,
+    "status": "running",
+    "runId": "paper-20261013-131425",
+    "startedAt": "2026-10-13T04:14:25.077Z",
+    "finishedAt": null,
+    "durationMs": null,
+    "generatedCount": 0,
     "expectedMax": 6,
-    "lastCommitSha": "97f9c6efe5537ac31d8209ae6c2145ef039d8cad",
+    "lastCommitSha": null,
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 73,
-      "success": 73,
+      "calls": 0,
+      "success": 0,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": 200,
+      "lastHttpStatus": null,
       "disabledForRun": false
     },
     "crossref": {
-      "calls": 74,
-      "success": 72,
-      "retries": 2,
-      "http429": 2,
-      "errors": 2,
-      "lastHttpStatus": 200,
-      "adaptiveIntervalMs": 1200,
-      "throttleEvents": 2,
-      "earlyStops": 2
+      "calls": 0,
+      "success": 0,
+      "retries": 0,
+      "http429": 0,
+      "errors": 0,
+      "lastHttpStatus": null,
+      "adaptiveIntervalMs": 650,
+      "throttleEvents": 0,
+      "earlyStops": 0
     },
     "gemini": {
-      "calls": 6,
-      "success": 6,
-      "retries": 1,
+      "calls": 0,
+      "success": 0,
+      "retries": 0,
       "http429": 0,
-      "errors": 1,
-      "lastHttpStatus": 200
+      "errors": 0,
+      "lastHttpStatus": null
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 84,
-      "selectedTitle": "Control Policy with Autocorrelated Noise in Reinforcement Learning for Robotics",
-      "selectedDoi": "10.7763/ijmlc.2015.v5.489",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "전기",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 25,
-      "selectedTitle": "IEEE Power Electronics Society Information",
-      "selectedDoi": "10.1109/tpel.2004.829887",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "로봇·자동화",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 62,
-      "selectedTitle": "Joanne Pransky interviews Dr William Townsend: MIT entrepreneur develops whole-arm manipulation for robot/human interaction",
-      "selectedDoi": "10.1108/ir-07-2013-384",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "에너지·환경",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 111,
-      "selectedTitle": "Energy efficiency gap and the limits to the effectiveness of non-price interventions: making the case for residential energy efficiency",
-      "selectedDoi": "10.1007/s12053-025-10316-2",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "건축·시설관리",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 1,
-      "selectedTitle": "The Development of the Outsourced Facility Service Industry in Europe",
-      "selectedDoi": "10.22361/jfmer/73879",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "도서관·문헌정보",
-      "status": "no_candidate",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 0,
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     }
   ],
-  "verification": {
-    "filesExist": true,
-    "jsonValid": true,
-    "indexHeadCorrect": true,
-    "indexDetailDoiMatch": true,
-    "noOldDoiDuplicates": true,
-    "noNewDoiDuplicates": true,
-    "ok": true
-  },
-  "stages": [
-    {
-      "at": "2026-10-13T03:14:28.106Z",
-      "name": "START",
-      "status": "running",
-      "message": "논문 자동화 V2.7.4 시작"
-    },
-    {
-      "at": "2026-10-13T03:14:28.636Z",
-      "name": "GITHUB_HEAD",
-      "status": "success",
-      "message": "057cf93"
-    },
-    {
-      "at": "2026-10-13T03:14:38.630Z",
-      "name": "INDEX",
-      "status": "success",
-      "message": "papers=1602"
-    },
-    {
-      "at": "2026-10-13T03:19:13.417Z",
-      "name": "GITHUB_COMMIT",
-      "status": "success",
-      "message": "97f9c6e"
-    },
-    {
-      "at": "2026-10-13T03:19:21.110Z",
-      "name": "VERIFY",
-      "status": "success",
-      "message": "최종 검증 통과"
-    },
-    {
-      "at": "2026-10-13T03:19:21.129Z",
-      "name": "FINISH",
-      "status": "success",
-      "message": "generated=5"
-    }
-  ]
+  "verification": null,
+  "stages": []
 }
