@@ -1,16 +1,16 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-13T02:40:50.446Z",
+  "updatedAt": "2026-10-13T02:56:05.309Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-13T02:40:00.010Z",
-      "finishedAt": "2026-10-13T02:40:31.182Z",
+      "startedAt": "2026-10-13T02:55:00.115Z",
+      "finishedAt": "2026-10-13T02:55:46.065Z",
       "result": "success",
-      "durationMs": 31172,
+      "durationMs": 45950,
       "error": null
     },
     "consecutiveFailures": 0,
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-13T02:40:50.872Z",
+    "updatedAt": "2026-10-13T02:56:05.766Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,7 +253,7 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-13T02:40:38.559Z",
+    "checkedAt": "2026-10-13T02:55:53.841Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-13",
     "planned": 16,
@@ -276,7 +276,7 @@
         "subject": "잠자리",
         "filename": null,
         "startDelaySeconds": 0,
-        "elapsedMinutes": 343.7,
+        "elapsedMinutes": 358.9,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -290,7 +290,7 @@
         "subject": "고슴도치",
         "filename": null,
         "startDelaySeconds": 2376,
-        "elapsedMinutes": 298,
+        "elapsedMinutes": 313.3,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -304,7 +304,7 @@
         "subject": "큰개미핥기",
         "filename": null,
         "startDelaySeconds": 4623,
-        "elapsedMinutes": 257.6,
+        "elapsedMinutes": 272.8,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -318,7 +318,7 @@
         "subject": "말레이맥",
         "filename": null,
         "startDelaySeconds": 6379,
-        "elapsedMinutes": 225.3,
+        "elapsedMinutes": 240.6,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -332,7 +332,7 @@
         "subject": "람부탄",
         "filename": null,
         "startDelaySeconds": 0,
-        "elapsedMinutes": 343.7,
+        "elapsedMinutes": 358.9,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -346,7 +346,7 @@
         "subject": "올빼미",
         "filename": null,
         "startDelaySeconds": 1656,
-        "elapsedMinutes": 298,
+        "elapsedMinutes": 313.3,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -360,7 +360,7 @@
         "subject": "만타가오리",
         "filename": "만타가오리 성수.png",
         "startDelaySeconds": 3903,
-        "elapsedMinutes": 257.6,
+        "elapsedMinutes": 272.8,
         "diagnosis": "실행 완료"
       },
       {
@@ -374,7 +374,7 @@
         "subject": "황제전갈",
         "filename": null,
         "startDelaySeconds": 5659,
-        "elapsedMinutes": 225.3,
+        "elapsedMinutes": 240.6,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
