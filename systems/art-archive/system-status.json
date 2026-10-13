@@ -1,21 +1,21 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-13T08:36:45.915Z",
+  "updatedAt": "2026-10-13T08:51:49.251Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-13T08:36:00.357Z",
-      "finishedAt": "2026-10-13T08:36:05.519Z",
-      "result": "skipped",
-      "durationMs": 5162,
-      "error": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
+      "startedAt": "2026-10-13T08:51:00.141Z",
+      "finishedAt": "2026-10-13T08:51:31.296Z",
+      "result": "success",
+      "durationMs": 31155,
+      "error": null
     },
     "consecutiveFailures": 0,
-    "busyOrSkipped": true,
-    "busyReason": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀",
+    "busyOrSkipped": false,
+    "busyReason": null,
     "triggerInventoryAvailable": false
   },
   "notionSync": {
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-13T08:36:47.667Z",
+    "updatedAt": "2026-10-13T08:51:49.746Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,16 +253,16 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-13T08:36:23.783Z",
+    "checkedAt": "2026-10-13T08:51:38.357Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-13",
     "planned": 16,
     "success": 1,
-    "failed": 9,
+    "failed": 11,
     "stalled": 0,
-    "missed": 0,
+    "missed": 1,
     "running": 0,
-    "pending": 6,
+    "pending": 3,
     "status": "error",
     "slots": [
       {
@@ -276,7 +276,7 @@
         "subject": "잠자리",
         "filename": null,
         "startDelaySeconds": 0,
-        "elapsedMinutes": 699.4,
+        "elapsedMinutes": 714.7,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -290,7 +290,7 @@
         "subject": "고슴도치",
         "filename": null,
         "startDelaySeconds": 2376,
-        "elapsedMinutes": 653.8,
+        "elapsedMinutes": 669,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -304,7 +304,7 @@
         "subject": "큰개미핥기",
         "filename": null,
         "startDelaySeconds": 4623,
-        "elapsedMinutes": 613.3,
+        "elapsedMinutes": 628.6,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -318,7 +318,7 @@
         "subject": "말레이맥",
         "filename": null,
         "startDelaySeconds": 6379,
-        "elapsedMinutes": 581.1,
+        "elapsedMinutes": 596.3,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -332,7 +332,7 @@
         "subject": "람부탄",
         "filename": null,
         "startDelaySeconds": 0,
-        "elapsedMinutes": 699.4,
+        "elapsedMinutes": 714.7,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -346,7 +346,7 @@
         "subject": "올빼미",
         "filename": null,
         "startDelaySeconds": 1656,
-        "elapsedMinutes": 653.8,
+        "elapsedMinutes": 669,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -360,7 +360,7 @@
         "subject": "만타가오리",
         "filename": "만타가오리 성수.png",
         "startDelaySeconds": 3903,
-        "elapsedMinutes": 613.3,
+        "elapsedMinutes": 628.6,
         "diagnosis": "실행 완료"
       },
       {
@@ -374,7 +374,7 @@
         "subject": "황제전갈",
         "filename": null,
         "startDelaySeconds": 5659,
-        "elapsedMinutes": 581.1,
+        "elapsedMinutes": 596.3,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -394,21 +394,21 @@
       {
         "series": "묵수",
         "scheduledTime": "17:03",
-        "status": "PENDING",
-        "logRow": null,
-        "runId": null,
-        "stage": null,
-        "result": null,
-        "subject": null,
+        "status": "FAILED",
+        "logRow": 164,
+        "runId": "묵수-20261013-173912",
+        "stage": "FAILED",
+        "result": "failed",
+        "subject": "바다이구아나",
         "filename": null,
-        "startDelaySeconds": null,
-        "elapsedMinutes": null,
-        "diagnosis": "예정시각 경과 후 로그 생성 대기"
+        "startDelaySeconds": 2172,
+        "elapsedMinutes": 5,
+        "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
         "series": "신수",
         "scheduledTime": "17:06",
-        "status": "PENDING",
+        "status": "MISSED",
         "logRow": null,
         "runId": null,
         "stage": null,
@@ -417,7 +417,7 @@
         "filename": null,
         "startDelaySeconds": null,
         "elapsedMinutes": null,
-        "diagnosis": "예정시각 경과 후 로그 생성 대기"
+        "diagnosis": "예정시각 후 45분이 지났지만 실행 로그가 없음"
       },
       {
         "series": "수채화",
@@ -450,16 +450,16 @@
       {
         "series": "잉크",
         "scheduledTime": "17:15",
-        "status": "PENDING",
-        "logRow": null,
-        "runId": null,
-        "stage": null,
-        "result": null,
-        "subject": null,
+        "status": "FAILED",
+        "logRow": 165,
+        "runId": "잉크-20261013-173912",
+        "stage": "FAILED",
+        "result": "failed",
+        "subject": "나비",
         "filename": null,
-        "startDelaySeconds": null,
-        "elapsedMinutes": null,
-        "diagnosis": "예정시각 경과 후 로그 생성 대기"
+        "startDelaySeconds": 1452,
+        "elapsedMinutes": 5,
+        "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
         "series": "성수",
