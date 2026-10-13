@@ -1,107 +1,152 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-13T04:14:25.234Z",
+  "updatedAt": "2026-10-13T04:18:11.881Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "running",
+    "status": "success",
     "runId": "paper-20261013-131425",
     "startedAt": "2026-10-13T04:14:25.077Z",
-    "finishedAt": null,
-    "durationMs": null,
-    "generatedCount": 0,
+    "finishedAt": "2026-10-13T04:18:11.881Z",
+    "durationMs": 226804,
+    "generatedCount": 5,
     "expectedMax": 6,
-    "lastCommitSha": null,
+    "lastCommitSha": "b02f52581fc53197fad6bf1066fddf1b4e7b6745",
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 0,
-      "success": 0,
+      "calls": 73,
+      "success": 73,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": null,
+      "lastHttpStatus": 200,
       "disabledForRun": false
     },
     "crossref": {
-      "calls": 0,
-      "success": 0,
+      "calls": 72,
+      "success": 72,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": null,
+      "lastHttpStatus": 200,
       "adaptiveIntervalMs": 650,
       "throttleEvents": 0,
-      "earlyStops": 0
+      "earlyStops": 2
     },
     "gemini": {
-      "calls": 0,
-      "success": 0,
+      "calls": 5,
+      "success": 5,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": null
+      "lastHttpStatus": 200
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 83,
+      "selectedTitle": "Hierarchical Reinforcement Learning with Context Detection (HRL-CD)",
+      "selectedDoi": "10.7763/ijmlc.2015.v5.533",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "전기",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 27,
+      "selectedTitle": "IEEE Power Electronics Letters publication information",
+      "selectedDoi": "10.1109/lpel.2004.831245",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "로봇·자동화",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 60,
+      "selectedTitle": "Obstacle Detection and Avoidance Methods for Autonomous Mobile Robot",
+      "selectedDoi": "10.21275/v5i1.nov152937",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "에너지·환경",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 111,
+      "selectedTitle": "Realistic maximum efficiency of solar energy conversion into work vs exergy efficiency",
+      "selectedDoi": "10.1007/s12053-023-10145-1",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "건축·시설관리",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 1,
+      "selectedTitle": "Editorial Board",
+      "selectedDoi": "10.1080/17512549.2012.752226",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "도서관·문헌정보",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
+      "status": "no_candidate",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 0,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     }
   ],
-  "verification": null,
-  "stages": []
+  "verification": {
+    "filesExist": true,
+    "jsonValid": true,
+    "indexHeadCorrect": true,
+    "indexDetailDoiMatch": true,
+    "noOldDoiDuplicates": true,
+    "noNewDoiDuplicates": true,
+    "ok": true
+  },
+  "stages": [
+    {
+      "at": "2026-10-13T04:14:26.642Z",
+      "name": "START",
+      "status": "running",
+      "message": "논문 자동화 V2.7.4 시작"
+    },
+    {
+      "at": "2026-10-13T04:14:26.959Z",
+      "name": "GITHUB_HEAD",
+      "status": "success",
+      "message": "97f9c6e"
+    },
+    {
+      "at": "2026-10-13T04:14:31.222Z",
+      "name": "INDEX",
+      "status": "success",
+      "message": "papers=1607"
+    },
+    {
+      "at": "2026-10-13T04:18:06.287Z",
+      "name": "GITHUB_COMMIT",
+      "status": "success",
+      "message": "b02f525"
+    },
+    {
+      "at": "2026-10-13T04:18:11.869Z",
+      "name": "VERIFY",
+      "status": "success",
+      "message": "최종 검증 통과"
+    },
+    {
+      "at": "2026-10-13T04:18:11.881Z",
+      "name": "FINISH",
+      "status": "success",
+      "message": "generated=5"
+    }
+  ]
 }
