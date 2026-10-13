@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-10-13T08:06:02.484Z",
+  "generatedAt": "2026-10-13T08:45:04.955Z",
   "source": "그림 자동화 사용량 로그 / 사용량 로그",
   "schemaVersion": 3,
   "summary": {
-    "runs": 148,
+    "runs": 150,
     "success": 79,
-    "failed": 60,
-    "successRate": 53.4,
+    "failed": 62,
+    "successRate": 52.7,
     "driveVerified": 81,
-    "regenerations": 77,
-    "sourceRows": 161,
+    "regenerations": 79,
+    "sourceRows": 163,
     "normalizedPartialRows": 0
   },
   "series": [
@@ -23,11 +23,11 @@
     },
     {
       "name": "묵수",
-      "runs": 21,
+      "runs": 22,
       "success": 11,
-      "failed": 7,
-      "avgElapsed": 243.7,
-      "regenerations": 10
+      "failed": 8,
+      "avgElapsed": 247.8,
+      "regenerations": 11
     },
     {
       "name": "신수",
@@ -55,11 +55,11 @@
     },
     {
       "name": "잉크",
-      "runs": 14,
+      "runs": 15,
       "success": 8,
-      "failed": 5,
-      "avgElapsed": 166.8,
-      "regenerations": 7
+      "failed": 6,
+      "avgElapsed": 179.9,
+      "regenerations": 8
     },
     {
       "name": "성수",
