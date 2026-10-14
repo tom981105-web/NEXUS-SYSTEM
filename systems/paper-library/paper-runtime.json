@@ -1,152 +1,107 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-14T06:19:11.596Z",
+  "updatedAt": "2026-10-14T07:14:25.656Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "success",
-    "runId": "paper-20261014-151425",
-    "startedAt": "2026-10-14T06:14:25.199Z",
-    "finishedAt": "2026-10-14T06:19:11.595Z",
-    "durationMs": 286396,
-    "generatedCount": 4,
+    "status": "running",
+    "runId": "paper-20261014-161425",
+    "startedAt": "2026-10-14T07:14:25.476Z",
+    "finishedAt": null,
+    "durationMs": null,
+    "generatedCount": 0,
     "expectedMax": 6,
-    "lastCommitSha": "896d7b8ac48897f61c5dd5246a99c7c377d199d5",
+    "lastCommitSha": null,
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 73,
-      "success": 73,
+      "calls": 0,
+      "success": 0,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": 200,
+      "lastHttpStatus": null,
       "disabledForRun": false
     },
     "crossref": {
-      "calls": 73,
-      "success": 71,
-      "retries": 2,
-      "http429": 2,
-      "errors": 2,
-      "lastHttpStatus": 200,
-      "adaptiveIntervalMs": 800,
-      "throttleEvents": 2,
-      "earlyStops": 1
-    },
-    "gemini": {
-      "calls": 4,
-      "success": 4,
+      "calls": 0,
+      "success": 0,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": 200
+      "lastHttpStatus": null,
+      "adaptiveIntervalMs": 650,
+      "throttleEvents": 0,
+      "earlyStops": 0
+    },
+    "gemini": {
+      "calls": 0,
+      "success": 0,
+      "retries": 0,
+      "http429": 0,
+      "errors": 0,
+      "lastHttpStatus": null
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 67,
-      "selectedTitle": "Image Analysis and Computer Vision: 1994",
-      "selectedDoi": "10.1006/cviu.1995.1044",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "전기",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 16,
-      "selectedTitle": "Harmonics Elimination in Cascaded Multilevel Inverter Using PWM Method",
-      "selectedDoi": "10.21275/v4i12.nov151828",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "로봇·자동화",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 46,
-      "selectedTitle": "The Application of Ultrasonic Positioning System for Indoor Navigation of Omni-directional Mobile Robot",
-      "selectedDoi": "10.18494/sam.2016.1337",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "에너지·환경",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 80,
-      "selectedTitle": "Renewable energy financing: India's experience",
-      "selectedDoi": "10.1016/s0960-1481(98)00464-9",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "건축·시설관리",
-      "status": "no_candidate",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 0,
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     },
     {
       "name": "도서관·문헌정보",
-      "status": "no_candidate",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 0,
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     }
   ],
-  "verification": {
-    "filesExist": true,
-    "jsonValid": true,
-    "indexHeadCorrect": true,
-    "indexDetailDoiMatch": true,
-    "noOldDoiDuplicates": true,
-    "noNewDoiDuplicates": true,
-    "ok": true
-  },
-  "stages": [
-    {
-      "at": "2026-10-14T06:14:27.588Z",
-      "name": "START",
-      "status": "running",
-      "message": "논문 자동화 V2.7.4 시작"
-    },
-    {
-      "at": "2026-10-14T06:14:28.014Z",
-      "name": "GITHUB_HEAD",
-      "status": "success",
-      "message": "20e21d7"
-    },
-    {
-      "at": "2026-10-14T06:14:31.532Z",
-      "name": "INDEX",
-      "status": "success",
-      "message": "papers=1673"
-    },
-    {
-      "at": "2026-10-14T06:19:05.955Z",
-      "name": "GITHUB_COMMIT",
-      "status": "success",
-      "message": "896d7b8"
-    },
-    {
-      "at": "2026-10-14T06:19:11.586Z",
-      "name": "VERIFY",
-      "status": "success",
-      "message": "최종 검증 통과"
-    },
-    {
-      "at": "2026-10-14T06:19:11.596Z",
-      "name": "FINISH",
-      "status": "success",
-      "message": "generated=4"
-    }
-  ]
+  "verification": null,
+  "stages": []
 }
