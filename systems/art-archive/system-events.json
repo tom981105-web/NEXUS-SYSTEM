@@ -1,7 +1,16 @@
 {
   "version": "1.4",
-  "updatedAt": "2026-10-14T08:36:50.555Z",
+  "updatedAt": "2026-10-14T08:40:02.192Z",
   "events": [
+    {
+      "id": "f5111e53-78d4-4fc4-821d-28bad18111e6",
+      "at": "2026-10-14T08:39:38.519Z",
+      "service": "Apps Script",
+      "level": "error",
+      "status": "failed",
+      "title": "Apps Script 실행 실패",
+      "message": "SYSTEM 사용량 동기화 실패: Exception: Address unavailable: https://api.github.com/repos/tom981105-web/NEXUS-SYSTEM/contents/systems/art-archive/system-usage.json?ref=main\n    at githubReadTextFile_ (Code:2115:32)\n    at updateSystemUsage_ (Code:3315:16)\n    at checkArtworkCompletion (Code:235:7)\n    at __GS_INTERNAL_top_function_call__.gs:1:8"
+    },
     {
       "id": "41e2d1e3-c177-4f6c-a92b-d65a75005589",
       "at": "2026-10-14T08:31:06.797Z",
@@ -887,15 +896,6 @@
     {
       "id": "900673ec-8525-46bc-a49a-0b571ba0ab66",
       "at": "2026-10-13T04:53:06.472Z",
-      "service": "Apps Script",
-      "level": "info",
-      "status": "skipped",
-      "title": "Apps Script 실행 건너뜀",
-      "message": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
-    },
-    {
-      "id": "405d5bf5-1777-4039-839d-b44b18658511",
-      "at": "2026-10-13T04:38:05.315Z",
       "service": "Apps Script",
       "level": "info",
       "status": "skipped",
