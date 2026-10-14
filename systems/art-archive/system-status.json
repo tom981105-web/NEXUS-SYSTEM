@@ -1,16 +1,16 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-14T20:55:37.223Z",
+  "updatedAt": "2026-10-14T21:11:41.115Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "ok",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-14T20:54:00.526Z",
-      "finishedAt": "2026-10-14T20:55:23.771Z",
+      "startedAt": "2026-10-14T21:10:01.430Z",
+      "finishedAt": "2026-10-14T21:11:20.904Z",
       "result": "skipped",
-      "durationMs": 83245,
+      "durationMs": 79474,
       "error": null
     },
     "consecutiveFailures": 0,
@@ -20,34 +20,62 @@
   },
   "notionSync": {
     "lastResult": "success",
-    "lastSeries": "수채화",
-    "lastArtwork": "바다코끼리",
-    "startedAt": "2026-10-13T10:06:34.649Z",
-    "finishedAt": "2026-10-13T10:06:39.366Z",
-    "durationMs": 4717,
+    "lastSeries": "크레스트",
+    "lastArtwork": "사마귀",
+    "startedAt": "2026-10-14T21:05:16.550Z",
+    "finishedAt": "2026-10-14T21:05:20.694Z",
+    "durationMs": 4144,
     "error": null,
     "consecutiveFailures": 0
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-14T20:55:37.328Z",
+    "updatedAt": "2026-10-14T21:11:42.060Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
-      "id": 38381194253,
+      "id": 38637595686,
       "name": "pages build and deployment",
       "display_title": "pages build and deployment",
       "event": "dynamic",
       "status": "completed",
       "conclusion": "success",
-      "head_sha": "5cb50381bfe927d1f8480edecac42a21e840f2be",
-      "created_at": "2026-10-13T10:07:27Z",
-      "run_started_at": "2026-10-13T10:07:27Z",
-      "updated_at": "2026-10-13T10:08:27Z",
-      "html_url": "https://github.com/tom981105-web/art-archive/actions/runs/38381194253",
+      "head_sha": "5f0f4910f2722993b447b23ae467b5f5da0e9ee0",
+      "created_at": "2026-10-14T21:06:14Z",
+      "run_started_at": "2026-10-14T21:06:14Z",
+      "updated_at": "2026-10-14T21:08:37Z",
+      "html_url": "https://github.com/tom981105-web/art-archive/actions/runs/38637595686",
       "message": "Update ART ARCHIVE automation status"
     },
     "recentRuns": [
+      {
+        "id": 38637595686,
+        "name": "pages build and deployment",
+        "display_title": "pages build and deployment",
+        "event": "dynamic",
+        "status": "completed",
+        "conclusion": "success",
+        "head_sha": "5f0f4910f2722993b447b23ae467b5f5da0e9ee0",
+        "created_at": "2026-10-14T21:06:14Z",
+        "run_started_at": "2026-10-14T21:06:14Z",
+        "updated_at": "2026-10-14T21:08:37Z",
+        "html_url": "https://github.com/tom981105-web/art-archive/actions/runs/38637595686",
+        "message": "Update ART ARCHIVE automation status"
+      },
+      {
+        "id": 38637483096,
+        "name": "pages build and deployment",
+        "display_title": "pages build and deployment",
+        "event": "dynamic",
+        "status": "completed",
+        "conclusion": "cancelled",
+        "head_sha": "ce84965a97de87fb165d9b856d2cf6afada0824a",
+        "created_at": "2026-10-14T21:05:23Z",
+        "run_started_at": "2026-10-14T21:05:23Z",
+        "updated_at": "2026-10-14T21:06:16Z",
+        "html_url": "https://github.com/tom981105-web/art-archive/actions/runs/38637483096",
+        "message": "Update ART ARCHIVE artworks"
+      },
       {
         "id": 38381194253,
         "name": "pages build and deployment",
@@ -159,37 +187,21 @@
         "updated_at": "2026-10-12T10:08:39Z",
         "html_url": "https://github.com/tom981105-web/art-archive/actions/runs/38234380708",
         "message": "Update ART ARCHIVE artworks"
-      },
-      {
-        "id": 38223351377,
-        "name": "pages build and deployment",
-        "display_title": "pages build and deployment",
-        "event": "dynamic",
-        "status": "completed",
-        "conclusion": "success",
-        "head_sha": "b7427d28688308b902571445ca3304ce85b27add",
-        "created_at": "2026-10-12T08:24:15Z",
-        "run_started_at": "2026-10-12T08:24:15Z",
-        "updated_at": "2026-10-12T08:24:59Z",
-        "html_url": "https://github.com/tom981105-web/art-archive/actions/runs/38223351377",
-        "message": "Update ART ARCHIVE automation status"
-      },
-      {
-        "id": 38223230503,
-        "name": "pages build and deployment",
-        "display_title": "pages build and deployment",
-        "event": "dynamic",
-        "status": "completed",
-        "conclusion": "success",
-        "head_sha": "11dc219af7358ac770279ec8b45e1859fb76b3b6",
-        "created_at": "2026-10-12T08:23:03Z",
-        "run_started_at": "2026-10-12T08:23:03Z",
-        "updated_at": "2026-10-12T08:24:06Z",
-        "html_url": "https://github.com/tom981105-web/art-archive/actions/runs/38223230503",
-        "message": "Update ART ARCHIVE artworks"
       }
     ],
     "recentCommits": [
+      {
+        "sha": "5f0f4910f2722993b447b23ae467b5f5da0e9ee0",
+        "message": "Update ART ARCHIVE automation status",
+        "date": "2026-10-14T21:06:11Z",
+        "html_url": "https://github.com/tom981105-web/art-archive/commit/5f0f4910f2722993b447b23ae467b5f5da0e9ee0"
+      },
+      {
+        "sha": "ce84965a97de87fb165d9b856d2cf6afada0824a",
+        "message": "Update ART ARCHIVE artworks",
+        "date": "2026-10-14T21:05:21Z",
+        "html_url": "https://github.com/tom981105-web/art-archive/commit/ce84965a97de87fb165d9b856d2cf6afada0824a"
+      },
       {
         "sha": "5cb50381bfe927d1f8480edecac42a21e840f2be",
         "message": "Update ART ARCHIVE automation status",
@@ -237,23 +249,11 @@
         "message": "Update ART ARCHIVE artworks",
         "date": "2026-10-12T10:07:56Z",
         "html_url": "https://github.com/tom981105-web/art-archive/commit/517731942225f3cea1ac2733706cb8ab63367219"
-      },
-      {
-        "sha": "b7427d28688308b902571445ca3304ce85b27add",
-        "message": "Update ART ARCHIVE automation status",
-        "date": "2026-10-12T08:24:13Z",
-        "html_url": "https://github.com/tom981105-web/art-archive/commit/b7427d28688308b902571445ca3304ce85b27add"
-      },
-      {
-        "sha": "11dc219af7358ac770279ec8b45e1859fb76b3b6",
-        "message": "Update ART ARCHIVE artworks",
-        "date": "2026-10-12T08:23:01Z",
-        "html_url": "https://github.com/tom981105-web/art-archive/commit/11dc219af7358ac770279ec8b45e1859fb76b3b6"
       }
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-14T20:55:21.526Z",
+    "checkedAt": "2026-10-14T21:11:24.835Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-15",
     "planned": 16,
@@ -277,7 +277,7 @@
         "filename": null,
         "startDelaySeconds": null,
         "elapsedMinutes": null,
-        "diagnosis": "예약시각 전"
+        "diagnosis": "예정시각 경과 후 로그 생성 대기"
       },
       {
         "series": "묵수",
@@ -291,7 +291,7 @@
         "filename": null,
         "startDelaySeconds": null,
         "elapsedMinutes": null,
-        "diagnosis": "예약시각 전"
+        "diagnosis": "예정시각 경과 후 로그 생성 대기"
       },
       {
         "series": "신수",
@@ -305,7 +305,7 @@
         "filename": null,
         "startDelaySeconds": null,
         "elapsedMinutes": null,
-        "diagnosis": "예약시각 전"
+        "diagnosis": "예정시각 경과 후 로그 생성 대기"
       },
       {
         "series": "수채화",
@@ -319,7 +319,7 @@
         "filename": null,
         "startDelaySeconds": null,
         "elapsedMinutes": null,
-        "diagnosis": "예약시각 전"
+        "diagnosis": "예정시각 경과 후 로그 생성 대기"
       },
       {
         "series": "펄퍼스",
