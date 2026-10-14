@@ -1,152 +1,107 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-14T22:16:52.022Z",
+  "updatedAt": "2026-10-14T23:14:27.998Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "success",
-    "runId": "paper-20261015-071425",
-    "startedAt": "2026-10-14T22:14:25.098Z",
-    "finishedAt": "2026-10-14T22:16:52.022Z",
-    "durationMs": 146924,
-    "generatedCount": 4,
+    "status": "running",
+    "runId": "paper-20261015-081427",
+    "startedAt": "2026-10-14T23:14:27.163Z",
+    "finishedAt": null,
+    "durationMs": null,
+    "generatedCount": 0,
     "expectedMax": 6,
-    "lastCommitSha": "6dbe44ca4c12831f7d789eff8f37b4c85e1f11a8",
+    "lastCommitSha": null,
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 1,
+      "calls": 0,
       "success": 0,
-      "retries": 0,
-      "http429": 1,
-      "errors": 1,
-      "lastHttpStatus": 429,
-      "disabledForRun": true
-    },
-    "crossref": {
-      "calls": 75,
-      "success": 72,
-      "retries": 3,
-      "http429": 3,
-      "errors": 3,
-      "lastHttpStatus": 200,
-      "adaptiveIntervalMs": 1350,
-      "throttleEvents": 3,
-      "earlyStops": 1
-    },
-    "gemini": {
-      "calls": 4,
-      "success": 4,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": 200
+      "lastHttpStatus": null,
+      "disabledForRun": false
+    },
+    "crossref": {
+      "calls": 0,
+      "success": 0,
+      "retries": 0,
+      "http429": 0,
+      "errors": 0,
+      "lastHttpStatus": null,
+      "adaptiveIntervalMs": 650,
+      "throttleEvents": 0,
+      "earlyStops": 0
+    },
+    "gemini": {
+      "calls": 0,
+      "success": 0,
+      "retries": 0,
+      "http429": 0,
+      "errors": 0,
+      "lastHttpStatus": null
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 58,
-      "selectedTitle": "A high storage capacity neural network content-addressable memory",
-      "selectedDoi": "10.1088/0954-898x/2/3/006",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "전기",
-      "status": "generated",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 7,
-      "selectedTitle": "POCKET MAGNETO-ELECTRIC MACHINE.",
-      "selectedDoi": "10.1016/s0140-6736(02)33946-1",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "로봇·자동화",
-      "status": "generated",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 33,
-      "selectedTitle": "Mechanics of Robot Manipulation",
-      "selectedDoi": "10.1108/ir.2002.04929aae.002",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "에너지·환경",
-      "status": "generated",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 92,
-      "selectedTitle": "Hydrogen energy news U.S.S.R. seminars on atomic and hydrogen energy☆",
-      "selectedDoi": "10.1016/0360-3199(79)90130-7",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "건축·시설관리",
-      "status": "no_candidate",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 0,
+      "crossrefCandidates": null,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     },
     {
       "name": "도서관·문헌정보",
-      "status": "no_candidate",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 0,
+      "crossrefCandidates": null,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     }
   ],
-  "verification": {
-    "filesExist": true,
-    "jsonValid": true,
-    "indexHeadCorrect": true,
-    "indexDetailDoiMatch": true,
-    "noOldDoiDuplicates": true,
-    "noNewDoiDuplicates": true,
-    "ok": true
-  },
-  "stages": [
-    {
-      "at": "2026-10-14T22:14:26.556Z",
-      "name": "START",
-      "status": "running",
-      "message": "논문 자동화 V2.7.4 시작"
-    },
-    {
-      "at": "2026-10-14T22:14:26.799Z",
-      "name": "GITHUB_HEAD",
-      "status": "success",
-      "message": "c336b04"
-    },
-    {
-      "at": "2026-10-14T22:14:29.038Z",
-      "name": "INDEX",
-      "status": "success",
-      "message": "papers=1730"
-    },
-    {
-      "at": "2026-10-14T22:16:48.865Z",
-      "name": "GITHUB_COMMIT",
-      "status": "success",
-      "message": "6dbe44c"
-    },
-    {
-      "at": "2026-10-14T22:16:52.014Z",
-      "name": "VERIFY",
-      "status": "success",
-      "message": "최종 검증 통과"
-    },
-    {
-      "at": "2026-10-14T22:16:52.022Z",
-      "name": "FINISH",
-      "status": "success",
-      "message": "generated=4"
-    }
-  ]
+  "verification": null,
+  "stages": []
 }
