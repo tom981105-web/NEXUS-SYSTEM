@@ -1,21 +1,21 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-15T09:14:34.391Z",
+  "updatedAt": "2026-10-15T09:29:50.436Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-15T09:14:00.407Z",
-      "finishedAt": "2026-10-15T09:14:05.487Z",
+      "startedAt": "2026-10-15T09:28:00.593Z",
+      "finishedAt": "2026-10-15T09:29:23.885Z",
       "result": "skipped",
-      "durationMs": 5080,
-      "error": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
+      "durationMs": 83292,
+      "error": null
     },
     "consecutiveFailures": 0,
     "busyOrSkipped": true,
-    "busyReason": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀",
+    "busyReason": "중복 실행 방지를 위해 이번 회차를 건너뜀",
     "triggerInventoryAvailable": false
   },
   "notionSync": {
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-15T09:14:34.764Z",
+    "updatedAt": "2026-10-15T09:29:51.937Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,7 +253,7 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-15T09:14:14.945Z",
+    "checkedAt": "2026-10-15T09:29:24.337Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-15",
     "planned": 16,
@@ -430,7 +430,7 @@
         "subject": "벌새",
         "filename": "a_high_resolution_watercolor_illustration_on_a_whi.png",
         "startDelaySeconds": 0,
-        "elapsedMinutes": 370,
+        "elapsedMinutes": 385.2,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -486,7 +486,7 @@
         "subject": "갯가재",
         "filename": null,
         "startDelaySeconds": 40,
-        "elapsedMinutes": 313.6,
+        "elapsedMinutes": 328.7,
         "diagnosis": "실행 로그가 실패로 종료됨"
       }
     ]
