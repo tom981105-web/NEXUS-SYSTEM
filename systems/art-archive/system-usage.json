@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-10-15T13:08:51.116Z",
+  "generatedAt": "2026-10-15T14:02:43.547Z",
   "source": "그림 자동화 사용량 로그 / 사용량 로그",
   "schemaVersion": 3,
   "summary": {
-    "runs": 175,
+    "runs": 176,
     "success": 80,
     "failed": 75,
-    "successRate": 45.7,
+    "successRate": 45.5,
     "driveVerified": 83,
     "regenerations": 99,
-    "sourceRows": 200,
+    "sourceRows": 201,
     "normalizedPartialRows": 0
   },
   "series": [
@@ -39,7 +39,7 @@
     },
     {
       "name": "수채화",
-      "runs": 26,
+      "runs": 27,
       "success": 11,
       "failed": 12,
       "avgElapsed": 213.8,
@@ -106,20 +106,6 @@
       "scheduledTime": "2026-10-12 19:00:00",
       "startDelaySeconds": 6365,
       "generatedFilename": "설표 융화.png"
-    },
-    {
-      "time": "2026-10-12 18:27:25",
-      "series": "성수",
-      "generationAttempts": 2,
-      "regenerations": 1,
-      "uploadAttempts": 0,
-      "driveVerified": false,
-      "result": "failed",
-      "elapsedSeconds": null,
-      "stage": "FAILED",
-      "scheduledTime": "2026-10-12 17:18:00",
-      "startDelaySeconds": 3887,
-      "generatedFilename": null
     },
     {
       "time": "2026-10-12 21:41 KST",
@@ -245,6 +231,20 @@
       "stage": "FAILED",
       "scheduledTime": "2026-10-13 06:00:00",
       "startDelaySeconds": 0,
+      "generatedFilename": null
+    },
+    {
+      "time": "2026-10-12 18:27:25",
+      "series": "신수",
+      "generationAttempts": 2,
+      "regenerations": 1,
+      "uploadAttempts": 0,
+      "driveVerified": false,
+      "result": "failed",
+      "elapsedSeconds": null,
+      "stage": "FAILED",
+      "scheduledTime": "2026-10-12 17:06:00",
+      "startDelaySeconds": 4606,
       "generatedFilename": null
     }
   ]
