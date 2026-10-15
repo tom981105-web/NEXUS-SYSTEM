@@ -1,17 +1,17 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-15T11:18:44.926Z",
+  "updatedAt": "2026-10-15T11:34:21.266Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-15T11:17:00.502Z",
-      "finishedAt": "2026-10-15T11:18:10.109Z",
+      "startedAt": "2026-10-15T11:34:00.527Z",
+      "finishedAt": "2026-10-15T11:34:05.722Z",
       "result": "success",
-      "durationMs": 69607,
-      "error": null
+      "durationMs": 5195,
+      "error": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
     },
     "consecutiveFailures": 0,
     "busyOrSkipped": false,
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-15T11:18:45.698Z",
+    "updatedAt": "2026-10-15T11:34:22.043Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,7 +253,7 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-15T11:18:24.349Z",
+    "checkedAt": "2026-10-15T11:33:53.221Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-15",
     "planned": 16,
@@ -430,7 +430,7 @@
         "subject": "벌새",
         "filename": "a_high_resolution_watercolor_illustration_on_a_whi.png",
         "startDelaySeconds": 0,
-        "elapsedMinutes": 494.2,
+        "elapsedMinutes": 509.7,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -486,7 +486,7 @@
         "subject": "갯가재",
         "filename": null,
         "startDelaySeconds": 40,
-        "elapsedMinutes": 437.7,
+        "elapsedMinutes": 453.2,
         "diagnosis": "실행 로그가 실패로 종료됨"
       }
     ]
