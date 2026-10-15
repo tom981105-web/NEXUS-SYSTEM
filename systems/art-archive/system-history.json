@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-10-15T04:02:36.960Z",
+  "generatedAt": "2026-10-15T14:02:45.345Z",
   "timezone": "Asia/Seoul",
   "schemaVersion": 1,
   "retentionDays": 90,
   "source": "그림 자동화 사용량 로그 / 사용량 로그",
   "summary": {
     "days": 16,
-    "runs": 162,
+    "runs": 163,
     "success": 79,
     "failed": 73,
-    "successRate": 48.8,
+    "successRate": 48.5,
     "avgElapsed": 213.4
   },
   "daily": [
@@ -1329,7 +1329,7 @@
     },
     {
       "date": "2026-10-15",
-      "runs": 2,
+      "runs": 3,
       "success": 0,
       "failed": 0,
       "successRate": 0,
@@ -1338,18 +1338,18 @@
       "driveVerified": 0,
       "driveVerifiedRate": 0,
       "regenerations": 0,
-      "avgStartDelay": 20,
+      "avgStartDelay": 7030.7,
       "series": [
         {
           "name": "수채화",
-          "runs": 1,
+          "runs": 2,
           "success": 0,
           "failed": 0,
           "successRate": 0,
           "avgElapsed": null,
           "driveVerified": 0,
           "regenerations": 0,
-          "avgStartDelay": 0
+          "avgStartDelay": 10526
         },
         {
           "name": "융화",
