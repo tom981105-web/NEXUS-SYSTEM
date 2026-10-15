@@ -1,16 +1,16 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-15T14:41:00.392Z",
+  "updatedAt": "2026-10-15T14:57:01.365Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-15T14:39:01.250Z",
-      "finishedAt": "2026-10-15T14:40:20.101Z",
+      "startedAt": "2026-10-15T14:53:02.089Z",
+      "finishedAt": "2026-10-15T14:56:13.365Z",
       "result": "success",
-      "durationMs": 78851,
+      "durationMs": 191276,
       "error": null
     },
     "consecutiveFailures": 0,
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-15T14:41:01.369Z",
+    "updatedAt": "2026-10-15T14:57:01.715Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,7 +253,7 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-15T14:40:34.542Z",
+    "checkedAt": "2026-10-15T14:56:35.562Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-15",
     "planned": 16,
@@ -430,7 +430,7 @@
         "subject": "가시두더지",
         "filename": "a_dreamy_airy_watercolor_illustration_on_a_clean.png",
         "startDelaySeconds": 21052,
-        "elapsedMinutes": 40.7,
+        "elapsedMinutes": 56.7,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -486,7 +486,7 @@
         "subject": "갯가재",
         "filename": null,
         "startDelaySeconds": 40,
-        "elapsedMinutes": 639.9,
+        "elapsedMinutes": 655.9,
         "diagnosis": "실행 로그가 실패로 종료됨"
       }
     ]
