@@ -1,107 +1,152 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-15T23:14:28.394Z",
+  "updatedAt": "2026-10-15T23:17:53.502Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "running",
+    "status": "success",
     "runId": "paper-20261016-081427",
     "startedAt": "2026-10-15T23:14:27.888Z",
-    "finishedAt": null,
-    "durationMs": null,
-    "generatedCount": 0,
+    "finishedAt": "2026-10-15T23:17:53.502Z",
+    "durationMs": 205614,
+    "generatedCount": 3,
     "expectedMax": 6,
-    "lastCommitSha": null,
+    "lastCommitSha": "c20a9e86d43a36c8d75b75b662d25d4ca7dad2bb",
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 0,
+      "calls": 1,
       "success": 0,
       "retries": 0,
-      "http429": 0,
-      "errors": 0,
-      "lastHttpStatus": null,
-      "disabledForRun": false
+      "http429": 1,
+      "errors": 1,
+      "lastHttpStatus": 429,
+      "disabledForRun": true
     },
     "crossref": {
-      "calls": 0,
-      "success": 0,
+      "calls": 73,
+      "success": 73,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": null,
+      "lastHttpStatus": 200,
       "adaptiveIntervalMs": 650,
       "throttleEvents": 0,
-      "earlyStops": 0
+      "earlyStops": 1
     },
     "gemini": {
-      "calls": 0,
-      "success": 0,
+      "calls": 3,
+      "success": 3,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": null
+      "lastHttpStatus": 200
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 41,
+      "selectedTitle": "Computer vision theory: The lack thereof",
+      "selectedDoi": "10.1016/0734-189x(86)90014-9",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "전기",
-      "status": "pending",
+      "status": "no_candidate",
       "openAlexCandidates": null,
-      "crossrefCandidates": null,
+      "crossrefCandidates": 0,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     },
     {
       "name": "로봇·자동화",
-      "status": "pending",
+      "status": "generated",
       "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "crossrefCandidates": 12,
+      "selectedTitle": "Kusuda International: consulting office in industrial automation and mechatronics",
+      "selectedDoi": "10.1108/aa.1998.03318bab.004",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "에너지·환경",
-      "status": "pending",
+      "status": "generated",
       "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "crossrefCandidates": 114,
+      "selectedTitle": "The impact of carbon emissions trading on energy efficiency: Evidence from quasi-experiment in China's carbon emissions trading pilot",
+      "selectedDoi": "10.1016/j.eneco.2022.106025",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "건축·시설관리",
-      "status": "pending",
+      "status": "no_candidate",
       "openAlexCandidates": null,
-      "crossrefCandidates": null,
+      "crossrefCandidates": 0,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     },
     {
       "name": "도서관·문헌정보",
-      "status": "pending",
+      "status": "no_candidate",
       "openAlexCandidates": null,
-      "crossrefCandidates": null,
+      "crossrefCandidates": 0,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     }
   ],
-  "verification": null,
-  "stages": []
+  "verification": {
+    "filesExist": true,
+    "jsonValid": true,
+    "indexHeadCorrect": true,
+    "indexDetailDoiMatch": true,
+    "noOldDoiDuplicates": true,
+    "noNewDoiDuplicates": true,
+    "ok": true
+  },
+  "stages": [
+    {
+      "at": "2026-10-15T23:14:30.828Z",
+      "name": "START",
+      "status": "running",
+      "message": "논문 자동화 V2.7.4 시작"
+    },
+    {
+      "at": "2026-10-15T23:14:31.729Z",
+      "name": "GITHUB_HEAD",
+      "status": "success",
+      "message": "1374e9f"
+    },
+    {
+      "at": "2026-10-15T23:14:42.292Z",
+      "name": "INDEX",
+      "status": "success",
+      "message": "papers=1811"
+    },
+    {
+      "at": "2026-10-15T23:17:34.776Z",
+      "name": "GITHUB_COMMIT",
+      "status": "success",
+      "message": "c20a9e8"
+    },
+    {
+      "at": "2026-10-15T23:17:53.219Z",
+      "name": "VERIFY",
+      "status": "success",
+      "message": "최종 검증 통과"
+    },
+    {
+      "at": "2026-10-15T23:17:53.502Z",
+      "name": "FINISH",
+      "status": "success",
+      "message": "generated=3"
+    }
+  ]
 }
