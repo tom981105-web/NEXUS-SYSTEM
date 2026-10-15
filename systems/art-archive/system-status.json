@@ -1,16 +1,16 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-15T03:56:21.437Z",
+  "updatedAt": "2026-10-15T04:12:13.985Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-15T03:56:00.432Z",
-      "finishedAt": "2026-10-15T03:56:05.729Z",
+      "startedAt": "2026-10-15T04:12:00.699Z",
+      "finishedAt": "2026-10-15T04:12:06.584Z",
       "result": "success",
-      "durationMs": 5297,
+      "durationMs": 5885,
       "error": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
     },
     "consecutiveFailures": 0,
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-15T03:56:21.955Z",
+    "updatedAt": "2026-10-15T04:12:14.477Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,16 +253,16 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-15T03:56:04.067Z",
+    "checkedAt": "2026-10-15T04:11:55.116Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-15",
     "planned": 16,
     "success": 0,
-    "failed": 1,
+    "failed": 2,
     "stalled": 0,
     "missed": 8,
     "running": 0,
-    "pending": 7,
+    "pending": 6,
     "status": "error",
     "slots": [
       {
@@ -430,7 +430,7 @@
         "subject": "벌새",
         "filename": "a_high_resolution_watercolor_illustration_on_a_whi.png",
         "startDelaySeconds": 0,
-        "elapsedMinutes": 51.9,
+        "elapsedMinutes": 67.7,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -478,16 +478,16 @@
       {
         "series": "융화",
         "scheduledTime": "17:21",
-        "status": "PENDING",
-        "logRow": null,
-        "runId": null,
-        "stage": null,
-        "result": null,
-        "subject": null,
+        "status": "FAILED",
+        "logRow": 197,
+        "runId": "융화-20261015-130040",
+        "stage": "FAILED",
+        "result": "failed_subject_mismatch",
+        "subject": "갯가재",
         "filename": null,
-        "startDelaySeconds": null,
-        "elapsedMinutes": null,
-        "diagnosis": "예약시각 전"
+        "startDelaySeconds": 40,
+        "elapsedMinutes": 11.3,
+        "diagnosis": "실행 로그가 실패로 종료됨"
       }
     ]
   }
