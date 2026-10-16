@@ -1,152 +1,107 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-16T06:20:11.330Z",
+  "updatedAt": "2026-10-16T07:14:25.344Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "success",
-    "runId": "paper-20261016-151425",
-    "startedAt": "2026-10-16T06:14:25.475Z",
-    "finishedAt": "2026-10-16T06:20:11.329Z",
-    "durationMs": 345854,
-    "generatedCount": 3,
+    "status": "running",
+    "runId": "paper-20261016-161425",
+    "startedAt": "2026-10-16T07:14:25.175Z",
+    "finishedAt": null,
+    "durationMs": null,
+    "generatedCount": 0,
     "expectedMax": 6,
-    "lastCommitSha": "f32ffa768b71fd981c6d57776d9d02f82b02a849",
+    "lastCommitSha": null,
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 73,
-      "success": 73,
+      "calls": 0,
+      "success": 0,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": 200,
+      "lastHttpStatus": null,
       "disabledForRun": false
     },
     "crossref": {
-      "calls": 78,
-      "success": 73,
-      "retries": 5,
-      "http429": 5,
-      "errors": 5,
-      "lastHttpStatus": 200,
-      "adaptiveIntervalMs": 2200,
-      "throttleEvents": 5,
-      "earlyStops": 1
+      "calls": 0,
+      "success": 0,
+      "retries": 0,
+      "http429": 0,
+      "errors": 0,
+      "lastHttpStatus": null,
+      "adaptiveIntervalMs": 650,
+      "throttleEvents": 0,
+      "earlyStops": 0
     },
     "gemini": {
-      "calls": 4,
-      "success": 3,
-      "retries": 1,
+      "calls": 0,
+      "success": 0,
+      "retries": 0,
       "http429": 0,
-      "errors": 2,
-      "lastHttpStatus": 200
+      "errors": 0,
+      "lastHttpStatus": null
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 35,
-      "selectedTitle": "A Reply to Hellerstein's Book Review of Machine Learning: A Theoretical Approach",
-      "selectedDoi": "10.1023/a:1022643815046",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "전기",
-      "status": "no_candidate",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 0,
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     },
     {
       "name": "로봇·자동화",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 5,
-      "selectedTitle": "Six-axis force/torque sensor system industrial automation/testing/polishing",
-      "selectedDoi": "10.1108/ir.2001.04928fad.009",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "에너지·환경",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 109,
-      "selectedTitle": "Carbon Emissions Due to Wine Making in the Island of Crete, Greece",
-      "selectedDoi": "10.47191/etj/v11i04.28",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "건축·시설관리",
-      "status": "no_candidate",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 0,
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     },
     {
       "name": "도서관·문헌정보",
-      "status": "no_candidate",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 0,
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     }
   ],
-  "verification": {
-    "filesExist": true,
-    "jsonValid": true,
-    "indexHeadCorrect": true,
-    "indexDetailDoiMatch": true,
-    "noOldDoiDuplicates": true,
-    "noNewDoiDuplicates": true,
-    "ok": true
-  },
-  "stages": [
-    {
-      "at": "2026-10-16T06:14:27.418Z",
-      "name": "START",
-      "status": "running",
-      "message": "논문 자동화 V2.7.4 시작"
-    },
-    {
-      "at": "2026-10-16T06:14:27.775Z",
-      "name": "GITHUB_HEAD",
-      "status": "success",
-      "message": "4b6d20e"
-    },
-    {
-      "at": "2026-10-16T06:14:32.973Z",
-      "name": "INDEX",
-      "status": "success",
-      "message": "papers=1833"
-    },
-    {
-      "at": "2026-10-16T06:20:01.837Z",
-      "name": "GITHUB_COMMIT",
-      "status": "success",
-      "message": "f32ffa7"
-    },
-    {
-      "at": "2026-10-16T06:20:11.229Z",
-      "name": "VERIFY",
-      "status": "success",
-      "message": "최종 검증 통과"
-    },
-    {
-      "at": "2026-10-16T06:20:11.329Z",
-      "name": "FINISH",
-      "status": "success",
-      "message": "generated=3"
-    }
-  ]
+  "verification": null,
+  "stages": []
 }
