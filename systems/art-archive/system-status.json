@@ -1,16 +1,16 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-16T03:58:30.895Z",
+  "updatedAt": "2026-10-16T04:14:31.565Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-16T03:55:00.964Z",
-      "finishedAt": "2026-10-16T03:58:18.850Z",
+      "startedAt": "2026-10-16T04:13:00.611Z",
+      "finishedAt": "2026-10-16T04:14:26.551Z",
       "result": "skipped",
-      "durationMs": 197886,
+      "durationMs": 85940,
       "error": null
     },
     "consecutiveFailures": 0,
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-16T03:58:31.232Z",
+    "updatedAt": "2026-10-16T04:14:32.032Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,16 +253,16 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-16T03:58:14.553Z",
+    "checkedAt": "2026-10-16T04:14:13.845Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-16",
     "planned": 16,
     "success": 0,
-    "failed": 1,
+    "failed": 2,
     "stalled": 0,
     "missed": 8,
     "running": 0,
-    "pending": 7,
+    "pending": 6,
     "status": "error",
     "slots": [
       {
@@ -430,7 +430,7 @@
         "subject": "벌새 (의도, 생성 요청 미반영)",
         "filename": null,
         "startDelaySeconds": 0,
-        "elapsedMinutes": 57.6,
+        "elapsedMinutes": 73.6,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -478,16 +478,16 @@
       {
         "series": "융화",
         "scheduledTime": "17:21",
-        "status": "PENDING",
-        "logRow": null,
-        "runId": null,
-        "stage": null,
-        "result": null,
-        "subject": null,
-        "filename": null,
-        "startDelaySeconds": null,
-        "elapsedMinutes": null,
-        "diagnosis": "예약시각 전"
+        "status": "FAILED",
+        "logRow": 211,
+        "runId": "융화-20261016-130213",
+        "stage": "FAILED",
+        "result": "failed_subject_mismatch",
+        "subject": "파란고리문어",
+        "filename": "a_clean_detailed_anime_style_character_design_ill.png",
+        "startDelaySeconds": 0,
+        "elapsedMinutes": 12,
+        "diagnosis": "실행 로그가 실패로 종료됨"
       }
     ]
   }
