@@ -1,152 +1,107 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-16T13:19:16.792Z",
+  "updatedAt": "2026-10-16T14:14:25.379Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "success",
-    "runId": "paper-20261016-221426",
-    "startedAt": "2026-10-16T13:14:26.371Z",
-    "finishedAt": "2026-10-16T13:19:16.792Z",
-    "durationMs": 290421,
-    "generatedCount": 2,
+    "status": "running",
+    "runId": "paper-20261016-231425",
+    "startedAt": "2026-10-16T14:14:25.182Z",
+    "finishedAt": null,
+    "durationMs": null,
+    "generatedCount": 0,
     "expectedMax": 6,
-    "lastCommitSha": "3f09f494649c5eb6f3f045f8a15177e965efd70e",
+    "lastCommitSha": null,
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 52,
-      "success": 51,
+      "calls": 0,
+      "success": 0,
       "retries": 0,
-      "http429": 1,
-      "errors": 1,
-      "lastHttpStatus": 429,
-      "disabledForRun": true
+      "http429": 0,
+      "errors": 0,
+      "lastHttpStatus": null,
+      "disabledForRun": false
     },
     "crossref": {
-      "calls": 76,
-      "success": 73,
-      "retries": 3,
-      "http429": 3,
-      "errors": 3,
-      "lastHttpStatus": 200,
-      "adaptiveIntervalMs": 1750,
-      "throttleEvents": 3,
-      "earlyStops": 1
+      "calls": 0,
+      "success": 0,
+      "retries": 0,
+      "http429": 0,
+      "errors": 0,
+      "lastHttpStatus": null,
+      "adaptiveIntervalMs": 650,
+      "throttleEvents": 0,
+      "earlyStops": 0
     },
     "gemini": {
-      "calls": 3,
-      "success": 2,
-      "retries": 1,
+      "calls": 0,
+      "success": 0,
+      "retries": 0,
       "http429": 0,
-      "errors": 2,
-      "lastHttpStatus": 200
+      "errors": 0,
+      "lastHttpStatus": null
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 30,
-      "selectedTitle": "Artificial intelligence applications in chemistry",
-      "selectedDoi": "10.1016/0004-3702(85)90048-7",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "전기",
-      "status": "no_candidate",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 0,
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     },
     {
       "name": "로봇·자동화",
-      "status": "no_candidate",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 0,
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     },
     {
       "name": "에너지·환경",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 101,
-      "selectedTitle": "Green finance curbs direct carbon emissions but exacerbates lifecycle carbon emissions in China’s electricity sector",
-      "selectedDoi": "10.1016/j.crsus.2026.100818",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "건축·시설관리",
-      "status": "no_candidate",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 0,
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     },
     {
       "name": "도서관·문헌정보",
-      "status": "no_candidate",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 0,
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     }
   ],
-  "verification": {
-    "filesExist": true,
-    "jsonValid": true,
-    "indexHeadCorrect": true,
-    "indexDetailDoiMatch": true,
-    "noOldDoiDuplicates": true,
-    "noNewDoiDuplicates": true,
-    "ok": true
-  },
-  "stages": [
-    {
-      "at": "2026-10-16T13:14:29.003Z",
-      "name": "START",
-      "status": "running",
-      "message": "논문 자동화 V2.7.4 시작"
-    },
-    {
-      "at": "2026-10-16T13:14:29.441Z",
-      "name": "GITHUB_HEAD",
-      "status": "success",
-      "message": "2f3c8bc"
-    },
-    {
-      "at": "2026-10-16T13:14:38.615Z",
-      "name": "INDEX",
-      "status": "success",
-      "message": "papers=1851"
-    },
-    {
-      "at": "2026-10-16T13:19:04.004Z",
-      "name": "GITHUB_COMMIT",
-      "status": "success",
-      "message": "3f09f49"
-    },
-    {
-      "at": "2026-10-16T13:19:16.516Z",
-      "name": "VERIFY",
-      "status": "success",
-      "message": "최종 검증 통과"
-    },
-    {
-      "at": "2026-10-16T13:19:16.792Z",
-      "name": "FINISH",
-      "status": "success",
-      "message": "generated=2"
-    }
-  ]
+  "verification": null,
+  "stages": []
 }
