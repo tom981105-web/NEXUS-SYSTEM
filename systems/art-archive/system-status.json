@@ -1,21 +1,21 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-16T03:43:19.025Z",
+  "updatedAt": "2026-10-16T03:58:30.895Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-16T03:43:02.432Z",
-      "finishedAt": "2026-10-16T03:43:07.796Z",
-      "result": "success",
-      "durationMs": 5364,
-      "error": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
+      "startedAt": "2026-10-16T03:55:00.964Z",
+      "finishedAt": "2026-10-16T03:58:18.850Z",
+      "result": "skipped",
+      "durationMs": 197886,
+      "error": null
     },
     "consecutiveFailures": 0,
-    "busyOrSkipped": false,
-    "busyReason": null,
+    "busyOrSkipped": true,
+    "busyReason": "중복 실행 방지를 위해 이번 회차를 건너뜀",
     "triggerInventoryAvailable": false
   },
   "notionSync": {
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-16T03:43:19.540Z",
+    "updatedAt": "2026-10-16T03:58:31.232Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,7 +253,7 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-16T03:42:55.503Z",
+    "checkedAt": "2026-10-16T03:58:14.553Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-16",
     "planned": 16,
@@ -430,7 +430,7 @@
         "subject": "벌새 (의도, 생성 요청 미반영)",
         "filename": null,
         "startDelaySeconds": 0,
-        "elapsedMinutes": 42.3,
+        "elapsedMinutes": 57.6,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
