@@ -1,21 +1,21 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-16T02:57:17.464Z",
+  "updatedAt": "2026-10-16T03:12:37.283Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-16T02:57:00.013Z",
-      "finishedAt": "2026-10-16T02:57:05.069Z",
+      "startedAt": "2026-10-16T03:11:00.561Z",
+      "finishedAt": "2026-10-16T03:12:33.944Z",
       "result": "skipped",
-      "durationMs": 5056,
-      "error": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
+      "durationMs": 93383,
+      "error": null
     },
     "consecutiveFailures": 0,
     "busyOrSkipped": true,
-    "busyReason": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀",
+    "busyReason": "중복 실행 방지를 위해 이번 회차를 건너뜀",
     "triggerInventoryAvailable": false
   },
   "notionSync": {
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-16T02:57:18.289Z",
+    "updatedAt": "2026-10-16T03:12:37.617Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,16 +253,16 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-16T02:56:35.247Z",
+    "checkedAt": "2026-10-16T03:12:15.354Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-16",
     "planned": 16,
     "success": 0,
-    "failed": 0,
+    "failed": 1,
     "stalled": 0,
     "missed": 8,
     "running": 0,
-    "pending": 8,
+    "pending": 7,
     "status": "error",
     "slots": [
       {
@@ -422,16 +422,16 @@
       {
         "series": "수채화",
         "scheduledTime": "17:09",
-        "status": "PENDING",
-        "logRow": null,
-        "runId": null,
-        "stage": null,
-        "result": null,
-        "subject": null,
+        "status": "FAILED",
+        "logRow": 210,
+        "runId": "수채화-20261016-120037",
+        "stage": "FAILED",
+        "result": "failed_subject_mismatch",
+        "subject": "벌새 (의도, 생성 요청 미반영)",
         "filename": null,
-        "startDelaySeconds": null,
-        "elapsedMinutes": null,
-        "diagnosis": "예약시각 전"
+        "startDelaySeconds": 0,
+        "elapsedMinutes": 11.6,
+        "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
         "series": "펄퍼스",
