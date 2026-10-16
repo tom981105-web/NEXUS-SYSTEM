@@ -1,107 +1,152 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-16T00:14:25.306Z",
+  "updatedAt": "2026-10-16T00:18:20.140Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "running",
+    "status": "success",
     "runId": "paper-20261016-091425",
     "startedAt": "2026-10-16T00:14:25.133Z",
-    "finishedAt": null,
-    "durationMs": null,
-    "generatedCount": 0,
+    "finishedAt": "2026-10-16T00:18:20.139Z",
+    "durationMs": 235006,
+    "generatedCount": 4,
     "expectedMax": 6,
-    "lastCommitSha": null,
+    "lastCommitSha": "25de805b0f34fb4c849e563da6a0ab2269a65d50",
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 0,
-      "success": 0,
+      "calls": 73,
+      "success": 73,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": null,
+      "lastHttpStatus": 200,
       "disabledForRun": false
     },
     "crossref": {
-      "calls": 0,
-      "success": 0,
-      "retries": 0,
-      "http429": 0,
-      "errors": 0,
-      "lastHttpStatus": null,
-      "adaptiveIntervalMs": 650,
-      "throttleEvents": 0,
-      "earlyStops": 0
+      "calls": 75,
+      "success": 73,
+      "retries": 2,
+      "http429": 2,
+      "errors": 2,
+      "lastHttpStatus": 200,
+      "adaptiveIntervalMs": 1150,
+      "throttleEvents": 2,
+      "earlyStops": 1
     },
     "gemini": {
-      "calls": 0,
-      "success": 0,
+      "calls": 4,
+      "success": 4,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": null
+      "lastHttpStatus": 200
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 41,
+      "selectedTitle": "Computer Vision Research in Utrecht",
+      "selectedDoi": "10.1023/a:1008068530060",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "전기",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 1,
+      "selectedTitle": "Erratum",
+      "selectedDoi": "10.1016/0142-0615(94)90050-7",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "로봇·자동화",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 11,
+      "selectedTitle": "Serving global industrial automation: IEC publishes new fieldbus standards",
+      "selectedDoi": "10.1108/aa.2008.03328cab.002",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "에너지·환경",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 112,
+      "selectedTitle": "Energy Consumption and Carbon Emissions in Three Small-Size Hotels in The Island of Crete, Greece. Achieving Net-Zero Carbon Emissions",
+      "selectedDoi": "10.47191/etj/v10i06.20",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "건축·시설관리",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
+      "status": "no_candidate",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 0,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     },
     {
       "name": "도서관·문헌정보",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
+      "status": "no_candidate",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 0,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     }
   ],
-  "verification": null,
-  "stages": []
+  "verification": {
+    "filesExist": true,
+    "jsonValid": true,
+    "indexHeadCorrect": true,
+    "indexDetailDoiMatch": true,
+    "noOldDoiDuplicates": true,
+    "noNewDoiDuplicates": true,
+    "ok": true
+  },
+  "stages": [
+    {
+      "at": "2026-10-16T00:14:26.674Z",
+      "name": "START",
+      "status": "running",
+      "message": "논문 자동화 V2.7.4 시작"
+    },
+    {
+      "at": "2026-10-16T00:14:26.963Z",
+      "name": "GITHUB_HEAD",
+      "status": "success",
+      "message": "c20a9e8"
+    },
+    {
+      "at": "2026-10-16T00:14:30.341Z",
+      "name": "INDEX",
+      "status": "success",
+      "message": "papers=1814"
+    },
+    {
+      "at": "2026-10-16T00:18:14.948Z",
+      "name": "GITHUB_COMMIT",
+      "status": "success",
+      "message": "25de805"
+    },
+    {
+      "at": "2026-10-16T00:18:20.124Z",
+      "name": "VERIFY",
+      "status": "success",
+      "message": "최종 검증 통과"
+    },
+    {
+      "at": "2026-10-16T00:18:20.139Z",
+      "name": "FINISH",
+      "status": "success",
+      "message": "generated=4"
+    }
+  ]
 }
