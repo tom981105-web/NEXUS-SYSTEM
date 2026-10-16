@@ -1,21 +1,21 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-16T06:20:09.171Z",
+  "updatedAt": "2026-10-16T06:36:07.359Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-16T06:19:00.402Z",
-      "finishedAt": "2026-10-16T06:19:42.678Z",
-      "result": "success",
-      "durationMs": 42276,
+      "startedAt": "2026-10-16T06:33:00.884Z",
+      "finishedAt": "2026-10-16T06:36:06.633Z",
+      "result": "skipped",
+      "durationMs": 185749,
       "error": null
     },
     "consecutiveFailures": 0,
-    "busyOrSkipped": false,
-    "busyReason": null,
+    "busyOrSkipped": true,
+    "busyReason": "중복 실행 방지를 위해 이번 회차를 건너뜀",
     "triggerInventoryAvailable": false
   },
   "notionSync": {
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-16T06:20:10.011Z",
+    "updatedAt": "2026-10-16T06:36:08.224Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,7 +253,7 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-16T06:19:50.219Z",
+    "checkedAt": "2026-10-16T06:35:46.398Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-16",
     "planned": 16,
@@ -430,7 +430,7 @@
         "subject": "벌새 (의도, 생성 요청 미반영)",
         "filename": null,
         "startDelaySeconds": 0,
-        "elapsedMinutes": 199.2,
+        "elapsedMinutes": 215.2,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -486,7 +486,7 @@
         "subject": "파란고리문어",
         "filename": "a_clean_detailed_anime_style_character_design_ill.png",
         "startDelaySeconds": 0,
-        "elapsedMinutes": 137.6,
+        "elapsedMinutes": 153.6,
         "diagnosis": "실행 로그가 실패로 종료됨"
       }
     ]
