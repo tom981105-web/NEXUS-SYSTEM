@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-10-16T02:02:48.093Z",
+  "generatedAt": "2026-10-16T03:03:35.036Z",
   "source": "그림 자동화 사용량 로그 / 사용량 로그",
   "schemaVersion": 3,
   "summary": {
-    "runs": 176,
+    "runs": 177,
     "success": 80,
     "failed": 75,
-    "successRate": 45.5,
+    "successRate": 45.2,
     "driveVerified": 83,
     "regenerations": 99,
-    "sourceRows": 206,
+    "sourceRows": 207,
     "normalizedPartialRows": 0
   },
   "series": [
@@ -39,7 +39,7 @@
     },
     {
       "name": "수채화",
-      "runs": 27,
+      "runs": 28,
       "success": 11,
       "failed": 12,
       "avgElapsed": 213.8,
