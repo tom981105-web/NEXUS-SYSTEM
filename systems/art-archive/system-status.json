@@ -1,16 +1,16 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-16T05:18:05.374Z",
+  "updatedAt": "2026-10-16T05:33:52.970Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-16T05:17:00.213Z",
-      "finishedAt": "2026-10-16T05:17:39.678Z",
+      "startedAt": "2026-10-16T05:33:00.119Z",
+      "finishedAt": "2026-10-16T05:33:29.535Z",
       "result": "success",
-      "durationMs": 39465,
+      "durationMs": 29416,
       "error": null
     },
     "consecutiveFailures": 0,
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-16T05:18:05.950Z",
+    "updatedAt": "2026-10-16T05:33:53.437Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,7 +253,7 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-16T05:17:48.878Z",
+    "checkedAt": "2026-10-16T05:33:35.593Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-16",
     "planned": 16,
@@ -430,7 +430,7 @@
         "subject": "벌새 (의도, 생성 요청 미반영)",
         "filename": null,
         "startDelaySeconds": 0,
-        "elapsedMinutes": 137.2,
+        "elapsedMinutes": 153,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
@@ -486,7 +486,7 @@
         "subject": "파란고리문어",
         "filename": "a_clean_detailed_anime_style_character_design_ill.png",
         "startDelaySeconds": 0,
-        "elapsedMinutes": 75.6,
+        "elapsedMinutes": 91.4,
         "diagnosis": "실행 로그가 실패로 종료됨"
       }
     ]
