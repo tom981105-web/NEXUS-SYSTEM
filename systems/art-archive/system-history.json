@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-16T04:04:12.133Z",
+  "generatedAt": "2026-10-16T04:05:59.584Z",
   "timezone": "Asia/Seoul",
   "schemaVersion": 1,
   "retentionDays": 90,
@@ -1397,7 +1397,7 @@
           "avgElapsed": null,
           "driveVerified": 0,
           "regenerations": 0,
-          "avgStartDelay": null
+          "avgStartDelay": 0
         }
       ]
     }
