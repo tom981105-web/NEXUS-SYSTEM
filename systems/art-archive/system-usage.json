@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-10-17T03:04:34.779Z",
+  "generatedAt": "2026-10-17T04:10:11.372Z",
   "source": "그림 자동화 사용량 로그 / 사용량 로그",
   "schemaVersion": 3,
   "summary": {
-    "runs": 180,
+    "runs": 181,
     "success": 80,
     "failed": 76,
-    "successRate": 44.4,
+    "successRate": 44.2,
     "driveVerified": 83,
     "regenerations": 99,
-    "sourceRows": 219,
+    "sourceRows": 220,
     "normalizedPartialRows": 0
   },
   "series": [
@@ -71,7 +71,7 @@
     },
     {
       "name": "융화",
-      "runs": 15,
+      "runs": 16,
       "success": 4,
       "failed": 8,
       "avgElapsed": 339,
