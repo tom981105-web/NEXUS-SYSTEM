@@ -1,15 +1,15 @@
 {
-  "generatedAt": "2026-10-16T04:05:59.584Z",
+  "generatedAt": "2026-10-17T03:04:36.145Z",
   "timezone": "Asia/Seoul",
   "schemaVersion": 1,
   "retentionDays": 90,
   "source": "그림 자동화 사용량 로그 / 사용량 로그",
   "summary": {
-    "days": 17,
-    "runs": 165,
+    "days": 18,
+    "runs": 166,
     "success": 79,
-    "failed": 73,
-    "successRate": 47.9,
+    "failed": 74,
+    "successRate": 47.6,
     "avgElapsed": 213.4
   },
   "daily": [
@@ -1398,6 +1398,32 @@
           "driveVerified": 0,
           "regenerations": 0,
           "avgStartDelay": 0
+        }
+      ]
+    },
+    {
+      "date": "2026-10-17",
+      "runs": 1,
+      "success": 0,
+      "failed": 1,
+      "successRate": 0,
+      "avgElapsed": null,
+      "maxElapsed": 0,
+      "driveVerified": 0,
+      "driveVerifiedRate": 0,
+      "regenerations": 0,
+      "avgStartDelay": 111,
+      "series": [
+        {
+          "name": "수채화",
+          "runs": 1,
+          "success": 0,
+          "failed": 1,
+          "successRate": 0,
+          "avgElapsed": null,
+          "driveVerified": 0,
+          "regenerations": 0,
+          "avgStartDelay": 111
         }
       ]
     }
