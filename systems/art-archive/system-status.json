@@ -1,17 +1,17 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-17T09:58:13.508Z",
+  "updatedAt": "2026-10-17T10:14:03.063Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-17T09:58:00.283Z",
-      "finishedAt": "2026-10-17T09:58:05.411Z",
+      "startedAt": "2026-10-17T10:13:00.347Z",
+      "finishedAt": "2026-10-17T10:13:36.076Z",
       "result": "success",
-      "durationMs": 5128,
-      "error": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
+      "durationMs": 35729,
+      "error": null
     },
     "consecutiveFailures": 0,
     "busyOrSkipped": false,
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-17T09:58:13.989Z",
+    "updatedAt": "2026-10-17T10:14:03.429Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,7 +253,7 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-17T09:57:53.812Z",
+    "checkedAt": "2026-10-17T10:13:44.370Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-17",
     "planned": 16,
@@ -430,7 +430,7 @@
         "subject": "큰개미핥기",
         "filename": "a_dreamy_watercolor_illustration_on_white_backgrou.png",
         "startDelaySeconds": 111,
-        "elapsedMinutes": 416,
+        "elapsedMinutes": 431.9,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
