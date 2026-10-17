@@ -1,21 +1,21 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-17T14:11:32.527Z",
+  "updatedAt": "2026-10-17T14:27:00.528Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-17T14:11:00.241Z",
-      "finishedAt": "2026-10-17T14:11:05.372Z",
-      "result": "skipped",
-      "durationMs": 5131,
-      "error": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
+      "startedAt": "2026-10-17T14:26:00.196Z",
+      "finishedAt": "2026-10-17T14:26:30.523Z",
+      "result": "success",
+      "durationMs": 30327,
+      "error": null
     },
     "consecutiveFailures": 0,
-    "busyOrSkipped": true,
-    "busyReason": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀",
+    "busyOrSkipped": false,
+    "busyReason": null,
     "triggerInventoryAvailable": false
   },
   "notionSync": {
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-17T14:11:33.098Z",
+    "updatedAt": "2026-10-17T14:27:00.923Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,7 +253,7 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-17T14:11:16.893Z",
+    "checkedAt": "2026-10-17T14:26:39.775Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-17",
     "planned": 16,
@@ -430,7 +430,7 @@
         "subject": "큰개미핥기",
         "filename": "a_dreamy_watercolor_illustration_on_white_backgrou.png",
         "startDelaySeconds": 111,
-        "elapsedMinutes": 669.4,
+        "elapsedMinutes": 684.8,
         "diagnosis": "실행 로그가 실패로 종료됨"
       },
       {
