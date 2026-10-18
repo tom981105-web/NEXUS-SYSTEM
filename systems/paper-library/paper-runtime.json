@@ -1,152 +1,107 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-18T00:17:49.343Z",
+  "updatedAt": "2026-10-18T01:14:25.193Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "success",
-    "runId": "paper-20261018-091424",
-    "startedAt": "2026-10-18T00:14:24.948Z",
-    "finishedAt": "2026-10-18T00:17:49.343Z",
-    "durationMs": 204395,
-    "generatedCount": 3,
+    "status": "running",
+    "runId": "paper-20261018-101425",
+    "startedAt": "2026-10-18T01:14:25.034Z",
+    "finishedAt": null,
+    "durationMs": null,
+    "generatedCount": 0,
     "expectedMax": 6,
-    "lastCommitSha": "b57a8e2c14be2007a000b05eaa3b25bb6ef595bb",
+    "lastCommitSha": null,
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 73,
-      "success": 73,
+      "calls": 0,
+      "success": 0,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": 200,
+      "lastHttpStatus": null,
       "disabledForRun": false
     },
     "crossref": {
-      "calls": 74,
-      "success": 73,
-      "retries": 1,
-      "http429": 1,
-      "errors": 1,
-      "lastHttpStatus": 200,
-      "adaptiveIntervalMs": 1200,
-      "throttleEvents": 1,
-      "earlyStops": 0
-    },
-    "gemini": {
-      "calls": 3,
-      "success": 3,
+      "calls": 0,
+      "success": 0,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": 200
+      "lastHttpStatus": null,
+      "adaptiveIntervalMs": 650,
+      "throttleEvents": 0,
+      "earlyStops": 0
+    },
+    "gemini": {
+      "calls": 0,
+      "success": 0,
+      "retries": 0,
+      "http429": 0,
+      "errors": 0,
+      "lastHttpStatus": null
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 1,
-      "selectedTitle": "Reinforcement Learning",
-      "selectedDoi": "10.1108/k.1999.28.5.70.1",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "전기",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 1,
-      "selectedTitle": "Calendar",
-      "selectedDoi": "10.1016/0142-0615(83)90018-2",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "로봇·자동화",
-      "status": "no_candidate",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 0,
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     },
     {
       "name": "에너지·환경",
-      "status": "generated",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 72,
-      "selectedTitle": "Hydrogen energy and energy related publications",
-      "selectedDoi": "10.1016/0360-3199(90)90137-n",
-      "sourceProvider": "Crossref"
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "건축·시설관리",
-      "status": "no_candidate",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 0,
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     },
     {
       "name": "도서관·문헌정보",
-      "status": "no_candidate",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 0,
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     }
   ],
-  "verification": {
-    "filesExist": true,
-    "jsonValid": true,
-    "indexHeadCorrect": true,
-    "indexDetailDoiMatch": true,
-    "noOldDoiDuplicates": true,
-    "noNewDoiDuplicates": true,
-    "ok": true
-  },
-  "stages": [
-    {
-      "at": "2026-10-18T00:14:26.397Z",
-      "name": "START",
-      "status": "running",
-      "message": "논문 자동화 V2.7.4 시작"
-    },
-    {
-      "at": "2026-10-18T00:14:26.938Z",
-      "name": "GITHUB_HEAD",
-      "status": "success",
-      "message": "c9859a3"
-    },
-    {
-      "at": "2026-10-18T00:14:30.241Z",
-      "name": "INDEX",
-      "status": "success",
-      "message": "papers=1919"
-    },
-    {
-      "at": "2026-10-18T00:17:45.333Z",
-      "name": "GITHUB_COMMIT",
-      "status": "success",
-      "message": "b57a8e2"
-    },
-    {
-      "at": "2026-10-18T00:17:49.334Z",
-      "name": "VERIFY",
-      "status": "success",
-      "message": "최종 검증 통과"
-    },
-    {
-      "at": "2026-10-18T00:17:49.343Z",
-      "name": "FINISH",
-      "status": "success",
-      "message": "generated=3"
-    }
-  ]
+  "verification": null,
+  "stages": []
 }
