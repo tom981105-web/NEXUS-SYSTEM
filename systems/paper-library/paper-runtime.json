@@ -1,107 +1,152 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-19T09:14:25.904Z",
+  "updatedAt": "2026-10-19T09:19:26.843Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "running",
+    "status": "success",
     "runId": "paper-20261019-181425",
     "startedAt": "2026-10-19T09:14:25.645Z",
-    "finishedAt": null,
-    "durationMs": null,
-    "generatedCount": 0,
+    "finishedAt": "2026-10-19T09:19:26.842Z",
+    "durationMs": 301197,
+    "generatedCount": 1,
     "expectedMax": 6,
-    "lastCommitSha": null,
+    "lastCommitSha": "ad8e2d886eba3ad1b61694f9c8f69b7bed599ebd",
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 0,
-      "success": 0,
+      "calls": 73,
+      "success": 73,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": null,
+      "lastHttpStatus": 200,
       "disabledForRun": false
     },
     "crossref": {
-      "calls": 0,
-      "success": 0,
+      "calls": 73,
+      "success": 73,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": null,
+      "lastHttpStatus": 200,
       "adaptiveIntervalMs": 650,
       "throttleEvents": 0,
       "earlyStops": 0
     },
     "gemini": {
-      "calls": 0,
-      "success": 0,
+      "calls": 1,
+      "success": 1,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": null
+      "lastHttpStatus": 200
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
+      "status": "no_candidate",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 0,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     },
     {
       "name": "전기",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
+      "status": "no_candidate",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 0,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     },
     {
       "name": "로봇·자동화",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
+      "status": "no_candidate",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 0,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     },
     {
       "name": "에너지·환경",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
-      "selectedTitle": null,
-      "selectedDoi": null,
-      "sourceProvider": null
+      "status": "generated",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 54,
+      "selectedTitle": "Modelling the potential for industrial energy efficiency in IEA’s World Energy Outlook",
+      "selectedDoi": "10.1007/s12053-014-9273-7",
+      "sourceProvider": "Crossref"
     },
     {
       "name": "건축·시설관리",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
+      "status": "no_candidate",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 0,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     },
     {
       "name": "도서관·문헌정보",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
+      "status": "no_candidate",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 0,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     }
   ],
-  "verification": null,
-  "stages": []
+  "verification": {
+    "filesExist": true,
+    "jsonValid": true,
+    "indexHeadCorrect": true,
+    "indexDetailDoiMatch": true,
+    "noOldDoiDuplicates": true,
+    "noNewDoiDuplicates": true,
+    "ok": true
+  },
+  "stages": [
+    {
+      "at": "2026-10-19T09:14:28.220Z",
+      "name": "START",
+      "status": "running",
+      "message": "논문 자동화 V2.7.4 시작"
+    },
+    {
+      "at": "2026-10-19T09:14:28.621Z",
+      "name": "GITHUB_HEAD",
+      "status": "success",
+      "message": "805c0f4"
+    },
+    {
+      "at": "2026-10-19T09:14:36.838Z",
+      "name": "INDEX",
+      "status": "success",
+      "message": "papers=1959"
+    },
+    {
+      "at": "2026-10-19T09:19:18.776Z",
+      "name": "GITHUB_COMMIT",
+      "status": "success",
+      "message": "ad8e2d8"
+    },
+    {
+      "at": "2026-10-19T09:19:26.615Z",
+      "name": "VERIFY",
+      "status": "success",
+      "message": "최종 검증 통과"
+    },
+    {
+      "at": "2026-10-19T09:19:26.842Z",
+      "name": "FINISH",
+      "status": "success",
+      "message": "generated=1"
+    }
+  ]
 }
