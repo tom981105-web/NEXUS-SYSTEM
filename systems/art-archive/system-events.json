@@ -1,7 +1,25 @@
 {
   "version": "1.4",
-  "updatedAt": "2026-10-19T19:04:19.700Z",
+  "updatedAt": "2026-10-19T19:22:46.481Z",
   "events": [
+    {
+      "id": "6a92c100-162b-49f8-bffa-27dc87cd08ec",
+      "at": "2026-10-19T19:22:05.509Z",
+      "service": "Apps Script",
+      "level": "info",
+      "status": "skipped",
+      "title": "Apps Script 실행 건너뜀",
+      "message": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
+    },
+    {
+      "id": "f1144462-c64e-40dc-a8f0-4320b8ab754b",
+      "at": "2026-10-19T19:07:05.530Z",
+      "service": "Apps Script",
+      "level": "info",
+      "status": "skipped",
+      "title": "Apps Script 실행 건너뜀",
+      "message": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
+    },
     {
       "id": "add10314-ba22-4b4e-a539-dc456a4608c0",
       "at": "2026-10-19T18:51:07.347Z",
@@ -878,24 +896,6 @@
     {
       "id": "0cbd7c9f-2ae0-4d0d-b57c-842a87850a7e",
       "at": "2026-10-18T15:43:06.302Z",
-      "service": "Apps Script",
-      "level": "info",
-      "status": "skipped",
-      "title": "Apps Script 실행 건너뜀",
-      "message": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
-    },
-    {
-      "id": "1b651fd3-d723-4dda-a99d-22a28ab2b0ae",
-      "at": "2026-10-18T15:28:05.506Z",
-      "service": "Apps Script",
-      "level": "info",
-      "status": "skipped",
-      "title": "Apps Script 실행 건너뜀",
-      "message": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
-    },
-    {
-      "id": "34b24399-1fe5-474f-aeee-b10f8c283297",
-      "at": "2026-10-18T15:05:07.188Z",
       "service": "Apps Script",
       "level": "info",
       "status": "skipped",
