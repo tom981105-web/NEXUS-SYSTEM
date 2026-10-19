@@ -1,152 +1,107 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-19T17:19:05.544Z",
+  "updatedAt": "2026-10-19T18:14:25.819Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "success",
-    "runId": "paper-20261020-021425",
-    "startedAt": "2026-10-19T17:14:25.904Z",
-    "finishedAt": "2026-10-19T17:19:05.543Z",
-    "durationMs": 279639,
-    "generatedCount": 2,
+    "status": "running",
+    "runId": "paper-20261020-031425",
+    "startedAt": "2026-10-19T18:14:25.529Z",
+    "finishedAt": null,
+    "durationMs": null,
+    "generatedCount": 0,
     "expectedMax": 6,
-    "lastCommitSha": "c64e376418274cd1ad89c544220c9081a9d8bd0c",
+    "lastCommitSha": null,
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 1,
+      "calls": 0,
       "success": 0,
-      "retries": 0,
-      "http429": 1,
-      "errors": 1,
-      "lastHttpStatus": 429,
-      "disabledForRun": true
-    },
-    "crossref": {
-      "calls": 80,
-      "success": 73,
-      "retries": 7,
-      "http429": 7,
-      "errors": 7,
-      "lastHttpStatus": 200,
-      "adaptiveIntervalMs": 2400,
-      "throttleEvents": 7,
-      "earlyStops": 0
-    },
-    "gemini": {
-      "calls": 2,
-      "success": 2,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": 200
+      "lastHttpStatus": null,
+      "disabledForRun": false
+    },
+    "crossref": {
+      "calls": 0,
+      "success": 0,
+      "retries": 0,
+      "http429": 0,
+      "errors": 0,
+      "lastHttpStatus": null,
+      "adaptiveIntervalMs": 650,
+      "throttleEvents": 0,
+      "earlyStops": 0
+    },
+    "gemini": {
+      "calls": 0,
+      "success": 0,
+      "retries": 0,
+      "http429": 0,
+      "errors": 0,
+      "lastHttpStatus": null
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "no_candidate",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 0,
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     },
     {
       "name": "전기",
-      "status": "generated",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 1,
-      "selectedTitle": "Calendar",
-      "selectedDoi": "10.1016/0142-0615(83)90039-x",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "로봇·자동화",
-      "status": "no_candidate",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 0,
+      "crossrefCandidates": null,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     },
     {
       "name": "에너지·환경",
-      "status": "generated",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 48,
-      "selectedTitle": "HeartStart MRx Lithium Ion Battery",
-      "selectedDoi": "10.1097/01.bmsas.0000553626.05873.e0",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "건축·시설관리",
-      "status": "no_candidate",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 0,
+      "crossrefCandidates": null,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     },
     {
       "name": "도서관·문헌정보",
-      "status": "no_candidate",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 0,
+      "crossrefCandidates": null,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     }
   ],
-  "verification": {
-    "filesExist": true,
-    "jsonValid": true,
-    "indexHeadCorrect": true,
-    "indexDetailDoiMatch": true,
-    "noOldDoiDuplicates": true,
-    "noNewDoiDuplicates": true,
-    "ok": true
-  },
-  "stages": [
-    {
-      "at": "2026-10-19T17:14:28.733Z",
-      "name": "START",
-      "status": "running",
-      "message": "논문 자동화 V2.7.4 시작"
-    },
-    {
-      "at": "2026-10-19T17:14:29.709Z",
-      "name": "GITHUB_HEAD",
-      "status": "success",
-      "message": "de0a2bf"
-    },
-    {
-      "at": "2026-10-19T17:14:45.166Z",
-      "name": "INDEX",
-      "status": "success",
-      "message": "papers=1971"
-    },
-    {
-      "at": "2026-10-19T17:18:35.649Z",
-      "name": "GITHUB_COMMIT",
-      "status": "success",
-      "message": "c64e376"
-    },
-    {
-      "at": "2026-10-19T17:19:05.172Z",
-      "name": "VERIFY",
-      "status": "success",
-      "message": "최종 검증 통과"
-    },
-    {
-      "at": "2026-10-19T17:19:05.544Z",
-      "name": "FINISH",
-      "status": "success",
-      "message": "generated=2"
-    }
-  ]
+  "verification": null,
+  "stages": []
 }
