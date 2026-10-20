@@ -1,16 +1,16 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-20T21:32:45.861Z",
+  "updatedAt": "2026-10-20T21:48:37.261Z",
   "timezone": "Asia/Seoul",
-  "overallStatus": "ok",
+  "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-20T21:31:00.308Z",
-      "finishedAt": "2026-10-20T21:32:24.594Z",
+      "startedAt": "2026-10-20T21:46:01.079Z",
+      "finishedAt": "2026-10-20T21:48:08.648Z",
       "result": "skipped",
-      "durationMs": 84286,
+      "durationMs": 127569,
       "error": null
     },
     "consecutiveFailures": 0,
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-20T21:32:46.653Z",
+    "updatedAt": "2026-10-20T21:48:37.917Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,22 +253,22 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-20T21:32:27.188Z",
+    "checkedAt": "2026-10-20T21:48:22.834Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-21",
     "planned": 16,
     "success": 0,
     "failed": 0,
     "stalled": 0,
-    "missed": 0,
+    "missed": 2,
     "running": 0,
-    "pending": 16,
-    "status": "pending",
+    "pending": 14,
+    "status": "error",
     "slots": [
       {
         "series": "크레스트",
         "scheduledTime": "06:00",
-        "status": "PENDING",
+        "status": "MISSED",
         "logRow": null,
         "runId": null,
         "stage": null,
@@ -277,12 +277,12 @@
         "filename": null,
         "startDelaySeconds": null,
         "elapsedMinutes": null,
-        "diagnosis": "예정시각 경과 후 로그 생성 대기"
+        "diagnosis": "예정시각 후 45분이 지났지만 실행 로그가 없음"
       },
       {
         "series": "묵수",
         "scheduledTime": "06:03",
-        "status": "PENDING",
+        "status": "MISSED",
         "logRow": null,
         "runId": null,
         "stage": null,
@@ -291,7 +291,7 @@
         "filename": null,
         "startDelaySeconds": null,
         "elapsedMinutes": null,
-        "diagnosis": "예정시각 경과 후 로그 생성 대기"
+        "diagnosis": "예정시각 후 45분이 지났지만 실행 로그가 없음"
       },
       {
         "series": "신수",
