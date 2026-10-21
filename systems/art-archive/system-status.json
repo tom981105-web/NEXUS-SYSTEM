@@ -1,21 +1,21 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-21T20:58:38.515Z",
+  "updatedAt": "2026-10-21T21:13:56.052Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "ok",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-21T20:58:00.392Z",
-      "finishedAt": "2026-10-21T20:58:05.497Z",
-      "result": "skipped",
-      "durationMs": 5105,
-      "error": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
+      "startedAt": "2026-10-21T21:13:00.554Z",
+      "finishedAt": "2026-10-21T21:13:30.088Z",
+      "result": "success",
+      "durationMs": 29534,
+      "error": null
     },
     "consecutiveFailures": 0,
-    "busyOrSkipped": true,
-    "busyReason": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀",
+    "busyOrSkipped": false,
+    "busyReason": null,
     "triggerInventoryAvailable": false
   },
   "notionSync": {
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-21T20:58:39.328Z",
+    "updatedAt": "2026-10-21T21:13:56.154Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,7 +253,7 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-21T20:58:20.926Z",
+    "checkedAt": "2026-10-21T21:13:42.698Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-22",
     "planned": 16,
@@ -277,7 +277,7 @@
         "filename": null,
         "startDelaySeconds": null,
         "elapsedMinutes": null,
-        "diagnosis": "예약시각 전"
+        "diagnosis": "예정시각 경과 후 로그 생성 대기"
       },
       {
         "series": "묵수",
@@ -291,7 +291,7 @@
         "filename": null,
         "startDelaySeconds": null,
         "elapsedMinutes": null,
-        "diagnosis": "예약시각 전"
+        "diagnosis": "예정시각 경과 후 로그 생성 대기"
       },
       {
         "series": "신수",
@@ -305,7 +305,7 @@
         "filename": null,
         "startDelaySeconds": null,
         "elapsedMinutes": null,
-        "diagnosis": "예약시각 전"
+        "diagnosis": "예정시각 경과 후 로그 생성 대기"
       },
       {
         "series": "수채화",
@@ -319,7 +319,7 @@
         "filename": null,
         "startDelaySeconds": null,
         "elapsedMinutes": null,
-        "diagnosis": "예약시각 전"
+        "diagnosis": "예정시각 경과 후 로그 생성 대기"
       },
       {
         "series": "펄퍼스",
@@ -333,7 +333,7 @@
         "filename": null,
         "startDelaySeconds": null,
         "elapsedMinutes": null,
-        "diagnosis": "예약시각 전"
+        "diagnosis": "예정시각 경과 후 로그 생성 대기"
       },
       {
         "series": "잉크",
