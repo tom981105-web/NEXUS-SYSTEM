@@ -1,7 +1,16 @@
 {
   "version": "1.4",
-  "updatedAt": "2026-10-21T17:50:32.906Z",
+  "updatedAt": "2026-10-21T18:04:50.473Z",
   "events": [
+    {
+      "id": "22badaaf-b7d7-4fc8-8c05-1c6f9a908fd8",
+      "at": "2026-10-21T18:04:05.826Z",
+      "service": "Apps Script",
+      "level": "info",
+      "status": "skipped",
+      "title": "Apps Script 실행 건너뜀",
+      "message": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
+    },
     {
       "id": "eda7fcb0-0237-4fa1-b408-886c636892ec",
       "at": "2026-10-21T17:49:05.614Z",
@@ -887,15 +896,6 @@
     {
       "id": "1d1742c2-84ce-42f0-a954-4fbc1e913246",
       "at": "2026-10-20T14:45:05.593Z",
-      "service": "Apps Script",
-      "level": "info",
-      "status": "skipped",
-      "title": "Apps Script 실행 건너뜀",
-      "message": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
-    },
-    {
-      "id": "91bad0a2-0b87-4339-b044-6ed4d8a01643",
-      "at": "2026-10-20T14:28:06.661Z",
       "service": "Apps Script",
       "level": "info",
       "status": "skipped",
