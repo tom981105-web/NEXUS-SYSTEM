@@ -1,152 +1,107 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-22T16:18:32.478Z",
+  "updatedAt": "2026-10-22T17:14:26.959Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "success",
-    "runId": "paper-20261023-011425",
-    "startedAt": "2026-10-22T16:14:25.667Z",
-    "finishedAt": "2026-10-22T16:18:32.477Z",
-    "durationMs": 246810,
-    "generatedCount": 1,
+    "status": "running",
+    "runId": "paper-20261023-021425",
+    "startedAt": "2026-10-22T17:14:25.832Z",
+    "finishedAt": null,
+    "durationMs": null,
+    "generatedCount": 0,
     "expectedMax": 6,
-    "lastCommitSha": "c196f9c4ed72d728fda83010f3fede9df68b37aa",
+    "lastCommitSha": null,
     "error": null
   },
   "providers": {
     "openAlex": {
-      "calls": 1,
+      "calls": 0,
       "success": 0,
       "retries": 0,
-      "http429": 1,
-      "errors": 1,
-      "lastHttpStatus": 429,
-      "disabledForRun": true
+      "http429": 0,
+      "errors": 0,
+      "lastHttpStatus": null,
+      "disabledForRun": false
     },
     "crossref": {
-      "calls": 75,
-      "success": 73,
-      "retries": 2,
-      "http429": 2,
-      "errors": 2,
-      "lastHttpStatus": 200,
-      "adaptiveIntervalMs": 850,
-      "throttleEvents": 2,
+      "calls": 0,
+      "success": 0,
+      "retries": 0,
+      "http429": 0,
+      "errors": 0,
+      "lastHttpStatus": null,
+      "adaptiveIntervalMs": 650,
+      "throttleEvents": 0,
       "earlyStops": 0
     },
     "gemini": {
-      "calls": 2,
-      "success": 1,
-      "retries": 1,
+      "calls": 0,
+      "success": 0,
+      "retries": 0,
       "http429": 0,
-      "errors": 2,
-      "lastHttpStatus": 200
+      "errors": 0,
+      "lastHttpStatus": null
     }
   },
   "categories": [
     {
       "name": "인공지능",
-      "status": "no_candidate",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 0,
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     },
     {
       "name": "전기",
-      "status": "no_candidate",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 0,
+      "crossrefCandidates": null,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     },
     {
       "name": "로봇·자동화",
-      "status": "no_candidate",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 0,
+      "crossrefCandidates": null,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     },
     {
       "name": "에너지·환경",
-      "status": "generated",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 5,
-      "selectedTitle": "Longer-lasting lithium-ion battery for cell phones",
-      "selectedDoi": "10.1063/pt.5.028617",
-      "sourceProvider": "Crossref"
+      "crossrefCandidates": null,
+      "selectedTitle": null,
+      "selectedDoi": null,
+      "sourceProvider": null
     },
     {
       "name": "건축·시설관리",
-      "status": "no_candidate",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 0,
+      "crossrefCandidates": null,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     },
     {
       "name": "도서관·문헌정보",
-      "status": "no_candidate",
+      "status": "pending",
       "openAlexCandidates": null,
-      "crossrefCandidates": 0,
+      "crossrefCandidates": null,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     }
   ],
-  "verification": {
-    "filesExist": true,
-    "jsonValid": true,
-    "indexHeadCorrect": true,
-    "indexDetailDoiMatch": true,
-    "noOldDoiDuplicates": true,
-    "noNewDoiDuplicates": true,
-    "ok": true
-  },
-  "stages": [
-    {
-      "at": "2026-10-22T16:14:28.259Z",
-      "name": "START",
-      "status": "running",
-      "message": "논문 자동화 V2.7.4 시작"
-    },
-    {
-      "at": "2026-10-22T16:14:28.889Z",
-      "name": "GITHUB_HEAD",
-      "status": "success",
-      "message": "fb477c1"
-    },
-    {
-      "at": "2026-10-22T16:14:37.684Z",
-      "name": "INDEX",
-      "status": "success",
-      "message": "papers=2048"
-    },
-    {
-      "at": "2026-10-22T16:17:55.246Z",
-      "name": "GITHUB_COMMIT",
-      "status": "success",
-      "message": "c196f9c"
-    },
-    {
-      "at": "2026-10-22T16:18:32.079Z",
-      "name": "VERIFY",
-      "status": "success",
-      "message": "최종 검증 통과"
-    },
-    {
-      "at": "2026-10-22T16:18:32.477Z",
-      "name": "FINISH",
-      "status": "success",
-      "message": "generated=1"
-    }
-  ]
+  "verification": null,
+  "stages": []
 }
