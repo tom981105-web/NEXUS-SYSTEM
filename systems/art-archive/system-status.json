@@ -1,17 +1,17 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-22T07:56:01.403Z",
+  "updatedAt": "2026-10-22T08:11:20.268Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-22T07:55:00.423Z",
-      "finishedAt": "2026-10-22T07:55:31.986Z",
+      "startedAt": "2026-10-22T08:11:01.659Z",
+      "finishedAt": "2026-10-22T08:11:07.668Z",
       "result": "success",
-      "durationMs": 31563,
-      "error": null
+      "durationMs": 6009,
+      "error": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
     },
     "consecutiveFailures": 0,
     "busyOrSkipped": false,
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-22T07:56:01.734Z",
+    "updatedAt": "2026-10-22T08:11:21.290Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,7 +253,7 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-22T07:55:41.770Z",
+    "checkedAt": "2026-10-22T08:10:56.265Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-22",
     "planned": 16,
@@ -389,7 +389,7 @@
         "filename": null,
         "startDelaySeconds": null,
         "elapsedMinutes": null,
-        "diagnosis": "예약시각 전"
+        "diagnosis": "예정시각 경과 후 로그 생성 대기"
       },
       {
         "series": "묵수",
@@ -403,7 +403,7 @@
         "filename": null,
         "startDelaySeconds": null,
         "elapsedMinutes": null,
-        "diagnosis": "예약시각 전"
+        "diagnosis": "예정시각 경과 후 로그 생성 대기"
       },
       {
         "series": "신수",
@@ -417,7 +417,7 @@
         "filename": null,
         "startDelaySeconds": null,
         "elapsedMinutes": null,
-        "diagnosis": "예약시각 전"
+        "diagnosis": "예정시각 경과 후 로그 생성 대기"
       },
       {
         "series": "수채화",
@@ -431,7 +431,7 @@
         "filename": null,
         "startDelaySeconds": null,
         "elapsedMinutes": null,
-        "diagnosis": "예약시각 전"
+        "diagnosis": "예정시각 경과 후 로그 생성 대기"
       },
       {
         "series": "펄퍼스",
