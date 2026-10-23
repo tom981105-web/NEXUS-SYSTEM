@@ -1,21 +1,21 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-23T22:04:33.310Z",
+  "updatedAt": "2026-10-23T22:20:45.739Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-23T22:04:00.512Z",
-      "finishedAt": "2026-10-23T22:04:05.637Z",
-      "result": "success",
-      "durationMs": 5125,
+      "startedAt": "2026-10-23T22:20:00.238Z",
+      "finishedAt": "2026-10-23T22:20:05.434Z",
+      "result": "skipped",
+      "durationMs": 5196,
       "error": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
     },
     "consecutiveFailures": 0,
-    "busyOrSkipped": false,
-    "busyReason": null,
+    "busyOrSkipped": true,
+    "busyReason": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀",
     "triggerInventoryAvailable": false
   },
   "notionSync": {
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-23T22:04:33.825Z",
+    "updatedAt": "2026-10-23T22:20:46.429Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,16 +253,16 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-23T22:04:04.858Z",
+    "checkedAt": "2026-10-23T22:20:24.804Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-24",
     "planned": 16,
     "success": 0,
     "failed": 0,
     "stalled": 0,
-    "missed": 7,
+    "missed": 8,
     "running": 0,
-    "pending": 9,
+    "pending": 8,
     "status": "error",
     "slots": [
       {
@@ -366,7 +366,7 @@
       {
         "series": "융화",
         "scheduledTime": "06:21",
-        "status": "PENDING",
+        "status": "MISSED",
         "logRow": null,
         "runId": null,
         "stage": null,
@@ -375,7 +375,7 @@
         "filename": null,
         "startDelaySeconds": null,
         "elapsedMinutes": null,
-        "diagnosis": "예정시각 경과 후 로그 생성 대기"
+        "diagnosis": "예정시각 후 45분이 지났지만 실행 로그가 없음"
       },
       {
         "series": "크레스트",
