@@ -1,16 +1,16 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-10-25T21:56:10.115Z",
+  "updatedAt": "2026-10-25T22:11:30.993Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-10-25T21:56:00.364Z",
-      "finishedAt": "2026-10-25T21:56:05.458Z",
+      "startedAt": "2026-10-25T22:11:00.344Z",
+      "finishedAt": "2026-10-25T22:11:05.496Z",
       "result": "success",
-      "durationMs": 5094,
+      "durationMs": 5152,
       "error": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
     },
     "consecutiveFailures": 0,
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-10-25T21:56:10.500Z",
+    "updatedAt": "2026-10-25T22:11:31.476Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,16 +253,16 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-10-25T21:55:39.644Z",
+    "checkedAt": "2026-10-25T22:10:56.606Z",
     "timezone": "Asia/Seoul",
     "date": "2026-10-26",
     "planned": 16,
     "success": 0,
     "failed": 0,
     "stalled": 0,
-    "missed": 4,
+    "missed": 8,
     "running": 0,
-    "pending": 12,
+    "pending": 8,
     "status": "error",
     "slots": [
       {
@@ -324,7 +324,7 @@
       {
         "series": "펄퍼스",
         "scheduledTime": "06:12",
-        "status": "PENDING",
+        "status": "MISSED",
         "logRow": null,
         "runId": null,
         "stage": null,
@@ -333,12 +333,12 @@
         "filename": null,
         "startDelaySeconds": null,
         "elapsedMinutes": null,
-        "diagnosis": "예정시각 경과 후 로그 생성 대기"
+        "diagnosis": "예정시각 후 45분이 지났지만 실행 로그가 없음"
       },
       {
         "series": "잉크",
         "scheduledTime": "06:15",
-        "status": "PENDING",
+        "status": "MISSED",
         "logRow": null,
         "runId": null,
         "stage": null,
@@ -347,12 +347,12 @@
         "filename": null,
         "startDelaySeconds": null,
         "elapsedMinutes": null,
-        "diagnosis": "예정시각 경과 후 로그 생성 대기"
+        "diagnosis": "예정시각 후 45분이 지났지만 실행 로그가 없음"
       },
       {
         "series": "성수",
         "scheduledTime": "06:18",
-        "status": "PENDING",
+        "status": "MISSED",
         "logRow": null,
         "runId": null,
         "stage": null,
@@ -361,12 +361,12 @@
         "filename": null,
         "startDelaySeconds": null,
         "elapsedMinutes": null,
-        "diagnosis": "예정시각 경과 후 로그 생성 대기"
+        "diagnosis": "예정시각 후 45분이 지났지만 실행 로그가 없음"
       },
       {
         "series": "융화",
         "scheduledTime": "06:21",
-        "status": "PENDING",
+        "status": "MISSED",
         "logRow": null,
         "runId": null,
         "stage": null,
@@ -375,7 +375,7 @@
         "filename": null,
         "startDelaySeconds": null,
         "elapsedMinutes": null,
-        "diagnosis": "예정시각 경과 후 로그 생성 대기"
+        "diagnosis": "예정시각 후 45분이 지났지만 실행 로그가 없음"
       },
       {
         "series": "크레스트",
