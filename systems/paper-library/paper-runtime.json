@@ -1,16 +1,16 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-26T06:17:33.370Z",
+  "updatedAt": "2026-10-26T07:14:26.424Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "no_change",
-    "runId": "paper-20261026-151425",
-    "startedAt": "2026-10-26T06:14:25.239Z",
-    "finishedAt": "2026-10-26T06:17:33.369Z",
-    "durationMs": 188130,
+    "status": "running",
+    "runId": "paper-20261026-161426",
+    "startedAt": "2026-10-26T07:14:26.174Z",
+    "finishedAt": null,
+    "durationMs": null,
     "generatedCount": 0,
     "expectedMax": 6,
     "lastCommitSha": null,
@@ -18,23 +18,23 @@
   },
   "providers": {
     "openAlex": {
-      "calls": 73,
-      "success": 73,
+      "calls": 0,
+      "success": 0,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": 200,
+      "lastHttpStatus": null,
       "disabledForRun": false
     },
     "crossref": {
-      "calls": 75,
-      "success": 73,
-      "retries": 2,
-      "http429": 2,
-      "errors": 2,
-      "lastHttpStatus": 200,
-      "adaptiveIntervalMs": 1350,
-      "throttleEvents": 2,
+      "calls": 0,
+      "success": 0,
+      "retries": 0,
+      "http429": 0,
+      "errors": 0,
+      "lastHttpStatus": null,
+      "adaptiveIntervalMs": 650,
+      "throttleEvents": 0,
       "earlyStops": 0
     },
     "gemini": {
@@ -49,90 +49,59 @@
   "categories": [
     {
       "name": "인공지능",
-      "status": "no_candidate",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 0,
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     },
     {
       "name": "전기",
-      "status": "no_candidate",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 0,
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     },
     {
       "name": "로봇·자동화",
-      "status": "no_candidate",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 0,
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     },
     {
       "name": "에너지·환경",
-      "status": "no_candidate",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 0,
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     },
     {
       "name": "건축·시설관리",
-      "status": "no_candidate",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 0,
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     },
     {
       "name": "도서관·문헌정보",
-      "status": "no_candidate",
-      "openAlexCandidates": 0,
-      "crossrefCandidates": 0,
+      "status": "pending",
+      "openAlexCandidates": null,
+      "crossrefCandidates": null,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     }
   ],
   "verification": null,
-  "stages": [
-    {
-      "at": "2026-10-26T06:14:26.941Z",
-      "name": "START",
-      "status": "running",
-      "message": "논문 자동화 V2.7.4 시작"
-    },
-    {
-      "at": "2026-10-26T06:14:27.190Z",
-      "name": "GITHUB_HEAD",
-      "status": "success",
-      "message": "7762371"
-    },
-    {
-      "at": "2026-10-26T06:14:33.628Z",
-      "name": "INDEX",
-      "status": "success",
-      "message": "papers=2063"
-    },
-    {
-      "at": "2026-10-26T06:17:33.369Z",
-      "name": "CANDIDATES",
-      "status": "warning",
-      "message": "신규 후보 없음"
-    },
-    {
-      "at": "2026-10-26T06:17:33.370Z",
-      "name": "FINISH",
-      "status": "no_change",
-      "message": "generated=0"
-    }
-  ]
+  "stages": []
 }
