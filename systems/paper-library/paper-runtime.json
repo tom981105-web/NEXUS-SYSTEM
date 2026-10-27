@@ -1,16 +1,16 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-27T18:14:26.853Z",
+  "updatedAt": "2026-10-27T18:16:22.034Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "running",
+    "status": "no_change",
     "runId": "paper-20261028-031426",
     "startedAt": "2026-10-27T18:14:26.349Z",
-    "finishedAt": null,
-    "durationMs": null,
+    "finishedAt": "2026-10-27T18:16:22.034Z",
+    "durationMs": 115685,
     "generatedCount": 0,
     "expectedMax": 6,
     "lastCommitSha": null,
@@ -18,21 +18,21 @@
   },
   "providers": {
     "openAlex": {
-      "calls": 0,
+      "calls": 1,
       "success": 0,
       "retries": 0,
-      "http429": 0,
-      "errors": 0,
-      "lastHttpStatus": null,
-      "disabledForRun": false
+      "http429": 1,
+      "errors": 1,
+      "lastHttpStatus": 429,
+      "disabledForRun": true
     },
     "crossref": {
-      "calls": 0,
-      "success": 0,
+      "calls": 73,
+      "success": 73,
       "retries": 0,
       "http429": 0,
       "errors": 0,
-      "lastHttpStatus": null,
+      "lastHttpStatus": 200,
       "adaptiveIntervalMs": 650,
       "throttleEvents": 0,
       "earlyStops": 0
@@ -49,59 +49,90 @@
   "categories": [
     {
       "name": "인공지능",
-      "status": "pending",
-      "openAlexCandidates": null,
-      "crossrefCandidates": null,
+      "status": "no_candidate",
+      "openAlexCandidates": 0,
+      "crossrefCandidates": 0,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     },
     {
       "name": "전기",
-      "status": "pending",
+      "status": "no_candidate",
       "openAlexCandidates": null,
-      "crossrefCandidates": null,
+      "crossrefCandidates": 0,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     },
     {
       "name": "로봇·자동화",
-      "status": "pending",
+      "status": "no_candidate",
       "openAlexCandidates": null,
-      "crossrefCandidates": null,
+      "crossrefCandidates": 0,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     },
     {
       "name": "에너지·환경",
-      "status": "pending",
+      "status": "no_candidate",
       "openAlexCandidates": null,
-      "crossrefCandidates": null,
+      "crossrefCandidates": 0,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     },
     {
       "name": "건축·시설관리",
-      "status": "pending",
+      "status": "no_candidate",
       "openAlexCandidates": null,
-      "crossrefCandidates": null,
+      "crossrefCandidates": 0,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     },
     {
       "name": "도서관·문헌정보",
-      "status": "pending",
+      "status": "no_candidate",
       "openAlexCandidates": null,
-      "crossrefCandidates": null,
+      "crossrefCandidates": 0,
       "selectedTitle": null,
       "selectedDoi": null,
       "sourceProvider": null
     }
   ],
   "verification": null,
-  "stages": []
+  "stages": [
+    {
+      "at": "2026-10-27T18:14:30.541Z",
+      "name": "START",
+      "status": "running",
+      "message": "논문 자동화 V2.7.4 시작"
+    },
+    {
+      "at": "2026-10-27T18:14:31.543Z",
+      "name": "GITHUB_HEAD",
+      "status": "success",
+      "message": "a5dd3c0"
+    },
+    {
+      "at": "2026-10-27T18:14:46.944Z",
+      "name": "INDEX",
+      "status": "success",
+      "message": "papers=2077"
+    },
+    {
+      "at": "2026-10-27T18:16:22.033Z",
+      "name": "CANDIDATES",
+      "status": "warning",
+      "message": "신규 후보 없음"
+    },
+    {
+      "at": "2026-10-27T18:16:22.034Z",
+      "name": "FINISH",
+      "status": "no_change",
+      "message": "generated=0"
+    }
+  ]
 }
