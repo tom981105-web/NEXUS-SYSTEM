@@ -1,20 +1,20 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-28T14:14:27.405Z",
+  "updatedAt": "2026-10-28T15:14:29.350Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "failed",
-    "runId": "paper-20261028-231425",
-    "startedAt": "2026-10-28T14:14:25.369Z",
-    "finishedAt": "2026-10-28T14:14:27.405Z",
-    "durationMs": 2036,
+    "status": "running",
+    "runId": "paper-20261029-001427",
+    "startedAt": "2026-10-28T15:14:27.938Z",
+    "finishedAt": null,
+    "durationMs": null,
     "generatedCount": 0,
     "expectedMax": 6,
     "lastCommitSha": null,
-    "error": "Error: GitHub API 401: {\r\n  \"message\": \"Bad credentials\",\r\n  \"documentation_url\": \"https://docs.github.com/rest\",\r\n  \"status\": \"401\"\r\n}\n    at githubApi_ (Code:7749:11)\n    at runPaperAutomation (Code:603:20)\n    at __GS_INTERNAL_top_function_call__.gs:1:8"
+    "error": null
   },
   "providers": {
     "openAlex": {
@@ -103,24 +103,5 @@
     }
   ],
   "verification": null,
-  "stages": [
-    {
-      "at": "2026-10-28T14:14:27.259Z",
-      "name": "START",
-      "status": "running",
-      "message": "논문 자동화 V2.7.4 시작"
-    },
-    {
-      "at": "2026-10-28T14:14:27.405Z",
-      "name": "ERROR",
-      "status": "failed",
-      "message": "Error: GitHub API 401: {\r\n  \"message\": \"Bad credentials\",\r\n  \"documentation_url\": \"https://docs.github.com/rest\",\r\n  \"status\": \"401\"\r\n}\n    at githubApi_ (Code:7749:11)\n    at runPaperAutomation (Code:603:20)\n    at __GS_INTERNAL_top_function_call__.gs:1:8"
-    },
-    {
-      "at": "2026-10-28T14:14:27.405Z",
-      "name": "FINISH",
-      "status": "failed",
-      "message": "Error: GitHub API 401: {\r\n  \"message\": \"Bad credentials\",\r\n  \"documentation_url\": \"https://docs.github.com/rest\",\r\n  \"status\": \"401\"\r\n}\n    at githubApi_ (Code:7749:11)\n    at runPaperAutomation (Code:603:20)\n    at __GS_INTERNAL_top_function_call__.gs:1:8"
-    }
-  ]
+  "stages": []
 }
