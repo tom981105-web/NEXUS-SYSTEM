@@ -1,20 +1,20 @@
 {
   "version": "1.0",
-  "updatedAt": "2026-10-30T07:14:25.462Z",
+  "updatedAt": "2026-10-30T07:14:27.880Z",
   "timezone": "Asia/Seoul",
   "source": "PAPER automation V2.7.4",
   "instrumentation": "live",
   "automation": {
     "version": "2.7.4",
-    "status": "running",
+    "status": "failed",
     "runId": "paper-20261030-161425",
     "startedAt": "2026-10-30T07:14:25.197Z",
-    "finishedAt": null,
-    "durationMs": null,
+    "finishedAt": "2026-10-30T07:14:27.880Z",
+    "durationMs": 2683,
     "generatedCount": 0,
     "expectedMax": 6,
     "lastCommitSha": null,
-    "error": null
+    "error": "Error: GitHub API 401: {\r\n  \"message\": \"Bad credentials\",\r\n  \"documentation_url\": \"https://docs.github.com/rest\",\r\n  \"status\": \"401\"\r\n}\n    at githubApi_ (Code:7749:11)\n    at runPaperAutomation (Code:603:20)\n    at __GS_INTERNAL_top_function_call__.gs:1:8"
   },
   "providers": {
     "openAlex": {
@@ -103,5 +103,24 @@
     }
   ],
   "verification": null,
-  "stages": []
+  "stages": [
+    {
+      "at": "2026-10-30T07:14:27.509Z",
+      "name": "START",
+      "status": "running",
+      "message": "논문 자동화 V2.7.4 시작"
+    },
+    {
+      "at": "2026-10-30T07:14:27.880Z",
+      "name": "ERROR",
+      "status": "failed",
+      "message": "Error: GitHub API 401: {\r\n  \"message\": \"Bad credentials\",\r\n  \"documentation_url\": \"https://docs.github.com/rest\",\r\n  \"status\": \"401\"\r\n}\n    at githubApi_ (Code:7749:11)\n    at runPaperAutomation (Code:603:20)\n    at __GS_INTERNAL_top_function_call__.gs:1:8"
+    },
+    {
+      "at": "2026-10-30T07:14:27.880Z",
+      "name": "FINISH",
+      "status": "failed",
+      "message": "Error: GitHub API 401: {\r\n  \"message\": \"Bad credentials\",\r\n  \"documentation_url\": \"https://docs.github.com/rest\",\r\n  \"status\": \"401\"\r\n}\n    at githubApi_ (Code:7749:11)\n    at runPaperAutomation (Code:603:20)\n    at __GS_INTERNAL_top_function_call__.gs:1:8"
+    }
+  ]
 }
