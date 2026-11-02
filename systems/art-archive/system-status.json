@@ -1,16 +1,16 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-11-02T23:32:04.169Z",
+  "updatedAt": "2026-11-02T23:48:04.936Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-11-02T23:31:00.440Z",
-      "finishedAt": "2026-11-02T23:31:37.247Z",
+      "startedAt": "2026-11-02T23:47:00.119Z",
+      "finishedAt": "2026-11-02T23:47:37.616Z",
       "result": "success",
-      "durationMs": 36807,
+      "durationMs": 37497,
       "error": null
     },
     "consecutiveFailures": 0,
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-11-02T23:32:04.521Z",
+    "updatedAt": "2026-11-02T23:48:05.399Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,7 +253,7 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-11-02T23:31:47.650Z",
+    "checkedAt": "2026-11-02T23:47:48.169Z",
     "timezone": "Asia/Seoul",
     "date": "2026-11-03",
     "planned": 16,
