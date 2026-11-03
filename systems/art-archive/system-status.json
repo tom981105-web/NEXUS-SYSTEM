@@ -1,21 +1,21 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-11-03T13:10:50.572Z",
+  "updatedAt": "2026-11-03T13:13:03.632Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-11-03T13:10:01.018Z",
-      "finishedAt": "2026-11-03T13:10:06.160Z",
-      "result": "skipped",
-      "durationMs": 5142,
-      "error": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
+      "startedAt": "2026-11-03T13:12:00.289Z",
+      "finishedAt": "2026-11-03T13:12:40.208Z",
+      "result": "failed",
+      "durationMs": 39919,
+      "error": "SYSTEM 사용량 동기화 실패: Error: GitHub 파일 읽기 실패 [NEXUS] (NEXUS-SYSTEM/systems/art-archive/system-usage.json): HTTP 500 / {\"message\":\"Internal Server Error\",\"documentation_url\":\"https://docs.github.com/rest\",\"status\":\"500\"}\n    at githubReadTextFile_ (Code:2122:11)\n    at updateSystemUsage_ (Code:3315:16)\n    at checkArtworkCompletion (Code:235:7)\n    at __GS_INTERNAL_top_function_call__.gs:1:8"
     },
-    "consecutiveFailures": 0,
-    "busyOrSkipped": true,
-    "busyReason": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀",
+    "consecutiveFailures": 1,
+    "busyOrSkipped": false,
+    "busyReason": null,
     "triggerInventoryAvailable": false
   },
   "notionSync": {
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-11-03T13:10:51.483Z",
+    "updatedAt": "2026-11-03T13:13:03.979Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,7 +253,7 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-11-03T13:10:28.159Z",
+    "checkedAt": "2026-11-03T13:12:51.769Z",
     "timezone": "Asia/Seoul",
     "date": "2026-11-03",
     "planned": 16,
