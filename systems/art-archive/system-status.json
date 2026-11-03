@@ -1,21 +1,21 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-11-03T08:14:37.253Z",
+  "updatedAt": "2026-11-03T08:30:06.437Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-11-03T08:13:00.469Z",
-      "finishedAt": "2026-11-03T08:14:35.045Z",
-      "result": "skipped",
-      "durationMs": 94576,
-      "error": null
+      "startedAt": "2026-11-03T08:30:00.560Z",
+      "finishedAt": "2026-11-03T08:30:05.659Z",
+      "result": "success",
+      "durationMs": 5099,
+      "error": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
     },
     "consecutiveFailures": 0,
-    "busyOrSkipped": true,
-    "busyReason": "중복 실행 방지를 위해 이번 회차를 건너뜀",
+    "busyOrSkipped": false,
+    "busyReason": null,
     "triggerInventoryAvailable": false
   },
   "notionSync": {
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-11-03T08:14:37.686Z",
+    "updatedAt": "2026-11-03T08:30:06.796Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,7 +253,7 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-11-03T08:14:18.910Z",
+    "checkedAt": "2026-11-03T08:29:48.010Z",
     "timezone": "Asia/Seoul",
     "date": "2026-11-03",
     "planned": 16,
@@ -459,7 +459,7 @@
         "filename": null,
         "startDelaySeconds": null,
         "elapsedMinutes": null,
-        "diagnosis": "예약시각 전"
+        "diagnosis": "예정시각 경과 후 로그 생성 대기"
       },
       {
         "series": "성수",
@@ -473,7 +473,7 @@
         "filename": null,
         "startDelaySeconds": null,
         "elapsedMinutes": null,
-        "diagnosis": "예약시각 전"
+        "diagnosis": "예정시각 경과 후 로그 생성 대기"
       },
       {
         "series": "융화",
@@ -487,7 +487,7 @@
         "filename": null,
         "startDelaySeconds": null,
         "elapsedMinutes": null,
-        "diagnosis": "예약시각 전"
+        "diagnosis": "예정시각 경과 후 로그 생성 대기"
       }
     ]
   }
