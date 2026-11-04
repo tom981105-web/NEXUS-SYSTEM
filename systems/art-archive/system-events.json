@@ -1,7 +1,16 @@
 {
   "version": "1.4",
-  "updatedAt": "2026-11-04T14:31:15.499Z",
+  "updatedAt": "2026-11-04T14:46:44.176Z",
   "events": [
+    {
+      "id": "1d2b90c9-fe6f-4496-af1a-1f1ea0d6c9b3",
+      "at": "2026-11-04T14:37:10.701Z",
+      "service": "Apps Script",
+      "level": "info",
+      "status": "skipped",
+      "title": "Apps Script 실행 건너뜀",
+      "message": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
+    },
     {
       "id": "eea2eef4-da8c-4361-a5cf-e60f852c7218",
       "at": "2026-11-04T14:22:05.611Z",
@@ -892,15 +901,6 @@
       "status": "failed",
       "title": "Apps Script 실행 실패",
       "message": "SYSTEM 사용량 동기화 실패: Error: GitHub 파일 읽기 실패 [NEXUS] (NEXUS-SYSTEM/systems/art-archive/system-usage.json): HTTP 500 / {\"message\":\"Internal Server Error\",\"documentation_url\":\"https://docs.github.com/rest\",\"status\":\"500\"}\n    at githubReadTextFile_ (Code:2122:11)\n    at updateSystemUsage_ (Code:3315:16)\n    at checkArtworkCompletion (Code:235:7)\n    at __GS_INTERNAL_top_function_call__.gs:1:8"
-    },
-    {
-      "id": "5aaf895e-745b-467b-ad22-c9d749e4506f",
-      "at": "2026-11-03T12:59:06.237Z",
-      "service": "Apps Script",
-      "level": "info",
-      "status": "skipped",
-      "title": "Apps Script 실행 건너뜀",
-      "message": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
     }
   ]
 }
