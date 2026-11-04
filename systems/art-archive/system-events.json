@@ -1,7 +1,16 @@
 {
   "version": "1.4",
-  "updatedAt": "2026-11-04T12:11:53.965Z",
+  "updatedAt": "2026-11-04T12:26:43.629Z",
   "events": [
+    {
+      "id": "c568b697-80ee-45b2-9385-dba6890a157f",
+      "at": "2026-11-04T12:23:08.395Z",
+      "service": "Apps Script",
+      "level": "info",
+      "status": "skipped",
+      "title": "Apps Script 실행 건너뜀",
+      "message": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
+    },
     {
       "id": "c02e2663-aab6-422c-b5b9-c3c06c8aad1b",
       "at": "2026-11-04T12:08:05.648Z",
@@ -892,15 +901,6 @@
       "status": "success",
       "title": "Apps Script 정상 복구",
       "message": "checkArtworkCompletion"
-    },
-    {
-      "id": "5133ab0f-3824-47a7-a2a6-74a42ef5d083",
-      "at": "2026-11-03T11:02:27.259Z",
-      "service": "Apps Script",
-      "level": "error",
-      "status": "failed",
-      "title": "Apps Script 실행 실패",
-      "message": "Exception: Address unavailable: https://api.github.com/repos/tom981105-web/art-archive/contents/js/works.js?ref=main\n    at githubReadTextFile_ (Code:2115:32)\n    at getArchiveDriveFileIds_ (Code:272:14)\n    at checkArtworkCompletion (Code:117:28)\n    at __GS_INTERNAL_top_function_call__.gs:1:8"
     }
   ]
 }
