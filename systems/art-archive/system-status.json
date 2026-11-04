@@ -1,19 +1,19 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-11-04T02:11:11.831Z",
+  "updatedAt": "2026-11-04T02:15:44.204Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-11-04T02:11:00.407Z",
-      "finishedAt": "2026-11-04T02:11:05.542Z",
-      "result": "success",
-      "durationMs": 5135,
-      "error": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
+      "startedAt": "2026-11-04T02:15:00.248Z",
+      "finishedAt": "2026-11-04T02:15:18.363Z",
+      "result": "failed",
+      "durationMs": 18115,
+      "error": "Exception: Service error: Drive\n    at checkArtworkCompletion (Code:122:20)\n    at __GS_INTERNAL_top_function_call__.gs:1:8"
     },
-    "consecutiveFailures": 0,
+    "consecutiveFailures": 1,
     "busyOrSkipped": false,
     "busyReason": null,
     "triggerInventoryAvailable": false
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-11-04T02:11:12.266Z",
+    "updatedAt": "2026-11-04T02:15:44.746Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,7 +253,7 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-11-04T02:10:56.814Z",
+    "checkedAt": "2026-11-04T02:15:27.835Z",
     "timezone": "Asia/Seoul",
     "date": "2026-11-04",
     "planned": 16,
