@@ -1,7 +1,16 @@
 {
   "version": "1.4",
-  "updatedAt": "2026-11-06T12:46:37.667Z",
+  "updatedAt": "2026-11-06T12:47:56.734Z",
   "events": [
+    {
+      "id": "1b0e7fc5-bdbf-4045-aba9-a8ee2b4156ed",
+      "at": "2026-11-06T12:47:21.078Z",
+      "service": "Apps Script",
+      "level": "error",
+      "status": "failed",
+      "title": "Apps Script 실행 실패",
+      "message": "Exception: Address unavailable: https://api.github.com/repos/tom981105-web/art-archive/contents/js/works.js?ref=main\n    at githubReadTextFile_ (Code:2115:32)\n    at syncExistingArtworkMetadata_ (Code:1478:14)\n    at checkArtworkCompletion (Code:109:5)\n    at __GS_INTERNAL_top_function_call__.gs:1:8"
+    },
     {
       "id": "9fbaa626-a27d-44d6-812b-7f1dcbdee35f",
       "at": "2026-11-06T12:39:05.389Z",
@@ -887,15 +896,6 @@
     {
       "id": "00107458-9e60-4a0b-8cfc-f067a9e59621",
       "at": "2026-11-05T10:54:05.373Z",
-      "service": "Apps Script",
-      "level": "info",
-      "status": "skipped",
-      "title": "Apps Script 실행 건너뜀",
-      "message": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
-    },
-    {
-      "id": "f8deda45-e48d-40d2-b5fa-5e8495f5fe5e",
-      "at": "2026-11-05T10:38:06.010Z",
       "service": "Apps Script",
       "level": "info",
       "status": "skipped",
