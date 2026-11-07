@@ -1,21 +1,21 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-11-07T02:35:41.599Z",
+  "updatedAt": "2026-11-07T02:41:38.165Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-11-07T02:35:00.351Z",
-      "finishedAt": "2026-11-07T02:35:05.451Z",
-      "result": "skipped",
-      "durationMs": 5100,
-      "error": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
+      "startedAt": "2026-11-07T02:41:00.388Z",
+      "finishedAt": "2026-11-07T02:41:12.857Z",
+      "result": "failed",
+      "durationMs": 12469,
+      "error": "Exception: Address unavailable: https://api.github.com/repos/tom981105-web/art-archive/contents/js/works.js?ref=main\n    at githubReadTextFile_ (Code:2115:32)\n    at syncExistingArtworkMetadata_ (Code:1478:14)\n    at checkArtworkCompletion (Code:109:5)\n    at __GS_INTERNAL_top_function_call__.gs:1:8"
     },
-    "consecutiveFailures": 0,
-    "busyOrSkipped": true,
-    "busyReason": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀",
+    "consecutiveFailures": 1,
+    "busyOrSkipped": false,
+    "busyReason": null,
     "triggerInventoryAvailable": false
   },
   "notionSync": {
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-11-07T02:35:41.741Z",
+    "updatedAt": "2026-11-07T02:41:38.528Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,7 +253,7 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-11-07T02:35:21.132Z",
+    "checkedAt": "2026-11-07T02:41:22.839Z",
     "timezone": "Asia/Seoul",
     "date": "2026-11-07",
     "planned": 16,
