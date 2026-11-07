@@ -1,7 +1,16 @@
 {
   "version": "1.4",
-  "updatedAt": "2026-11-07T16:57:36.354Z",
+  "updatedAt": "2026-11-07T17:12:29.910Z",
   "events": [
+    {
+      "id": "c49be74c-26d2-4958-85eb-b2d6253d61d6",
+      "at": "2026-11-07T17:04:06.166Z",
+      "service": "Apps Script",
+      "level": "info",
+      "status": "skipped",
+      "title": "Apps Script 실행 건너뜀",
+      "message": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
+    },
     {
       "id": "5af8ab99-7e5d-49e4-8762-a59c0b4f041d",
       "at": "2026-11-07T16:46:05.538Z",
@@ -892,15 +901,6 @@
       "status": "skipped",
       "title": "Apps Script 실행 건너뜀",
       "message": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
-    },
-    {
-      "id": "1b0e7fc5-bdbf-4045-aba9-a8ee2b4156ed",
-      "at": "2026-11-06T12:47:21.078Z",
-      "service": "Apps Script",
-      "level": "error",
-      "status": "failed",
-      "title": "Apps Script 실행 실패",
-      "message": "Exception: Address unavailable: https://api.github.com/repos/tom981105-web/art-archive/contents/js/works.js?ref=main\n    at githubReadTextFile_ (Code:2115:32)\n    at syncExistingArtworkMetadata_ (Code:1478:14)\n    at checkArtworkCompletion (Code:109:5)\n    at __GS_INTERNAL_top_function_call__.gs:1:8"
     }
   ]
 }
