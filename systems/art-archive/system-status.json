@@ -1,16 +1,16 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-11-13T21:30:25.769Z",
+  "updatedAt": "2026-11-13T21:46:20.392Z",
   "timezone": "Asia/Seoul",
-  "overallStatus": "ok",
+  "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-11-13T21:30:00.314Z",
-      "finishedAt": "2026-11-13T21:30:05.404Z",
+      "startedAt": "2026-11-13T21:46:00.359Z",
+      "finishedAt": "2026-11-13T21:46:05.485Z",
       "result": "success",
-      "durationMs": 5090,
+      "durationMs": 5126,
       "error": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
     },
     "consecutiveFailures": 0,
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-11-13T21:30:26.405Z",
+    "updatedAt": "2026-11-13T21:46:20.974Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,22 +253,22 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-11-13T21:30:09.604Z",
+    "checkedAt": "2026-11-13T21:46:06.417Z",
     "timezone": "Asia/Seoul",
     "date": "2026-11-14",
     "planned": 16,
     "success": 0,
     "failed": 0,
     "stalled": 0,
-    "missed": 0,
+    "missed": 1,
     "running": 0,
-    "pending": 16,
-    "status": "pending",
+    "pending": 15,
+    "status": "error",
     "slots": [
       {
         "series": "크레스트",
         "scheduledTime": "06:00",
-        "status": "PENDING",
+        "status": "MISSED",
         "logRow": null,
         "runId": null,
         "stage": null,
@@ -277,7 +277,7 @@
         "filename": null,
         "startDelaySeconds": null,
         "elapsedMinutes": null,
-        "diagnosis": "예정시각 경과 후 로그 생성 대기"
+        "diagnosis": "예정시각 후 45분이 지났지만 실행 로그가 없음"
       },
       {
         "series": "묵수",
