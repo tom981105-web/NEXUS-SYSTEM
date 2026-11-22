@@ -1,16 +1,16 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-11-22T09:03:56.335Z",
+  "updatedAt": "2026-11-22T09:19:56.093Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "error",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-11-22T09:03:00.275Z",
-      "finishedAt": "2026-11-22T09:03:38.417Z",
+      "startedAt": "2026-11-22T09:19:00.141Z",
+      "finishedAt": "2026-11-22T09:19:36.392Z",
       "result": "success",
-      "durationMs": 38142,
+      "durationMs": 36251,
       "error": null
     },
     "consecutiveFailures": 0,
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-11-22T09:03:56.690Z",
+    "updatedAt": "2026-11-22T09:19:56.273Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,16 +253,16 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-11-22T09:03:48.298Z",
+    "checkedAt": "2026-11-22T09:19:48.386Z",
     "timezone": "Asia/Seoul",
     "date": "2026-11-22",
     "planned": 16,
     "success": 0,
     "failed": 0,
     "stalled": 0,
-    "missed": 15,
+    "missed": 16,
     "running": 0,
-    "pending": 1,
+    "pending": 0,
     "status": "error",
     "slots": [
       {
@@ -478,7 +478,7 @@
       {
         "series": "융화",
         "scheduledTime": "17:21",
-        "status": "PENDING",
+        "status": "MISSED",
         "logRow": null,
         "runId": null,
         "stage": null,
@@ -487,7 +487,7 @@
         "filename": null,
         "startDelaySeconds": null,
         "elapsedMinutes": null,
-        "diagnosis": "예정시각 경과 후 로그 생성 대기"
+        "diagnosis": "예정시각 후 45분이 지났지만 실행 로그가 없음"
       }
     ]
   }
