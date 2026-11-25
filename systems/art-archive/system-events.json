@@ -1,7 +1,25 @@
 {
   "version": "1.4",
-  "updatedAt": "2026-11-24T23:53:55.242Z",
+  "updatedAt": "2026-11-25T00:05:34.411Z",
   "events": [
+    {
+      "id": "a7679c46-fe21-47e1-97bb-d126017973ab",
+      "at": "2026-11-25T00:05:15.724Z",
+      "service": "Apps Script",
+      "level": "error",
+      "status": "failed",
+      "title": "Apps Script 실행 실패",
+      "message": "Error: GitHub 파일 읽기 실패 [ART_ARCHIVE] (art-archive/js/works.js): HTTP 401 / {\r\n  \"message\": \"Bad credentials\",\r\n  \"documentation_url\": \"https://docs.github.com/rest\",\r\n  \"status\": \"401\"\r\n}\n    at githubReadTextFile_ (Code:2122:11)\n    at getArchiveDriveFileIds_ (Code:272:14)\n    at checkArtworkCompletion (Code:117:28)\n    at __GS_INTERNAL_top_function_call__.gs:1:8"
+    },
+    {
+      "id": "92add839-f4a4-48ad-bab4-e25275f6009d",
+      "at": "2026-11-25T00:01:05.727Z",
+      "service": "Apps Script",
+      "level": "info",
+      "status": "skipped",
+      "title": "Apps Script 실행 건너뜀",
+      "message": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
+    },
     {
       "id": "f293d02c-766b-40ed-8872-aae550338692",
       "at": "2026-11-24T23:45:06.027Z",
@@ -878,24 +896,6 @@
     {
       "id": "7c364c85-6e6f-4212-866d-336c2ffc8936",
       "at": "2026-11-23T20:49:07.044Z",
-      "service": "Apps Script",
-      "level": "info",
-      "status": "skipped",
-      "title": "Apps Script 실행 건너뜀",
-      "message": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
-    },
-    {
-      "id": "68c7eec3-b330-4e61-b299-0aeda83a502f",
-      "at": "2026-11-23T20:28:06.765Z",
-      "service": "Apps Script",
-      "level": "info",
-      "status": "skipped",
-      "title": "Apps Script 실행 건너뜀",
-      "message": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
-    },
-    {
-      "id": "59f0f5a7-5411-4198-bf35-7fa19fd8c52a",
-      "at": "2026-11-23T20:13:06.491Z",
       "service": "Apps Script",
       "level": "info",
       "status": "skipped",
