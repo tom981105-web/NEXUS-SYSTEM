@@ -1,16 +1,16 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-11-25T20:46:53.106Z",
+  "updatedAt": "2026-11-25T21:01:59.697Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "ok",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-11-25T20:46:00.112Z",
-      "finishedAt": "2026-11-25T20:46:36.938Z",
+      "startedAt": "2026-11-25T21:01:00.295Z",
+      "finishedAt": "2026-11-25T21:01:39.419Z",
       "result": "success",
-      "durationMs": 36826,
+      "durationMs": 39124,
       "error": null
     },
     "consecutiveFailures": 0,
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-11-25T20:46:53.536Z",
+    "updatedAt": "2026-11-25T21:02:00.116Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,7 +253,7 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-11-25T20:46:44.095Z",
+    "checkedAt": "2026-11-25T21:01:50.452Z",
     "timezone": "Asia/Seoul",
     "date": "2026-11-26",
     "planned": 16,
@@ -277,7 +277,7 @@
         "filename": null,
         "startDelaySeconds": null,
         "elapsedMinutes": null,
-        "diagnosis": "예약시각 전"
+        "diagnosis": "예정시각 경과 후 로그 생성 대기"
       },
       {
         "series": "묵수",
