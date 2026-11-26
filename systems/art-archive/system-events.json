@@ -1,7 +1,25 @@
 {
   "version": "1.4",
-  "updatedAt": "2026-11-26T22:47:01.384Z",
+  "updatedAt": "2026-11-26T22:49:49.624Z",
   "events": [
+    {
+      "id": "2513edac-a513-4667-a750-4c21b620d503",
+      "at": "2026-11-26T22:49:31.119Z",
+      "service": "Apps Script",
+      "level": "success",
+      "status": "success",
+      "title": "Apps Script 정상 복구",
+      "message": "checkArtworkCompletion"
+    },
+    {
+      "id": "a9061ef2-fe63-4c73-941d-da1e5cce8dcd",
+      "at": "2026-11-26T22:48:13.834Z",
+      "service": "Apps Script",
+      "level": "error",
+      "status": "failed",
+      "title": "Apps Script 실행 실패",
+      "message": "Exception: Address unavailable: https://api.github.com/repos/tom981105-web/art-archive/contents/js/works.js?ref=main\n    at githubReadTextFile_ (Code:2115:32)\n    at getArchiveDriveFileIds_ (Code:272:14)\n    at checkArtworkCompletion (Code:117:28)\n    at __GS_INTERNAL_top_function_call__.gs:1:8"
+    },
     {
       "id": "34d5f87c-d21f-455e-b60c-d072aa4f1b3e",
       "at": "2026-11-26T22:34:06.759Z",
@@ -883,24 +901,6 @@
       "status": "success",
       "title": "Apps Script 정상 복구",
       "message": "checkArtworkCompletion"
-    },
-    {
-      "id": "c805ca0f-3fea-43cb-92a0-e26bb5b0faa4",
-      "at": "2026-11-25T19:58:32.009Z",
-      "service": "Apps Script",
-      "level": "error",
-      "status": "failed",
-      "title": "Apps Script 실행 실패",
-      "message": "Exception: Address unavailable: https://api.github.com/repos/tom981105-web/art-archive/contents/js/works.js?ref=main\n    at githubReadTextFile_ (Code:2115:32)\n    at syncExistingArtworkMetadata_ (Code:1478:14)\n    at checkArtworkCompletion (Code:109:5)\n    at __GS_INTERNAL_top_function_call__.gs:1:8"
-    },
-    {
-      "id": "0f15f134-52f6-46e7-9e2f-e4ad53d6d124",
-      "at": "2026-11-25T19:56:05.764Z",
-      "service": "Apps Script",
-      "level": "info",
-      "status": "skipped",
-      "title": "Apps Script 실행 건너뜀",
-      "message": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
     }
   ]
 }
