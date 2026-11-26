@@ -1,7 +1,25 @@
 {
   "version": "1.4",
-  "updatedAt": "2026-11-26T23:21:06.720Z",
+  "updatedAt": "2026-11-26T23:37:27.167Z",
   "events": [
+    {
+      "id": "e0c8001a-eee3-42e2-8419-4eccb8d314c8",
+      "at": "2026-11-26T23:37:16.183Z",
+      "service": "Apps Script",
+      "level": "error",
+      "status": "failed",
+      "title": "Apps Script 실행 실패",
+      "message": "Exception: Address unavailable: https://api.github.com/repos/tom981105-web/art-archive/contents/js/works.js?ref=main\n    at githubReadTextFile_ (Code:2115:32)\n    at getArchiveDriveFileIds_ (Code:272:14)\n    at checkArtworkCompletion (Code:117:28)\n    at __GS_INTERNAL_top_function_call__.gs:1:8"
+    },
+    {
+      "id": "e97c145b-3123-4836-aa15-c7f89dd07114",
+      "at": "2026-11-26T23:25:05.687Z",
+      "service": "Apps Script",
+      "level": "info",
+      "status": "skipped",
+      "title": "Apps Script 실행 건너뜀",
+      "message": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
+    },
     {
       "id": "10a2d53b-4a0f-4dd8-83c0-0c8f21a9f70b",
       "at": "2026-11-26T23:10:05.473Z",
@@ -883,24 +901,6 @@
       "status": "failed",
       "title": "Apps Script 실행 실패",
       "message": "Exception: Address unavailable: https://api.github.com/repos/tom981105-web/art-archive/contents/js/works.js?ref=main\n    at githubReadTextFile_ (Code:2115:32)\n    at syncExistingArtworkMetadata_ (Code:1478:14)\n    at checkArtworkCompletion (Code:109:5)\n    at __GS_INTERNAL_top_function_call__.gs:1:8"
-    },
-    {
-      "id": "82f5d323-7068-4cb8-b748-33f870b11496",
-      "at": "2026-11-25T20:27:54.049Z",
-      "service": "Apps Script",
-      "level": "error",
-      "status": "failed",
-      "title": "Apps Script 실행 실패",
-      "message": "Exception: Address unavailable: https://api.github.com/repos/tom981105-web/art-archive/contents/js/works.js?ref=main\n    at githubReadTextFile_ (Code:2115:32)\n    at getArchiveDriveFileIds_ (Code:272:14)\n    at checkArtworkCompletion (Code:117:28)\n    at __GS_INTERNAL_top_function_call__.gs:1:8"
-    },
-    {
-      "id": "773923ac-b7e6-4b86-9ff4-d317ddc7417d",
-      "at": "2026-11-25T20:27:08.302Z",
-      "service": "Apps Script",
-      "level": "info",
-      "status": "skipped",
-      "title": "Apps Script 실행 건너뜀",
-      "message": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
     }
   ]
 }
