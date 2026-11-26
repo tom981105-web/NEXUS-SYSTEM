@@ -1,21 +1,21 @@
 {
   "version": "1.9.1",
-  "updatedAt": "2026-11-26T19:23:12.575Z",
+  "updatedAt": "2026-11-26T19:38:29.512Z",
   "timezone": "Asia/Seoul",
   "overallStatus": "ok",
   "appsScript": {
     "project": "그림 자동화 관리자",
     "lastRun": {
       "functionName": "checkArtworkCompletion",
-      "startedAt": "2026-11-26T19:23:00.323Z",
-      "finishedAt": "2026-11-26T19:23:05.449Z",
-      "result": "success",
-      "durationMs": 5126,
+      "startedAt": "2026-11-26T19:38:00.118Z",
+      "finishedAt": "2026-11-26T19:38:05.203Z",
+      "result": "skipped",
+      "durationMs": 5085,
       "error": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀"
     },
     "consecutiveFailures": 0,
-    "busyOrSkipped": false,
-    "busyReason": null,
+    "busyOrSkipped": true,
+    "busyReason": "다른 자동화 실행이 진행 중이어서 이번 회차를 건너뜀",
     "triggerInventoryAvailable": false
   },
   "notionSync": {
@@ -30,7 +30,7 @@
   },
   "githubDeploy": {
     "source": "github_api_server_side",
-    "updatedAt": "2026-11-26T19:23:13.122Z",
+    "updatedAt": "2026-11-26T19:38:29.723Z",
     "fetchResult": "success",
     "error": null,
     "latestRun": {
@@ -253,7 +253,7 @@
     ]
   },
   "automationDailyDiagnosis": {
-    "checkedAt": "2026-11-26T19:23:03.405Z",
+    "checkedAt": "2026-11-26T19:38:20.719Z",
     "timezone": "Asia/Seoul",
     "date": "2026-11-27",
     "planned": 16,
